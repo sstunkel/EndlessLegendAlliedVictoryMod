@@ -12,6 +12,7 @@
   </DiplomaticAbility>
 
   <DiplomaticAbility Name="AlliedVictory">
+    <SimulationDescriptorReference Name="AlliedVictoryBonus" />
   </DiplomaticAbility>
 
   <DiplomaticAbility Name="ResearchAgreement">

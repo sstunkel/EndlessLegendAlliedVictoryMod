@@ -67,7 +67,7 @@
 
 <!--Allied Victory-->
    <DiplomaticTermDefinition Name="AllianceAlliedVictory" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">-99999</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">0</DiplomaticCustomCost>
     <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="AlliedVictory" />
   </DiplomaticTermDefinition>
 

@@ -56,6 +56,13 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!--Allied Victory-->
+  <SimulationDescriptor Name="AlliedVictoryBonuus" Type="Diplomacy">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictCityPoint"  Operation="Addition" Value="999"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
   <SimulationDescriptor Name="MoneyPrint" Type="Diplomacy">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="TradeRouteCityDustIncome"               Operation="Percent"   Value="-0.20"  Path="../ClassEmpire/ClassCity"/>
