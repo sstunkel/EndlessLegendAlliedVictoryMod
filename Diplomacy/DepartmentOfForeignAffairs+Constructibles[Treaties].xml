@@ -65,6 +65,12 @@
     <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="CommercialAgreement" />
   </DiplomaticTermDefinition>
 
+<!--Allied Victory-->
+   <DiplomaticTermDefinition Name="AllianceAlliedVictory" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier) * $Property(ClassEmpire:CommercialAgreementCostMultiplier)</DiplomaticCustomCost>
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="AlliedVictory" />
+  </DiplomaticTermDefinition>
+
   <!-- ResearchAgreement -->
   
   <DiplomaticTermDefinition Name="PeaceResearchAgreement" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">

@@ -17,6 +17,7 @@
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeForKill" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CommercialAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AlliedVictory" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ResearchAgreement" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="TradeRoute" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughArmies" />
@@ -47,6 +48,7 @@
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeForKill" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CommercialAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AlliedVictory" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ResearchAgreement" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="TradeRoute" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughArmies" />
@@ -77,6 +79,7 @@
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughCities" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MoneyPrint" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ShareRoads" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AlliedVictory" />
   </DiplomaticRelationState>
   
   
@@ -89,6 +92,7 @@
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeForKill" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CommercialAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AlliedVictory" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ResearchAgreement" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="TradeRoute" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Unknown" />
@@ -122,6 +126,7 @@
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughCities" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MoneyPrint" />
     <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ShareRoads" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AlliedVictory" />
   </DiplomaticRelationState>
   
   

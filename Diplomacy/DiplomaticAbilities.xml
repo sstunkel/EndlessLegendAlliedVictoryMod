@@ -11,6 +11,9 @@
   <DiplomaticAbility Name="CommercialAgreement">
   </DiplomaticAbility>
 
+  <DiplomaticAbility Name="AlliedVictory">
+  </DiplomaticAbility>
+
   <DiplomaticAbility Name="ResearchAgreement">
   </DiplomaticAbility>
 

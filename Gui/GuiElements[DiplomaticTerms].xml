@@ -189,6 +189,14 @@
       <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
     </Icons>
   </GuiElement>
+  <!--Allied Victory-->
+  <GuiElement Name="AllianceAlliedVictory">
+    <Title>Allied Victory</Title>
+    <Description>Win the game with your allied partner.</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
   <!-- ResearchAgreement -->
   <GuiElement Name="PeaceResearchAgreement">
     <Title>%DiplomaticTermResearchAgreementTitle</Title>

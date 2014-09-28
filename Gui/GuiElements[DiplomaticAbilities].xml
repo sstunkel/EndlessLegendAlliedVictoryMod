@@ -32,6 +32,14 @@
       <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityCommercialAgreementSmall" />
     </Icons>
   </GuiElement>
+
+  <GuiElement Name="DiplomaticAbilityAlliedVictory">
+    <Title>Allied Victory</Title>
+    <Description>Win the game with your allied partner.</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityCommercialAgreementSmall" />
+    </Icons>
+  </GuiElement>
   
   <GuiElement Name="DiplomaticAbilityResearchAgreement">
     <Title>%DiplomaticAbilityResearchAgreementTitle</Title>
