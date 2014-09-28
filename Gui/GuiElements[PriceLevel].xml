@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <GuiElement Name="PriceLevelVeryHigh">
+    <Title>%PriceLevelVeryHighTitle</Title>
+    <Description>%PriceLevelVeryHighDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="Gui/AtlasedBitmaps/PriceLevel/PriceLevelVeryHigh" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PriceLevelHigh">
+    <Title>%PriceLevelHighTitle</Title>
+    <Description>%PriceLevelHighDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="Gui/AtlasedBitmaps/PriceLevel/PriceLevelHigh" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PriceLevelNormal">
+    <Title>%PriceLevelNormalTitle</Title>
+    <Description>%PriceLevelNormalDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="Gui/AtlasedBitmaps/PriceLevel/PriceLevelNormal" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PriceLevelLow">
+    <Title>%PriceLevelLowTitle</Title>
+    <Description>%PriceLevelLowDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="Gui/AtlasedBitmaps/PriceLevel/PriceLevelLow" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PriceLevelVeryLow">
+    <Title>%PriceLevelVeryLowTitle</Title>
+    <Description>%PriceLevelVeryLowDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="Gui/AtlasedBitmaps/PriceLevel/PriceLevelVeryLow" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

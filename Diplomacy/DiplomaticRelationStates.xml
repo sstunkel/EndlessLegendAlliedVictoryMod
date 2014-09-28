@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <DiplomaticRelationState Name="DiplomaticRelationStateUnknown">
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="Unknown" />
+  </DiplomaticRelationState>
+
+
+  <DiplomaticRelationState Name="DiplomaticRelationStateDead">
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AttackArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AttackCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="SiegeCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CloseBorders" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWarAttackArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MapExchange" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="VisionExchange" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeForKill" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CommercialAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ResearchAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="TradeRoute" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ShareRoads" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Unknown" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="War" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Truce" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWar" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Peace" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Alliance" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MarketBan" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MoneyPrint" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="NoAggression" />
+  </DiplomaticRelationState>
+  
+  
+  <DiplomaticRelationState Name="DiplomaticRelationStateWar">
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="AttackArmies" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="AttackCities" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="SiegeCities" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="War" />
+
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CloseBorders" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWarAttackArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MapExchange" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="VisionExchange" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeForKill" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CommercialAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ResearchAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="TradeRoute" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ShareRoads" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Unknown" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Truce" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWar" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Peace" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Alliance" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="NoAggression" />
+  </DiplomaticRelationState>
+  
+  
+  <DiplomaticRelationState Name="DiplomaticRelationStateTruce">
+    <DiplomaticRelationStateAutomaticTransition DestinationState="DiplomaticRelationStateColdWar" TurnDurationPrerequisite="2" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="Truce" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="NoAggression" />
+    
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AttackArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="AttackCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="SiegeCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Unknown" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="War" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWar" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Peace" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Alliance" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MoneyPrint" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ShareRoads" />
+  </DiplomaticRelationState>
+  
+  
+  <DiplomaticRelationState Name="DiplomaticRelationStateColdWar">
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="ColdWarAttackArmies" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="ColdWar" />
+
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MapExchange" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="VisionExchange" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeForKill" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CommercialAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ResearchAgreement" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="TradeRoute" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Unknown" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="War" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Truce" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Peace" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Alliance" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MoneyPrint" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ShareRoads" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="NoAggression" />
+  </DiplomaticRelationState>
+  
+  
+  <DiplomaticRelationState Name="DiplomaticRelationStatePeace">
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="TradeRoute" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="PassThroughArmies" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="Peace" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="NoAggression" />
+
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeForKill" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PrestigeTrend" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWarAttackArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Unknown" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="War" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Truce" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWar" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Alliance" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="PassThroughCities" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MoneyPrint" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ShareRoads" />
+  </DiplomaticRelationState>
+  
+  
+  <DiplomaticRelationState Name="DiplomaticRelationStateAlliance">
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="NoAggression" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="MapExchange" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="VisionExchange" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="PrestigeTrend" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="PrestigeForKill" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="TradeRoute" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="PassThroughArmies" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="PassThroughCities" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="ShareRoads" />
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="Alliance" />
+
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="CloseBorders" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWarAttackArmies" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Unknown" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="War" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Truce" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="ColdWar" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="Peace" />
+    <DiplomaticAbilityChange Operation="Remove" DiplomaticAbilityReference="MoneyPrint" />
+  </DiplomaticRelationState>
+  
+</Datatable>

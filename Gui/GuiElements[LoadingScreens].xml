@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="LoadingScreen0">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionBrokenLordsMoodScore" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="LoadingScreen1">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionDrakkensMoodScore" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="LoadingScreen2">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionMadFairiesMoodScore" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="LoadingScreen3">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionNecrophagesMoodScore" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="LoadingScreen4">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionRageWizardsMoodScore" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="LoadingScreen5">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionRovingClansMoodScore" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="LoadingScreen6">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionVaultersMoodScore" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="LoadingScreen7">
+    <Icons>
+      <Icon Size="MoodScore" Path="Gui/DynamicBitmaps/Factions/majorFactionMadFairiesMoodScore" />
+    </Icons>
+  </GuiElement>
+</Datatable>

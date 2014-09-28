@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://Cultistsw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://Cultistsw.w3.org/2001/XMLSchema">
+
+  <!-- ======================================
+     ======== CULTISTS-CHAPTER 1 ========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter1" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter1,BeginTurn</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <PathPrerequisite Flags="Prerequisite">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity) ge 1</InterpreterPrerequisite>
+    </Prerequisites>
+    
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter1-Step1" State="InProgress"/>
+        <Decorator_BeginTurn Initiator="Empire">
+          <ConditionCheck_Prerequisite>
+            <Prerequisites Target="$Empire">
+              <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassEmpire/ClassCity/ConvertedVillage) ge 2</InterpreterPrerequisite>
+            </Prerequisites>
+          </ConditionCheck_Prerequisite>
+        </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter1-Step1" State="Completed" />
+      
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter1-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+    
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter2</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+  
+  
+  
+  <!-- ======================================
+     ======== CULTISTS-CHAPTER 2 ========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter2" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter2</Tags>
+
+    <!--===========VARIABLES=============-->
+
+    <Vars>
+      <Var VarName="$InstigatorEmpire">
+        <From Source="$Empire"/>
+      </Var>
+      <Var VarName="$City">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+
+      <Var VarName="$CityRegion">
+        <Any>
+          <From Source="$City.$Region"/>
+        </Any>
+      </Var>
+      
+      <Var VarName="$CityLocation">
+        <From Source="$City.$Position"/>
+      </Var>
+      <Var VarName="$OtherRegions">
+        <From Source="$Regions">
+          <Where>
+            <FilterRegionByEmpire Inverted="true" EmpireVarName="$InstigatorEmpire"/>
+            <FilterRegionIsContinent/>
+          </Where>
+        </From>
+      </Var>
+      <Var VarName="$AllNearestRegionsFromEmpireCity">
+        <From Source="$OtherRegions">
+          <OrderBy>
+            <SortRegionByDistance SortBy="Nearest" PositionToCompareVarName="$CityLocation"/>
+          </OrderBy>
+        </From>
+        
+      </Var>
+        <Var VarName="$PointOfInterestToInspect">
+          <Limit LimitMin="3" LimitMax="4">
+            <From Source="$AllNearestRegionsFromEmpireCity.$PointsOfInterest">
+              <Where>
+                <PathPrerequisite>PointOfInterestTypeQuestLocation</PathPrerequisite>
+              </Where>
+            </From>
+          </Limit>
+        </Var>
+
+      <LocalizationVar LocalizationKey="$QuestPOI" Source="$PointOfInterestToInspect"/>
+      <LocalizationVar LocalizationKey="$RegionName" Source="$CityRegion"/>
+    </Vars>
+    
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter2-Step1" State="InProgress"/>
+      <Decorator_BeginTurn Initiator="Empire" >
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:MinorFactionAssimilatedCount) ge 1</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter2-Step1" State="Completed" />
+ 
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter2-Step2" HideRewards="true" State="InProgress"/>
+      <Action_LockQuestTarget TargetVarName="$PointOfInterestToInspect" LockOption="Lock"/>
+      <Action_AddQuestMarker TargetEntityVarName="$PointOfInterestToInspect" Tags="POI" RevealUnexploredLand="true" MarkerVisibleInFogOfWar="true" Output_QuestMarkerVarName="$QuestMarkerQuestPOIToInspect"/>
+      <Decorator_Inspect TargetEntityVarName="$PointOfInterestToInspect" Output_InstigatorSimObjectVarName="$InspectionInstigatorSimObject" PrerequisiteNotVerifiedMessage="%QuestPrerequisiteNotVerified" Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$InspectionInstigatorSimObject">
+            <InterpreterPrerequisite Flags="Prerequisite">$PropertyFilteredCount(ClassArmy/ClassUnit,UnitFactionTypeMinorFaction:LevelDisplayed;ge;2) ge 2</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_Inspect>
+      <Action_RemoveQuestMarker TargetQuestMarkerVarName="$QuestMarkerQuestPOIToInspect"/>
+      <Action_LockQuestTarget TargetVarName="$PointOfInterestToInspect" LockOption="Unlock"/>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter2-Step2" State="Completed" />
+
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter2-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestCultists-Chapter2-Step2">
+        <Reward Droplist="DroplistMainQuestCultistsChapter2Step2UniqueItemReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter3</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+   
+  
+  
+  <!-- ======================================
+     ======= CULTISTS-CHAPTER 3 =========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter3" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter3</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter3Alt" QuestState="Completed"/>
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter3Alt" QuestState="InProgress"/>
+    </Prerequisites>
+
+    <!--===========VARIABLES=============-->
+
+    <Vars>
+      <Var VarName="$City">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+      <Var VarName="$CapitalRegion">
+        <From Source="$City.$Region"/>
+      </Var>
+      
+      <LocalizationVar LocalizationKey="$RegionName" Source="$CapitalRegion"/>
+    </Vars>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter3-Step1" State="InProgress"/>
+      <Controller_Sequence ResetPolicy="onFail">
+        <Action_StartTimer Output_TimerVarName="$TimeBeforeReset"/>
+        <Action_UpdateTimerLocalization TurnCountBeforeTimeOut="5" TimerLocalizationKey="$Timer" TimerVarName="$TimeBeforeReset"/>
+        <Decorator_TimerEnded TimerVarName="$TimeBeforeReset" TurnCountBeforeTimeOut="5" TimerLocalizationKey="$Timer" Initiator="Empire">
+          <ConditionCheck_RegionContainsEnemy Inverted="true" IsFailureCondition="true" RegionVarName="$CapitalRegion"/>
+        </Decorator_TimerEnded>
+        <Action_UpdateStep StepName="MainQuestCultists-Chapter3-Step1" State="Completed"/>
+      </Controller_Sequence>
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter3-Step2" State="InProgress"/>
+      
+      <Controller_Parallel CompletionPolicy="Any">
+        
+        <Controller_Sequence>
+          <Decorator_DistrictLevelUp Level="1" Output_DistrictSimObjectVarName="$District" Initiator="Empire">
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$District">
+                <PathPrerequisite Flags="Prerequisite">DistrictTypeCenter</PathPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_DistrictLevelUp>
+        </Controller_Sequence>
+        
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire" >
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Property(EmpireTypeMajor/ClassCity/DistrictTypeCenter:Level) ge 1</InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+        
+      </Controller_Parallel>
+      
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter3-Step2" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+    
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter3-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestCultists-Chapter3-Step2">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter4</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+  
+
+  
+  <!-- ======================================
+     ======= CULTISTS-CHAPTER 3Alt =========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter3Alt" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter3</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter3" QuestState="Completed"/>
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter3" QuestState="InProgress"/>
+    </Prerequisites>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter3Alt-Step1" State="InProgress"/>
+
+      <Controller_Loop LoopCount="10">
+        <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter3Alt-Step1">
+          <ConditionCheck_Prerequisite>
+            <Prerequisites Target="$Empire">
+              <PathPrerequisite Flags="Prerequisite">ClassEmpire/ClassCity/UnitTypeCultistsHero</PathPrerequisite>
+            </Prerequisites>
+          </ConditionCheck_Prerequisite>
+        </Decorator_BeginTurn>
+      </Controller_Loop>
+
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter3Alt-Step1" State="Completed"/>
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter3Alt-Step2" State="InProgress"/>
+
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <Decorator_DistrictLevelUp Level="1" Output_DistrictSimObjectVarName="$District" Initiator="Empire">
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$District">
+                <PathPrerequisite Flags="Prerequisite">DistrictTypeCenter</PathPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_DistrictLevelUp>
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire" >
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Property(EmpireTypeMajor/ClassCity/DistrictTypeCenter:Level) ge 1</InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+      </Controller_Parallel>
+      
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter3Alt-Step2" State="Completed"/>
+      
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter3Alt-Step1">
+        <ProgressionRange StartValue="0" EndValue="10"/>
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestCultists-Chapter3Alt-Step2">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter4</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+  
+  <!-- ========================================
+     ======== CULTISTS-CHAPTER 4 ==========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter4" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter4</Tags>
+
+    <!--===========VARIABLES=============-->
+
+    <Vars>
+      <Var VarName="$InstigatorEmpire">
+        <From Source="$Empire"/>
+      </Var>
+      <Var VarName="$City">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+      <Var VarName="$CityLocation">
+        <From Source="$City.$Position"/>
+      </Var>
+      <Var VarName="$AllRegionsButMine">
+        <From Source="$Regions">
+          <Where>
+            <FilterRegionByEmpire Inverted="true" EmpireVarName="$InstigatorEmpire"/>
+          </Where>
+        </From>
+      </Var>
+      <Var VarName="$AllNearestRegionsFromEmpireCity">
+        <From Source="$AllRegionsButMine">
+          <OrderBy>
+            <SortRegionByDistance SortBy="Nearest" PositionToCompareVarName="$CityLocation"/>
+          </OrderBy>
+        </From>
+      </Var>
+
+      <!--Set the City to capture-->
+      <Var VarName="$CityToConquer">
+        <Limit LimitMin="2" LimitMax="3">
+          <From Source="$AllNearestRegionsFromEmpireCity.$City"/>
+        </Limit>
+      </Var>
+      <!--Set the Region to capture-->
+      <Var VarName="$RegionToConquer">
+          <From Source="$CityToConquer.$Region"/>
+      </Var>
+      
+      <Var VarName="$MinorFactionToDestroy">
+          <From Source="$RegionToConquer.$MinorEmpire"/>
+      </Var>
+      <Var VarName="$InitialTribeName">
+        <From Source="$MinorFactionToDestroy.$FactionName"/>
+      </Var>
+      
+      <Var VarName="$RegionToConquerVillages">
+        <From Source="$RegionToConquer.$Villages"/>
+      </Var>
+
+      <Var VarName="$RegionToConquerVillagePOI">
+        <Any>
+          <From Source="$RegionToConquerVillages.$PointOfInterest"/>
+        </Any>
+      </Var>
+
+
+      <Var VarName="$SurroundingRegions">
+        <From Source="$RegionToConquer.$RegionWithNeighbourRegions">
+          <Where>
+            <FilterRegionIsOnSameContinent RegionContextVarName="$RegionToConquer"/>
+          </Where>
+        </From>
+      </Var>
+
+      <Var VarName="$RegionToSpawn">
+        <Limit LimitMin="2" LimitMax="3">
+          <From Source="$SurroundingRegions"/>
+        </Limit>
+      </Var>
+      
+      <Var VarName="$LocationsToSpawnArmy">
+        <From Source="$RegionToSpawn.$Positions"/>
+      </Var>
+
+      <LocalizationVar LocalizationKey="$RegionName" Source="$RegionToConquer"/>
+      <LocalizationVar LocalizationKey="$MinorFaction" Source="$MinorFactionToDestroy"/>
+    </Vars>
+
+    <!--============ SEQUENCE ============-->
+
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter4-Step1" State="InProgress"/>
+      <Controller_Parallel CompletionPolicy="All">
+
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire">
+            <ConditionCheck_VillagesConverted VillagesVarName="$RegionToConquerVillages" TargetOption="All"/>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+        
+        <Controller_Parallel CompletionPolicy="Any">
+            
+          <Controller_Sequence>
+            <Decorator_CaptureCity TargetCityVarName="$RegionToConquer" Initiator="Empire"/>
+          </Controller_Sequence>
+            
+          <Controller_Sequence>
+            <Decorator_BeginTurn Initiator="Empire">
+              <ConditionCheck_Prerequisite Inverted="true">
+                <Prerequisites Target="$CityToConquer">
+                  <PathPrerequisite Flags="Prerequisite">ClassCity</PathPrerequisite>
+                </Prerequisites>
+              </ConditionCheck_Prerequisite>
+            </Decorator_BeginTurn>
+          </Controller_Sequence>
+            
+        </Controller_Parallel>
+        
+      </Controller_Parallel>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter4-Step1" State="Completed"/>
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter4-Step2" State="InProgress"/>
+      <Action_SpawnArmy SpawnLocationVarName="$LocationsToSpawnArmy" ArmyDroplist="DroplistArmyDefinitionMainQuestCultistsChapter4Step2" ArmyDroplistSuffixVarName="$InitialTribeName" Output_EnemyArmyGUIDVarName="$ArmyID1"/>
+      <Action_UpdateArmyObjective ArmyGUIDVarName="$ArmyID1" TargetEmpireVarName="$InstigatorEmpire" BehaviourName="Roaming"/>
+      <Decorator_KillArmy TargetOption="All" Initiator="AllEmpires">
+        <EnemyArmyGUIDVarName>$ArmyID1</EnemyArmyGUIDVarName>
+      </Decorator_KillArmy>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter4-Step2" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+      
+    </Controller_Sequence>
+    
+   
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter4-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestCultists-Chapter4-Step2">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter5</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+  
+  
+  <!-- ======================================
+     ======= CULTISTS-CHAPTER 5 =========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter5" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="0" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter5</Tags>
+
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+
+      <Var VarName="$InstigatorEmpire">
+        <From Source="$Empire"/>
+      </Var>
+
+      <!--Set the Ruins to search-->
+      <Var VarName="$EmpireRegions">
+        <From Source="$Regions">
+          <Where>
+            <FilterRegionByEmpire EmpireVarName="$InstigatorEmpire"/>
+            <FilterRegionIsContinent/>
+          </Where>
+        </From>
+      </Var>
+      <Var VarName="$QuestPOI">
+        <Any>
+          <From Source="$EmpireRegions.$PointsOfInterest">
+            <Where>
+              <PathPrerequisite>PointOfInterestTypeQuestLocation</PathPrerequisite>
+            </Where>
+          </From>
+        </Any>
+      </Var>
+
+      <!--Set the Strategic 3 to gather-->
+      <Var VarName="$Strategic3POI">
+        <Any>
+          <From Source="$Regions.$PointsOfInterest">
+            <Where>
+              <PathPrerequisite Flags="Prerequisite">ResourceTypeStrategic</PathPrerequisite>
+              <PathPrerequisite Flags="Prerequisite">ResourceDepositTypeStrategic3</PathPrerequisite>
+            </Where>
+          </From>
+        </Any>
+      </Var>
+      <Var VarName="$NameOfStrategic3ToGather">
+        <Any>
+          <From Source="$Strategic3POI.$ResourceName"/>
+        </Any>
+      </Var>
+
+      <!--Set the Strategic 4 to gather-->
+      <Var VarName="$Strategic4POI">
+        <First>
+          <From Source="$Regions.$PointsOfInterest">
+            <Where>
+              <PathPrerequisite Flags="Prerequisite">ResourceTypeStrategic</PathPrerequisite>
+              <PathPrerequisite Flags="Prerequisite">ResourceDepositTypeStrategic4</PathPrerequisite>
+            </Where>
+          </From>
+        </First>
+      </Var>
+      <Var VarName="$NameOfStrategic4ToGather">
+        <Any>
+          <From Source="$Strategic4POI.$ResourceName"/>
+        </Any>
+      </Var>
+
+      <!--Set the different amount of resource to gather and remove from player's empire-->
+      <DropListVar VarName="$StrategicResourceAmount" DropList="DroplistStrategicResourceAmount"/>
+      <DropListVar VarName="$StrategicResourceTransfertAmount" DropList="DroplistStrategicResourceTransfertAmount"/>
+
+      <!--For localization purposes-->
+      <LocalizationVar LocalizationKey="$Strategic3Name" Source="$Strategic3POI"/>
+      <LocalizationVar LocalizationKey="$Strategic4Name" Source="$Strategic4POI"/>
+      <LocalizationVar LocalizationKey="$StrategicAmount" Source="$StrategicResourceAmount"/>
+
+      <LocalizationVar LocalizationKey="$QuestPOIName" Source="$QuestPOI"/>
+
+    </Vars>
+
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      <Action_LockQuestTarget TargetVarName="$QuestPOI" LockOption="Lock"/>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter5-Step1" State="InProgress" />
+      <Action_AddQuestMarker TargetEntityVarName="$QuestPOI" Tags="Ruins" RevealUnexploredLand="true" MarkerVisibleInFogOfWar="true" Output_QuestMarkerVarName="$QuestMarkerQuestPOI"/>
+      <Decorator_Inspect TargetEntityVarName="$QuestPOI" PrerequisiteNotVerifiedMessage="%QuestPrerequisiteNotVerified" Initiator="Empire">
+        <ConditionCheck_HasResourceAmount ResourceNameVarName="$NameOfStrategic4ToGather" WantedAmountVarName="$StrategicResourceAmount"/>
+        <ConditionCheck_HasResourceAmount ResourceNameVarName="$NameOfStrategic3ToGather" WantedAmountVarName="$StrategicResourceAmount"/>
+      </Decorator_Inspect>
+      <Action_TransferResource ResourceNameVarName="$NameOfStrategic4ToGather" AmountVarName="$StrategicResourceTransfertAmount"/>
+      <Action_TransferResource ResourceNameVarName="$NameOfStrategic3ToGather" AmountVarName="$StrategicResourceTransfertAmount"/>
+      <Action_RemoveQuestMarker TargetQuestMarkerVarName="$QuestMarkerQuestPOI"/>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter5-Step1" State="Completed"/>
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter5-Step2" HideRewards="true" State="InProgress"/>
+      <Decorator_BeginTurn Initiator="Empire" >
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire/ClassResearch:Era3UnlockedTechnologyCount) ge 10</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter5-Step2" State="Completed"/>
+
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+    
+    
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter5-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestCultists-Chapter5-Step2">
+        <Reward Droplist="DroplistMainQuestCultistsChapter5Step2UniqueItemReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter6</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+  
+
+  <!-- ======================================
+     ======== CULTISTS-CHAPTER 6 ========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter6" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter6</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter6Alt" QuestState="Completed"/>
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter6Alt" QuestState="InProgress"/>
+    </Prerequisites>
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+
+      <Var VarName="$MinimumRegions">
+        <Limit LimitMin="1" LimitMax="8" Clamp="false">
+          <From Source="$Regions">
+            <Where>
+              <FilterRegionIsContinent/>
+            </Where>
+          </From>
+        </Limit>
+      </Var>
+
+    </Vars>
+
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter6-Step1" State="InProgress"/>
+      <Controller_Loop LoopCount="10">
+        <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6-Step1">
+          <ConditionCheck_Prerequisite>
+            <Prerequisites Target="$Empire">
+              <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassEmpire/ClassCity/ConvertedVillage) ge 8</InterpreterPrerequisite>
+            </Prerequisites>
+          </ConditionCheck_Prerequisite>
+        </Decorator_BeginTurn>
+      </Controller_Loop>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter6-Step1" State="Completed" />
+      
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter6-Step1">
+        <ProgressionRange StartValue="0" EndValue="10"/>
+        <Reward Droplist="DroplistMainQuestCultistsChapter6and6AltStep1TechnologyReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter7</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+  
+  <!-- ======================================
+     ======== CULTISTS-CHAPTER 6Alt ========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter6Alt" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter6</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter6" QuestState="Completed"/>
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestCultists-Chapter6" QuestState="InProgress"/>
+    </Prerequisites>
+    
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter6Alt-Step1" State="InProgress"/>
+      <Controller_Parallel CompletionPolicy="All">
+
+        <!--Check that at least 5 different Minor Factions are converted-->
+        <Controller_Parallel CompletionPolicy="Any">
+
+          <Controller_Parallel CompletionPolicy="All">
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeBos) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeCeratan) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeDelvers) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeErycis) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeHaunts) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeJotus) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeKazanji) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeHurnas) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeSilics) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeSistersOfMercy) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeUrces) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeBirdhive) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeGauran) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+              <Decorator_BeginTurn Initiator="Empire" LinkedStepProgression="MainQuestCultists-Chapter6Alt-Step1">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$Empire">
+                    <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/ConvertedVillage,VillageTypeGeldirus) ge 1</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Sequence>
+
+          </Controller_Parallel>
+
+          <Controller_Sequence>
+            <Decorator_BeginTurn Initiator="Empire">
+              <ConditionCheck_IsStepProgressionComplete StepName="MainQuestCultists-Chapter6Alt-Step1"/>
+            </Decorator_BeginTurn>
+          </Controller_Sequence>
+
+        </Controller_Parallel>
+
+      </Controller_Parallel>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter6Alt-Step1" State="Completed" />
+      
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter6Alt-Step1">
+        <ProgressionRange StartValue="0" EndValue="5"/>
+        <Reward Droplist="DroplistMainQuestCultistsChapter6and6AltStep1TechnologyReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter7</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+  
+
+  <!-- ======================================
+     ========= CULTISTS-CHAPTER 7 =======
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter7" Category="Alpha" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter7</Tags>
+
+    
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter7-Step1" State="InProgress"/>
+      <Decorator_ConstructionEnded ConstructionName="CityImprovementCultists3" Initiator="Empire"/>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter7-Step1" State="Completed"/>
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter7-Step2" State="InProgress"/>
+      <Decorator_BeginTurn Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$PropertyFilteredCount(EmpireTypeMajor/Garrison/ClassUnit,UnitTypeCultistsPreacher:LevelDisplayed;ge;6) ge 2</InterpreterPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">$PropertyFilteredCount(EmpireTypeMajor/Garrison/ClassUnit,UnitTypeCultistsHero:LevelDisplayed;ge;9) ge 1</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter7-Step2" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+    
+    
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter7-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestCultists-Chapter7-Step2">
+        <Reward Droplist="DroplistMainQuestCultistsChapter7Step2TechnologyReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Cultists,Chapter8</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+  
+  
+
+  <!-- ======================================
+     ========= CULTISTS-CHAPTER 8 =======
+     ======================================== -->
+  <QuestDefinition Name="MainQuestCultists-Chapter8" Category="MainQuest" SubCategory="Cultists" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Cultists,Chapter8,FinalQuest</Tags>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter8-Step1" State="InProgress"/>
+
+      <Controller_Parallel CompletionPolicy="Any">
+        
+        <Controller_Sequence>
+          <Decorator_DistrictLevelUp Level="2" Output_DistrictSimObjectVarName="$District" Initiator="Empire">
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$District">
+                <PathPrerequisite Flags="Prerequisite">DistrictTypeCenter</PathPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_DistrictLevelUp>
+        </Controller_Sequence>
+        
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire" >
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Property(EmpireTypeMajor/ClassCity/DistrictTypeCenter:Level) ge 2</InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+      </Controller_Parallel>
+      
+      <Action_UpdateStep StepName="MainQuestCultists-Chapter8-Step1" State="Completed" />
+      <Action_UpdateQuest State="Completed"/>
+
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter8-Step1">
+        <Reward Droplist="DroplistMainQuestCultistsChapter8Step1TechnologyReward" Picks="1"/>
+        <Reward Droplist="DroplistWonderVictory" Picks="1"/>
+      </Step>
+    </Steps>
+    
+  </QuestDefinition>
+
+</Datatable>

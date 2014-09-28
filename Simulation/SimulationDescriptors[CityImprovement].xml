@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- This file contains the effects of all the City Improvements (Region buildings, Boosters and Units are in other files) -->
+
+
+
+  <!-- Era 1 - Public Granary -->
+  <SimulationDescriptor Name="CityImprovementFood0" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"               Operation="Addition"    Value="10"    Path="./#Summer,ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityFood"               Operation="Percent"     Value="0.15"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Era 2 - Double unlock : Seed Storage -->
+  <SimulationDescriptor Name="CityImprovementFood1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/#Summer,TerrainTagRiver"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>  
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementFood7" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/#Summer,TerrainTagWater"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Era 2 - Plow Factory -->
+  <SimulationDescriptor Name="CityImprovementFood2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"               Operation="Addition"    Value="15"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"  Operation="Addition"    Value="2"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementFood8" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementFood3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"  Operation="Addition"    Value="3"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityFood"               Operation="Percent"     Value="0.25"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementFood9" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"                           Operation="Addition"  Value="15"     Path="./ClassCity/#Winter,DistrictTypeExtension"/>
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointLossToHealthLossRatio"  Operation="Percent"   Value="-0.40" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                        Operation="Addition"  Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementFood4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagFood"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementFood10" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--<SimulationDescriptor Name="CityImprovementFood5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"                               Operation="Addition"  Value="15"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityFood"                               Operation="Percent"   Value="0.30"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointLossToHealthLossRatio"  Operation="Percent"   Value="-0.40" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                        Operation="Addition"  Value="14"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementFood6" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="4"     Path="./ClassCity/TerrainTagWater"/>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"  Operation="Addition"    Value="3"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="14"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+  
+  
+  <!-- INDUSTRY -->
+  <SimulationDescriptor Name="CityImprovementIndustry0" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"               Operation="Addition"    Value="6"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"               Operation="Percent"     Value="0.15"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Double unlock -->
+  <SimulationDescriptor Name="CityImprovementIndustry1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="1"     Path="./ClassCity/TerrainTagForest"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementIndustry7" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="1"     Path="./ClassCity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementIndustry2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="1"     Path="./ClassCity/#Summer,TerrainTagIndustry"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementIndustry3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseIndustryPerPopulation"  Operation="Addition"    Value="3"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementIndustry4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagIndustry"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementIndustry8" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ResourceBonus"              Operation="Addition"    Value="1"     Path="./ClassCity/PointOfInterestTypeResourceDeposit,ResourceTypeStrategic"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--<SimulationDescriptor Name="CityImprovementIndustry5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseIndustryPerPopulation"  Operation="Addition"    Value="4"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"               Operation="Percent"     Value="0.30"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="14"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+  <!-- Double unlock : Mining Rights -->
+  <SimulationDescriptor Name="CityImprovementIndustry6" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="50"     Path="./ClassCity/PointOfInterestBonusStrategic"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"    Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+
+  
+  
+  <!-- DUST -->
+  <SimulationDescriptor Name="CityImprovementDust0" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDust"               Operation="Addition"    Value="5"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"               Operation="Percent"     Value="0.15"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Double unlock -->
+  <SimulationDescriptor Name="CityImprovementDust1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"           Operation="Addition"    Value="2"     Path="./ClassCity/#Summer,TerrainTagRiver"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementDust7" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"           Operation="Addition"    Value="3"     Path="./ClassCity/#Summer,TerrainTagWater"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementDust2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                    Operation="Addition"    Value="20"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                    Operation="Percent"     Value="0.30"   Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementDust3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseDustPerPopulation"  Operation="Addition"    Value="4"     Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementDust4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"           Operation="Addition"    Value="5"     Path="./ClassCity/TerrainTagDust"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementDust8" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ResourceBonus"          Operation="Addition"    Value="4"     Path="./ClassCity/PointOfInterestTypeResourceDeposit,ResourceTypeLuxury"/>
+      <!--<SimulationModifierDescriptor TargetProperty="DistrictDust"           Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagAnomaly"/>-->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementDust5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                    Operation="Addition"    Value="50"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                    Operation="Percent"     Value="0.40"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--
+  <SimulationDescriptor Name="CityImprovementDust6" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                     Operation="Percent"   Value="0.50"   Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteGain"               Operation="Percent"   Value="1.00"  Path="./ClassCity/ClassTradeRoute"/>
+      <SimulationModifierDescriptor TargetProperty="IntermediateTradeRoutesGain"  Operation="Percent"   Value="1.00"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+  
+  
+  <!-- SCIENCE -->
+  <SimulationDescriptor Name="CityImprovementScience0" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Addition"    Value="10"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Era 1 : Geomic Labs -->
+  <SimulationDescriptor Name="CityImprovementScience8" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="2"     Path="./ClassCity/TerrainTagScience"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Alchemy Workshop -->
+  <SimulationDescriptor Name="CityImprovementScience3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Addition"    Value="15"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Percent"     Value="0.20"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Double unlock : Advanced Alchemy Lab -->
+  <SimulationDescriptor Name="CityImprovementScience2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="3"     Path="./ClassCity/DistrictTypeCenter"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="3"     Path="./ClassCity/DistrictTypeExtension"/>
+      <SimulationModifierDescriptor TargetProperty="BaseSciencePerPopulation" Operation="Addition"    Value="3"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementScience9" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumSeasonPredictabilityError" Operation="Percent"   Value="-0.40" Path="../EmpireTypeMajor"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"                  Operation="Addition"  Value="15"     Path="./ClassCity/TerrainTagAnomaly"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition"  Value="8"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Double unlock : Large-scale Aquatic Center -->
+  <SimulationDescriptor Name="CityImprovementScience1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagWater"/>
+      <SimulationModifierDescriptor TargetProperty="BaseSciencePerPopulation" Operation="Addition"    Value="2"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementScience7" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagRiver"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementScience4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="5"     Path="./ClassCity/TerrainTagScience"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Double unlock : Living Lab Tools & The Crystal Labyrinth -->
+  <SimulationDescriptor Name="CityImprovementScience5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Percent"     Value="1"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="20"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementScience6" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumSeasonPredictabilityError" Operation="Percent"   Value="-0.40"  Path="../EmpireTypeMajor"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"                  Operation="Addition"  Value="15"     Path="./ClassCity/DistrictLevel1"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition"  Value="20"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  
+  
+  <!-- Prestige -->
+  <SimulationDescriptor Name="CityImprovementEmpirePoint1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"              Operation="Addition"  Value="5"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation" Operation="Addition"  Value="1"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"  Value="3"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementEmpirePoint2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictCityPoint"          Operation="Addition"  Value="2"     Path="./ClassCity/DistrictTypeCenter"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictCityPoint"          Operation="Addition"  Value="2"     Path="./ClassCity/DistrictTypeExtension"/>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation" Operation="Addition"  Value="2"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"  Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementEmpirePoint3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictCityPoint"          Operation="Addition"  Value="15"     Path="./ClassCity/DistrictLevel1"/>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation" Operation="Addition"  Value="4"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"  Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementEmpirePoint4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"              Operation="Percent"   Value="1"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition"  Value="20"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Approval -->
+  <SimulationDescriptor Name="CityImprovementApproval1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="20"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"                  Operation="Addition" Value="1"     Path="./ClassCity,ApprovalStatusTagCityHappy"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityImprovementApproval2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="25"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityFood"                       Operation="Percent"  Value="0.10"  Path="./ClassCity,ApprovalStatusTagCityEcstatic"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                       Operation="Percent"  Value="0.10"  Path="./ClassCity,ApprovalStatusTagCityEcstatic"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementApproval3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="30"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"                    Operation="Percent"  Value="0.10"  Path="./ClassCity,ApprovalStatusTagCityEcstatic"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"                  Operation="Percent"  Value="0.10"     Path="./ClassCity,ApprovalStatusTagCityEcstatic"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementApproval4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="20"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"          Operation="Addition" Value="2"     Path="./ClassCity,ApprovalStatusTagCityHappy"/>
+      <SimulationModifierDescriptor TargetProperty="BaseIndustryPerPopulation"      Operation="Addition" Value="2"     Path="./ClassCity,ApprovalStatusTagCityHappy"/>
+      <SimulationModifierDescriptor TargetProperty="BaseDustPerPopulation"          Operation="Addition" Value="2"     Path="./ClassCity,ApprovalStatusTagCityHappy"/>
+      <SimulationModifierDescriptor TargetProperty="BaseSciencePerPopulation"       Operation="Addition" Value="2"     Path="./ClassCity,ApprovalStatusTagCityHappy"/>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation"     Operation="Addition" Value="1"     Path="./ClassCity,ApprovalStatusTagCityHappy"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--<SimulationDescriptor Name="CityImprovementApproval5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="30"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                Operation="Addition" Value="14"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+
+
+  <!-- Trade routes -->
+  <SimulationDescriptor Name="CityImprovementTradeRoutes1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumNumberOfTradeRoutes"   Operation="Addition"  Value="1"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityDustIncome"     Operation="Percent"   Value="0.50"  Path="./ClassCity/ClassTradeRoute"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition"  Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--
+  <SimulationDescriptor Name="CityImprovementTradeRoutes2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="IntermediateTradeRoutesGain"  Operation="Percent"   Value="0.50"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition"  Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+  
+  <SimulationDescriptor Name="CityImprovementTradeRoutes3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumNumberOfTradeRoutes"   Operation="Addition"  Value="1"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityScienceIncome"  Operation="Percent"   Value="0.50"  Path="./ClassCity/ClassTradeRoute"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition"  Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--<SimulationDescriptor Name="CityImprovementTradeRoutes4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteGain"               Operation="Percent"   Value="0.50"  Path="./ClassCity/ClassTradeRoute"/>
+      <SimulationModifierDescriptor TargetProperty="IntermediateTradeRoutesGain"  Operation="Percent"   Value="0.50"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition"  Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+
+
+  <!-- Roads -->
+  <SimulationDescriptor Name="CityImprovementRoads" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"    Operation="Addition"  Value="3"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Military Recruitment Bonus -->
+  <SimulationDescriptor Name="CityImprovementMilitaryRecruitmentBonus1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="40" Path="./ClassCity/ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementMilitaryRecruitmentBonus3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="100" Path="./ClassCity/ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="7"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementMilitaryRecruitmentBonus5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="100" Path="./ClassCity/ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Unit Cost reduction -->
+  <!--<SimulationDescriptor Name="CityImprovementUnitCostReduction1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnitProductionCostReduction"  Operation="Addition" Value="0.15" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+  <!-- Era 6 : -->
+  <SimulationDescriptor Name="CityImprovementUnitCostReduction3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnitProductionCostReduction"  Operation="Addition" Value="0.30"   Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="UnitBuyoutReduction"          Operation="Addition" Value="0.20"   Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Defense points -->
+  <!-- Double unlock : Stronghold Architecture & Infantry Cantina -->
+  <SimulationDescriptor Name="CityImprovementDefense1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"  Value="60"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"    Operation="Addition"  Value="0.5"   Path="./Garrison" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementDefense5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount"     Operation="Addition"  Value="1"     Path="./ClassCity/Militia"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementDefense2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"  Value="200"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"    Operation="Addition"  Value="1"     Path="./Garrison" />
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"  Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementDefense3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"  Value="400"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount"     Operation="Addition"  Value="1"      Path="./ClassCity/Militia"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"  Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  
+  <SimulationDescriptor Name="CityImprovementDefense4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Percent"   Value="0.50"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"    Operation="Addition"  Value="3"     Path="./Garrison" />
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount"     Operation="Addition"  Value="1"     Path="./ClassCity/Militia"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"  Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+
+
+  <!-- Unit HP Regeneration -->
+  <SimulationDescriptor Name="CityImprovementUnitRegeneration1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"   Operation="Addition" Value="0.10" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="AlliedUnitRegenModifier"  Operation="Addition" Value="0.10" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementUnitRegeneration2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"       Operation="Addition" Value="0.15" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="AlliedUnitRegenModifier"      Operation="Addition" Value="0.10" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="150"  Path="./ClassCity/ClassUnit"/> 
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="5"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Defense recovery -->
+  <SimulationDescriptor Name="CityImprovementDefenseRecovery1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointRecoveryPerTurn"  Operation="Addition" Value="10" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"          Operation="Addition" Value="100" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--<SimulationDescriptor Name="CityImprovementDefenseRecovery2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointRecoveryPerTurn"  Operation="Addition" Value="15" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+
+
+  <!-- all FIDS (building given at start) -->
+  <SimulationDescriptor Name="CityImprovementFIDS1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"      Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"  Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"      Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"   Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint" Operation="Addition"  Value="1"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementFIDS1BrokenLords" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"  Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"      Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"   Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint" Operation="Addition"  Value="1"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementFIDS1Tutorial" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"      Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"  Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"      Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"   Operation="Addition"  Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint" Operation="Addition"  Value="1"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Capitol (starting building) -->
+  <SimulationDescriptor Name="CityImprovementCapitol" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                   Operation="Addition"       Value="22" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"    Operation="Addition"       Value="50"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityExpansionDisapproval"   Operation="Multiplication" Value="0"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount"       Operation="Addition"       Value="1"  Path="./ClassCity/Militia"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumNumberOfTradeRoutes" Operation="Addition"       Value="1"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Capitol tweaked for faction tutorial -->
+  <SimulationDescriptor Name="CityImprovementCapitolTutorial" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                   Operation="Addition"       Value="22" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"               Operation="Addition"       Value="5" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"               Operation="Addition"       Value="5" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"    Operation="Addition"       Value="50"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityExpansionDisapproval"   Operation="Multiplication" Value="0"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount"       Operation="Addition"       Value="1"  Path="./ClassCity/Militia"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumNumberOfTradeRoutes" Operation="Addition"       Value="1"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- City hall (main building in each city) -->
+  <SimulationDescriptor Name="CityImprovementCityHall" Type="CityImprovementCityHall">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"      Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseIndustryPerPopulation"  Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseDustPerPopulation"      Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseSciencePerPopulation"   Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation" Operation="Addition" Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition" Value="10"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"                Operation="Addition" Value="2"  Path="./ClassCity/ClassDistrict"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"    Operation="Addition" Value="100"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--BrokenLords don't have any food bonus-->
+  <SimulationDescriptor Name="CityImprovementCityHallBrokenLords" Type="CityImprovementCityHall">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"      Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseIndustryPerPopulation"  Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseDustPerPopulation"      Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseSciencePerPopulation"   Operation="Addition" Value="4"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation" Operation="Addition" Value="2"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition" Value="10"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"                Operation="Addition" Value="2"  Path="./ClassCity/ClassDistrict"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"    Operation="Addition" Value="100" Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  
+  <!-- Wonder buildings -->
+  <!-- Wild Walker wonder building (quest end) -->
+  <SimulationDescriptor Name="CityImprovementMadFairies5" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"               Operation="Addition" Value="80"    Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <!-- Broken Lords wonder building (quest step) -->
+  <SimulationDescriptor Name="CityImprovementBrokenLords7" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseDustPerPopulation" Operation="Addition"  Value="5"   Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"              Operation="Addition"  Value="5"   Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Secondary Quest building -->
+  <SimulationDescriptor Name="CityImprovementSideQuestVillage003" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"             Operation="Addition" Value="5"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition" Value="20"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"   Operation="Addition" Value="0.05" Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- Victory buildings -->
+  <!-- Endless Temple -->
+  <SimulationDescriptor Name="CityImprovementEndlessTemple" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementUndestroyable" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementVaulters6" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"  Operation="Addition"    Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementVaulters2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"         Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"     Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"         Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"      Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementVaulters3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"          Operation="Addition" Value="80" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointRecoveryPerTurn"  Operation="Addition" Value="5"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementVaulters4TooltipEffect" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    <!-- Tooltip Override -->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+    
+  <SimulationDescriptor Name="CityImprovementVaulters4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition"    Value="4"     Path="./ClassCity/DistrictLevel1"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"    Operation="Addition"    Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="AffinityStrategicWinterBoosterBonus" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Era 3 Tech reward: Resource Magnetron -->
+  <SimulationDescriptor Name="CityImprovementVaulters9" Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetAffinityStrategic" Operation="Addition" Value="10" Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Necrophages -->
+  <SimulationDescriptor Name="CityImprovementNecrophages7" Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"  Operation="Addition"    Value="4"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="5"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementNecrophages9" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="100" Path="./ClassCity/ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="5"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Rage Wizards -->
+  <SimulationDescriptor Name="CityImprovementRageWizards2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="2"     Path="./ClassCity/TerrainTagScience"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"          Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementRageWizards4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation" Operation="Addition"  Value="5"   Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"              Operation="Addition"  Value="10"   Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"               Operation="Addition" Value="30"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"            Operation="Addition" Value="7"/>
+      
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Roving Clans -->
+  <SimulationDescriptor Name="CityImprovementRovingClans2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"                Operation="Addition" Value="2" Path="./ClassCity/ClassDistrict"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"                Operation="Addition" Value="1" Path="./ClassCity/DistrictTypeCenter"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"                Operation="Addition" Value="5" Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementRovingClans4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumNumberOfTradeRoutes" Operation="Addition" Value="2"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Drakkens -->
+  <SimulationDescriptor Name="CityImprovementDrakkens2" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"                     Operation="Addition"    Value="10"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition"    Value="25"     Path="./ClassCity/ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Drakkens-->
+  <SimulationDescriptor Name="CityImprovementDrakkens4" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="20"    Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"                  Operation="Addition" Value="10"    Path="../EmpireTypeMajor,ApprovalStatusTagEmpireFervent"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Cultists-->
+  <SimulationDescriptor Name="CityImprovementCultists3" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <BinarySimulationModifierDescriptor TargetProperty="CityScience"   Operation="Percent"   Left="0.02"    BinaryOperation="Multiplication" Right="$(NumberOfConvertedVillages)" Path="../EmpireTypeMajor/ClassCity" IsBindOnSource="false"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- DEBUG -->  
+  <SimulationDescriptor Name="Debug1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"      Operation="Addition"  Value="10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseIndustryPerPopulation"  Operation="Addition"  Value="10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseDustPerPopulation"      Operation="Addition"  Value="10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseSciencePerPopulation"   Operation="Addition"  Value="10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseCityPointPerPopulation" Operation="Addition"  Value="10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityFood"                   Operation="Addition"  Value="40"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"               Operation="Addition"  Value="40"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"                   Operation="Addition"  Value="40"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"                Operation="Addition"  Value="40"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"              Operation="Addition"  Value="40"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"               Operation="Addition"  Value="40"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="OnlyOnePerEmpire" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementExtractingCapacity" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <SimulationDescriptor    Name="DistrictImprovementDocksDescriptor" >
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor       TargetProperty="DistrictIndustry"         Operation="Addition"    Value="5"  Path="./ClassCity/TerrainTagWater"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <!-- ########################################## -->
+  <!-- ######         PLACEHOLDERS         ###### -->
+  <!-- ########################################## -->
+  <!-- Fake improvements for Pillars and Spells -->
+  <!-- Arcana of Matter -->
+  <SimulationDescriptor Name="CityImprovementRageWizards7FakePillar"  Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementRageWizards7FakeSpell"   Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Arcana of Agility -->
+  <SimulationDescriptor Name="CityImprovementRageWizards8FakePillar"  Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementRageWizards8FakeSpell"   Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <!-- Arcana of Authority -->
+  <SimulationDescriptor Name="CityImprovementRageWizards9FakePillar"  Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementRageWizards9FakeSpell"   Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Arcana of Materializing -->
+  <SimulationDescriptor Name="CityImprovementRageWizards10FakePillar" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementRageWizards10FakeSpell"  Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Arcana of Renewal -->
+  <SimulationDescriptor Name="CityImprovementRageWizards11FakePillar" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="CityImprovementRageWizards11FakeSpell"  Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityResourceCostTooltipEffect"      Type="CityImprovement">
+    <SimulationModifierDescriptors>
+    <!-- Tooltip Override -->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- ########################################## -->
+  <!-- ######            CUSTOM            ###### -->
+  <!-- ########################################## -->
+
+
+
+  <!-- ########################################## -->
+  <!-- ######          DEPRECATED          ###### -->
+  <!-- ########################################## -->
+  <!-- To remove for the Release Master -->
+  <!-- Vaulters -->
+  <SimulationDescriptor Name="CityImprovementWinterShelters" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"  Operation="Addition"    Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementBackupGenerators" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"         Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"     Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"         Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"      Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementVaultersShields" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"          Operation="Addition" Value="80" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointRecoveryPerTurn"  Operation="Addition" Value="5"  Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityImprovementOldTechnologyRecyclingProcess" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition"    Value="4"     Path="./ClassCity/DistrictLevel1"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"    Operation="Addition"    Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <!--Era 3 Tech reward: Resource Magnetron-->
+  <SimulationDescriptor Name="CityImprovementVaultersGenerators" Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetAffinityStrategic" Operation="Addition" Value="10" Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+</Datatable>

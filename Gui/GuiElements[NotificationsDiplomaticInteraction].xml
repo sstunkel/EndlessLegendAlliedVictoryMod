@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractWarToTruceProposed">
+    <Title>%NotificationDiplomaticContractWarToTruceProposedTitle</Title>
+    <Description>%NotificationDiplomaticContractWarToTruceProposedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractProposedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="NotificationDiplomaticContractWarToTruceSigned">
+    <Title>%NotificationDiplomaticContractWarToTruceSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractWarToTruceSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractWarToTruceRefused">
+    <Title>%NotificationDiplomaticContractWarToTruceRefusedTitle</Title>
+    <Description>%NotificationDiplomaticContractWarToTruceRefusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractRefusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  
+</ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractWarToTruceDeclarationSigned">
+    <Title>      %NotificationDiplomaticContractWarToTruceDeclarationSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractWarToTruceDeclarationSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractWarToTruceDeclarationAcknowledged">
+    <Title>%NotificationDiplomaticContractWarToTruceDeclarationAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractWarToTruceDeclarationAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToColdWarSigned">
+    <Title>%NotificationDiplomaticContractPeaceToColdWarSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToColdWarSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToColdWarAcknowledged">
+    <Title>%NotificationDiplomaticContractPeaceToColdWarAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToColdWarAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToColdWarSigned">
+    <Title>%NotificationDiplomaticContractAllianceToColdWarSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToColdWarSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToColdWarAcknowledged">
+    <Title>%NotificationDiplomaticContractAllianceToColdWarAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToColdWarAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractTruceToWarSigned">
+    <Title>%NotificationDiplomaticContractTruceToWarSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractTruceToWarSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractTruceToWarAcknowledged">
+    <Title>%NotificationDiplomaticContractTruceToWarAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractTruceToWarAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToWarSigned">
+    <Title>%NotificationDiplomaticContractColdWarToWarSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToWarSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToWarAcknowledged">
+    <Title>%NotificationDiplomaticContractColdWarToWarAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToWarAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToWarSigned">
+    <Title>%NotificationDiplomaticContractPeaceToWarSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToWarSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+</ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToWarAcknowledged">
+    <Title>%NotificationDiplomaticContractPeaceToWarAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToWarAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToWarSigned">
+    <Title>%NotificationDiplomaticContractAllianceToWarSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToWarSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToWarAcknowledged">
+    <Title>%NotificationDiplomaticContractAllianceToWarAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToWarAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToPeaceProposed">
+    <Title>%NotificationDiplomaticContractColdWarToPeaceProposedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToPeaceProposedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractProposedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToPeaceSigned">
+    <Title>%NotificationDiplomaticContractColdWarToPeaceSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToPeaceSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToPeaceRefused">
+    <Title>%NotificationDiplomaticContractColdWarToPeaceRefusedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToPeaceRefusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractRefusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToPeaceProposed">
+    <Title>%NotificationDiplomaticContractAllianceToPeaceProposedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToPeaceProposedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractProposedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToPeaceSigned">
+    <Title>%NotificationDiplomaticContractAllianceToPeaceSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToPeaceSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToPeaceRefused">
+    <Title>%NotificationDiplomaticContractAllianceToPeaceRefusedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToPeaceRefusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractRefusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractAllianceToPeaceAcknowledged">
+    <Title>%NotificationDiplomaticContractAllianceToPeaceAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractAllianceToPeaceAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToPeaceDeclarationSigned">
+    <Title>%NotificationDiplomaticContractColdWarToPeaceDeclarationSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToPeaceDeclarationSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToPeaceDeclarationAcknowledged">
+    <Title>%NotificationDiplomaticContractColdWarToPeaceDeclarationAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToPeaceDeclarationAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToAllianceProposed">
+    <Title>%NotificationDiplomaticContractColdWarToAllianceProposedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToAllianceProposedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractProposedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToAllianceSigned">
+    <Title>%NotificationDiplomaticContractColdWarToAllianceSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToAllianceSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToAllianceRefused">
+    <Title>%NotificationDiplomaticContractColdWarToAllianceRefusedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToAllianceRefusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractRefusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToAllianceProposed">
+    <Title>%NotificationDiplomaticContractPeaceToAllianceProposedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToAllianceProposedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractProposedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToAllianceSigned">
+    <Title>%NotificationDiplomaticContractPeaceToAllianceSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToAllianceSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  
+</ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToAllianceRefused">
+    <Title>%NotificationDiplomaticContractPeaceToAllianceRefusedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToAllianceRefusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractRefusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToAllianceDeclarationSigned">
+    <Title>%NotificationDiplomaticContractColdWarToAllianceDeclarationSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToAllianceDeclarationSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractColdWarToAllianceDeclarationAcknowledged">
+    <Title>%NotificationDiplomaticContractColdWarToAllianceDeclarationAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractColdWarToAllianceDeclarationAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToAllianceDeclarationSigned">
+    <Title>%NotificationDiplomaticContractPeaceToAllianceDeclarationSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToAllianceDeclarationSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractPeaceToAllianceDeclarationAcknowledged">
+    <Title>%NotificationDiplomaticContractPeaceToAllianceDeclarationAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractPeaceToAllianceDeclarationAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractDealProposed">
+    <Title>%NotificationDiplomaticContractDealProposedTitle</Title>
+    <Description>%NotificationDiplomaticContractDealProposedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractProposedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractDealAccepted">
+    <Title>%NotificationDiplomaticContractDealAcceptedTitle</Title>
+    <Description>%NotificationDiplomaticContractDealAcceptedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractDealSigned">
+    <Title>%NotificationDiplomaticContractDealAcceptedTitle</Title>
+    <Description>%NotificationDiplomaticContractDealAcceptedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractSignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractDealRefused">
+    <Title>%NotificationDiplomaticContractDealRefusedTitle</Title>
+    <Description>%NotificationDiplomaticContractDealRefusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractRefusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractDeclarationSigned">
+    <Title>%NotificationDiplomaticContractDeclarationSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractDeclarationSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractDeclaredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractDeclarationAcknowledged">
+    <Title>%NotificationDiplomaticContractDeclarationAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractDeclarationAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractGratifySigned">
+    <Title>%NotificationDiplomaticContractGratifySignedTitle</Title>
+    <Description>%NotificationDiplomaticContractGratifySignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractGratifyIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractGratifyAcknowledged">
+    <Title>%NotificationDiplomaticContractGratifyAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractGratifyAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractWarningSigned">
+    <Title>%NotificationDiplomaticContractWarningSignedTitle</Title>
+    <Description>%NotificationDiplomaticContractWarningSignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractWarningIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NotificationDiplomaticContractWarningAcknowledged">
+    <Title>%NotificationDiplomaticContractWarningAcknowledgedTitle</Title>
+    <Description>%NotificationDiplomaticContractWarningAcknowledgedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticContractAcknowledgedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+</Datatable>

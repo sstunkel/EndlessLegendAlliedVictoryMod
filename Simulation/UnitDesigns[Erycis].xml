@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ######################################################### -->
+  <!-- ################## ERYCIS HYDRA  UNITS ################## -->
+  <!-- ######################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignErycisHydra#1"                       Model="1020100">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+  </UnitDesign>
+    
+  <!--Used by the Minor Faction tribes to create village armies and roaming armies-->
+  <UnitDesign Name="UnitDesignErycisHydra#MinorEmpireEra1"         Model="1020111">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Torso"                           ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MinorEmpireEra2"         Model="1020112">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="Torso"                           ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MinorEmpireEra3"         Model="1020113">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="Torso"                           ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MinorEmpireEra4"         Model="1020114">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="Torso"                           ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MinorEmpireEra5"         Model="1020115">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="Torso"                           ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MinorEmpireEra6"         Model="1020116">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="Torso"                           ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignErycisHydra#MercenaryEra1"           Model="1020121">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MercenaryEra2"           Model="1020122">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MercenaryEra3"           Model="1020123">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MercenaryEra4"           Model="1020124">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MercenaryEra5"           Model="1020125">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#MercenaryEra6"           Model="1020126">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignErycisHydra#ConvertedEra1"           Model="1020131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <Tags>ConvertedVillageUnit,Era1,Erycis,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#ConvertedEra2"           Model="1020132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <Tags>ConvertedVillageUnit,Era2,Erycis,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#ConvertedEra3"           Model="1020133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <Tags>ConvertedVillageUnit,Era3,Erycis,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#ConvertedEra4"           Model="1020134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <Tags>ConvertedVillageUnit,Era4,Erycis,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#ConvertedEra5"           Model="1020135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <Tags>ConvertedVillageUnit,Era5,Erycis,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#ConvertedEra6"           Model="1020136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <Tags>ConvertedVillageUnit,Era6,Erycis,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignErycisHydra#MinorEmpire"             Model="1020101">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignErycisHydra#Mercenary"               Model="1020102">
+    <UnitBodyDefinitionReference Name="UnitBodyErycisHydra" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityErycis,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

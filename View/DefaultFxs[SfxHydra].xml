@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX HYDRA ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_Erycis_Hydra_Walk">
+    <SoundEventName>Sfx/Faction/Hydra/Hydra_Walk</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Erycis_Hydra_Attack">
+    <SoundEventName>Sfx/Voices/Hydra/Hydra_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Erycis_Hydra_Death">
+    <SoundEventName>Sfx/Voices/Hydra/Hydra_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Erycis_Hydra_Defense">
+    <SoundEventName>Sfx/Voices/Hydra/Hydra_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Erycis_Hydra_Click">
+    <SoundEventName>Sfx/Voices/Hydra/Hydra_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Erycis_Hydra_Order">
+    <SoundEventName>Sfx/Voices/Hydra/Hydra_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Erycis_Hydra_Idle0">
+    <SoundEventName>Sfx/Voices/Hydra/Hydra_Voice_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementColonyBase">
+    <AIParameter Name="Food" Value="1.1000000000000001" />
+    <AIParameter Name="Industry" Value="1.1000000000000001" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood1">
+    <AIParameter Name="Food" Value="2" />
+  </AIParametersDatatableElement>
+</Datatable>

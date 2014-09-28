@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ########################################################### -->
+  <!-- ############## SISTERS OF MERCY JUSTICERE UNITS ########### -->
+  <!-- ########################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#1"                      Model="1090100">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction tribes to create village armies and roaming armies -->
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MinorEmpireEra1"        Model="1090111">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MinorEmpireEra2"        Model="1090112">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MinorEmpireEra3"        Model="1090113">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MinorEmpireEra4"        Model="1090114">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MinorEmpireEra5"        Model="1090115">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MinorEmpireEra6"        Model="1090116">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MercenaryEra1"          Model="1090121">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MercenaryEra2"          Model="1090122">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MercenaryEra3"          Model="1090123">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MercenaryEra4"          Model="1090124">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MercenaryEra5"          Model="1090125">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MercenaryEra6"          Model="1090126">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#ConvertedEra1"          Model="1090131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <Tags>ConvertedVillageUnit,Era1,SistersOfMercy,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#ConvertedEra2"          Model="1090132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <Tags>ConvertedVillageUnit,Era2,SistersOfMercy,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#ConvertedEra3"          Model="1090133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <Tags>ConvertedVillageUnit,Era3,SistersOfMercy,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#ConvertedEra4"          Model="1090134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <Tags>ConvertedVillageUnit,Era4,SistersOfMercy,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#ConvertedEra5"          Model="1090135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <Tags>ConvertedVillageUnit,Era5,SistersOfMercy,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#ConvertedEra6"          Model="1090136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <Tags>ConvertedVillageUnit,Era6,SistersOfMercy,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by Quests to spawn armies -->
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#Quest#Spear"            Model="1090103">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,QuestNPC</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName=""                       />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName=""                       />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#MinorEmpire"            Model="1090101">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName=""                       />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName=""                       />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignSistersOfMercyJusticere#Mercenary"              Model="1090102">
+    <UnitBodyDefinitionReference Name="UnitBodySistersOfMercyJusticere" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinitySistersOfMercy,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

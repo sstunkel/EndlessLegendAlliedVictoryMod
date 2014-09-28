@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX RageWizards ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_TakeOff">
+    <SoundEventName>Sfx/Faction/RageWizards/Hero/RageWizard_Hero_TakeOff</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_Levitation">
+    <SoundEventName>Sfx/Faction/RageWizards/Hero/RageWizard_Hero_Levitation</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_LevitationShort">
+    <SoundEventName>Sfx/Faction/RageWizards/Hero/RageWizard_Hero_LevitationShort</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_FireBall">
+    <SoundEventName>Sfx/Faction/RageWizards/Hero/RageWizard_Hero_FireBall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_LevitationStop">
+    <SoundEventName>Sfx/Faction/RageWizards/Hero/RageWizard_Hero_LevitationStop</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_Idle0">
+    <SoundEventName>Sfx/Faction/RageWizards/Hero/RageWizard_Hero_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_AttackVoice">
+    <SoundEventName>Sfx/Voices/RageWizards/Hero_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_DeathVoice">
+    <SoundEventName>Sfx/Voices/RageWizards/Hero_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Hero_DefenseVoice">
+    <SoundEventName>Sfx/Voices/RageWizards/Hero_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Phoenix_WingFlap">
+    <SoundEventName>Sfx/Faction/RageWizards/Phoenix/RageWizard_Phoenix_WingFlap</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Phoenix_AttackWhoosh">
+    <SoundEventName>Sfx/Faction/RageWizards/Phoenix/RageWizard_Phoenix_AttackWhoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Phoenix_AttackYell">
+    <SoundEventName>Sfx/Faction/RageWizards/Phoenix/RageWizard_Phoenix_AttackYell</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_RageWizard_Phoenix_DeathWhoosh">
+    <SoundEventName>Sfx/Faction/RageWizards/Phoenix/RageWizard_Phoenix_DeathWhoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="RageWizard_Phoenix_DeathYell">
+    <SoundEventName>Sfx/Faction/RageWizards/Phoenix/RageWizard_Phoenix_DeathYell</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_BattleMage_Footstep">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_BattleMage_Staff_Idle0">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_Staff_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_BattleMage_Idle0_Up">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_Idle0_Up</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_BattleMage_Idle0_Down">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_Idle0_Down</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RageWizard_BattleMage_Punch">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_Punch</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_BattleMage_BodyFall">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_BattleMage_DeathFX">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_DeathFX</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="RageWizard_BattleMage_Defense">
+    <SoundEventName>Sfx/Faction/RageWizards/BattleMage/RageWizard_BattleMage_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Witch_Attack">
+    <SoundEventName>Sfx/Faction/RageWizards/Wich/RageWizard_Witch_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Witch_AttackVoice">
+    <SoundEventName>Sfx/Voices/RageWizards/Witch_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Witch_DeathVoice">
+    <SoundEventName>Sfx/Voices/RageWizards/Witch_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Witch_DefenseVoice">
+    <SoundEventName>Sfx/Voices/RageWizards/Witch_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Witch_Levitation">
+    <SoundEventName>Sfx/Faction/RageWizards/Wich/RageWizard_Witch_Levitation</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RageWizard_Settler_Footstep">
+    <SoundEventName>Sfx/Faction/RageWizards/Settlers/RageWizard_Settler_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

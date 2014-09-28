@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ########################################## -->
+  <!-- ######        MAJOR FACTIONS        ###### -->
+  <!-- ########################################## -->
+
+  <GuiElement Name="FactionTraitMajorFaction">
+    <Title>%FactionTraitMajorFactionTitle</Title>
+    <Description>%FactionTraitMajorFactionDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="FactionTraitVaultersMezari">
+    <Title>%FactionTraitMajorFactionTitle</Title>
+    <Description>%FactionTraitMajorFactionDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TraitRandomFaction">
+    <Title>%FactionTraitRandomFactionTitle</Title>
+    <Description>%FactionTraitRandomFactionDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         BROKEN LORDS         ###### -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: Appetite for Dust -->
+  <!-- Can't see/gather Food. Dust can be used to generate growth -->  
+  <ExtendedGuiElement Name="FactionTraitBrokenLords2">
+    <Title>%FactionTraitBrokenLords2Title</Title>
+    <Description>%FactionTraitBrokenLords2Description</Description>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%FactionTraitBrokenLords2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitBrokenLordsMainQuest">
+    <Title>%FactionTraitBrokenLordsMainQuestTitle</Title>
+    <Description>%FactionTraitBrokenLordsMainQuestDescription</Description>
+  </GuiElement>
+
+  <!-- Trait: Dust Dependant -->
+  <!-- No HP regen bonus and techs -->
+  <ExtendedGuiElement Name="FactionTraitBrokenLords3">
+    <Title>%FactionTraitBrokenLords3Title</Title>
+    <Description>%FactionTraitBrokenLords3Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitBrokenLords3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Trait: Dust Efficient -->
+  <!-- +1 Dust on Dust tiles -->
+  <GuiElement Name="FactionTraitBrokenLords1">
+    <Title>%FactionTraitBrokenLords1Title</Title>
+    <Description>%FactionTraitBrokenLords1Description</Description>
+  </GuiElement>
+
+  <!-- Trait: Dustborn -->
+  <!-- Population buyout with Dust -->
+  <ExtendedGuiElement Name="FactionTraitBuyOutPopulation">
+    <Title>%FactionTraitBuyOutPopulationTitle</Title>
+    <Description>%FactionTraitBuyOutPopulationDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitBuyOutPopulationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Unit1: Infantry -->
+  <GuiElement Name="FactionTraitBrokenLordsUnit1">
+    <Title>%UnitBrokenLordsInfantryTitle</Title>
+    <Description>%UnitBrokenLordsInfantryDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Cavalry -->
+  <GuiElement Name="FactionTraitBrokenLordsUnit2">
+    <Title>%UnitBrokenLordsCavalryTitle</Title>
+    <Description>%UnitBrokenLordsCavalryDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Black Bishop -->
+  <GuiElement Name="FactionTraitBrokenLordsUnit3">
+    <Title>%UnitBrokenLordsBlackBishopTitle</Title>
+    <Description>%UnitBrokenLordsBlackBishopDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         MAD FAIRIES          ###### -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: The Sharing -->
+  <ExtendedGuiElement Name="FactionTraitMadFairiesTheSharing">
+    <Title>%FactionTraitMadFairiesTheSharingTitle</Title>
+    <Description>%FactionTraitMadFairiesTheSharingDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitMadFairiesTheSharingTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitMadFairiesMainQuest">
+    <Title>%FactionTraitMadFairiesMainQuestTitle</Title>
+    <Description>%FactionTraitMadFairiesMainQuestDescription</Description>
+  </GuiElement>
+
+  <!-- Quest: Survival Instinct -->
+  <!-- +2 Movement if enemy within sight -->
+  <GuiElement Name="FactionTraitMadFairies3">
+    <Title>%FactionTraitMadFairies3Title</Title>
+    <Description>%FactionTraitMadFairies3Description</Description>
+  </GuiElement>
+
+  <!-- Quest: Visions of Glory -->
+  <!-- + 5 Empire Points earned on construction complete -->
+  <GuiElement Name="FactionTraitMadFairies4">
+    <Title>%FactionTraitMadFairies4Title</Title>
+    <Description>%FactionTraitMadFairies4Description</Description>
+  </GuiElement>
+
+  <!-- Faction Tech: Living Towns -->
+  <!-- +1 Industry per pop on Forest tiles -->
+  <GuiElement Name="FactionTraitMadFairies1">
+    <Title>%FactionTraitMadFairies1Title</Title>
+    <Description>%FactionTraitMadFairies1Description</Description>
+  </GuiElement>
+
+  <!-- Faction Tech: Way of the Woodlands -->
+  <!-- +50% Defense on Units on Forest tiles -->
+  <GuiElement Name="FactionTraitMadFairies2">
+    <Title>%FactionTraitMadFairies2Title</Title>
+    <Description>%FactionTraitMadFairies2Description</Description>
+  </GuiElement>
+
+  <!-- Unit1: Dekari Ranger -->
+  <GuiElement Name="FactionTraitMadFairiesUnit1">
+    <Title>%UnitMadFairiesArcherTitle</Title>
+    <Description>%UnitMadFairiesArcherDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Ayache Shaman -->
+  <GuiElement Name="FactionTraitMadFairiesUnit2">
+    <Title>%UnitMadFairiesShamanTitle</Title>
+    <Description>%UnitMadFairiesShamanDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Tenei Walker -->
+  <GuiElement Name="FactionTraitMadFairiesUnit3">
+    <Title>%UnitMadFairiesForestSpiritTitle</Title>
+    <Description>%UnitMadFairiesForestSpiritDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######           VAULTERS           ###### -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: Holy Resource -->
+  <ExtendedGuiElement Name="FactionTraitAffinityStrategic">
+    <Title>%FactionTraitAffinityStrategicTitle</Title>
+    <Description>%FactionTraitAffinityStrategicDescription</Description>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%FactionTraitAffinityStrategicTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Faction Trait: Knack for Knowledge -->
+  <!-- +1 Science on Science tiles -->  
+  <GuiElement Name="FactionTraitVaulters1">
+    <Title>%FactionTraitVaulters1Title</Title>
+    <Description>%FactionTraitVaulters1Description</Description>
+  </GuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitVaultersMainQuest">
+    <Title>%FactionTraitVaultersMainQuestTitle</Title>
+    <Description>%FactionTraitVaultersMainQuestDescription</Description>
+  </GuiElement>
+
+  <!-- Faction Tech: Deep Generator -->
+  <!-- +10% FIDS on City -->
+  <GuiElement Name="FactionTraitVaulters2">
+    <Title>%FactionTraitVaulters2Title</Title>
+    <Description>%FactionTraitVaulters2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Faction Tech: Strength of the Vault -->
+  <!-- +20 Defense Points on City -->
+  <!-- +5 Defense Recovery on City -->
+  <GuiElement Name="FactionTraitVaulters3">
+    <Title>%FactionTraitVaulters3Title</Title>
+    <Description>%FactionTraitVaulters3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Faction Tech: Endless Recycling -->
+  <!-- +2 Science on all tiles -->
+  <GuiElement Name="FactionTraitVaulters4">
+    <Title>%FactionTraitVaulters4Title</Title>
+    <Description>%FactionTraitVaulters4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Faction Trait: Veins of Auriga -->
+  <!-- +1 Resource per Extractor -->
+  <GuiElement Name="FactionTraitVaulters5">
+    <Title>%FactionTraitVaulters5Title</Title>
+    <Description>%FactionTraitVaulters5Description</Description>
+  </GuiElement>
+
+  <!-- Unit1: Marine -->
+  <GuiElement Name="FactionTraitVaultersUnit1">
+    <Title>%UnitVaultersMarineTitle</Title>
+    <Description>%UnitVaultersMarineDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Dawn Officer -->
+  <GuiElement Name="FactionTraitVaultersUnit2">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Titan -->
+  <GuiElement Name="FactionTraitVaultersUnit3">
+    <Title>%UnitVaultersTitanTitle</Title>
+    <Description>%UnitVaultersTitanDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         NECROPHAGES          ###### -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: Recycling -->
+  <ExtendedGuiElement Name="FactionTraitNecrophagesRecycling">
+    <Title>%FactionTraitNecrophagesRecyclingTitle</Title>
+    <Description>%FactionTraitNecrophagesRecyclingDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitNecrophagesRecyclingTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitNecrophagesMainQuest">
+    <Title>%FactionTraitNecrophagesMainQuestTitle</Title>
+    <Description>%FactionTraitNecrophagesMainQuestDescription</Description>
+  </GuiElement>
+
+  <!-- Unit1: Necrohunter -->
+  <GuiElement Name="FactionTraitNecrophagesUnit1">
+    <Title>%UnitNecrophagesNecrohunterTitle</Title>
+    <Description>%UnitNecrophagesNecrohunterDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Zombat -->
+  <GuiElement Name="FactionTraitNecrophagesUnit2">
+    <Title>%UnitNecrophagesZombatTitle</Title>
+    <Description>%UnitNecrophagesZombatDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Lichbug -->
+  <GuiElement Name="FactionTraitNecrophagesUnit3">
+    <Title>%UnitNecrophagesLichbugTitle</Title>
+    <Description>%UnitNecrophagesLichbugDescription</Description>
+  </GuiElement>
+
+  <!-- Faction Trait: Agriculturally Challenged -->
+  <!-- -1 Food on Food tiles -->
+  <GuiElement Name="FactionTraitNecrophages1">
+    <Title>%FactionTraitNecrophages1Title</Title>
+    <Description>%FactionTraitNecrophages1Description</Description>
+  </GuiElement>
+
+  <!-- Faction Trait: Will of the Hive -->
+  <!-- +4 attack on all units for each declared war -->
+  <GuiElement Name="FactionTraitNecrophages2">
+    <Title>%FactionTraitNecrophages2Title</Title>
+    <Description>%FactionTraitNecrophages2Description</Description>
+  </GuiElement>
+
+  <!-- Faction Trait: Fast Epimorphosis -->
+  <!-- +5 percent HP regen on units (anywere on the map) -->
+  <GuiElement Name="FactionTraitNecrophages3">
+    <Title>%FactionTraitNecrophages3Title</Title>
+    <Description>%FactionTraitNecrophages3Description</Description>
+  </GuiElement>
+
+  <!-- Faction Trait: Cull the Herd -->
+  <!-- +2 food per population for each pacified village in the region -->
+  <GuiElement Name="FactionTraitNecrophages4">
+    <Title>%FactionTraitNecrophages4Title</Title>
+    <Description>%FactionTraitNecrophages4Description</Description>
+  </GuiElement>
+
+  <!-- Faction Trait: Pitiless -->
+  <!-- No peace/alliance / No diplomacy techs and victory / No bribe/talk techs -->
+  <ExtendedGuiElement Name="FactionTraitNecrophages5">
+    <Title>%FactionTraitNecrophages5Title</Title>
+    <Description>%FactionTraitNecrophages5Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitNecrophages5TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Faction Trait: Cannon Fodder -->
+  <!-- -50% unit upkeep -->
+  <GuiElement Name="FactionTraitNecrophages6">
+    <Title>%FactionTraitNecrophages6Title</Title>
+    <Description>%FactionTraitNecrophages6Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Demanding Gods -->
+  <!-- Sacrifice 1 pop  -->
+  <GuiElement Name="FactionTraitNecrophages8">
+    <Title>%FactionTraitNecrophages8Title</Title>
+    <Description>%FactionTraitNecrophages8Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitNecrophages8TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </GuiElement>
+
+  <!-- Spread -->
+  <ExtendedGuiElement Name="FactionTraitNecrophages12">
+    <Title>%FactionTraitNecrophages12Title</Title>
+    <Description>%FactionTraitNecrophages12Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitNecrophages12TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######        RAGE WIZARDS          ###### -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: Arcana Use -->
+  <ExtendedGuiElement Name="FactionTraitRageWizardsArcanaUse">
+    <Title>%FactionTraitRageWizardsArcanaUseTitle</Title>
+    <Description>%FactionTraitRageWizardsArcanaUseDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitRageWizardsArcanaUseTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitRageWizardsMainQuest">
+    <Title>%FactionTraitRageWizardsMainQuestTitle</Title>
+    <Description>%FactionTraitRageWizardsMainQuestDescription</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Arcana of Matter -->
+  <GuiElement Name="FactionTraitRageWizards7">
+    <Title>%TechnologyDefinitionRageWizards7Title</Title>
+    <Description>%TechnologyDefinitionRageWizards7Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards7Custom">
+    <Title>%TechnologyDefinitionRageWizards7Title</Title>
+    <Description>%TechnologyDefinitionRageWizards7Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Arcana of Agility -->
+  <GuiElement Name="FactionTraitRageWizards8">
+    <Title>%TechnologyDefinitionRageWizards8Title</Title>
+    <Description>%TechnologyDefinitionRageWizards8Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards8Custom">
+    <Title>%TechnologyDefinitionRageWizards8Title</Title>
+    <Description>%TechnologyDefinitionRageWizards8Description</Description>
+  </GuiElement>
+    
+  <!-- Faction Tech: Arcana of Authority -->
+  <GuiElement Name="FactionTraitRageWizards9">
+    <Title>%TechnologyDefinitionRageWizards9Title</Title>
+    <Description>%TechnologyDefinitionRageWizards9Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards9Custom">
+    <Title>%TechnologyDefinitionRageWizards9Title</Title>
+    <Description>%TechnologyDefinitionRageWizards9Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Arcana of Materializing -->
+  <GuiElement Name="FactionTraitRageWizards10">
+    <Title>%TechnologyDefinitionRageWizards10Title</Title>
+    <Description>%TechnologyDefinitionRageWizards10Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards10Custom">
+    <Title>%TechnologyDefinitionRageWizards10Title</Title>
+    <Description>%TechnologyDefinitionRageWizards10Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Arcana of Renewal -->
+  <GuiElement Name="FactionTraitRageWizards11">
+    <Title>%TechnologyDefinitionRageWizards11Title</Title>
+    <Description>%TechnologyDefinitionRageWizards11Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards11Custom">
+    <Title>%TechnologyDefinitionRageWizards11Title</Title>
+    <Description>%TechnologyDefinitionRageWizards11Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Dust Purifier -->
+  <GuiElement Name="FactionTraitRageWizards12">
+    <Title>%TechnologyDefinitionRageWizards12Title</Title>
+    <Description>%TechnologyDefinitionRageWizards12Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards12Custom">
+    <Title>%TechnologyDefinitionRageWizards12Title</Title>
+    <Description>%TechnologyDefinitionRageWizards12Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Painosphere -->
+  <GuiElement Name="FactionTraitRageWizards13">
+    <Title>%TechnologyDefinitionRageWizards13Title</Title>
+    <Description>%TechnologyDefinitionRageWizards13Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards13Custom">
+    <Title>%TechnologyDefinitionRageWizards13Title</Title>
+    <Description>%TechnologyDefinitionRageWizards13Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Dust Mechanics -->
+  <GuiElement Name="FactionTraitRageWizards14">
+    <Title>%TechnologyDefinitionRageWizards14Title</Title>
+    <Description>%TechnologyDefinitionRageWizards14Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards14Custom">
+    <Title>%TechnologyDefinitionRageWizards14Title</Title>
+    <Description>%TechnologyDefinitionRageWizards14Description</Description>
+  </GuiElement>
+  
+  <!-- Faction Tech: Sacrificial Amplifiers -->
+  <GuiElement Name="FactionTraitRageWizards15">
+    <Title>%TechnologyDefinitionRageWizards15Title</Title>
+    <Description>%TechnologyDefinitionRageWizards15Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitRageWizards15Custom">
+    <Title>%TechnologyDefinitionRageWizards15Title</Title>
+    <Description>%TechnologyDefinitionRageWizards15Description</Description>
+  </GuiElement>
+
+  <!-- Unit1: Battle Mage -->
+  <GuiElement Name="FactionTraitRageWizardsUnit1">
+    <Title>%UnitRageWizardsBattleMageTitle</Title>
+    <Description>%UnitRageWizardsBattleMageDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Witch -->
+  <GuiElement Name="FactionTraitRageWizardsUnit2">
+    <Title>%UnitRageWizardsWitchTitle</Title>
+    <Description>%UnitRageWizardsWitchDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Phoenix -->
+  <GuiElement Name="FactionTraitRageWizardsUnit3">
+    <Title>%UnitRageWizardsPhoenixTitle</Title>
+    <Description>%UnitRageWizardsPhoenixDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######        ROVING CLANS          ###### -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: Nomadic Cities -->
+  <ExtendedGuiElement Name="FactionTraitRovingClans12">
+    <Title>%FactionTraitRovingClans12Title</Title>
+    <Description>%FactionTraitRovingClans12Description</Description>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%FactionTraitRovingClans12TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitRovingClansMainQuest">
+    <Title>%FactionTraitRovingClansMainQuestTitle</Title>
+    <Description>%FactionTraitRovingClansMainQuestDescription</Description>
+  </GuiElement>
+
+  <!-- Unit1: Dervish -->
+  <GuiElement Name="FactionTraitRovingClansUnit1">
+    <Title>%UnitRovingClansDervishTitle</Title>
+    <Description>%UnitRovingClansDervishDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Kassai -->
+  <GuiElement Name="FactionTraitRovingClansUnit2">
+    <Title>%UnitRovingClansKassaiTitle</Title>
+    <Description>%UnitRovingClansKassaiDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Berzerk -->
+  <GuiElement Name="FactionTraitRovingClansUnit3">
+    <Title>%UnitRovingClansBerzerkTitle</Title>
+    <Description>%UnitRovingClansBerzerkDescription</Description>
+  </GuiElement>
+
+  <!-- Business agreement -->
+  <ExtendedGuiElement Name="FactionTraitRovingClans6">
+    <Title>%FactionTraitRovingClans6Title</Title>
+    <Description>%FactionTraitRovingClans6Description</Description>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%FactionTraitRovingClans6TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- The Army without banners -->
+  <GuiElement Name="FactionTraitRovingClans7">
+    <Title>%FactionTraitRovingClans7Title</Title>
+    <Description>%FactionTraitRovingClans7Description</Description>
+  </GuiElement>
+
+  <!-- Faction Trait: Make Trade Not War -->
+  <!-- No declare war diplomatic option -->
+  <ExtendedGuiElement Name="FactionTraitRovingClans8">
+    <Title>%FactionTraitRovingClans8Title</Title>
+    <Description>%FactionTraitRovingClans8Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitRovingClans8TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <!-- Insider Trading -->
+  <!-- Additional information on the marketplace -->
+  <ExtendedGuiElement Name="FactionTraitRovingClans9">
+    <Title>%FactionTraitRovingClans9Title</Title>
+    <Description>%FactionTraitRovingClans9Description</Description>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%FactionTraitRovingClans9TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Cuts Both Ways -->
+  <!-- Dust bonus for each item bought or sold by another empire from the marketplace -->
+  <ExtendedGuiElement Name="FactionTraitRovingClans10">
+    <Title>%FactionTraitRovingClans10Title</Title>
+    <Description>%FactionTraitRovingClans10Description</Description>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%FactionTraitRovingClans10TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Keys to the Market -->
+  <!-- Market Ban -->
+  <ExtendedGuiElement Name="FactionTraitRovingClans11">
+    <Title>%FactionTraitRovingClans11Title</Title>
+    <Description>%FactionTraitRovingClans11Description</Description>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%FactionTraitRovingClans11TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Trait : upkeep malus in winter -->
+  <GuiElement Name="FactionTraitRovingClans13">
+    <Title>%FactionTraitRovingClans13Title</Title>
+    <Description>%FactionTraitRovingClans13Description</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ########         DRAKKENS         ######## -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: Diplomatic Pressure -->
+  <ExtendedGuiElement Name="FactionTraitDrakkens6">
+    <Title>%FactionTraitDrakkens6Title</Title>
+    <Description>%FactionTraitDrakkens6Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitDrakkens6TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Well Connected -->
+  <ExtendedGuiElement Name="FactionTraitDrakkens7Placeholder">
+    <Title>%FactionTraitDrakkens7Title</Title>
+    <Description>%FactionTraitDrakkens7Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitDrakkens7TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!--  -->
+  <ExtendedGuiElement Name="FactionTraitDrakkens8">
+    <Title>%FactionTraitDrakkens8Title</Title>
+    <Description>%FactionTraitDrakkens8Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitDrakkens8TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!--  -->
+  <GuiElement Name="FactionTraitDrakkens9">
+    <Title>%FactionTraitDrakkens9Title</Title>
+    <Description>%FactionTraitDrakkens9Description</Description>
+  </GuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitDrakkensMainQuest">
+    <Title>%FactionTraitDrakkensMainQuestTitle</Title>
+    <Description>%FactionTraitDrakkensMainQuestDescription</Description>
+  </GuiElement>
+
+  <!-- Unit1: Drakkenling -->
+  <GuiElement Name="FactionTraitDrakkensUnit1">
+    <Title>%UnitDrakkensDrakkenlingTitle</Title>
+    <Description>%UnitDrakkensDrakkenlingDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Wyvern -->
+  <GuiElement Name="FactionTraitDrakkensUnit2">
+    <Title>%UnitDrakkensWyvernTitle</Title>
+    <Description>%UnitDrakkensWyvernDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Ancient Dragon -->
+  <GuiElement Name="FactionTraitDrakkensUnit3">
+    <Title>%UnitDrakkensAncientDragonTitle</Title>
+    <Description>%UnitDrakkensAncientDragonDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ########         CULTISTS         ######## -->
+  <!-- ########################################## -->
+
+  <!-- Affinity: High Seat of the Queen -->
+  <ExtendedGuiElement Name="FactionTraitCultists7">
+    <Title>%FactionTraitCultists7Title</Title>
+    <Description>%FactionTraitCultists7Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitCultists7TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!--  -->
+  <ExtendedGuiElement Name="FactionTraitCultists9">
+    <Title>%FactionTraitCultists9Title</Title>
+    <Description>%FactionTraitCultists9Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitCultists9TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!--  -->
+  <GuiElement Name="FactionTraitCultists10">
+    <Title>%FactionTraitCultists10Title</Title>
+    <Description>%FactionTraitCultists10Description</Description>
+  </GuiElement>
+
+  <!--  -->
+  <GuiElement Name="FactionTraitCultists11">
+    <Title>%FactionTraitCultists11Title</Title>
+    <Description>%FactionTraitCultists11Description</Description>
+  </GuiElement>
+
+  <!--  -->
+  <GuiElement Name="FactionTraitCultists12">
+    <Title>%FactionTraitCultists12Title</Title>
+    <Description>%FactionTraitCultists12Description</Description>
+  </GuiElement>
+
+  <!--  -->
+  <GuiElement Name="FactionTraitCultists13">
+    <Title>%FactionTraitCultists13Title</Title>
+    <Description>%FactionTraitCultists13Description</Description>
+  </GuiElement>
+
+  <!--  -->
+  <ExtendedGuiElement Name="FactionTraitCultists14">
+    <Title>%FactionTraitCultists14Title</Title>
+    <Description>%FactionTraitCultists14Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitCultists14TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Main Quest -->
+  <GuiElement Name="FactionTraitCultistsMainQuest">
+    <Title>%FactionTraitCultistsMainQuestTitle</Title>
+    <Description>%FactionTraitCultistsMainQuestDescription</Description>
+  </GuiElement>
+
+  <!-- Unit1: Preacher -->
+  <GuiElement Name="FactionTraitCultistsUnit1">
+    <Title>%UnitCultistsPreacherTitle</Title>
+    <Description>%UnitCultistsPreacherDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2: Fanatic -->
+  <GuiElement Name="FactionTraitCultistsUnit2">
+    <Title>%UnitCultistsFanaticTitle</Title>
+    <Description>%UnitCultistsFanaticDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3: Nameless Guard -->
+  <GuiElement Name="FactionTraitCultistsUnit3">
+    <Title>%UnitCultistsNamelessGuardTitle</Title>
+    <Description>%UnitCultistsNamelessGuardDescription</Description>
+  </GuiElement>
+
+
+  
+  <!-- ########################################## -->
+  <!-- ##########      MEZARI        ########## -->
+  <!-- ########################################## -->
+
+  <!-- Unit1 -->
+  <GuiElement Name="FactionTraitMezariUnit1">
+    <Title>%UnitVaultersMarineTitle</Title>
+    <Description>%UnitVaultersMarineDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2 -->
+  <GuiElement Name="FactionTraitMezariUnit2">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3 -->
+  <GuiElement Name="FactionTraitMezariUnit3">
+    <Title>%UnitVaultersTitanTitle</Title>
+    <Description>%UnitVaultersTitanDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ##########      TUTORIAL        ########## -->
+  <!-- ########################################## -->
+
+  <!-- Unit1 -->
+  <GuiElement Name="FactionTraitTutorialUnit1">
+    <Title>%UnitVaultersMarineTitle</Title>
+    <Description>%UnitVaultersMarineDescription</Description>
+  </GuiElement>
+
+  <!-- Unit2 -->
+  <GuiElement Name="FactionTraitTutorialUnit2">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+  </GuiElement>
+
+  <!-- Unit3 -->
+  <GuiElement Name="FactionTraitTutorialUnit3">
+    <Title>%UnitVaultersTitanTitle</Title>
+    <Description>%UnitVaultersTitanDescription</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         TECHNOLOGIES         ###### -->
+  <!-- ########################################## -->
+
+  <!-- Technology Faction Trait -->
+  <GuiElement Name="FactionTraitTechnologyFood0">
+    <Title>%TechnologyDefinitionFood0Title</Title>
+    <Description>%TechnologyDefinitionFood0Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyIndustry0">
+    <Title>%TechnologyDefinitionIndustry0Title</Title>
+    <Description>%TechnologyDefinitionIndustry0Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDust0">
+    <Title>%TechnologyDefinitionDust0Title</Title>
+    <Description>%TechnologyDefinitionDust0Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDust1">
+    <Title>%TechnologyDefinitionDust1Title</Title>
+    <Description>%TechnologyDefinitionDust1Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyScience0">
+    <Title>%TechnologyDefinitionScience0Title</Title>
+    <Description>%TechnologyDefinitionScience0Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyScience8">
+    <Title>%TechnologyDefinitionScience8Title</Title>
+    <Description>%TechnologyDefinitionScience8Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyApproval1">
+    <Title>%TechnologyDefinitionApproval1Title</Title>
+    <Description>%TechnologyDefinitionApproval1Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyWeaponCommonTier1">
+    <Title>%TechnologyDefinitionWeaponCommonTier1Title</Title>
+    <Description>%TechnologyDefinitionWeaponCommonTier1Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyArmorCommonTier1">
+    <Title>%TechnologyDefinitionArmorCommonTier1Title</Title>
+    <Description>%TechnologyDefinitionArmorCommonTier1Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyStrategicExtractionCommon">
+    <Title>%TechnologyDefinitionStrategicExtractionCommonTitle</Title>
+    <Description>%TechnologyDefinitionStrategicExtractionCommonDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyLuxuryExtractionCommon">
+    <Title>%TechnologyDefinitionLuxuryExtractionCommonTitle</Title>
+    <Description>%TechnologyDefinitionLuxuryExtractionCommonDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionNecrophagesUnit2">
+    <Title>%UnitNecrophagesZombatTitle</Title>
+    <Description>%UnitNecrophagesZombatDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionRageWizards7">
+    <Title>%TechnologyDefinitionRageWizards7Title</Title>
+    <Description>%TechnologyDefinitionRageWizards7Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionRageWizards7Custom">
+    <Title>%TechnologyDefinitionRageWizards7Title</Title>
+    <Description>%TechnologyDefinitionRageWizards7Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionRageWizards8">
+    <Title>%TechnologyDefinitionRageWizards8Title</Title>
+    <Description>%TechnologyDefinitionRageWizards8Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionRageWizards8Custom">
+    <Title>%TechnologyDefinitionRageWizards8Title</Title>
+    <Description>%TechnologyDefinitionRageWizards8Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionMarketplaceResources">
+    <Title>%TechnologyDefinitionMarketplaceResourcesTitle</Title>
+    <Description>%TechnologyDefinitionMarketplaceResourcesDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionMarketplaceMercenaries">
+    <Title>%TechnologyDefinitionMarketplaceMercenariesTitle</Title>
+    <Description>%TechnologyDefinitionMarketplaceMercenariesDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionMapActionParley">
+    <Title>%TechnologyDefinitionMapActionParleyTitle</Title>
+    <Description>%TechnologyDefinitionMapActionParleyDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionSearchBonus">
+    <Title>%TechnologyDefinitionSearchBonusTitle</Title>
+    <Description>%TechnologyDefinitionSearchBonusDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitTechnologyDefinitionDefense1">
+    <Title>%TechnologyDefinitionDefense1Title</Title>
+    <Description>%TechnologyDefinitionDefense1Description</Description>
+  </GuiElement>
+  
+
+
+  <!-- ########################################## -->
+  <!-- ######            CUSTOM            ###### -->
+  <!-- ########################################## -->
+
+  <!-- Faction Tech: Deep Generator -->
+  <!-- +10% FIDS on City -->
+  <GuiElement Name="FactionTraitVaulters2Custom">
+    <Title>%FactionTraitVaulters2Title</Title>
+    <Description>%FactionTraitVaulters2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Faction Tech: Strength of the Vault -->
+  <!-- +20 Defense Points on City -->
+  <!-- +5 Defense Recovery on City -->
+  <GuiElement Name="FactionTraitVaulters3Custom">
+    <Title>%FactionTraitVaulters3Title</Title>
+    <Description>%FactionTraitVaulters3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Faction Tech: Endless Recycling -->
+  <!-- +2 Science on all tiles -->
+  <GuiElement Name="FactionTraitVaulters4Custom">
+    <Title>%FactionTraitVaulters4Title</Title>
+    <Description>%FactionTraitVaulters4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters4Large" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- Winter Shelter -->
+  <GuiElement Name="FactionTraitVaulters6Custom">
+    <Title>%FactionTraitVaulters6CustomTitle</Title>
+    <Description>%FactionTraitVaulters6CustomDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters6Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- DIPLOMACY -->
+  
+  <!-- Naive -->
+  <GuiElement Name="FactionTraitDiplomacy1Level1">
+    <Title>%FactionTraitDiplomacy1Title</Title>
+    <Description>%FactionTraitDiplomacy1Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitDiplomacy1Level2">
+    <Title>%FactionTraitDiplomacy1Title</Title>
+    <Description>%FactionTraitDiplomacy1Description</Description>
+  </GuiElement>
+
+
+
+  <!-- ARMY -->
+
+  <!-- Meticulous Analysis -->
+  <GuiElement Name="FactionTraitArmy1Level1">
+    <Title>%FactionTraitArmy1Title</Title>
+    <Description>%FactionTraitArmy1Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitArmy1Level2">
+    <Title>%FactionTraitArmy1Title</Title>
+    <Description>%FactionTraitArmy1Description</Description>
+  </GuiElement>
+
+  <!-- Fragile Health -->
+  <GuiElement Name="FactionTraitArmy2Level1">
+    <Title>%FactionTraitArmy2Title</Title>
+    <Description>%FactionTraitArmy2Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitArmy2Level2">
+    <Title>%FactionTraitArmy2Title</Title>
+    <Description>%FactionTraitArmy2Description</Description>
+  </GuiElement>
+
+  <!-- Big Armies -->
+  <GuiElement Name="FactionTraitArmy3PositiveLevel1">
+    <Title>%FactionTraitArmy3PositiveTitle</Title>
+    <Description>%FactionTraitArmy3PositiveDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitArmy3PositiveLevel2">
+    <Title>%FactionTraitArmy3PositiveTitle</Title>
+    <Description>%FactionTraitArmy3PositiveDescription</Description>
+  </GuiElement>
+
+  <!-- Anarchists -->
+  <GuiElement Name="FactionTraitArmy3NegativeLevel1">
+    <Title>%FactionTraitArmy3NegativeTitle</Title>
+    <Description>%FactionTraitArmy3NegativeDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitArmy3NegativeLevel2">
+    <Title>%FactionTraitArmy3NegativeTitle</Title>
+    <Description>%FactionTraitArmy3NegativeDescription</Description>
+  </GuiElement>
+
+  <!-- Fast Travelers -->
+  <GuiElement Name="FactionTraitArmy4PositiveLevel1">
+    <Title>%FactionTraitArmy4PositiveTitle</Title>
+    <Description>%FactionTraitArmy4PositiveDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitArmy4PositiveLevel2">
+    <Title>%FactionTraitArmy4PositiveTitle</Title>
+    <Description>%FactionTraitArmy4PositiveDescription</Description>
+  </GuiElement>
+
+  <!-- Slow Travelers -->
+  <GuiElement Name="FactionTraitArmy4NegativeLevel1">
+    <Title>%FactionTraitArmy4NegativeTitle</Title>
+    <Description>%FactionTraitArmy4NegativeDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitArmy4NegativeLevel2">
+    <Title>%FactionTraitArmy4NegativeTitle</Title>
+    <Description>%FactionTraitArmy4NegativeDescription</Description>
+  </GuiElement>
+
+  <!-- Offense Last -->
+  <GuiElement Name="FactionTraitArmy5">
+    <Title>%FactionTraitArmy5Title</Title>
+    <Description>%FactionTraitArmy5Description</Description>
+  </GuiElement>
+
+  <!-- Weak Defense -->
+  <GuiElement Name="FactionTraitArmy6">
+    <Title>%FactionTraitArmy6Title</Title>
+    <Description>%FactionTraitArmy6Description</Description>
+  </GuiElement>
+
+  <!-- Offense First -->
+  <GuiElement Name="FactionTraitArmy7">
+    <Title>%FactionTraitArmy7Title</Title>
+    <Description>%FactionTraitArmy7Description</Description>
+  </GuiElement>
+
+  <!-- Optimal Defense -->
+  <GuiElement Name="FactionTraitArmy8">
+    <Title>%FactionTraitArmy8Title</Title>
+    <Description>%FactionTraitArmy8Description</Description>
+  </GuiElement>
+
+
+
+  <!-- ECONOMY -->
+  
+  <!-- Businessmen -->
+  <GuiElement Name="FactionTraitEconomy1PositiveLevel1">
+    <Title>%FactionTraitEconomy1PositiveTitle</Title>
+    <Description>%FactionTraitEconomy1PositiveDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitEconomy1PositiveLevel2">
+    <Title>%FactionTraitEconomy1PositiveTitle</Title>
+    <Description>%FactionTraitEconomy1PositiveDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitEconomy1PositiveLevel3">
+    <Title>%FactionTraitEconomy1PositiveTitle</Title>
+    <Description>%FactionTraitEconomy1PositiveDescription</Description>
+  </GuiElement>
+
+  <!-- Spendthrifts --> 
+  <GuiElement Name="FactionTraitEconomy1NegativeLevel1">
+    <Title>%FactionTraitEconomy1NegativeTitle</Title>
+    <Description>%FactionTraitEconomy1NegativeDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitEconomy1NegativeLevel2">
+    <Title>%FactionTraitEconomy1NegativeTitle</Title>
+    <Description>%FactionTraitEconomy1NegativeDescription</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitEconomy1NegativeLevel3">
+    <Title>%FactionTraitEconomy1NegativeTitle</Title>
+    <Description>%FactionTraitEconomy1NegativeDescription</Description>
+  </GuiElement>
+
+   <!-- Dust Archaeology -->
+  <ExtendedGuiElement Name="FactionTraitEconomy2PositiveLevel1">
+    <Title>%FactionTraitEconomy2PositiveTitle</Title>
+    <Description>%FactionTraitEconomy2PositiveDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitEconomy2PositiveLevel1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="FactionTraitEconomy2PositiveLevel2">
+    <Title>%FactionTraitEconomy2PositiveTitle</Title>
+    <Description>%FactionTraitEconomy2PositiveDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitEconomy2PositiveLevel2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Dust Starved -->
+  <ExtendedGuiElement Name="FactionTraitEconomy2NegativeLevel1">
+    <Title>%FactionTraitEconomy2NegativeTitle</Title>
+    <Description>%FactionTraitEconomy2NegativeDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitEconomy2NegativeLevel1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement> 
+  <ExtendedGuiElement Name="FactionTraitEconomy2NegativeLevel2">
+    <Title>%FactionTraitEconomy2NegativeTitle</Title>
+    <Description>%FactionTraitEconomy2NegativeDescription</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitEconomy2NegativeLevel2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement> 
+
+  <!-- Entrepreneur -->
+  <GuiElement Name="FactionTraitEconomy3">
+    <Title>%FactionTraitEconomy3Title</Title>
+    <Description>%FactionTraitEconomy3Description</Description>
+  </GuiElement>
+
+  <!-- Merchants -->
+  <GuiElement Name="FactionTraitEconomy4Level1">
+    <Title>%FactionTraitEconomy4Title</Title>
+    <Description>%FactionTraitEconomy4Description</Description>
+  </GuiElement>
+  <GuiElement Name="FactionTraitEconomy4Level2">
+    <Title>%FactionTraitEconomy4Title</Title>
+    <Description>%FactionTraitEconomy4Description</Description>
+  </GuiElement>
+
+  <!-- Titanium Legacy -->
+  <ExtendedGuiElement Name="FactionTraitEconomy5">
+    <Title>%FactionTraitEconomy5Title</Title>
+    <Description>%FactionTraitEconomy5Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitEconomy5TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Glassteel Legacy -->
+  <ExtendedGuiElement Name="FactionTraitEconomy6">
+    <Title>%FactionTraitEconomy6Title</Title>
+    <Description>%FactionTraitEconomy6Description</Description>
+    <TooltipElement>
+      <EffectOverride>%FactionTraitEconomy6TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Food Efficient -->
+  <GuiElement Name="FactionTraitEconomy7Positive">
+    <Title>%FactionTraitEconomy7PositiveTitle</Title>
+    <Description>%FactionTraitEconomy7PositiveDescription</Description>
+  </GuiElement>
+
+  <!-- Industry Efficient -->
+  <GuiElement Name="FactionTraitEconomy8Positive">
+    <Title>%FactionTraitEconomy8PositiveTitle</Title>
+    <Description>%FactionTraitEconomy8PositiveDescription</Description>
+  </GuiElement>
+
+  <!-- Industry Inefficient -->
+  <GuiElement Name="FactionTraitEconomy8Negative">
+    <Title>%FactionTraitEconomy8NegativeTitle</Title>
+    <Description>%FactionTraitEconomy8NegativeDescription</Description>
+  </GuiElement>
+
+  <!-- Goods of Auriga -->
+  <GuiElement Name="FactionTraitEconomy9">
+    <Title>%FactionTraitEconomy9Title</Title>
+    <Description>%FactionTraitEconomy9Description</Description>
+  </GuiElement>
+
+  <!-- Dust Inefficient -->
+  <GuiElement Name="FactionTraitEconomy10Negative">
+    <Title>%FactionTraitEconomy10NegativeTitle</Title>
+    <Description>%FactionTraitEconomy10NegativeDescription</Description>
+  </GuiElement>
+
+  <!-- Science Inefficient -->
+  <GuiElement Name="FactionTraitEconomy11Negative">
+    <Title>%FactionTraitEconomy11NegativeTitle</Title>
+    <Description>%FactionTraitEconomy11NegativeDescription</Description>
+  </GuiElement>
+
+  <!-- Landscapist -->
+  <GuiElement Name="FactionTraitEconomy12">
+    <Title>%FactionTraitEconomy12Title</Title>
+    <Description>%FactionTraitEconomy12Description</Description>
+  </GuiElement>
+  
+  
+  <GuiElement Name="FactionTraitFounderPack1">
+    <Title>%FactionTraitFounderPack1Title</Title>
+    <Description>%FactionTraitFounderPack1Description</Description>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######        MINOR FACTIONS        ###### -->
+  <!-- ########################################## -->
+  
+  <!-- Filters -->
+  <GuiElement Name="CustomTraitFamilyFilterAll">
+    <Title>%CustomTraitFamilyFilterAllTitle</Title>
+    <Description>%CustomTraitFamilyFilterAllDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilterStartingTechnology">
+    <Title>%CustomTraitFamilyFilterStartingTechnologyTitle</Title>
+    <Description>%CustomTraitFamilyFilterStartingTechnologyDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilterTrait">
+    <Title>%CustomTraitFamilyFilterTraitTitle</Title>
+    <Description>%CustomTraitFamilyFilterTraitDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilterTechnology">
+    <Title>%CustomTraitFamilyFilterTechnologyTitle</Title>
+    <Description>%CustomTraitFamilyFilterTechnologyDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilterEconomy">
+    <Title>%CustomTraitFamilyFilterEconomyTitle</Title>
+    <Description>%CustomTraitFamilyFilterEconomyDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilterMilitary">
+    <Title>%CustomTraitFamilyFilterMilitaryTitle</Title>
+    <Description>%CustomTraitFamilyFilterMilitaryDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilterDiplomacy">
+    <Title>%CustomTraitFamilyFilterDiplomacyTitle</Title>
+    <Description>%CustomTraitFamilyFilterDiplomacyDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilterSpells">
+    <Title>%CustomTraitFamilyFilterSpellsTitle</Title>
+    <Description>%CustomTraitFamilyFilterSpellsDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitFamilyFilter">	<!-- THIS ONE SHOULD NEVER APPEAR -->
+    <Title>%CustomTraitFamilyFilterTitle</Title>
+    <Description>%CustomTraitFamilyFilterDescription</Description>
+  </GuiElement>
+  
+  <!-- Sorts -->
+  <GuiElement Name="CustomTraitSortName">
+    <Title>%CustomTraitSortNameTitle</Title>
+    <Description>%CustomTraitSortNameDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitSortLevel">
+    <Title>%CustomTraitSortLevelTitle</Title>
+    <Description>%CustomTraitSortLevelDescription</Description>
+  </GuiElement>
+  <GuiElement Name="CustomTraitSortCost">
+    <Title>%CustomTraitSortCostTitle</Title>
+    <Description>%CustomTraitSortCostDescription</Description>
+  </GuiElement>
+
+</Datatable>

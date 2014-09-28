@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+  <!-- #################################    BATTLE ACTIONS WITH THE VISUAL DATA AND SPECIFIC GAMEPLAY   ########################################### -->
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+
+  <!-- ===================================== VAULTERS SETTLER ======================================== -->
+  
+  <!-- ===================================== VAULTERS MARINE ======================================== -->
+  <!-- Default Hit -->
+  <BattleActionUnit Name="BattleActionUnitVaultersMarineAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Vaulters_Arrow_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" Angle="45" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Vaulters_Arrow_01" RangeRestriction="CloseRange" Speed="5" Trajectory="linear" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+    </BattleActionData>
+  </BattleActionUnit>
+
+  <!-- ===================================== VAULTERS DAWN OFFICER ======================================== -->
+  <BattleActionUnit Name="BattleActionUnitVaultersDawnOfficerCharging" Type="Move">
+  <InterpreterPrerequisite Inverted="false">$Count(ClassUnit,UnitAbilityActiveChargeDescriptor) ge 1</InterpreterPrerequisite>
+    <BattleEffects TargetsFilter="Initiator Alive">
+      <!-- TO BE REPLACED: use the Broken Lord VFX -->
+      <BattleEffect_Void Name="BattleActionUnitVaultersDawnOfficerPassive_BattleEffectChargeUp" />
+    </BattleEffects>
+  </BattleActionUnit>
+
+  <!-- ===================================== VAULTERS TITAN ======================================== -->
+  
+  <!-- ===================================== VAULTERS HERO ======================================== -->
+  <!-- Default Hit  -->
+  <BattleActionUnit Name="BattleActionUnitVaultersHeroAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Vaulters_Arrow_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" Angle="45" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Vaulters_Arrow_01" RangeRestriction="CloseRange" Speed="5" Trajectory="linear" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+    </BattleActionData>
+  </BattleActionUnit>
+</Datatable>

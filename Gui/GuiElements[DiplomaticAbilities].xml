@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="DiplomaticAbilityMapExchange">
+    <Title>%DiplomaticAbilityMapExchangeTitle</Title>
+    <Description>%DiplomaticAbilityMapExchangeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityMapExchangeSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticAbilityVisionExchange">
+    <Title>%DiplomaticAbilityVisionExchangeTitle</Title>
+    <Description>%DiplomaticAbilityVisionExchangeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityVisionExchangeSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticAbilityTradeRoute">
+    <Title>%DiplomaticAbilityTradeRoutesTitle</Title>
+    <Description>%DiplomaticAbilityTradeRoutesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityTradeRoutesSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticAbilityCommercialAgreement">
+    <Title>%DiplomaticAbilityCommercialAgreementTitle</Title>
+    <Description>%DiplomaticAbilityCommercialAgreementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityCommercialAgreementSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityResearchAgreement">
+    <Title>%DiplomaticAbilityResearchAgreementTitle</Title>
+    <Description>%DiplomaticAbilityResearchAgreementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityResearchAgreementSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityPrestigeTrend">
+    <Title>%DiplomaticAbilityPrestigeGainsTitle</Title>
+    <Description>%DiplomaticAbilityPrestigeGainsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityPrestigeGainsSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityPrestigeForKill">
+    <Title>%DiplomaticAbilityPrestigeForKillsTitle</Title>
+    <Description>%DiplomaticAbilityPrestigeForKillsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityPrestigeForKillsSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityShareRoads">
+    <Title>%DiplomaticAbilityRoadsShareTitle</Title>
+    <Description>%DiplomaticAbilityRoadsShareDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityRoadsShareSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityColdWarAttackArmies">
+    <Title>%DiplomaticAbilityLimitedAggressionsTitle</Title>
+    <Description>%DiplomaticAbilityLimitedAggressionsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityLimitedAggressionsSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityWar">
+    <Title>%DiplomaticAbilityWarTitle</Title>
+    <Description>%DiplomaticAbilityWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityWarSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityMutualCloseBorders">
+    <Title>%DiplomaticAbilityMutualCloseBordersTitle</Title>
+    <Description>%DiplomaticAbilityMutualCloseBordersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityMutualCloseBordersSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityPersonaNonGrata">
+    <Title>%DiplomaticAbilityPersonaNonGrataTitle</Title>
+    <Description>%DiplomaticAbilityPersonaNonGrataDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityPersonaNonGrataSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityLockedOut">
+    <Title>%DiplomaticAbilityLockedOutTitle</Title>
+    <Description>%DiplomaticAbilityLockedOutDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityLockedOutSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityColdLeverage">
+    <Title>%DiplomaticAbilityColdLeverageTitle</Title>
+    <Description>%DiplomaticAbilityColdLeverageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityColdLeverageSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityNoAggressions">
+    <Title>%DiplomaticAbilityNoAggressionsTitle</Title>
+    <Description>%DiplomaticAbilityNoAggressionsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityNoAggressionsSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticAbilityMarketBanner">
+    <Title>%DiplomaticAbilityMarketBannerTitle</Title>
+    <Description>%DiplomaticAbilityMarketBannerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityMarketBannerSmall" />
+    </Icons>
+  </GuiElement>
+  
+</Datatable>

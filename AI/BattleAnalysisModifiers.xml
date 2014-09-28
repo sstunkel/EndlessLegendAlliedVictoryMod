@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--
+    Modifiers can take any number of PathPrerequisite
+    Modifiers can take any number of InterpreterPrerequisite with an additional $(opponentGarrison) variable to the oponent's army
+  -->
+
+  <!-- TERRAIN INFLUENCE -->
+  <BattleAnalysisModifiers Name="DefaultTerrainInfluence">
+    <PathPrerequisite Inverted="true">UnitClassRanged</PathPrerequisite>
+    <Modifier Name="Terrain" Value="0.5"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="ForestRageTerrainInfluence">
+    <PathPrerequisite Inverted="false">UnitAbilityForestRageDescriptor</PathPrerequisite>
+    <Modifier Name="Terrain" Value="1.5"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="ForestResonanceTerrainInfluence">
+    <PathPrerequisite Inverted="false">UnitAbilityForestResonanceDescriptor</PathPrerequisite>
+    <Modifier Name="Terrain" Value="1.5"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="HighTerrainInfluence">
+    <InterpreterPrerequisite>$Path(UnitClassRanged) or $Path(UnitSettler)</InterpreterPrerequisite>
+    <Modifier Name="Terrain" Value="1"/>
+  </BattleAnalysisModifiers>
+
+  <!-- ALLIED INFLUENCE -->
+  <BattleAnalysisModifiers Name="DefaultNearAlliedInfluence">
+    <PathPrerequisite Inverted="true">UnitClassCavalry</PathPrerequisite>
+    <Modifier Name="NearAllied" Value="1.0"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="LowNearAlliedInfluence">
+    <PathPrerequisite>UnitClassCavalry</PathPrerequisite>
+    <Modifier Name="NearAllied" Value="0.5"/>
+  </BattleAnalysisModifiers>
+
+
+  <BattleAnalysisModifiers Name="SharedWisdomNearAlliedInfluence">
+    <PathPrerequisite Inverted="false">UnitAbilitySharedWisdomDescriptor</PathPrerequisite>
+    <Modifier Name="NearAllied" Value="2.0"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="HealingHaloNearAlliedInfluence">
+    <PathPrerequisite Inverted="false">UnitAbilityHealingHaloDescriptor</PathPrerequisite>
+    <Modifier Name="NearAllied" Value="1.5"/>
+  </BattleAnalysisModifiers>
+
+  <!-- REINFORCEMENT POINTS INFLUENCE -->
+  <BattleAnalysisModifiers Name="AvoidReinforcementPoints">
+    <Modifier Name="ReinforcementPoints" Value="1.0"/>
+  </BattleAnalysisModifiers>
+
+  <!-- DISTANCE FROM CENTER INFLUENCE -->
+  <BattleAnalysisModifiers Name="CavalryOnTheSide">
+    <PathPrerequisite>UnitClassCavalry</PathPrerequisite>
+    <Modifier Name="FarFromCenter" Value="0.25"/>
+  </BattleAnalysisModifiers>
+  <BattleAnalysisModifiers Name="NoDistanceFromCenterInfluence">
+    <PathPrerequisite Inverted="true">UnitClassCavalry</PathPrerequisite>
+    <Modifier Name="FarFromCenter" Value="0"/>
+  </BattleAnalysisModifiers>
+
+  <!-- DISTANCE FROM ENEMY LINE INFLUENCE -->
+  <BattleAnalysisModifiers Name="CloseToEnemyLine">
+    <InterpreterPrerequisite>$Path(UnitClassInfantry) or $Path(UnitClassFlying)</InterpreterPrerequisite>
+    <Modifier Name="NearEnemyLines" Value="1.75"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="NotSoCloseToEnemyLine">
+    <InterpreterPrerequisite>$Path(UnitClassCavalry) or $Path(UnitTypeSistersOfMercyJusticere)</InterpreterPrerequisite>
+    <Modifier Name="NearEnemyLines" Value="0.75"/>
+  
+</BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="AvoidEnemyLine">
+    <InterpreterPrerequisite>$Path(UnitClassSupport,!UnitTypeSistersOfMercyJusticere) or $Path(UnitClassRanged) or $Path(UnitSettler)</InterpreterPrerequisite>
+    <Modifier Name="NearEnemyLines" Value="-3.0"/>
+  </BattleAnalysisModifiers>
+
+  <!-- ALTITUDE INFLUENCE -->
+  <BattleAnalysisModifiers Name="VeryHighAltitudeInfluence">
+    <PathPrerequisite>UnitClassRanged</PathPrerequisite>
+    <Modifier Name="Altitude" Value="1.5"/>
+  </BattleAnalysisModifiers>
+  
+  <BattleAnalysisModifiers Name="HighAltitudeInfluence">
+    <InterpreterPrerequisite>$Path(UnitClassSupport) or $Path(UnitClassFlying)</InterpreterPrerequisite>
+    <Modifier Name="Altitude" Value="1.0"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="MediumEnemyLine">
+    <PathPrerequisite>UnitClassInfantry</PathPrerequisite>
+    <Modifier Name="Altitude" Value="0.75"/>
+  </BattleAnalysisModifiers>
+
+  <BattleAnalysisModifiers Name="LowAltitudeInfluence">
+    <PathPrerequisite>UnitClassCavalry</PathPrerequisite>
+    <Modifier Name="Altitude" Value="0.5"/>
+  </BattleAnalysisModifiers>
+  
+</Datatable>  

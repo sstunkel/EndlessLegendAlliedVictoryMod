@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <BattleFeedbackMapping Name="GroundEffectForest">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>3</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Forest.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="GroundEffectDistrict">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>2</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_City.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleTargetingStrategyOffense">
+    <RightSide>true</RightSide>
+    <IconeIndex>1</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Attack.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleTargetingStrategyDefense">
+    <RightSide>true</RightSide>
+    <IconeIndex>4</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Defense.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleTargetingStrategyHoldPosition">
+    <RightSide>true</RightSide>
+    <IconeIndex>5</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_HoldPosition.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="IconeMoralGood">
+    <IconeIndex>6</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_02.png</ColorMask>
+  </BattleFeedbackMapping>
+  
+  <BattleFeedbackMapping Name="AltitudeUp">
+    <RightSide>true</RightSide>
+    <IconeIndex>8</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Up.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Up_ColorMask.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="AltitudeDown">
+    <RightSide>true</RightSide>
+    <IconeIndex>9</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Down.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Down_ColorMask.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="AvailableTargetDirect">
+    <UpSide>true</UpSide>
+    <IconeIndex>1</IconeIndex>
+    <!-- l'icone 1 est déja définie. -->
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="AvailableTargetDirectAlly">
+    <UpSide>true</UpSide>
+    <IconeIndex>15</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Allies.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="AvailableTargetAfterMoving">
+    <UpSide>true</UpSide>
+    <IconeIndex>7</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Move.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="AvailableTargetAfterMovingAlly">
+    <UpSide>true</UpSide>
+    <IconeIndex>14</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_AlliesMove.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+  
+  <BattleFeedbackMapping Name="AvailableOpportunityTargetAlly">
+    <UpSide>true</UpSide>
+    <IconeIndex>14</IconeIndex>
+    <!-- l'icone 14 est déja définie. -->
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="AvailableOpportunityTarget">
+    <UpSide>true</UpSide>
+    <IconeIndex>7</IconeIndex>
+    <!-- l'icone 7 est déja définie. -->
+  </BattleFeedbackMapping>
+
+
+  <!-- ################################################ -->
+  <!-- ######             BATTLE STATES          ###### -->
+  <!-- ################################################ -->
+
+  <BattleFeedbackMapping Name="BattleEffectStun">
+    <UpSide>true</UpSide>
+    <IconeIndex>16</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Stun_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectSlowDown">
+    <UpSide>true</UpSide>
+    <IconeIndex>17</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_SlowDown_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectPoisoned">
+    <UpSide>true</UpSide>
+    <IconeIndex>18</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Poisoned_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectParasite">
+    <UpSide>true</UpSide>
+    <IconeIndex>55</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Parasite_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectUnleashedPotential">
+    <UpSide>true</UpSide>
+    <IconeIndex>56</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_UnleashedPotential_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+
+  <BattleFeedbackMapping Name="BattleEffectImmuneToDebuff">
+    <UpSide>true</UpSide>
+    <IconeIndex>19</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_ImmuneToDebuff_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeUp1">
+    <UpSide>true</UpSide>
+    <IconeIndex>20</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeUp2">
+    <UpSide>true</UpSide>
+    <IconeIndex>21</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeUp3">
+    <UpSide>true</UpSide>
+    <IconeIndex>22</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeUp4">
+    <UpSide>true</UpSide>
+    <IconeIndex>23</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeDown1">
+    <UpSide>true</UpSide>
+    <IconeIndex>24</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeDown2">
+    <UpSide>true</UpSide>
+    <IconeIndex>25</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeDown3">
+    <UpSide>true</UpSide>
+    <IconeIndex>26</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeDown4">
+    <UpSide>true</UpSide>
+    <IconeIndex>27</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseUp1">
+    <UpSide>true</UpSide>
+    <IconeIndex>28</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseUp2">
+    <UpSide>true</UpSide>
+    <IconeIndex>29</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseUp3">
+    <UpSide>true</UpSide>
+    <IconeIndex>30</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseUp4">
+    <UpSide>true</UpSide>
+    <IconeIndex>31</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseDown1">
+    <UpSide>true</UpSide>
+    <IconeIndex>32</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseDown2">
+    <UpSide>true</UpSide>
+    <IconeIndex>33</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseDown3">
+    <UpSide>true</UpSide>
+    <IconeIndex>34</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseDown4">
+    <UpSide>true</UpSide>
+    <IconeIndex>35</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalUp1">
+    <UpSide>true</UpSide>
+    <IconeIndex>36</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalUp2">
+    <UpSide>true</UpSide>
+    <IconeIndex>37</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalUp3">
+    <UpSide>true</UpSide>
+    <IconeIndex>38</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalUp4">
+    <UpSide>true</UpSide>
+    <IconeIndex>39</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalDown1">
+    <UpSide>true</UpSide>
+    <IconeIndex>40</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalDown2">
+    <UpSide>true</UpSide>
+    <IconeIndex>41</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalDown3">
+    <UpSide>true</UpSide>
+    <IconeIndex>42</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalDown4">
+    <UpSide>true</UpSide>
+    <IconeIndex>43</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackUp1">
+    <UpSide>true</UpSide>
+    <IconeIndex>44</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackUp2">
+    <UpSide>true</UpSide>
+    <IconeIndex>45</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackUp3">
+    <UpSide>true</UpSide>
+    <IconeIndex>46</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackUp4">
+    <UpSide>true</UpSide>
+    <IconeIndex>47</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+
+  <BattleFeedbackMapping Name="BattleEffectAttackDown1">
+    <UpSide>true</UpSide>
+    <IconeIndex>48</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackDown2">
+    <UpSide>true</UpSide>
+    <IconeIndex>49</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level02_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackDown3">
+    <UpSide>true</UpSide>
+    <IconeIndex>50</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level03_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackDown4">
+    <UpSide>true</UpSide>
+    <IconeIndex>51</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level04_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+
+  <!-- ################################################ -->
+  <!-- ######             STATES COUNT           ###### -->
+  <!-- ################################################ -->
+
+  <BattleFeedbackMapping Name="NumberOfPositiveStates">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>6</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="NumberOfNegativeStates">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>6</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectSlowDownPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>17</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_SlowDown_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseUpPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>28</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalUpPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>36</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackUpPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>44</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackUp_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectInitiativeDownPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>24</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_InitiativeDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectCriticalDownPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>40</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_CriticalDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectAttackDownPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>48</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_AttackDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectDefenseDownPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>32</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_DefenseDown_Level1234_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Gradient_Level01_2048x2048.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectImmuneToDebuffPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>19</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_ImmuneToDebuff_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectStunPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>16</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Stun_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectPoisonedPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>18</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Poisoned_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectParasitePermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>55</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_Parasite_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleEffectUnleashedPotentialPermanent">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>56</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/BattleState_UnleashedPotential_Alpha_2048x2048.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_01.tga</ColorMask>
+  </BattleFeedbackMapping>
+  
+  <!-- ################################################ -->
+  <!-- ######             MORAL                  ###### -->
+  <!-- ################################################ -->
+
+
+  <BattleFeedbackMapping Name="BattleMoral0">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>10</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_Alpha.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_00.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleMoral1">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>11</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_Alpha.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_01.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleMoral2">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>12</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_Alpha.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_02.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleMoral3">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>13</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_Alpha.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_03.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleMoral4">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>52</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_Alpha.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_04.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleMoral5">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>53</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_Alpha.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_05.png</ColorMask>
+  </BattleFeedbackMapping>
+
+  <BattleFeedbackMapping Name="BattleMoral6">
+    <LeftSide>true</LeftSide>
+    <IconeIndex>54</IconeIndex>
+    <AlphaMask>Textures/Interface/Battle_Icons_Cercle/Battle_Moral_Alpha.png</AlphaMask>
+    <ColorMask>Textures/Interface/Battle_Icons_Cercle/Battle_ColorMask_02.png</ColorMask>
+  </BattleFeedbackMapping>
+
+</Datatable>

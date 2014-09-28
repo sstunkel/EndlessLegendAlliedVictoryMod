@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="DistrictLevel0" Type="DistrictLevel">
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="DistrictLevel1" Type="DistrictLevel">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DistrictLevel2" Type="DistrictLevel">
+  </SimulationDescriptor>
+  
+</Datatable>

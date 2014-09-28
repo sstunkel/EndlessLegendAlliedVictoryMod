@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="MovementCapacityWalk" Type="MovementCapacity">
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="MovementCapacityFly" Type="MovementCapacity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MovementCapacitySail" Type="MovementCapacity">
+  </SimulationDescriptor>
+  
+</Datatable>

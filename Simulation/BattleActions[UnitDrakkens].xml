@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+  <!-- #################################    BATTLE ACTIONS WITH THE VISUAL DATA AND SPECIFIC GAMEPLAY   ########################################### -->
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+  
+  <!--  DRAKKENS Hero  -->
+  <BattleActionUnit Name="BattleActionUnitDrakkensHeroAttack" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Drakkens_Hero_01" RangeRestriction="LongRange" Speed="7" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="10" OriginBoneName="RightHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_Drakkens_Hero_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Drakkens_Hero_01" RangeRestriction="LongRange" Speed="7" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="10" OriginBoneName="LeftHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_Drakkens_Hero_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Drakkens_Hero_01" RangeRestriction="LongRange" Speed="7" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="10" OriginBoneName="Head" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_Drakkens_Hero_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Drakkens_Hero_01" RangeRestriction="LongRange" Speed="7" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="10" OriginBoneName="Ctrl_LeftHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_Drakkens_Hero_01_Hit</ImpactFx>
+      </Projectile>
+      
+
+	  
+	  <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Drakkens_Hero_01" RangeRestriction="CloseRange" Speed="7" Trajectory="linear" LocalOriginOffset="0,0,0" AccelerationDistance="0.5" SpeedReductionFactorMax="0.91" OriginBoneName="LeftHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_Drakkens_Hero_01_Hit</ImpactFx>
+      </Projectile>
+    
+	
+	
+	
+	</BattleActionData>
+  </BattleActionUnit>
+  
+  <!--  DRAKKENS Ancient Dragon  -->
+  <BattleActionUnit Name="BattleActionUnitDrakkensAncientDragonAttack" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Drakkens_AncientDragon_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.8" Angle="3" OriginBoneName="LeftForeArm" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.80">
+        <ImpactFx>Pr_Drakkens_AncientDragon_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Drakkens_AncientDragon_01" RangeRestriction="CloseRange" Speed="3" Trajectory="parabolic" AccelerationDistance="0.2" SpeedReductionFactorMax="0.8" Angle="3" OriginBoneName="LeftForeArm" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.80">
+        <ImpactFx>Pr_Drakkens_AncientDragon_01_Hit</ImpactFx>
+      </Projectile>
+    </BattleActionData>
+  </BattleActionUnit>
+  
+  
+</Datatable>
+
+<!--<Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_BrokenLords_Infantry_Path_01" Speed="8" Trajectory="parabolic" Angle="30" AccelerationDistance="0.5" SpeedReductionFactorMax="0.91" LocalOriginOffset="0,0.4,0" LocalTargetOffset="0,0.5,0" ProgressionRatioBeforeFadeOut="0.9"/>-->

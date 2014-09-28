@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="ResourceDeposit_Strategic1">
+    <Title>%ResourceDeposit_Strategic1Title</Title>
+    <Description>%ResourceDeposit_Strategic1Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Strategic1Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Strategic2">
+    <Title>%ResourceDeposit_Strategic2Title</Title>
+    <Description>%ResourceDeposit_Strategic2Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Strategic2Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Strategic3">
+    <Title>%ResourceDeposit_Strategic3Title</Title>
+    <Description>%ResourceDeposit_Strategic3Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Strategic3Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Strategic4">
+    <Title>%ResourceDeposit_Strategic4Title</Title>
+    <Description>%ResourceDeposit_Strategic4Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Strategic4Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Strategic5">
+    <Title>%ResourceDeposit_Strategic5Title</Title>
+    <Description>%ResourceDeposit_Strategic5Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Strategic5Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Strategic6">
+    <Title>%ResourceDeposit_Strategic6Title</Title>
+    <Description>%ResourceDeposit_Strategic6Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Strategic6Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury1">
+    <Title>%ResourceDeposit_Luxury1Title</Title>
+    <Description>%ResourceDeposit_Luxury1Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury1Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury2">
+    <Title>%ResourceDeposit_Luxury2Title</Title>
+    <Description>%ResourceDeposit_Luxury2Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury2Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury3">
+    <Title>%ResourceDeposit_Luxury3Title</Title>
+    <Description>%ResourceDeposit_Luxury3Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury3Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury4">
+    <Title>%ResourceDeposit_Luxury4Title</Title>
+    <Description>%ResourceDeposit_Luxury4Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury4Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury5">
+    <Title>%ResourceDeposit_Luxury5Title</Title>
+    <Description>%ResourceDeposit_Luxury5Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury5Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury6">
+    <Title>%ResourceDeposit_Luxury6Title</Title>
+    <Description>%ResourceDeposit_Luxury6Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury6Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury7">
+    <Title>%ResourceDeposit_Luxury7Title</Title>
+    <Description>%ResourceDeposit_Luxury7Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury7Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury8">
+    <Title>%ResourceDeposit_Luxury8Title</Title>
+    <Description>%ResourceDeposit_Luxury8Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury8Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury9">
+    <Title>%ResourceDeposit_Luxury9Title</Title>
+    <Description>%ResourceDeposit_Luxury9Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury9Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury10">
+    <Title>%ResourceDeposit_Luxury10Title</Title>
+    <Description>%ResourceDeposit_Luxury10Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury10Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury11">
+    <Title>%ResourceDeposit_Luxury11Title</Title>
+    <Description>%ResourceDeposit_Luxury11Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury11Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury12">
+    <Title>%ResourceDeposit_Luxury12Title</Title>
+    <Description>%ResourceDeposit_Luxury12Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury12Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury13">
+    <Title>%ResourceDeposit_Luxury13Title</Title>
+    <Description>%ResourceDeposit_Luxury13Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury13Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury14">
+    <Title>%ResourceDeposit_Luxury14Title</Title>
+    <Description>%ResourceDeposit_Luxury14Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury14Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury15">
+    <Title>%ResourceDeposit_Luxury15Title</Title>
+    <Description>%ResourceDeposit_Luxury15Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Resources/Luxury15Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="QuestLocation_Temple">
+    <Title>%QuestLocation_TempleTitle</Title>
+    <Description>%QuestLocation_TempleDescription</Description>
+    <Icons>
+      <Icon Path="CategoryQuestLocationSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Quests/QuestPOICommon2" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="QuestLocation_Ruin">
+    <Title>%QuestLocation_RuinTitle</Title>
+    <Description>%QuestLocation_RuinDescription</Description>
+    <Icons>
+      <Icon Path="CategoryQuestLocationSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Quests/QuestPOICommon1" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="WatchTower">
+    <Title>%WatchTowerRuinsTitle</Title>
+    <Description>%WatchTowerRuinsDescription</Description>
+    <Icons>
+      <Icon Path="constructibleVisionHD" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/POIs/WatchTowerRuinsLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

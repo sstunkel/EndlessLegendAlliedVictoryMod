@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <InterpreterBasedGameStatisticDefinition Name="SumOfAllUnitsLevels"         Tags="Empire">$SumProperty(ClassEmpire/Garrison/UnitRankStandard:LevelDisplayed)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="SumOfAllHeroesLevels"        Tags="Empire">$SumProperty(ClassEmpire//UnitRankHero:LevelDisplayed)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="NumberOfCities"              Tags="Empire">$Count(ClassEmpire/ClassCity)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="NumberOfDistricts"           Tags="Empire">$Count(ClassEmpire/ClassCity/DistrictTypeExtension)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="NumberOfLevel1Districts"     Tags="Empire">$Count(ClassEmpire/ClassCity/DistrictTypeExtension,DistrictLevel1)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="NumberOfLevel2Districts"     Tags="Empire">$Count(ClassEmpire/ClassCity/DistrictTypeExtension,DistrictLevel2)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="TotalPopulation"             Tags="Empire">$SumProperty(ClassEmpire/ClassCity:Population)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="NumberOfImprovements"        Tags="Empire">$Count(ClassEmpire/ClassCity/ClassImprovement)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="NumberOfTechnologies"        Tags="Empire">$Property(ClassEmpire/ClassResearch:UnlockedTechnologyCount)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="ProductionPerTurnFood"       Tags="Empire">$SumProperty(ClassEmpire/ClassCity:NetCityGrowth)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="ProductionPerTurnIndustry"   Tags="Empire">$SumProperty(ClassEmpire/ClassCity:NetCityProduction)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="ProductionPerTurnDust"       Tags="Empire">$Property(ClassEmpire:NetEmpireMoney)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="ProductionPerTurnScience"    Tags="Empire">$Property(ClassEmpire:NetEmpireResearch)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="ProductionPerTurnCityPoint"  Tags="Empire">$Property(ClassEmpire:NetCityEmpirePoint)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="AverageApproval"             Tags="Empire">$Property(ClassEmpire:NetEmpireApproval)</InterpreterBasedGameStatisticDefinition>
+  <InterpreterBasedGameStatisticDefinition Name="NumberOfPeacePoints"         Tags="Empire">$Property(ClassEmpire:EmpirePeacePointStock)</InterpreterBasedGameStatisticDefinition>
+  
+  <InterpreterBasedGameStatisticDefinition Name="MilitaryPower"               Tags="Empire">$SumProperty(ClassEmpire/Garrison/ClassUnit:MilitaryPower)</InterpreterBasedGameStatisticDefinition>
+
+  <!--
+  <GameStatisticDefinition Name="NumberOfRegions"/>
+  <GameStatisticDefinition Name="NumberOfMainQuestChaptersComplete"/>
+  <GameStatisticDefinition Name="NumberOfTurnsSpentInPeace" Accumulation="True"/>
+  <GameStatisticDefinition Name="NumberOfTechnologiesDiscovered"/>
+
+  <GameStatisticDefinition Name="MaximumLevelReachedBySomeUnit"/>
+  <GameStatisticDefinition Name="NumberOfEncountersWon"/>
+  <GameStatisticDefinition Name="NumberOfAllies"/>
+  <GameStatisticDefinition Name="SumOfAllSucessfullTreaties"/>
+  <GameStatisticDefinition Name="TotalFIDSProducesPerTurn"/>
+  <GameStatisticDefinition Name="MaximumFIDSProducedPerTurnBySomeCity"/>
+  <GameStatisticDefinition Name="PercentageOfWorldKnown"/>
+  <GameStatisticDefinition Name="NumberOfEmpires"/>
+  -->
+
+</Datatable>

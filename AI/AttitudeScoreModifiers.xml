@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScorePeaceful" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>15</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScorePeaceful" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>25</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>15</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreCommonEnemy" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>35</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreCommonEnemy" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>20</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+  
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreCommonFriend" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>35</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+    
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreCommonFriend" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>20</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+    
+  </DiplomaticRelationScoreModifier>
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreCommonAlly" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>50</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreCommonAlly" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>30</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreCommonFrontier" Category="Envy">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-60</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreCommonFrontier" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>40</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-20</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreWarFatigue" Category="War">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>60</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreWarFatigue" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>50</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>60</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreLastWar" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-100</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreLastWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>40</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-100</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreArmyAggressionInNeutralRegionDuringColdWar" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-100</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreArmyAggressionInNeutralRegionDuringColdWar"/>
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>15</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-50</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreMyEmpireUnitsKilledDuringWar" Category="War">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>50</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreMyEmpireUnitsKilledDuringWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>40</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>5</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreMyEmpireCitiesBesiegedDuringWar" Category="War">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>60</MaximumCumulativeValue>
+    <MinimumCumulativeValue>30</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreMyEmpireCitiesBesiegedDuringWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>60</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>30</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreMyEmpireCitiesTakenDuringWar" Category="War">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>80</MaximumCumulativeValue>
+    <MinimumCumulativeValue>60</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreMyEmpireCitiesTakenDuringWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>40</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>80</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>60</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreOtherEmpireUnitsKilledDuringWar" Category="War">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-50</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreOtherEmpireUnitsKilledDuringWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>40</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-5</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreOtherEmpireCitiesBesiegedDuringWar" Category="War">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>-70</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-280</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreOtherEmpireCitiesBesiegedDuringWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>-70</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-280</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreOtherEmpireCitiesTakenDuringWar" Category="War">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>80</MaximumCumulativeValue>
+    <MinimumCumulativeValue>30</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreOtherEmpireCitiesTakenDuringWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>80</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>30</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreMyEmpireLeadMilitaryPower" Category="Fear">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-150</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreMyEmpireLeadMilitaryPower" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>30</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-150</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreOtherEmpireLeadMilitaryPower" Category="Fear">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>100</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreOtherEmpireLeadMilitaryPower" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>30</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>100</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreMyEmpireLeadScore" Category="Envy">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>75</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreMyEmpireLeadScore" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>30</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>75</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreOtherEmpireLeadScore" Category="Envy">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-40</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreOtherEmpireLeadScore" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>30</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-40</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreMyEmpireLeadRegionCount" Category="Envy">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>75</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreMyEmpireLeadRegionCount" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>30</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>75</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreOtherEmpireLeadRegionCount" Category="Envy">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-20</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreOtherEmpireLeadRegionCount" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>30</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-20</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreUnitsInMyTerritory" Category="Fear">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>50</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>1</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-1</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreUnitsInMyTerritory" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>5</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>5</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreLivingSpaceTense" Category="Envy">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-30</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>3</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-3</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreLivingSpaceTense" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>15</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-30</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreAggressiveColonization" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-20</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreAggressiveColonization" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>40</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-20</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScorePositiveContract" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>40</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScorePositiveContract" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>25</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreNegativeContract" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-60</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreNegativeContract" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-30</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreGift" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>10</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreGift" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>5</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="AttitudeScoreVillageConverted" Category="Trust">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-50</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-2</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="AttitudeScoreVillageConverted" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>40</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-30</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+  
+</Datatable>

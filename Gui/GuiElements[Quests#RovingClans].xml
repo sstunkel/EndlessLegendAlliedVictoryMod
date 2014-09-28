@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://RovingClansw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://RovingClansw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter1">
+    <Title>%MainQuestRovingClans-Chapter1Title</Title>
+    <Description>%MainQuestRovingClans-Chapter1Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter1Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter1-Step1">%MainQuestRovingClans-Chapter1-Step1</Step>
+      <Step Name="MainQuestRovingClans-Chapter1-Step2">%MainQuestRovingClans-Chapter1-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter2">
+    <Title>%MainQuestRovingClans-Chapter2Title</Title>
+    <Description>%MainQuestRovingClans-Chapter2Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter2Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter2-Step1">%MainQuestRovingClans-Chapter2-Step1</Step>
+      <Step Name="MainQuestRovingClans-Chapter2-Step2">%MainQuestRovingClans-Chapter2-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2Alt -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter2Alt">
+    <Title>%MainQuestRovingClans-Chapter2AltTitle</Title>
+    <Description>%MainQuestRovingClans-Chapter2AltDescription</Description>
+    <Objective>%MainQuestRovingClans-Chapter2AltObjective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter2AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter2Alt-Step1">%MainQuestRovingClans-Chapter2Alt-Step1</Step>
+      <Step Name="MainQuestRovingClans-Chapter2Alt-Step2">%MainQuestRovingClans-Chapter2Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter3">
+    <Title>%MainQuestRovingClans-Chapter3Title</Title>
+    <Description>%MainQuestRovingClans-Chapter3Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter3Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter3-Step1">%MainQuestRovingClans-Chapter3-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter4">
+    <Title>%MainQuestRovingClans-Chapter4Title</Title>
+    <Description>%MainQuestRovingClans-Chapter4Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter4Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter4-Step1">%MainQuestRovingClans-Chapter4-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4Alt -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter4Alt">
+    <Title>%MainQuestRovingClans-Chapter4AltTitle</Title>
+    <Description>%MainQuestRovingClans-Chapter4AltDescription</Description>
+    <Objective>%MainQuestRovingClans-Chapter4AltObjective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter4AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter4Alt-Step1">%MainQuestRovingClans-Chapter4Alt-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter5">
+    <Title>%MainQuestRovingClans-Chapter5Title</Title>
+    <Description>%MainQuestRovingClans-Chapter5Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter5Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter5-Step1">%MainQuestRovingClans-Chapter5-Step1</Step>
+      <Step Name="MainQuestRovingClans-Chapter5-Step2">%MainQuestRovingClans-Chapter5-Step2</Step>
+      <Step Name="MainQuestRovingClans-Chapter5-Step3">%MainQuestRovingClans-Chapter5-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 5Alt -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter5Alt">
+    <Title>%MainQuestRovingClans-Chapter5AltTitle</Title>
+    <Description>%MainQuestRovingClans-Chapter5AltDescription</Description>
+    <Objective>%MainQuestRovingClans-Chapter5AltObjective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter5AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter5-Step1">%MainQuestRovingClans-Chapter5Alt-Step1</Step>
+      <Step Name="MainQuestRovingClans-Chapter5-Step3">%MainQuestRovingClans-Chapter5Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter6">
+    <Title>%MainQuestRovingClans-Chapter6Title</Title>
+    <Description>%MainQuestRovingClans-Chapter6Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter6Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter6-Step1">%MainQuestRovingClans-Chapter6-Step1</Step>
+      <Step Name="MainQuestRovingClans-Chapter6-Step2">%MainQuestRovingClans-Chapter6-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter7">
+    <Title>%MainQuestRovingClans-Chapter7Title</Title>
+    <Description>%MainQuestRovingClans-Chapter7Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter7Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter7-Step1">%MainQuestRovingClans-Chapter7-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestRovingClans-Chapter8">
+    <Title>%MainQuestRovingClans-Chapter8Title</Title>
+    <Description>%MainQuestRovingClans-Chapter8Description</Description>
+    <Objective>%MainQuestRovingClans-Chapter8Objective</Objective>
+    <Outcome>%MainQuestRovingClans-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRovingClans8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRovingClans-Chapter8-Step1">%MainQuestRovingClans-Chapter8-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

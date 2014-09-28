@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  
+  <!-- ################################################### -->
+  <!-- ############## Base X Per Population ############## -->
+  <!-- ################################################### -->
+  <!-- Food -->
+  <AIParameterConverter Name="BaseFoodPerPopulation">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityFoodToCityGrowthConversionFactor) * $Property(FoodPopulation) </ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor) * $Property(FoodPopulation)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $SumProperty(ClassEmpire/ClassCity:FoodPopulation)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $SumProperty(ClassEmpire/ClassCity:FoodPopulation)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- Food per pop if Approval Happy -->
+  <AIParameterConverter Name="BaseFoodPerPopulationHappy">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityFoodToCityGrowthConversionFactor) * $Property(FoodPopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor) * $Property(FoodPopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $SumProperty(ClassEmpire/ClassCity:FoodPopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $SumProperty(ClassEmpire/ClassCity:FoodPopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- Industry -->
+  <AIParameterConverter Name="BaseIndustryPerPopulation">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityIndustryToCityGrowthConversionFactor) * $Property(IndustryPopulation) </ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor) * $Property(IndustryPopulation)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $SumProperty(ClassEmpire/ClassCity:IndustryPopulation)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $SumProperty(ClassEmpire/ClassCity:IndustryPopulation)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- Industry per pop if Approval Happy -->
+  <AIParameterConverter Name="BaseIndustryPerPopulationHappy">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityIndustryToCityGrowthConversionFactor) * $Property(IndustryPopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor) * $Property(IndustryPopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $SumProperty(ClassEmpire/ClassCity:IndustryPopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $SumProperty(ClassEmpire/ClassCity:IndustryPopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- Money -->
+  <AIParameterConverter Name="BaseDustPerPopulation">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) * $Property(DustPopulation)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(DustPopulation) * $Count(../ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input)  * $SumProperty(ClassEmpire/ClassCity:DustPopulation)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $SumProperty(ClassEmpire/ClassCity:DustPopulation) * $Count(ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- Money per pop if Approval Happy -->
+  <AIParameterConverter Name="BaseDustPerPopulationHappy">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) * $Property(DustPopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(DustPopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy) * $Count(../ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input)  * $SumProperty(ClassEmpire/ClassCity:DustPopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $SumProperty(ClassEmpire/ClassCity:DustPopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy) * $Count(ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+  </AIParameterConverter>
+  
+  <!-- Science -->
+  <AIParameterConverter Name="BaseSciencePerPopulation">
+   <ToAIParameter AIParameter="AICityResearch">$(Input)  * $Property(SciencePopulation)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) *   $SumProperty(ClassEmpire/ClassCity:SciencePopulation)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- Science per pop if Approval Happy -->
+  <AIParameterConverter Name="BaseSciencePerPopulationHappy">
+    <ToAIParameter AIParameter="AICityResearch">$(Input)  * $Property(SciencePopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) *   $SumProperty(ClassEmpire/ClassCity:SciencePopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- EmpirePoint per pop -->
+  <AIParameterConverter Name="BaseEmpirePointPerPopulation">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Property(CityPointPopulation)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityPointPopulation)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- EmpirePoint per pop if Approval Happy -->
+  <AIParameterConverter Name="BaseEmpirePointPerPopulationHappy">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Property(CityPointPopulation) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityPointPopulation) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- ################################################### -->
+  <!-- ############## City Directly Affected ############# -->
+  <!-- ################################################### -->
+  <!-- == Approval == -->
+  <AIParameterConverter Name="CityApproval">
+    <!-- bonus on food -->
+    <ToAIParameter AIParameter="AICityApproval">$(Input)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * 0.0075 * $Property(CityFood) * $Property(CityFoodToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * 0.0075 * $Property(CityFood) * $Property(CityFoodToCityProductionConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityFood) * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityFood) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor)</ToAIParameter>
+
+    <!-- bonus on industry -->
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * 0.0075 * $Property(CityIndustry) * $Property(CityIndustryToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * 0.0075 * $Property(CityIndustry) * $Property(CityIndustryToCityProductionConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityIndustry) * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityIndustry) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor)</ToAIParameter>
+
+    <!-- bonus on science -->
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityScience)</ToAIParameter>
+
+    <!-- bonus on dust -->
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityMoney)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityMoney) * $Count(ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- ==  Prestige == -->
+
+  <AIParameterConverter Name="BaseCityPointPerPopulation">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Property(CityPointPopulation)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) *  $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+  
+  <AIParameterConverter Name="CityCityPoint">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="CityCityPointPercent">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Property(CityCityPoint)</ToAIParameter>
+    
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityCityPoint)</ToAIParameter>
+  </AIParameterConverter>
+
+
+  <AIParameterConverter Name="CityCityPointHappy">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Count(ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+    
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityHappy)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="CityCityPointEcstatic">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Count(ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="CityCityPointPercentEcstatic">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Property(CityCityPoint) * $Count(ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityCityPoint) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+  </AIParameterConverter>
+  
+  <!-- == Defense == -->
+  <!-- TBD: using localisation, more important depending on opponent neighbours -->
+  <AIParameterConverter Name="CityDefense">
+    <ToAIParameter AIParameter="AICityDefense">$(Input) * 0.3</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireDefense">$(Input) * 0.3 * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Defense Recovery == -->
+  <!-- TBD: using localisation, more important depending on opponent neighbours and total defense -->
+  <AIParameterConverter Name="CityDefenseRecovery">
+    <ToAIParameter AIParameter="AICityDefense">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireDefense">$(Input) * $Count(ClassEmpire/ClassCity) * 0.1</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Unit Cost Reduction == -->
+  <!-- TBD: using impact of xp on military strength & relationship with military layer -->
+  <AIParameterConverter Name="CityUnitCost">
+    <ToAIParameter AIParameter="AICityMilitary">$(Input) * 0.1</ToAIParameter> <!-- can be used as a criteria to select where a unit should be built-->
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * 0.1</ToAIParameter> <!-- can be used as a criteria to select where a unit should be built-->
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input) * 0.01</ToAIParameter> <!-- TBD: distinction between offense and defense -->
+    <ToAIParameter AIParameter="AIEmpireMilitaryOffense">$(Input) * 0.01</ToAIParameter> <!-- TBD: distinction between offense and defense -->
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * 0.01</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Unit Initial Experience == -->
+  <AIParameterConverter Name="CityExperienceGain">
+    <ToAIParameter AIParameter="AICityMilitary">$(Input) * 0.15</ToAIParameter> <!-- can be used as a criteria to select where a unit should be built-->
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input) * 0.15</ToAIParameter> <!-- TBD: distinction between offense and defense -->
+    <ToAIParameter AIParameter="AIEmpireMilitaryOffense">$(Input) * 0.15</ToAIParameter> <!-- TBD: distinction between offense and defense -->
+  </AIParameterConverter>
+
+  <!-- == Unit Experience per Turn in Garrison == -->
+  <AIParameterConverter Name="CityExperienceGainPerTurn">
+    <ToAIParameter AIParameter="CityExperienceGain">$(Input) * $Count(ClassEmpire/ClassCity/ClassUnit) * 10</ToAIParameter> <!-- We suppose the average time in garrison for a unit is 10 turns -->
+    <ToAIParameter AIParameter="CityExperienceGainMilitia">$(Input) * $Count(ClassEmpire/ClassCity/Militia) * 30</ToAIParameter>
+    <!-- We suppose the average time in garrison for a unit is 15 turns -->
+  </AIParameterConverter>
+
+  <!-- == Militia Unit Initial Experience == -->
+  <AIParameterConverter Name="CityExperienceGainMilitia">
+    <ToAIParameter AIParameter="AICityMilitaryDefense">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input) * 0.1</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Militia Additional Unit == -->
+  <AIParameterConverter Name="CityMilitia">
+    <ToAIParameter AIParameter="AICityMilitaryDefense">$(Input) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input) * 0.5</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == DiplomacyMarket == -->
+  <AIParameterConverter Name="DiplomacyMarket">
+    <ToAIParameter AIParameter="DiplomacyEconomy">$(Input) * 1</ToAIParameter>
+  </AIParameterConverter>
+  <!-- TO TEST: 
+  <AIParameterConverter Name="DiplomacyMarket">
+    <ToAIParameter AIParameter="DiplomacyEconomy">$(Input) * ($Count(ClassEmpire/ClassResearch,TechnologyMarketplaceResources) + $Count(ClassEmpire/ClassResearch,TechnologyMarketplaceHeroes) + $Count(ClassEmpire/ClassResearch,TechnologyMarketplaceMercenaries))</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DiplomacyMarketResources">
+    <ToAIParameter AIParameter="DiplomacyEconomy">$(Input) * $Count(ClassEmpire/ClassResearch,TechnologyMarketplaceResources)</ToAIParameter>
+  </AIParameterConverter>
+  -->
+  <!-- == Food == -->
+  <AIParameterConverter Name="CityFood">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityFoodToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+
+    <ToAIParameter AIParameter="DiplomacyExpand">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Food Percent Bonus == -->
+  <AIParameterConverter Name="CityFoodPercent">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityFood) * $Property(CityFoodToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFood) * $Property(CityFoodToCityProductionConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityFood) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityFood) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="CityFoodPercentEcstatic">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityFood) * $Property(CityFoodToCityGrowthConversionFactor) * $Count(ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFood) * $Property(CityFoodToCityProductionConversionFactor) * $Count(ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityFood) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityFood) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+  </AIParameterConverter>
+
+  
+
+  <!-- == Population Efficiency Limit == -->
+  <!-- TBD <ToAIParameter AIParameter="AICityEmpirePoint">$(Input)</ToAIParameter>-->
+  <AIParameterConverter Name="CityPEL">
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry == -->
+  <AIParameterConverter Name="CityProduction">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityIndustryToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityMoney">$(Input) * $Property(NetCityProductionToCityMoneyConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Property(NetCityProductionToCityResearchConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:NetCityProductionToCityMoneyConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Property(ClassEmpire/ClassCity:NetCityProductionToCityResearchConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry Percent Bonus == -->
+  <AIParameterConverter Name="CityProductionPercent">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityProduction) * $Property(CityIndustryToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityProduction) * $Property(CityIndustryToCityProductionConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityMoney">$(Input) * $Property(CityProduction) * $Property(NetCityProductionToCityMoneyConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Property(CityProduction) * $Property(NetCityProductionToCityResearchConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityProduction) * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityProduction) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityProduction) * $Property(ClassEmpire/ClassCity:NetCityProductionToCityMoneyConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityProduction) * $Property(ClassEmpire/ClassCity:NetCityProductionToCityResearchConversionFactor) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+
+  <!-- == City Upkeep == -->
+  <AIParameterConverter Name="CityMoneyUpkeep">
+    <ToAIParameter AIParameter="AICityMoneyUpkeep">$(Input)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoneyUpkeep">$(Input) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="CityMoneyUpkeepPercent">
+    <ToAIParameter AIParameter="AICityMoneyUpkeep">$(Input) * $Property(TotalCityMoneyUpkeep)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoneyUpkeep">$(Input) * $SumProperty(ClassEmpire/ClassCity:TotalCityMoneyUpkeep)</ToAIParameter>
+  </AIParameterConverter>
+
+  
+  <!-- == Dust == -->
+  <AIParameterConverter Name="CityMoney">
+    <ToAIParameter AIParameter="AICityMoney">$(Input)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(ClassEmpire/ClassCity) * $Count(ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Dust Percent == -->
+  <AIParameterConverter Name="CityMoneyPercent">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) * $Property(CityMoney)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityMoney) * $Count(../ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityMoney)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityMoney) * $Count(ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+  </AIParameterConverter>
+
+
+  <AIParameterConverter Name="CityMoneyPercentEcstatic">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) * $Property(CityMoney) * $Count(ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityMoney) * $Count(ClassCity,ApprovalStatusTagCityEcstatic) * $Count(../ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityMoney) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityMoney) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic) * $Count(ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+  </AIParameterConverter>
+  
+
+  <!-- == Science == -->
+  <AIParameterConverter Name="CityScience">
+    <ToAIParameter AIParameter="AICityResearch">$(Input)</ToAIParameter>
+    
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Science Percent Bonus == -->
+  <AIParameterConverter Name="CitySciencePercent">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Property(CityResearch) </ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityResearch)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="CitySciencePercentEcstatic">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Property(CityResearch) * $Count(ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $SumProperty(ClassEmpire/ClassCity:CityResearch) * $Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Unit Regeneration -->
+  <!-- TBD: depends on localisation, more important on choke point, and region near war front-->
+  <AIParameterConverter Name="CityUnitRegen">
+    <ToAIParameter AIParameter="AICityMilitaryOffense">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AICityMilitaryDefense">$(Input)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMilitaryOffense">$(Input) * $Count(ClassEmpire/ClassCity) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input) * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireUnitLifePercent">
+    <ToAIParameter AIParameter="AIEmpireMilitaryOffense">$(Input) * $SumProperty(ClassEmpire/Garrison/ClassUnit:MaximumHealth) / 10</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input) * $SumProperty(ClassEmpire/Garrison/ClassUnit:MaximumHealth) / 10</ToAIParameter>
+  </AIParameterConverter>
+  
+  <AIParameterConverter Name="EmpireUnitDamagePercent">
+    <ToAIParameter AIParameter="AIEmpireMilitaryOffense">$(Input) * $SumProperty(ClassEmpire/Garrison/ClassUnit:AttributeDamage)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input) * $SumProperty(ClassEmpire/Garrison/ClassUnit:AttributeDamage)</ToAIParameter>
+  </AIParameterConverter>
+  
+  <!-- ################################################### -->
+  <!-- ################## District Bonus  ################ -->
+  <!-- ################################################### -->
+  <!-- == Food == -->
+  <AIParameterConverter Name="DistrictFood">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityFoodToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor)</ToAIParameter>  
+    
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) *  $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor)*  $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+  </AIParameterConverter>
+  
+  <!-- == Food during Winter == -->
+  <AIParameterConverter Name="DistrictFoodWinter">
+    <ToAIParameter AIParameter="DistrictFood">$(Input) * $Property(ClassEmpire/ClassCity,#Winter)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Food from Food == -->
+  <AIParameterConverter Name="DistrictFoodFood">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityFoodToCityGrowthConversionFactor) * $Count(ClassCity/TerrainTagFood)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor) * $Count(ClassCity/TerrainTagFood)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagFood)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/TerrainTagFood)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Food from Exploitation Area == -->
+  <AIParameterConverter Name="DistrictFoodExploitation">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityFoodToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) *  $Count(ClassEmpire/ClassCity/DistrictTypeExploitation)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor)*  $Count(ClassEmpire/ClassCity/DistrictTypeExploitation)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictFoodExtension">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(CityFoodToCityGrowthConversionFactor) * $Count(ClassCity/DistrictTypeExtension)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor) * $Count(ClassCity/DistrictTypeExtension)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/DistrictTypeExtension) </ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity/DistrictTypeExtension) </ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Food from Forest == -->
+  <AIParameterConverter Name="DistrictFoodForest">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityFoodToCityGrowthConversionFactor) * $Count(ClassCity/TerrainTagForest)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor) * $Count(ClassCity/TerrainTagForest)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagForest)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/TerrainTagForest)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Food from River == -->
+  <AIParameterConverter Name="DistrictFoodRiver">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityFoodToCityGrowthConversionFactor) * $Count(ClassCity/TerrainTagRiver)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityFoodToCityProductionConversionFactor) * $Count(ClassCity/TerrainTagRiver)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagRiver)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/TerrainTagRiver)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Food Percent Bonus on District == -->
+  <AIParameterConverter Name="DistrictFoodPercent">
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $SumProperty(ClassEmpire/ClassCity:DistrictFood)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $SumProperty(ClassEmpire/ClassCity:DistrictFood)</ToAIParameter>
+  </AIParameterConverter>
+
+  
+  
+  <!-- == Industry == -->
+  <AIParameterConverter Name="DistrictIndustry">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityIndustryToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) *  $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor)*  $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry from Industry == -->
+  <AIParameterConverter Name="DistrictIndustryIndustry">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityIndustryToCityGrowthConversionFactor) * $Count(ClassCity/TerrainTagIndustry)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor) * $Count(ClassCity/TerrainTagIndustry)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagIndustry)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $Count(ClassEmpire/TerrainTagIndustry)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry from Exploitation Area == -->
+  <AIParameterConverter Name="DistrictIndustryExploitation">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityIndustryToCityGrowthConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) *  $Count(ClassEmpire/ClassCity/DistrictTypeExploitation)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor)*  $Count(ClassEmpire/ClassCity/DistrictTypeExploitation)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry from Forest == -->
+  <AIParameterConverter Name="DistrictIndustryForest">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityIndustryToCityGrowthConversionFactor) * $Count(ClassCity/TerrainTagForest)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor) * $Count(ClassCity/TerrainTagForest)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagForest)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $Count(ClassEmpire/TerrainTagForest)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry from Rocks == -->
+  <AIParameterConverter Name="DistrictIndustryRocks">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityIndustryToCityGrowthConversionFactor) * $Count(ClassCity/TerrainTagRocks)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor) * $Count(ClassCity/TerrainTagRocks)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagRocks)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $Count(ClassEmpire/TerrainTagRocks)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry from Resources  == -->
+  <AIParameterConverter Name="DistrictIndustryResources">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityIndustryToCityGrowthConversionFactor) * $Count(ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor) * $Count(ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Industry from Strategic Resources  == -->
+  <AIParameterConverter Name="DistrictIndustryStrategicResources">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input)  * $Property(CityIndustryToCityGrowthConversionFactor) * $Count(ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest,ResourceTypeStrategic)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(CityIndustryToCityProductionConversionFactor) * $Count(ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest,ResourceTypeStrategic)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) *  $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest,ResourceTypeStrategic)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest,ResourceTypeStrategic)</ToAIParameter>
+  </AIParameterConverter>
+  
+  <!-- == Industry Percent Bonus on District == -->
+  <AIParameterConverter Name="DistrictIndustryPercent">
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input)  * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor) * $SumProperty(ClassEmpire/ClassCity:DistrictIndustry)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor) * $SumProperty(ClassEmpire/ClassCity:DistrictIndustry)</ToAIParameter>
+  </AIParameterConverter>
+
+  
+  
+  <!-- == Dust == -->
+  <AIParameterConverter Name="DistrictDust">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) *  $Property(DistrictDustToDistrictDustNetConversionFactor) </ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(DistrictDustToDistrictFoodNetConversionFactor)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(ClassEmpire,AffinityBrokenLords) * $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Dust from Dust == -->
+  <AIParameterConverter Name="DistrictDustDust">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) *  $Property(DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassCity/TerrainTagDust)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassCity/TerrainTagDust)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassCity/TerrainTagDust)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassEmpire/ClassCity/ClassDistrict) * $Count(ClassCity/TerrainTagDust)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassEmpire/ClassCity/ClassDistrict) * $Count(ClassCity/TerrainTagDust)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(ClassEmpire,AffinityBrokenLords) * $Count(ClassEmpire/ClassCity/ClassDistrict) * $Count(ClassCity/TerrainTagDust)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Dust from River == -->
+  <AIParameterConverter Name="DistrictDustRiver">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) *  $Property(DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassCity/TerrainTagRiver)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Property(DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassCity/TerrainTagRiver)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassCity/TerrainTagRiver)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagRiver)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagRiver)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassEmpire/ClassCity/TerrainTagRiver)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Dust from Water == -->
+  <AIParameterConverter Name="DistrictDustWater">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) *  $Property(DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassCity/TerrainTagWater)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Property(DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassCity/TerrainTagWater)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassCity/TerrainTagWater)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagWater)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagWater)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassEmpire/ClassCity/TerrainTagWater)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Dust from Rocks == -->
+  <AIParameterConverter Name="DistrictDustRocks">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) *  $Property(DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassCity/TerrainTagRocks)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Property(DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassCity/TerrainTagRocks)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassCity/TerrainTagRocks)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagRocks)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagRocks)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassEmpire/ClassCity/TerrainTagRocks)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Dust from Anomalies == -->
+  <AIParameterConverter Name="DistrictDustAnomaly">
+    <ToAIParameter AIParameter="AICityMoney">$(Input) *  $Property(DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassCity/TerrainTagAnomaly)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Property(DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassCity/TerrainTagAnomaly)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) *  $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassCity/TerrainTagAnomaly)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictDustNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagAnomaly)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictFoodNetConversionFactor) * $Count(ClassEmpire/ClassCity/TerrainTagAnomaly)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords) * $Count(ClassEmpire/ClassCity/TerrainTagAnomaly)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Dust Percent Bonus on District == -->
+  <AIParameterConverter Name="DistrictDustPercent">
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictDustNetConversionFactor) * $SumProperty(ClassEmpire/ClassCity:DistrictDust)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Property(ClassEmpire/ClassCity:DistrictDustToDistrictFoodNetConversionFactor) * $SumProperty(ClassEmpire/ClassCity:DistrictDust)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * $Count(../ClassEmpire,AffinityBrokenLords) * $SumProperty(ClassEmpire/ClassCity:DistrictDust)</ToAIParameter>
+  </AIParameterConverter>
+
+  
+  
+  <!-- == Science == -->
+  <AIParameterConverter Name="DistrictScience">
+    <ToAIParameter AIParameter="AICityResearch">$(Input)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity/ClassDistrict) </ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Science per district with science -->
+  <AIParameterConverter Name="DistrictScienceScience">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Count(ClassCity/TerrainTagScience)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity/TerrainTagScience) </ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Science from Water == -->
+  <AIParameterConverter Name="DistrictScienceWater">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Count(ClassCity/TerrainTagWater)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity/TerrainTagWater) </ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictScienceExtension">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Count(ClassCity/DistrictTypeExtension)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity/DistrictTypeExtension) </ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictScienceRocks">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Count(ClassCity/TerrainTagRocks)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity/TerrainTagRocks) </ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictScienceAnomaly">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Count(ClassCity/TerrainTagAnomaly)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity/TerrainTagAnomaly) </ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictScienceLevelUpExtension">
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Count(ClassCity/DistrictLevel1)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity/DistrictLevel1) </ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- == Science Percent Bonus on District == -->
+  <AIParameterConverter Name="DistrictSciencePercent">
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input)  * $SumProperty(ClassEmpire/ClassCity:DistrictScience)</ToAIParameter>
+  </AIParameterConverter>
+  
+  
+
+  <!-- == Prestige == -->
+  <AIParameterConverter Name="DistrictCityPoint">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) *  $Count(ClassEmpire/ClassCity/ClassDistrict)</ToAIParameter>
+  </AIParameterConverter>
+  
+  <AIParameterConverter Name="CityEmpirePointPercent">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Property(CityEmpirePoint)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $Property(ClassEmpire/ClassCity:CityEmpirePoint)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictCityPointExtension">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Count(ClassCity/DistrictTypeExtension)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $Count(ClassEmpire/ClassCity/DistrictTypeExtension) </ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictCityPointLevelUpExtension">
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Count(ClassCity/DistrictLevel1)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * $Count(ClassEmpire/ClassCity/DistrictLevel1) </ToAIParameter>
+  </AIParameterConverter>
+  
+  <!-- == Resources == -->
+
+  <AIParameterConverter Name="DistrictStrategicResourceExtractor">
+    <ToAIParameter AIParameter="AICityStrategicResource1">$(Input) * $Count(ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic1)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource2">$(Input) * $Count(ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic2)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource3">$(Input) * $Count(ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic3)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource4">$(Input) * $Count(ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic4)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource5">$(Input) * $Count(ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic5)</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource6">$(Input) * $Count(ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic6)</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource1">$(Input) *  $Count(ClassEmpire/ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic1)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource2">$(Input) *  $Count(ClassEmpire/ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic2)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource3">$(Input) *  $Count(ClassEmpire/ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic3)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource4">$(Input) *  $Count(ClassEmpire/ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic4)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource5">$(Input) *  $Count(ClassEmpire/ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic5)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource6">$(Input) *  $Count(ClassEmpire/ClassCity/ExploitedPointOfInterest,ResourceDepositTypeStrategic6)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="DistrictAffinityStrategicResourceGain">
+    <ToAIParameter AIParameter="AICityStrategicResource1">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource2">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource3">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource4">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource5">$(Input) * 0.1</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource6">$(Input) * 0.1</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource1">$(Input) * 0.1 * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource2">$(Input) * 0.1 * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource3">$(Input) * 0.1 * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource4">$(Input) * 0.1 * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource5">$(Input) * 0.1 * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireStrategicResource6">$(Input) * 0.1 * $Count(ClassEmpire/ClassCity)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- ###################################################### -->
+  <!-- ################## Empire Misc Bonus  ################ -->
+  <!-- ###################################################### -->
+  <!-- Loot from searching ruins-->  
+  <AIParameterConverter Name="EmpireBetterLoot">
+    <ToAIParameter AIParameter="AIEmpireImproveSearch">$(Input) *  $Count(ClassEmpire/ClassCity/PointOfInterestTypeQuestLocation)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- bribing ability -->
+  <AIParameterConverter Name="EmpireBribe">
+    <ToAIParameter AIParameter="AIEmpireBribe">$(Input)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireBuyout">
+    <ToAIParameter AIParameter="AIEmpireBuyout">$(Input)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireHeroRecruitment">
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input)</ToAIParameter> <!-- TBD: distinction between offense and defense -->
+    <ToAIParameter AIParameter="AIEmpireMilitaryOffense">$(Input)</ToAIParameter> <!-- TBD: distinction between offense and defense -->
+    <ToAIParameter AIParameter="AIEmpireGrowth">$(Input) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">$(Input) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">$(Input) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireResearch">$(Input) * 0.5</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireMilitaryDefense">
+    <ToAIParameter AIParameter="AIEmpireMilitaryDefense">$(Input)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireMilitaryOffense">
+    <ToAIParameter AIParameter="AIEmpireMilitaryOffense">$(Input)</ToAIParameter>
+  </AIParameterConverter>
+
+
+  <AIParameterConverter Name="EmpireUnitUpkeep">
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/Garrison/ClassUnit:MilitaryUpkeep)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireHeroUpkeep">
+    <ToAIParameter AIParameter="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/Garrison/UnitHero:HeroUpkeep)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireTalk">
+    <ToAIParameter AIParameter="AIEmpireTalk">$(Input)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireStrategicResource1">
+    <ToAIParameter AIParameter="AICityStrategicResource1">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic1) * 10</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic1) * 10</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource1">$(Input) *  $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic1) * 10</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireStrategicResource2">
+    <ToAIParameter AIParameter="AICityStrategicResource2">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic2) * 10</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic2) * 10</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource2">$(Input) *  $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic2) * 10</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireStrategicResource3">
+    <ToAIParameter AIParameter="AICityStrategicResource3">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic3) * 10</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic3) * 10</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource3">$(Input) *  $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic3) * 10</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireStrategicResource4">
+
+    <ToAIParameter AIParameter="AICityStrategicResource4">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic4) * 10</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic4) * 10</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource4">$(Input) *  $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic4) * 10</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireStrategicResource5">
+    <ToAIParameter AIParameter="AICityStrategicResource5">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic5) * 10</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic5) * 10</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource5">$(Input) * $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic5) * 10</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="EmpireStrategicResource6">
+    <ToAIParameter AIParameter="AICityStrategicResource6">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic6) * 10</ToAIParameter>
+    <ToAIParameter AIParameter="AICityStrategicResource">$(Input) * $Count(ClassCity/ResourceDepositTypeStrategic6) * 10</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireStrategicResource6">$(Input) * $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic6) * 10</ToAIParameter>
+  </AIParameterConverter>
+
+
+  <!-- ################################################### -->
+  <!-- ##############   LUXURY  BONUSES    ############### -->
+  <!-- ################################################### -->
+  <AIParameterConverter Name="EmpireLuxuryResource">
+    <ToAIParameter AIParameter="AICityLuxuryResource">$(Input) * 10</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireLuxuryResource">$(Input) *  $Count(ClassEmpire/ClassCity) * 10</ToAIParameter>
+    <!-- TBD: depends on the use of this ressource, but at least military impact, and special case related to Vaulter Affinity -->
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="LuxuryCityCityPointPercent">
+    <ToAIParameter AIParameter="AICityEmpirePoint">($(Input) * $Property(CityCityPoint)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireEmpirePoint">($(Input) * $SumProperty(ClassEmpire/ClassCity:CityCityPoint))  / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="LuxuryCityApproval">
+    <!-- bonus on food -->
+    <ToAIParameter AIParameter="AICityGrowth">($(Input) * 0.0075 * $Property(CityFood) * $Property(CityFoodToCityGrowthConversionFactor)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">($(Input) * 0.0075 * $Property(CityFood) * $Property(CityFoodToCityProductionConversionFactor)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">($(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityFood) * $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">($(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityFood) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <!-- bonus on industry -->
+    <ToAIParameter AIParameter="AICityGrowth">($(Input) * 0.0075 * $Property(CityIndustry) * $Property(CityIndustryToCityGrowthConversionFactor)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">($(Input) * 0.0075 * $Property(CityIndustry) * $Property(CityIndustryToCityProductionConversionFactor)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">($(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityIndustry) * $Property(ClassEmpire/ClassCity:CityIndustryToCityGrowthConversionFactor)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">($(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityIndustry) * $Property(ClassEmpire/ClassCity:CityIndustryToCityProductionConversionFactor)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <!-- bonus on science -->
+    <ToAIParameter AIParameter="AIEmpireResearch">($(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityScience)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <!-- bonus on dust -->
+    <ToAIParameter AIParameter="AIEmpireMoney">($(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityMoney)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireGrowth">($(Input) * 0.0075 * $SumProperty(ClassEmpire/ClassCity:CityMoney) * $Count(ClassEmpire,AffinityBrokenLords)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="LuxuryTradeRouteMoneyGainPercent">
+    <!-- TBD: use the number of trade route to compute direct benefice; need input from diplo intention -->
+    <ToAIParameter AIParameter ="AICityMoney">($(Input) * $Property(TradeRouteCityDustIncome)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <ToAIParameter AIParameter ="AIEmpireMoney">($(Input) * $SumProperty(ClassEmpire/ClassCity:TradeRouteCityDustIncome)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="LuxuryCityMoneyUpkeepPercent">
+    <ToAIParameter AIParameter="AICityMoneyUpkeep">($(Input) * $Property(TotalCityMoneyUpkeep)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireMoneyUpkeep">($(Input) * $SumProperty(ClassEmpire/ClassCity:TotalCityMoneyUpkeep)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="LuxuryCityFoodPercent">
+    <ToAIParameter AIParameter="AICityGrowth">($(Input) * $Property(CityFood) * $Property(CityFoodToCityGrowthConversionFactor)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">($(Input) * $Property(CityFood) * $Property(CityFoodToCityProductionConversionFactor)) / (5 + ($Count(.../ClassEmpire/ClassCity) * 5))</ToAIParameter>
+
+    <ToAIParameter AIParameter="AIEmpireGrowth">($(Input) * $SumProperty(ClassEmpire/ClassCity:CityFood) *  $Property(ClassEmpire/ClassCity:CityFoodToCityGrowthConversionFactor) * $Count(ClassEmpire/ClassCity)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireProduction">($(Input) * $SumProperty(ClassEmpire/ClassCity:CityFood) * $Property(ClassEmpire/ClassCity:CityFoodToCityProductionConversionFactor) * $Count(ClassEmpire/ClassCity)) / (5 + ($Count(ClassEmpire/ClassCity) * 5))</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="LuxuryBonusPerLuxury">
+    <ToAIParameter AIParameter="AICityLuxuryResource">$(Input) * $Count(ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest,ResourceTypeLuxury)</ToAIParameter>
+    <ToAIParameter AIParameter="AIEmpireLuxuryResource">$(Input) * $Count(ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit,ExploitedPointOfInterest,ResourceTypeLuxury)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="PopulationEfficiencyLimit">
+    <ToAIParameter AIParameter="CityApproval">3 - (($(Input) + $Property(PopulationEfficiencyLimit)) * 5 / $Property(Population)) - ($Property(PopulationEfficiencyLimit) * 5 / $Property(Population))</ToAIParameter>
+    
+  </AIParameterConverter>
+  
+  
+
+  <!-- ################################################### -->
+  <!-- ############## TRADE ROUTE BONUSES  ############### -->
+  <!-- ################################################### -->
+  <!-- TBD: use number of acquaintance to evaluate dust & Science gain -->
+  <AIParameterConverter Name="ActivateTradeRoutes">
+    <ToAIParameter AIParameter ="AICityMoney">$(Input) * $Count(../ClassEmpire/ClassCity) * 6</ToAIParameter>
+    <ToAIParameter AIParameter ="AICityResearch">$(Input) * $Count(../ClassEmpire/ClassCity) * 6</ToAIParameter>
+
+    <ToAIParameter AIParameter ="AIEmpireMoney">$(Input) * $Count(ClassEmpire/ClassCity) * 6</ToAIParameter>
+    <ToAIParameter AIParameter ="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity) * 6</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="NewTradeRoute">
+    <!-- TBD: same than activate trade route for now -->
+    <ToAIParameter AIParameter ="AICityMoney">$(Input) * $Count(../ClassEmpire/ClassCity) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter ="AICityResearch">$(Input) * $Count(../ClassEmpire/ClassCity) * 0.5</ToAIParameter>
+
+    <ToAIParameter AIParameter ="AIEmpireMoney">$(Input) * $Count(ClassEmpire/ClassCity) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter ="AIEmpireResearch">$(Input) * $Count(ClassEmpire/ClassCity) * 0.5</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="TradeRouteGainPercent">
+    <!-- TBD: use the number of trade route to compute direct benefice; need input from diplo intention -->
+    <ToAIParameter AIParameter ="AICityMoney">$(Input) * $SumProperty(ClassCity/ClassTradeRoute:TradeRouteGain)</ToAIParameter>
+
+    <ToAIParameter AIParameter ="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/ClassCity:IntermediateTradeRoutesGain)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="IntermediateTradeRouteGainPercent">
+    <!-- TBD: use the number of trade route to compute direct benefice; need input from diplo intention -->
+    <ToAIParameter AIParameter ="AICityMoney">$(Input) * $Property(IntermediateTradeRoutesGain)</ToAIParameter>
+
+    <ToAIParameter AIParameter ="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/ClassCity:IntermediateTradeRoutesGain)</ToAIParameter>
+  </AIParameterConverter>
+
+  <!--<AIParameterConverter Name="TradeRouteGrowthGainPercent">
+    <ToAIParameter AIParameter ="AICityMoney">$(Input) * $Property(TradeRouteCityFoodIncome)</ToAIParameter>
+
+    <ToAIParameter AIParameter ="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/ClassCity:TradeRouteCityFoodIncome)</ToAIParameter>
+  </AIParameterConverter>-->
+  
+  <AIParameterConverter Name="TradeRouteMoneyGainPercent">
+    <!-- TBD: use the number of trade route to compute direct benefice; need input from diplo intention -->
+    <ToAIParameter AIParameter ="AICityMoney">$(Input) * $Property(TradeRouteCityDustIncome)</ToAIParameter>
+    
+    <ToAIParameter AIParameter ="AIEmpireMoney">$(Input) * $SumProperty(ClassEmpire/ClassCity:TradeRouteCityDustIncome)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="TradeRouteResearchGainPercent">
+    <!-- TBD: use the number of trade route to compute direct benefice; need input from diplo intention -->
+    <ToAIParameter AIParameter ="AICityResearch">$(Input) * $Property(TradeRouteCityScienceIncome)</ToAIParameter>
+
+    <ToAIParameter AIParameter ="AIEmpireResearch">$(Input) * $SumProperty(ClassEmpire/ClassCity:TradeRouteCityScienceIncome)</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Urces">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Erycis">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Ceratan">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Kazanji">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Bos">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Silics">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Delvers">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_SistersOfMercy">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Haunts">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Jotus">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Hurnas">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Gauran">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Birdhive">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <AIParameterConverter Name="Unit_Geldirus">
+    <!-- TBD: evaluate military advantage & disavantage  -->
+    <ToAIParameter AIParameter ="AIExploration">0</ToAIParameter>
+  </AIParameterConverter>
+
+  <!-- TBD CLEANED -->
+  <AIParameterConverter Name="Village">
+    <ToAIParameter AIParameter="AICityGrowth">$(Input) * $Property(BaseFoodPerPopulation) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AICityProduction">$(Input) * $Property(BaseIndustryPerPopulation) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AICityMoney">$(Input) * $Property(BaseSciencePerPopulation) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AICityResearch">$(Input) * $Property(BaseDustPerPopulation) * 0.5</ToAIParameter>
+    <ToAIParameter AIParameter="AICityEmpirePoint">$(Input) * $Property(BaseCityPointPerPopulation) * 0.5</ToAIParameter>
+    <!-- + visiblity bonus like watch tower -->
+  </AIParameterConverter>
+  
+  <AIParameterConverter Name="WatchTower">
+    <ToAIParameter AIParameter="AIEmpireExploration">$(Input) * 10</ToAIParameter>
+  </AIParameterConverter>
+</Datatable>

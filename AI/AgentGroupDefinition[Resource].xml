@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Amas Name="ResourceEvaluationAmas">
+
+    <AgentReference Name="TechnologyReferenceTurnCount"/>
+    <AgentReference Name="MoneyReferenceRatio"/>
+    <AgentReference Name="NetEmpirePrestige"/>
+    <AgentReference Name="EmpirePlanNeedPrestigeRatio"/>
+    <AgentReference Name="DiplomacyNeedPrestigeRatio"/>
+    <AgentReference Name="ConversionNeedPrestigeRatio"/>
+    
+  </Amas>
+
+  <AgentGroup Name="CityAgentGroup">
+
+    <AgentReference Name="FoodPopulation"/>
+    <AgentReference Name="IndustryPopulation"/>
+    <AgentReference Name="SciencePopulation"/>
+    <AgentReference Name="DustPopulation"/>
+    <AgentReference Name="CityPointPopulation"/>
+
+    <AgentReference Name="PopulationReferenceTurnCount"/>
+    <AgentReference Name="PopulationReferenceTurnCountForSettler"/>
+    <AgentReference Name="IndustryReferenceTurnCount"/>
+    <AgentReference Name="NetCityResearch"/>
+    <AgentReference Name="NetCityMoney"/>
+    <AgentReference Name="PopulationBuyoutReferenceRatio"/>
+    <AgentReference Name="NetCityEmpirePoint"/>
+    
+  </AgentGroup>
+
+</Datatable>

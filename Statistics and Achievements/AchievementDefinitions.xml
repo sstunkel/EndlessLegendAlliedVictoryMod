@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<AchievementDefinition Name="FACTIONBROKENLORDS_VICTORY"/>
+	<AchievementDefinition Name="FACTIONRAGEWIZARDS_VICTORY"/>
+	<AchievementDefinition Name="FACTIONMADFAIRIES_VICTORY"/>
+	<AchievementDefinition Name="FACTIONNECROPHAGES_VICTORY"/>
+	<AchievementDefinition Name="FACTIONROVINGCLANS_VICTORY"/>
+	<AchievementDefinition Name="FACTIONVAULTERS_VICTORY"/>
+	<AchievementDefinition Name="FACTIONDRAKKENS_VICTORY"/>
+	<AchievementDefinition Name="FACTIONCULTISTS_VICTORY"/>
+	<AchievementDefinition Name="FACTION_CUSTOM_VICTORY"/>
+	
+	<AchievementDefinition Name="GLOBALSCOREWHENLASTTURNREACHED_VICTORY"/>
+	<AchievementDefinition Name="EXPANSION_VICTORY"/>
+	<AchievementDefinition Name="ECONOMY_VICTORY"/>
+	<AchievementDefinition Name="DIPLOMACY_VICTORY"/>
+	<AchievementDefinition Name="WONDER_VICTORY"/>
+	<AchievementDefinition Name="MOSTTECHNOLOGIESDISCOVERED_VICTORY"/>
+	<AchievementDefinition Name="LASTEMPIRESTANDING_VICTORY"/>
+	<AchievementDefinition Name="SUPREMACY_VICTORY"/>
+	
+	<AchievementDefinition Name="TUTORIAL_VICTORY"/>
+	
+	<AchievementDefinition Name="DIFFICULTY0_VICTORY"/>
+	<AchievementDefinition Name="DIFFICULTY1_VICTORY"/>
+	<AchievementDefinition Name="DIFFICULTY2_VICTORY"/>
+	<AchievementDefinition Name="DIFFICULTY3_VICTORY"/>
+	<AchievementDefinition Name="DIFFICULTY4_VICTORY"/>
+	<AchievementDefinition Name="DIFFICULTY5_VICTORY"/>
+	<AchievementDefinition Name="DIFFICULTY6_VICTORY"/>
+	
+	<AchievementDefinition Name="MULTIPLAYER_GAME"/>
+	<AchievementDefinition Name="MULTIPLAYER_VICTORY"/>
+	
+	<AchievementDefinition Name="ALL_STRATEGIC_RESOURCES"/>
+	<AchievementDefinition Name="ALL_FIS_BOOSTER_USED" />
+	<AchievementDefinition Name="ATTACK_ALLY_WITH_PRIVATEERS" />
+	<AchievementDefinition Name="BEST_EMPIRE_PLAN" />
+	<AchievementDefinition Name="BEST_SCORE_EARLY_DIFFICULTY3" />
+	<AchievementDefinition Name="BEST_SCORE_EARLY_DIFFICULTY6" />
+	<AchievementDefinition Name="DRAKKENS_VICTORY_NO_WAR" />
+	<AchievementDefinition Name="KILLED_MIGRATION_UNIT" />
+
+	
+	<!-- Achievements not set by the game directly -->
+	<AchievementDefinition Name="ALL_FINAL_QUEST_COMPLETER"/>
+	<AchievementDefinition Name="FINAL_QUESTER" />
+	<AchievementDefinition Name="HERO_LEVELER" />
+	<AchievementDefinition Name="HERO_HOARDER" />
+	<AchievementDefinition Name="MAX_NET_CITY_DUST_ACH" />
+	<AchievementDefinition Name="MAX_NET_CITY_SCIENCE_ACH" />
+	<AchievementDefinition Name="MAX_NET_CITY_INDUSTRY_ACH" />
+	<AchievementDefinition Name="MAX_NET_CITY_FOOD_ACH" />
+	<AchievementDefinition Name="MAX_NET_CITY_INFLUENCE_ACH" />
+	<AchievementDefinition Name="MINOR_FACTIONS_ASSIMILATION" />
+	<AchievementDefinition Name="QUEST_COMPLETER" />
+	<AchievementDefinition Name="TWO_CITIES_EARLY" />
+	<AchievementDefinition Name="VILLAGE_PACIFIER" />
+	<AchievementDefinition Name="ALL_LUXURY_BOOSTER_USED"/>
+	<AchievementDefinition Name="MANY_ACTIVE_LUXURY_BOOSTERS"/>
+	<AchievementDefinition Name="UNITS_KILLER"/>
+	<AchievementDefinition Name="MASS_DUST_GAINED"/>
+	<AchievementDefinition Name="MANY_LEVELED_BOROUGHS" />
+	<AchievementDefinition Name="FAST_EXPLORER"/>
+	<AchievementDefinition Name="ALL_STRATEGIC_EXTRACTORS"/>
+	<AchievementDefinition Name="MANY_TRADE_ROUTES"/>
+	<AchievementDefinition Name="BUILDER"/>
+	<AchievementDefinition Name="ARDENT_MAGES_MANY_PILLARS"/>
+	<AchievementDefinition Name="BROKEN_LORDS_DISTRICT_DUST"/>
+	<AchievementDefinition Name="CULTISTS_MANY_CONVERTED_VILLAGES"/>
+	<AchievementDefinition Name="NECROPHAGES_MANY_CADAVER_BOOSTER_USED"/>
+	<AchievementDefinition Name="VAULTERS_TELEPORTER"/>
+	<AchievementDefinition Name="ROVING_CLANS_IRS"/>
+	<AchievementDefinition Name="WILD_WALKERS_WIN_WITHOUT_DAMAGE"/>
+
+	<AchievementDefinition Name="TURNS_PLAYED1"/>
+	<AchievementDefinition Name="TURNS_PLAYED2"/>
+	<AchievementDefinition Name="TURNS_PLAYED3"/>
+	
+</Datatable>

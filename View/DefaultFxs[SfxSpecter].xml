@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX SPECTER ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_Haunt_Specter_Walk">
+    <SoundEventName>Sfx/Faction/Specter/Specter_Walk</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Haunt_Specter_Attack">
+    <SoundEventName>Sfx/Voices/Specter/Specter_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Haunt_Specter_Death">
+    <SoundEventName>Sfx/Voices/Specter/Specter_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Haunt_Specter_Defense">
+    <SoundEventName>Sfx/Voices/Specter/Specter_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Haunt_Specter_Click">
+    <SoundEventName>Sfx/Voices/Specter/Specter_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Haunt_Specter_Order">
+    <SoundEventName>Sfx/Voices/Specter/Specter_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+</Datatable>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <GuiElement Name="GlobalScore">
+    <Title>%GameScoreGlobalTitle</Title>
+    <Description>%GameScoreGlobalDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="MilitaryScore">
+    <Title>%GameScoreMilitaryTitle</Title>
+    <Description>%GameScoreMilitaryDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ExpansionScore">
+    <Title>%GameScoreExpansionTitle</Title>
+    <Description>%GameScoreExpansionDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="PopulationScore"> 
+    <Title>%GameScorePopulationTitle</Title>
+    <Description>%GameScorePopulationDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ScienceScore">
+    <Title>%GameScoreScienceTitle</Title>
+    <Description>%GameScoreScienceDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="FoodPerTurnScore">
+    <Title>%GameScoreFoodPerTurnTitle</Title>
+    <Description>%GameScoreFoodPerTurnDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="IndustryPerTurnScore">
+    <Title>%GameScoreIndustryPerTurnTitle</Title>
+    <Description>%GameScoreIndustryPerTurnDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DustPerTurnScore">
+    <Title>%GameScoreDustPerTurnTitle</Title>
+    <Description>%GameScoreDustPerTurnDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SciencePerTurnScore">
+    <Title>%GameScoreSciencePerTurnTitle</Title>
+    <Description>%GameScoreSciencePerTurnDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePointPerTurnScore">
+    <Title>%GameScoreEmpirePointPerTurnTitle</Title>
+    <Description>%GameScoreEmpirePointPerTurnDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ApprovalScore">
+    <Title>%GameScoreApprovalTitle</Title>
+    <Description>%GameScoreApprovalDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="PeacePointScore">
+    <Title>%GameScorePeacePointTitle</Title>
+    <Description>%GameScorePeacePointDescription</Description>
+  </GuiElement>
+  
+</Datatable>

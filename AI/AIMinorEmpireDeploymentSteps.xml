@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <DeploymentStepDefinition Name="Grace">
+    <StartTurn>[0,0]</StartTurn>
+    
+    <MaxArmyPerVillage>0</MaxArmyPerVillage>
+    <MaxRoamingArmySize>0</MaxRoamingArmySize>
+    <MaxSpawnedArmyPerTurn>0</MaxSpawnedArmyPerTurn>
+    
+    <ArmySpawnAllowed>false</ArmySpawnAllowed>
+    <ArmyAttackAllowed>false</ArmyAttackAllowed>
+    <ArmyStayInRegion>true</ArmyStayInRegion>
+
+    <VillageAttackAllowed>false</VillageAttackAllowed>
+    
+    <CityAttackAllowed>false</CityAttackAllowed>    
+    <CitySiegeAllowed>false</CitySiegeAllowed>
+    <CitySiegeDuration>0</CitySiegeDuration>
+  </DeploymentStepDefinition>
+  
+
+  <DeploymentStepDefinition Name="Roaming0">
+    <StartTurn>[15,25]</StartTurn>
+
+    <MaxArmyPerVillage>1</MaxArmyPerVillage>
+    <MaxRoamingArmySize>2</MaxRoamingArmySize>
+    <MaxSpawnedArmyPerTurn>1</MaxSpawnedArmyPerTurn>
+
+    <ArmySpawnAllowed>true</ArmySpawnAllowed>
+    <ArmyAttackAllowed>true</ArmyAttackAllowed>
+    <ArmyStayInRegion>true</ArmyStayInRegion>
+
+    <VillageAttackAllowed>true</VillageAttackAllowed>
+    
+    <CityAttackAllowed>false</CityAttackAllowed>    
+    <CitySiegeAllowed>false</CitySiegeAllowed>
+    <CitySiegeDuration>0</CitySiegeDuration>
+  </DeploymentStepDefinition>
+
+
+  <DeploymentStepDefinition Name="Roaming1">
+    <StartTurn>[50,70]</StartTurn>
+
+    <MaxArmyPerVillage>1</MaxArmyPerVillage>
+    <MaxRoamingArmySize>3</MaxRoamingArmySize>
+    <MaxSpawnedArmyPerTurn>1</MaxSpawnedArmyPerTurn>
+
+    <ArmySpawnAllowed>true</ArmySpawnAllowed>
+    <ArmyAttackAllowed>true</ArmyAttackAllowed>
+    <ArmyStayInRegion>true</ArmyStayInRegion>
+
+    <VillageAttackAllowed>true</VillageAttackAllowed>
+    
+    <CityAttackAllowed>false</CityAttackAllowed>    
+    <CitySiegeAllowed>true</CitySiegeAllowed>
+    <CitySiegeDuration>0</CitySiegeDuration>
+  </DeploymentStepDefinition>
+
+
+
+  <DeploymentStepDefinition Name="Roaming2">
+    <StartTurn>[100,120]</StartTurn>
+
+    <MaxArmyPerVillage>1</MaxArmyPerVillage>
+    <MaxRoamingArmySize>3</MaxRoamingArmySize>
+    <MaxSpawnedArmyPerTurn>1</MaxSpawnedArmyPerTurn>
+
+    <ArmySpawnAllowed>true</ArmySpawnAllowed>
+    <ArmyAttackAllowed>true</ArmyAttackAllowed>
+    <ArmyStayInRegion>true</ArmyStayInRegion>
+
+    <VillageAttackAllowed>true</VillageAttackAllowed>
+    
+    <CityAttackAllowed>true</CityAttackAllowed>    
+    <CitySiegeAllowed>true</CitySiegeAllowed>
+    <CitySiegeDuration>15</CitySiegeDuration>
+  </DeploymentStepDefinition>
+
+
+
+  <DeploymentStepDefinition Name="Conquest0">
+    <StartTurn>[150,180]</StartTurn>
+
+    <MaxArmyPerVillage>2</MaxArmyPerVillage>
+    <MaxRoamingArmySize>4</MaxRoamingArmySize>
+    <MaxSpawnedArmyPerTurn>1</MaxSpawnedArmyPerTurn>
+
+    <ArmySpawnAllowed>true</ArmySpawnAllowed>
+    <ArmyAttackAllowed>true</ArmyAttackAllowed>
+    <ArmyStayInRegion>false</ArmyStayInRegion>
+
+    <VillageAttackAllowed>true</VillageAttackAllowed>
+    
+    <CityAttackAllowed>true</CityAttackAllowed>    
+    <CitySiegeAllowed>true</CitySiegeAllowed>
+    <CitySiegeDuration>15</CitySiegeDuration>
+  </DeploymentStepDefinition>
+
+
+
+  <DeploymentStepDefinition Name="Conquest1">
+    <StartTurn>[200,220]</StartTurn>
+
+    <MaxArmyPerVillage>2</MaxArmyPerVillage>
+    <MaxRoamingArmySize>5</MaxRoamingArmySize>
+    <MaxSpawnedArmyPerTurn>1</MaxSpawnedArmyPerTurn>
+
+    <ArmySpawnAllowed>true</ArmySpawnAllowed>
+    <ArmyAttackAllowed>true</ArmyAttackAllowed>
+    <ArmyStayInRegion>false</ArmyStayInRegion>
+
+    <VillageAttackAllowed>true</VillageAttackAllowed>
+    
+    <CityAttackAllowed>true</CityAttackAllowed>    
+    <CitySiegeAllowed>true</CitySiegeAllowed>
+    <CitySiegeDuration>10</CitySiegeDuration>
+  </DeploymentStepDefinition>
+
+
+
+  <DeploymentStepDefinition Name="Conquest2">
+    <StartTurn>[250,275]</StartTurn>
+
+    <MaxArmyPerVillage>3.0</MaxArmyPerVillage>
+    <MaxRoamingArmySize>5</MaxRoamingArmySize>
+    <MaxSpawnedArmyPerTurn>2</MaxSpawnedArmyPerTurn>
+
+    <ArmySpawnAllowed>true</ArmySpawnAllowed>
+    <ArmyAttackAllowed>true</ArmyAttackAllowed>
+    <ArmyStayInRegion>false</ArmyStayInRegion>
+
+    <VillageAttackAllowed>true</VillageAttackAllowed>
+    
+    <CityAttackAllowed>true</CityAttackAllowed>    
+    <CitySiegeAllowed>true</CitySiegeAllowed>
+    <CitySiegeDuration>6</CitySiegeDuration>
+  </DeploymentStepDefinition>
+  
+</Datatable>

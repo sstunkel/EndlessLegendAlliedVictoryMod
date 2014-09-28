@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX SILIC ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Silic_CrystalGolem_Idle0">
+    <SoundEventName>Sfx/Faction/Silic/CrystalGolem/Silic_CrystalGolem_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Silic_CrystalGolem_Footstep">
+    <SoundEventName>Sfx/Faction/Silic/CrystalGolem/Silic_CrystalGolem_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Silic_Golem_Death">
+    <SoundEventName>Sfx/Faction/Silic/CrystalGolem/Silic_CrystalGolem_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Silic_Golem_Defense">
+    <SoundEventName>Sfx/Faction/Silic/CrystalGolem/Silic_CrystalGolem_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Silic_Golem_Click">
+    <SoundEventName>Sfx/Voices/Golem/Golem_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Silic_Golem_Order">
+    <SoundEventName>Sfx/Voices/Golem/Golem_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+</Datatable>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <!-- ===================================== SFX URSES ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_Idle">
+    <SoundEventName>Sfx/Faction/Urses/Urses_Ogre_Idle</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_Scratch">
+    <SoundEventName>Sfx/Faction/Urses/Urses_Ogre_Idle_ScrathBottom</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_Snarl">
+    <SoundEventName>Sfx/Faction/Urses/Urses_Ogre_Idle_Snarl</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_Footstep">
+    <SoundEventName>Sfx/Faction/Urses/Urses_Ogre_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_Attack">
+    <SoundEventName>Sfx/Voices/Ogre/Ogre_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_Death">
+    <SoundEventName>Sfx/Voices/Ogre/Ogre_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_Defense">
+    <SoundEventName>Sfx/Voices/Ogre/Ogre_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_BodyFall">
+    <SoundEventName>Sfx/Faction/Urses/Urses_Ogre_Idle_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_AttackImpact">
+    <SoundEventName>Sfx/Faction/Urses/Urses_Ogre_Attack_Impact</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Urses_Ogre_AttackWhoosh">
+    <SoundEventName>Sfx/Faction/Urses/Urses_Ogre_Attack_Whoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  
+</Datatable>

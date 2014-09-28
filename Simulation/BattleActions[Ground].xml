@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== RAGE WIZARDS FLYING ======================================== -->
+
+  <!-- >>>>> See UnitBodyDefinitions.xml for the complete list of capacities used by this unit. Then, you can read their description here or at the top of this document <<<<< -->
+
+  <!--
+  <BattleActionGround Name="BattleActionGroundScorchTile">
+
+    <BattleEffects TargetsFilter="Target EnemyGroup Alive">
+      <BattleEffect_ChangeSealedPropertyValue Name="BattleEffectScorchTileDamage" PropertyName="Health" Operation="Subtraction" InterpreterFormula="0 max (($LinkProperty(Initiator;ClassUnit:AttributeAttack) * $LinkProperty(Initiator;ClassUnit:DamageMultiplier)) - $Property(ClassUnit:AttributeDefense))" />
+    </BattleEffects>
+
+  </BattleActionGround>
+  -->
+
+  <!-- ===================================== RAGE WIZARDS WITCH ======================================== -->
+
+  <!-- >>>>> See UnitBodyDefinitions.xml for the complete list of capacities used by this unit. Then, you can read their description here or at the top of this document <<<<< -->
+
+  <!--
+  <BattleActionGround Name="BattleActionGroundRageWizardsWitch">
+    <BattleEffects TargetsFilter="Target EnemyGroup Alive">
+      <BattleEffect_ChangeSealedPropertyValue Name="BattleEffectRageWizardsWitchScorchTileDamage" PropertyName="Health" Operation="Subtraction" InterpreterFormula="0 max (($LinkProperty(Initiator;ClassUnit:AttributeAttack) * $LinkProperty(Initiator;ClassUnit:DamageMultiplier)) - $Property(ClassUnit:AttributeDefense))" />
+    </BattleEffects>
+  </BattleActionGround>-->
+
+
+  <!-- ========================================= CITY ================================================ -->
+
+  <BattleActionGround Name="BattleActionGroundDistrictTypeCenterBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="0">
+    <BattleEffects TargetsFilter="Target SameGroup Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectDistrictTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionDistrictTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+    
+  </BattleActionGround>
+
+  <BattleActionGround Name="BattleActionGroundDistrictTypeExtensionBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="0">
+    <BattleEffects TargetsFilter="Target SameGroup Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectDistrictTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionDistrictTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- ##################################### -->
+  <!-- ######          FOREST         ###### -->
+  <!-- ##################################### -->
+  
+  <!-- Cold Forest -->
+  <BattleActionGround Name="BattleActionGroundColdForestBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Mountain Forest -->
+  <!-- DO NOT EXIT ANYMORE-->
+  <!-- <BattleActionGround Name="BattleActionGroundMountainForestBonus" CanBeAppliedByDeadUnit="true">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectDefenseTileBonus" Duration="1" IsPermanentEffect="true" ConflictPriority="1">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround> -->
+
+  <!-- Crystal Forest -->
+  <BattleActionGround Name="BattleActionGroundCrystalForestBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Tundra High Mountain Forest -->
+  <BattleActionGround Name="BattleActionGroundTundraHighMountainForestBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- High Mountain Forest -->
+  <BattleActionGround Name="BattleActionGroundHighMountainForestBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Enchanted Forest -->
+  <BattleActionGround Name="BattleActionGroundEnchantedForestBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+    
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+  </BattleActionGround>
+
+  <!-- Temperate Forest -->
+  <BattleActionGround Name="BattleActionGroundTemperateForestBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Tropical Mountain Forest -->
+  <BattleActionGround Name="BattleActionGroundTropicalMountainForestBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Taiga -->
+  <BattleActionGround Name="BattleActionGroundTaigaBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Wetland -->
+  <BattleActionGround Name="BattleActionGroundWetlandBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Tropical Wetland -->
+  <BattleActionGround Name="BattleActionGroundTropicalWetlandBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+      <BattleEffects TargetsFilter="Target Alive">
+        <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+        <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+          <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+        </BattleEffect_UnitSimulation>
+      </BattleEffects>
+  </BattleActionGround>
+
+  <!-- Palm Trees -->
+  <BattleActionGround Name="BattleActionGroundPalmTreesBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  
+  <!-- Savanna -->
+  <BattleActionGround Name="BattleActionGroundSavannaBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+
+    <BattleEffects TargetsFilter="Target Alive">
+      <PathPrerequisite Inverted="false">ClassUnit,UnitAbilityForestRageDescriptor</PathPrerequisite>
+      <BattleEffect_UnitSimulation Name="BattleEffectForestRageTileBonus" Duration="1" IsCumulable="false"  IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestRageTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+
+  <!-- ############################################# -->
+  <!-- ######          FROZEN SPIKES         ####### -->
+  <!-- ############################################# -->
+
+  <!-- Frozen Spikes 
+  <BattleActionGround Name="BattleActionGroundFrozenSpikesBonus" CanBeAppliedByDeadUnit="true" PrioritySensitive="true" Priority="1">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectForestTileBonus" Duration="1" IsCumulable="false" IsPermanentEffect="true">
+        <SimulationDescriptorReference Name="UnitActionForestTileBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+    
+  </BattleActionGround>-->
+
+  <!-- ############################################# -->
+  <!-- ######             SPELLS             ####### -->
+  <!-- ############################################# -->
+  
+  <BattleActionGround Name="BattleActionGroundSpellDefenseBonus" CanBeAppliedByDeadUnit="true">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_UnitSimulation Name="BattleEffectSpellDefenseBonus" Duration="2">
+        <SimulationDescriptorReference Name="UnitActionSpellDefenseBonus" />
+      </BattleEffect_UnitSimulation>
+    </BattleEffects>
+  </BattleActionGround>
+  
+
+</Datatable>

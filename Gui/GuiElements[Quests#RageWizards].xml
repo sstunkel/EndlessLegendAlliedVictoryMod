@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://RageWizardsw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://RageWizardsw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter1">
+    <Title>%MainQuestRageWizards-Chapter1Title</Title>
+    <Description>%MainQuestRageWizards-Chapter1Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter1Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter1-Step1">%MainQuestRageWizards-Chapter1-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter1-Step1">%MainQuestRageWizards-Chapter1-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter2">
+    <Title>%MainQuestRageWizards-Chapter2Title</Title>
+    <Description>%MainQuestRageWizards-Chapter2Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter2Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter2-Step1">%MainQuestRageWizards-Chapter2-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter1-Step1">%MainQuestRageWizards-Chapter2-Step2</Step>
+      <Step Name="MainQuestRageWizards-Chapter1-Step1">%MainQuestRageWizards-Chapter2-Step3</Step>
+      <Step Name="MainQuestRageWizards-Chapter1-Step1">%MainQuestRageWizards-Chapter2-Step4</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter3">
+    <Title>%MainQuestRageWizards-Chapter3Title</Title>
+    <Description>%MainQuestRageWizards-Chapter3Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter3Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter3-Step1">%MainQuestRageWizards-Chapter3-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter4">
+    <Title>%MainQuestRageWizards-Chapter4Title</Title>
+    <Description>%MainQuestRageWizards-Chapter4Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter4Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter4-Step1">%MainQuestRageWizards-Chapter4-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter4-Step1">%MainQuestRageWizards-Chapter4-Step2</Step>
+      <Step Name="MainQuestRageWizards-Chapter4-Step1">%MainQuestRageWizards-Chapter4-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter5">
+    <Title>%MainQuestRageWizards-Chapter5Title</Title>
+    <Description>%MainQuestRageWizards-Chapter5Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter5Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter5-Step1">%MainQuestRageWizards-Chapter5-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter5-Step2">%MainQuestRageWizards-Chapter5-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 5Alt -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter5Alt">
+    <Title>%MainQuestRageWizards-Chapter5AltTitle</Title>
+    <Description>%MainQuestRageWizards-Chapter5AltDescription</Description>
+    <Objective>%MainQuestRageWizards-Chapter5AltObjective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter5AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter5-Step1">%MainQuestRageWizards-Chapter5Alt-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter5-Step2">%MainQuestRageWizards-Chapter5Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter6">
+    <Title>%MainQuestRageWizards-Chapter6Title</Title>
+    <Description>%MainQuestRageWizards-Chapter6Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter6Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter6-Step1">%MainQuestRageWizards-Chapter6-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter6-Step2">%MainQuestRageWizards-Chapter6-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter7">
+    <Title>%MainQuestRageWizards-Chapter7Title</Title>
+    <Description>%MainQuestRageWizards-Chapter7Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter7Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter7-Step1">%MainQuestRageWizards-Chapter7-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter7-Step2">%MainQuestRageWizards-Chapter7-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter8">
+    <Title>%MainQuestRageWizards-Chapter8Title</Title>
+    <Description>%MainQuestRageWizards-Chapter8Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter8Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter8-Step1">%MainQuestRageWizards-Chapter8-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter8-Step1">%MainQuestRageWizards-Chapter8-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8Alt -->
+  <QuestGuiElement Name="MainQuestRageWizards-Chapter8Alt">
+    <Title>%MainQuestRageWizards-Chapter8Title</Title>
+    <Description>%MainQuestRageWizards-Chapter8Description</Description>
+    <Objective>%MainQuestRageWizards-Chapter8Objective</Objective>
+    <Outcome>%MainQuestRageWizards-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestRageWizards8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestRageWizards-Chapter8Alt-Step1">%MainQuestRageWizards-Chapter8Alt-Step1</Step>
+      <Step Name="MainQuestRageWizards-Chapter8Alt-Step1">%MainQuestRageWizards-Chapter8-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

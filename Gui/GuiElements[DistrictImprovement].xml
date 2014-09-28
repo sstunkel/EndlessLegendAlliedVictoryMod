@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <GuiElement Name="DistrictImprovement1">
+    <Title>%DistrictImprovement1Title</Title>
+    <Description>%DistrictImprovement1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/DistrictImprovement1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/DistrictImprovement1Large" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="FreeDistrictImprovement1">
+    <Title>%FreeDistrictImprovement1Title</Title>
+    <Description>%FreeDistrictImprovement1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/FreeDistrictImprovement1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/FreeDistrictImprovement1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DistrictImprovementDocks">
+    <Title>%DistrictImprovementDocksTitle</Title>
+    <Description>%DistrictImprovementDocksDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDocksSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDocksLarge" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="DocksLocation">
+    <TooltipElement>
+      <EffectOverride>%DocksLocationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyDocks2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyDocksTooltipEffect2</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+	<ExtendedGuiElement Name="OceanRoadCreation">
+		<TooltipElement>
+			<EffectOverride>%OceanRoadCreationTooltipEffect</EffectOverride>
+		</TooltipElement>
+	</ExtendedGuiElement>
+
+	<ExtendedGuiElement Name="EmbarkDisembarkBonus">
+		<TooltipElement>
+			<EffectOverride>%EmbarkDisembarkBonusTooltipEffect</EffectOverride>
+		</TooltipElement>
+	</ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="DistrictImprovementExtractingCapacity">
+    <TooltipElement>
+      <EffectOverride>%CityImprovementExtractingCapacityTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <GuiElement Name="DistrictImprovement1Necrophage">
+    <Title>%DistrictImprovement1Title</Title>
+    <Description>%DistrictImprovement1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/DistrictImprovement1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/DistrictImprovement1Large" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <BiomeTypeMapping Name="Undefined">
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="ArcticDry">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeCold</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="ArcticTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeCold</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="CrystalPlainsTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeCold</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="CrystalPlainsWet">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeCold</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="TundraDry">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeChilly</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="TundraTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeChilly</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="HighlandsTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeChilly</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="HighlandsWet">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeChilly</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="RiftDry">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeTemperate</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="RiftTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeTemperate</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="GrasslandsTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeTemperate</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="GrasslandsWet">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeTemperate</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="VolcanicLandsDry">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeWarm</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="VolcanicLandsTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeWarm</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="MarshLandsTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeWarm</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="MarshLandsWet">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeWarm</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="DesertDry">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeHot</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="DesertTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeHot</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="JungleTemperate">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeWarm</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+  <BiomeTypeMapping Name="JungleWet">
+    <Layer Type="Simulation" Name="Simulation">
+      <Sample>BiomeTypeWarm</Sample>
+    </Layer>
+  </BiomeTypeMapping>
+
+</Datatable>

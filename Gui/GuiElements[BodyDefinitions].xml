@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ########################################## -->
+  <!-- ######         BROKEN LORDS         ###### -->
+  <!-- ########################################## -->
+
+  <!-- BROKEN LORDS SETTLER -->
+  <GuiElement Name="UnitBodyBrokenLordsSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BROKEN LORDS INFANTRY -->
+  <GuiElement Name="UnitBodyBrokenLordsInfantry">
+    <Title>%UnitBrokenLordsInfantryTitle</Title>
+    <Description>%UnitBrokenLordsInfantryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsInfantrySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsInfantryLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BROKEN LORDS CAVALRY -->
+  <GuiElement Name="UnitBodyBrokenLordsCavalry">
+    <Title>%UnitBrokenLordsCavalryTitle</Title>
+    <Description>%UnitBrokenLordsCavalryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsCavalrySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsCavalryLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BROKEN LORDS BLACK BISHOP -->
+  <GuiElement Name="UnitBodyBrokenLordsBlackBishop">
+    <Title>%UnitBrokenLordsBlackBishopTitle</Title>
+    <Description>%UnitBrokenLordsBlackBishopDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsBlackBishopSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsBlackBishopLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BROKEN LORDS HERO -->
+  <GuiElement Name="UnitBodyBrokenLordsHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BROKEN LORDS MILITIA -->
+  <GuiElement Name="UnitBodyBrokenLordsMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         MAD FAIRIES          ###### -->
+  <!-- ########################################## -->
+  
+  <!-- MAD FAIRIES SETTLER -->
+  <GuiElement Name="UnitBodyMadFairiesSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MAD FAIRIES ARCHER -->
+  <GuiElement Name="UnitBodyMadFairiesArcher">
+    <Title>%UnitMadFairiesArcherTitle</Title>
+    <Description>%UnitMadFairiesArcherDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesArcherSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesArcherLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- MAD FAIRIES SHAMAN -->
+  <GuiElement Name="UnitBodyMadFairiesShaman">
+    <Title>%UnitMadFairiesShamanTitle</Title>
+    <Description>%UnitMadFairiesShamanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesShamanSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesShamanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MAD FAIRIES FOREST SPIRIT -->
+  <GuiElement Name="UnitBodyMadFairiesForestSpirit">
+    <Title>%UnitMadFairiesForestSpiritTitle</Title>
+    <Description>%UnitMadFairiesForestSpiritDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesForestSpiritSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesForestSpiritLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MAD FAIRIES HERO -->
+  <GuiElement Name="UnitBodyMadFairiesHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MAD FAIRIES MILITIA -->
+  <GuiElement Name="UnitBodyMadFairiesMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         RAGE WIZARDS         ###### -->
+  <!-- ########################################## -->
+
+  <!-- RAGE WIZARDS SETTLER -->
+  <GuiElement Name="UnitBodyRageWizardsSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- RAGE WIZARDS BATTLEMAGE -->
+  <GuiElement Name="UnitBodyRageWizardsBattleMage">
+    <Title>%UnitRageWizardsBattleMageTitle</Title>
+    <Description>%UnitRageWizardsBattleMageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsBattleMageSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsBattleMageLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- RAGE WIZARDS WITCH -->
+  <GuiElement Name="UnitBodyRageWizardsWitch">
+    <Title>%UnitRageWizardsWitchTitle</Title>
+    <Description>%UnitRageWizardsWitchDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsWitchSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsWitchLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- RAGE WIZARDS PHOENIX -->
+  <GuiElement Name="UnitBodyRageWizardsPhoenix">
+    <Title>%UnitRageWizardsPhoenixTitle</Title>
+    <Description>%UnitRageWizardsPhoenixDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsPhoenixSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsPhoenixLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- RAGE WIZARDS HERO -->
+  <GuiElement Name="UnitBodyRageWizardsHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- RAGE WIZARDS MILITIA -->
+  <GuiElement Name="UnitBodyRageWizardsMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         NECROPHAGES          ###### -->
+  <!-- ########################################## -->
+
+  <!-- NECROPHAGES SETTLER -->
+  <GuiElement Name="UnitBodyNecrophagesSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- NECROPHAGES NECROHUNTER -->
+  <GuiElement Name="UnitBodyNecrophagesNecrohunter">
+    <Title>%UnitNecrophagesNecrohunterTitle</Title>
+    <Description>%UnitNecrophagesNecrohunterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesNecrohunterSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesNecrohunterLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- NECROPHAGES ZOMBAT -->
+  <GuiElement Name="UnitBodyNecrophagesZombat">
+    <Title>%UnitNecrophagesZombatTitle</Title>
+    <Description>%UnitNecrophagesZombatDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesZombatSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesZombatLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- NECROPHAGES LICHBUG -->
+  <GuiElement Name="UnitBodyNecrophagesLichbug">
+    <Title>%UnitNecrophagesLichbugTitle</Title>
+    <Description>%UnitNecrophagesLichbugDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesLichbugSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesLichbugLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- NECROPHAGES HERO -->
+  <GuiElement Name="UnitBodyNecrophagesHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- NECROPHAGES MILITIA -->
+  <GuiElement Name="UnitBodyNecrophagesMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######           VAULTERS           ###### -->
+  <!-- ########################################## -->
+
+  <!-- VAULTERS SETTLER -->
+  <GuiElement Name="UnitBodyVaultersSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitVaultersSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitVaultersSettlerLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- VAULTERS MARINE -->
+  <GuiElement Name="UnitBodyVaultersMarine">
+    <Title>%UnitVaultersMarineTitle</Title>
+    <Description>%UnitVaultersMarineDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitVaultersMarineSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitVaultersMarineLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- VAULTERS DAWN OFFICER -->
+  <GuiElement Name="UnitBodyVaultersDawnOfficer">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitVaultersDawnOfficerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitVaultersDawnOfficerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- VAULTERS TITAN -->
+  <GuiElement Name="UnitBodyVaultersTitan">
+    <Title>%UnitVaultersTitanTitle</Title>
+    <Description>%UnitVaultersTitanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitVaultersTitanSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitVaultersTitanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- VAULTERS HERO -->
+  <GuiElement Name="UnitBodyVaultersHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- VAULTERS MILITIA -->
+  <GuiElement Name="UnitBodyVaultersMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitVaultersMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitVaultersMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######         ROVING CLANS         ###### -->
+  <!-- ########################################## -->
+
+  <!-- ROVING CLANS SETTLER -->
+  <GuiElement Name="UnitBodyRovingClansSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRovingClansSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRovingClansSettlerLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- ROVING CLANS DERVISH -->
+  <GuiElement Name="UnitBodyRovingClansDervish">
+    <Title>%UnitRovingClansDervishTitle</Title>
+    <Description>%UnitRovingClansDervishDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRovingClansDervishSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRovingClansDervishLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ROVING CLANS KASSAI -->
+  <GuiElement Name="UnitBodyRovingClansKassai">
+    <Title>%UnitRovingClansKassaiTitle</Title>
+    <Description>%UnitRovingClansKassaiDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRovingClansKassaiSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRovingClansKassaiLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ROVING CLANS BERZERK -->
+  <GuiElement Name="UnitBodyRovingClansBerzerk">
+    <Title>%UnitRovingClansBerzerkTitle</Title>
+    <Description>%UnitRovingClansBerzerkDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRovingClansBerzerkSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRovingClansBerzerkLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ROVING CLANS HERO -->
+  <GuiElement Name="UnitBodyRovingClansHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ROVING CLANS MILITIA -->
+  <GuiElement Name="UnitBodyRovingClansMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRovingClansMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRovingClansMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ROVING CLANS SCARAB -->
+  <GuiElement Name="UnitBodyRovingClansScarab">
+    <Title>%UnitRovingClansScarabTitle</Title>
+    <Description>%UnitRovingClansScarabDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRovingClansScarabSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRovingClansScarabLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######           DRAKKENS           ###### -->
+  <!-- ########################################## -->
+
+  <!-- DRAKKENS SETTLER -->
+  <GuiElement Name="UnitBodyDrakkensSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitDrakkensSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitDrakkensSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- DRAKKENS DRAKKENLING -->
+  <GuiElement Name="UnitBodyDrakkensDrakkenling">
+    <Title>%UnitDrakkensDrakkenlingTitle</Title>
+    <Description>%UnitDrakkensDrakkenlingDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitDrakkensDrakkenlingSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitDrakkensDrakkenlingLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- DRAKKENS WYVERN -->
+  <GuiElement Name="UnitBodyDrakkensWyvern">
+    <Title>%UnitDrakkensWyvernTitle</Title>
+    <Description>%UnitDrakkensWyvernDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitDrakkensWyvernSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitDrakkensWyvernLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- DRAKKENS ANCIEN DRAGON -->
+  <GuiElement Name="UnitBodyDrakkensAncientDragon">
+    <Title>%UnitDrakkensAncientDragonTitle</Title>
+    <Description>%UnitDrakkensAncientDragonDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitDrakkensAncientDragonSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitDrakkensAncientDragonLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- DRAKKENS HERO -->
+  <GuiElement Name="UnitBodyDrakkensHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- DRAKKENS MILITIA -->
+  <GuiElement Name="UnitBodyDrakkensMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitDrakkensMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitDrakkensMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######           CULTISTS           ###### -->
+  <!-- ########################################## -->
+
+  <!-- CULTISTS SETTLER -->
+  <GuiElement Name="UnitBodyCultistsSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitCultistsSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitCultistsSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- CULTISTS PREACHER -->
+  <GuiElement Name="UnitBodyCultistsPreacher">
+    <Title>%UnitCultistsPreacherTitle</Title>
+    <Description>%UnitCultistsPreacherDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitCultistsPreacherSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitCultistsPreacherLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- CULTISTS FANATIC -->
+  <GuiElement Name="UnitBodyCultistsFanatic">
+    <Title>%UnitCultistsFanaticTitle</Title>
+    <Description>%UnitCultistsFanaticDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitCultistsFanaticSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitCultistsFanaticLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- CULTISTS NAMELESS GUARD -->
+  <GuiElement Name="UnitBodyCultistsNamelessGuard">
+    <Title>%UnitCultistsNamelessGuardTitle</Title>
+    <Description>%UnitCultistsNamelessGuardDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitCultistsNamelessGuardSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitCultistsNamelessGuardLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- CULTISTS HERO -->
+  <GuiElement Name="UnitBodyCultistsHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- CULTISTS MILITIA -->
+  <GuiElement Name="UnitBodyCultistsMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitCultistsMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitCultistsMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+  
+  
+  <!-- ########################################## -->
+  <!-- ##########       MEZARI       ########## -->
+  <!-- ########################################## -->
+
+  <!-- MEZARI SETTLER -->
+  <GuiElement Name="UnitBodyMezariSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MEZARI MARINE -->
+  <GuiElement Name="UnitBodyMezariMarine">
+    <Title>%UnitVaultersMarineTitle</Title>
+    <Description>%UnitVaultersMarineDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariMarineSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariMarineLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MEZARI DAWN OFFICER -->
+  <GuiElement Name="UnitBodyMezariDawnOfficer">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariDawnOfficerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariDawnOfficerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MEZARI TITAN -->
+  <GuiElement Name="UnitBodyMezariTitan">
+    <Title>%UnitVaultersTitanTitle</Title>
+    <Description>%UnitVaultersTitanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariTitanSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariTitanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MEZARI HERO -->
+  <GuiElement Name="UnitBodyMezariHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MEZARI MILITIA -->
+  <GuiElement Name="UnitBodyMezariMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+  
+  
+  <!-- ########################################## -->
+  <!-- ##########       TUTORIAL       ########## -->
+  <!-- ########################################## -->
+
+  <!-- TUTORIAL SETTLER -->
+  <GuiElement Name="UnitBodyTutorialSettler">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- TUTORIAL MARINE -->
+  <GuiElement Name="UnitBodyTutorialUnit1">
+    <Title>%UnitVaultersMarineTitle</Title>
+    <Description>%UnitVaultersMarineDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariMarineSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariMarineLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- TUTORIAL DAWN OFFICER -->
+  <GuiElement Name="UnitBodyTutorialUnit2">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariDawnOfficerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariDawnOfficerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- TUTORIAL TITAN -->
+  <GuiElement Name="UnitBodyTutorialUnit3">
+    <Title>%UnitVaultersTitanTitle</Title>
+    <Description>%UnitVaultersTitanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariTitanSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariTitanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- TUTORIAL HERO -->
+  <GuiElement Name="UnitBodyTutorialHero">
+    <Title>%DeprecatedTitle</Title>
+    <Description>%DeprecatedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- TUTORIAL MILITIA -->
+  <GuiElement Name="UnitBodyTutorialMilitia">
+    <Title>%UnitMilitiaTitle</Title>
+    <Description>%UnitMilitiaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMezariMilitiaSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMezariMilitiaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+  <!-- ########################################## -->
+  <!-- ######        MINOR FACTIONS        ###### -->
+  <!-- ########################################## -->
+
+  <!-- URCES GIANT OGRE -->
+  <GuiElement Name="UnitBodyUrcesGiantOgre">
+    <Title>%UnitUrcesGiantOgreTitle</Title>
+    <Description>%UnitUrcesGiantOgreDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitUrcesGiantOgreSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitUrcesGiantOgreLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- CERATAN DRIDER -->
+  <GuiElement Name="UnitBodyCeratanDrider">
+    <Title>%UnitCeratanDriderTitle</Title>
+    <Description>%UnitCeratanDriderDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitCeratanDriderSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitCeratanDriderLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ERYCIS HYDRA -->
+  <GuiElement Name="UnitBodyErycisHydra">
+    <Title>%UnitErycisHydraTitle</Title>
+    <Description>%UnitErycisHydraDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitErycisHydraSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitErycisHydraLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- KAZANJI DEVIL -->
+  <GuiElement Name="UnitBodyKazanjiDevil">
+    <Title>%UnitKazanjiDevilTitle</Title>
+    <Description>%UnitKazanjiDevilDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitKazanjiDevilSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitKazanjiDevilLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BOS CENTAUR -->
+  <GuiElement Name="UnitBodyBosCentaur">
+    <Title>%UnitBosCentaurTitle</Title>
+    <Description>%UnitBosCentaurDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBosCentaurSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBosCentaurLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- SILICS GOLEM -->
+  <GuiElement Name="UnitBodySilicsGolem">
+    <Title>%UnitSilicsGolemTitle</Title>
+    <Description>%UnitSilicsGolemDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitSilicsGolemSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitSilicsGolemLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- DELVERS DWARF -->
+  <GuiElement Name="UnitBodyDelversDwarf">
+    <Title>%UnitDelversDwarfTitle</Title>
+    <Description>%UnitDelversDwarfDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitDelversDwarfSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitDelversDwarfLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- SISTERS OF MERCY JUSTICERE -->
+  <GuiElement Name="UnitBodySistersOfMercyJusticere">
+    <Title>%UnitSistersOfMercyJusticereTitle</Title>
+    <Description>%UnitSistersOfMercyJusticereDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitSistersOfMercyJusticereSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitSistersOfMercyJusticereLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- HAUNTS SPECTER -->
+  <GuiElement Name="UnitBodyHauntsSpecter">
+    <Title>%UnitHauntsSpecterTitle</Title>
+    <Description>%UnitHauntsSpecterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitHauntsSpecterSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitHauntsSpecterLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- JOTUS ETTIN -->
+  <GuiElement Name="UnitBodyJotusEttin">
+    <Title>%UnitJotusEttinTitle</Title>
+    <Description>%UnitJotusEttinDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitJotusEttinSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitJotusEttinLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- HURNAS ORC -->
+  <GuiElement Name="UnitBodyHurnasOrc">
+    <Title>%UnitHurnasOrcTitle</Title>
+    <Description>%UnitHurnasOrcDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitHurnasOrcSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitHurnasOrcLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- GAURAN MINOTAUR -->
+  <GuiElement Name="UnitBodyGauranMinotaur">
+    <Title>%UnitGauranMinotaurTitle</Title>
+    <Description>%UnitGauranMinotaurDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitGauranMinotaurSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitGauranMinotaurLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BIRDHIVE HARPY -->
+  <GuiElement Name="UnitBodyBirdhiveHarpy">
+    <Title>%UnitBirdhiveHarpyTitle</Title>
+    <Description>%UnitBirdhiveHarpyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBirdhiveHarpySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBirdhiveHarpyLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- GELDIRUS ICE WARG -->
+  <GuiElement Name="UnitBodyGeldirusIceWarg">
+    <Title>%UnitGeldirusIceWargTitle</Title>
+    <Description>%UnitGeldirusIceWargDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitGeldirusIceWargSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitGeldirusIceWargLarge" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

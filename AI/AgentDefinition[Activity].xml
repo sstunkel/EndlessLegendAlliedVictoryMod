@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--##################### Empire agents ##################### -->
+  
+  <SimulationAgent Name="MilitaryEffort" AssemblyQualifiedName="MilitaryEffortAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>5</ValueMax>
+
+    <CurveReference Name="MilitaryEffort_Default" />
+    
+    <InfluencesReceived>
+      <ConstantInfluence OriginAgentReference="EmpireSafety"  Value="-70" />      
+      <ConstantInfluence OriginAgentReference="EconomicGrowth"  Value="-90" />
+      <ConstantInfluence OriginAgentReference="TechnologyParleyRelevance"  Value="20" />
+    </InfluencesReceived>
+    
+  </SimulationAgent>
+
+  <SimulationAgent Name="EconomicGrowth" AssemblyQualifiedName="EconomicGrowthAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="EconomicGrowth_Default" />
+
+    <InfluencesReceived>
+      <!--TODO : functionInfluence that decrease value depending of number of Region-->
+      <ConstantInfluence OriginAgentReference="EmpireSafety"  Value="50" />
+      <ConstantInfluence OriginAgentReference="TechnologyParleyRelevance"  Value="20" />
+      <ConstantInfluence Path="ActivityEvaluationAmas/Region" OriginAgentReference="RegionEconomicGrowth"  Value="50" />
+    </InfluencesReceived>
+
+  </SimulationAgent>
+
+  <SimulationAgent Name="EmpireSafety" AssemblyQualifiedName="EmpireSafetyAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="EmpireSafety_Default" />
+
+    <InfluencesReceived>
+      <!--TODO : functionInfluence that decrease value depending of number of Region-->
+      <ConstantInfluence OriginAgentReference="EmpireExpansion"  Value="-50" />
+      <ConstantInfluence Path="ActivityEvaluationAmas/Region" OriginAgentReference="RegionSafety"  Value="50" />
+
+    </InfluencesReceived>
+
+  </SimulationAgent>
+
+  <SimulationAgent Name="EmpireExpansion" AssemblyQualifiedName="EmpireExpansionAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="EmpireExpansion_Default" />
+
+    <InfluencesReceived>
+      <!--TODO : functionInfluence that decrease value depending of number of Region-->
+      <ConstantInfluence OriginAgentReference="MilitaryEffort"  Value="90" />
+    </InfluencesReceived>
+
+  </SimulationAgent>
+
+  <SimulationAgent Name="TechnologyParleyRelevance" AssemblyQualifiedName="TechnologyParleyRelevanceAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="TechnologyParleyRelevance_Default" />
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+
+  </SimulationAgent>
+  
+  <!--##################### Region agents ##################### -->
+  
+  <SimulationAgent Name="RegionEconomicWeight" AssemblyQualifiedName="RegionEconomicWeightAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="RegionEconomicWeight_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence OriginAgentReference="RegionEconomicGrowth" Value="50" />      
+      <ConstantInfluence OriginAgentReference="RegionSafety" Value="50" />
+      <ConstantInfluence Path="../ActivityEvaluationAmas" OriginAgentReference="EmpireExpansion"  Value="-70" />
+    </InfluencesReceived>
+
+  </SimulationAgent>
+
+
+  <SimulationAgent Name="RegionEconomicGrowth" AssemblyQualifiedName="RegionEconomicGrowthAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="RegionEconomicGrowth_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence OriginAgentReference="RegionSafety" Value="50" />
+    </InfluencesReceived>
+
+  </SimulationAgent>
+  
+  <SimulationAgent Name="MilitaryPacificationRelevance" AssemblyQualifiedName="MilitaryPacificationRelevanceAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="MilitaryPacificationRelevance_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence Path="../ActivityEvaluationAmas" OriginAgentReference="MilitaryEffort"  Value="90"/>
+    </InfluencesReceived>
+
+  </SimulationAgent>
+  
+  <SimulationAgent Name="BribePacificationRelevance" AssemblyQualifiedName="BribePacificationRelevanceAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="BribePacificationRelevance_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence Path="../ActivityEvaluationAmas" OriginAgentReference="MilitaryEffort"  Value="-50"/>
+      <ConstantInfluence Path="../ActivityEvaluationAmas" OriginAgentReference="EconomicGrowth"  Value="50"/>
+      <ConstantInfluence Path="../ActivityEvaluationAmas" OriginAgentReference="TechnologyParleyRelevance"  Value="-100"/>
+    </InfluencesReceived>
+
+  </SimulationAgent>
+  
+  <SimulationAgent Name="MinorFactionThreat" AssemblyQualifiedName="MinorFactionThreatAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="MinorFactionThreat_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence OriginAgentReference="MilitaryPacificationRelevance"              Value="-90" />
+      <ConstantInfluence OriginAgentReference="BribePacificationRelevance"                 Value="-90"/>
+    </InfluencesReceived>
+    
+  </SimulationAgent>
+
+  <SimulationAgent Name="MajorFactionThreat" AssemblyQualifiedName="MajorFactionThreatAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="MajorFactionThreat_Default" />
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+
+  </SimulationAgent>
+
+  <SimulationAgent Name="RegionSafety" AssemblyQualifiedName="RegionSafetyAgent, Assembly-CSharp" DisableAdjustValueTracker="false" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="RegionSafety_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence OriginAgentReference="MajorFactionThreat" Value="-50" />
+      <ConstantInfluence OriginAgentReference="MinorFactionThreat" Value="-50" />
+    </InfluencesReceived>
+
+  </SimulationAgent>
+</Datatable>

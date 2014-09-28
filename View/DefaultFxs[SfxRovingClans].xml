@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX RovingClan ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_RovingClan_BerserkOutGameView_Walk">
+    <SoundEventName>Gui/OutGameViews/Berserk_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_Walk">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_WalkBack">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_FootstepBack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_DeathBodyFall">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_DeathBodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_ManDeath1">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_ManDeath1</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_ManDeath2">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_ManDeath2</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_FistAttack">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_FistAttack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_FistWhoosh">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_FistWhoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_Idl01">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_Idle0_01</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_Idl02">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_Idle0_02</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_Idle">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_Idle</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_ManAttack1_Short">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_ManAttack1_Short</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_ManAttack2_Short">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_ManAttack2_Short</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_ManAttack1">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_ManAttack1</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_ManAttack2">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_ManAttack2</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClanBerserk_SpearWhoosh">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_SpearWhoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_SpearImpact">
+    <SoundEventName>Sfx/Faction/RovingClan/Berserk/Berserk_SpearImpact</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_Voice_Attack">
+    <SoundEventName>Sfx/Voices/RovingClan/Berserk_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_Voice_Death">
+    <SoundEventName>Sfx/Voices/RovingClan/Berserk_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Berserk_Voice_Idle">
+    <SoundEventName>Sfx/Voices/RovingClan/Berserk_Voice_Idle</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Kassai_Voice_Death">
+    <SoundEventName>Sfx/Voices/RovingClan/Kassai_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Kassai_Voice_Snort">
+    <SoundEventName>Sfx/Voices/RovingClan/Kassai_Voice_Snort</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_RovingClan_Kassai_FootstepRun">
+    <SoundEventName>Sfx/Faction/RovingClan/Kassai/Kassai_FootstepsRun</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+ 
+  <DefaultFxDefinition Name="SFX_RovingClan_Kassai_FootstepWalk">
+    <SoundEventName>Sfx/Faction/RovingClan/Kassai/Kassai_FootstepsWalk</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition> 
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Setseke_Voice_Attack">
+    <SoundEventName>Sfx/Voices/RovingClan/Setseke_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Setseke_Voice_Death">
+    <SoundEventName>Sfx/Voices/RovingClan/Setseke_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Setseke_Voice_Idle">
+    <SoundEventName>Sfx/Voices/RovingClan/Setseke_Voice_Idle</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Setseke_Footstep">
+    <SoundEventName>Sfx/Faction/RovingClan/Setseke/Setseke_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Dervish_FootstepRun">
+    <SoundEventName>Sfx/Faction/RovingClan/Dervish/RovingClan_DervishRun</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Dervish_FootstepWalk">
+    <SoundEventName>Sfx/Faction/RovingClan/Dervish/RovingClan_DervishWalk</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Dervish_BodyFall">
+    <SoundEventName>Sfx/Faction/RovingClan/Dervish/RovingClan_Dervish_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Dervish_Voice_Defense">
+    <SoundEventName>Sfx/Voices/RovingClan/Dervish_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Dervish_Voice_Attack">
+    <SoundEventName>Sfx/Voices/RovingClan/Dervish_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Dervish_Voice_Death">
+    <SoundEventName>Sfx/Voices/RovingClan/Dervish_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_Voice_Attack">
+    <SoundEventName>Sfx/Voices/RovingClan/HeroMonster_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_Voice_Death">
+    <SoundEventName>Sfx/Voices/RovingClan/HeroMonster_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_Voice_Idle">
+    <SoundEventName>Sfx/Voices/RovingClan/HeroMonster_Voice_Idle</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_Footstep">
+    <SoundEventName>Sfx/Faction/RovingClan/Hero/HeroMonster_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_BodyFall">
+    <SoundEventName>Sfx/Faction/RovingClan/Hero/HeroMonster_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_AttachWhoosh">
+    <SoundEventName>Sfx/Faction/RovingClan/Hero/HeroMonster_AttackWhoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_Attack">
+    <SoundEventName>Sfx/Faction/RovingClan/Hero/HeroMonster_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_HeroMonster_FootstepBack">
+    <SoundEventName>Sfx/Faction/RovingClan/Hero/HeroMonster_FootstepBack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Hero_Voice_Death">
+    <SoundEventName>Sfx/Voices/RovingClan/Hero_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_RovingClan_Hero_Voice_Attack">
+    <SoundEventName>Sfx/Voices/RovingClan/Hero_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+</Datatable>

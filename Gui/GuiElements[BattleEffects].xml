@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Swiftness level 1 -->
+  <GuiElement Name="BattleEffect_Swiftness1">
+    <Title>%BattleEffect_Swiftness1Title</Title>
+    <Description>%BattleEffect_Swiftness1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Swiftness level 2 -->
+  <GuiElement Name="BattleEffect_Swiftness2">
+    <Title>%BattleEffect_Swiftness2Title</Title>
+    <Description>%BattleEffect_Swiftness2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Swiftness level 3 -->
+  <GuiElement Name="BattleEffect_Swiftness3">
+    <Title>%BattleEffect_Swiftness3Title</Title>
+    <Description>%BattleEffect_Swiftness3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Swiftness level 4 -->
+  <GuiElement Name="BattleEffect_Swiftness4">
+    <Title>%BattleEffect_Swiftness4Title</Title>
+    <Description>%BattleEffect_Swiftness4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Unsteady level 1 -->
+  <GuiElement Name="BattleEffect_Unsteady1">
+    <Title>%BattleEffect_Unsteady1Title</Title>
+    <Description>%BattleEffect_Unsteady1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Unsteady level 2 -->
+  <GuiElement Name="BattleEffect_Unsteady2">
+    <Title>%BattleEffect_Unsteady2Title</Title>
+    <Description>%BattleEffect_Unsteady2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Unsteady level 3 -->
+  <GuiElement Name="BattleEffect_Unsteady3">
+    <Title>%BattleEffect_Unsteady3Title</Title>
+    <Description>%BattleEffect_Unsteady3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Unsteady level 4 -->
+  <GuiElement Name="BattleEffect_Unsteady4">
+    <Title>%BattleEffect_Unsteady4Title</Title>
+    <Description>%BattleEffect_Unsteady4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackDown4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BarkSkin level 1 -->
+  <GuiElement Name="BattleEffect_BarkSkin1">
+    <Title>%BattleEffect_BarkSkin1Title</Title>
+    <Description>%BattleEffect_BarkSkin1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BarkSkin level 2 -->
+  <GuiElement Name="BattleEffect_BarkSkin2">
+    <Title>%BattleEffect_BarkSkin2Title</Title>
+    <Description>%BattleEffect_BarkSkin2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BarkSkin level 3 -->
+  <GuiElement Name="BattleEffect_BarkSkin3">
+    <Title>%BattleEffect_BarkSkin3Title</Title>
+    <Description>%BattleEffect_BarkSkin3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BarkSkin level 4 -->
+  <GuiElement Name="BattleEffect_BarkSkin4">
+    <Title>%BattleEffect_BarkSkin4Title</Title>
+    <Description>%BattleEffect_BarkSkin4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseUp4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Exhaustion level 1 -->
+  <GuiElement Name="BattleEffect_Exhaustion1">
+    <Title>%BattleEffect_Exhaustion1Title</Title>
+    <Description>%BattleEffect_Exhaustion1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Exhaustion level 2 -->
+  <GuiElement Name="BattleEffect_Exhaustion2">
+    <Title>%BattleEffect_Exhaustion2Title</Title>
+    <Description>%BattleEffect_Exhaustion2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Exhaustion level 3 -->
+  <GuiElement Name="BattleEffect_Exhaustion3">
+    <Title>%BattleEffect_Exhaustion3Title</Title>
+    <Description>%BattleEffect_Exhaustion3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Exhaustion level 4 -->
+  <GuiElement Name="BattleEffect_Exhaustion4">
+    <Title>%BattleEffect_Exhaustion4Title</Title>
+    <Description>%BattleEffect_Exhaustion4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDefenseDown4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Retaliation level 1 -->
+  <GuiElement Name="BattleEffect_Retaliation1">
+    <Title>%BattleEffect_Retaliation1Title</Title>
+    <Description>%BattleEffect_Retaliation1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Retaliation level 2 -->
+  <GuiElement Name="BattleEffect_Retaliation2">
+    <Title>%BattleEffect_Retaliation2Title</Title>
+    <Description>%BattleEffect_Retaliation2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Retaliation level 3 -->
+  <GuiElement Name="BattleEffect_Retaliation3">
+    <Title>%BattleEffect_Retaliation3Title</Title>
+    <Description>%BattleEffect_Retaliation3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Retaliation level 4 -->
+  <GuiElement Name="BattleEffect_Retaliation4">
+    <Title>%BattleEffect_Retaliation4Title</Title>
+    <Description>%BattleEffect_Retaliation4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalUp4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Feebleness level 1 -->
+  <GuiElement Name="BattleEffect_Feebleness1">
+    <Title>%BattleEffect_Feebleness1Title</Title>
+    <Description>%BattleEffect_Feebleness1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Feebleness level 2 -->
+  <GuiElement Name="BattleEffect_Feebleness2">
+    <Title>%BattleEffect_Feebleness2Title</Title>
+    <Description>%BattleEffect_Feebleness2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Feebleness level 3 -->
+  <GuiElement Name="BattleEffect_Feebleness3">
+    <Title>%BattleEffect_Feebleness3Title</Title>
+    <Description>%BattleEffect_Feebleness3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Feebleness level 4 -->
+  <GuiElement Name="BattleEffect_Feebleness4">
+    <Title>%BattleEffect_Feebleness4Title</Title>
+    <Description>%BattleEffect_Feebleness4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateCriticalDown4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Halt level 1 -->
+  <GuiElement Name="BattleEffect_Halt1">
+    <Title>%BattleEffect_Halt1Title</Title>
+    <Description>%BattleEffect_Halt1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Halt level 2 -->
+  <GuiElement Name="BattleEffect_Halt2">
+    <Title>%BattleEffect_Halt2Title</Title>
+    <Description>%BattleEffect_Halt2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Halt level 3 -->
+  <GuiElement Name="BattleEffect_Halt3">
+    <Title>%BattleEffect_Halt3Title</Title>
+    <Description>%BattleEffect_Halt3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Halt level 4 -->
+  <GuiElement Name="BattleEffect_Halt4">
+    <Title>%BattleEffect_Halt4Title</Title>
+    <Description>%BattleEffect_Halt4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Lower Initiative level 1 -->
+  <GuiElement Name="BattleEffect_LowerInitiative1">
+    <Title>%BattleEffect_LowerInitiative1Title</Title>
+    <Description>%BattleEffect_LowerInitiative1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Lower Initiative level 2 -->
+  <GuiElement Name="BattleEffect_LowerInitiative2">
+    <Title>%BattleEffect_LowerInitiative2Title</Title>
+    <Description>%BattleEffect_LowerInitiative2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Lower Initiative level 3 -->
+  <GuiElement Name="BattleEffect_LowerInitiative3">
+    <Title>%BattleEffect_LowerInitiative3Title</Title>
+    <Description>%BattleEffect_LowerInitiative3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Lower Initiative level 4 -->
+  <GuiElement Name="BattleEffect_LowerInitiative4">
+    <Title>%BattleEffect_LowerInitiative4Title</Title>
+    <Description>%BattleEffect_LowerInitiative4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateInitiativeDown4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Add Disease Action level 1 -->
+  <GuiElement Name="BattleEffectAddDiseaseAction1">
+    <Title>%BattleEffectAddDiseaseAction1Title</Title>
+    <Description>%BattleEffectAddDiseaseAction1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStatePoisoned1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStatePoisoned1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Add Parasite Action level 1 -->
+  <GuiElement Name="BattleEffect_Parasite1">
+    <Title>%BattleEffect_Parasite1Title</Title>
+    <Description>%BattleEffect_Parasite1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStatePoisoned1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStatePoisoned1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Stun level 1 -->
+  <GuiElement Name="BattleEffect_Stun1">
+    <Title>%BattleEffect_Stun1Title</Title>
+    <Description>%BattleEffect_Stun1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateStun1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateStun1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Slow Down level 1 -->
+  <GuiElement Name="BattleEffect_AbilitySlowDown1">
+    <Title>%BattleEffect_AbilitySlowDown1Title</Title>
+    <Description>%BattleEffect_AbilitySlowDown1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAbilitySlowDown1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAbilitySlowDown1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Debuff Immunity level 1 -->
+  <GuiElement Name="BattleEffect_DebuffImmunity1">
+    <Title>%BattleEffect_DebuffImmunity1Title</Title>
+    <Description>%BattleEffect_DebuffImmunity1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateImmuneToDebuff1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateImmuneToDebuff1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Unleashed Potential level 1 -->
+  <GuiElement Name="BattleEffect_UnleashedPotential1">
+    <Title>%BattleEffect_UnleashedPotential1Title</Title>
+    <Description>%BattleEffect_UnleashedPotential1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateUnleashedPotential1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateUnleashedPotential1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Forest Tile -->
+  <GuiElement Name="BattleEffectForestTileBonus1">
+    <Title>%BattleEffectForestTileBonus1Title</Title>
+    <Description>%BattleEffectForestTileBonus1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateForestTileBonus1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateForestTileBonus1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- City Tile -->
+  <GuiElement Name="BattleEffectDistrictTileBonus1">
+    <Title>%BattleEffectDistrictTileBonus1Title</Title>
+    <Description>%BattleEffectDistrictTileBonus1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDistrictTileBonus1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateDistrictTileBonus1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- High Ground -->
+  <GuiElement Name="BattleEffect_HighGroundBonus1">
+    <Title>%BattleEffect_HighGroundBonus1Title</Title>
+    <Description>%BattleEffect_HighGroundBonus1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateHighGroundBonus1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateHighGroundBonus1Large" />
+    </Icons>
+  </GuiElement>
+
+  
+
+  <!-- Increased Fire  -->
+  <GuiElement Name="BattleEffect_IncreasedFire1">
+    <Title>%BattleEffect_IncreasedFire1Title</Title>
+    <Description>%BattleEffect_IncreasedFire1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleEffect_IncreasedFire2">
+    <Title>%BattleEffect_IncreasedFire2Title</Title>
+    <Description>%BattleEffect_IncreasedFire2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleEffect_IncreasedFire3">
+    <Title>%BattleEffect_IncreasedFire3Title</Title>
+    <Description>%BattleEffect_IncreasedFire3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleEffect/BattleStateAttackUp3Large" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

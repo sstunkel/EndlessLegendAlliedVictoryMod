@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="Spell1">
+    <Title>%Spell1Title</Title>
+    <Description>%Spell1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Spells/Spell1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Spells/Spell1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Spell2">
+    <Title>%Spell2Title</Title>
+    <Description>%Spell2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Spells/Spell2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Spells/Spell2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Spell3">
+    <Title>%Spell3Title</Title>
+    <Description>%Spell3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Spells/Spell3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Spells/Spell3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Spell4">
+    <Title>%Spell4Title</Title>
+    <Description>%Spell4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Spells/Spell4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Spells/Spell4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Spell5">
+    <Title>%Spell5Title</Title>
+    <Description>%Spell5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Spells/Spell5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Spells/Spell5Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Override the effect tooltip for now as we have no way to generate tooltip from a battleaction -->
+  <GuiElement Name="Spell1Level1">
+    <Title>%Spell1Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell1Level2">
+    <Title>%Spell1Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell1Level3">
+    <Title>%Spell1Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell1Level4">
+    <Title>%Spell1Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell1Level5">
+    <Title>%Spell1Level1Title</Title>
+  </GuiElement>
+
+  <GuiElement Name="Spell2Level1">
+    <Title>%Spell2Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell2Level2">
+    <Title>%Spell2Level2Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell2Level3">
+    <Title>%Spell2Level3Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell2Level4">
+    <Title>%Spell2Level4Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell2Level5">
+    <Title>%Spell2Level5Title</Title>
+  </GuiElement>
+
+  <GuiElement Name="Spell3Level1">
+    <Title>%Spell3Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell3Level2">
+    <Title>%Spell3Level2Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell3Level3">
+    <Title>%Spell3Level3Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell3Level4">
+    <Title>%Spell3Level4Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell3Level5">
+    <Title>%Spell3Level5Title</Title>
+  </GuiElement>
+
+  <GuiElement Name="Spell4Level1">
+    <Title>%Spell4Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell4Level2">
+    <Title>%Spell4Level2Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell4Level3">
+    <Title>%Spell4Level3Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell4Level4">
+    <Title>%Spell4Level4Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell4Level5">
+    <Title>%Spell4Level5Title</Title>
+  </GuiElement>
+
+  <GuiElement Name="Spell5Level1">
+    <Title>%Spell5Level1Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell5Level2">
+    <Title>%Spell5Level2Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell5Level3">
+    <Title>%Spell5Level3Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell5Level4">
+    <Title>%Spell5Level4Title</Title>
+  </GuiElement>
+  <GuiElement Name="Spell5Level5">
+    <Title>%Spell5Level5Title</Title>
+  </GuiElement>
+</Datatable>

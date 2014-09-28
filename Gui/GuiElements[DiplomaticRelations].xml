@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="DiplomaticRelationStateAlliance">
+    <Title>%DiplomaticRelationAllianceTitle</Title>
+    <Description>%DiplomaticRelationAllianceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticRelationAllianceSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticRelationStatePeace">
+    <Title>%DiplomaticRelationPeaceTitle</Title>
+    <Description>%DiplomaticRelationPeaceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticRelationPeaceSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticRelationStateColdWar">
+    <Title>%DiplomaticRelationColdWarTitle</Title>
+    <Description>%DiplomaticRelationColdWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticRelationColdWarSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticRelationStateTruce">
+    <Title>%DiplomaticRelationTruceTitle</Title>
+    <Description>%DiplomaticRelationTruceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticRelationColdWarSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticRelationStateWar">
+    <Title>%DiplomaticRelationWarTitle</Title>
+    <Description>%DiplomaticRelationWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticRelationWarSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticRelationStateUnknown">
+    <Title>%DiplomaticRelationUnknownTitle</Title>
+    <Description>%DiplomaticRelationUnknownDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticRelationUnknownSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticRelationStateDead">
+    <Title>%DiplomaticRelationDeadTitle</Title>
+    <Description>%DiplomaticRelationDeadDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticRelationDeadSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <ExtendedGuiElement Name="DiplomaticContractEvaluationPositive">
+    <Description>%DiplomaticContractEvaluationPositiveDescription</Description>
+    <Color Red="93" Green="185" Blue="82" Alpha="255" />
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="DiplomaticContractEvaluationNegative">
+    <Description>%DiplomaticContractEvaluationNegativeDescription</Description>
+    <Color Red="202" Green="125" Blue="96" Alpha="255" />
+  </ExtendedGuiElement>
+</Datatable>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Seizure Name="Seizure0" Priority="0">
+    <Auction_Unit AllowSettlerSale="false" DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="5" Priority="0">
+      <ScoringFunction>$Property(Level) + ($Property(Experience) / $Property(NextLevelExperience))</ScoringFunction>
+    </Auction_Unit>
+    <Auction_CityImprovement DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="0.2" Priority="1"/>
+  </Seizure>
+
+  <Seizure Name="Seizure1" Priority="1">
+    <Auction_Unit AllowSettlerSale="false" DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="20" Priority="0">
+      <ScoringFunction>$Property(Level) + ($Property(Experience) / $Property(NextLevelExperience))</ScoringFunction>
+    </Auction_Unit>
+    <Auction_CityImprovement DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="1" Priority="1"/>
+  </Seizure>
+
+  <Seizure Name="Seizure2" Priority="2">
+    <Auction_Unit AllowSettlerSale="true" DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="30" Priority="0">
+      <ScoringFunction>$Property(Level) + ($Property(Experience) / $Property(NextLevelExperience))</ScoringFunction>
+    </Auction_Unit>
+
+    <Auction_Hero DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="5" Priority="2">
+      <ScoringFunction>$Property(Level) + ($Property(Experience) / $Property(NextLevelExperience))</ScoringFunction>
+    </Auction_Hero>
+  </Seizure>
+
+  <Seizure Name="Seizure3" Priority="3">
+    <Auction_Hero DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="40" Priority="2">
+      <ScoringFunction>$Property(Level) + ($Property(Experience) / $Property(NextLevelExperience))</ScoringFunction>
+    </Auction_Hero>
+  </Seizure>
+
+  <Seizure Name="Seizure4" Priority="4">
+    <Auction_Resource DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="10" Priority="0" AllowStrategicSale="false"/>
+    <Auction_Booster  DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="10" Priority="1"/>
+  </Seizure>
+  
+  <Seizure Name="Seizure5" Priority="5">
+    <Auction_Resource DescendantSort="false" MaximumNumberOfSale="3" MaximumScoreToSale="10" Priority="0" AllowStrategicSale="true"/>
+  </Seizure>
+
+  <Seizure Name="Seizure6" Priority="6">
+    <Auction_Population DescendantSort="true" MaximumNumberOfSale="-1" MaximumScoreToSale="-1" Priority="0">
+      <PopulationModifier PopulationProperty="FoodPopulation" ScoreModifier="0.1"/>
+      <PopulationModifier PopulationProperty="IndustryPopulation" ScoreModifier="1"/>
+      <PopulationModifier PopulationProperty="SciencePopulation" ScoreModifier="1.5"/>
+      <PopulationModifier PopulationProperty="CityPointPopulation" ScoreModifier="2"/>
+    </Auction_Population>
+  </Seizure>
+  
+  <Seizure Name="Seizure7" Priority="7">
+    <Auction_City DescendantSort="true" MaximumNumberOfSale="-1" MaximumScoreToSale="-1" Priority="0"/>
+  </Seizure>
+</Datatable>

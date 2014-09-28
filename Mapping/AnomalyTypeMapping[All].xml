@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- BlackEarth -->
+  <AnomalyTypeMapping Name="Anomaly1">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_BlackEarth_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly1</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- MineralRich -->
+  <AnomalyTypeMapping Name="Anomaly2">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_MineralRich_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly2</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- CrystalFlowers -->
+  <AnomalyTypeMapping Name="Anomaly3">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_CrystalFlowers_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly3</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagDust</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- MossPearls -->
+  <AnomalyTypeMapping Name="Anomaly5">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_MossPearls_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly5</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Clay -->
+  <AnomalyTypeMapping Name="Anomaly6">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_Clay_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly6</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- HiddenSprings -->
+  <AnomalyTypeMapping Name="Anomaly7">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_HiddenSprings_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly7</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- AzoticExotics -->
+  <AnomalyTypeMapping Name="Anomaly8">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_AzoticExotics_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly8</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Chromatic Land -->
+  <AnomalyTypeMapping Name="Anomaly9">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_ChromaticLand_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly9</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagDust</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- RumblingStones -->
+  <AnomalyTypeMapping Name="Anomaly10">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_RumblingStones_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly10</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- GeothermalPit -->
+  <AnomalyTypeMapping Name="Anomaly11">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_GeothermalPit_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly11</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+  
+  <!-- SaltDesert -->
+  <AnomalyTypeMapping Name="Anomaly12">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_SaltDesert_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly12</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- EscapedSpecimens -->
+  <AnomalyTypeMapping Name="Anomaly13">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_EscapedSpecimens_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly13</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Black Dust-->
+  <AnomalyTypeMapping Name="Anomaly14">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_BlackDust_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly14</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagDust</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- MutantMarsh -->
+  <AnomalyTypeMapping Name="Anomaly15">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_MutantMarsh_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly15</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagDust</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- IglooLarvae -->
+  <AnomalyTypeMapping Name="Anomaly16">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_IglooLarva_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly16</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- RubyCactusField -->
+  <AnomalyTypeMapping Name="Anomaly17">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_RubyCactusField_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly17</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+ 
+  <!-- MassiveTree -->
+  <AnomalyTypeMapping Name="Anomaly18">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_MassiveTree_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly18</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+ 
+   <!-- LifeTree -->
+  <AnomalyTypeMapping Name="Anomaly19">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_LifeTree_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly19</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+ 
+  <!-- IceSculptures -->
+  <AnomalyTypeMapping Name="Anomaly20">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_IceSculptures_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly20</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- SteppeSoil -->
+  <AnomalyTypeMapping Name="Anomaly21">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_HumicSoil_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly21</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- EarthTower -->
+  <AnomalyTypeMapping Name="Anomaly22">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_EarthTower_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly22</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+    
+  <!-- BotanicGarden -->
+  <AnomalyTypeMapping Name="Anomaly23">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_BotanicGarden_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly23</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+      
+  <!-- SteelStalks -->
+  <AnomalyTypeMapping Name="Anomaly24">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_SteelStalks_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly24</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+          
+  <!-- WeaverWorms -->
+  <AnomalyTypeMapping Name="Anomaly25">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_WeaverWorms_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly25</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- StasisPillar --> 
+  <AnomalyTypeMapping Name="Anomaly26">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_StasisPillar_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly26</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagDust</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Earthspine -->
+  <AnomalyTypeMapping Name="Anomaly27">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_Earthspine_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly27</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagDust</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- SpiralRockPeel -->
+  <AnomalyTypeMapping Name="Anomaly28">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_SpiralRockPeel_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly28</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Geysers -->
+  <AnomalyTypeMapping Name="Anomaly29">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_Geysers_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly29</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+       
+  <!-- Mychordia -->
+  <AnomalyTypeMapping Name="Anomaly30">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_Mychordia_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly30</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- WizardStone -->
+  <AnomalyTypeMapping Name="Anomaly34">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_WizardStone_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly34</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- DragonTree -->
+  <AnomalyTypeMapping Name="Anomaly36">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_DragonTree_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly36</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagDust</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Oasis -->
+  <AnomalyTypeMapping Name="Anomaly39">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_Oasis_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly39</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- GoldenTree -->
+  <AnomalyTypeMapping Name="Anomaly43">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_GoldenTree_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly43</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagDust</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Meteor Fields -->
+  <AnomalyTypeMapping Name="Anomaly52">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_MeteorFields_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly52</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagIndustry</Sample>
+      <Sample>TerrainTagScience</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+
+  <!-- Northern Loam -->
+  <AnomalyTypeMapping Name="Anomaly53">
+    <Layer Name="Anomalies" Type="Geometry">
+      <Sample>Prefabs/Environments/Anomalies/Anomaly_NorthernLoam_00</Sample>
+    </Layer>
+    <Layer Name="Simulation" Type="Simulation">
+      <Sample>AnomalyTypeAnomaly53</Sample>
+      <Sample>TerrainTagAnomaly</Sample>
+      <Sample>TerrainTagFood</Sample>
+    </Layer>
+  </AnomalyTypeMapping>
+  
+</Datatable>

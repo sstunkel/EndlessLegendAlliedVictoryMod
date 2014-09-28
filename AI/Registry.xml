@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Registry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AI>
+    <AIHelpers>
+      <CommunicationAIHelper>
+        <ProbabilityToSendAIAttitudeFeedbackFormula>((($(TurnCountSinceLastFeedbackOfTheSameType) - 10) max 0) min 1) * ($(TurnCountSinceLastFeedback) + $(TurnCountSinceLastFeedbackOfThisEmpire) + $(ProbabilityBonus))</ProbabilityToSendAIAttitudeFeedbackFormula>
+      </CommunicationAIHelper>
+      <PersonalityAIHelper>
+        <NumberOfRandomPersonalities>2</NumberOfRandomPersonalities>
+      </PersonalityAIHelper>
+    </AIHelpers>
+    
+    <MajorEmpire>
+      <!-- % of City improvement to become mature city-->
+      <LevelOfImprovmentForMatureCity>0.5</LevelOfImprovmentForMatureCity>
+      <!-- nb of City extension to become mature city-->
+      <NumberOfExtensionForMatureCity>1</NumberOfExtensionForMatureCity>
+      <!-- nb of City population to become mature city-->
+      <NumberOfPopulationForMatureCity>6</NumberOfPopulationForMatureCity>
+      <!-- nb of turn in Besiege before Attacking City-->
+      <NumberOfTurnInBesiege>3</NumberOfTurnInBesiege>
+      <DefaultUnitPatternCategory>Killer</DefaultUnitPatternCategory>
+      <MiltaryStressCoeff>1.0</MiltaryStressCoeff>
+      <EconomicStressCoeff>1.0</EconomicStressCoeff>
+      <AIEntity_Empire>
+        <AIContext>
+          <MaximalValueForAIParameters>
+            <AICityGrowth>20.0</AICityGrowth>
+            <AICityProduction>20.0</AICityProduction>
+            <AICityMoney>20.0</AICityMoney>
+            <AICityResearch>20.0</AICityResearch>
+            <AICityEmpirePoint>20.0</AICityEmpirePoint>
+            <AICityMoneyUpkeep>20.0</AICityMoneyUpkeep>
+            <AICityMilitary>20.0</AICityMilitary>
+            <AICityApproval>100.0</AICityApproval>
+
+            <!--<CityApproval></CityApproval>-->
+            
+            <AIEmpireProduction>20.0</AIEmpireProduction>
+            <!--<AIEmpireMoney></AIEmpireMoney>-->
+            <!--<AIEmpireResearch></AIEmpireResearch>-->
+            <!--<AIEmpireGrowth></AIEmpireGrowth>-->
+            <!--<AIEmpireEmpirePoint></AIEmpireEmpirePoint>-->
+            <!--<AIEmpireMilitaryDefense></AIEmpireMilitaryDefense>-->
+            <!--<AIEmpireMilitaryOffense></AIEmpireMilitaryOffense>-->
+            <!--<AIEmpireDefense></AIEmpireDefense>-->
+            <!--<AIEmpireOffense></AIEmpireOffense>-->
+            <!--<AIExploration></AIExploration>-->
+            <!--<AIEmpireDiplomacy></AIEmpireDiplomacy>-->
+            <!--<AIEmpireMinorFactionAssimilation></AIEmpireMinorFactionAssimilation>-->
+
+            <!--<AIEmpireImproveBribe></AIEmpireImproveBribe>-->
+            <!--<AIEmpireImproveSearch></AIEmpireImproveSearch>-->
+            <!--<AIEmpireImproveTalk></AIEmpireImproveTalk>-->
+            <!--<AIEmpireBuyout></AIEmpireBuyout>-->
+            <!--<AIEmpireBoosterFood></AIEmpireBoosterFood>-->
+            <!--<AIEmpireBoosterIndustry></AIEmpireBoosterIndustry>-->
+            <!--<AIEmpireBoosterScience></AIEmpireBoosterScience>-->
+            
+            <AIBuildingProduction>20.0</AIBuildingProduction>
+            <!--<AIUnitProduction></AIUnitProduction>-->
+
+            <AIEmpireExploration>25.0</AIEmpireExploration>
+            <AIEmpireColonization>25.0</AIEmpireColonization>
+            <AICityLuxuryResource>10.0</AICityLuxuryResource>
+            <AICityStrategicResource>10.0</AICityStrategicResource>
+            
+            <!--<AIRegionDistance>1</AIRegionDistance>-->
+            <!--<AIRegionConnectivity>1</AIRegionConnectivity>-->
+            <!--<AIRegionStrategicResources>1</AIRegionStrategicResources>-->
+            <!--<AIRegionLuxuryResources>1</AIRegionLuxuryResources>-->
+            <!--<AIRegionSize>1</AIRegionSize>-->
+            <!--<AIRegionNewContinent>1</AIRegionNewContinent>-->
+            <!--<AIRegionNewContinentState>1</AIRegionNewContinentState>-->
+            <!--<AIRegionCurrentContinentState>1</AIRegionCurrentContinentState>-->
+          </MaximalValueForAIParameters>
+        </AIContext>
+
+        <AILayer_Diplomacy>
+          <WantedDiplomaticRelationStateMessageRevaluationPeriod>10</WantedDiplomaticRelationStateMessageRevaluationPeriod>
+          <NumberOfTurnsBetweenPropositions>5</NumberOfTurnsBetweenPropositions>
+          <DiplomaticRelationStateAgentCriticityThreshold>0.5</DiplomaticRelationStateAgentCriticityThreshold>
+          <DiplomaticTermAgentCriticityThreshold>0.5</DiplomaticTermAgentCriticityThreshold>
+          <DiplomaticRelationStateAgentCriticityEpsilon>0.05</DiplomaticRelationStateAgentCriticityEpsilon>
+          <MaximumContractPropositionEvaluationScore>10</MaximumContractPropositionEvaluationScore>
+          <MinimumContractPropositionEvaluationScore>0</MinimumContractPropositionEvaluationScore>
+          <MinimumExchangeAmountRatio>0.2</MinimumExchangeAmountRatio>
+          <MaximumExchangeAmountRatio>0.8</MaximumExchangeAmountRatio>
+
+          <!-- TermEvaluationBonus, The bonus must be in the interval ]-1,Infinity[ to not inverse evaluations.-->
+          <MyEmpireProvidesBonus>
+            <Booster>0.1</Booster>
+            <City>1</City>
+            <Resource>0.5</Resource>
+            <Technology>1</Technology>
+            <Treaty>0.1</Treaty>
+          </MyEmpireProvidesBonus>
+
+          <MyEmpireReceivesBonus>
+            <Booster>-0.1</Booster>
+            <City>-0.1</City>
+            <Resource>-0.5</Resource>
+            <Technology>-0.1</Technology>
+            <Treaty>-0.1</Treaty>
+          </MyEmpireReceivesBonus>
+          
+        </AILayer_Diplomacy>
+
+        <AILayer_Strategy>
+          <Start>
+            <PopulationLimitToExpand>3</PopulationLimitToExpand>
+          </Start>
+          <Enhance>
+            <CityMatureRatioLimit>0.8</CityMatureRatioLimit>
+            <EmpireThreatLimit>0.2</EmpireThreatLimit>
+            <LimitToPopulationExpansion>2</LimitToPopulationExpansion>
+          </Enhance>
+          <Expand>
+            <CityMatureRatioLimit>0.5</CityMatureRatioLimit>
+            <EmpireThreatLimit>0.2</EmpireThreatLimit>
+            <LimitToPopulationExpansion>1.5</LimitToPopulationExpansion>
+          </Expand>
+          <Capture>
+            <CityMatureRatioLimit>0.8</CityMatureRatioLimit>
+            <LimitToWarRatio>0.2</LimitToWarRatio>
+            <LimitToPopulationExpansion>1.1</LimitToPopulationExpansion>
+          </Capture>
+          <Defense>
+            <CityMatureRatioLimit>0.8</CityMatureRatioLimit>
+            <LimitToWarRatio>0.2</LimitToWarRatio>
+            <EmpireThreatLimit>0.1</EmpireThreatLimit>
+            <LimitToPopulationExpansion>1.5</LimitToPopulationExpansion>
+          </Defense>
+        </AILayer_Strategy>
+
+        <AILayer_Military>
+          <UnitInGarrisonTurnLimit>20</UnitInGarrisonTurnLimit>
+          <UnitInGarrisonTurnLimitForMaxPercent>60</UnitInGarrisonTurnLimitForMaxPercent>
+          
+          <UnitInGarrisonPercent>0.5</UnitInGarrisonPercent>
+          <UnitInGarrisonMaxPercent>0.7</UnitInGarrisonMaxPercent>
+          <MinimumUnitsToKeepInGarrison>2</MinimumUnitsToKeepInGarrison>
+          
+          <UnitInGarrisonPriorityMultiplierPerSlot>0.5</UnitInGarrisonPriorityMultiplierPerSlot>          
+          <UnitRatioBoost>0.8</UnitRatioBoost>
+          
+          <VillageDefenseRatioDeboost>0.7</VillageDefenseRatioDeboost>
+          
+          <UnitMaxMilitaryPower>2700000</UnitMaxMilitaryPower><!-- Hard value, must be set after each update of data -->
+          <ArmyMaxMilitaryPower>172800</ArmyMaxMilitaryPower><!-- Action points, Spent action points reset each turn -->
+        </AILayer_Military>
+
+        <AILayer_Village>
+          <TurnLimitBeforeHardPacification>20</TurnLimitBeforeHardPacification>
+        </AILayer_Village>
+      </AIEntity_Empire>
+
+      <AIEntity_City>
+        <AIContext>
+          <MaximalValueForAIParameters>
+            <AICityGrowth>20.0</AICityGrowth>
+            <AICityProduction>20.0</AICityProduction>
+            <AICityMoney>20.0</AICityMoney>
+            <AICityResearch>20.0</AICityResearch>
+            <AICityEmpirePoint>20.0</AICityEmpirePoint>
+            <AICityMoneyUpkeep>20.0</AICityMoneyUpkeep>
+            <AICityMilitary>20.0</AICityMilitary>
+
+            <AIEmpireExploration>25.0</AIEmpireExploration>
+            <AIEmpireColonization>25.0</AIEmpireColonization>
+            <AICityLuxuryResource>10.0</AICityLuxuryResource>
+            <AICityStrategicResource>10.0</AICityStrategicResource>
+            <AIEmpireMilitaryDefense>50.0</AIEmpireMilitaryDefense>
+            <AIEmpireMilitaryOffense>50.0</AIEmpireMilitaryOffense>
+          </MaximalValueForAIParameters>
+        </AIContext>
+
+        <AILayer_Population>
+          <PopulationThresholdForSacrifice>8</PopulationThresholdForSacrifice>
+          <ApprovalThresholdForSacrifice>40</ApprovalThresholdForSacrifice>
+        </AILayer_Population>
+        
+        <AILayer_Production>
+          <SettlerEconomicalStress>-0.2</SettlerEconomicalStress>
+          <MinimalTurnDuration>5</MinimalTurnDuration>
+          <MaximalTurnDuration>15</MaximalTurnDuration>
+          <MaximalTurnDurationBoost>-1</MaximalTurnDurationBoost>
+          <MaximalUnitDistance>10</MaximalUnitDistance>
+          <MaximalUnitDistanceBoost>-0.5</MaximalUnitDistanceBoost>
+          <MinimalDevelopmentRatioForUnit>0.6</MinimalDevelopmentRatioForUnit>
+          <MaximalDevelopmentRatioBoost>0.6</MaximalDevelopmentRatioBoost>
+        </AILayer_Production>
+      </AIEntity_City>
+    </MajorEmpire>
+    <MinorEmpire>
+      <EraLevelFactor>0.5</EraLevelFactor> <!-- Era factor -->
+      <TurnLevelFactor>0.0</TurnLevelFactor> <!-- Turns factor -->
+      <!--  level = era * eraFactor + turn * turnFactor -->
+    </MinorEmpire>
+    
+    <UnitAttributesBoundaries>
+      <AIUnitAttributeAttack_MaxValue>450</AIUnitAttributeAttack_MaxValue> <!-- includes initial stats, leveling, item efficiency, EP & Luxury, Moral, and arbitrary 30% from capacity -->
+      <AIUnitAttributeDamage_MaxValue>350</AIUnitAttributeDamage_MaxValue>
+      <AIUnitAttributeDefense_MaxValue>450</AIUnitAttributeDefense_MaxValue>
+      <AIUnitAttributeMaxHealth_MaxValue>600</AIUnitAttributeMaxHealth_MaxValue>
+      <AIUnitAttributeInitiative_MaxValue>250</AIUnitAttributeInitiative_MaxValue>
+      <AIUnitAttributeMovement_MaxValue>14</AIUnitAttributeMovement_MaxValue>
+      <AIUnitAttributeRange_MaxValue>7</AIUnitAttributeRange_MaxValue>
+    </UnitAttributesBoundaries>
+
+    <BuyoutBoundaries>
+      <AIMaxTurnGain>42</AIMaxTurnGain>
+    </BuyoutBoundaries>
+
+    <AILayers>
+      <ArmyPowerPercentageForMaintainingMission>0.8</ArmyPowerPercentageForMaintainingMission>
+      
+      <AILayer_Colonization>
+        <NeededEmpireApprovalLimitWhenColonizing>40</NeededEmpireApprovalLimitWhenColonizing>
+        <AcceptedPercentageOfUnPacifiedRegion>0.2</AcceptedPercentageOfUnPacifiedRegion>
+      </AILayer_Colonization>
+      
+      <AILayer_Exploration>
+        <RegionToColonizeBoost>0.2</RegionToColonizeBoost>
+        <RegionColonizedBoost>0.1</RegionColonizedBoost>
+      </AILayer_Exploration>
+
+      <AILayer_Heroes>
+        <HeroUpkeepProjectionCostByLevel>5</HeroUpkeepProjectionCostByLevel> <!-- approximation of upkeep cost for upkeep projection  -->
+        <HeroUpkeepProjectionTurnCount>10</HeroUpkeepProjectionTurnCount> <!--  how many turns to consider in upkeep projection -->
+      </AILayer_Heroes>
+      
+      <AILayer_Encounter>
+        <Fearfulness>0.20</Fearfulness> <!-- >=-1 higher value means more fearful. -1:AI is fearless  0:AI will get satisfied with a draw (everybody dead both sides). >1: AI is fearful, it will tend attack only in case where it largely dominate -->
+        <BalanceOfPowerDecreaseFactor>1.00</BalanceOfPowerDecreaseFactor> <!-- >=0 higher values means the AI will more easily decrease the perceived MP of units that it has defeated more easily than expected -->
+        <BalanceOfPowerIncreaseFactor>0.75</BalanceOfPowerIncreaseFactor> <!-- >=0 higher values means the AI will more easily increase the perceived MP of units that it was unexpectedly defeated by -->
+      </AILayer_Encounter>
+
+      <AILayer_Trade>
+        <MagicResourceSellingProportion>0.60</MagicResourceSellingProportion> <!-- [0,1] proportion of produced lux and strat AI will magically sell to market: AI's resources won't be ponctionned, and AI won't earn any money for it ! -->
+      </AILayer_Trade>
+
+      <AILayer_Account>
+        <MinimalBankruptProtectionTurnCount>4</MinimalBankruptProtectionTurnCount> <!-- In case of dust deficit, minimal number of times the amount of the deficit should be kept on each account to prevent bankrupt (in winter it will be increased to winter duration) -->
+      </AILayer_Account>
+
+    </AILayers>
+  </AI>
+</Registry>

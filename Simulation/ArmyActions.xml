@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <ArmyAction_Attack Name="ArmyActionAttack">
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+    <Cost ResourceName="ActionPoint" Instant="true">1</Cost>
+  </ArmyAction_Attack>
+
+  <ArmyAction_AutoExplore Name="ArmyActionAutoExplore">
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+  </ArmyAction_AutoExplore>
+
+  <ArmyAction_Bribe Name="ArmyActionBribe" ExperienceReward="1">
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMapActionParley</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+    <!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->
+  </ArmyAction_Bribe>
+
+  <ArmyAction_Colonization Name="ArmyActionColonization" ExperienceReward="4">
+    <!--
+    <PathPrerequisite Flags="Prerequisite,Discard">ClassArmy/UnitAbilityColonizationDescriptor</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologySettler</TechnologyPrerequisite>
+    -->
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>    
+  </ArmyAction_Colonization>
+
+  <ArmyAction_Convert Name="ArmyActionConvert" ExperienceReward="3">
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
+	<!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->
+  </ArmyAction_Convert>
+  
+  <ArmyAction_Guard Name="ArmyActionGuard">
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+  </ArmyAction_Guard>
+
+  <ArmyAction_Parley Name="ArmyActionParley" ExperienceReward="2">
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMapActionParley</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+    <!-- Add some prerequisite on it... Techno? cost? etc-->
+    <!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->
+  </ArmyAction_Parley>
+
+  <ArmyAction_Privateers Name="ArmyActionPrivateers">
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyPrivateers</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+    <!-- Add some prerequisite on it... Techno? cost? etc-->
+    <!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->
+  </ArmyAction_Privateers>
+
+  <!--
+  <ArmyAction_Raze Name="ArmyActionRaze">
+  </ArmyAction_Raze>
+  -->
+
+  <ArmyAction_Resettle Name="ArmyActionResettle" ExperienceReward="0">
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+  </ArmyAction_Resettle>
+ 
+  <ArmyAction_Search Name="ArmyActionSearch" ExperienceReward="6">
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+    <!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->
+  </ArmyAction_Search>
+
+  <ArmyAction_Siege Name="ArmyActionSiege" ExperienceReward="0">
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+  </ArmyAction_Siege>
+  
+  <ArmyAction_Teleport Name="ArmyActionTeleport">
+    <!-- Add some prerequisite on it... Techno? cost? etc-->
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+  </ArmyAction_Teleport>
+
+  <ArmyAction_TransferUnits Name="ArmyActionTransferUnits" AllowedTransferTarget="Army">
+    <!-- Add some prerequisite on it... Techno? cost? etc-->
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+  </ArmyAction_TransferUnits>
+
+  <ArmyAction_TransferToCity Name="ArmyActionTransferUnitsToGarrison">
+    <!-- Add some prerequisite on it... Techno? cost? etc-->
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
+  </ArmyAction_TransferToCity>
+
+</Datatable>

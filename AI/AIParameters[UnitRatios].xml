@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AIParameterDatatableElement Name="UnitRatios">
+    <AIParameter Name="AIUnitAttackRatio"             Value= "$(AIUnitAttributeAttack)     / $(AIUnitAttributeAttack_MaxValue)"     />
+    <AIParameter Name="AIUnitDamageRatio"             Value= "$(AIUnitAttributeDamage)     / $(AIUnitAttributeDamage_MaxValue)"   />
+    <AIParameter Name="AIUnitDefenseRatio"            Value= "$(AIUnitAttributeDefense)    / $(AIUnitAttributeDefense_MaxValue)"    />
+    <AIParameter Name="AIUnitInitiativeRatio"         Value= "$(AIUnitAttributeInitiative) / $(AIUnitAttributeInitiative_MaxValue)" />
+    <AIParameter Name="AIUnitMaxHealthRatio"          Value= "$(AIUnitAttributeMaxHealth)  / $(AIUnitAttributeMaxHealth_MaxValue)"  />
+    <AIParameter Name="AIUnitMovementRatio"           Value= "$(AIUnitAttributeMovement)   / $(AIUnitAttributeMovement_MaxValue)"   />
+    <AIParameter Name="AIUnitRangeRatio"              Value= "$(AIUnitAttributeRange)      / $(AIUnitAttributeRange_MaxValue)"      />
+    <AIParameter Name="AIUnitHealthRatio"             Value= "$(AIUnitAttributeHealth)     / $(AIUnitAttributeMaxHealth_MaxValue)"  />
+    <AIParameter Name="AIUnitWoundedRatio"             Value= "($(AIUnitAttributeMaxHealth) - $(AIUnitAttributeHealth)) / $(AIUnitAttributeMaxHealth)" />
+  </AIParameterDatatableElement>
+</Datatable>

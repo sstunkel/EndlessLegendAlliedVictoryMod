@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <ResourceConverterDefinition ResourceName="Production">
+    <ToConverter To="UnitValue">
+      <Modifier Value="0.1"/>
+    </ToConverter>
+    <ToConverter To="ExperienceReward">
+      <Modifier Value="0.06"/>
+    </ToConverter>
+    <ToConverter To="EmpireMoney">
+      <InterpreterModifier>($(Input) * $Property(../ClassEmpire:GameSpeedProductionToMoneyMultiplier)) ^ 1.2</InterpreterModifier>
+    </ToConverter>
+    <ToConverter To="Retrofit">
+      <InterpreterModifier>(($(Input) * $Property(../ClassEmpire:GameSpeedProductionToMoneyMultiplier) * 0.75) ^ 1.1)</InterpreterModifier>
+    </ToConverter>
+    <ToConverter To="Buyout">
+      <InterpreterModifier>($(Input) * $Property(../ClassEmpire:GameSpeedProductionToMoneyMultiplier)) ^ 1.2</InterpreterModifier>
+    </ToConverter>
+  </ResourceConverterDefinition>
+
+  <!-- This is a test without using CityGrowth value, for easier calculations and integer result. To be balanced further. -->
+  <!--<InterpreterModifier>(($Property(../ClassEmpire:Population) * 5) + ($Property(ClassCity:Population) * 25)) * $Property(../ClassEmpire:PopulationBuyoutGrowthToEmpireMoneyConversionFactor)</InterpreterModifier>-->
+  <ResourceConverterDefinition ResourceName="CityGrowth">
+    <ToConverter To="EmpireMoney">
+      <InterpreterModifier>(($Property(ClassCity:Population) * 50 + ($Property(../ClassEmpire:Population) ^ 1.5) * 6) * $Property(../ClassEmpire:PopulationBuyoutGrowthToEmpireMoneyConversionFactor)) * $Property(../ClassEmpire:GameSpeedMultiplier)</InterpreterModifier>
+    </ToConverter>
+    <ToConverter To="Retrofit">
+      <InterpreterModifier>(($Property(ClassCity:Population) * 50 + ($Property(../ClassEmpire:Population) ^ 1.5) * 6) * $Property(../ClassEmpire:PopulationBuyoutGrowthToEmpireMoneyConversionFactor)) * $Property(../ClassEmpire:GameSpeedMultiplier)</InterpreterModifier>
+    </ToConverter>
+    <ToConverter To="Buyout">
+      <InterpreterModifier>(($Property(ClassCity:Population) * 50 + ($Property(../ClassEmpire:Population) ^ 1.5) * 6) * $Property(../ClassEmpire:PopulationBuyoutGrowthToEmpireMoneyConversionFactor)) * $Property(../ClassEmpire:GameSpeedMultiplier)</InterpreterModifier>
+    </ToConverter>
+  </ResourceConverterDefinition>
+
+  <ResourceConverterDefinition ResourceName="Health">
+    <ToConverter To="EmpireMoney">
+      <InterpreterModifier>$(Input) * $Property(../ClassEmpire:UnitHealthToEmpireMoneyConversionFactor) * 0.75 * $Property(../ClassEmpire:GameSpeedMultiplier)</InterpreterModifier>
+    </ToConverter>
+    <ToConverter To="Buyout">
+      <InterpreterModifier>$(Input) * $Property(../ClassEmpire:UnitHealthToEmpireMoneyConversionFactor) * 0.75 * $Property(../ClassEmpire:GameSpeedMultiplier)</InterpreterModifier>
+    </ToConverter>
+  </ResourceConverterDefinition>
+
+  <ResourceConverterDefinition ResourceName="Bribe">
+    <ToConverter To="EmpireMoney">
+      <InterpreterModifier>$(Input) * $Property(../ClassEmpire:GameSpeedMultiplier) + 90</InterpreterModifier>
+    </ToConverter>
+  </ResourceConverterDefinition>
+
+  <ResourceConverterDefinition ResourceName="EmpireMoney">
+    <ToConverter To="Retrofit">
+      <InterpreterModifier>$(Input)</InterpreterModifier>
+    </ToConverter>
+  </ResourceConverterDefinition>
+
+  
+</Datatable>

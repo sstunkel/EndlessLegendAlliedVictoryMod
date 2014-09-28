@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- UNIT Type -->
+  <SimulationDescriptor Name="UnitSizeTiny" Type="UnitSize">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="NumberOfPawns" BaseValue="12"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="UnitSizeSmall" Type="UnitSize">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="NumberOfPawns" BaseValue="6"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="UnitSizeMedium" Type="UnitSize">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="NumberOfPawns" BaseValue="3"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="UnitSizeLarge" Type="UnitSize">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="NumberOfPawns" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

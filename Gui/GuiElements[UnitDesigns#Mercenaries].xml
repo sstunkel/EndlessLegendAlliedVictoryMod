@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <GuiElement Name="UnitDesignBrokenLordsCavalry#Mercenary">
+    <Title>%UnitBrokenLordsCavalryTitle</Title>
+    <Description>%UnitBrokenLordsCavalryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsCavalrySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsCavalryLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="UnitDesignBrokenLordsInfantry#Mercenary">
+    <Title>%UnitBrokenLordsInfantryTitle</Title>
+    <Description>%UnitBrokenLordsInfantryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsInfantrySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsInfantryLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignBrokenLordsSettler#Mercenary">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsInfantrySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsInfantryLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="UnitDesignBrokenLordsBlackBishop#Mercenary">
+    <Title>%UnitBrokenLordsBlackBishopTitle</Title>
+    <Description>%UnitBrokenLordsBlackBishopDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsBlackBishopSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsBlackBishopLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="UnitDesignMadFairiesForestSpirit#Mercenary">
+    <Title>%UnitMadFairiesForestSpiritTitle</Title>
+    <Description>%UnitMadFairiesForestSpiritDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesForestSpiritSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesForestSpiritLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignMadFairiesSettler#Mercenary">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesForestSpiritSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesForestSpiritLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="UnitDesignMadFairiesShaman#Mercenary">
+    <Title>%UnitMadFairiesShamanTitle</Title>
+    <Description>%UnitMadFairiesShamanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesShamanSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesShamanLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="UnitDesignMadFairiesArcher#Mercenary">
+    <Title>%UnitMadFairiesArcherTitle</Title>
+    <Description>%UnitMadFairiesArcherDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesArcherSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitMadFairiesArcherLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignRageWizardsBattleMage#Mercenary">
+    <Title>%UnitRageWizardsBattleMageTitle</Title>
+    <Description>%UnitRageWizardsBattleMageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsBattleMageSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsBattleMageLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignRageWizardsPhoenix#Mercenary">
+    <Title>%UnitRageWizardsPhoenixTitle</Title>
+    <Description>%UnitRageWizardsPhoenixDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsPhoenixSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsPhoenixLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignRageWizardsSettler#Mercenary">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsSettlerSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsSettlerLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignRageWizardsWitch#Mercenary">
+    <Title>%UnitRageWizardsWitchTitle</Title>
+    <Description>%UnitRageWizardsWitchDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsWitchSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitRageWizardsWitchLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignNecrophagesNecrohunter#Mercenary">
+    <Title>%UnitNecrophagesNecrohunterTitle</Title>
+    <Description>%UnitNecrophagesNecrohunterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesNecrohunterSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesNecrohunterLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignNecrophagesZombat#Mercenary">
+    <Title>%UnitNecrophagesZombatTitle</Title>
+    <Description>%UnitNecrophagesZombatDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesZombatSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesZombatLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignNecrophagesLichbug#Mercenary">
+    <Title>%UnitNecrophagesLichbugTitle</Title>
+    <Description>%UnitNecrophagesLichbugDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesLichbugSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesLichbugLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignNecrophagesSettler#Mercenary">
+    <Title>%UnitSettlerTitle</Title>
+    <Description>%UnitSettlerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesLichbugSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitNecrophagesLichbugLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignUrcesGiantOgre#Mercenary">
+    <Title>%UnitUrcesGiantOgreTitle</Title>
+    <Description>%UnitUrcesGiantOgreDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitUrcesGiantOgreSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitUrcesGiantOgreLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignErycisHydra#Mercenary">
+    <Title>%UnitErycisHydraTitle</Title>
+    <Description>%UnitErycisHydraDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitErycisHydraSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitErycisHydraLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignCeratanDrider#Mercenary">
+    <Title>%UnitCeratanDriderTitle</Title>
+    <Description>%UnitCeratanDriderDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitCeratanDriderSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitCeratanDriderLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignKazanjiDevil#Mercenary">
+    <Title>%UnitKazanjiDevilTitle</Title>
+    <Description>%UnitKazanjiDevilDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitKazanjiDevilSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitKazanjiDevilLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="UnitDesignBosCentaur#Mercenary">
+    <Title>%UnitBosCentaurTitle</Title>
+    <Description>%UnitBosCentaurDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBosCentaurSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBosCentaurLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignSilicsGolem#Mercenary">
+    <Title>%UnitSilicsGolemTitle</Title>
+    <Description>%UnitSilicsGolemDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitSilicsGolemSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitSilicsGolemLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignDelversDwarf#Mercenary">
+    <Title>%UnitDelversDwarfTitle</Title>
+    <Description>%UnitDelversDwarfDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitDelversDwarfSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitDelversDwarfLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignSistersOfMercyJusticere#Mercenary">
+    <Title>%UnitSistersOfMercyJusticereTitle</Title>
+    <Description>%UnitSistersOfMercyJusticereDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitSistersOfMercyJusticereSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitSistersOfMercyJusticereLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignHauntsSpecter#Mercenary">
+    <Title>%UnitHauntsSpecterTitle</Title>
+    <Description>%UnitHauntsSpecterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitHauntsSpecterSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitHauntsSpecterLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignJotusEttin#Mercenary">
+    <Title>%UnitJotusEttinTitle</Title>
+    <Description>%UnitJotusEttinDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitJotusEttinSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitJotusEttinLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignHurnasOrc#Mercenary">
+    <Title>%UnitHurnasOrcTitle</Title>
+    <Description>%UnitHurnasOrcDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitHurnasOrcSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitHurnasOrcLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignGauranMinotaur#Mercenary">
+    <Title>%UnitGauranMinotaurTitle</Title>
+    <Description>%UnitGauranMinotaurDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitGauranMinotaurSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitGauranMinotaurLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignBirdhiveHarpy#Mercenary">
+    <Title>%UnitBirdhiveHarpyTitle</Title>
+    <Description>%UnitBirdhiveHarpyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitBirdhiveHarpySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitBirdhiveHarpyLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesignGeldirusIceWarg#Mercenary">
+    <Title>%UnitGeldirusIceWargTitle</Title>
+    <Description>%UnitGeldirusIceWargDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/Units/UnitGeldirusIceWargSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Units/UnitGeldirusIceWargLarge" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>
+

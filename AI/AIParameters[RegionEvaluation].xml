@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--
+    Available variables are:
+
+      $AverageRegionSize
+      $RegionSize
+
+      $BirdEyeDistanceFromNearestCity
+      $WorldWidth
+
+      $BorderWithMe
+      $BorderWithAllied
+      $BorderWithEnnemy
+      $BorderWithNeutral
+      $BorderWithWasteland
+      $OverallBorderSize
+
+      $IsNewContinent
+      $AlliesRegionsOnContinentCount
+      $EnnemiesRegionsOnContinentCount      
+      
+      $NewStrategicRessourcesCount
+      $NewLuxuryRessourcesCount
+      $OwnedStrategicRessourcesCount
+      $OwnedLuxuryRessourcesCount
+      $ProducedLuxuryRessourcesCount
+      $ProducedStrategicRessourcesCount
+      
+      $ExplorationRatio
+
+      $VillagePacifiedOrConvertedByMeRatio
+      $VillageConvertedByOthersRatio
+      $VillageTotalCount
+      
+      
+      $UnsafeTileCount
+      $NeutralTileCount
+      $SafeTileCount
+      $TotalTileCount
+  -->
+  <AIParameterDatatableElement Name="RegionEvaluation">
+    <!--<AIParameter Name="AIRegionDistance" Value="$(BirdEyeDistanceFromNearestCity)/$(WorldWidth)"/>-->
+    <AIParameter Name="AIRegionDistance" Value="($(NeutralTileCount)+$(SafeTileCount)+$(UnsafeTileCount)) / $(WorldWidth)"/>
+    <AIParameter Name="AIRegionConnectivity" Value="(($(BorderWithMe) + $(BorderWithAllied) + $(BorderWithWasteland) ) - ($(BorderWithNeutral) + $(BorderWithEnnemy))) / $(OverallBorderSize)"/>
+    <AIParameter Name="AIRegionStrategicResources" Value="(($(NewStrategicRessourcesCount) * 1.25) + ($(OwnedStrategicRessourcesCount) * 1.25 ) + ($(ProducedStrategicRessourcesCount) * 1.5)) / 5"/> <!-- 5 is the number of deposit you can find within a region-->
+    <AIParameter Name="AIRegionLuxuryResources" Value="(($(NewLuxuryRessourcesCount) * 1.25) + ($(OwnedLuxuryRessourcesCount) * 1.25 ) + ($(ProducedLuxuryRessourcesCount) * 1.5)) / 5"/> <!-- 5 is the number of deposit you can find within a region-->
+    <AIParameter Name="AIRegionSize" Value="$(RegionSize)/$(AverageRegionSize)"/>
+    <AIParameter Name="AIRegionNewContinent" Value="$(IsNewContinent)"/>
+    <AIParameter Name="AIRegionNewContinentState" Value="$(IsNewContinent) *(($(AlliesRegionsOnContinentCount) - $(EnnemiesRegionsOnContinentCount)) / (1 + $(AlliesRegionsOnContinentCount) + $(EnnemiesRegionsOnContinentCount)))"/>
+    <AIParameter Name="AIRegionCurrentContinentState" Value="(1 - $(IsNewContinent)) * (($(AlliesRegionsOnContinentCount) - $(EnnemiesRegionsOnContinentCount)) / (1 + $(AlliesRegionsOnContinentCount) + $(EnnemiesRegionsOnContinentCount)))"/>
+    <AIParameter Name="AIRegionCurrentVillageState" Value="($(VillageTotalCount) * $(VillagePacifiedOrConvertedByMeRatio)) - ($(VillageTotalCount) * $(VillageConvertedByOthersRatio))"/>
+  </AIParameterDatatableElement>
+
+</Datatable>

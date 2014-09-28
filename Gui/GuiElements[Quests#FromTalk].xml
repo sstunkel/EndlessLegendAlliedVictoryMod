@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <QuestGuiElement Name="SideQuestVillage#0001">
+    <Title>%SideQuestVillage#0001Title</Title>
+    <Description>%SideQuestVillage#0001Description</Description>
+    <Objective>%SideQuestVillage#0001Objective</Objective>
+    <Outcome>%SideQuestVillage#0001Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestKill" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0003-Step1">%SideQuestVillage#0001-Step1</Step>
+      <Step Name="SideQuestVillage#0003-Step2">%SideQuestVillage#0001-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0002">
+    <Title>%SideQuestVillage#0002Title</Title>
+    <Description>%SideQuestVillage#0002Description</Description>
+    <Objective>%SideQuestVillage#0002Objective</Objective>
+    <Outcome>%SideQuestVillage#0002Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestKill" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0002-Step1">%SideQuestVillage#0002-Step1</Step>
+      <Step Name="SideQuestVillage#0002-Step2">%SideQuestVillage#0002-Step2</Step>
+      <Step Name="SideQuestVillage#0002-Step3">%SideQuestVillage#0002-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0003">
+    <Title>%SideQuestVillage#0003Title</Title>
+    <Description>%SideQuestVillage#0003Description</Description>
+    <Objective>%SideQuestVillage#0003Objective</Objective>
+    <Outcome>%SideQuestVillage#0003Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestPacify" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0003-Step1">%SideQuestVillage#0003-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0004">
+    <Title>%SideQuestVillage#0004Title</Title>
+    <Description>%SideQuestVillage#0004Description</Description>
+    <Objective>%SideQuestVillage#0004Objective</Objective>
+    <Outcome>%SideQuestVillage#0004Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestPacify" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0004-Step1">%SideQuestVillage#0004-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0005">
+    <Title>%SideQuestVillage#0005Title</Title>
+    <Description>%SideQuestVillage#0005Description</Description>
+    <Objective>%SideQuestVillage#0005Objective</Objective>
+    <Outcome>%SideQuestVillage#0005Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBattle" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0005-Step1">%SideQuestVillage#0005-Step1</Step>
+      <Step Name="SideQuestVillage#0005-Step2">%SideQuestVillage#0005-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0006">
+    <Title>%SideQuestVillage#0006Title</Title>
+    <Description>%SideQuestVillage#0006Description</Description>
+    <Objective>%SideQuestVillage#0006Objective</Objective>
+    <Outcome>%SideQuestVillage#0006Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestPacify" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0006-Step1">%SideQuestVillage#0006-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0007">
+    <Title>%SideQuestVillage#0007Title</Title>
+    <Description>%SideQuestVillage#0007Description</Description>
+    <Objective>%SideQuestVillage#0007Objective</Objective>
+    <Outcome>%SideQuestVillage#0007Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestGovernor" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0007-Step1">%SideQuestVillage#0007-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0008">
+    <Title>%SideQuestVillage#0008Title</Title>
+    <Description>%SideQuestVillage#0008Description</Description>
+    <Objective>%SideQuestVillage#0008Objective</Objective>
+    <Outcome>%SideQuestVillage#0008Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestAssault" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0008-Step1">%SideQuestVillage#0008-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0009">
+    <Title>%SideQuestVillage#0009Title</Title>
+    <Description>%SideQuestVillage#0009Description</Description>
+    <Objective>%SideQuestVillage#0009Objective</Objective>
+    <Outcome>%SideQuestVillage#0009Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestTroops" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0009-Step1">%SideQuestVillage#0009-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0010">
+    <Title>%SideQuestVillage#0010Title</Title>
+    <Description>%SideQuestVillage#0010Description</Description>
+    <Objective>%SideQuestVillage#0010Objective</Objective>
+    <Outcome>%SideQuestVillage#0010Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestTroops" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0010-Step1">%SideQuestVillage#0010-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0011">
+    <Title>%SideQuestVillage#0011Title</Title>
+    <Description>%SideQuestVillage#0011Description</Description>
+    <Objective>%SideQuestVillage#0011Objective</Objective>
+    <Outcome>%SideQuestVillage#0011Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestExpansion" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0011-Step1">%SideQuestVillage#0011-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0012">
+    <Title>%SideQuestVillage#0012Title</Title>
+    <Description>%SideQuestVillage#0012Description</Description>
+    <Objective>%SideQuestVillage#0012Objective</Objective>
+    <Outcome>%SideQuestVillage#0012Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestGovernor" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0012-Step1">%SideQuestVillage#0012-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0013">
+    <Title>%SideQuestVillage#0013Title</Title>
+    <Description>%SideQuestVillage#0013Description</Description>
+    <Objective>%SideQuestVillage#0013Objective</Objective>
+    <Outcome>%SideQuestVillage#0013Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestExpansion" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0013-Step1">%SideQuestVillage#0013-Step1</Step>
+      <Step Name="SideQuestVillage#0013-Step1">%SideQuestVillage#0013-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0014">
+    <Title>%SideQuestVillage#0014Title</Title>
+    <Description>%SideQuestVillage#0014Description</Description>
+    <Objective>%SideQuestVillage#0014Objective</Objective>
+    <Outcome>%SideQuestVillage#0014Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestGovernor" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0014-Step1">%SideQuestVillage#0014-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0015">
+    <Title>%SideQuestVillage#0015Title</Title>
+    <Description>%SideQuestVillage#0015Description</Description>
+    <Objective>%SideQuestVillage#0015Objective</Objective>
+    <Outcome>%SideQuestVillage#0015Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestPacify" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0015-Step1">%SideQuestVillage#0015-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0021">
+    <Title>%SideQuestVillage#0021Title</Title>
+    <Description>%SideQuestVillage#0021Description</Description>
+    <Objective>%SideQuestVillage#0021Objective</Objective>
+    <Outcome>%SideQuestVillage#0021Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestPacify" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0021-Step1">%SideQuestVillage#0021-Step1</Step>
+      <Step Name="SideQuestVillage#0021-Step2">%SideQuestVillage#0021-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0025">
+    <Title>%SideQuestVillage#0021Title</Title>
+    <Description>%SideQuestVillage#0021Description</Description>
+    <Objective>%SideQuestVillage#0021Objective</Objective>
+    <Outcome>%SideQuestVillage#0021Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestPacify" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0025-Step1">%SideQuestVillage#0025-Step1</Step>
+      <Step Name="SideQuestVillage#0025-Step2">%SideQuestVillage#0025-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0026">
+    <Title>%SideQuestVillage#0021Title</Title>
+    <Description>%SideQuestVillage#0021Description</Description>
+    <Objective>%SideQuestVillage#0021Objective</Objective>
+    <Outcome>%SideQuestVillage#0021Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestPacify" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0026-Step1">%SideQuestVillage#0026-Step1</Step>
+      <Step Name="SideQuestVillage#0026-Step2">%SideQuestVillage#0026-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestVillage#0024">
+    <Title>%SideQuestVillage#0024Title</Title>
+    <Description>%SideQuestVillage#0024Description</Description>
+    <Objective>%SideQuestVillage#0024Objective</Objective>
+    <Outcome>%SideQuestVillage#0024Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBattle" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestVillage#0021-Step1">%SideQuestVillage#0024-Step1</Step>
+      <Step Name="SideQuestVillage#0021-Step2">%SideQuestVillage#0024-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+</Datatable>

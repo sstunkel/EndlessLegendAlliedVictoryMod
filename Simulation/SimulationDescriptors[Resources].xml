@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- TODO: Input real Luxury values -->
+  
+  <SimulationDescriptor Name="Luxury1Bonus" Type="Luxury1Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury2Bonus" Type="Luxury2Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury3Bonus" Type="Luxury3Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury4Bonus" Type="Luxury4Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury5Bonus" Type="Luxury5Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury6Bonus" Type="Luxury6Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury7Bonus" Type="Luxury7Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury8Bonus" Type="Luxury8Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury9Bonus" Type="Luxury9Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury10Bonus" Type="Luxury10Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury11Bonus" Type="Luxury11Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury12Bonus" Type="Luxury12Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury13Bonus" Type="Luxury13Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury14Bonus" Type="Luxury14Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Luxury15Bonus" Type="Luxury15Bonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience" Value="4" Operation="Addition" Path="ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+</Datatable>

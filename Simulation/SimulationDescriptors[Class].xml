@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="ClassArmy" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="CityDefensePointLossPerTurn"  Composition="Sum"/>
+
+      <SimulationPropertyDescriptor Name="Experience"                   Composition="Sum" />
+      <SimulationPropertyDescriptor Name="Health"                       Composition="Sum" />
+      <SimulationPropertyDescriptor Name="MaximumHealth"                Composition="Sum" />
+      <SimulationPropertyDescriptor Name="MaximumMovement"              Composition="Minimum" />
+
+      <SimulationPropertyDescriptor Name="ActionPoint"                  Composition="Minimum"/>
+      <SimulationPropertyDescriptor Name="Movement"                     Composition="Minimum" />
+      <SimulationPropertyDescriptor Name="VisionHeight"                 Composition="Maximum" />
+      <SimulationPropertyDescriptor Name="VisionRange"                  Composition="Maximum" />
+      <SimulationPropertyDescriptor Name="MilitaryUpkeep"               Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="HeroCount"                    Composition="Sum"/>
+      <!--<SimulationPropertyDescriptor Name="ReinforcementPointCount"  BaseValue="1" />-->
+
+      <!-- Bonus to unit health Regen-->
+      <SimulationPropertyDescriptor Name="InAlliedRegionUnitRegenModifier"      BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="InOwnedRegionUnitRegenModifier"       BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="InNoneAlliedRegionUnitRegenModifier"  BaseValue="0"/>
+
+      <SimulationPropertyDescriptor Name="Interact_OddsTriggeringAQuest"        BaseValue="0" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="Interact_OddsLooting"                 BaseValue="0" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="Interact_OddsLootingNothing"          BaseValue="0" MinValue="Negative"/>
+      
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassBattleUnit" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="AttributeArmor"                             IsSealed="true" />
+      <SimulationPropertyDescriptor Name="MaximumAttributeArmor"                      IsSealed="true" />
+      <SimulationPropertyDescriptor Name="SpentBattleMovement"                        IsSealed="true" />
+      <SimulationPropertyDescriptor Name="AttackPerRoundDone"                         IsSealed="true" />
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor       TargetProperty="AttributeAttack"        Operation="Addition" Value="$(Charge)" />
+
+      <SimulationModifierDescriptor       TargetProperty="InitialHighGroundEfficiency"  Operation="Addition" Value="0.3"/>
+      <SimulationModifierDescriptor       TargetProperty="InitialHighGroundEfficiency"  Operation="Addition" Value="0.3" Path="ClassUnit,#Winter"/>
+
+      <SimulationModifierDescriptor TargetProperty="AttributeDefenseMelee"        Operation="Addition" Value="$(AttributeDefense)" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefenseRange"        Operation="Addition" Value="$(AttributeDefense)" />
+      
+      <BinarySimulationModifierDescriptor TargetProperty="BattleMovement"            Operation="Addition" Left="$(BattleMaximumMovement)"        BinaryOperation ="Subtraction"   Right ="$(SpentBattleMovement)" />
+      <BinarySimulationModifierDescriptor TargetProperty="AttributeAttack"           Operation="Percent"  Left="$(BattleMorale)"                 BinaryOperation="Multiplication" Right="0.15"/>
+      <BinarySimulationModifierDescriptor TargetProperty="AttributeDefense"          Operation="Percent"  Left="$(BattleMorale)"                 BinaryOperation="Multiplication" Right="0.15" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassCity" Type="Class">
+    <SimulationPropertyDescriptors>
+      <!-- Resource: District resource CityProduction. -->
+      <SimulationPropertyDescriptor Name="DistrictFood"      Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"  Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"      Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"   Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictCityPoint" Composition="Sum"/>
+
+      <!-- Resource: District resource CityProduction with modifier applied (e.g. from faction trait). -->
+      <SimulationPropertyDescriptor Name="DistrictFoodNet"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustryNet"/>
+      <SimulationPropertyDescriptor Name="DistrictDustNet"/>
+      <SimulationPropertyDescriptor Name="DistrictScienceNet"/>
+      <SimulationPropertyDescriptor Name="DistrictCityPointNet"/>
+
+      <!-- Resource: Population related. -->
+      <SimulationPropertyDescriptor Name="Population" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="PopulationBonus" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="FoodPopulation" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="IndustryPopulation"/>
+      <SimulationPropertyDescriptor Name="DustPopulation"/>
+      <SimulationPropertyDescriptor Name="SciencePopulation"/>
+      <SimulationPropertyDescriptor Name="CityPointPopulation"/>
+      <!-- Workers = Population + PopulationBonus -->
+      <SimulationPropertyDescriptor Name="Workers"/>
+
+      <!-- Resource: Everything that will be multiplied per pop -->
+      <SimulationPropertyDescriptor Name="BaseFoodPerPopulation"/>
+      <SimulationPropertyDescriptor Name="BaseIndustryPerPopulation"/>
+      <SimulationPropertyDescriptor Name="BaseDustPerPopulation"/>
+      <SimulationPropertyDescriptor Name="BaseSciencePerPopulation"/>
+      <SimulationPropertyDescriptor Name="BaseCityPointPerPopulation"/>
+
+      <!-- Resource: District * Population temporary variable. -->
+      <SimulationPropertyDescriptor Name="WorkedFood"/>
+      <SimulationPropertyDescriptor Name="WorkedIndustry"/>
+      <SimulationPropertyDescriptor Name="WorkedDust"/>
+      <SimulationPropertyDescriptor Name="WorkedScience"/>
+      <SimulationPropertyDescriptor Name="WorkedCityPoint"/>
+
+      <!-- Resource: City overall raw resource production. -->
+      <SimulationPropertyDescriptor Name="CityFood"/>
+      <SimulationPropertyDescriptor Name="CityIndustry"/>
+      <SimulationPropertyDescriptor Name="CityDust"/>
+      <SimulationPropertyDescriptor Name="CityScience"/>
+      <SimulationPropertyDescriptor Name="CityCityPoint"/>
+
+      <!-- Resource: Conversion to rafined resource. -->
+      <SimulationPropertyDescriptor Name="CityFoodToCityGrowthConversionFactor" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="CityFoodToCityProductionConversionFactor"/>
+      <SimulationPropertyDescriptor Name="CityIndustryToCityGrowthConversionFactor"/>
+      <SimulationPropertyDescriptor Name="CityIndustryToCityProductionConversionFactor" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="DistrictDustToDistrictFoodNetConversionFactor"/>
+
+      <SimulationPropertyDescriptor Name="DistrictDustToDistrictDustNetConversionFactor"                BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="DistrictCityPointToDistrictCityPointNetConversionFactor"      BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="DistrictFoodToDistrictFoodNetConversionFactor"                BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustryToDistrictIndustryNetConversionFactor"        BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="DistrictScienceToDistrictScienceNetConversionFactor"          BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="BaseDustPerPopulationToBaseFoodPerPopulationConversionFactor" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BaseDustPerPopulationToBaseDustPerPopulationConversionFactor" BaseValue="1"/>
+
+      <!-- Resource: Rafined -->
+      <SimulationPropertyDescriptor Name="CityGrowth"/>
+      <SimulationPropertyDescriptor Name="CityProduction"/>
+      <SimulationPropertyDescriptor Name="CityMoney"/>
+      <SimulationPropertyDescriptor Name="CityResearch"/>
+      <SimulationPropertyDescriptor Name="CityEmpirePoint"/>
+      <SimulationPropertyDescriptor Name="CityApproval"           BaseValue="60" Composition="Sum"/>
+
+      <SimulationPropertyDescriptor Name="MaximumCityProduction"  BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="MinimumCityGrowth"      BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MinimumCityGrowthStock" BaseValue="0"/>
+
+      <!-- Resource: Rafined upkeep. -->
+      <SimulationPropertyDescriptor Name="CityGrowthUpkeep"               Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="CityGrowthUpkeepPerPopulation"  BaseValue="2"/>
+      <SimulationPropertyDescriptor Name="CityProductionUpkeep"           Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="CityMoneyUpkeep"                Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="CityResearchUpkeep"             Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="CityApprovalUpkeep"             Composition="Sum"/>
+
+      <!-- Unit upkeep from garrison -->
+      <!-- The military upkeep is applied only on empire.-->
+      <SimulationPropertyDescriptor Name="MilitaryUpkeep"       Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="TotalCityMoneyUpkeep" />
+
+      <!-- Resource: Rafined net. -->
+      <!-- These are the total FIDS generated by a City, displayed in the City FIDS GUI -->
+      <SimulationPropertyDescriptor Name="NetQueuedFreeBorough" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="NetFreeBorough" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="NetCityActionPoint" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="NetCityApproval" MaxValue="100"/>
+      <SimulationPropertyDescriptor Name="NetCityEmpirePoint"/>
+      <SimulationPropertyDescriptor Name="NetCityGrowth" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="NetCityProduction"/>
+      <SimulationPropertyDescriptor Name="NetCityMoney" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="NetCityResearch"/>
+
+      <SimulationPropertyDescriptor Name="AlmostNetCityGrowth" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="PositiveClampedAlmostNetCityGrowth"/>
+
+
+      <!-- Resource: Rafined to stock conversion factor -->
+      <SimulationPropertyDescriptor Name="NetCityProductionToCityProductionStockConversionFactor" BaseValue="1"/>
+
+      <!-- Resource: Rafined to other resource conversion factor -->
+      <SimulationPropertyDescriptor Name="NetCityProductionToCityMoneyConversionFactor"/>
+      <SimulationPropertyDescriptor Name="NetCityProductionToCityResearchConversionFactor"/>
+
+      <!-- Resource: Stock-->
+      <SimulationPropertyDescriptor Name="QueuedFreeBoroughStock" IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="FreeBoroughStock" IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="CityActionPointStock" IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="CityGrowthStock" IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="CityProductionStock" IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="CityResearchStock" IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="MaximumCityProductionStock"/>
+      <SimulationPropertyDescriptor Name="MaximumCityActionPointStock" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MinimumCityActionPointStock" BaseValue="0"/>
+
+      <!-- NetCityApproval * population, used by the empire to compute the approval median. -->
+      <SimulationPropertyDescriptor Name="Approval"/>
+
+      <!-- Expansion disapproval from current city (given as approval malus on all cities) -->
+      <SimulationPropertyDescriptor Name="CityExpansionDisapproval"       BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="EmpireExpansionDisapproval"/>
+
+      <!-- Siege -->
+      <SimulationProportionalPropertyDescriptor Name="CityDefensePoint"           Maximum="$(MaximumCityDefensePoint)" Minimum="0" StartingRatio="1"/>
+      <SimulationPropertyDescriptor Name="CityDefensePointRecoveryPerTurn"        BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MaximumCityDefensePoint"                BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="CityDefensePointLossToHealthLossRatio"  BaseValue="3"/>
+
+
+      <SimulationPropertyDescriptor Name="HeroCount"            Composition="Sum"/>
+
+      <!-- Misc -->
+      <SimulationPropertyDescriptor Name="Altitude"/>
+      <SimulationPropertyDescriptor Name="ImprovementCount"                 Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="MaximumImprovementCount"          Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictBesiegedMultiplier"       BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BesiegedMultiplier"               BaseValue="0.5"/>
+      <SimulationPropertyDescriptor Name="Ownership"                        BaseValue="1" Minimum="0" Maximum="1" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="OwnershipRecoveryRate"            BaseValue="0.08"/>
+      <SimulationPropertyDescriptor Name="MaximumDistrictLevel"             BaseValue="1"/>
+
+      <!-- Bonus to unit health Regen near the city-->
+      <SimulationPropertyDescriptor Name="UnitRegenLimitDistance"      BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="AlliedUnitRegenModifier"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="OwnedUnitRegenModifier"      BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="NoneAlliedUnitRegenModifier" BaseValue="0"/>
+
+      <!-- Bonus to unit health Regen in the city garrison-->
+      <SimulationPropertyDescriptor Name="InGarrisonRegenModifier" BaseValue="0"/>
+
+      <!-- Broken lords health regen (near the city or in garrison) is based on the number of rebuild village-->
+      <SimulationPropertyDescriptor Name="NumberOfRebuildPacifiedVillage" BaseValue="0" Composition="Sum"/>
+    
+    <SimulationPropertyDescriptor Name="NumberOfConvertedVillages" BaseValue="0" Composition="Sum" />
+
+      <!-- Strategic resources -->
+      <SimulationPropertyDescriptor Name="NetStrategic1"/>
+      <SimulationPropertyDescriptor Name="NetStrategic2"/>
+      <SimulationPropertyDescriptor Name="NetStrategic3"/>
+      <SimulationPropertyDescriptor Name="NetStrategic4"/>
+      <SimulationPropertyDescriptor Name="NetStrategic5"/>
+      <SimulationPropertyDescriptor Name="NetStrategic6"/>
+      <SimulationPropertyDescriptor Name="NetAffinityStrategic"/>
+
+      <!--Luxury resources-->
+      <SimulationPropertyDescriptor Name="NetLuxury1"/>
+      <SimulationPropertyDescriptor Name="NetLuxury2"/>
+      <SimulationPropertyDescriptor Name="NetLuxury3"/>
+      <SimulationPropertyDescriptor Name="NetLuxury4"/>
+      <SimulationPropertyDescriptor Name="NetLuxury5"/>
+      <SimulationPropertyDescriptor Name="NetLuxury6"/>
+      <SimulationPropertyDescriptor Name="NetLuxury7"/>
+      <SimulationPropertyDescriptor Name="NetLuxury8"/>
+      <SimulationPropertyDescriptor Name="NetLuxury9"/>
+      <SimulationPropertyDescriptor Name="NetLuxury10"/>
+      <SimulationPropertyDescriptor Name="NetLuxury11"/>
+      <SimulationPropertyDescriptor Name="NetLuxury12"/>
+      <SimulationPropertyDescriptor Name="NetLuxury13"/>
+      <SimulationPropertyDescriptor Name="NetLuxury14"/>
+      <SimulationPropertyDescriptor Name="NetLuxury15"/>
+
+      <!-- Trade Routes -->
+      <SimulationPropertyDescriptor Name="MaximumNumberOfTradeRoutes"       BaseValue="1"/>
+      <!--<SimulationPropertyDescriptor Name="TradeRouteCityFoodIncome"         BaseValue="0" Composition="Sum"/>-->
+      <SimulationPropertyDescriptor Name="TradeRouteCityDustIncome"         BaseValue="0" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="TradeRouteCityScienceIncome"      BaseValue="0" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="IntermediateTradeRoutesCount"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="IntermediateTradeRoutesDistance"  BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="IntermediateTradeRoutesGain"      BaseValue="0"/>
+
+      <!--<SimulationPropertyDescriptor Name="IntermediateTradeRoutesCityFoodIncome"    BaseValue="0"/>-->
+      <SimulationPropertyDescriptor Name="IntermediateTradeRoutesCityDustIncome"    BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="IntermediateTradeRoutesCityScienceIncome" BaseValue="0"/>
+
+      <!--<SimulationPropertyDescriptor Name="TotalTradeRoutesCityFoodIncome"     BaseValue="0"/>-->
+      <SimulationPropertyDescriptor Name="TotalTradeRoutesCityDustIncome"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="TotalTradeRoutesCityScienceIncome"  BaseValue="0"/>
+
+      <!-- Recruitment -->
+      <SimulationPropertyDescriptor Name="UnitCostReduction"/>
+
+      <!-- Population efficiency limit -->
+      <SimulationPropertyDescriptor Name="PopulationEfficiencyLimit"  BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="OverPopulationMalus"        BaseValue="5"/>
+
+      <SimulationPropertyDescriptor Name="FoodPopulationAboveEfficiencyLimit"/>
+      <SimulationPropertyDescriptor Name="IndustryPopulationAboveEfficiencyLimit"/>
+      <SimulationPropertyDescriptor Name="DustPopulationAboveEfficiencyLimit"/>
+      <SimulationPropertyDescriptor Name="SciencePopulationAboveEfficiencyLimit"/>
+      <SimulationPropertyDescriptor Name="CityPointPopulationAboveEfficiencyLimit"/>
+
+      <!-- Production cost bonus -->
+      <SimulationPropertyDescriptor Name="UnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="BuildingProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="UnitSettlerProductionCostReduction"/>
+
+      <!-- Buyout bonus -->
+      <SimulationPropertyDescriptor Name="UnitBuyoutReduction"/>
+      <SimulationPropertyDescriptor Name="BuildingBuyoutReduction"/>
+      <SimulationPropertyDescriptor Name="UnitSettlerBuyoutReduction"/>
+
+      <!-- Game Speed -->
+      <SimulationPropertyDescriptor Name="GameSpeedProductionCostReduction" MinValue="Negative"/>
+      
+      <!-- Difficulty -->
+      <SimulationPropertyDescriptor Name="AIUnitProductionCostReduction"     MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="AIBuildingProductionCostReduction" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="AIBuildingBuyoutCostReduction"     MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="AIUnitBuyoutCostReduction"         MinValue="Negative"/>
+
+      <!--TODO: Add CityProduction bonus regarding building or unit class or item class.
+                Make unit XP gain on recruitment work.
+                Add approval related properties.-->
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFoodNet"      Operation="Force" Value="$(DistrictFood)"       Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustryNet"  Operation="Force" Value="$(DistrictIndustry)"   Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDustNet"      Operation="Force" Value="$(DistrictDust)"       Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScienceNet"   Operation="Force" Value="$(DistrictScience)"    Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictCityPointNet" Operation="Force" Value="$(DistrictCityPoint)"  Priority="-2"/>
+
+      <SimulationModifierDescriptor TargetProperty="DistrictFoodNet"      Operation="Multiplication" Value="$(DistrictFoodToDistrictFoodNetConversionFactor)"           Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustryNet"  Operation="Multiplication" Value="$(DistrictIndustryToDistrictIndustryNetConversionFactor)"   Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDustNet"      Operation="Multiplication" Value="$(DistrictDustToDistrictDustNetConversionFactor)"           Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScienceNet"   Operation="Multiplication" Value="$(DistrictScienceToDistrictScienceNetConversionFactor)"     Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictCityPointNet" Operation="Multiplication" Value="$(DistrictCityPointToDistrictCityPointNetConversionFactor)" Priority="-2"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation" Operation="Addition" Left="$(BaseDustPerPopulation)" BinaryOperation="Multiplication" Right="$(BaseDustPerPopulationToBaseFoodPerPopulationConversionFactor)"/>
+
+      <!--<SimulationModifierDescriptor TargetProperty="IntermediateTradeRoutesGain" Operation="Addition" Value="1"/>-->
+      
+      <!--<BinarySimulationModifierDescriptor TargetProperty="IntermediateTradeRoutesCityFoodIncome"    Operation="Addition" Left="$(IntermediateTradeRoutesGain)" BinaryOperation="Multiplication" Right="0.10"/>-->
+      <BinarySimulationModifierDescriptor TargetProperty="IntermediateTradeRoutesCityDustIncome"    Operation="Addition" Left="$(IntermediateTradeRoutesGain)" BinaryOperation="Multiplication" Right="0.10"/>
+      <BinarySimulationModifierDescriptor TargetProperty="IntermediateTradeRoutesCityScienceIncome" Operation="Addition" Left="$(IntermediateTradeRoutesGain)" BinaryOperation="Multiplication" Right="0.10"/>
+
+      <SimulationModifierDescriptor TargetProperty="Workers" Operation="Addition" Value="$(Population)"/>
+      <SimulationModifierDescriptor TargetProperty="Workers" Operation="Addition" Value="$(PopulationBonus)"/>
+      
+      <!-- Gathered resource to Worked CityProduction -->
+      <BinarySimulationModifierDescriptor TargetProperty="WorkedFood"        Operation="Addition" Left="$(BaseFoodPerPopulation)"      BinaryOperation="Multiplication" Right="$(FoodPopulation)" />
+      <BinarySimulationModifierDescriptor TargetProperty="WorkedIndustry"    Operation="Addition" Left="$(BaseIndustryPerPopulation)"  BinaryOperation="Multiplication" Right="$(IndustryPopulation)" />
+      <BinarySimulationModifierDescriptor TargetProperty="WorkedDust"        Operation="Addition" Left="$(BaseDustPerPopulation)"      BinaryOperation="Multiplication" Right="$(DustPopulation)" />
+      <BinarySimulationModifierDescriptor TargetProperty="WorkedScience"     Operation="Addition" Left="$(BaseSciencePerPopulation)"   BinaryOperation="Multiplication" Right="$(SciencePopulation)" />
+      <BinarySimulationModifierDescriptor TargetProperty="WorkedCityPoint"   Operation="Addition" Left="$(BaseCityPointPerPopulation)" BinaryOperation="Multiplication" Right="$(CityPointPopulation)" />
+
+      <SimulationModifierDescriptor TargetProperty="WorkedFood"        Operation="Addition" Value="$(DistrictFoodNet)"     Priority="2"/>
+      <SimulationModifierDescriptor TargetProperty="WorkedIndustry"    Operation="Addition" Value="$(DistrictIndustryNet)" Priority="2"/>
+      <SimulationModifierDescriptor TargetProperty="WorkedDust"        Operation="Addition" Value="$(DistrictDustNet)"     Priority="2"/>
+      <SimulationModifierDescriptor TargetProperty="WorkedScience"     Operation="Addition" Value="$(DistrictScienceNet)"  Priority="2"/>
+      <SimulationModifierDescriptor TargetProperty="WorkedCityPoint"   Operation="Addition" Value="$(DistrictCityPointNet)" Priority="2"/>
+
+      <!-- Worked CityProduction to city CityProduction -->
+      <SimulationModifierDescriptor TargetProperty="CityFood"        Operation="Force" Value="$(WorkedFood)"      Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"    Operation="Force" Value="$(WorkedIndustry)"  Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"        Operation="Force" Value="$(WorkedDust)"      Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"     Operation="Force" Value="$(WorkedScience)"   Priority="-2"/>
+      <SimulationModifierDescriptor TargetProperty="CityCityPoint"   Operation="Force" Value="$(WorkedCityPoint)" Priority="-2"/>
+
+      <!--<SimulationModifierDescriptor TargetProperty="CityFood"        Operation="Addition" Value="$(TradeRouteCityFoodIncome)"/>-->
+      <!--<SimulationModifierDescriptor TargetProperty="CityFood"        Operation="Addition" Value="$(IntermediateTradeRoutesCityFoodIncome)"/>-->
+      <SimulationModifierDescriptor TargetProperty="CityDust"        Operation="Addition" Value="$(TradeRouteCityDustIncome)"/>
+      <SimulationModifierDescriptor TargetProperty="CityDust"        Operation="Addition" Value="$(IntermediateTradeRoutesCityDustIncome)"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"     Operation="Addition" Value="$(TradeRouteCityScienceIncome)"/>
+      <SimulationModifierDescriptor TargetProperty="CityScience"     Operation="Addition" Value="$(IntermediateTradeRoutesCityScienceIncome)"/>
+
+      <!-- For showing in the GUI the total income of all trade routes coming from the city -->
+      <!--<BinarySimulationModifierDescriptor TargetProperty="TotalTradeRoutesCityFoodIncome"     Operation="Force" Left="$(TradeRouteCityFoodIncome)" BinaryOperation="Addition" Right="$(IntermediateTradeRoutesCityFoodIncome)" />-->
+      <BinarySimulationModifierDescriptor TargetProperty="TotalTradeRoutesCityDustIncome"     Operation="Force" Left="$(TradeRouteCityDustIncome)" BinaryOperation="Addition" Right="$(IntermediateTradeRoutesCityDustIncome)" />
+      <BinarySimulationModifierDescriptor TargetProperty="TotalTradeRoutesCityScienceIncome"  Operation="Force" Left="$(TradeRouteCityScienceIncome)" BinaryOperation="Addition" Right="$(IntermediateTradeRoutesCityScienceIncome)" />
+
+      <!--<SimulationModifierDescriptor TargetProperty="TotalCityMoneyUpkeep" Operation="Addition" Value="$(MilitaryUpkeep)"/>-->
+      
+      <!--Upkeep to pay per converted village when cultists-->
+      <BinarySimulationModifierDescriptor TargetProperty="TotalCityMoneyUpkeep"     Operation="Addition"        Left="$(NumberOfConvertedVillages)"      Right="10" BinaryOperation="Multiplication"/>
+      <SimulationModifierDescriptor       TargetProperty="TotalCityMoneyUpkeep"     Operation="Addition"        Value="$(CityMoneyUpkeep)"/>
+
+      <!-- net to Refined resource -->
+      <SimulationModifierDescriptor       TargetProperty="CityGrowth"       Operation="Force"           Value="$(CityFood)"         Priority="-2"/>
+      <SimulationModifierDescriptor       TargetProperty="CityGrowth"       Operation="Multiplication"  Value="$(CityFoodToCityGrowthConversionFactor)"         Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="CityGrowth"       Operation="Addition"        Left="$(CityIndustry)"      Right="$(CityIndustryToCityGrowthConversionFactor)" BinaryOperation="Multiplication"/>
+
+      <SimulationModifierDescriptor       TargetProperty="CityProduction"   Operation="Force"           Value="$(CityIndustry)"     Priority="-2"/>
+      <SimulationModifierDescriptor       TargetProperty="CityProduction"   Operation="Multiplication"  Value="$(CityIndustryToCityProductionConversionFactor)" Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="CityProduction"   Operation="Addition"        Left="$(CityFood)"          Right="$(CityFoodToCityProductionConversionFactor)" BinaryOperation="Multiplication"/>
+
+      <SimulationModifierDescriptor       TargetProperty="CityMoney"        Operation="Force"           Value="$(CityDust)"         Priority="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="CityResearch"     Operation="Force"           Value="$(CityScience)"      Priority="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="CityEmpirePoint"  Operation="Force"           Value="$(CityCityPoint)"    Priority="-1"/>
+
+      <!-- Net to other Refined resources -->
+      <BinarySimulationModifierDescriptor TargetProperty="CityMoney"        Operation="Addition"        Left="$(NetCityProduction)" Right="$(NetCityProductionToCityMoneyConversionFactor)"    BinaryOperation="Multiplication"/>
+      <BinarySimulationModifierDescriptor TargetProperty="CityResearch"     Operation="Addition"        Left="$(NetCityProduction)" Right="$(NetCityProductionToCityResearchConversionFactor)" BinaryOperation="Multiplication"/>
+
+      <!-- Refined upkeep. -->
+      <BinarySimulationModifierDescriptor TargetProperty="CityGrowthUpkeep" Operation="Addition"        Left="$(Population)"        Right="$(CityGrowthUpkeepPerPopulation)"     BinaryOperation="Multiplication"/>
+
+      <!-- Population efficiency limit -->
+      <!-- As PEL is not used anymore and to prevent AI issues, PEL is now always equal to population -->
+      <!-- To be removed if PEL is compeltely erased from code -->
+      <SimulationModifierDescriptor       TargetProperty="PopulationEfficiencyLimit"                  Operation="Addition" Value="$(Population)"/>
+      <SimulationModifierDescriptor       TargetProperty="PopulationEfficiencyLimit"                  Operation="Addition" Value="$(PopulationBonus)"/>
+      
+      <BinarySimulationModifierDescriptor TargetProperty="FoodPopulationAboveEfficiencyLimit"         Operation="Addition" Left="$(FoodPopulation)"            BinaryOperation="Subtraction"     Right="$(PopulationEfficiencyLimit)" />
+      <BinarySimulationModifierDescriptor TargetProperty="IndustryPopulationAboveEfficiencyLimit"     Operation="Addition" Left="$(IndustryPopulation)"        BinaryOperation="Subtraction"     Right="$(PopulationEfficiencyLimit)" />
+      <BinarySimulationModifierDescriptor TargetProperty="SciencePopulationAboveEfficiencyLimit"      Operation="Addition" Left="$(SciencePopulation)"         BinaryOperation="Subtraction"     Right="$(PopulationEfficiencyLimit)" />
+      <BinarySimulationModifierDescriptor TargetProperty="DustPopulationAboveEfficiencyLimit"         Operation="Addition" Left="$(DustPopulation)"            BinaryOperation="Subtraction"     Right="$(PopulationEfficiencyLimit)" />
+      <BinarySimulationModifierDescriptor TargetProperty="CityPointPopulationAboveEfficiencyLimit"    Operation="Addition" Left="$(CityPointPopulation)"       BinaryOperation="Subtraction"     Right="$(PopulationEfficiencyLimit)" />
+
+      <BinarySimulationModifierDescriptor TargetProperty="CityApprovalUpkeep"   Operation="Addition"  Left="$(FoodPopulationAboveEfficiencyLimit)"             BinaryOperation="Multiplication"  Right="$(OverPopulationMalus)" />
+      <BinarySimulationModifierDescriptor TargetProperty="CityApprovalUpkeep"   Operation="Addition"  Left="$(IndustryPopulationAboveEfficiencyLimit)"         BinaryOperation="Multiplication"  Right="$(OverPopulationMalus)" />
+      <BinarySimulationModifierDescriptor TargetProperty="CityApprovalUpkeep"   Operation="Addition"  Left="$(DustPopulationAboveEfficiencyLimit)"             BinaryOperation="Multiplication"  Right="$(OverPopulationMalus)" />
+      <BinarySimulationModifierDescriptor TargetProperty="CityApprovalUpkeep"   Operation="Addition"  Left="$(SciencePopulationAboveEfficiencyLimit)"          BinaryOperation="Multiplication"  Right="$(OverPopulationMalus)" />
+      <BinarySimulationModifierDescriptor TargetProperty="CityApprovalUpkeep"   Operation="Addition"  Left="$(CityPointPopulationAboveEfficiencyLimit)"        BinaryOperation="Multiplication"  Right="$(OverPopulationMalus)" />
+
+      <!-- Refined resource to Net -->
+      <SimulationModifierDescriptor       TargetProperty="NetCityEmpirePoint"     Operation="Force"     Value="$(CityEmpirePoint)" Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="AlmostNetCityGrowth"    Operation="Force"     Left="$(CityGrowth)"     Right="$(CityGrowthUpkeep)"     BinaryOperation="Subtraction" Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="NetCityProduction"      Operation="Force"     Left="$(CityProduction)" Right="$(CityProductionUpkeep)" BinaryOperation="Subtraction" Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="NetCityMoney"           Operation="Force"     Left="$(CityMoney)"      Right="$(TotalCityMoneyUpkeep)" BinaryOperation="Subtraction" Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="NetCityResearch"        Operation="Force"     Left="$(CityResearch)"   Right="$(CityResearchUpkeep)"   BinaryOperation="Subtraction" Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="NetCityApproval"        Operation="Force"     Left="$(CityApproval)"   Right="$(CityApprovalUpkeep)"   BinaryOperation="Subtraction" Priority="-1"/>
+
+      <SimulationModifierDescriptor TargetProperty="NetCityApproval"                     Operation="Multiplication" Value="$(Ownership)"/>
+
+      <SimulationModifierDescriptor TargetProperty="PositiveClampedAlmostNetCityGrowth"  Operation="Addition"       Value="$(AlmostNetCityGrowth)"/>
+      <SimulationModifierDescriptor TargetProperty="NetCityGrowth"                       Operation="Force"          Value="$(AlmostNetCityGrowth)"    Priority="-1"/>
+
+      <!-- MISC -->
+      <SimulationModifierDescriptor TargetProperty="MaximumCityProductionStock"          Operation="Addition"       Value="$(NetCityProduction)"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityProductionStock"          Operation="Multiplication" Value="1"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="Approval" Operation="Addition" Left="$(NetCityApproval)"  BinaryOperation="Multiplication"  Right="$(Population)" Priority="1"/>
+
+      <!-- Apply the disapproval on each other city.
+           The disapproval should be forced to 0 in the MainCity descriptor.-->
+      <SimulationModifierDescriptor TargetProperty="CityApprovalUpkeep"       Operation="Addition" Value="$(EmpireExpansionDisapproval)"/>
+
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointRecoveryPerTurn"  Operation="Addition" Value="4"/>
+
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"   Operation="Addition" Value="0.05"                       Path="ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="InGarrisonRegenModifier"  Operation="Addition" Value="0.05"                       Path="ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="InGarrisonRegenModifier"  Operation="Addition" Value="$(OwnedUnitRegenModifier)"  Path="ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"              Operation="Addition" Value="2"                          Path="ClassCity/ExploitedPointOfInterest"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"              Operation="Addition" Value="2"                          Path="ClassCity/DistrictTypeCenter"/>
+      <SimulationModifierDescriptor TargetProperty="VisionHeight"             Operation="Addition" Value="2"                          Path="ClassCity/DistrictTypeCenter"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"              Operation="Addition" Value="2"                          Path="ClassCity/DistrictTypeExtension"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"              Operation="Addition" Value="1"                          Path="ClassCity/ClassDistrict,DistrictTypeExploitation"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassConstruction" Type="Class">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassDistrict" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Level"                   BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="NumberOfExtensionAround" BaseValue="0"/>      
+      <SimulationPropertyDescriptor Name="MaximumImprovementCount" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BattleUnitBonus" />
+      <!-- This will be added into ClassUnit/TileBonus when the unit walks onto district tiles during battle. Cf. UnitActionDistrictTileBonus -->
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="DistrictCityPoint"/>
+      <SimulationPropertyDescriptor Name="VisionHeight"            BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="VisionRange" />
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BattleUnitBonus" Operation ="Addition" Value="$(CityDefensePoint)" Path="./ClassCity" />
+      <!--<SimulationModifierDescriptor TargetProperty="BattleUnitBonus" Operation ="Addition" Value="$(Level)"/>-->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassEmpire" Type="Class">
+
+    <SimulationPropertyDescriptors>
+      <!-- Unit Cost References -->
+      <SimulationPropertyDescriptor Name="UnitProductionCostCheapest"         BaseValue="30"  />
+      <SimulationPropertyDescriptor Name="UnitProductionCostCheaper"          BaseValue="60"  />
+      <SimulationPropertyDescriptor Name="UnitProductionCostCheap"            BaseValue="80"  />
+      <SimulationPropertyDescriptor Name="UnitProductionCostLessThanAverage"  BaseValue="90"  />
+      <SimulationPropertyDescriptor Name="UnitProductionCostAverage"          BaseValue="110"  />
+      <SimulationPropertyDescriptor Name="UnitProductionCostMoreThanAverage"  BaseValue="120" />
+      <SimulationPropertyDescriptor Name="UnitProductionCostExpensive"        BaseValue="140" />
+      <SimulationPropertyDescriptor Name="UnitProductionCostMoreExpensive"    BaseValue="180" />
+      <SimulationPropertyDescriptor Name="UnitProductionCostMostExpensive"    BaseValue="250" />
+
+      <!--Max army Capacity and Max City Garrison Capacity-->
+      <SimulationPropertyDescriptor Name="ArmyUnitSlot"                         BaseValue="4"/>
+      <SimulationPropertyDescriptor Name="CityUnitSlot"                         BaseValue="4"/>
+      <SimulationPropertyDescriptor Name="CurrentTurn"                          BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="MaximumSeasonPredictabilityError"     BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="EmpireUpkeep"                         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="CostIncreaseFromEra" />
+      <SimulationPropertyDescriptor Name="GameSpeedMultiplier"                  BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="GameSpeedProductionToMoneyMultiplier" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="GameSpeedProductionCostReduction"     MinValue="Negative"/>
+      <!--Number of default unit created after village conversion when Cultists-->
+    <SimulationPropertyDescriptor Name="UnitSpawnCountOnConvert" 				BaseValue="1" Composition="Sum" />
+    <SimulationPropertyDescriptor Name="ExperienceRewardAtCreation" 			BaseValue="0" Composition="Sum" />
+    
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount" Operation ="Addition" Value="$(CityUnitSlot)" Path="ClassEmpire/ClassCity,Garrison"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount" Operation ="Addition" Value="$(ArmyUnitSlot)" Path="ClassEmpire/ClassArmy,Garrison"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassEmpirePlan" Type="Class">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassImprovement" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ImprovementCount"/>
+      <SimulationPropertyDescriptor Name="CityMoneyUpkeep"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassMinorEmpireGarrison" Type="Class">
+    <SimulationPropertyDescriptors>
+      <!-- Number of villages in the Minor Faction Empire -->
+      <SimulationPropertyDescriptor Name="GarrisonChildrenCount"      BaseValue="1"   Composition="Sum"/>
+      <!-- Initial Production per turn of the Minor Faction empire -->
+      <SimulationPropertyDescriptor Name="UnitProduction"             BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="NetUnitProduction"/>
+      <SimulationPropertyDescriptor Name="MaximumUnitProductionStock" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="UnitProductionStock"        IsSealed="true" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BribeCost"                  BaseValue="0"/>
+
+      <!--Conversion costs when Culists-->
+    <SimulationPropertyDescriptor Name="ConvertNeutralCost"        BaseValue="20"/>
+    <SimulationPropertyDescriptor Name="ConvertHostileCost"         BaseValue="30"/>
+    <SimulationPropertyDescriptor Name="ConvertDestructedCost"      BaseValue="40"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor  TargetProperty="NetUnitProduction" Operation="Addition" Value="$(UnitProduction)"/>
+      <!-- Empire Production: Production per village multiplied by the number of villages in the Minor Faction Empire -->
+      <SimulationModifierDescriptor  TargetProperty="NetUnitProduction" Operation="Multiplication" Value="$(GarrisonChildrenCount)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="BribeCost"    Operation="Multiplication" Left="$(UnitSlotCount)"  BinaryOperation="Power" Right="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassPointOfInterest" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="VisionHeight" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="VisionRange"  BaseValue="-1" MinValue="Negative"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassResearch" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="TechnologyCost"/>
+      <SimulationPropertyDescriptor Name="UnlockedTechnologyCount"/>
+      <SimulationPropertyDescriptor Name="EraTechnologyCountPrerequisite" BaseValue="0" />
+      
+      <!-- These are use to count how many techs have been unlocked per era -->
+      <SimulationPropertyDescriptor Name="Era1UnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era2UnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era3UnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era4UnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era5UnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era6UnlockedTechnologyCount" MinValue="0"/>
+      
+      <!-- These are used to count the 10 last techs needed before unlocking the corresponding next era -->
+      <SimulationPropertyDescriptor Name="Era1RequiredUnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era2RequiredUnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era3RequiredUnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era4RequiredUnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era5RequiredUnlockedTechnologyCount" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="Era6RequiredUnlockedTechnologyCount" MinValue="0"/>
+      
+      <!-- Properties used for cost reductions on techs of each era separately.
+      Base value should be set to 1 if it were to be modified by percentage bonuses/maluses -->
+      <!-- Era 6 has higher costs than all the others on purpose. -->
+      <SimulationPropertyDescriptor Name="Era1CostMultiplier" BaseValue="1.16"/>
+      <SimulationPropertyDescriptor Name="Era1ReductionCost" BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="Era2CostMultiplier" BaseValue="1.43"/>
+      <SimulationPropertyDescriptor Name="Era2ReductionCost" BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="Era3CostMultiplier" BaseValue="1.7"/>
+      <SimulationPropertyDescriptor Name="Era3ReductionCost" BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="Era4CostMultiplier" BaseValue="1.96"/>
+      <SimulationPropertyDescriptor Name="Era4ReductionCost" BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="Era5CostMultiplier" BaseValue="2.5"/>
+      <SimulationPropertyDescriptor Name="Era5ReductionCost" BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="Era6CostMultiplier" BaseValue="22.5"/> <!-- 14 => x6 compared era5  --> 
+      <SimulationPropertyDescriptor Name="Era6ReductionCost" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EraTechnologyCountPrerequisite" Operation ="Addition" Value="9"/>
+
+      <SimulationModifierDescriptor       TargetProperty="Era1RequiredUnlockedTechnologyCount" Operation="Addition"    Value="$(UnlockedTechnologyCount)"/>
+      <SimulationModifierDescriptor       TargetProperty="Era2RequiredUnlockedTechnologyCount" Operation="Addition"    Value="$(UnlockedTechnologyCount)"/>
+      <SimulationModifierDescriptor       TargetProperty="Era3RequiredUnlockedTechnologyCount" Operation="Addition"    Value="$(UnlockedTechnologyCount)"/>
+      <SimulationModifierDescriptor       TargetProperty="Era4RequiredUnlockedTechnologyCount" Operation="Addition"    Value="$(UnlockedTechnologyCount)"/>
+      <SimulationModifierDescriptor       TargetProperty="Era5RequiredUnlockedTechnologyCount" Operation="Addition"    Value="$(UnlockedTechnologyCount)"/>
+      <SimulationModifierDescriptor       TargetProperty="Era6RequiredUnlockedTechnologyCount" Operation="Addition"    Value="$(UnlockedTechnologyCount)"/>
+      
+      <BinarySimulationModifierDescriptor TargetProperty="Era2RequiredUnlockedTechnologyCount" Operation="Subtraction" Left="$(EraTechnologyCountPrerequisite)" BinaryOperation="Multiplication" Right="1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era3RequiredUnlockedTechnologyCount" Operation="Subtraction" Left="$(EraTechnologyCountPrerequisite)" BinaryOperation="Multiplication" Right="2"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era4RequiredUnlockedTechnologyCount" Operation="Subtraction" Left="$(EraTechnologyCountPrerequisite)" BinaryOperation="Multiplication" Right="3"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era5RequiredUnlockedTechnologyCount" Operation="Subtraction" Left="$(EraTechnologyCountPrerequisite)" BinaryOperation="Multiplication" Right="4"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era6RequiredUnlockedTechnologyCount" Operation="Subtraction" Left="$(EraTechnologyCountPrerequisite)" BinaryOperation="Multiplication" Right="5"/>
+      
+      
+      <!-- Difficulty -->
+      <!--<SimulationModifierDescriptor TargetProperty="Era1ReductionCost" Operation="Addition" Value="$(AIResearchCostReduction)" />
+      <SimulationModifierDescriptor TargetProperty="Era2ReductionCost" Operation="Addition" Value="$(AIResearchCostReduction)" />
+      <SimulationModifierDescriptor TargetProperty="Era3ReductionCost" Operation="Addition" Value="$(AIResearchCostReduction)" />
+      <SimulationModifierDescriptor TargetProperty="Era4ReductionCost" Operation="Addition" Value="$(AIResearchCostReduction)" />
+      <SimulationModifierDescriptor TargetProperty="Era5ReductionCost" Operation="Addition" Value="$(AIResearchCostReduction)" />
+      <SimulationModifierDescriptor TargetProperty="Era6ReductionCost" Operation="Addition" Value="$(AIResearchCostReduction)" />-->
+      
+      <!-- final cost -->
+      
+      <BinarySimulationModifierDescriptor TargetProperty="Era1CostMultiplier" Operation="Multiplication" Left="2" BinaryOperation="Subtraction" Right="$(Era1ReductionCost)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era2CostMultiplier" Operation="Multiplication" Left="2" BinaryOperation="Subtraction" Right="$(Era2ReductionCost)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era3CostMultiplier" Operation="Multiplication" Left="2" BinaryOperation="Subtraction" Right="$(Era3ReductionCost)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era4CostMultiplier" Operation="Multiplication" Left="2" BinaryOperation="Subtraction" Right="$(Era4ReductionCost)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era5CostMultiplier" Operation="Multiplication" Left="2" BinaryOperation="Subtraction" Right="$(Era5ReductionCost)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="Era6CostMultiplier" Operation="Multiplication" Left="2" BinaryOperation="Subtraction" Right="$(Era6ReductionCost)"/>
+
+      <!-- tech cost = pow(technocount + 1, 2) - (technocount + 1) + 4 -->
+      <BinarySimulationModifierDescriptor TargetProperty="TechnologyCost"    Operation="Addition"       Left="$(UnlockedTechnologyCount)"   BinaryOperation="Addition" Right="1" Priority="0"/>
+      <SimulationModifierDescriptor       TargetProperty="TechnologyCost"    Operation="Power"          Value="2"                           Priority="0"/>
+      <SimulationModifierDescriptor       TargetProperty="TechnologyCost"    Operation="Subtraction"    Value="$(UnlockedTechnologyCount)"  Priority="1"/>
+      <SimulationModifierDescriptor       TargetProperty="TechnologyCost"    Operation="Addition"       Value="5"                           Priority="1"/>
+      <SimulationModifierDescriptor       TargetProperty="TechnologyCost"    Operation="Multiplication" Value="2"                           Priority="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassTimedBonus" Type="ClassTimed">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="RemainingTime" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassTradeRoute" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="TradeRouteGain"/>
+      <!--<SimulationPropertyDescriptor Name="TradeRouteCityFoodRevenue"/>-->
+      <SimulationPropertyDescriptor Name="TradeRouteCityDustRevenue"/>
+      <SimulationPropertyDescriptor Name="TradeRouteCityScienceRevenue"/>
+      <!--<SimulationPropertyDescriptor Name="TradeRouteCityFoodIncome"/>-->
+      <SimulationPropertyDescriptor Name="TradeRouteCityDustIncome"/>
+      <SimulationPropertyDescriptor Name="TradeRouteCityScienceIncome"/>
+      <!--<SimulationPropertyDescriptor Name="TradeRouteCityFoodRevenueModifier" BaseValue="1"/>-->
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <!--<SimulationModifierDescriptor TargetProperty="TradeRouteCityFoodRevenueModifier"  Operation="Percent"  Value="-1.00"/>-->
+      <!-- TradeRouteGain to base revenue. -->
+      <!--<BinarySimulationModifierDescriptor TargetProperty="TradeRouteCityFoodRevenue"    Operation="Addition" Left="$(TradeRouteGain)" BinaryOperation="Multiplication" Right="$(TradeRouteCityFoodRevenueModifier)"/>-->
+      <BinarySimulationModifierDescriptor TargetProperty="TradeRouteCityDustRevenue"    Operation="Addition" Left="$(TradeRouteGain)" BinaryOperation="Multiplication" Right="1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="TradeRouteCityScienceRevenue" Operation="Addition" Left="$(TradeRouteGain)" BinaryOperation="Multiplication" Right="1"/>
+      <!-- Base revenue forced into net income, so that base can be remembered/displayed while income gets modified. -->
+      <!--<SimulationModifierDescriptor TargetProperty="TradeRouteCityFoodIncome"     Operation="Addition" Value="$(TradeRouteCityFoodRevenue)"/>-->
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityDustIncome"     Operation="Addition" Value="$(TradeRouteCityDustRevenue)"/>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityScienceIncome"  Operation="Addition" Value="$(TradeRouteCityScienceRevenue)"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassUnit" Type="Class">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ControlledByMajorAI" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="ControlledByMinorAI" BaseValue="0"/>
+
+      <SimulationPropertyDescriptor Name="StrengthRatio" BaseValue="0" IsSealed="true"/>
+      
+      
+      <SimulationPropertyDescriptor Name="UnitsCount" BaseValue="1"/>
+      
+      <SimulationPropertyDescriptor Name="CityDefensePointLossPerTurn" BaseValue="0"/>
+
+      <SimulationPropertyDescriptor Name="BaseAttributeAttack" />
+      <SimulationPropertyDescriptor Name="BaseAttributeDamage" /> 
+      <SimulationPropertyDescriptor Name="BaseAttributeDefense" />
+      <SimulationPropertyDescriptor Name="BaseAttributeInitiative" IsSealed="false" IsSerializable="true" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BaseAttributeCritical"   IsSealed="false" IsSerializable="true" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BaseBattleMaximumMovement" />
+      <SimulationPropertyDescriptor Name="BaseBattleRange" />
+      <SimulationPropertyDescriptor Name="BaseMaximumHealth"      MinValue="1"/>
+
+      <SimulationPropertyDescriptor Name="AccessoriesSlotCount" BaseValue="1" />
+      <SimulationPropertyDescriptor Name="AttributeAttack" />
+      <SimulationPropertyDescriptor Name="AttributeDamage" />
+      <SimulationPropertyDescriptor Name="AttributeDefense" />
+      <SimulationPropertyDescriptor Name="AttributeDefenseMelee" />
+      <SimulationPropertyDescriptor Name="AttributeDefenseRange" />
+      <SimulationPropertyDescriptor Name="DeploymentPriority"/>
+      <SimulationPropertyDescriptor Name="AttributeInitiative" IsSealed="false" IsSerializable="true" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="AttributeCritical"   IsSealed="false" IsSerializable="true" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Altitude"                                    IsSealed="true" />
+      <SimulationPropertyDescriptor Name="AttackPerRound" BaseValue="1" />
+      <SimulationPropertyDescriptor Name="BattleMaximumMovement" />
+      <SimulationPropertyDescriptor Name="BattleMorale"                                IsSealed="true" MinValue="Negative" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="BattleMoraleFromGround"                      IsSealed="false" MinValue="Negative" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="ExtraMoraleBonusFromCity"                    IsSealed="false" MinValue="Negative" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="BattleMoraleCumulated"                       IsSealed="true" MinValue="Negative" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="BattleMoraleBonusPerAlly"                    BaseValue="1" MinValue="Negative" />
+      <SimulationPropertyDescriptor Name="BattleMoraleBonusPerEnemy"                   BaseValue="0" MinValue="Negative" />
+      <SimulationPropertyDescriptor Name="BattleMoraleBonusPerAttack"                  BaseValue="0" MinValue="Negative" />
+      <SimulationPropertyDescriptor Name="BattleMoraleBonusPerDefense"                 BaseValue="0" MinValue="Negative" />
+      <SimulationPropertyDescriptor Name="BattleMoraleBonusPerEnemyAltitudeDifference" BaseValue="0" MinValue="Negative" />
+      <SimulationPropertyDescriptor Name="BattleMovement"                              BaseValue="0" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="BattleRange" />
+      <SimulationPropertyDescriptor Name="BattleDamageReduction"  BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="BlindAttack"            BaseValue="0" />
+      <SimulationPropertyDescriptor Name="CanBeHealed"            BaseValue="1" />
+      <SimulationPropertyDescriptor Name="CanTakePhysicalDamage"  BaseValue="1" />
+      <SimulationPropertyDescriptor Name="CanPlayBattleRound"     BaseValue="1" />
+      <SimulationPropertyDescriptor Name="CanUpdateFormation"     BaseValue="1" />
+      <SimulationPropertyDescriptor Name="CanAttackThroughImpassableTransition"     BaseValue="0" />
+      <SimulationPropertyDescriptor Name="CantBeDebuffed"         BaseValue="0" />
+
+      <SimulationPropertyDescriptor Name="Charge"                 IsSealed="true" />
+      <SimulationPropertyDescriptor Name="ChargeIncrease"         BaseValue="0" />
+      <SimulationPropertyDescriptor Name="DamageMultiplier"       BaseValue="1" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="HitInfo"                BaseValue="2" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="AttackingHitInfo"       BaseValue="2" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="MilitaryUpkeep"/>
+      <SimulationPropertyDescriptor Name="EquipmentDamage"        MinValue="Negative" Composition="Sum" />
+      <SimulationPropertyDescriptor Name="EquipmentDefense"       MinValue="Negative" Composition="Sum" />
+      <SimulationPropertyDescriptor Name="EquipmentMovement"      MinValue="Negative" Composition="Sum" />
+      <SimulationPropertyDescriptor Name="EquipmentMaximumHealth" MinValue="Negative" Composition="Sum" />
+      <SimulationPropertyDescriptor Name="EquipmentAttack"        MinValue="Negative" Composition="Sum" />
+      <!-- new property for battle v2-->
+      <SimulationPropertyDescriptor Name="EquipmentInitiative"    MinValue="Negative" Composition="Sum" />
+      <SimulationPropertyDescriptor Name="EquipmentCritical"      MinValue="Negative" Composition="Sum" />
+      <!-- new property for battle v2-->
+      <SimulationPropertyDescriptor Name="AccumulatedExperience" />
+      <SimulationPropertyDescriptor Name="Experience" />
+      <SimulationPropertyDescriptor Name="ExperienceGainModifier" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="ExperienceGainPerTurn" />
+      <SimulationPropertyDescriptor Name="ExperienceReward" />
+      <SimulationPropertyDescriptor Name="UnitValue" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="ExperienceRewardAtCreation" />
+      
+      <SimulationProportionalPropertyDescriptor               Name="Health" Maximum="$(MaximumHealth)" Minimum="0"/>
+      <SimulationPropertyDescriptor Name="LevelDisplayed"/>
+      <SimulationPropertyDescriptor Name="MaximumHealth"      MinValue="1"/>
+      <SimulationPropertyDescriptor Name="MaximumMovement" />
+      <SimulationPropertyDescriptor Name="MaximumSkillPoints" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="Movement"           IsSerializable="true" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="MovementBonus"      IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="SpentMovement"      IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="NextLevelExperience" />
+      <SimulationPropertyDescriptor Name="SkillPointsSpent"   IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="TileBonus"          IsSealed="true" />
+      <SimulationPropertyDescriptor Name="UnitRegen"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BrokenLordsUnitRegenPerPacifiedVillage" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="UnitSlotCount"      BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="VisionHeight"       BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="VisionRange" />
+      <SimulationPropertyDescriptor Name="OffensiveMilitaryPower"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="DefensiveMilitaryPower"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MilitaryPower"                   BaseValue="0"/>
+      
+      
+      <!-- Action points, Spent action points reset each turn -->
+      <SimulationPropertyDescriptor Name="MaximumNumberOfActionPoints" IsSerializable="true" MinValue="0" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="ActionPointsSpent" IsSealed="true" IsSerializable="true"/>
+      <SimulationPropertyDescriptor Name="ActionPoint"/>
+      
+      <!-- Property linked to capacities -->
+      <SimulationPropertyDescriptor Name="ModifyDefaultAttack"                  BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="ModifyDefaultDefense"                 BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="BlockDefenseBonus"                    BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="ForestDefenseBonus"                   BaseValue="0.5" MinValue="Negative"/>
+      <!-- negative to lower damages -->
+      <SimulationPropertyDescriptor Name="RegenerationBonus"                    BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="LifeDrainBonus"                       BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="InitialBarkSkinEfficiency"            BaseValue="0" />
+      <SimulationPropertyDescriptor Name="BarkSkinEfficiency"                   BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialExhaustionEfficiency"          BaseValue="0" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="ExhaustionEfficiency"                 BaseValue="0" MinValue="Negative" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialUnsteadyEfficiency"            BaseValue="0" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="UnsteadyEfficiency"                   BaseValue="0" MinValue="Negative" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialFeeblenessEfficiency"          BaseValue="0" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="FeeblenessEfficiency"                 BaseValue="0" MinValue="Negative" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialHaltEfficiency"                BaseValue="0" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="HaltEfficiency"                       BaseValue="0" MinValue="Negative" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialSwiftnessEfficiency"           BaseValue="0" MinValue="Negative" />
+      <SimulationPropertyDescriptor Name="SwiftnessEfficiency"                  BaseValue="0" MinValue="Negative" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialRetaliationEfficiency"         BaseValue="0" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="RetaliationEfficiency"                BaseValue="0" MinValue="Negative" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialHighGroundEfficiency"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="HighGroundEfficiency"                 BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialAgainstMeleeEfficiency"        BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="AgainstMeleeEfficiency"               BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialAgainstRangeEfficiency"        BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="AgainstRangeEfficiency"               BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialAgainstMageEfficiency"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="AgainstMageEfficiency"                BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialAgainstFlyingEfficiency"       BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="AgainstFlyingEfficiency"              BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialAgainstCavalryEfficiency"      BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="AgainstCavalryEfficiency"             BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="StunEfficiency"                       BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="IncreasedFireEfficiency"        BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="InitialIncreasedFireEfficiency" BaseValue="0" IsSealed="false"/>
+
+
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+
+      <SimulationModifierDescriptor TargetProperty="ActionPoint" Operation="Force" Value="$(MaximumNumberOfActionPoints)" Priority="-1"/>
+      <SimulationModifierDescriptor TargetProperty="ActionPoint" Operation="Subtraction" Value="$(ActionPointsSpent)"/>
+
+      <SimulationModifierDescriptor       TargetProperty="InitialHighGroundEfficiency"  Operation="Addition" Value="0.3"/>
+      <SimulationModifierDescriptor       TargetProperty="InitialHighGroundEfficiency"  Operation="Addition" Value="0.3" Path="ClassUnit,#Winter"/>
+
+      <SimulationModifierDescriptor       TargetProperty="CityDefensePointLossPerTurn"  Operation="Addition" Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="CityDefensePointLossPerTurn"  Operation="Addition" Value="$(LevelDisplayed)"/>
+      
+      
+      <SimulationModifierDescriptor       TargetProperty="UnitSlotCount"          Operation="Addition" Value="$(UnitSlotCount)"    Path="../Garrison"/>
+      <BinarySimulationModifierDescriptor TargetProperty="LevelDisplayed"         Operation="Addition" BinaryOperation ="Addition" Left="$(Level)" Right ="1" />
+
+      <SimulationModifierDescriptor       TargetProperty="AttributeDamage"       Operation="Addition" Value="$(EquipmentDamage)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeDefense"       Operation="Addition" Value="$(EquipmentDefense)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeAttack"        Operation="Addition" Value="$(EquipmentAttack)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeCritical"      Operation="Addition" Value="$(EquipmentCritical)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeInitiative"    Operation="Addition" Value="$(EquipmentInitiative)" />
+      <SimulationModifierDescriptor       TargetProperty="MaximumMovement"        Operation="Addition" Value="$(EquipmentMovement)" />
+      <SimulationModifierDescriptor       TargetProperty="MaximumHealth"          Operation="Addition" Value="$(EquipmentMaximumHealth)" />
+
+      <SimulationModifierDescriptor       TargetProperty="AttributeDamage"       Operation="Addition" Value="$(BaseAttributeDamage)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeDefense"       Operation="Addition" Value="$(BaseAttributeDefense)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeAttack"        Operation="Addition" Value="$(BaseAttributeAttack)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeCritical"      Operation="Addition" Value="$(BaseAttributeCritical)" />
+      <SimulationModifierDescriptor       TargetProperty="AttributeInitiative"    Operation="Addition" Value="$(BaseAttributeInitiative)" />
+      <SimulationModifierDescriptor       TargetProperty="MaximumHealth"          Operation="Addition" Value="$(BaseMaximumHealth)" />
+      <SimulationModifierDescriptor       TargetProperty="BattleMaximumMovement"  Operation="Addition" Value="$(BaseBattleMaximumMovement)" />
+      <SimulationModifierDescriptor       TargetProperty="BattleRange"            Operation="Addition" Value="$(BaseBattleRange)" />
+
+      <SimulationModifierDescriptor       TargetProperty="MilitaryUpkeep"         Operation="Addition" Value="$(LevelDisplayed)"   Path="UnitRankStandard"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="Movement"               Operation="Addition" BinaryOperation ="Subtraction" Left="$(MaximumMovement)" Right ="$(SpentMovement)" />
+      <SimulationModifierDescriptor       TargetProperty="Movement"               Operation="Addition" Value="$(MovementBonus)" />
+
+      <BinarySimulationModifierDescriptor TargetProperty="OffensiveMilitaryPower"       Operation="Addition" BinaryOperation ="Multiplication" Left="$(AttributeCritical)"  Right ="$(AttributeAttack)" Priority="0"/>
+      <SimulationModifierDescriptor       TargetProperty="OffensiveMilitaryPower"       Operation="Multiplication" Value="6" Priority="1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="OffensiveMilitaryPower"       Operation="Division" BinaryOperation ="Addition" Left="$(AttributeCritical)"  Right ="100" Priority="2"/>
+      <BinarySimulationModifierDescriptor TargetProperty="OffensiveMilitaryPower"       Operation="Addition" BinaryOperation ="Multiplication" Left="$(AttributeAttack)"  Right ="6" Priority="3"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="DefensiveMilitaryPower"       Operation="Addition" BinaryOperation ="Multiplication" Left="$(AttributeDefense)"  Right ="6" Priority="0"/>
+      <SimulationModifierDescriptor       TargetProperty="DefensiveMilitaryPower"       Operation="Addition" Value="$(Health)" Priority="1"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryPower"                Operation="Addition" BinaryOperation ="Multiplication" Left="$(OffensiveMilitaryPower)"  Right ="$(DefensiveMilitaryPower)" Priority="0"/>
+
+      
+
+      <!-- OLD VERSION
+      <SimulationModifierDescriptor TargetProperty="MilitaryPower"                Operation="Addition" Value="$(AttributeAttack)" />
+      <SimulationModifierDescriptor TargetProperty="MilitaryPower"                Operation="Addition" Value="$(SkillPointsSpent)" />
+      
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryPower"          Operation="Addition" BinaryOperation ="Multiplication" Left="$(AttributeDefense)"  Right ="2" />
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryPower"          Operation="Addition" BinaryOperation ="Multiplication" Left="$(AttributeCritical)" Right ="0.5" />
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryPower"          Operation="Addition" BinaryOperation ="Multiplication" Left="$(MaximumHealth)"     Right ="0.25" />
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryPower"          Operation="Addition" BinaryOperation ="Multiplication" Left="$(BattleMovement)"    Right ="0.5" />
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryPower"          Operation="Addition" BinaryOperation ="Multiplication" Left="$(BattleRange)"       Right ="0.5" />
+      -->
+      <!-- needed to refresh data for the client -->
+
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ClassItem" Type="Class">
+    <SimulationPropertyDescriptors>
+
+      <SimulationPropertyDescriptor Name="EquipmentDamage"        MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EquipmentDefense"       MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EquipmentMovement"      MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EquipmentMaximumHealth" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EquipmentAttack"        MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EquipmentInitiative"    MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EquipmentCritical"      MinValue="Negative"/>
+
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MainCity" Type="SubClass">
+  </SimulationDescriptor>
+  
+
+</Datatable>

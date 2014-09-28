@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="UnitRankRookie">
+    <Title>%UnitRankRookieTitle</Title>
+    <Description>%UnitRankRookieDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="UnitRankAdvanced">
+    <Title>%UnitRankAdvancedTitle</Title>
+    <Description>%UnitRankAdvancedDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="UnitRankMaster">
+    <Title>%UnitRankMasterTitle</Title>
+    <Description>%UnitRankMasterDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="UnitRankElite">
+    <Title>%UnitRankEliteTitle</Title>
+    <Description>%UnitRankEliteDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="UnitRankCaptain">
+    <Title>%UnitRankCaptainTitle</Title>
+    <Description>%UnitRankCaptainDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="UnitRankHero">
+    <Title>%UnitRankHeroTitle</Title>
+    <Description>%UnitRankHeroDescription</Description>
+  </GuiElement>
+</Datatable>

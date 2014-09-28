@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierPeaceful" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0.1</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+    
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierPeaceful" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>0</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>2</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+    
+  </DiplomaticRelationScoreModifier>
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierStateWar" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-10</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierStateWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>0</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-10</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierStatePeace" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>4</MaximumCumulativeValue>
+    <MinimumCumulativeValue>2</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0.2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierStatePeace" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>25</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>4</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>2</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierStateAlliance" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>8</MaximumCumulativeValue>
+    <MinimumCumulativeValue>4</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0.2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierStateAlliance" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>25</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>8</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>4</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierLastWar" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0.2</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierLastWar" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>0</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-4</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierPositiveContractSigned" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-1</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierPositiveContractSigned" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>0</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>1</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+  
+
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierNegativeContractSigned" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>1</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>0</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierNegativeContractSigned" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>0</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-1</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierWarnings" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>0</MaximumCumulativeValue>
+    <MinimumCumulativeValue>-100</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>100</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-100</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierWarnings" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>10</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>0</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>-2</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+  
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierThanks" Category="Affinity">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>100</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>100</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-100</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierThanks" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>10</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>2</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+  
+  
+  
+  <!-- CHAOS -->
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierRelationStateChangeChaos" Category="RelationStateChaos">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>32</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-1</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierRelationStateChangeChaos" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>20</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>4</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+
+
+
+  <DiplomaticRelationScoreModifier Name="DiplomaticRelationScoreModifierDiscussionChaos" Category="DiscussionChaos">
+
+    <!-- Constraints -->
+    <MaximumCumulativeValue>1000</MaximumCumulativeValue>
+    <MinimumCumulativeValue>0</MinimumCumulativeValue>
+
+    <MaximumCumulativeTrendValue>0</MaximumCumulativeTrendValue>
+    <MinimumCumulativeTrendValue>-0.1</MinimumCumulativeTrendValue>
+
+    <!-- Theorical evolution -->
+    <CurveReference Name="DiplomaticRelationScoreModifierDiscussionChaos" />
+
+    <!-- Scale the X Axis of the curve -->
+    <MinimumTurnDuration>10</MinimumTurnDuration>
+
+    <!-- Scale the Y Axis of the curve -->
+    <ScoreAxisMaximumValue>2</ScoreAxisMaximumValue>
+    <ScoreAxisMinimumValue>0</ScoreAxisMinimumValue>
+
+  </DiplomaticRelationScoreModifier>
+  
+  
+</Datatable>

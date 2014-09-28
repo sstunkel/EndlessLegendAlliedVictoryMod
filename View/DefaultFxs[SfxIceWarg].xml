@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX IceWarg ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Voice_Attack">
+    <SoundEventName>Sfx/Voices/IceWarg/IceWark_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Voice_Chew">
+    <SoundEventName>Sfx/Voices/IceWarg/IceWark_Voice_Chew</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Voice_Death">
+    <SoundEventName>Sfx/Voices/IceWarg/IceWark_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Voice_Defense">
+    <SoundEventName>Sfx/Voices/IceWarg/IceWark_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Voice_Idle">
+    <SoundEventName>Sfx/Voices/IceWarg/IceWark_Voice_Idle</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Voicee_Idle0_Start">
+    <SoundEventName>Sfx/Voices/IceWarg/IceWark_Voice_Idle0_Start</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Voicee_Idle0_FinishEat">
+    <SoundEventName>Sfx/Voices/IceWarg/IceWark_Voice_Idle0_FinishEat</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Footstep">
+    <SoundEventName>Sfx/Faction/IceWarg/IceWarg_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Punch">
+    <SoundEventName>Sfx/Faction/IceWarg/IceWarg_Punch</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_Whoosh">
+    <SoundEventName>Sfx/Faction/IceWarg/IceWarg_Whoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_BodyFall">
+    <SoundEventName>Sfx/Faction/IceWarg/IceWarg_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_IceWarg_KneeFall">
+    <SoundEventName>Sfx/Faction/IceWarg/IceWarg_KneeFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

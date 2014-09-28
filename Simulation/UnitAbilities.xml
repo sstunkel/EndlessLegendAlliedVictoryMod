@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <UnitAbility Name="UnitAbility1">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <UnitAbility Name="UnitAbilityAdvancedRankUpBonus">
+    <SimulationDescriptorReference Name="UnitAbilityDescriptorAdvancedRankUpBonus"/>
+  </UnitAbility>
+
+  <UnitAbility Name="UnitAbilityMasterRankUpBonus">
+    <SimulationDescriptorReference Name="UnitAbilityDescriptorMasterRankUpBonus"/>
+  </UnitAbility>
+
+  <UnitAbility Name="UnitAbilityEliteRankUpBonus">
+    <SimulationDescriptorReference Name="UnitAbilityDescriptorEliteRankUpBonus"/>
+  </UnitAbility>
+
+  <UnitAbility Name="UnitAbilityColonization" Hidden="false">
+    <SimulationDescriptorReference Name="WithUnitAbilityColonization"/>
+  </UnitAbility>
+
+  <UnitAbility Name="UnitAbilityBlockGrowth" Hidden="false"/>
+  
+  <UnitAbility Name="UnitAbilityResettle" Hidden="false"/>
+
+  <UnitAbility Name="UnitAbilityUnsalable"/>
+
+  <UnitAbility Name="UnitAbilityAllowAssignationUnderSiege"/>
+
+  <UnitAbility Name="UnitAbilityReduceBesiegedCityMalus">
+    <SimulationDescriptorReference Name="UnitAbilityDescriptorReduceBesiegedCityMalus"/>
+  </UnitAbility>
+
+  <UnitAbility Name="UnitAbilityHealableWithDust">
+    <SimulationDescriptorReference Name="UnitAbilityHealableWithDust"/>
+  </UnitAbility>
+
+  <!-- Disease Immunity -->
+  <UnitAbility Name="UnitAbilityDiseaseImmunity">
+    <SimulationDescriptorReference Name="UnitAbilityDiseaseImmunity"/>
+  </UnitAbility>
+  
+  <!-- Ranged -->
+  <UnitAbility Name="UnitAbilityRanged">
+    <SimulationDescriptorReference Name="UnitAbilityRangedDescriptor"/>
+  </UnitAbility>
+  
+  <!-- Short Ranged  -->
+  <UnitAbility Name="UnitAbilityShortRanged">
+    <SimulationDescriptorReference Name="UnitAbilityShortRangedDescriptor"/>
+  </UnitAbility>
+  
+  <!-- High Ranged  -->
+  <UnitAbility Name="UnitAbilityHighRanged">
+    <SimulationDescriptorReference Name="UnitAbilityHighRangedDescriptor"/>
+  </UnitAbility>
+
+  
+  
+  <!-- ############################################### -->
+  <!-- ####      HEROES ABILITIES CITY & ARMY     #### -->
+  <!-- ############################################### -->
+
+
+  <!-- Inspiring Leader -->
+  <UnitAbility Name="UnitAbilityInspiringLeader">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityInspiringLeader1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityInspiringLeader2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityInspiringLeader3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+
+
+  <!-- ############################################### -->
+  <!-- ####          HEROES ABILITIES CITY        #### -->
+  <!-- ############################################### -->
+
+  <UnitAbility Name="HeroScienceWaterImproved">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="HeroScienceWaterImprovedDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="HeroScienceWaterImprovedDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <UnitAbility Name="HeroPopulationEfficiencyImproved">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="HeroPopulationEfficiencyImprovedDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="HeroPopulationEfficiencyImprovedDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- food: initial boost -->
+  <UnitAbility Name="UnitAbilityInitialBoostFood">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostFoodDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostFoodDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostFoodDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- industry: initial boost -->
+  <UnitAbility Name="UnitAbilityInitialBoostIndustry">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostIndustryDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostIndustryDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostIndustryDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- science: initial boost -->
+  <UnitAbility Name="UnitAbilityInitialBoostScience">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostScienceDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostScienceDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostScienceDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- dust: initial boost -->
+  <UnitAbility Name="UnitAbilityInitialBoostDust">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostDustDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostDustDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostDustDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- prestige: initial boost -->
+  <UnitAbility Name="UnitAbilityInitialBoostPrestige">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostPrestigeDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostPrestigeDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityInitialBoostPrestigeDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- food: progressive boost -->
+  <UnitAbility Name="UnitAbilityProgressiveBoostFood">
+    <SimulationDescriptorReference Name="UnitAbilityProgressiveBoostFoodDescriptor1"/>
+  </UnitAbility>
+
+  <!-- industry: progressive boost -->
+  <UnitAbility Name="UnitAbilityProgressiveBoostIndustry">
+    <SimulationDescriptorReference Name="UnitAbilityProgressiveBoostIndustryDescriptor1"/>
+  </UnitAbility>
+
+  <!-- science: progressive boost -->
+  <UnitAbility Name="UnitAbilityProgressiveBoostScience">
+    <SimulationDescriptorReference Name="UnitAbilityProgressiveBoostScienceDescriptor1"/>
+  </UnitAbility>
+
+  <!-- dust: progressive boost -->
+  <UnitAbility Name="UnitAbilityProgressiveBoostDust">
+    <SimulationDescriptorReference Name="UnitAbilityProgressiveBoostDustDescriptor1"/>
+  </UnitAbility>
+
+  <!-- prestige: progressive boost -->
+  <UnitAbility Name="UnitAbilityProgressiveBoostPrestige">
+    <SimulationDescriptorReference Name="UnitAbilityProgressiveBoostPrestigeDescriptor1"/>
+  </UnitAbility>
+
+  <!-- food: increase pop productivity -->
+  <UnitAbility Name="UnitAbilityFoodPopulationEfficiency">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityFoodPopulationEfficiencyDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityFoodPopulationEfficiencyDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityFoodPopulationEfficiencyDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- industry: increase pop productivity -->
+  <UnitAbility Name="UnitAbilityIndustryPopulationEfficiency">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityIndustryPopulationEfficiencyDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityIndustryPopulationEfficiencyDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityIndustryPopulationEfficiencyDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- dust: increase pop productivity -->
+  <UnitAbility Name="UnitAbilityDustPopulationEfficiency">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityDustPopulationEfficiencyDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityDustPopulationEfficiencyDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityDustPopulationEfficiencyDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- science: increase pop productivity -->
+  <UnitAbility Name="UnitAbilitySciencePopulationEfficiency">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilitySciencePopulationEfficiencyDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilitySciencePopulationEfficiencyDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilitySciencePopulationEfficiencyDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- slavery: +1 FI / village -->
+  <UnitAbility Name="UnitAbilitySlavery">
+    <SimulationDescriptorReference Name="UnitAbilitySlaveryDescriptor1"/>
+  </UnitAbility>
+
+  <!-- buyout bonus -->
+  <UnitAbility Name="UnitAbilityBuyoutBonus">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityBuyoutBonusDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityBuyoutBonusDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityBuyoutBonusDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- golden arborist: +1 Dust on Forest -->
+  <UnitAbility Name="UnitAbilityGoldenArborist">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGoldenArboristDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGoldenArboristDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGoldenArboristDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+
+
+  <!-- ############################################# -->
+  <!-- ####          HEROES ABILITIES ARMY      #### -->
+  <!-- ############################################# -->
+
+  <!-- GENERAL BOOST OVERALL -->
+  <UnitAbility Name="UnitAbilityGeneralOverall">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralOverallDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralOverallDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralOverallDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST RESISTANCE -->
+  <UnitAbility Name="UnitAbilityGeneralResistance">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralResistanceDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralResistanceDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralResistanceDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST PIERCING -->
+  <UnitAbility Name="UnitAbilityGeneralPiercing">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralPiercingDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralPiercingDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralPiercingDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST HP -->
+  <UnitAbility Name="UnitAbilityGeneralHealth">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralHealthDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralHealthDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralHealthDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST ATK -->
+  <UnitAbility Name="UnitAbilityGeneralAttack">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralAttackDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralAttackDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralAttackDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST DEF -->
+  <UnitAbility Name="UnitAbilityGeneralDefense">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralDefenseDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralDefenseDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralDefenseDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST INI -->
+  <UnitAbility Name="UnitAbilityGeneralInitiative">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralInitiativeDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralInitiativeDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralInitiativeDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST CRIT -->
+  <UnitAbility Name="UnitAbilityGeneralCritical">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralCriticalDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralCriticalDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralCriticalDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST DMG -->
+  <UnitAbility Name="UnitAbilityGeneralDamage">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralDamageDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralDamageDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralDamageDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- GENERAL BOOST VISION RANGE -->
+  <UnitAbility Name="UnitAbilityGeneralVisionRange">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralVisionRangeDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralVisionRangeDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityGeneralVisionRangeDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+  
+  
+
+  <!-- ########################################### -->
+  <!-- ####          UNIT   ABILITIES         #### -->
+  <!-- ########################################### -->
+
+  <UnitAbility Name="UnitAbilityLastStand"/>
+
+  <!-- Anihilate Vision and Movement Point Winter effects -->
+  <UnitAbility Name="UnitAbilityDarkProof">
+    <SimulationDescriptorReference Name="WinterUnitVisionRangeReductionImmunity"/>
+    <SimulationDescriptorReference Name="WinterMovementReductionImmunity"/>
+    <SimulationDescriptorReference Name="WinterAttributeReductionImmunity"/>
+  </UnitAbility>
+
+  <!-- Improved Defense -->
+  <UnitAbility Name="UnitAbilityImprovedDefense">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedDefenseDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedDefenseDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedDefenseDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Improved Attack -->
+  <UnitAbility Name="UnitAbilityImprovedAttack">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedAttackDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedAttackDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedAttackDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Improved Critical -->
+  <UnitAbility Name="UnitAbilityImprovedCritical">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedCriticalDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedCriticalDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedCriticalDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Improved Damage -->
+  <UnitAbility Name="UnitAbilityImprovedDamage">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedDamageDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedDamageDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedDamageDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Improved Initiative -->
+  <UnitAbility Name="UnitAbilityImprovedInitiative">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedInitiativeDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedInitiativeDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedInitiativeDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Improved Life -->
+  <UnitAbility Name="UnitAbilityImprovedLife">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedLifeDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedLifeDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedLifeDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Improved Movement -->
+  <UnitAbility Name="UnitAbilityImprovedMovement">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedMovementDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedMovementDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedMovementDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Improved Vision -->
+  <UnitAbility Name="UnitAbilityImprovedVision">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedVisionDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedVisionDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityImprovedVisionDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- HALF DAMAGED -->
+  <UnitAbility Name="UnitAbilityLowDamage">
+    <SimulationDescriptorReference Name="WithUnitAbilityLowDamage"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorLowDamage1"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorLowDamage2"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorLowDamage3"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Unstoppable -->
+  <UnitAbility Name="UnitAbilityUnstoppable">
+    <SimulationDescriptorReference Name="UnitAbilityUnstoppableDescriptor1"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+  </UnitAbility>
+
+  <!-- Immune Debuff -->
+  <UnitAbility Name="UnitAbilityImmuneDebuff">
+    <SimulationDescriptorReference Name="UnitAbilityImmuneDebuffDescriptor1"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+  </UnitAbility>
+
+
+  <!-- Immune to Winter -->
+  <UnitAbility Name="UnitAbilityImmuneToWinterMovementPenalty">
+    <SimulationDescriptorReference Name="WinterMovementReductionImmunity"/>
+  </UnitAbility>
+
+  <!-- Confidence: change implementation if kept -->
+  <UnitAbility Name="UnitAbilityConfidence">
+    <SimulationDescriptorReference Name="WithUnitAbilityConfidence"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityConfidenceDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityConfidenceDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityConfidenceDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Sharp Sense: change implementation if kept -->
+  <UnitAbility Name="UnitAbilitySharpSense">
+    <SimulationDescriptorReference Name="WithUnitAbilitySharpSense"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilitySharpSenseDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilitySharpSenseDescriptor2"/>      
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilitySharpSenseDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Master of the Dark -->
+  <UnitAbility Name="UnitAbilityMasterOfTheDark">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityMasterOfTheDarkDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityMasterOfTheDarkDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityMasterOfTheDarkDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityMasterOfTheDarkDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Children of the Light -->
+  <UnitAbility Name="UnitAbilityChildrenOfTheLight">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityChildrenOfTheLightDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityChildrenOfTheLightDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityChildrenOfTheLightDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityChildrenOfTheLightDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- High Ground -->
+  <UnitAbility Name="UnitAbilityHighGround">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityHighGroundDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityHighGroundDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityHighGroundDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Death or Glory -->
+  <UnitAbility Name="UnitAbilityDeathOrGlory">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityDeathOrGloryDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityDeathOrGloryDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityDeathOrGloryDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- City Breaker -->
+  <UnitAbility Name="UnitAbilityCityBreaker">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityCityBreakerDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityCityBreakerDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityCityBreakerDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- City Guard -->
+  <UnitAbility Name="UnitAbilityCityGuard">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityCityGuardDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityCityGuardDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityCityGuardDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Forest Resonance -->
+  <UnitAbility Name="UnitAbilityForestResonance">
+    <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- ################################################## -->
+  <!-- ####          UNLOCKING BATTLE ACTIONS        #### -->
+  <!-- ################################################## -->
+
+  <!-- Shock -->
+  <UnitAbility Name="UnitAbilityShock">
+    <BattleActionUnitReference Name="BattleActionUnitShock"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityShockDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityShockDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityShockDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+
+  <!-- Slow Down -->
+  <UnitAbility Name="UnitAbilitySlowDown">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilitySlowDown"/>
+  </UnitAbility>
+
+  <!-- Bark Skin -->
+  <UnitAbility Name="UnitAbilityBarkSkin">
+    <SimulationDescriptorReference Name="WithUnitAbilityBarkSkin"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityBarkSkin"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityBarkSkinDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityBarkSkinDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityBarkSkinDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Increased Fire -->
+  <UnitAbility Name="UnitAbilityIncreasedFire">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityIncreasedFire"/>
+    <SimulationDescriptorReference Name="WithUnitAbilityIncreasedFire"/>
+    
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityIncreasedFireDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityIncreasedFireDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityIncreasedFireDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Soul Leech -->
+  <UnitAbility Name="UnitAbilitySoulLeech">
+    <BattleActionUnitReference Name="BattleActionUnitAbilitySoulLeech"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
+  </UnitAbility>
+
+  <!-- Life Siphon -->
+  <UnitAbility Name="UnitAbilityLifeSiphon">
+    <SimulationDescriptorReference Name="WithUnitAbilityLifeSiphon"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityLifeSiphon"/>
+  </UnitAbility>
+
+  <!-- Charge -->
+  <UnitAbility Name="UnitAbilityCharge">
+    <SimulationDescriptorReference Name="UnitAbilityActiveChargeDescriptor"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityChargeReset"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityChargeAttack"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityChargePowerDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityChargePowerDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityChargePowerDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Cocoon-->
+  <UnitAbility Name="UnitAbilityCocoon">
+    <SimulationDescriptorReference Name="WithUnitAbilityCocoon"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityCocoon"/>
+  </UnitAbility>
+
+  <!-- Circular Attack-->
+  <UnitAbility Name="UnitAbilityCircularAttack">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityCircularAttack"/>
+    <SimulationDescriptorReference Name="UnitAbilityOverrideAttackDescriptor"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+  </UnitAbility>
+
+  <!-- Intimidation Aura -->
+  <UnitAbility Name="UnitAbilityIntimidationAura">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityIntimidationAura"/>
+  </UnitAbility>
+
+  <!-- Chain Lightning-->
+  <UnitAbility Name="UnitAbilityChainLightning">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityChainLightning"/>
+    <SimulationDescriptorReference Name="WithUnitAbilityChainLightning"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower5"/>
+  </UnitAbility>
+
+  <!-- Exhaustion -->
+  <UnitAbility Name="UnitAbilityExhaustion">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityExhaustion"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityExhaustionDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityExhaustionDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityExhaustionDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityExhaustionDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Unsteady -->
+  <UnitAbility Name="UnitAbilityUnsteady">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityUnsteady"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityUnsteadyDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityUnsteadyDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityUnsteadyDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityUnsteadyDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Feebleness -->
+  <UnitAbility Name="UnitAbilityFeebleness">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityFeebleness"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityFeeblenessDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityFeeblenessDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityFeeblenessDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityFeeblenessDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Halt -->
+  <UnitAbility Name="UnitAbilityHalt">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityHalt"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityHaltDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityHaltDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityHaltDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityHaltDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Retaliation -->
+  <UnitAbility Name="UnitAbilityRetaliation">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityRetaliation"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityRetaliationDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityRetaliationDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityRetaliationDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower5"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Swiftness -->
+  <UnitAbility Name="UnitAbilitySwiftness">
+    <BattleActionUnitReference Name="BattleActionUnitAbilitySwiftness"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilitySwiftnessDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilitySwiftnessDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilitySwiftnessDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilitySwiftnessDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Block -->
+  <UnitAbility Name="UnitAbilityBlock">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityBlock"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityBlockDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityBlockDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityBlockDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityBlockDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower5"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Regeneration -->
+  <UnitAbility Name="UnitAbilityRegeneration">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityRegeneration"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityRegenerationDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityRegenerationDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityRegenerationDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower5"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Life Drain -->
+  <UnitAbility Name="UnitAbilityLifeDrain">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityLifeDrain"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityLifeDrainDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityLifeDrainDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityLifeDrainDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityLifeDrainDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- PointblankPower -->
+  <UnitAbility Name="UnitAbilityPointblankPower">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityPointblankPower"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityPointblankPowerDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityPointblankPowerDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityPointblankPowerDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Debuff Immunity -->
+  <UnitAbility Name="UnitAbilityDebuffImmunity">
+    <SimulationDescriptorReference Name="WithUnitAbilityDebuffImmunity"/>
+    <BattleActionUnitReference     Name="BattleActionUnitAbilityDebuffImmunity"/>
+  </UnitAbility>
+
+  <!-- Stun -->
+  <UnitAbility Name="UnitAbilityStun">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Beam Attack -->
+  <UnitAbility Name="UnitAbilityBeam">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityBeam"/>
+    <SimulationDescriptorReference Name="UnitAbilityOverrideAttackDescriptor"/>
+  </UnitAbility>
+
+  <!-- Sweep Attack -->
+  <UnitAbility Name="UnitAbilitySweep">
+    <BattleActionUnitReference Name="BattleActionUnitAbilitySweep"/>
+    <SimulationDescriptorReference Name="UnitAbilityOverrideAttackDescriptor"/>
+    
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilitySweepDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilitySweepDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilitySweepDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+      <SimulationDescriptorReference Name="UnitAbilitySweepDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- WarriorSlayer -->
+  <UnitAbility Name="UnitAbilityWarriorSlayer">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityWarriorSlayer"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityWarriorSlayerDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityWarriorSlayerDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityWarriorSlayerDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityWarriorSlayerDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- KnigthSlayer -->
+  <UnitAbility Name="UnitAbilityKnightSlayer">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityKnightSlayer"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- RangeSlayer -->
+  <UnitAbility Name="UnitAbilityRangeSlayer">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityRangeSlayer"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- MageSlayer -->
+  <UnitAbility Name="UnitAbilityMageSlayer">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityMageSlayer"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- FlyingSlayer -->
+  <UnitAbility Name="UnitAbilityFlyingSlayer">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityFlyingSlayer"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Disease -->
+  <UnitAbility Name="UnitAbilityDisease">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityDisease"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityDiseaseSpread"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
+  </UnitAbility>
+
+  <!-- Boomer -->
+  <UnitAbility Name="UnitAbilityBoomer">
+    <SimulationDescriptorReference Name="UnitCanDebuff"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityBoomer"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
+    <!--<BattleActionUnitReference Name="BattleActionUnitAbilityDiseasePassive"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityDiseaseSpread"/>-->
+  </UnitAbility>
+
+  <!-- Defensive Impulse -->
+  <UnitAbility Name="UnitAbilityDefensiveImpulse">
+    <SimulationDescriptorReference Name="UnitAbilityOverrideDefenseDescriptor"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityDefensiveImpulse"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
+  </UnitAbility>
+
+  <!-- Beam Strike Back Attack -->
+  <UnitAbility Name="UnitAbilitySweepStrikeBack">
+    <BattleActionUnitReference Name="BattleActionUnitAbilitySweepStrikeBack"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
+    <SimulationDescriptorReference Name="UnitAbilityOverrideDefenseDescriptor"/>
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilitySweepStrikeBackDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilitySweepStrikeBackDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilitySweepStrikeBackDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="3">
+      <SimulationDescriptorReference Name="UnitAbilitySweepStrikeBackDescriptor4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Fire Rain -->
+  <UnitAbility Name="UnitAbilityFireRain">
+    <SimulationDescriptorReference Name="UnitAbilityOverrideAttackDescriptor"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower5"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityFireRain"/>
+  </UnitAbility>
+
+  <!-- native stats modification -->
+
+  <!-- Fast -->
+  <UnitAbility Name="UnitAbilityFast">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityFastDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityFastDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityFastDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Slow -->
+  <UnitAbility Name="UnitAbilitySlow">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilitySlowDescriptor1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilitySlowDescriptor2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilitySlowDescriptor3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Precision -->
+  <UnitAbility Name="UnitAbilityPrecision">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityPrecisionDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityPrecisionDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityPrecisionDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Blind -->
+  <UnitAbility Name="UnitAbilityBlind">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityBlindDescriptor1"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPowe2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityBlindDescriptor2"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower3"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityBlindDescriptor3"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower4"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+  
+  <!-- Expert -->
+  <UnitAbility Name="UnitAbilityExpert">
+    <UnitAbilityLevelDefinition Level="0">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityExpert1"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="1">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityExpert2"/>
+    </UnitAbilityLevelDefinition>
+    <UnitAbilityLevelDefinition Level="2">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityExpert3"/>
+    </UnitAbilityLevelDefinition>
+  </UnitAbility>
+
+  <!-- Heal -->
+  <UnitAbility Name="UnitAbilityHeal">
+    <SimulationDescriptorReference Name="WithUnitAbilityHeal"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityHeal"/>
+  </UnitAbility>
+  
+  <!-- Healing Halo -->
+  <UnitAbility Name="UnitAbilityHealingHalo">
+    <SimulationDescriptorReference Name="UnitAbilityHealingHaloDescriptor"/>
+    <SimulationDescriptorReference Name="WithUnitAbilityHealingHalo"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityHealingHalo"/>
+  </UnitAbility>
+
+
+
+  <!-- Shared Wisdom-->
+  <UnitAbility Name="UnitAbilitySharedWisdom">
+    <SimulationDescriptorReference Name="WithUnitAbilitySharedWisdom"/>
+    <SimulationDescriptorReference Name="UnitAbilitySharedWisdomDescriptor"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilitySharedWisdom"/>
+  </UnitAbility>
+
+  <!-- Fly -->
+  <UnitAbility Name="UnitAbilityFly">
+    <SimulationDescriptorReference Name="MovementCapacityFly"/>
+    <SimulationDescriptorReference Name="UnitAbilityDescriptorVisionHeightUp"/>
+  </UnitAbility>
+
+  <!-- Revive -->
+  <UnitAbility Name="UnitAbilityRevive">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityPhoenixToEgg"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityEggRegeneration"/>
+  </UnitAbility>
+
+  <!-- Parasite -->
+  <UnitAbility Name="UnitAbilityParasite">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityParasite"/>
+    <BattleActionUnitReference Name="BattleActionUnitAbilityParasiteAlly"/>
+
+  </UnitAbility>
+
+  <!-- Free Counter -->
+  <UnitAbility Name="UnitAbilityFreeCounter">
+    <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityFreeCounter1"/>
+  </UnitAbility>
+  
+  <!-- FACTION SPECIFICS -->
+  
+  <!-- Forest Rage -->
+  <UnitAbility Name="UnitAbilityForestRage">
+    <SimulationDescriptorReference Name="UnitAbilityForestRageDescriptor"/>
+  </UnitAbility>
+  
+  <!-- Ardent Fire -->
+  <UnitAbility Name="UnitAbilityArdentFire">
+    <BattleActionUnitReference Name="BattleActionUnitAbilityArdentFire"/>
+    <SimulationDescriptorReference Name="UnitAbilityArdentFireDescriptor"/>
+  </UnitAbility>
+
+  <!-- Technolover -->
+  <UnitAbility Name="UnitAbilityTechnolover">
+    <SimulationDescriptorReference Name="UnitAbilityTechnoloverDescriptor"/>
+  </UnitAbility>
+
+  <!-- Fast Learner -->
+  <UnitAbility Name="UnitAbilityFastLearner">
+      <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityFastLearner1"/>
+  </UnitAbility>
+
+  <!-- Unleashed Potential -->
+  <UnitAbility Name="UnitAbilityUnleashedPotential">
+    <BattleActionUnitReference Name="WithUnitAbilityUnleashedPotential"/>
+  <BattleActionUnitReference Name="BattleActionUnitAbilityUnleashedPotential"/>
+  </UnitAbility>
+  
+</Datatable>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="EmpireTypeMajor" Type="EmpireType">
+    <SimulationPropertyDescriptors>
+      <!-- Resource: City production. -->
+      <SimulationPropertyDescriptor Name="Approval"                 Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetCityEmpirePoint"       Composition="Sum" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="NetCityMoney"             Composition="Sum" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="NetCityResearch"          Composition="Sum" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="CityExpansionDisapproval" Composition="Sum"/>
+
+      <SimulationPropertyDescriptor Name="ApprovalAverage"/>
+
+      <!-- Resource: Empire raw production -->
+      <SimulationPropertyDescriptor Name="EmpireApproval"/>
+      <SimulationPropertyDescriptor Name="EmpireMoney"    MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EmpireResearch" MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="EmpirePoint"/>
+
+      <!-- Resource: Empire upkeep -->
+      <SimulationPropertyDescriptor Name="EmpireApprovalUpkeep" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="EmpireMoneyUpkeep"    Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="EmpireResearchUpkeep" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="EmpirePointUpkeep"    Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="MilitaryUpkeep"       Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="MilitaryPower"        Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="HeroUpkeep" />
+
+      <!-- Resource: Empire net production -->
+      <SimulationPropertyDescriptor Name="NetEmpireApproval"  MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="NetEmpirePoint"     MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="NetEmpireMoney"     MinValue="Negative"/>
+      <SimulationPropertyDescriptor Name="NetEmpireResearch"  MinValue="Negative"/>
+
+      <!-- Resource: Empire stock -->
+      <SimulationPropertyDescriptor Name="BankAccount" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="EmpirePointStock" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="EmpireResearchStock"  IsSealed="true"/>
+
+      <SimulationPropertyDescriptor Name="EmpireMoneyAccumulator" IsSealed="true"/>
+      
+      <!-- Diplomatic victory -->
+      <SimulationPropertyDescriptor Name="EmpirePeacePointStock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="NetEmpirePeacePoint"/>
+      <SimulationPropertyDescriptor Name="EmpirePointToPeacePointFactor"  BaseValue="0.1"/>
+      <SimulationPropertyDescriptor Name="AffinityRelationScoreSum"       MinValue="Negative" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="RelationScoreSumFactor"         BaseValue="0.1"/>
+      <SimulationPropertyDescriptor Name="ClampedRelationScoreSum"        MinValue="0"        BaseValue="0"/>
+
+      <!-- MISC -->
+      <SimulationPropertyDescriptor Name="DurationOfHeroesExclusivity"    BaseValue="15" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="MaximumEmpireResearchStock"/>   
+      <SimulationPropertyDescriptor Name="MaximumNumberOfExclusiveHeroes" BaseValue="3" MinValue="0"/>
+      <SimulationPropertyDescriptor Name="MinimumBankAccount"             BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MinimumEmpirePointStock"        BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MinimumEmpireResearchStock"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MinorFactionSlotCount"          BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="MinorFactionAssimilatedCount"   BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Population"                     Composition="Sum"/>
+      <!--<SimulationPropertyDescriptor Name="ArmyLeaderCount"/>-->
+      <SimulationPropertyDescriptor Name="HeroCount"                      Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="PopulationAmountContainedBySettler"    BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="DiplomaticAbilityPrestigeRewardOnKill" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="UnknownCount"   BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="WarCount"       BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="TruceCount"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="ColdWarCount"   BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="PeaceCount"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="AllianceCount"  BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="EmpirePlanLevelUnlocked" BaseValue="0"/>
+
+      <SimulationPropertyDescriptor Name="CommercialAgreementCostMultiplier" BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="ResearchAgreementCostMultiplier" BaseValue="1"/>
+      
+      <!-- Broken Lords Population buyout -->
+      <SimulationPropertyDescriptor Name="PopulationBuyoutGrowthToEmpireMoneyConversionFactor"  BaseValue="1"/>
+      <SimulationPropertyDescriptor Name="PopulationBuyoutCooldown"                             BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="MaximumPopulationBuyoutCooldown"                      BaseValue="0"/>
+
+      <!-- Necrophages Population sacrifice -->
+      <SimulationPropertyDescriptor Name="PopulationSacrificeCooldown"                             BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="MaximumPopulationSacrificeCooldown"                      BaseValue="0"/>
+
+      <SimulationPropertyDescriptor Name="TraitBonusExperienceToDustConversionFactor" BaseValue="0"/>
+
+      <!-- Broken Lords healing buyout -->
+      <SimulationPropertyDescriptor Name="UnitHealthToEmpireMoneyConversionFactor"    BaseValue="1"/>      
+
+      <!-- Unit health Regen-->
+      <SimulationPropertyDescriptor Name="GlobalUnitRegenImprovement"          BaseValue="0.05"/>
+      <SimulationPropertyDescriptor Name="InAlliedRegionUnitRegenModifier"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="InOwnedRegionUnitRegenModifier"      BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="InNoneAlliedRegionUnitRegenModifier" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="UnassignedHeroRegenModifier"         BaseValue="0"/>
+
+      <!-- strategic resources -->
+      <SimulationPropertyDescriptor Name="MinimumStrategicStock" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MaximumStrategicStock" BaseValue="999"/>
+
+      <SimulationPropertyDescriptor Name="Strategic1Stock"       IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Strategic2Stock"       IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Strategic3Stock"       IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Strategic4Stock"       IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Strategic5Stock"       IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Strategic6Stock"       IsSealed="true"/>
+      
+      <SimulationPropertyDescriptor Name="NetStrategic1"         Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetStrategic2"         Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetStrategic3"         Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetStrategic4"         Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetStrategic5"         Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetStrategic6"         Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetAffinityStrategic"  Composition="Sum"/>
+
+      <!-- luxury resources -->
+      <SimulationPropertyDescriptor Name="MinimumLuxuryStock"    BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="MaximumLuxuryStock"    BaseValue="999"/>
+
+      <SimulationPropertyDescriptor Name="Luxury1Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury2Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury3Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury4Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury5Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury6Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury7Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury8Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury9Stock"          IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury10Stock"         IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury11Stock"         IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury12Stock"         IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury13Stock"         IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury14Stock"         IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="Luxury15Stock"         IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="CadaverStock"          IsSealed="true"/>
+      
+      <SimulationPropertyDescriptor Name="NetLuxury1"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury2"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury3"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury4"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury5"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury6"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury7"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury8"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury9"            Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury10"           Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury11"           Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury12"           Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury13"           Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury14"           Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetLuxury15"           Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="NetCadaver"            BaseValue="0"/>
+
+      <!-- Rage Wizards' pillars -->
+      <SimulationPropertyDescriptor Name="PillarsCount"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar1Count"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar2Count"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar3Count"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar4Count"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar5Count"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar1Duration"      BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="Pillar2Duration"      BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="Pillar3Duration"      BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="Pillar4Duration"      BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="Pillar5Duration"      BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="PillarsLevel"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar1Level"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar2Level"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar3Level"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar4Level"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Pillar5Level"         BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="SpellsLevel"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Spell1Level"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Spell2Level"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Spell3Level"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Spell4Level"          BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="Spell5Level"          BaseValue="0"/>
+      
+      <!-- minor village -->
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Urces"           BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Erycis"          BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Ceratan"         BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Kazanji"         BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Bos"             BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Silics"          BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Delvers"         BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_SistersOfMercy"  BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Haunts"          BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Jotus"           BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Hurnas"          BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Gauran"          BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Birdhive"        BaseValue="0" MaxValue="6"/>
+      <SimulationPropertyDescriptor Name="PacifiedVillages_Geldirus"        BaseValue="0" MaxValue="6"/>
+
+      <SimulationPropertyDescriptor Name="CurrentEra"           BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="BoosterDurationMultiplier"           BaseValue="1"/>
+
+      <SimulationPropertyDescriptor Name="BonusMovementOnEnemySpotted"/>
+
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="InAlliedRegionUnitRegenModifier"     Operation="Addition" Value="$(GlobalUnitRegenImprovement)"/>
+      <SimulationModifierDescriptor TargetProperty="InOwnedRegionUnitRegenModifier"      Operation="Addition" Value="$(GlobalUnitRegenImprovement)"/>
+      <SimulationModifierDescriptor TargetProperty="InNoneAlliedRegionUnitRegenModifier" Operation="Addition" Value="$(GlobalUnitRegenImprovement)"/>
+      <SimulationModifierDescriptor TargetProperty="UnassignedHeroRegenModifier"         Operation="Addition" Value="$(GlobalUnitRegenImprovement)"/>
+
+      <SimulationModifierDescriptor       TargetProperty="EmpireMoney"        Operation="Force"     Value="$(NetCityMoney)"       Priority="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="EmpireResearch"     Operation="Force"     Value="$(NetCityResearch)"    Priority="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="EmpirePoint"        Operation="Force"     Value="$(NetCityEmpirePoint)" Priority="-1"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="ApprovalAverage"    Operation="Addition"  Left="$(Approval)"            BinaryOperation="Division" Right="$(Population)"/>
+      <SimulationModifierDescriptor       TargetProperty="EmpireApproval"     Operation="Force"     Value="$(ApprovalAverage)"    Priority="-1"/>
+      
+      <SimulationModifierDescriptor       TargetProperty="EmpireMoneyUpkeep"  Operation="Addition"  Value="$(MilitaryUpkeep)"/>
+      <SimulationModifierDescriptor       TargetProperty="EmpireMoneyUpkeep"  Operation="Addition"  Value="$(HeroUpkeep)"/>
+      
+      <BinarySimulationModifierDescriptor TargetProperty="NetEmpireMoney"     Operation="Force"     Left="$(EmpireMoney)"         BinaryOperation="Subtraction" Right="$(EmpireMoneyUpkeep)"    Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="NetEmpireResearch"  Operation="Force"     Left="$(EmpireResearch)"      BinaryOperation="Subtraction" Right="$(EmpireResearchUpkeep)" Priority="-1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="NetEmpireApproval"  Operation="Force"     Left="$(EmpireApproval)"      BinaryOperation="Subtraction" Right="$(EmpireApprovalUpkeep)" Priority="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="NetEmpirePoint"     Operation="Force"     Value="$(EmpirePoint)"        Priority="-1"/>
+
+      <SimulationModifierDescriptor       TargetProperty="ClampedRelationScoreSum"  Operation="Addition"  Value="$(AffinityRelationScoreSum) max 0"/>
+      <BinarySimulationModifierDescriptor TargetProperty="NetEmpirePeacePoint"      Operation="Addition"  Left="$(ClampedRelationScoreSum)"  BinaryOperation="Multiplication" Right="$(RelationScoreSumFactor)"/>
+
+      <SimulationModifierDescriptor TargetProperty="MaximumEmpireResearchStock"   Operation="Addition"        Value="$(NetEmpireResearch)"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumEmpireResearchStock"   Operation="Multiplication"  Value="2"/>
+
+      <SimulationModifierDescriptor TargetProperty="UnassignedHeroRegenModifier"  Operation="Addition"        Value="0.05"/>
+
+      <SimulationModifierDescriptor TargetProperty="EmpireExpansionDisapproval"   Operation="Addition"        Value="$(CityExpansionDisapproval)" Path="ClassEmpire/ClassCity" IsBindOnSource="true"/>
+
+      <SimulationModifierDescriptor TargetProperty="PillarsCount"         Operation ="Addition" Value="$(Pillar1Count)"/>
+      <SimulationModifierDescriptor TargetProperty="PillarsCount"         Operation ="Addition" Value="$(Pillar2Count)"/>
+      <SimulationModifierDescriptor TargetProperty="PillarsCount"         Operation ="Addition" Value="$(Pillar3Count)"/>
+      <SimulationModifierDescriptor TargetProperty="PillarsCount"         Operation ="Addition" Value="$(Pillar4Count)"/>
+      <SimulationModifierDescriptor TargetProperty="PillarsCount"         Operation ="Addition" Value="$(Pillar5Count)"/>
+
+      <SimulationModifierDescriptor TargetProperty="Pillar1Level"         Operation ="Addition" Value="$(PillarsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Pillar2Level"         Operation ="Addition" Value="$(PillarsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Pillar3Level"         Operation ="Addition" Value="$(PillarsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Pillar4Level"         Operation ="Addition" Value="$(PillarsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Pillar5Level"         Operation ="Addition" Value="$(PillarsLevel)"/>
+
+      <SimulationModifierDescriptor TargetProperty="Spell1Level"          Operation ="Addition" Value="$(SpellsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Spell2Level"          Operation ="Addition" Value="$(SpellsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Spell3Level"          Operation ="Addition" Value="$(SpellsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Spell4Level"          Operation ="Addition" Value="$(SpellsLevel)"/>
+      <SimulationModifierDescriptor TargetProperty="Spell5Level"          Operation ="Addition" Value="$(SpellsLevel)"/>
+
+
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireTypeMinor" Type="EmpireType">
+    <SimulationPropertyDescriptors>
+
+
+      <!-- Unit health Regen-->
+      <SimulationPropertyDescriptor Name="GlobalUnitRegenImprovement"          BaseValue="0.05"/>
+      <SimulationPropertyDescriptor Name="InAlliedRegionUnitRegenModifier"     BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="InOwnedRegionUnitRegenModifier"      BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="InNoneAlliedRegionUnitRegenModifier" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="UnassignedHeroRegenModifier"         BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+    
+    
+    
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EmpireMoney"         Operation="Addition" Value="2" Path="../EmpireTypeMajor"/>
+      <SimulationModifierDescriptor TargetProperty="ControlledByMinorAI" Operation="Addition" Value="1" Path="EmpireTypeMinor/Garrison/ClassUnit"/>
+      
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  
+  <SimulationDescriptor Name="EmpireTutorial" Type="EmpireType">
+  <SimulationModifierDescriptors>
+  </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

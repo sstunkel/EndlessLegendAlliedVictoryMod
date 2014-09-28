@@ -1,0 +1,2834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ############################# -->
+  <!-- ########  AT START  ######### -->
+  <!-- ############################# -->
+
+  <!-- [Hidden] Empire bonus: Settler -->
+  <TechnologyGuiElement Name="TechnologyDefinitionSettler" X="-200" Y="200">
+    <Title>%TechnologyDefinitionSettlerTitle</Title>
+    <Description>%TechnologyDefinitionSettlerDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyUnlockSettlerAbilitySmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyUnlockSettlerAbilityLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- [Hidden] Improvement: Conversion IND-Food -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterFood" X="-200" Y="200">
+    <Title>%TechnologyDefinitionBoosterFoodTitle</Title>
+    <Description>%TechnologyDefinitionBoosterFoodDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorFoodSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorFoodLarge" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- [Hidden] Improvement: Conversion IND-Industry -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterIndustry" X="-200" Y="200">
+    <Title>%TechnologyDefinitionBoosterIndustryTitle</Title>
+    <Description>%TechnologyDefinitionBoosterIndustryDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorIndustrySmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorIndustryLarge" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- [Hidden] Improvement: Conversion IND-Science -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterScience" X="-200" Y="200">
+    <Title>%TechnologyDefinitionBoosterScienceTitle</Title>
+    <Description>%TechnologyDefinitionBoosterScienceDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorScienceSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorScienceLarge" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+
+
+  <!-- ############################# -->
+  <!-- ##########  ERA 1  ########## -->
+  <!-- ############################# -->
+
+  <GuiElement Name="ClassResearch">
+    <TooltipElement Ignore="true"/>
+  </GuiElement>
+
+  <!-- Improvement: Food0 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionFood0" X="-170" Y="80">
+    <Title>%TechnologyDefinitionFood0Title</Title>
+    <Description>%TechnologyDefinitionFood0Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementFood0Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementFood0Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+  
+  <!-- Improvement: Industry0 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionIndustry0" X="170" Y="80">
+    <Title>%TechnologyDefinitionIndustry0Title</Title>
+    <Description>%TechnologyDefinitionIndustry0Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementIndustry0Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementIndustry0Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Dust0 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDust0" X="-100" Y="-40">
+    <Title>%TechnologyDefinitionDust0Title</Title>
+    <Description>%TechnologyDefinitionDust0Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementDust0Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementDust0Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Dust1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDust1" X="-100" Y="40">
+    <Title>%TechnologyDefinitionDust1Title</Title>
+    <Description>%TechnologyDefinitionDust1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionDust1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionDust1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Science0 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience0" X="100" Y="-40">
+    <Title>%TechnologyDefinitionScience0Title</Title>
+    <Description>%TechnologyDefinitionScience0Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementScience0Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementScience0Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Era 1 : Geomic Labs -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience8" X="100" Y="40">
+    <Title>%TechnologyDefinitionScience8Title</Title>
+    <Description>%TechnologyDefinitionScience8Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementScience8Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementScience8Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+  
+  <!-- Improvement: Approval 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionApproval1" X="-40" Y="100">
+    <Title>%TechnologyDefinitionApproval1Title</Title>
+    <Description>%TechnologyDefinitionApproval1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementApproval1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementApproval1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Double unlock : Improvements Defense1 & Defense5 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDefense1" X="40" Y="-100">
+    <Title>%TechnologyDefinitionDefense1Title</Title>
+    <Description>%TechnologyDefinitionDefense1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionDefense1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionDefense1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Region building: Luxury extraction (common) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionLuxuryExtractionCommon" X="-170" Y="-80">
+    <Title>%TechnologyDefinitionLuxuryExtractionCommonTitle</Title>
+    <Description>%TechnologyDefinitionLuxuryExtractionCommonDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyLuxuryExtractionCommonSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyLuxuryExtractionCommonLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Region building: Strategic resource extraction (Common) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionStrategicExtractionCommon" X="170" Y="-80">
+    <Title>%TechnologyDefinitionStrategicExtractionCommonTitle</Title>
+    <Description>%TechnologyDefinitionStrategicExtractionCommonDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyStrategicExtractionCommonSmall" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyStrategicExtractionCommonLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Search Bonus -->
+  <TechnologyGuiElement Name="TechnologyDefinitionSearchBonus" X="40" Y="100">
+    <Title>%TechnologyDefinitionSearchBonusTitle</Title>
+    <Description>%TechnologyDefinitionSearchBonusDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMapActionLootSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMapActionLootLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Map action: Parley -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMapActionParley" X="0" Y="170">
+    <Title>%TechnologyDefinitionMapActionParleyTitle</Title>
+    <Description>%TechnologyDefinitionMapActionParleyDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMapActionParleySmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMapActionParleyLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Weapon Common Tier 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponCommonTier1" X="240" Y="-40">
+    <Title>%TechnologyDefinitionWeaponCommonTier1Title</Title>
+    <Description>%TechnologyDefinitionWeaponCommonTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponCommonTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponCommonTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Common Tier 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorCommonTier1" X="240" Y="40">
+    <Title>%TechnologyDefinitionArmorCommonTier1Title</Title>
+    <Description>%TechnologyDefinitionArmorCommonTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorCommonTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorCommonTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Common Tier 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryCommonTier1" X="-240" Y="40">
+    <Title>%TechnologyDefinitionAccessoryCommonTier1Title</Title>
+    <Description>%TechnologyDefinitionAccessoryCommonTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryCommonTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryCommonTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>-->
+
+
+  <!-- Empire bonus: Marketplace : Mercenaries -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMarketplaceMercenaries" X="0" Y="-170">
+    <Title>%TechnologyDefinitionMarketplaceMercenariesTitle</Title>
+    <Description>%TechnologyDefinitionMarketplaceMercenariesDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMarketplaceMercenariesSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMarketplaceMercenariesLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+  
+  <!-- Empire bonus: Marketplace : Heroes 
+  <TechnologyGuiElement Name="TechnologyDefinitionMarketplaceHeroes" X="0" Y="-170">
+    <Title>%TechnologyDefinitionMarketplaceHeroesTitle</Title>
+    <Description>%TechnologyDefinitionMarketplaceHeroesDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMarketplaceHeroesSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMarketplaceHeroesLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>-->
+
+
+
+  <!-- ############################# -->
+  <!-- #### Era1 Faction techs ##### -->
+  <!-- ############################# -->
+  <!-- Broken Lords Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLordsUnit2" X="-40" Y="-100">
+    <Title>%UnitBrokenLordsCavalryTitle</Title>
+    <Description>%UnitBrokenLordsCavalryDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsCavalrySmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsCavalryLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Mad Fairies Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairiesUnit2" X="-40" Y="-100">
+    <Title>%UnitMadFairiesShamanTitle</Title>
+    <Description>%UnitMadFairiesShamanDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesShamanSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitMadFairiesShamanLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Rage Wizards Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizardsUnit2" X="-40" Y="-100">
+    <Title>%UnitRageWizardsWitchTitle</Title>
+    <Description>%UnitRageWizardsWitchDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsWitchSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitRageWizardsWitchLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophagesUnit2" X="-40" Y="-100">
+    <Title>%UnitNecrophagesZombatTitle</Title>
+    <Description>%UnitNecrophagesZombatDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesZombatSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitNecrophagesZombatLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Vaulters Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaultersUnit2" X="-40" Y="-100">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitVaultersDawnOfficerSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitVaultersDawnOfficerLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Roving Clans Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRovingClansUnit2" X="-40" Y="-100">
+    <Title>%UnitRovingClansKassaiTitle</Title>
+    <Description>%UnitRovingClansKassaiDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitRovingClansKassaiSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitRovingClansKassaiLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Drakkens Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDrakkensUnit2" X="-40" Y="-100">
+    <Title>%UnitDrakkensWyvernTitle</Title>
+    <Description>%UnitDrakkensWyvernDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitDrakkensWyvernSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitDrakkensWyvernLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Cultists Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionCultistsUnit2" X="-40" Y="-100">
+    <Title>%UnitCultistsFanaticTitle</Title>
+    <Description>%UnitCultistsFanaticDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitCultistsFanaticSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitCultistsFanaticLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Mezari Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMezariUnit2" X="-40" Y="-100">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitMezariDawnOfficerSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitMezariDawnOfficerLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Tutorial Faction unit#2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionTutorialUnit2" X="-40" Y="-100">
+    <Title>%UnitVaultersDawnOfficerTitle</Title>
+    <Description>%UnitVaultersDawnOfficerDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitVaultersDawnOfficerSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitVaultersDawnOfficerLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Broken Lords Quest reward Chapter1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords4" X="240" Y="-120">
+    <Title>%TechnologyDefinitionBrokenLords4Title</Title>
+    <Description>%TechnologyDefinitionBrokenLords4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Roving Clans : High Towers quest impvt-->
+  <TechnologyGuiElement Name="TechnologyDefinitionRovingClans2" X="240" Y="120">
+    <Title>%TechnologyDefinitionRovingClans2Title</Title>
+    <Description>%TechnologyDefinitionRovingClans2Description</Description>
+    <Icons DefaultSize="">
+        <Icon Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRovingClans2Small" Size="Small" />
+        <Icon Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRovingClans2Large" Size="Large" />
+      </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Mad Fairies -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairies4" X="-120" Y="240">
+    <Title>%TechnologyDefinitionMadFairies4Title</Title>
+    <Description>%TechnologyDefinitionMadFairies4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Broken Lords Unlock Unique Item of Broken Lords Quest Chapter 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords9" X="-200" Y="-200">
+    <Title>%ItemTomeBrokenLordsMainQuest1Title</Title>
+    <Description>%ItemTomeBrokenLordsMainQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Broken Lords Unlock Unique Item of Broken Lords Quest Chapter 5 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords10" X="-200" Y="-200">
+    <Title>%ItemTomeBrokenLordsMainQuest2Title</Title>
+    <Description>%ItemTomeBrokenLordsMainQuest2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Broken Lords Unlock Unique Item of Broken Lords Quest Chapter 7 and 7Alt -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords11" X="-200" Y="-200">
+    <Title>%ItemInsigniaBrokenLordsMainQuest1Title</Title>
+    <Description>%ItemInsigniaBrokenLordsMainQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Broken Lords Unlock Unique Item of Broken Lords Quest Chapter 6 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords12" X="-200" Y="-200">
+    <Title>%ItemRingBrokenLordsMainQuest1Title</Title>
+    <Description>%ItemRingBrokenLordsMainQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Broken Lords Unlock Unique Item of Broken Lords Quest Chapter 6Alt -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords13" X="-200" Y="-200">
+    <Title>%ItemRingBrokenLordsMainQuest2Title</Title>
+    <Description>%ItemRingBrokenLordsMainQuest2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages Unlock Unique Item of Necrophages Quest Chapter 6 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages5" X="-200" Y="-200">
+    <Title>%ItemTomeNecrophagesMainQuest1Title</Title>
+    <Description>%ItemTomeNecrophagesQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Mad Fairies Unlock Unique Item of Mad Fairies Main Quest Chapter 6-->
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairies7" X="-200" Y="-200">
+    <Title>%TechnologyDefinitionMadFairies7Title</Title>
+    <Description>%TechnologyDefinitionMadFairies7Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Rage Wizards Starting tech: Arcana of Matter Pillar 1 / Spell 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards7" X="-80" Y="170">
+    <Title>%TechnologyDefinitionRageWizards7Title</Title>
+    <Description>%TechnologyDefinitionRageWizards7Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards7Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards7Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Rage Wizards Starting tech: Arcana of Agility Pillar 2 / Spell 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards8" X="80" Y="170">
+    <Title>%TechnologyDefinitionRageWizards8Title</Title>
+    <Description>%TechnologyDefinitionRageWizards8Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards8Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards8Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Drakken Quest : Pride (+3 Influence per pacified villages in Region)-->
+  <TechnologyGuiElement Name="TechnologyDefinitionDrakkens1" X="-40" Y="240">
+    <Title>%TechnologyDefinitionDrakkens1Title</Title>
+    <Description>%TechnologyDefinitionDrakkens1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionDrakkens1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionDrakkens1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Drakkens Well Connected -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDrakkens7" X="-200" Y="-200">
+    <Title>%TechnologyDefinitionDrakkens7Title</Title>
+    <Description>%TechnologyDefinitionDrakkens7Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- Drakkens: Assimilation limit max 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionAssimilationLimitMax1Drakkens" X="40" Y="240">
+    <Title>%TechnologyDefinitionAssimilationLimitMax1DrakkensTitle</Title>
+    <Description>%TechnologyDefinitionAssimilationLimitMax1DrakkensDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax1DrakkensSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax1DrakkensLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <TechnologyGuiElement Name="TechnologyDefinitionQuestReward2" X="-170" Y="0">
+    <Title>%TechnologyDefinitionQuestReward2Title</Title>
+    <Description>%TechnologyDefinitionQuestReward2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionQuestReward2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionQuestReward2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  
+  
+  <!-- ############################# -->
+  <!-- ##########  ERA 2  ########## -->
+  <!-- ############################# -->
+
+  <!-- Double unlock : Improvements Food1 & Food7 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionFood1" X="-100" Y="-40">
+    <Title>%TechnologyDefinitionFood1Title</Title>
+    <Description>%TechnologyDefinitionFood1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionFood1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionFood1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Food2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionFood2" X="-100" Y="40">
+    <Title>%TechnologyDefinitionFood2Title</Title>
+    <Description>%TechnologyDefinitionFood2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementFood2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementFood2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Double unlock : Lumber Mill & Apprenticeship Registry -->
+  <TechnologyGuiElement Name="TechnologyDefinitionIndustry1" X="100" Y="-40">
+    <Title>%TechnologyDefinitionIndustry1Title</Title>
+    <Description>%TechnologyDefinitionIndustry1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionIndustry1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionIndustry1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Industry2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionIndustry2" X="100" Y="40">
+    <Title>%TechnologyDefinitionIndustry2Title</Title>
+    <Description>%TechnologyDefinitionIndustry2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementIndustry2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementIndustry2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Science3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience3" X="175" Y="0">
+    <Title>%TechnologyDefinitionScience3Title</Title>
+    <Description>%TechnologyDefinitionScience3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementScience3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementScience3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Conversion IND-Food 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterFoodBonus1" X="-170" Y="0">
+    <Title>%TechnologyDefinitionBoosterFoodBonus1Title</Title>
+    <Description>%TechnologyDefinitionBoosterFoodBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorFoodBonus1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorFoodBonus1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Conversion IND-Industry 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterIndustryBonus1" X="170" Y="80">
+    <Title>%TechnologyDefinitionBoosterIndustryBonus1Title</Title>
+    <Description>%TechnologyDefinitionBoosterIndustryBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorIndustryBonus1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorIndustryBonus1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Approval 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionApproval2" X="-40" Y="100">
+    <Title>%TechnologyDefinitionApproval2Title</Title>
+    <Description>%TechnologyDefinitionApproval2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementApproval2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementApproval2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Military bonus 1 (XP) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMilitaryRecruitmentBonus1" X="0" Y="-170">
+    <Title>%TechnologyDefinitionMilitaryRecruitmentBonus1Title</Title>
+    <Description>%TechnologyDefinitionMilitaryRecruitmentBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementMilitaryXp1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementMilitaryXp1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Prestige 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionEmpirePoint1" X="40" Y="100">
+    <Title>%TechnologyDefinitionEmpirePoint1Title</Title>
+    <Description>%TechnologyDefinitionEmpirePoint1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Unit cost reduction 1 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionUnitCostReduction1" X="-80" Y="-170">
+    <Title>%TechnologyDefinitionUnitCostReduction1Title</Title>
+    <Description>%TechnologyDefinitionUnitCostReduction1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementUnitCostReduction1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementUnitCostReduction1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>-->
+
+  <!-- Region building: Outpost 0
+  <TechnologyGuiElement Name="TechnologyDefinitionOutpost0" X="-40" Y="100">
+    <Title>%TechnologyDefinitionOutpost0Title</Title>
+    <Description>%TechnologyDefinitionOutpost0Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/POIs/WatchTower0Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/POIs/WatchTower0Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Army Size 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmySize1" X="40" Y="-100">
+    <Title>%TechnologyDefinitionArmySize1Title</Title>
+    <Description>%TechnologyDefinitionArmySize1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/ArmySizeTechnology253Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/ArmySizeTechnology253Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Ships -->
+  <TechnologyGuiElement Name="TechnologyDefinitionShip" X="-40" Y="240">
+    <Title>%TechnologyDefinitionShipTitle</Title>
+    <Description>%TechnologyDefinitionShipDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyShipSmall" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyShipLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory slot bonus 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessorySlotBonus1" X="-240" Y="-40">
+    <Title>%TechnologyDefinitionAccessorySlotBonus1Title</Title>
+    <Description>%TechnologyDefinitionAccessorySlotBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/AccessorySlotBonus1Technology255Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/AccessorySlotBonus1Technology255Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Diplomacy: Peace -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDiplomacyPeace" X="80" Y="170">
+    <Title>%TechnologyDefinitionDiplomacyPeaceTitle</Title>
+    <Description>%TechnologyDefinitionDiplomacyPeaceDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyPeaceSmall" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyPeaceLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Prisoners, Slaves and Volunteers -->
+  <TechnologyGuiElement Name="TechnologyDefinitionConstructionBuyout" X="-170" Y="80">
+    <Title>%TechnologyDefinitionConstructionBuyoutTitle</Title>
+    <Description>%TechnologyDefinitionConstructionBuyoutDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyConstructionBuyoutSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyConstructionBuyoutLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Weapon Common Tier 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponCommonTier2" X="170" Y="-80">
+    <Title>%TechnologyDefinitionWeaponCommonTier2Title</Title>
+    <Description>%TechnologyDefinitionWeaponCommonTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponCommonTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponCommonTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Common Tier 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorCommonTier2" X="170" Y="80">
+    <Title>%TechnologyDefinitionArmorCommonTier2Title</Title>
+    <Description>%TechnologyDefinitionArmorCommonTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorCommonTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorCommonTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Common Tier 2 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryCommonTier2" X="-240" Y="40">
+    <Title>%TechnologyDefinitionAccessoryCommonTier2Title</Title>
+    <Description>%TechnologyDefinitionAccessoryCommonTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryCommonTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryCommonTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Weapon Common Tier 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponCommonTier3" X="240" Y="-40">
+    <Title>%TechnologyDefinitionWeaponCommonTier3Title</Title>
+    <Description>%TechnologyDefinitionWeaponCommonTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponCommonTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponCommonTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Common Tier 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorCommonTier3" X="240" Y="40">
+    <Title>%TechnologyDefinitionArmorCommonTier3Title</Title>
+    <Description>%TechnologyDefinitionArmorCommonTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorCommonTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorCommonTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Common Tier 3 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryCommonTier3" X="-240" Y="120">
+    <Title>%TechnologyDefinitionAccessoryCommonTier3Title</Title>
+    <Description>%TechnologyDefinitionAccessoryCommonTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryCommonTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryCommonTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Marketplace : Resources -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMarketplaceResources" X="-170" Y="-80">
+    <Title>%TechnologyDefinitionMarketplaceResourcesTitle</Title>
+    <Description>%TechnologyDefinitionMarketplaceResourcesDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMarketplaceResourcesSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMarketplaceResourcesLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Road -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRoad" X="40" Y="240">
+    <Title>%TechnologyDefinitionRoadTitle</Title>
+    <Description>%TechnologyDefinitionRoadDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRoadSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRoadLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Assimilation limit max 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionAssimilationLimitMax1" X="-80" Y="170">
+    <Title>%TechnologyDefinitionAssimilationLimitMax1Title</Title>
+    <Description>%TechnologyDefinitionAssimilationLimitMax1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+  
+
+  <!-- ############################# -->
+  <!-- #### Era2 Faction techs ##### -->
+  <!-- ############################# -->
+
+  <!-- Broken Lords Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLordsUnit3" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionBrokenLordsUnit3Title</Title>
+    <Description>%TechnologyDefinitionBrokenLordsUnit3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitBrokenLordsBlackBishopSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitBrokenLordsBlackBishopLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Mad Fairies Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairiesUnit3" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionMadFairiesUnit3Title</Title>
+    <Description>%TechnologyDefinitionMadFairiesUnit3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitMadFairiesForestSpiritSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitMadFairiesForestSpiritLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Rage Wizards Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizardsUnit3" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionRageWizardsUnit3Title</Title>
+    <Description>%TechnologyDefinitionRageWizardsUnit3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitRageWizardsPhoenixSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitRageWizardsPhoenixLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophagesUnit3" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionNecrophagesUnit3Title</Title>
+    <Description>%TechnologyDefinitionNecrophagesUnit3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitNecrophagesLichbugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitNecrophagesLichbugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Vaulters Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaultersUnit3" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionVaultersUnit3Title</Title>
+    <Description>%TechnologyDefinitionVaultersUnit3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitVaultersTitanSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitVaultersTitanLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Roving Clans Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRovingClansUnit3" X="-40" Y="-100">
+    <Title>%UnitRovingClansBerzerkTitle</Title>
+    <Description>%UnitRovingClansBerzerkDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitRovingClansBerzerkSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitRovingClansBerzerkLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Drakkens Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDrakkensUnit3" X="-40" Y="-100">
+    <Title>%UnitDrakkensAncientDragonTitle</Title>
+    <Description>%UnitDrakkensAncientDragonDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitDrakkensAncientDragonSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitDrakkensAncientDragonLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Cultists Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionCultistsUnit3" X="-40" Y="-100">
+    <Title>%UnitCultistsNamelessGuardTitle</Title>
+    <Description>%UnitCultistsNamelessGuardDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitCultistsNamelessGuardSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitCultistsNamelessGuardLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Mezari Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMezariUnit3" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionVaultersTitanTitle</Title>
+    <Description>%TechnologyDefinitionVaultersTitanDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitMezariTitanSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitMezariTitanLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Tutorial Faction unit#3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionTutorialUnit3" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionVaultersTitanTitle</Title>
+    <Description>%TechnologyDefinitionVaultersTitanDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Units/UnitVaultersTitanSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Units/UnitVaultersTitanLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords6" X="-120" Y="240">
+    <Title>%TechnologyDefinitionBrokenLords6Title</Title>
+    <Description>%TechnologyDefinitionBrokenLords6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords6Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords6Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Winter Shelters (Winter Food reduction immunity) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters6" X="-240" Y="-120">
+    <Title>%TechnologyDefinitionVaulters6Title</Title>
+    <Description>%TechnologyDefinitionVaulters6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters6Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters6Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Deep Generator -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters2" X="-120" Y="240">
+    <Title>%TechnologyDefinitionVaulters2Title</Title>
+    <Description>%TechnologyDefinitionVaulters2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages Improvement: Cannon Fodder -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages6" X="120" Y="-240">
+    <Title>%TechnologyDefinitionNecrophages6Title</Title>
+    <Description>%TechnologyDefinitionNecrophages6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages6Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages6Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages: Sacrifice -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages8" X="0" Y="170">
+    <Title>%TechnologyDefinitionNecrophages8Title</Title>
+    <Description>%TechnologyDefinitionNecrophages8Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages8Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages8Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Rage Wizards Improvement: Verda's Temple-->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards2" X="240" Y="120">
+    <Title>%TechnologyDefinitionRageWizards2Title</Title>
+    <Description>%TechnologyDefinitionRageWizards2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRageWizards2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRageWizards2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Rage Wizards tech: Arcana of Authority Pillar 3 / Spell 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards9" X="-120" Y="240">
+    <Title>%TechnologyDefinitionRageWizards9Title</Title>
+    <Description>%TechnologyDefinitionRageWizards9Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards9Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards9Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Roving Clans Privateers -->
+  <TechnologyGuiElement Name="TechnologyDefinitionPrivateersRovingClans" X="-80" Y="-170">
+    <Title>%TechnologyDefinitionPrivateersRovingClansTitle</Title>
+    <Description>%TechnologyDefinitionPrivateersRovingClansDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionPrivateersRovingClansSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionPrivateersRovingClansLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  
+
+  <!-- Cultists : Empire Bonus-->
+  <TechnologyGuiElement Name="TechnologyDefinitionCultists13" X="-120" Y="-240">
+    <Title>%TechnologyDefinitionCultists13Title</Title>
+    <Description>%TechnologyDefinitionCultists13Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionCultists13Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionCultists13Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Cultists : Empire Bonus-->
+  <TechnologyGuiElement Name="TechnologyDefinitionCultists12" X="240" Y="-120">
+    <Title>%TechnologyDefinitionCultists12Title</Title>
+    <Description>%TechnologyDefinitionCultists12Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionCultists12Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionCultists12Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+  
+  
+  <!-- ################################# -->
+  <!-- ### Era2 Faction quest techs #### -->
+  <!-- ################################# -->
+
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairies3" X="120" Y="240">
+    <Title>%TechnologyDefinitionMadFairies3Title</Title>
+    <Description>%TechnologyDefinitionMadFairies3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!--BL Quest-->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords5" X="40" Y="-240">
+    <Title>%TechnologyDefinitionBrokenLords5Title</Title>
+    <Description>%TechnologyDefinitionBrokenLords5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords5Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords5Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Drakkens quest : Hatchery quest impvt-->
+  <TechnologyGuiElement Name="TechnologyDefinitionDrakkens2" X="-40" Y="-240">
+    <Title>%TechnologyDefinitionDrakkens2Title</Title>
+    <Description>%TechnologyDefinitionDrakkens2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDrakkens2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDrakkens2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+  <!-- Rage Wizards: All spells' level increase -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards12" X="80" Y="-170">
+    <Title>%TechnologyDefinitionRageWizards12Title</Title>
+    <Description>%TechnologyDefinitionRageWizards12Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards12Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards12Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+
+
+  <!-- ############################# -->
+  <!-- ##########  ERA 3  ########## -->
+  <!-- ############################# -->
+
+  <!-- Improvement: Food8 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionFood8" X="-170" Y="80">
+    <Title>%TechnologyDefinitionFood8Title</Title>
+    <Description>%TechnologyDefinitionFood8Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementFood8Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementFood8Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+  
+  <!-- Improvement: Dust2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDust2" X="-100" Y="-40">
+    <Title>%TechnologyDefinitionDust2Title</Title>
+    <Description>%TechnologyDefinitionDust2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementDust2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementDust2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Dust3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDust3" X="-100" Y="40">
+    <Title>%TechnologyDefinitionDust3Title</Title>
+    <Description>%TechnologyDefinitionDust3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementDust3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementDust3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Double unlock : Improvements Science2 & Science9 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience2" X="100" Y="-40">
+    <Title>%TechnologyDefinitionScience2Title</Title>
+    <Description>%TechnologyDefinitionScience2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionScience2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionScience2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Double unlock : Improvements Science1 & Science7 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience1" X="100" Y="40">
+    <Title>%TechnologyDefinitionScience1Title</Title>
+    <Description>%TechnologyDefinitionScience1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionScience1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionScience1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  
+
+  <!-- Improvement: Prestige 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionEmpirePoint2" X="40" Y="100">
+    <Title>%TechnologyDefinitionEmpirePoint2Title</Title>
+    <Description>%TechnologyDefinitionEmpirePoint2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Conversion IND-Science 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterScienceBonus1" X="170" Y="80">
+    <Title>%TechnologyDefinitionBoosterScienceBonus1Title</Title>
+    <Description>%TechnologyDefinitionBoosterScienceBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorScienceBonus1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorScienceBonus1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>-->
+
+  <!-- Region building: Docks -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDocks" X="80" Y="170">
+    <Title>%TechnologyDefinitionDocksTitle</Title>
+    <Description>%TechnologyDefinitionDocksDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDocksSmall" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDocksLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Trade route bonus 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionTradeRouteBonus1" X="-80" Y="170">
+    <Title>%TechnologyDefinitionTradeRouteBonus1Title</Title>
+    <Description>%TechnologyDefinitionTradeRouteBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionTradeRouteBonus1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionTradeRouteBonus1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Defense 2 
+  <TechnologyGuiElement Name="TechnologyDefinitionDefense2" X="40" Y="-100">
+    <Title>%TechnologyDefinitionDefense2Title</Title>
+    <Description>%TechnologyDefinitionDefense2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Defense recovery 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDefenseRecovery1" X="0" Y="-100">
+    <Title>%TechnologyDefinitionDefenseRecovery1Title</Title>
+    <Description>%TechnologyDefinitionDefenseRecovery1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionDefenseRecovery1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionDefenseRecovery1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: HP regen 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionLifeRegeneration1" X="40" Y="-100">
+    <Title>%TechnologyDefinitionLifeRegeneration1Title</Title>
+    <Description>%TechnologyDefinitionLifeRegeneration1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementUnitRegeneration1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementUnitRegeneration1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>-->
+
+  <!-- Region building: Outpost 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionOutpost1" X="-40" Y="240">
+    <Title>%TechnologyDefinitionOutpost1Title</Title>
+    <Description>%TechnologyDefinitionOutpost1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/POIs/WatchTower1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/POIs/WatchTower1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>-->
+
+  <!-- Region building: Luxury extraction (uncommon) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionLuxuryExtractionUncommon" X="-170" Y="-80">
+    <Title>%TechnologyDefinitionLuxuryExtractionUncommonTitle</Title>
+    <Description>%TechnologyDefinitionLuxuryExtractionUncommonDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyLuxuryExtractionUncommonSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyLuxuryExtractionUncommonLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Region building: Strategic resource extraction (3) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionStrategicExtractionUncommon" X="170" Y="-80">
+    <Title>%TechnologyDefinitionStrategicExtractionUncommonTitle</Title>
+    <Description>%TechnologyDefinitionStrategicExtractionUncommonDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyStrategicExtractionUncommonSmall" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyStrategicExtractionUncommonLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Expansion disapproval Reduction 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionExpansionDisapprovalReduction1" X="-40" Y="100">
+    <Title>%TechnologyDefinitionExpansionDisapprovalReduction1Title</Title>
+    <Description>%TechnologyDefinitionExpansionDisapprovalReduction1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyExpansionDisapprovalReduction1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyExpansionDisapprovalReduction1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Weapon Uncommon Tier 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponUncommonTier1" X="240" Y="-40">
+    <Title>%TechnologyDefinitionWeaponUncommonTier1Title</Title>
+    <Description>%TechnologyDefinitionWeaponUncommonTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponUncommonTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponUncommonTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Uncommon Tier 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorUncommonTier1" X="240" Y="40">
+    <Title>%TechnologyDefinitionArmorUncommonTier1Title</Title>
+    <Description>%TechnologyDefinitionArmorUncommonTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorUncommonTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorUncommonTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Uncommon Tier 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryUncommonTier1" X="-240" Y="40">
+    <Title>%TechnologyDefinitionAccessoryUncommonTier1Title</Title>
+    <Description>%TechnologyDefinitionAccessoryUncommonTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryUncommonTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryUncommonTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>-->
+
+  <!-- Stockpile: All Level 1-->
+  <TechnologyGuiElement Name="TechnologyDefinitionAllBoosterLevel1" X="170" Y="80">
+    <Title>%TechnologyDefinitionAllBoosterLevel1Title</Title>
+    <Description>%TechnologyDefinitionAllBoosterLevel1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionAllBoosterLevel1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionAllBoosterLevel1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  
+  
+  <!-- ############################# -->
+  <!-- #### Era3 Faction techs ##### -->
+  <!-- ############################# -->
+
+  
+
+  <!-- Strength of the Vault -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters3" X="40" Y="-170">
+    <Title>%TechnologyDefinitionVaulters3Title</Title>
+    <Description>%TechnologyDefinitionVaulters3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Endless Recycling -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters4" X="240" Y="-120">
+    <Title>%TechnologyDefinitionVaulters4Title</Title>
+    <Description>%TechnologyDefinitionVaulters4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages Quest Reward: +4 Food per Pop on City -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages7" X="-240" Y="40">
+    <Title>%TechnologyDefinitionNecrophages7Title</Title>
+    <Description>%TechnologyDefinitionNecrophages7Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementNecrophages7Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementNecrophages7Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages Quest Reward: XP gained in Winter battles is doubled -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages11" X="0" Y="-240">
+    <Title>%TechnologyDefinitionNecrophages11Title</Title>
+    <Description>%TechnologyDefinitionNecrophages11Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages11Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages11Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- RW tech: Arcana of Renewal Pillar 4 / Spell 4 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards10" X="0" Y="170">
+    <Title>%TechnologyDefinitionRageWizards10Title</Title>
+    <Description>%TechnologyDefinitionRageWizards10Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards10Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards10Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- RW : All pillars' level increase -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards14" X="-170" Y="0">
+    <Title>%TechnologyDefinitionRageWizards14Title</Title>
+    <Description>%TechnologyDefinitionRageWizards14Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards14Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards14Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  
+
+
+
+  <!-- ################################# -->
+  <!-- ### Era3 Faction quest techs #### -->
+  <!-- ################################# -->
+
+  <!-- Drakkens: Assimilation limit max 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionAssimilationLimitMax2Drakkens" X="120" Y="240">
+    <Title>%TechnologyDefinitionAssimilationLimitMax2DrakkensTitle</Title>
+    <Description>%TechnologyDefinitionAssimilationLimitMax2DrakkensDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax2DrakkensSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax2DrakkensLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- [RW] Winter bonus on pillars -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards3" X="-40" Y="-170">
+    <Title>%TechnologyDefinitionRageWizards3Title</Title>
+    <Description>%TechnologyDefinitionRageWizards3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!--RC Quest-->
+  <TechnologyGuiElement Name="TechnologyDefinitionRovingClans3" X="-240" Y="-40">
+    <Title>%TechnologyDefinitionRovingClans3Title</Title>
+    <Description>%TechnologyDefinitionRovingClans3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRovingClans3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRovingClans3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  
+
+  <!-- ############################# -->
+  <!-- ##########  ERA 4  ########## -->
+  <!-- ############################# -->
+
+  <!-- Improvement: Food3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionFood3" X="-100" Y="-40">
+    <Title>%TechnologyDefinitionFood3Title</Title>
+    <Description>%TechnologyDefinitionFood3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionFood3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionFood3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+  
+  <!-- Improvement: Food4 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionFood4" X="-100" Y="40">
+    <Title>%TechnologyDefinitionFood4Title</Title>
+    <Description>%TechnologyDefinitionFood4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionFood4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionFood4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Industry3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionIndustry3" X="100" Y="-40">
+    <Title>%TechnologyDefinitionIndustry3Title</Title>
+    <Description>%TechnologyDefinitionIndustry3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementIndustry3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementIndustry3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Industry4 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionIndustry4" X="100" Y="40">
+    <Title>%TechnologyDefinitionIndustry4Title</Title>
+    <Description>%TechnologyDefinitionIndustry4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionIndustry4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionIndustry4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Conversion IND-Food 2 
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterFoodBonus2" X="-170" Y="80">
+    <Title>%TechnologyDefinitionBoosterFoodBonus2Title</Title>
+    <Description>%TechnologyDefinitionBoosterFoodBonus2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorFoodBonus2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorFoodBonus2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Conversion IND-Industry 2
+  <TechnologyGuiElement Name="TechnologyDefinitionBoosterIndustryBonus2" X="170" Y="80">
+    <Title>%TechnologyDefinitionBoosterIndustryBonus2Title</Title>
+    <Description>%TechnologyDefinitionBoosterIndustryBonus2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/BoosterGeneratorIndustryBonus2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/BoosterGeneratorIndustryBonus2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Military recruitment bonus 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMilitaryRecruitmentBonus3" X="40" Y="-100">
+    <Title>%TechnologyDefinitionMilitaryRecruitmentBonus3Title</Title>
+    <Description>%TechnologyDefinitionMilitaryRecruitmentBonus3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementMilitaryXp3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementMilitaryXp3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Region building: Strategic resource extraction (Rare) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionStrategicExtractionRare" X="170" Y="-80">
+    <Title>%TechnologyDefinitionStrategicExtractionRareTitle</Title>
+    <Description>%TechnologyDefinitionStrategicExtractionRareDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyStrategicExtractionRareSmall" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyStrategicExtractionRareLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Region building: Luxury extraction (rare) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionLuxuryExtractionRare" X="-170" Y="-80">
+    <Title>%TechnologyDefinitionLuxuryExtractionRareTitle</Title>
+    <Description>%TechnologyDefinitionLuxuryExtractionRareDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyLuxuryExtractionRareSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyLuxuryExtractionRareLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Map action: archaeology -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMapActionArchaeology" X="40" Y="100">
+    <Title>%TechnologyDefinitionMapActionArchaeologyTitle</Title>
+    <Description>%TechnologyDefinitionMapActionArchaeologyDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMapActionArchaeologySmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMapActionArchaeologyLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Roads speed bonus -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRoadSpeedBonus1" X="-40" Y="100">
+    <Title>%TechnologyDefinitionRoadSpeedBonus1Title</Title>
+    <Description>%TechnologyDefinitionRoadSpeedBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementRoadSpeedBonus1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementRoadSpeedBonus1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Military bonus 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMilitaryBonus1" X="-80" Y="-170">
+    <Title>%TechnologyDefinitionMilitaryBonus1Title</Title>
+    <Description>%TechnologyDefinitionMilitaryBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMilitaryBonus1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMilitaryBonus1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Diplomacy: Alliances -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDiplomacyAlliance" X="0" Y="170">
+    <Title>%TechnologyDefinitionDiplomacyAllianceTitle</Title>
+    <Description>%TechnologyDefinitionDiplomacyAllianceDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAllianceSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAllianceLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Army size 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmySize2" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionArmySize2Title</Title>
+    <Description>%TechnologyDefinitionArmySize2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/ArmySizeTechnology454Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/ArmySizeTechnology454Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Privateers -->
+  <TechnologyGuiElement Name="TechnologyDefinitionPrivateers" X="80" Y="-170">
+    <Title>%TechnologyDefinitionPrivateersTitle</Title>
+    <Description>%TechnologyDefinitionPrivateersDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionPrivateersSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionPrivateersLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Weapon Rare Tier 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponRareTier1" X="240" Y="-40">
+    <Title>%TechnologyDefinitionWeaponRareTier1Title</Title>
+    <Description>%TechnologyDefinitionWeaponRareTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponRareTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponRareTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Rare Tier 1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorRareTier1" X="240" Y="40">
+    <Title>%TechnologyDefinitionArmorRareTier1Title</Title>
+    <Description>%TechnologyDefinitionArmorRareTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorRareTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorRareTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Rare Tier 1 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryRareTier1" X="-240" Y="40">
+    <Title>%TechnologyDefinitionAccessoryRareTier1Title</Title>
+    <Description>%TechnologyDefinitionAccessoryRareTier1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryRareTier1Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryRareTier1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>-->
+
+
+  <!-- Improvement: Science4 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience4" X="170" Y="80">
+    <Title>%TechnologyDefinitionScience4Title</Title>
+    <Description>%TechnologyDefinitionScience4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementScience4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementScience4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Assimilation limit max 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionAssimilationLimitMax2" X="-40" Y="100">
+    <Title>%TechnologyDefinitionAssimilationLimitMax2Title</Title>
+    <Description>%TechnologyDefinitionAssimilationLimitMax2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAssimilationLimitMax2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Stockpile: All Level 2-->
+  <TechnologyGuiElement Name="TechnologyDefinitionAllBoosterLevel2" X="170" Y="0">
+    <Title>%TechnologyDefinitionAllBoosterLevel2Title</Title>
+    <Description>%TechnologyDefinitionAllBoosterLevel2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionAllBoosterLevel2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionAllBoosterLevel2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+
+
+  <!-- ############################# -->
+  <!-- #### Era4 Faction techs ##### -->
+  <!-- ############################# -->
+
+  <!--MF Quest: Arcane Repository of Zaltana-->
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairies5" X="-120" Y="240">
+    <Title>%TechnologyDefinitionMadFairies5Title</Title>
+    <Description>%TechnologyDefinitionMadFairies5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementMadFairies5Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementMadFairies5Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  
+  
+
+  <!-- Vaulters Final Tech Reward: Extreme Yields -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters7" X="240" Y="-120">
+    <Title>%TechnologyDefinitionVaulters7Title</Title>
+    <Description>%TechnologyDefinitionVaulters7Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionVaulters7Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionVaulters7Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Vaulters Tech reward: Resource Magnetron -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters9" X="240" Y="120">
+    <Title>%TechnologyDefinitionVaulters9Title</Title>
+    <Description>%TechnologyDefinitionVaulters9Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters9Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters9Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!--Tech reward: Final wonder to built-->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords7" X="-80" Y="170">
+    <Title>%TechnologyDefinitionBrokenLords7Title</Title>
+    <Description>%TechnologyDefinitionBrokenLords7Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementBrokenLords7Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementBrokenLords7Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!--Tech reward: Trait instant heal battle-->
+  <TechnologyGuiElement Name="TechnologyDefinitionBrokenLords8" X="80" Y="170">
+    <Title>%TechnologyDefinitionBrokenLords8Title</Title>
+    <Description>%TechnologyDefinitionBrokenLords8Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords8Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionBrokenLords8Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- V Quest --><!--
+  <TechnologyGuiElement Name="TechnologyDefinitionCustomTrait10" X="-240" Y="-40">
+    <Title>%TechnologyDefinitionCustomTrait10Title</Title>
+    <Description>%TechnologyDefinitionCustomTrait10Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionCustomTrait10Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionCustomTrait10Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>-->
+
+  <!-- Mad Fairies: defense bonus on forests -->
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairies2" X="0" Y="-170">
+    <Title>%TechnologyDefinitionMadFairies2Title</Title>
+    <Description>%TechnologyDefinitionMadFairies2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages: Necro boost-->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages9" X="120" Y="-240">
+    <Title>%TechnologyDefinitionNecrophages9Title</Title>
+    <Description>%TechnologyDefinitionNecrophages9Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementNecrophages9Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementNecrophages9Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Necrophages: Mindless Slaughter -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages10" X="80" Y="170">
+    <Title>%TechnologyDefinitionNecrophages10Title</Title>
+    <Description>%TechnologyDefinitionNecrophages10Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages10Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionNecrophages10Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Altar of Transcendence (Palladian/Hyperium) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards4Strategic46" X="-40" Y="240">
+    <Title>%TechnologyDefinitionRageWizards4Strategic46Title</Title>
+    <Description>%TechnologyDefinitionRageWizards4Strategic46Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRageWizards4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRageWizards4Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Altar of Transcendence (Adamantian/Mithrite) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards4Strategic35" X="-40" Y="240">
+    <Title>%TechnologyDefinitionRageWizards4Strategic35Title</Title>
+    <Description>%TechnologyDefinitionRageWizards4Strategic35Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRageWizards4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRageWizards4Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Quest End Reward (Boost pillars/Spells) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards6" X="120" Y="240">
+    <Title>%TechnologyDefinitionRageWizards6Title</Title>
+    <Description>%TechnologyDefinitionRageWizards6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards6Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards6Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- RW tech: Arcana of Rematerializing Pillar 5 / Spell 5 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards11" X="40" Y="240">
+    <Title>%TechnologyDefinitionRageWizards11Title</Title>
+    <Description>%TechnologyDefinitionRageWizards11Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards11Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards11Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+
+  <TechnologyGuiElement Name="TechnologyDefinitionRovingClans4" X="-170" Y="0">
+    <Title>%TechnologyDefinitionRovingClans4Title</Title>
+    <Description>%TechnologyDefinitionRovingClans4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRovingClans4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRovingClans4Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <TechnologyGuiElement Name="TechnologyDefinitionRovingClans5" X="-170" Y="80">
+    <Title>%TechnologyDefinitionRovingClans5Title</Title>
+    <Description>%TechnologyDefinitionRovingClans5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRovingClans5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRovingClans5Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Drakkens quest : final quest impvt-->
+  <TechnologyGuiElement Name="TechnologyDefinitionDrakkens4" X="80" Y="170">
+    <Title>%TechnologyDefinitionDrakkens4Title</Title>
+    <Description>%TechnologyDefinitionDrakkens4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDrakkens4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDrakkens4Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Drakkens quest : Empire Bonus Ending Reward-->
+  <TechnologyGuiElement Name="TechnologyDefinitionDrakkens5" X="-80" Y="170">
+    <Title>%TechnologyDefinitionDrakkens5Title</Title>
+    <Description>%TechnologyDefinitionDrakkens5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionDrakkens5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionDrakkens5Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Cultists quest : impvt-->
+  <TechnologyGuiElement Name="TechnologyDefinitionCultists3" X="175" Y="0">
+    <Title>%TechnologyDefinitionCultists3Title</Title>
+    <Description>%TechnologyDefinitionCultists3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementCultists3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementCultists3Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+      <!-- Cultists quest : Empire Bonus-->
+  <TechnologyGuiElement Name="TechnologyDefinitionCultists4" X="-40" Y="-240">
+    <Title>%TechnologyDefinitionCultists4Title</Title>
+    <Description>%TechnologyDefinitionCultists4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionCultists4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionCultists4Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  <!-- Cultists quest : Empire Bonus-->
+  <TechnologyGuiElement Name="TechnologyDefinitionCultists5" X="40" Y="-240">
+    <Title>%TechnologyDefinitionCultists5Title</Title>
+    <Description>%TechnologyDefinitionCultists5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionCultists5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionCultists5Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition4" />
+  </TechnologyGuiElement>
+
+  
+  
+
+  <!-- ############################# -->
+  <!-- ##########  ERA 5  ########## -->
+  <!-- ############################# -->
+
+  <!-- Improvement Industry6 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionIndustry6" X="100" Y="-40">
+    <Title>%CityImprovementIndustry6Title</Title>
+    <Description>%CityImprovementIndustry6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementIndustry6Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementIndustry6Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Double unlock : Improvements Dust4 & Dust8 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDust4" X="-100" Y="-40">
+    <Title>%TechnologyDefinitionDust4Title</Title>
+    <Description>%TechnologyDefinitionDust4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionDust4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionDust4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Dust5 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDust5" X="-100" Y="40">
+    <Title>%TechnologyDefinitionDust5Title</Title>
+    <Description>%TechnologyDefinitionDust5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementDust5Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementDust5Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  
+
+  <!-- Double unlock : Science5 & Science6 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience5" X="100" Y="40">
+    <Title>%TechnologyDefinitionScience5Title</Title>
+    <Description>%TechnologyDefinitionScience5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionScience5Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionScience5Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Outpost 2 & Trade Route Bonus 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionTradeRouteBonus3" X="40" Y="240">
+    <Title>%TechnologyDefinitionTradeRouteBonus3Title</Title>
+    <Description>%TechnologyDefinitionTradeRouteBonus3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionTradeRouteBonus3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionTradeRouteBonus3Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Prestige 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionEmpirePoint3" X="40" Y="100">
+    <Title>%TechnologyDefinitionEmpirePoint3Title</Title>
+    <Description>%TechnologyDefinitionEmpirePoint3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Prestige 4 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionEmpirePoint4" X="80" Y="170">
+    <Title>%TechnologyDefinitionEmpirePoint4Title</Title>
+    <Description>%TechnologyDefinitionEmpirePoint4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Approval 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionApproval3" X="-40" Y="100">
+    <Title>%TechnologyDefinitionApproval3Title</Title>
+    <Description>%TechnologyDefinitionApproval3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementApproval3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementApproval3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Approval 4 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionApproval4" X="-80" Y="170">
+    <Title>%TechnologyDefinitionApproval4Title</Title>
+    <Description>%TechnologyDefinitionApproval4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementApproval4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementApproval4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Trade route bonus 2 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionTradeRouteBonus2" X="-170" Y="-80">
+    <Title>%TechnologyDefinitionTradeRouteBonus2Title</Title>
+    <Description>%TechnologyDefinitionTradeRouteBonus2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementTradeRoutes2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementTradeRoutes2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Trade route bonus 3 --><!--
+  <TechnologyGuiElement Name="TechnologyDefinitionTradeRouteBonus3" X="-170" Y="80">
+    <Title>%TechnologyDefinitionTradeRouteBonus3Title</Title>
+    <Description>%TechnologyDefinitionTradeRouteBonus3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementTradeRoutes3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementTradeRoutes3Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Military XP 5 
+  <TechnologyGuiElement Name="TechnologyDefinitionMilitaryRecruitmentBonus5" X="0" Y="-170">
+    <Title>%TechnologyDefinitionMilitaryRecruitmentBonus5Title</Title>
+    <Description>%TechnologyDefinitionMilitaryRecruitmentBonus5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementMilitaryXP5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementMilitaryXP5Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Defense 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDefense3" X="40" Y="-100">
+    <Title>%TechnologyDefinitionDefense3Title</Title>
+    <Description>%TechnologyDefinitionDefense3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense3Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Defense recovery 2 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionDefenseRecovery2" X="80" Y="-170">
+    <Title>%TechnologyDefinitionDefenseRecovery2Title</Title>
+    <Description>%TechnologyDefinitionDefenseRecovery2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: HP regen 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionLifeRegeneration2" X="-40" Y="-100">
+    <Title>%TechnologyDefinitionLifeRegeneration2Title</Title>
+    <Description>%TechnologyDefinitionLifeRegeneration2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementLifeRegeneration2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementLifeRegeneration2Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+  
+  <!-- Region building: Outpost 2 --><!--
+  <TechnologyGuiElement Name="TechnologyDefinitionOutpost2" X="-40" Y="240">
+    <Title>%TechnologyDefinitionOutpost2Title</Title>
+    <Description>%TechnologyDefinitionOutpost2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/POIs/WatchTower2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/POIs/WatchTower2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: ocean travel speed bonus 1 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionOceanTravelSpeedBonus1" X="40" Y="240">
+    <Title>%TechnologyDefinitionOceanTravelSpeedBonus1Title</Title>
+    <Description>%TechnologyDefinitionOceanTravelSpeedBonus1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionOceanTravelSpeedBonus1Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionOceanTravelSpeedBonus1Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Weapon Uncommon Tier 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponUncommonTier2" X="170" Y="-80">
+    <Title>%TechnologyDefinitionWeaponUncommonTier2Title</Title>
+    <Description>%TechnologyDefinitionWeaponUncommonTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponUncommonTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponUncommonTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Uncommon Tier 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorUncommonTier2" X="170" Y="80">
+    <Title>%TechnologyDefinitionArmorUncommonTier2Title</Title>
+    <Description>%TechnologyDefinitionArmorUncommonTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorUncommonTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorUncommonTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Uncommon Tier 2 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryUncommonTier2" X="-240" Y="40">
+    <Title>%TechnologyDefinitionAccessoryUncommonTier2Title</Title>
+    <Description>%TechnologyDefinitionAccessoryUncommonTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryUncommonTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryUncommonTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Weapon Uncommon Tier 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponUncommonTier3" X="240" Y="-40">
+    <Title>%TechnologyDefinitionWeaponUncommonTier3Title</Title>
+    <Description>%TechnologyDefinitionWeaponUncommonTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponUncommonTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponUncommonTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Uncommon Tier 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorUncommonTier3" X="240" Y="40">
+    <Title>%TechnologyDefinitionArmorUncommonTier3Title</Title>
+    <Description>%TechnologyDefinitionArmorUncommonTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorUncommonTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorUncommonTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Uncommon Tier 3 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryUncommonTier3" X="-240" Y="-40">
+    <Title>%TechnologyDefinitionAccessoryUncommonTier3Title</Title>
+    <Description>%TechnologyDefinitionAccessoryUncommonTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryUncommonTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryUncommonTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>-->
+
+  
+
+  <!-- Empire bonus: Expansion disapproval reduction 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionExpansionDisapprovalReduction2" X="-40" Y="240">
+    <Title>%TechnologyDefinitionExpansionDisapprovalReduction2Title</Title>
+    <Description>%TechnologyDefinitionExpansionDisapprovalReduction2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyExpansionDisapprovalReduction2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyExpansionDisapprovalReduction2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+
+  
+  <!-- ############################# -->
+  <!-- #### Era5 Faction techs ##### -->
+  <!-- ############################# -->
+
+  <!-- Necro -->
+  <TechnologyGuiElement Name="TechnologyDefinitionNecrophages3" X="-80" Y="-170">
+    <Title>%TechnologyDefinitionNecrophages3Title</Title>
+    <Description>%TechnologyDefinitionNecrophages3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  <!-- RW : All spells' level increase -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards13" X="80" Y="-170">
+    <Title>%TechnologyDefinitionRageWizards13Title</Title>
+    <Description>%TechnologyDefinitionRageWizards13Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards13Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards13Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+
+  
+  
+  <!-- ############################# -->
+  <!-- #### Era5 Quest techs   ##### -->
+  <!-- ############################# -->
+    
+  <!--MF Quest: Ending Reward-->
+  <TechnologyGuiElement Name="TechnologyDefinitionMadFairies6" X="170" Y="0">
+    <Title>%TechnologyDefinitionMadFairies6Title</Title>
+    <Description>%TechnologyDefinitionMadFairies6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies6Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionMadFairies6Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition5" />
+  </TechnologyGuiElement>
+  
+  
+  <!-- ############################# -->
+  <!-- ##########  ERA 6  ########## -->
+  <!-- ############################# -->
+
+  <!-- Improvement: Food5 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionFood5" X="-100" Y="-40">
+    <Title>%TechnologyDefinitionFood5Title</Title>
+    <Description>%TechnologyDefinitionFood5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+  
+  <!-- Empire Improvement: Food6 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionFood6" X="-170" Y="80">
+    <Title>%TechnologyDefinitionFood6Title</Title>
+    <Description>%TechnologyDefinitionFood6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionFood6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionFood6Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire Improvement: Industry5 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionIndustry5" X="170" Y="-80">
+    <Title>%TechnologyDefinitionIndustry5Title</Title>
+    <Description>%TechnologyDefinitionIndustry5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionIndustry5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionIndustry5Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire Improvement: Dust6 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionDust6" X="-170" Y="-80">
+    <Title>%TechnologyDefinitionDust6Title</Title>
+    <Description>%TechnologyDefinitionDust6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionDust6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionDust6Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Science6 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionScience6" X="170" Y="80">
+    <Title>%TechnologyDefinitionScience6Title</Title>
+    <Description>%TechnologyDefinitionScience6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionScience6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionScience6Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Empire1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionEmpire1" X="0" Y="170">
+    <Title>%TechnologyDefinitionEmpire1Title</Title>
+    <Description>%TechnologyDefinitionEmpire1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionEmpire1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionEmpire1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: UnitImproved1 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionUnitImproved1" X="0" Y="-170">
+    <Title>%TechnologyDefinitionUnitImproved1Title</Title>
+    <Description>%TechnologyDefinitionUnitImproved1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionUnitImproved1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionUnitImproved1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Approval 5 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionApproval5" X="-40" Y="100">
+    <Title>%TechnologyDefinitionApproval5Title</Title>
+    <Description>%TechnologyDefinitionApproval5Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Endless ship -->
+  <TechnologyGuiElement Name="TechnologyDefinitionEndlessTemple" X="170" Y="0">
+    <Title>%TechnologyDefinitionEndlessTempleTitle</Title>
+    <Description>%TechnologyDefinitionEndlessTempleDescription</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementEndlessTempleSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementEndlessTempleLarge" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Improvement: Trade route bonus 4 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionTradeRouteBonus4" X="-170" Y="-80">
+    <Title>%TechnologyDefinitionTradeRouteBonus4Title</Title>
+    <Description>%TechnologyDefinitionTradeRouteBonus4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementTradeRoutes4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementTradeRoutes4Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Defense 4 
+  <TechnologyGuiElement Name="TechnologyDefinitionDefense4" X="80" Y="-170">
+    <Title>%TechnologyDefinitionDefense4Title</Title>
+    <Description>%TechnologyDefinitionDefense4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense4Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Ocean travel speed bonus 2 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionOceanTravelSpeedBonus2" X="0" Y="170">
+    <Title>%TechnologyDefinitionOceanTravelSpeedBonus2Title</Title>
+    <Description>%TechnologyDefinitionOceanTravelSpeedBonus2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionOceanTravelSpeedBonus2Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionOceanTravelSpeedBonus2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  
+
+  <!-- Empire bonus: Military bonus 2 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionMilitaryBonus2" X="80" Y="-170">
+    <Title>%TechnologyDefinitionMilitaryBonus2Title</Title>
+    <Description>%TechnologyDefinitionMilitaryBonus2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyMilitaryBonus2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyMilitaryBonus2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Army size 3 
+  <TechnologyGuiElement Name="TechnologyDefinitionArmySize3" X="0" Y="-170">
+    <Title>%TechnologyDefinitionArmySize3Title</Title>
+    <Description>%TechnologyDefinitionArmySize3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/ArmySize3Technology652Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/ArmySize3Technology652Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Expansion disapproval reduction 3 
+  <TechnologyGuiElement Name="TechnologyDefinitionExpansionDisapprovalReduction3" X="-40" Y="170">
+    <Title>%TechnologyDefinitionExpansionDisapprovalReduction3Title</Title>
+    <Description>%TechnologyDefinitionExpansionDisapprovalReduction3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyExpansionDisapprovalReduction3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyExpansionDisapprovalReduction3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Improvement: Unit cost reduction 3 
+  <TechnologyGuiElement Name="TechnologyDefinitionUnitCostReduction3" X="-80" Y="-170">
+    <Title>%TechnologyDefinitionUnitCostReduction3Title</Title>
+    <Description>%TechnologyDefinitionUnitCostReduction3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementUnitCostReduction3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementUnitCostReduction3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Equipment Rare Tier 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponRareTier2" X="100" Y="-40">
+    <Title>%TechnologyDefinitionWeaponRareTier2Title</Title>
+    <Description>%TechnologyDefinitionWeaponRareTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponRareTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponRareTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Rare Tier 2 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorRareTier2" X="100" Y="40">
+    <Title>%TechnologyDefinitionArmorRareTier2Title</Title>
+    <Description>%TechnologyDefinitionArmorRareTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorRareTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorRareTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Rare Tier 2 -->
+  <!--<TechnologyGuiElement Name="TechnologyDefinitionAccessoryRareTier2" X="-240" Y="40">
+    <Title>%TechnologyDefinitionAccessoryRareTier2Title</Title>
+    <Description>%TechnologyDefinitionAccessoryRareTier2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryRareTier2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryRareTier2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+  <!-- Empire bonus: Weapon Rare Tier 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionWeaponRareTier3" X="240" Y="-40">
+    <Title>%TechnologyDefinitionWeaponRareTier3Title</Title>
+    <Description>%TechnologyDefinitionWeaponRareTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyWeaponRareTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyWeaponRareTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Armor Rare Tier 3 -->
+  <TechnologyGuiElement Name="TechnologyDefinitionArmorRareTier3" X="240" Y="40">
+    <Title>%TechnologyDefinitionArmorRareTier3Title</Title>
+    <Description>%TechnologyDefinitionArmorRareTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyArmorRareTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyArmorRareTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+  <!-- Empire bonus: Accessory Rare Tier 3 
+  <TechnologyGuiElement Name="TechnologyDefinitionAccessoryRareTier3" X="-170" Y="80">
+    <Title>%TechnologyDefinitionAccessoryRareTier3Title</Title>
+    <Description>%TechnologyDefinitionAccessoryRareTier3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/Empire/TechnologyAccessoryRareTier3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/Empire/TechnologyAccessoryRareTier3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>-->
+
+
+
+  <!-- ############################# -->
+  <!-- #### Era6 Faction techs ##### -->
+  <!-- ############################# -->
+
+  <!-- RW : All pillars' level increase -->
+  <TechnologyGuiElement Name="TechnologyDefinitionRageWizards15" X="-260" Y="0">
+    <Title>%TechnologyDefinitionRageWizards15Title</Title>
+    <Description>%TechnologyDefinitionRageWizards15Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="Gui/AtlasedBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards15Small" Size="Small" />
+      <Icon Path="Gui/DynamicBitmaps/Improvements/Empire/TechnologyDefinitionRageWizards15Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition6" />
+  </TechnologyGuiElement>
+
+
+
+  <!-- ################################ -->
+  <!-- #######   UNIQUE ITEMS   ####### -->
+  <!-- ################################ -->
+
+
+
+  <!-- ################################ -->
+  <!-- #######     WEAPON       ####### -->
+  <!-- ################################ -->
+
+  <!-- All equipment techs given through quests are "Hidden". They are all stores in the era 1 for now -->
+
+  <!-- ########## 1H_Sword ########### -->
+
+  <!--Side Quest Item: Strategic4-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemSword1Strategic4Tier4SideQuest1Title</Title>
+    <Description>%ItemSword1Strategic4Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemSword1Strategic4Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemSword1Strategic4Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+  
+  <!--Side Quest Item: Strategic6-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemSword1Strategic6Tier4SideQuest1Title</Title>
+    <Description>%ItemSword1Strategic6Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemSword1Strategic6Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemSword1Strategic6Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  
+  <!-- ########## 2H_Sword ########### -->
+
+  <!--Side Quest Item: Strategic2-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemSword2Strategic2Tier4SideQuest1Title</Title>
+    <Description>%ItemSword2Strategic2Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemSword2Strategic2Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemSword2Strategic2Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- ########## 2H_Spear ########### -->
+
+  
+  <!-- ########## 2H_Axe ########### -->
+
+  <!--Side Quest Item: Strategic5-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemAxe2Strategic5Tier4SideQuest1Title</Title>
+    <Description>%ItemAxe2Strategic5Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemAxe2Strategic5Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemAxe2Strategic5Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+  
+  
+  <!-- ########### 2H_Bow ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 3-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemBow2Strategic3Tier4SideQuest1Title</Title>
+    <Description>%ItemBow2Strategic3Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemBow2Strategic3Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemBow2Strategic3Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 4-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemBow2Strategic4Tier4SideQuest1Title</Title>
+    <Description>%ItemBow2Strategic4Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemBow2Strategic4Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemBow2Strategic4Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!-- ########### 1H_Crossbow ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemCrossbow1Strategic1Tier4SideQuest1Title</Title>
+    <Description>%ItemCrossbow1Strategic1Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemCrossbow1Strategic1Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemCrossbow1Strategic1Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemCrossbow1Strategic2Tier4SideQuest1Title</Title>
+    <Description>%ItemCrossbow1Strategic2Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemCrossbow1Strategic2Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemCrossbow1Strategic2Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+
+  <!-- ########### 2H_Scepter ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 3-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1" X="80" Y="170">
+    <Title>%TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1Title</Title>
+    <Description>%ItemBow2Strategic3Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemBow2Strategic3Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemBow2Strategic3Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 4-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemScepter2Strategic4Tier4SideQuest1Title</Title>
+    <Description>%ItemScepter2Strategic4Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemScepter2Strategic4Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemScepter2Strategic4Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+
+  <!-- ########### 2H_Staff ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1" X="80" Y="170">
+    <Title>%TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1Title</Title>
+    <Description>%ItemStaff2Strategic1Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemStaff2Strategic1Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemStaff2Strategic1Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 6-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemStaff2Strategic6Tier4SideQuest1Title</Title>
+    <Description>%ItemStaff2Strategic6Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemStaff2Strategic6Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemStaff2Strategic6Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+  
+  
+
+
+  <!-- ################################ -->
+  <!-- #######      ARMOR       ####### -->
+  <!-- ################################ -->
+
+  <!-- ########### Head ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemHeadStrategic1Tier2SideQuest1" X="80" Y="170">
+    <Title>%ItemHeadStrategic1Tier2SideQuest1Title</Title>
+    <Description>%ItemHeadStrategic1Tier2SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemHeadStrategic1Tier2SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemHeadStrategic1Tier2SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemHeadStrategic2Tier2SideQuest1" X="80" Y="170">
+    <Title>%ItemHeadStrategic2Tier2SideQuest1Title</Title>
+    <Description>%ItemHeadStrategic2Tier2SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemHeadStrategic2Tier2SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemHeadStrategic2Tier2SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+
+  <!-- ########### Torso ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemTorsoStrategic1Tier2SideQuest1" X="80" Y="170">
+    <Title>%ItemTorsoStrategic1Tier2SideQuest1Title</Title>
+    <Description>%ItemTorsoStrategic1Tier2SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemTorsoStrategic1Tier2SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemTorsoStrategic1Tier2SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemTorsoStrategic2Tier2SideQuest1" X="80" Y="170">
+    <Title>%ItemTorsoStrategic2Tier2SideQuest1Title</Title>
+    <Description>%ItemTorsoStrategic2Tier2SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemTorsoStrategic2Tier2SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemTorsoStrategic2Tier2SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+
+  <!-- ########### Legs ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemLegsStrategic1Tier2SideQuest1" X="80" Y="170">
+    <Title>%ItemLegsStrategic1Tier2SideQuest1Title</Title>
+    <Description>%ItemLegsStrategic1Tier2SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemLegsStrategic1Tier2SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemLegsStrategic1Tier2SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemLegsStrategic2Tier2SideQuest1" X="80" Y="170">
+    <Title>%ItemLegsStrategic2Tier2SideQuest1Title</Title>
+    <Description>%ItemLegsStrategic2Tier2SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemLegsStrategic2Tier2SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Armors/ItemLegsStrategic2Tier2SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+
+  <!-- ########### Shield ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemShield1Strategic1Tier4SideQuest1Title</Title>
+    <Description>%ItemShield1Strategic1Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemShield1Strategic1Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemShield1Strategic1Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+  <!--Side Quest Droplist Reward: Strategic 3-->
+  <TechnologyGuiElement Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1" X="80" Y="170">
+    <Title>%ItemShield1Strategic3Tier4SideQuest1Title</Title>
+    <Description>%ItemShield1Strategic3Tier4SideQuest1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemShield1Strategic3Tier4SideQuest1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/EquipmentItems/Weapons/ItemShield1Strategic3Tier4SideQuest1Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition1" />
+  </TechnologyGuiElement>
+
+<!--DEPRECATED-->
+  <TechnologyGuiElement Name="TechnologyDefinitionQuestReward1" X="-120" Y="240">
+    <Title>%TechnologyDefinitionQuestReward1Title</Title>
+    <Description>%TechnologyDefinitionQuestReward1Description</Description>
+    <Icons DefaultSize="">
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementSideQuestVillage3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementSideQuestVillage3Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+  
+  
+  
+
+  <!-- ################################ -->
+  <!-- #######      CUSTOM      ####### -->
+  <!-- ################################ -->
+
+  <!-- Deep Generator -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters2Custom" X="-40" Y="240">
+    <Title>%TechnologyDefinitionVaulters2Title</Title>
+    <Description>%TechnologyDefinitionVaulters2Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters2Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters2Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+  
+  <!-- Strength of the Vault-->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters3Custom" X="0" Y="-170">
+    <Title>%TechnologyDefinitionVaulters3Title</Title>
+    <Description>%TechnologyDefinitionVaulters3Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters3Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters3Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+  
+  <!-- Endless Recycling -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters4Custom" X="240" Y="-120">
+    <Title>%TechnologyDefinitionVaulters4Title</Title>
+    <Description>%TechnologyDefinitionVaulters4Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters4Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters4Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition3" />
+  </TechnologyGuiElement>
+
+  <!-- Winter Shelters (Winter Food reduction immunity) -->
+  <TechnologyGuiElement Name="TechnologyDefinitionVaulters6Custom" X="-240" Y="-120">
+    <Title>%TechnologyDefinitionVaulters6Title</Title>
+    <Description>%TechnologyDefinitionVaulters6Description</Description>
+    <Icons DefaultSize="">
+      <Icon Path="GUI/AtlasedBitmaps/Improvements/City/CityImprovementVaulters6Small" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Improvements/City/CityImprovementVaulters6Large" Size="Large" />
+    </Icons>
+    <TechnologyEraReference Name="TechnologyEraDefinition2" />
+  </TechnologyGuiElement>
+</Datatable>

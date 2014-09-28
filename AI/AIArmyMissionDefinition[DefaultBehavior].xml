@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <AIArmyMissionDefinition Name="DefaultHealth">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$WorldPositionDestination"/>
+      <Parameter ParameterIndex="1" VarName="$WorldPositionableDestination"/>
+    </Parameters>
+
+    <Controller_Sequence>
+
+      <!--IF Army in undr control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Controller_Selector>
+        <Controller_Sequence Debug="DefaultHealth_DestinationReached">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Decorator_WaitForHealthRegen HealthRatioMinimum="0.9"/>
+        </Controller_Sequence>
+
+        <Controller_Sequence Debug="DefaultHealth_DestinationReached">
+          <Decorator_CanBeHealedAtPosition />
+          <Decorator_WaitForHealthRegen HealthRatioMinimum="0.9"/>
+        </Controller_Sequence>
+
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="DefaultHealth_TryToAttackEnemyInRange">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Any" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+
+          <Controller_Selector Debug="DefaultHealth_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="DefaultHealth_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="DefaultHealth_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+
+        <!--IF EnnemyDetected AND I can not defeat him THEN retreat him-->
+        <Controller_Sequence Debug="DefaultHealth_TryToRetreat">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Any" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="NO" TargetVarName="$Target"/>
+          <Decorator_ComputeSavingPosition TargetListVarName="$TargetList" Output_DestinationVarName="$SafeWorldPositionDestination"/>
+          <Action_GeneratePath DestinationVarName="$SafeWorldPositionDestination" TypeOfPath="FuzzyDestination" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_MoveEnded PathVarName="$Path" TypeOfCheck="Regular"/>
+        </Controller_Sequence>
+
+        <!--IF RuinDetected THEN explore Ruin-->
+        <Controller_Sequence Debug="DefaultHealth_SearchRuin">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Ruin" Output_TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$RuinWorldPositionDestination"/>
+
+          <Controller_Selector>
+            <Controller_Sequence Debug="DefaultHealth_SearchRuin_AlreadyAtDestination">
+              <Decorator_DestinationReached DestinationVarName="$RuinWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_SearchInRuin TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="DefaultHealth_SearchRuin_MoveToRuin">
+
+              <Action_GeneratePath DestinationVarName="$RuinWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+              <Decorator_MoveEnded PathVarName="$Path" TypeOfCheck="InRangeDestination"/>
+              <Action_SearchInRuin TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+          </Controller_Selector>
+
+        </Controller_Sequence>
+
+        <!--IF NO EnnemyDetected THEN Move to Destination-->
+        <Controller_Sequence Debug="DefaultHealth_MoveToRegroup">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_MoveEnded PathVarName="$Path"  TypeOfCheck="Regular"/>
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" />
+          <Decorator_WaitForHealthRegen HealthRatioMinimum="0.9"/>
+        </Controller_Sequence>
+
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+</Datatable>

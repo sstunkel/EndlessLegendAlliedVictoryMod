@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX MADFAIRIES ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_Footstep">
+    <SoundEventName>Sfx/Faction/MadFairies/Hero/MadFairies_Hero_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_BodyFall">
+    <SoundEventName>Sfx/Faction/MadFairies/Hero/MadFairies_Hero_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_Idle0">
+    <SoundEventName>Sfx/Faction/MadFairies/Hero/MadFairies_Hero_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_AttackHard">
+    <SoundEventName>Sfx/Faction/MadFairies/Hero/MadFairies_HeroAttackHard</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_AttackLight">
+    <SoundEventName>Sfx/Faction/MadFairies/Hero/MadFairies_HeroAttackLight</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_WandAttack">
+    <SoundEventName>Sfx/Faction/MadFairies/Hero/MadFairies_Hero_WandAttack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_Footstep">
+    <SoundEventName>Sfx/Faction/MadFairies/Archer/MadFairies_Archer_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_Idle0">
+    <SoundEventName>Sfx/Faction/MadFairies/Archer/MadFairies_Archer_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_BodyFall">
+    <SoundEventName>Sfx/Faction/MadFairies/Archer/MadFairies_Archer_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Footstep">
+    <SoundEventName>Sfx/Faction/MadFairies/Shaman/MadFairies_Shaman_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_BodyFall">
+    <SoundEventName>Sfx/Faction/MadFairies/Shaman/MadFairies_Shaman_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Footstep">
+    <SoundEventName>Sfx/Faction/MadFairies/ForestSpirit/MadFairies_ForstSpiritFootsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_FootstepCreak">
+    <SoundEventName>Sfx/Faction/MadFairies/ForestSpirit/MadFairies_ForstSpiritFootstepsCreak</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Sneeze">
+    <SoundEventName>Sfx/Faction/MadFairies/ForestSpirit/MadFairies_ForestSpiritSneeze</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Moan">
+    <SoundEventName>Sfx/Faction/MadFairies/ForestSpirit/MadFairies_ForestSpiritMoan</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_Attack">
+    <SoundEventName>Sfx/Voices/MadFairies/Archer_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_Death">
+    <SoundEventName>Sfx/Voices/MadFairies/Archer_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_Defense">
+    <SoundEventName>Sfx/Voices/MadFairies/Archer_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_Click">
+    <SoundEventName>Sfx/Voices/MadFairies/Archer_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Archer_Order">
+    <SoundEventName>Sfx/Voices/MadFairies/Archer_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Attack">
+    <SoundEventName>Sfx/Voices/MadFairies/ForestSpirit_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_AttackVoiceLarge">
+    <SoundEventName>Sfx/Voices/MadFairies/ForestSpirit_Voice_AttackLarge</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Death">
+    <SoundEventName>Sfx/Faction/MadFairies/ForestSpirit/MadFairies_ForestSpiriDeath</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Defense">
+    <SoundEventName>Sfx/Voices/MadFairies/ForestSpirit_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Click">
+    <SoundEventName>Sfx/Voices/MadFairies/ForestSpirit_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_Order">
+    <SoundEventName>Sfx/Voices/MadFairies/ForestSpirit_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Attack">
+    <SoundEventName>Sfx/Voices/MadFairies/Shaman_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Incant">
+    <SoundEventName>Sfx/Voices/MadFairies/Shaman_Voice_Incant</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Death">
+    <SoundEventName>Sfx/Voices/MadFairies/Shaman_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Defense">
+    <SoundEventName>Sfx/Voices/MadFairies/Shaman_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Idle0">
+    <SoundEventName>Sfx/Voices/MadFairies/Shaman_Voice_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Click">
+    <SoundEventName>Sfx/Voices/MadFairies/Shaman_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Order">
+    <SoundEventName>Sfx/Voices/MadFairies/Shaman_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_Attack">
+    <SoundEventName>Sfx/Voices/MadFairies/Hero_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_Death">
+    <SoundEventName>Sfx/Voices/MadFairies/Hero_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_Defense">
+    <SoundEventName>Sfx/Voices/MadFairies/Hero_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_Click">
+    <SoundEventName>Sfx/Voices/MadFairies/Hero_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Hero_Order">
+    <SoundEventName>Sfx/Voices/MadFairies/Hero_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Settler_Footstep">
+    <SoundEventName>Sfx/Faction/MadFairies/Settler/MadFairies_Settler_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Settler_BodyFall">
+    <SoundEventName>Sfx/Faction/MadFairies/Settler/MadFairies_Settler_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_MadFairies_Settler_Attack">
+    <SoundEventName>Sfx/Voices/MadFairies/Settler_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Settler_Death">
+    <SoundEventName>Sfx/Voices/MadFairies/Settler_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Settler_Defense">
+    <SoundEventName>Sfx/Voices/MadFairies/Settler_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

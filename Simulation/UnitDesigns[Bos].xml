@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ######################################################### -->
+  <!-- ################### BOS CENTAUR UNITS ################### -->
+  <!-- ######################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignBosCentaur#1"                        Model="1050100">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinityBos</PathPrerequisite>
+  </UnitDesign>
+  
+  <!-- Used by the Minor Faction tribes to create village armies and roaming armies-->
+  <UnitDesign Name="UnitDesignBosCentaur#MinorEmpireEra1"          Model="1050111">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier1#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MinorEmpireEra2"          Model="1050112">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier2#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier2#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MinorEmpireEra3"          Model="1050113">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier3#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier3#1" />
+      <Slot Name="Head"                            ItemName=""     />
+      <Slot Name="Torso"                           ItemName=""    />
+      <Slot Name="Legs"                            ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MinorEmpireEra4"          Model="1050114">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier1#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier1#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MinorEmpireEra5"          Model="1050115">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier2#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier2#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MinorEmpireEra6"          Model="1050116">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier3#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier3#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignBosCentaur#MercenaryEra1"            Model="1050121">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier1#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MercenaryEra2"            Model="1050122">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier2#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MercenaryEra3"            Model="1050123">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier3#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MercenaryEra4"            Model="1050124">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier1#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MercenaryEra5"            Model="1050125">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier2#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#MercenaryEra6"            Model="1050126">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier3#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- We are using the Bos as fallback for Minor Faction converted tribes -->
+  <UnitDesign Name="DefaultConvertedVillageUnit"         Model="1050130" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <Tags>ConvertedVillageUnit,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier1#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  
+  <!-- Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignBosCentaur#ConvertedEra1"            Model="1050131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <Tags>ConvertedVillageUnit,Era1,Bos,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier1#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#ConvertedEra2"            Model="1050132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <Tags>ConvertedVillageUnit,Era2,Bos,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier2#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#ConvertedEra3"            Model="1050133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <Tags>ConvertedVillageUnit,Era3,Bos,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1IronTier3#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#ConvertedEra4"            Model="1050134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <Tags>ConvertedVillageUnit,Era4,Bos,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier1#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#ConvertedEra5"            Model="1050135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <Tags>ConvertedVillageUnit,Era5,Bos,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier2#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#ConvertedEra6"            Model="1050136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <Tags>ConvertedVillageUnit,Era6,Bos,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe1DustTier3#1"    />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignBosCentaur#MinorEmpire"              Model="1050101">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"   ItemName="ItemAxe1IronTier1#1"    />
+      <Slot Name="OffHand"    ItemName="ItemShield1IronTier1#1" />
+      <Slot Name="Head"       ItemName="" />
+      <Slot Name="Torso"      ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"       ItemName="" />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignBosCentaur#Mercenary"                Model="1050102">
+    <UnitBodyDefinitionReference Name="UnitBodyBosCentaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityBos,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

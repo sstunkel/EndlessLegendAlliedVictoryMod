@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="AttitudeScorePeaceful">
+    <Title>%AttitudeScorePeacefulTitle</Title>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeScoreCommonEnemy">
+    <Title>%AttitudeScoreCommonEnemyTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreCommonFriend">
+    <Title>%AttitudeScoreCommonFriendTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreCommonAlly">
+    <Title>%AttitudeScoreCommonAllyTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreCommonFrontier">
+    <Title>%AttitudeScoreCommonFrontierTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreWarFatigue">
+    <Title>%AttitudeScoreWarFatigueTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreLastWar">
+    <Title>%AttitudeScoreLastWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreArmyAggressionInNeutralRegionDuringColdWar">
+    <Title>%AttitudeScoreArmyAggressionInNeutralRegionDuringColdWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreMyEmpireUnitsKilledDuringWar">
+    <Title>%AttitudeScoreMyEmpireUnitsKilledDuringWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreMyEmpireCitiesBesiegedDuringWar">
+    <Title>%AttitudeScoreMyEmpireCitiesBesiegedDuringWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreMyEmpireCitiesTakenDuringWar">
+    <Title>%AttitudeScoreMyEmpireCitiesTakenDuringWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreOtherEmpireUnitsKilledDuringWar">
+    <Title>%AttitudeScoreOtherEmpireUnitsKilledDuringWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreOtherEmpireCitiesBesiegedDuringWar">
+    <Title>%AttitudeScoreOtherEmpireCitiesBesiegedDuringWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreOtherEmpireCitiesTakenDuringWar">
+    <Title>%AttitudeScoreOtherEmpireCitiesTakenDuringWarTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreMyEmpireLeadMilitaryPower">
+    <Title>%AttitudeScoreMyEmpireLeadMilitaryPowerTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreOtherEmpireLeadMilitaryPower">
+    <Title>%AttitudeScoreOtherEmpireLeadMilitaryPowerTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreMyEmpireLeadScore">
+    <Title>%AttitudeScoreMyEmpireLeadScoreTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreOtherEmpireLeadScore">
+    <Title>%AttitudeScoreOtherEmpireLeadScoreTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreMyEmpireLeadRegionCount">
+    <Title>%AttitudeScoreMyEmpireLeadRegionCountTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreOtherEmpireLeadRegionCount">
+    <Title>%AttitudeScoreOtherEmpireLeadRegionCountTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreUnitsInMyTerritory">
+    <Title>%AttitudeScoreUnitsInMyTerritoryTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreLivingSpaceTense">
+    <Title>%AttitudeScoreLivingSpaceTenseTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreAggressiveColonization">
+    <Title>%AttitudeScoreAggressiveColonizationTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScorePositiveContract">
+    <Title>%AttitudeScorePositiveContractTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreNegativeContract">
+    <Title>%AttitudeScoreNegativeContractTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreGift">
+    <Title>%AttitudeScoreGiftTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="AttitudeScoreVillageConverted">
+    <Title>%AttitudeScoreVillageConverted</Title>
+  </GuiElement>
+  
+</Datatable>

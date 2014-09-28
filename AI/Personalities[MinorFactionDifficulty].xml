@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <AIPersonalityDefinition Name="PersonalityMinorFactionMinorFactionDifficultyEasy">
+    <Multipliers>
+      
+      <!-- AI Registry -->
+      <AI>
+        <MinorEmpire>
+          <EraLevelFactor>0.75</EraLevelFactor>
+          <TurnLevelFactor>0.75</TurnLevelFactor>
+        </MinorEmpire>
+      </AI>
+
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <StartTurn>1.5</StartTurn>
+        <CitySiegeDuration>1</CitySiegeDuration>
+        <CitySiegeAllowed>true</CitySiegeAllowed>
+        <CityAttackAllowed>false</CityAttackAllowed>
+      </DeploymentStepDefinition>
+
+      <!-- AIMinorEmpireDefConDefinition Database -->
+      <AIMinorEmpireDefConDefinition>
+        <ArmyProductionCooldown>1.25</ArmyProductionCooldown>
+        <GarrisonGrowthCooldown>1.25</GarrisonGrowthCooldown>
+      </AIMinorEmpireDefConDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+  
+  <AIPersonalityDefinition Name="PersonalityMinorFactionMinorFactionDifficultyNormal">
+    <Multipliers>
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMinorFactionMinorFactionDifficultyHard">
+    <Multipliers>
+
+      <!-- AI Registry -->
+      <AI>
+        <MinorEmpire>
+          <EraLevelFactor>1.15</EraLevelFactor>
+          <TurnLevelFactor>1.15</TurnLevelFactor>
+        </MinorEmpire>
+      </AI>
+
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <StartTurn>0.5</StartTurn>
+        <CitySiegeDuration>1</CitySiegeDuration>
+        <CitySiegeAllowed>true</CitySiegeAllowed>
+        <CityAttackAllowed>true</CityAttackAllowed>
+      </DeploymentStepDefinition>
+
+      <!-- AIMinorEmpireDefConDefinition Database -->
+      <AIMinorEmpireDefConDefinition>
+        <ArmyProductionCooldown>0.8</ArmyProductionCooldown>
+        <GarrisonGrowthCooldown>0.8</GarrisonGrowthCooldown>
+      </AIMinorEmpireDefConDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+  
+</Datatable>

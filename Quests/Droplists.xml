@@ -1,0 +1,3030 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Selector="Weighted" (default), "TechnologyEraNumber", -->
+  <!--Constrained="True" (default) = fallback to another reward if the Empire had already the reward, like a Tech -->
+  <!--<Blueprint Name="Nom_De_La_Technologie" Constructible Name="Nom_De_L_Objet_Ou_De_L_Improvement"/>-->
+
+
+
+  <!--<Droplist Name="DroplistInteractWithQuestLocationTypeRuinEra1">
+    <List Name="DroplistDust" Weight="4"/>
+    -->
+  <!--<Resource Name="Strategic1" Quantity="100" Weight="2"/>-->
+  <!--
+    -->
+  <!-- 
+    <Technology Name="TechnologyDefinitionFood0" Weight="1" Constrained="True"/>
+    <Technology Name="TechnologyDefinitionIndustry0" Weight="1" Constrained="False"/>
+    <Technology Name="TechnologyDefinitionDust0" Weight="1"/>
+    <Hero Name="UnitProfileBrokenLords#StartingHero" Weight="2"/>
+    -->
+  <!--
+  </Droplist>-->
+
+  <!--<Droplist Name="DroplistRandomEra1" Picks="2">
+    <List Name="DroplistTechnologiesEra1" Weight="2" />
+    <List Name="DroplistDustEra1" Weight="3" />
+  </Droplist>-->
+
+  
+  <!-- ========================================
+       ============ DROPLIST DUST =============
+       ======================================== -->
+  
+  <!--Dust Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistDust" Selector="TechnologyEraNumber">
+    <List Name="DroplistDustEra1"/>
+    <List Name="DroplistDustEra2"/>
+    <List Name="DroplistDustEra3"/>
+    <List Name="DroplistDustEra4"/>
+    <List Name="DroplistDustEra5"/>
+    <List Name="DroplistDustEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistDustEra1" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="40"  Weight="8" />
+    <Resource Name="EmpireMoney" Quantity="60" Weight="3" />
+    <Resource Name="EmpireMoney" Quantity="80" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistDustEra2" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="80" Weight="8" />
+    <Resource Name="EmpireMoney" Quantity="120" Weight="3" />
+    <Resource Name="EmpireMoney" Quantity="160" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistDustEra3" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="160" Weight="8" />
+    <Resource Name="EmpireMoney" Quantity="240" Weight="3" />
+    <Resource Name="EmpireMoney" Quantity="320" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistDustEra4" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="320" Weight="8" />
+    <Resource Name="EmpireMoney" Quantity="480" Weight="3" />
+    <Resource Name="EmpireMoney" Quantity="640" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistDustEra5" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="640" Weight="8" />
+    <Resource Name="EmpireMoney" Quantity="960" Weight="3" />
+    <Resource Name="EmpireMoney" Quantity="1280" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistDustEra6" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="1280" Weight="8" />
+    <Resource Name="EmpireMoney" Quantity="1920" Weight="3" />
+    <Resource Name="EmpireMoney" Quantity="2560" Weight="1" />
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ========== DROPLIST SCIENCE ============
+       ======================================== -->
+
+  <!--Science Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistScience" Selector="TechnologyEraNumber">
+    <List Name="DroplistScienceEra1"/>
+    <List Name="DroplistScienceEra2"/>
+    <List Name="DroplistScienceEra3"/>
+    <List Name="DroplistScienceEra4"/>
+    <List Name="DroplistScienceEra5"/>
+    <List Name="DroplistScienceEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistScienceEra1" Selector="Weighted">
+    <Resource Name="EmpireResearch" Quantity="40"  Weight="8" />
+    <Resource Name="EmpireResearch" Quantity="60"  Weight="3" />
+    <Resource Name="EmpireResearch" Quantity="80"  Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistScienceEra2" Selector="Weighted">
+    <Resource Name="EmpireResearch" Quantity="80"  Weight="8" />
+    <Resource Name="EmpireResearch" Quantity="120" Weight="3" />
+    <Resource Name="EmpireResearch" Quantity="160" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistScienceEra3" Selector="Weighted">
+    <Resource Name="EmpireResearch" Quantity="160" Weight="8" />
+    <Resource Name="EmpireResearch" Quantity="240" Weight="3" />
+    <Resource Name="EmpireResearch" Quantity="320" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistScienceEra4" Selector="Weighted">
+    <Resource Name="EmpireResearch" Quantity="320" Weight="8" />
+    <Resource Name="EmpireResearch" Quantity="480" Weight="3" />
+    <Resource Name="EmpireResearch" Quantity="640" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistScienceEra5" Selector="Weighted">
+    <Resource Name="EmpireResearch" Quantity="640" Weight="8" />
+    <Resource Name="EmpireResearch" Quantity="960" Weight="3" />
+    <Resource Name="EmpireResearch" Quantity="1280" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistScienceEra6" Selector="Weighted">
+    <Resource Name="EmpireResearch" Quantity="1280" Weight="8" />
+    <Resource Name="EmpireResearch" Quantity="1920" Weight="3" />
+    <Resource Name="EmpireResearch" Quantity="2560" Weight="1" />
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ========= DROPLIST INFLUENCE ===========
+       ======================================== -->
+
+  <!--Prestige Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistPrestige" Selector="TechnologyEraNumber">
+    <List Name="DroplistPrestigeEra1"/>
+    <List Name="DroplistPrestigeEra2"/>
+    <List Name="DroplistPrestigeEra3"/>
+    <List Name="DroplistPrestigeEra4"/>
+    <List Name="DroplistPrestigeEra5"/>
+    <List Name="DroplistPrestigeEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistPrestigeEra1" Selector="Weighted">
+    <Resource Name="EmpirePoint" Quantity="15" Weight="8" />
+    <Resource Name="EmpirePoint" Quantity="20" Weight="3" />
+    <Resource Name="EmpirePoint" Quantity="30" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistPrestigeEra2" Selector="Weighted">
+    <Resource Name="EmpirePoint" Quantity="30"  Weight="8" />
+    <Resource Name="EmpirePoint" Quantity="40" Weight="3" />
+    <Resource Name="EmpirePoint" Quantity="60" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistPrestigeEra3" Selector="Weighted">
+    <Resource Name="EmpirePoint" Quantity="60" Weight="8" />
+    <Resource Name="EmpirePoint" Quantity="80" Weight="3" />
+    <Resource Name="EmpirePoint" Quantity="120" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistPrestigeEra4" Selector="Weighted">
+    <Resource Name="EmpirePoint" Quantity="120" Weight="8" />
+    <Resource Name="EmpirePoint" Quantity="160" Weight="3" />
+    <Resource Name="EmpirePoint" Quantity="240" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistPrestigeEra5" Selector="Weighted">
+    <Resource Name="EmpirePoint" Quantity="240" Weight="8" />
+    <Resource Name="EmpirePoint" Quantity="320" Weight="3" />
+    <Resource Name="EmpirePoint" Quantity="480" Weight="1" />
+  </Droplist>
+
+  <Droplist Name="DroplistPrestigeEra6" Selector="Weighted">
+    <Resource Name="EmpirePoint" Quantity="480" Weight="8" />
+    <Resource Name="EmpirePoint" Quantity="640" Weight="3" />
+    <Resource Name="EmpirePoint" Quantity="960" Weight="1" />
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       =========== DROPLIST ITEMS =============
+       ======================================== -->
+
+  <!--Items Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistItems" Selector="TechnologyEraNumber">
+    <List Name="DroplistItemsEra1"/>
+    <List Name="DroplistItemsEra2"/>
+    <List Name="DroplistItemsEra3"/>
+    <List Name="DroplistItemsEra4"/>
+    <List Name="DroplistItemsEra5"/>
+    <List Name="DroplistItemsEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistItemsEra1" Selector="Weighted">
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistItemsEra2" Selector="Weighted">
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistItemsEra3" Selector="Weighted">
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistItemsEra4" Selector="Weighted">
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistItemsEra5" Selector="Weighted">
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistItemsEra6" Selector="Weighted">
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       =========== DROPLIST TECHNO ============
+       ======================================== -->
+
+  <!--Technologies Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistTechnologies" Selector="TechnologyEraNumber">
+    <List Name="DroplistTechnologiesEra1"/>
+    <List Name="DroplistTechnologiesEra2"/>
+    <List Name="DroplistTechnologiesEra3"/>
+    <List Name="DroplistTechnologiesEra4"/>
+    <List Name="DroplistTechnologiesEra5"/>
+    <List Name="DroplistTechnologiesEra6"/>
+  </Droplist>
+
+  <!-- Food, Diplomacy, Archaeology, Army Size, Trade route, Naval and Road techs are not included in these droplists 
+  so that there would be no faction or world generation where tech rewards would be useless or negative -->
+  <Droplist Name="DroplistTechnologiesEra1" Fallback="DroplistDustEra1">
+    <Technology Name="TechnologyDefinitionIndustry0" />
+    <Technology Name="TechnologyDefinitionDust0" />
+    <Technology Name="TechnologyDefinitionDust1" />
+    <Technology Name="TechnologyDefinitionScience0" />
+    <Technology Name="TechnologyDefinitionScience8" />
+    <Technology Name="TechnologyDefinitionApproval1" />
+    <Technology Name="TechnologyDefinitionDefense1" />
+    <Technology Name="TechnologyDefinitionLuxuryExtractionCommon" />
+    <Technology Name="TechnologyDefinitionStrategicExtractionCommon" />
+    <Technology Name="TechnologyDefinitionSearchBonus" />
+    <Technology Name="TechnologyDefinitionWeaponCommonTier1" />
+    <Technology Name="TechnologyDefinitionArmorCommonTier1" />
+    <Technology Name="TechnologyDefinitionMarketplaceMercenaries" />
+    <!-- techs not given as reward
+  <Technology Name="TechnologyDefinition[faction]Unit2" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistTechnologiesEra2" Fallback="DroplistDustEra2">
+    <Technology Name="TechnologyDefinitionIndustry1" />
+    <Technology Name="TechnologyDefinitionIndustry2" />
+    <Technology Name="TechnologyDefinitionScience3" />
+    <Technology Name="TechnologyDefinitionEmpirePoint1" />
+    <Technology Name="TechnologyDefinitionApproval2" />
+    <Technology Name="TechnologyDefinitionArmySize1" />
+    <Technology Name="TechnologyDefinitionShip" />
+    <Technology Name="TechnologyDefinitionConstructionBuyout" />
+    <Technology Name="TechnologyDefinitionWeaponCommonTier2" />
+    <Technology Name="TechnologyDefinitionArmorCommonTier2" />
+    <Technology Name="TechnologyDefinitionAssimilationLimitMax1" />
+    <Technology Name="TechnologyDefinitionMarketplaceResources" />
+    <Technology Name="TechnologyDefinitionRoad" />
+    <!-- techs not given as reward
+    <Technology Name="TechnologyDefinition[faction]Unit3" />
+    <Technology Name="TechnologyDefinition272BrokenLords" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistTechnologiesEra3" Fallback="DroplistDustEra3">
+    <!-- TBD -->
+    <Technology Name="TechnologyDefinitionDust2" />
+    <Technology Name="TechnologyDefinitionDust3" />
+    <Technology Name="TechnologyDefinitionScience2" />
+    <Technology Name="TechnologyDefinitionScience1" />
+    <Technology Name="TechnologyDefinitionEmpirePoint2" />
+    <Technology Name="TechnologyDefinitionTradeRouteBonus1" />
+    <Technology Name="TechnologyDefinitionDefenseRecovery1" />
+    <Technology Name="TechnologyDefinitionDocks" />
+    <Technology Name="TechnologyDefinitionLuxuryExtractionUncommon" />
+    <Technology Name="TechnologyDefinitionStrategicExtractionUncommon" />
+    <Technology Name="TechnologyDefinitionExpansionDisapprovalReduction1" />
+    <Technology Name="TechnologyDefinitionWeaponUncommonTier1" />
+    <Technology Name="TechnologyDefinitionArmorUncommonTier1" />
+  </Droplist>
+
+  <Droplist Name="DroplistTechnologiesEra4" Fallback="DroplistDustEra4">
+    <!-- TBD -->
+    <Technology Name="TechnologyDefinitionIndustry3" />
+    <Technology Name="TechnologyDefinitionIndustry4" />
+    <Technology Name="TechnologyDefinitionMilitaryRecruitmentBonus3" />
+    <Technology Name="TechnologyDefinitionStrategicExtractionRare" />
+    <Technology Name="TechnologyDefinitionLuxuryExtractionRare" />
+    <Technology Name="TechnologyDefinitionMapActionArchaeology" />
+    <Technology Name="TechnologyDefinitionMilitaryBonus1" />
+    <Technology Name="TechnologyDefinitionArmySize2" />
+    <Technology Name="TechnologyDefinitionScience4" />
+    <Technology Name="TechnologyDefinitionAssimilationLimitMax2" />
+    <Technology Name="TechnologyDefinitionPrivateers" />
+    <Technology Name="TechnologyDefinitionWeaponRareTier1" />
+    <Technology Name="TechnologyDefinitionArmorRareTier1" />
+  </Droplist>
+
+  <Droplist Name="DroplistTechnologiesEra5" Fallback="DroplistDustEra5">
+    <!-- TBD -->
+    <Technology Name="TechnologyDefinitionDust4" />
+    <Technology Name="TechnologyDefinitionDust5" />
+    <Technology Name="TechnologyDefinitionScience5" />
+    <Technology Name="TechnologyDefinitionEmpirePoint3" />
+    <Technology Name="TechnologyDefinitionEmpirePoint4" />
+    <Technology Name="TechnologyDefinitionApproval3" />
+    <Technology Name="TechnologyDefinitionApproval4" />
+    <Technology Name="TechnologyDefinitionTradeRouteBonus3" />
+    <Technology Name="TechnologyDefinitionDefense3" />
+    <Technology Name="TechnologyDefinitionLifeRegeneration2" />
+    <Technology Name="TechnologyDefinitionWeaponUncommonTier2" />
+    <Technology Name="TechnologyDefinitionArmorUncommonTier2" />
+    <Technology Name="TechnologyDefinitionExpansionDisapprovalReduction2" />
+    <!--<Technology Name="TechnologyDefinitionDefenseRecovery2" />-->
+  </Droplist>
+
+  <!-- Era 6 rewards are too powerful to be given as reward -->
+  <Droplist Name="DroplistTechnologiesEra6" Fallback="DroplistDustEra6">
+    <!-- TBD -->
+  </Droplist>
+
+
+  <!-- ========================================
+       ======= DROPLIST ADVANCED TECHNO =======
+       ======================================== -->
+
+  <!--Technologies Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistAdvancedTechnologies" Selector="TechnologyEraNumber">
+    <List Name="DroplistAdvancedTechnologiesEra1"/>
+    <List Name="DroplistAdvancedTechnologiesEra2"/>
+    <List Name="DroplistAdvancedTechnologiesEra3"/>
+    <List Name="DroplistAdvancedTechnologiesEra4"/>
+    <List Name="DroplistAdvancedTechnologiesEra5"/>
+    <List Name="DroplistAdvancedTechnologiesEra6"/>
+  </Droplist>
+
+  <!-- Food, Diplomacy, Archaeology, Army Size, Trade route, Naval and Road techs are not included in these droplists 
+  so that there would be no faction or world generation where tech rewards would be useless or negative -->
+
+  <Droplist Name="DroplistAdvancedTechnologiesEra1" Fallback="DroplistDustEra2">
+    <Technology Name="TechnologyDefinitionIndustry1" />
+    <Technology Name="TechnologyDefinitionIndustry2" />
+    <Technology Name="TechnologyDefinitionScience3" />
+    <Technology Name="TechnologyDefinitionEmpirePoint1" />
+    <Technology Name="TechnologyDefinitionApproval2" />
+    <Technology Name="TechnologyDefinitionArmySize1" />
+    <!--<Technology Name="TechnologyDefinitionShip" />-->
+    <Technology Name="TechnologyDefinitionConstructionBuyout" />
+    <Technology Name="TechnologyDefinitionWeaponCommonTier2" />
+    <Technology Name="TechnologyDefinitionArmorCommonTier2" />
+    <Technology Name="TechnologyDefinitionMarketplaceResources" />
+    <Technology Name="TechnologyDefinitionAssimilationLimitMax1" />
+    <Technology Name="TechnologyDefinitionRoad" />
+    <!-- techs not given as reward
+    <Technology Name="TechnologyDefinition[faction]Unit3" />
+    <Technology Name="TechnologyDefinition272BrokenLords" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistAdvancedTechnologiesEra2" Fallback="DroplistDustEra3">
+    <!-- TBD -->
+    <Technology Name="TechnologyDefinitionDust2" />
+    <Technology Name="TechnologyDefinitionDust3" />
+    <Technology Name="TechnologyDefinitionScience2" />
+    <Technology Name="TechnologyDefinitionScience1" />
+    <Technology Name="TechnologyDefinitionEmpirePoint2" />
+    <Technology Name="TechnologyDefinitionTradeRouteBonus1" />
+    <Technology Name="TechnologyDefinitionDefenseRecovery1" />
+    <!--<Technology Name="TechnologyDefinitionDocks" />-->
+    <Technology Name="TechnologyDefinitionLuxuryExtractionUncommon" />
+    <Technology Name="TechnologyDefinitionStrategicExtractionUncommon" />
+    <Technology Name="TechnologyDefinitionExpansionDisapprovalReduction1" />
+    <Technology Name="TechnologyDefinitionWeaponUncommonTier1" />
+    <Technology Name="TechnologyDefinitionArmorUncommonTier1" />
+  </Droplist>
+
+  <Droplist Name="DroplistAdvancedTechnologiesEra3" Fallback="DroplistDustEra4">
+    <!-- TBD -->
+    <Technology Name="TechnologyDefinitionIndustry3" />
+    <Technology Name="TechnologyDefinitionIndustry4" />
+    <Technology Name="TechnologyDefinitionMilitaryRecruitmentBonus3" />
+    <Technology Name="TechnologyDefinitionStrategicExtractionRare" />
+    <Technology Name="TechnologyDefinitionLuxuryExtractionRare" />
+    <!--<Technology Name="TechnologyDefinitionMapActionArchaeology" />-->
+    <Technology Name="TechnologyDefinitionMilitaryBonus1" />
+    <Technology Name="TechnologyDefinitionArmySize2" />
+    <Technology Name="TechnologyDefinitionScience4" />
+    <Technology Name="TechnologyDefinitionPrivateers" />
+    <Technology Name="TechnologyDefinitionAssimilationLimitMax2" />
+    <Technology Name="TechnologyDefinitionWeaponRareTier1" />
+    <Technology Name="TechnologyDefinitionArmorRareTier1" />
+  </Droplist>
+
+  <Droplist Name="DroplistAdvancedTechnologiesEra4" Fallback="DroplistDustEra5">
+    <!-- TBD -->
+    <Technology Name="TechnologyDefinitionDust4" />
+    <Technology Name="TechnologyDefinitionDust5" />
+    <Technology Name="TechnologyDefinitionScience5" />
+    <Technology Name="TechnologyDefinitionEmpirePoint3" />
+    <Technology Name="TechnologyDefinitionEmpirePoint4" />
+    <Technology Name="TechnologyDefinitionApproval3" />
+    <Technology Name="TechnologyDefinitionApproval4" />
+    <Technology Name="TechnologyDefinitionTradeRouteBonus3" />
+    <Technology Name="TechnologyDefinitionDefense3" />
+    <Technology Name="TechnologyDefinitionLifeRegeneration2" />
+    <Technology Name="TechnologyDefinitionWeaponUncommonTier2" />
+    <Technology Name="TechnologyDefinitionArmorUncommonTier2" />
+    <Technology Name="TechnologyDefinitionExpansionDisapprovalReduction2" />
+    <!--<Technology Name="TechnologyDefinitionDefenseRecovery2" />-->
+  </Droplist>
+
+  <!-- Era 6 rewards are too powerful to be given as reward -->
+  <Droplist Name="DroplistAdvancedTechnologiesEra5" Fallback="DroplistDustEra6">
+    <!-- TBD -->
+  </Droplist>
+
+  <!-- Era 6 rewards are too powerful to be given as reward -->
+  <Droplist Name="DroplistAdvancedTechnologiesEra6" Fallback="DroplistDustEra6">
+    <!-- TBD -->
+  </Droplist>
+  
+
+  <!-- ========================================
+       ========= DROPLIST RESOURCES ===========
+       ======================================== -->
+
+  <!--Resources Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistResources" Selector="TechnologyEraNumber">
+    <List Name="DroplistResourcesEra1"/>
+    <List Name="DroplistResourcesEra2"/>
+    <List Name="DroplistResourcesEra3"/>
+    <List Name="DroplistResourcesEra4"/>
+    <List Name="DroplistResourcesEra5"/>
+    <List Name="DroplistResourcesEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistResourcesEra1" Selector="Weighted">
+    <Resource Name="Luxury1"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury2"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury3"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury4"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury5"        Quantity="10"   Weight="1"/>
+
+    <Resource Name="Strategic1"     Quantity="5"   Weight="1"/>
+    <Resource Name="Strategic2"     Quantity="5"   Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistResourcesEra2" Selector="Weighted">
+    <Resource Name="Luxury1"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury2"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury3"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury4"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury5"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury6"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury7"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury8"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury9"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury10"       Quantity="15"   Weight="1"/>
+
+    <Resource Name="Strategic1"     Quantity="10"   Weight="2"/>
+    <Resource Name="Strategic2"     Quantity="10"   Weight="2"/>
+    <Resource Name="Strategic3"     Quantity="5"   Weight="1"/>
+    <Resource Name="Strategic4"     Quantity="5"   Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistResourcesEra3" Selector="Weighted">
+    <Resource Name="Luxury1"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury2"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury3"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury4"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury5"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury6"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury11"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury12"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury13"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury14"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury15"       Quantity="20"   Weight="1"/>
+
+    <Resource Name="Strategic1"     Quantity="15"   Weight="2"/>
+    <Resource Name="Strategic2"     Quantity="15"   Weight="2"/>
+    <Resource Name="Strategic3"     Quantity="10"   Weight="3"/>
+    <Resource Name="Strategic4"     Quantity="10"   Weight="3"/>
+    <Resource Name="Strategic5"     Quantity="5"   Weight="1"/>
+    <Resource Name="Strategic6"     Quantity="5"   Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistResourcesEra4" Selector="Weighted">
+    <Resource Name="Luxury1"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury2"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury3"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury4"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury5"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury6"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury7"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury8"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury9"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury10"       Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury11"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="30"   Weight="3"/>
+
+    <Resource Name="Strategic1"     Quantity="25"   Weight="1"/>
+    <Resource Name="Strategic2"     Quantity="25"   Weight="1"/>
+    <Resource Name="Strategic3"     Quantity="20"   Weight="2"/>
+    <Resource Name="Strategic4"     Quantity="20"   Weight="2"/>
+    <Resource Name="Strategic5"     Quantity="10"   Weight="3"/>
+    <Resource Name="Strategic6"     Quantity="10"   Weight="3"/>
+  </Droplist>
+
+  <Droplist Name="DroplistResourcesEra5" Selector="Weighted">
+    <Resource Name="Luxury6"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury7"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury8"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury9"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury10"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury11"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury12"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury13"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury14"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury15"       Quantity="40"   Weight="2"/>
+
+    <Resource Name="Strategic3"     Quantity="40"   Weight="1"/>
+    <Resource Name="Strategic4"     Quantity="40"   Weight="1"/>
+    <Resource Name="Strategic5"     Quantity="25"   Weight="2"/>
+    <Resource Name="Strategic6"     Quantity="25"   Weight="2"/>
+  </Droplist>
+
+  <Droplist Name="DroplistResourcesEra6" Selector="Weighted">
+    <Resource Name="Luxury11"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury12"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury13"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury14"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury15"       Quantity="50"   Weight="1"/>
+
+    <Resource Name="Strategic5"     Quantity="40"   Weight="1"/>
+    <Resource Name="Strategic6"     Quantity="40"   Weight="1"/>
+  </Droplist>
+
+
+  
+  <!-- ========================================
+       ========= DROPLIST RUINS ===========
+       ======================================== -->
+  
+  <!--Temple Ruins Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistTempleRuins" Selector="TechnologyEraNumber">
+    <List Name="DroplistTempleRuinsEra1"/>
+    <List Name="DroplistTempleRuinsEra2"/>
+    <List Name="DroplistTempleRuinsEra3"/>
+    <List Name="DroplistTempleRuinsEra4"/>
+    <List Name="DroplistTempleRuinsEra5"/>
+    <List Name="DroplistTempleRuinsEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistTempleRuinsEra1" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="30"  Weight="11" />
+    <Resource Name="EmpireMoney" Quantity="40" Weight="4" />
+    <Resource Name="EmpireMoney" Quantity="70" Weight="1" />
+
+    <Resource Name="Luxury1"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury2"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury3"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury4"        Quantity="10"   Weight="1"/>
+    <Resource Name="Luxury5"        Quantity="10"   Weight="1"/>
+
+    <!--<Resource Name="EmpireResearch" Quantity="50"  Weight="3" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistTempleRuinsEra2" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="50" Weight="30" />
+    <Resource Name="EmpireMoney" Quantity="70" Weight="14" />
+    <Resource Name="EmpireMoney" Quantity="100" Weight="3" />
+
+    <Resource Name="Luxury1"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury2"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury3"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury4"        Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury5"        Quantity="20"   Weight="2"/>
+
+    <Resource Name="Luxury6"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury7"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury8"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury9"        Quantity="15"   Weight="1"/>
+    <Resource Name="Luxury10"       Quantity="15"   Weight="1"/>
+
+    <!--<Resource Name="EmpireResearch" Quantity="100"  Weight="6" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistTempleRuinsEra3" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="80"  Weight="62" />
+    <Resource Name="EmpireMoney" Quantity="100" Weight="26" />
+    <Resource Name="EmpireMoney" Quantity="150" Weight="5" />
+
+    <Resource Name="Luxury1"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury2"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury3"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury4"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury5"        Quantity="30"   Weight="2"/>
+
+    <Resource Name="Luxury6"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="25"   Weight="3"/>
+
+    <Resource Name="Luxury11"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury12"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury13"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury14"       Quantity="20"   Weight="1"/>
+    <Resource Name="Luxury15"       Quantity="20"   Weight="1"/>
+
+    <!--<Resource Name="EmpireResearch" Quantity="150"  Weight="6" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistTempleRuinsEra4" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="120" Weight="62" />
+    <Resource Name="EmpireMoney" Quantity="150" Weight="26" />
+    <Resource Name="EmpireMoney" Quantity="220" Weight="5" />
+
+    <Resource Name="Luxury1"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury2"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury3"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury4"        Quantity="40"   Weight="1"/>
+    <Resource Name="Luxury5"        Quantity="40"   Weight="1"/>
+
+    <Resource Name="Luxury6"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury7"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury8"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury9"        Quantity="35"   Weight="2"/>
+    <Resource Name="Luxury10"       Quantity="35"   Weight="2"/>
+
+    <Resource Name="Luxury11"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="30"   Weight="3"/>
+
+    <!--<Resource Name="EmpireResearch" Quantity="200"  Weight="10" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistTempleRuinsEra5" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="150" Weight="30" />
+    <Resource Name="EmpireMoney" Quantity="180" Weight="14" />
+    <Resource Name="EmpireMoney" Quantity="320" Weight="3" />
+
+    <Resource Name="Luxury6"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury7"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury8"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury9"        Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury10"       Quantity="50"   Weight="1"/>
+
+    <Resource Name="Luxury11"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury12"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury13"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury14"       Quantity="40"   Weight="2"/>
+    <Resource Name="Luxury15"       Quantity="40"   Weight="2"/>
+
+    <!--<Resource Name="EmpireResearch" Quantity="250"  Weight="6" />-->
+  </Droplist>
+
+  <Droplist Name="DroplistTempleRuinsEra6" Selector="Weighted">
+    <Resource Name="EmpireMoney" Quantity="180" Weight="10" />
+    <Resource Name="EmpireMoney" Quantity="230" Weight="4" />
+    <Resource Name="EmpireMoney" Quantity="520" Weight="1" />
+
+    <Resource Name="Luxury11"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury12"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury13"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury14"       Quantity="50"   Weight="1"/>
+    <Resource Name="Luxury15"       Quantity="50"   Weight="1"/>
+
+    <!--<Resource Name="EmpireResearch" Quantity="300"  Weight="2" />-->
+  </Droplist>
+  
+
+  <!--Unspoiled Ruins Reward Droplist, depending on current Era-->
+  <Droplist Name="DroplistUnspoiledRuins" Selector="TechnologyEraNumber">
+    <List Name="DroplistUnspoiledRuinsEra1"/>
+    <List Name="DroplistUnspoiledRuinsEra2"/>
+    <List Name="DroplistUnspoiledRuinsEra3"/>
+    <List Name="DroplistUnspoiledRuinsEra4"/>
+    <List Name="DroplistUnspoiledRuinsEra5"/>
+    <List Name="DroplistUnspoiledRuinsEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistUnspoiledRuinsEra1" Selector="Weighted" Fallback="DroplistTempleRuinsEra1">
+    <Resource Name="EmpireMoney" Quantity="30"  Weight="24" />
+    <Resource Name="EmpireMoney" Quantity="40" Weight="9" />
+    <Resource Name="EmpireMoney" Quantity="70" Weight="3" />
+
+    <Resource Name="Strategic1"     Quantity="5"   Weight="6"/>
+    <Resource Name="Strategic2"     Quantity="5"   Weight="6"/>
+
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    
+  </Droplist>
+
+  <Droplist Name="DroplistUnspoiledRuinsEra2" Selector="Weighted" Fallback="DroplistTempleRuinsEra2">
+    <Resource Name="EmpireMoney" Quantity="50" Weight="33" />
+    <Resource Name="EmpireMoney" Quantity="70" Weight="15" />
+    <Resource Name="EmpireMoney" Quantity="100" Weight="6" />
+
+    <Resource Name="Strategic1"     Quantity="10"   Weight="6"/>
+    <Resource Name="Strategic2"     Quantity="10"   Weight="6"/>
+
+    <Resource Name="Strategic3"     Quantity="5"   Weight="3"/>
+    <Resource Name="Strategic4"     Quantity="5"   Weight="3"/>
+
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    
+  </Droplist>
+
+  <Droplist Name="DroplistUnspoiledRuinsEra3" Selector="Weighted" Fallback="DroplistTempleRuinsEra3">
+    <Resource Name="EmpireMoney" Quantity="80"  Weight="78" />
+    <Resource Name="EmpireMoney" Quantity="100" Weight="36" />
+    <Resource Name="EmpireMoney" Quantity="150" Weight="12" />
+
+    <Resource Name="Strategic1"     Quantity="15"   Weight="6"/>
+    <Resource Name="Strategic2"     Quantity="15"   Weight="6"/>
+
+    <Resource Name="Strategic3"     Quantity="10"   Weight="12"/>
+    <Resource Name="Strategic4"     Quantity="10"   Weight="12"/>
+
+    <Resource Name="Strategic5"     Quantity="5"   Weight="3"/>
+    <Resource Name="Strategic6"     Quantity="5"   Weight="3"/>
+
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+    
+  </Droplist>
+
+  <Droplist Name="DroplistUnspoiledRuinsEra4" Selector="Weighted" Fallback="DroplistTempleRuinsEra4">
+    <Resource Name="EmpireMoney" Quantity="120" Weight="78" />
+    <Resource Name="EmpireMoney" Quantity="150" Weight="36" />
+    <Resource Name="EmpireMoney" Quantity="220" Weight="12" />
+
+    <Resource Name="Strategic1"     Quantity="25"   Weight="3"/>
+    <Resource Name="Strategic2"     Quantity="25"   Weight="3"/>
+
+    <Resource Name="Strategic3"     Quantity="20"   Weight="6"/>
+    <Resource Name="Strategic4"     Quantity="20"   Weight="6"/>
+
+    <Resource Name="Strategic5"     Quantity="10"   Weight="12"/>
+    <Resource Name="Strategic6"     Quantity="10"   Weight="12"/>
+
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+    
+  </Droplist>
+
+  <Droplist Name="DroplistUnspoiledRuinsEra5" Selector="Weighted" Fallback="DroplistTempleRuinsEra5">
+    <Resource Name="EmpireMoney" Quantity="150" Weight="33" />
+    <Resource Name="EmpireMoney" Quantity="180" Weight="15" />
+    <Resource Name="EmpireMoney" Quantity="320" Weight="6" />
+
+    <Resource Name="Strategic3"     Quantity="40"   Weight="3"/>
+    <Resource Name="Strategic4"     Quantity="40"   Weight="3"/>
+
+    <Resource Name="Strategic5"     Quantity="25"   Weight="6"/>
+    <Resource Name="Strategic6"     Quantity="25"   Weight="6"/>
+
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+    
+  </Droplist>
+
+  <Droplist Name="DroplistUnspoiledRuinsEra6" Selector="Weighted" Fallback="DroplistTempleRuinsEra6">
+    <Resource Name="EmpireMoney" Quantity="180" Weight="24" />
+    <Resource Name="EmpireMoney" Quantity="230" Weight="9" />
+    <Resource Name="EmpireMoney" Quantity="520" Weight="3" />
+
+    <Resource Name="Strategic5"     Quantity="40"   Weight="6"/>
+    <Resource Name="Strategic6"     Quantity="40"   Weight="6"/>
+
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>
+    
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ========= DROPLIST VARIATION ERA =======
+       ======================================== -->
+  
+  <!--Various Rewards Droplist depending on Player Era -->
+  <Droplist Name="DroplistMadFairiesMainQuestRewards" Selector="TechnologyEraNumber">
+    <List Name="DroplistMadFairiesMainQuestRewardsEra1"/>
+    <List Name="DroplistMadFairiesMainQuestRewardsEra2"/>
+    <List Name="DroplistMadFairiesMainQuestRewardsEra3"/>
+    <List Name="DroplistMadFairiesMainQuestRewardsEra4"/>
+    <List Name="DroplistMadFairiesMainQuestRewardsEra5"/>
+    <List Name="DroplistMadFairiesMainQuestRewardsEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistMadFairiesMainQuestRewardsEra1" Fallback="DroplistFallbackMainQuestRewardsEra1">
+    <Resource Name="Strategic1"     Quantity="15" Weight="4"/>
+    <Resource Name="Strategic2"     Quantity="15" Weight="4"/>
+    
+    <Resource Name="Luxury1"        Quantity="15" Weight="4"/>
+    <Resource Name="Luxury2"        Quantity="15" Weight="4"/>    
+    <Resource Name="Luxury3"        Quantity="15" Weight="4"/>
+    <Resource Name="Luxury4"        Quantity="15" Weight="4"/>
+    <Resource Name="Luxury5"        Quantity="15" Weight="4"/>
+    
+    <Resource Name="Luxury6"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="10" Weight="3"/>
+    
+    <Resource Name="EmpireMoney"    Quantity="80" Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="20" Weight="2" />
+
+    <!--<Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic1Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic1Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"  Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier4SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic3Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic3Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic3Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic3Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic3Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic3Tier4SideQuest1"    Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemScepter2Strategic4Tier4SideQuest1"   ConstructibleName="ItemScepter2Strategic4Tier4SideQuest1"   Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic4Tier4SideQuest1"       ConstructibleName="ItemBow2Strategic4Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemAxe2Strategic5Tier4SideQuest1"       ConstructibleName="ItemAxe2Strategic5Tier4SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic6Tier4SideQuest1"     ConstructibleName="ItemSword1Strategic6Tier4SideQuest1"     Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemStaff2Strategic6Tier4SideQuest1"     ConstructibleName="ItemStaff2Strategic6Tier4SideQuest1"     Weight="1"/>-->
+
+    <!--<Blueprint Name="TechnologyDefinitionItemSword2Strategic1Tier2SideQuest1"     ConstructibleName="ItemSword2Strategic1Tier2SideQuest1"     Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemSword2Strategic2Tier2SideQuest1"     ConstructibleName="ItemSword2Strategic2Tier2SideQuest1"     Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemSpear2Strategic1Tier2SideQuest1"     ConstructibleName="ItemSpear2Strategic1Tier2SideQuest1"     Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemSpear2Strategic2Tier2SideQuest1"     ConstructibleName="ItemSpear2Strategic2Tier2SideQuest1"     Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic1Tier2SideQuest1"       ConstructibleName="ItemBow2Strategic1Tier2SideQuest1"       Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemBow2Strategic2Tier2SideQuest1"       ConstructibleName="ItemBow2Strategic2Tier2SideQuest1"       Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic1Tier2SideQuest1"  ConstructibleName="ItemCrossbow1Strategic1Tier2SideQuest1"  Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier2SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier2SideQuest1"  Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier2SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier2SideQuest1"    Weight="2"/>
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic2Tier2SideQuest1"    ConstructibleName="ItemShield1Strategic2Tier2SideQuest1"    Weight="2"/>
+     
+    <Blueprint Name="TechnologyDefinitionItemHeadStrategic1Tier2SideQuest1"       ConstructibleName="ItemHeadStrategic1Tier2SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemHeadStrategic2Tier2SideQuest1"       ConstructibleName="ItemHeadStrategic2Tier2SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemTorsoStrategic1Tier2SideQuest1"      ConstructibleName="ItemTorsoStrategic1Tier2SideQuest1"      Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemTorsoStrategic2Tier2SideQuest1"      ConstructibleName="ItemTorsoStrategic2Tier2SideQuest1"      Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemLegsStrategic1Tier2SideQuest1"       ConstructibleName="ItemLegsStrategic1Tier2SideQuest1"       Weight="1"/>
+    <Blueprint Name="TechnologyDefinitionItemLegsStrategic2Tier2SideQuest1"       ConstructibleName="ItemLegsStrategic2Tier2SideQuest1"       Weight="1"/>-->
+  </Droplist>
+
+  
+  <Droplist Name="DroplistMadFairiesMainQuestRewardsEra2" Fallback="DroplistFallbackMainQuestRewardsEra2">
+    <Resource Name="Strategic1"     Quantity="25"   Weight="3"/>
+    <Resource Name="Strategic2"     Quantity="25"   Weight="3"/>
+    
+    <Resource Name="Strategic3"     Quantity="20"   Weight="3"/>
+    <Resource Name="Strategic4"     Quantity="20"   Weight="3"/>
+    
+    <Resource Name="Luxury1"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury3"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="25"   Weight="3"/>
+    
+    <Resource Name="Luxury6"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="20"   Weight="3"/>
+    
+    <Resource Name="EmpireMoney"    Quantity="160"  Weight="6"/>
+    <Resource Name="EmpirePoint"    Quantity="40"   Weight="2"/>
+    
+    <Technology Name="TechnologyDefinitionWeaponCommonTier3"    Weight="3"/>
+    <Technology Name="TechnologyDefinitionArmorCommonTier3"     Weight="3"/>
+  </Droplist>
+
+  
+  <Droplist Name="DroplistMadFairiesMainQuestRewardsEra3" Fallback="DroplistFallbackMainQuestRewardsEra3">
+    <Resource Name="Strategic1"     Quantity="30"   Weight="2"/>
+    <Resource Name="Strategic2"     Quantity="30"   Weight="2"/>
+    
+    <Resource Name="Strategic3"     Quantity="25"   Weight="4"/>
+    <Resource Name="Strategic4"     Quantity="25"   Weight="4"/>
+    
+    <Resource Name="Strategic5"     Quantity="15"   Weight="2"/>
+    <Resource Name="Strategic6"     Quantity="15"   Weight="2"/>
+    
+    <Resource Name="Luxury1"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury2"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury3"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury4"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury5"        Quantity="30"   Weight="2"/>
+    
+    <Resource Name="Luxury6"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury7"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury8"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury9"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury10"       Quantity="25"   Weight="4"/>
+    
+    <Resource Name="Luxury11"       Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury12"       Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury13"       Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury14"       Quantity="20"   Weight="2"/>
+    <Resource Name="Luxury15"       Quantity="20"   Weight="2"/>
+    
+    <Resource Name="EmpireMoney"    Quantity="320"  Weight="6"/>
+    <Resource Name="EmpirePoint"    Quantity="80"  Weight="5"/>
+
+    <Technology Name="TechnologyDefinitionWeaponCommonTier3"    Weight="8"/>
+    <Technology Name="TechnologyDefinitionArmorCommonTier3"     Weight="8"/>
+  </Droplist>
+
+  
+  <Droplist Name="DroplistMadFairiesMainQuestRewardsEra4" Fallback="DroplistFallbackMainQuestRewardsEra4">
+    <Resource Name="Strategic3"     Quantity="40"  Weight="3"/>
+    <Resource Name="Strategic4"     Quantity="40"  Weight="3"/>
+    
+    <Resource Name="Strategic5"     Quantity="30"  Weight="4"/>
+    <Resource Name="Strategic6"     Quantity="30"  Weight="4"/>
+    
+    <Resource Name="Luxury1"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury3"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="35"   Weight="3"/>
+    
+    <Resource Name="Luxury6"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="30"   Weight="3"/>
+    
+    <Resource Name="Luxury11"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="25"   Weight="3"/>
+    
+    <Resource Name="EmpireMoney"    Quantity="640"  Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="160"  Weight="5" />
+
+    <Technology Name="TechnologyDefinitionWeaponCommonTier3"    Weight="3"/>
+    <Technology Name="TechnologyDefinitionArmorCommonTier3"     Weight="3"/>
+  </Droplist>
+
+  
+  <Droplist Name="DroplistMadFairiesMainQuestRewardsEra5" Fallback="DroplistFallbackMainQuestRewardsEra5">
+    <Resource Name="Strategic3"     Quantity="50"  Weight="5"/>
+    <Resource Name="Strategic4"     Quantity="50"  Weight="5"/>
+    
+    <Resource Name="Strategic5"     Quantity="40"  Weight="4"/>
+    <Resource Name="Strategic6"     Quantity="40"  Weight="4"/>
+    
+    <Resource Name="Luxury1"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury3"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="40"  Weight="3"/>
+    
+    <Resource Name="Luxury6"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="35"  Weight="3"/>
+    
+    <Resource Name="Luxury11"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="30"  Weight="3"/>
+    
+    <Resource Name="EmpireMoney"    Quantity="1280" Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="320"  Weight="5" />
+
+    <Technology Name="TechnologyDefinitionWeaponCommonTier3"    Weight="3"/>
+    <Technology Name="TechnologyDefinitionArmorCommonTier3"     Weight="3"/>
+    <Technology Name="TechnologyDefinitionWeaponUncommonTier3"  Weight="3"/>
+    <Technology Name="TechnologyDefinitionArmorUncommonTier3"   Weight="3"/>
+  </Droplist>
+
+  
+  <Droplist Name="DroplistMadFairiesMainQuestRewardsEra6" Fallback="DroplistFallbackMainQuestRewardsEra6">
+    <Resource Name="Strategic3"     Quantity="60"  Weight="4"/>
+    <Resource Name="Strategic4"     Quantity="60"  Weight="4"/>
+    
+    <Resource Name="Strategic5"     Quantity="50"  Weight="5"/>
+    <Resource Name="Strategic6"     Quantity="50"  Weight="5"/>
+    
+    <Resource Name="Luxury1"        Quantity="45"  Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="45"  Weight="3"/>    
+    <Resource Name="Luxury3"        Quantity="45"  Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="45"  Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="45"  Weight="3"/>
+    
+    <Resource Name="Luxury6"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="40"  Weight="3"/>
+    
+    <Resource Name="Luxury11"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="35"  Weight="3"/>
+    
+    <Resource Name="EmpireMoney"    Quantity="2560" Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="640"  Weight="5" />
+
+    <Technology Name="TechnologyDefinitionWeaponCommonTier3"    Weight="5"/>
+    <Technology Name="TechnologyDefinitionArmorCommonTier3"     Weight="5"/>
+    <Technology Name="TechnologyDefinitionWeaponUncommonTier3"  Weight="5"/>
+    <Technology Name="TechnologyDefinitionArmorUncommonTier3"   Weight="5"/>
+    <Technology Name="TechnologyDefinitionWeaponRareTier2"      Weight="5"/>
+    <Technology Name="TechnologyDefinitionArmorRareTier2"       Weight="5"/>
+    <Technology Name="TechnologyDefinitionWeaponRareTier3"      Weight="5"/>
+    <Technology Name="TechnologyDefinitionArmorRareTier3"       Weight="5"/>
+  </Droplist>
+
+  
+  
+
+  <!-- ========================================
+       ========= DROPLIST FALLBACK MAIN =======
+       ======================================== -->
+
+  <!--Various Rewards Droplist depending on Player Era -->
+  <Droplist Name="DroplistFallbackMainQuestRewards" Selector="TechnologyEraNumber">
+    <List Name="DroplistFallbackMainQuestRewardsEra1"/>
+    <List Name="DroplistFallbackMainQuestRewardsEra2"/>
+    <List Name="DroplistFallbackMainQuestRewardsEra3"/>
+    <List Name="DroplistFallbackMainQuestRewardsEra4"/>
+    <List Name="DroplistFallbackMainQuestRewardsEra5"/>
+    <List Name="DroplistFallbackMainQuestRewardsEra6"/>
+  </Droplist>
+
+  <!--Fallback main Quest Droplist depending on current Player Era -->
+  <Droplist Name="DroplistFallbackMainQuestRewardsEra1">
+    <Resource Name="Strategic1"     Quantity="15" Weight="4"/>
+    <Resource Name="Strategic2"     Quantity="15" Weight="4"/>
+    
+    <Resource Name="Luxury1"        Quantity="15" Weight="4"/>
+    <Resource Name="Luxury2"        Quantity="15" Weight="4"/>    
+    <Resource Name="Luxury3"        Quantity="15" Weight="4"/>
+    <Resource Name="Luxury4"        Quantity="15" Weight="4"/>
+    <Resource Name="Luxury5"        Quantity="15" Weight="4"/>
+    
+    <Resource Name="Luxury6"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="10" Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="10" Weight="3"/>
+    
+    <Resource Name="EmpireMoney"    Quantity="80" Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="20" Weight="2" />
+  </Droplist>
+
+  <Droplist Name="DroplistFallbackMainQuestRewardsEra2">
+    <Resource Name="Strategic1"     Quantity="25"   Weight="3"/>
+    <Resource Name="Strategic2"     Quantity="25"   Weight="3"/>
+
+    <Resource Name="Strategic3"     Quantity="20"   Weight="3"/>
+    <Resource Name="Strategic4"     Quantity="20"   Weight="3"/>
+
+    <Resource Name="Luxury1"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury3"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="25"   Weight="3"/>
+
+    <Resource Name="Luxury6"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="20"   Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="20"   Weight="3"/>
+
+    <Resource Name="EmpireMoney"    Quantity="160"  Weight="6"/>
+    <Resource Name="EmpirePoint"    Quantity="40"   Weight="2"/>
+  </Droplist>
+
+  <Droplist Name="DroplistFallbackMainQuestRewardsEra3">
+    <Resource Name="Strategic1"     Quantity="30"   Weight="2"/>
+    <Resource Name="Strategic2"     Quantity="30"   Weight="2"/>
+
+    <Resource Name="Strategic3"     Quantity="25"   Weight="4"/>
+    <Resource Name="Strategic4"     Quantity="25"   Weight="4"/>
+
+    <Resource Name="Strategic5"     Quantity="15"   Weight="2"/>
+    <Resource Name="Strategic6"     Quantity="15"   Weight="2"/>
+
+    <Resource Name="Luxury1"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury2"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury3"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury4"        Quantity="30"   Weight="2"/>
+    <Resource Name="Luxury5"        Quantity="30"   Weight="2"/>
+
+    <Resource Name="Luxury6"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury7"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury8"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury9"        Quantity="25"   Weight="4"/>
+    <Resource Name="Luxury10"       Quantity="25"   Weight="4"/>
+
+    <Resource Name="Luxury11"       Quantity="15"   Weight="2"/>
+    <Resource Name="Luxury12"       Quantity="15"   Weight="2"/>
+    <Resource Name="Luxury13"       Quantity="15"   Weight="2"/>
+    <Resource Name="Luxury14"       Quantity="15"   Weight="2"/>
+    <Resource Name="Luxury15"       Quantity="15"   Weight="2"/>
+
+    <Resource Name="EmpireMoney"    Quantity="320"  Weight="6"/>
+    <Resource Name="EmpirePoint"    Quantity="80"  Weight="5"/>
+  </Droplist>
+
+  <Droplist Name="DroplistFallbackMainQuestRewardsEra4">
+    <Resource Name="Strategic3"     Quantity="40"  Weight="3"/>
+    <Resource Name="Strategic4"     Quantity="40"  Weight="3"/>
+
+    <Resource Name="Strategic5"     Quantity="30"  Weight="4"/>
+    <Resource Name="Strategic6"     Quantity="30"  Weight="4"/>
+
+    <Resource Name="Luxury1"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury3"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="35"   Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="35"   Weight="3"/>
+
+    <Resource Name="Luxury6"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="30"   Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="30"   Weight="3"/>
+
+    <Resource Name="Luxury11"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="25"   Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="25"   Weight="3"/>
+
+    <Resource Name="EmpireMoney"    Quantity="640"  Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="160"  Weight="5" />
+  </Droplist>
+
+  <Droplist Name="DroplistFallbackMainQuestRewardsEra5">
+    <Resource Name="Strategic3"     Quantity="50"  Weight="5"/>
+    <Resource Name="Strategic4"     Quantity="50"  Weight="5"/>
+
+    <Resource Name="Strategic5"     Quantity="40"  Weight="4"/>
+    <Resource Name="Strategic6"     Quantity="40"  Weight="4"/>
+
+    <Resource Name="Luxury1"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury3"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="40"  Weight="3"/>
+
+    <Resource Name="Luxury6"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="35"  Weight="3"/>
+
+    <Resource Name="Luxury11"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="30"  Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="30"  Weight="3"/>
+
+    <Resource Name="EmpireMoney"    Quantity="1280" Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="320"  Weight="5" />
+  </Droplist>
+
+  <Droplist Name="DroplistFallbackMainQuestRewardsEra6">
+    <Resource Name="Strategic3"     Quantity="60"  Weight="4"/>
+    <Resource Name="Strategic4"     Quantity="60"  Weight="4"/>
+
+    <Resource Name="Strategic5"     Quantity="50"  Weight="5"/>
+    <Resource Name="Strategic6"     Quantity="50"  Weight="5"/>
+
+    <Resource Name="Luxury1"        Quantity="45"  Weight="3"/>
+    <Resource Name="Luxury2"        Quantity="45"  Weight="3"/>
+    <Resource Name="Luxury3"        Quantity="45"  Weight="3"/>
+    <Resource Name="Luxury4"        Quantity="45"  Weight="3"/>
+    <Resource Name="Luxury5"        Quantity="45"  Weight="3"/>
+
+    <Resource Name="Luxury6"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury7"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury8"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury9"        Quantity="40"  Weight="3"/>
+    <Resource Name="Luxury10"       Quantity="40"  Weight="3"/>
+
+    <Resource Name="Luxury11"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury12"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury13"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury14"       Quantity="35"  Weight="3"/>
+    <Resource Name="Luxury15"       Quantity="35"  Weight="3"/>
+
+    <Resource Name="EmpireMoney"    Quantity="2560" Weight="6" />
+    <Resource Name="EmpirePoint"    Quantity="640"  Weight="5" />
+  </Droplist>
+
+
+
+  <!-- ========================================
+       ============ Ruins Side Quest ==========
+       ======================================== -->
+
+  <!-- Droplist used when getting loot after a successul interaction with a point of interest of type 'ruin' -->
+  <Droplist Name="DroplistInteractWithQuestLocationTypeRuin" Fallback="DroplistUnspoiledRuins">
+  </Droplist>
+
+  <!-- Droplist used when getting loot after a successul interaction with a point of interest of type 'temple' -->
+  <Droplist Name="DroplistInteractWithQuestLocationTypeTemple" Fallback="DroplistTempleRuins">
+  </Droplist>
+
+  <!--Item Reward-->
+  <Droplist Name="DroplistSideQuestRuins0007Step1ItemReward" Fallback="DroplistDust">
+    <Blueprint Name="TechnologyDefinitionItemSword1Strategic4Tier4SideQuest1" ConstructibleName="ItemSword1Strategic4Tier4SideQuest1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistSideQuestPOI#0016Step2ItemReward" Fallback="DroplistDust">
+    <Blueprint Name="TechnologyDefinitionItemCrossbow1Strategic2Tier4SideQuest1"  ConstructibleName="ItemCrossbow1Strategic2Tier4SideQuest1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistSideQuestPOI#0005Step1ItemReward" Fallback="DroplistDust">
+    <Blueprint Name="TechnologyDefinitionItemShield1Strategic1Tier4SideQuest1"    ConstructibleName="ItemShield1Strategic1Tier4SideQuest1"/>
+  </Droplist>
+  
+  <!--Tech Reward: Empire Bonus giving a bonus to Strategic 5 Extractor -->
+  <Droplist Name="DroplistSideQuestPOI#0002EmpireBonusReward">
+    <Technology Name="TechnologyDefinitionQuestReward2"/>
+  </Droplist>
+
+  <!--Spawn Armies-->
+  <Droplist Name="DroplistArmyDefinitionSideQuestRuins">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionSideQuestPOI#0007">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+
+  <!--Spawn Armies Tutorial-->
+
+  <Droplist Name="DroplistArmyDefinitionTutorial">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Tutorial</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+  
+  
+  
+  <!-- ========================================
+       ============ Village Side Quest ========
+       ======================================== -->
+
+  <!--To set an amount of DUST to give to a Minor Faction depending on the current Era-->
+  <Droplist Name="DroplistStrategicDustAmount" Selector="TechnologyEraNumber">
+    <List Name="DroplistStrategicDustAmountEra1"/>
+    <List Name="DroplistStrategicDustAmountEra2"/>
+    <List Name="DroplistStrategicDustAmountEra3"/>
+    <List Name="DroplistStrategicDustAmountEra4"/>
+    <List Name="DroplistStrategicDustAmountEra5"/>
+    <List Name="DroplistStrategicDustAmountEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustAmountEra1">
+    <Integer Value="100"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustAmountEra2">
+    <Integer Value="150"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustAmountEra3">
+    <Integer Value="200"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustAmountEra4">
+    <Integer Value="250"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustAmountEra5">
+    <Integer Value="300"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustAmountEra6">
+    <Integer Value="350"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustTransfertAmount" Selector="TechnologyEraNumber">
+    <List Name="DroplistStrategicDustTransfertAmountEra1"/>
+    <List Name="DroplistStrategicDustTransfertAmountEra2"/>
+    <List Name="DroplistStrategicDustTransfertAmountEra3"/>
+    <List Name="DroplistStrategicDustTransfertAmountEra4"/>
+    <List Name="DroplistStrategicDustTransfertAmountEra5"/>
+    <List Name="DroplistStrategicDustTransfertAmountEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustTransfertAmountEra1">
+    <Integer Value="-100"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustTransfertAmountEra2">
+    <Integer Value="-150"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustTransfertAmountEra3">
+    <Integer Value="-200"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustTransfertAmountEra4">
+    <Integer Value="-250"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustTransfertAmountEra5">
+    <Integer Value="-300"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicDustTransfertAmountEra6">
+    <Integer Value="-350"/>
+  </Droplist>
+  
+  
+  <Droplist Name="DroplistDustVillage021">
+    <Resource Name="EmpireMoney" Quantity="100"/>
+  </Droplist>
+  
+  <!-- Spawn Armies -->
+  <Droplist Name="DroplistArmyDefinitionSideQuestVillage#0005">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionSideQuestVillage#0009">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <!--To set an amount to give to a Minor Faction depending on the current Era-->
+  <Droplist Name="DroplistStrategicResourceAmount" Selector="TechnologyEraNumber">
+    <List Name="DroplistStrategicResourceAmountEra1"/>
+    <List Name="DroplistStrategicResourceAmountEra2"/>
+    <List Name="DroplistStrategicResourceAmountEra3"/>
+    <List Name="DroplistStrategicResourceAmountEra4"/>
+    <List Name="DroplistStrategicResourceAmountEra5"/>
+    <List Name="DroplistStrategicResourceAmountEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceAmountEra1">
+    <Integer Value="10"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceAmountEra2">
+    <Integer Value="20"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceAmountEra3">
+    <Integer Value="30"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceAmountEra4">
+    <Integer Value="40"/>
+  </Droplist>
+  
+  <Droplist Name="DroplistStrategicResourceAmountEra5">
+    <Integer Value="50"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceAmountEra6">
+    <Integer Value="60"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceTransfertAmount" Selector="TechnologyEraNumber">
+    <List Name="DroplistStrategicResourceTransfertAmountEra1"/>
+    <List Name="DroplistStrategicResourceTransfertAmountEra2"/>
+    <List Name="DroplistStrategicResourceTransfertAmountEra3"/>
+    <List Name="DroplistStrategicResourceTransfertAmountEra4"/>
+    <List Name="DroplistStrategicResourceTransfertAmountEra5"/>
+    <List Name="DroplistStrategicResourceTransfertAmountEra6"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceTransfertAmountEra1">
+    <Integer Value="-10"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceTransfertAmountEra2">
+    <Integer Value="-20"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceTransfertAmountEra3">
+    <Integer Value="-30"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceTransfertAmountEra4">
+    <Integer Value="-40"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceTransfertAmountEra5">
+    <Integer Value="-50"/>
+  </Droplist>
+
+  <Droplist Name="DroplistStrategicResourceTransfertAmountEra6">
+    <Integer Value="-60"/>
+  </Droplist>
+
+
+  <!-- DEPRECATED -->
+  <Droplist Name="DroplistSideQuestVillage003CityImprovementReward">
+    <Technology Name="TechnologyDefinitionQuestReward1" />
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ====== Wonder Building for Victory =====
+       ======================================== -->
+
+  <Droplist Name="DroplistWonderVictory">
+    <Technology Name="TechnologyDefinitionEndlessTemple" />
+  </Droplist>
+
+
+  
+  <!-- ========================================
+       ============  MAD FAIRIES  =============
+       ======================================== -->
+
+  <!-- Tech Reward: Empire Bonus giving Prestige at construction (Trait)-->
+  <Droplist Name="DroplistMainQuestMadFairiesChapter2AltStep1TechnologyReward" Fallback="DroplistMainQuestMadFairiesChapter2AltStep1Fallback">
+    <Technology Name="TechnologyDefinitionMadFairies4"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestMadFairiesChapter2AltStep1Fallback">
+    <Resource Name="EmpireMoney" Quantity="20"/>
+  </Droplist>
+
+  <!--Tech Reward: Empire Bonus giving MP bonus when enemy spotted (Trait)-->
+  <Droplist Name="DroplistMainQuestMadFairiesChapter3EmpireBonusReward">
+    <Technology Name="TechnologyDefinitionMadFairies3"/>
+  </Droplist>
+
+  <!-- Hero Reward: The Architect-->
+  <Droplist Name="DroplistMainQuestMadFairiesChapter5HeroReward">
+    <Hero Name="UnitProfileMadFairiesHero7"/>
+  </Droplist>
+
+  <!-- Item Reward-->
+  <Droplist Name="DroplistMainQuestMadFairiesChapter6UniqueItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionMadFairies7" ConstructibleName="ItemBow2MadFairiesMainQuest"/>
+  </Droplist>
+
+  <!--Tech Reward: City Improvement -->
+  <Droplist Name="DroplistMainQuestMadFairiesChapter7WonderReward">
+    <Technology Name="TechnologyDefinitionMadFairies5" />
+  </Droplist>
+
+  <!--Tech Reward: Empire Bonus (EndingReward)-->
+  <Droplist Name="DroplistMainQuestMadFairiesChapter8Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionMadFairies6" />
+  </Droplist>
+
+
+  <!--Skill & Skill Level to unlock-->
+  <Droplist Name="DroplistMainQuestMadFairiesChapter6SkillToCheck">
+    <String Value="HeroSkillGovernor02" Weight="100" />
+  </Droplist>
+  <Droplist Name="DroplistMainQuestMadFairiesChapter6SkillLevelToCheck">
+    <Integer Value="2" Weight="100" />
+  </Droplist>
+
+  <!--Empire Plan Ministry & Level--> 
+  <Droplist Name="DroplistMainQuestMadFairiesChapter7EmpirePlanClass">
+    <String Value="EmpirePlanEconomy"/>
+    <!--<String Value="EmpirePlanMilitary"/>
+    <String Value="EmpirePlanSocial"/>
+    <String Value="EmpirePlanForeignAffairs"/>
+    <String Value="EmpirePlanKnowledge"/>-->
+  </Droplist>
+  <Droplist Name="DroplistMainQuestMadFairiesChapter7EmpirePlanLevel">
+    <Integer Value="4" Weight="100" />
+  </Droplist>
+
+  <!-- Spawn Armies -->
+  
+  <Droplist Name="DroplistArmyDefinitionMainQuestMadFairiesChapter3-3Alt">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestMadFairiesChapter6">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+  
+  
+  
+  <!-- ========================================
+       ============ BROKEN LORDS ==============
+       ======================================== -->
+
+  <!--<Droplist Name="DroplistMainQuestBrokenLordsChapter1ResourceValue">
+    <Integer Value="20" Weight="20" />
+    <Integer Value="25" Weight="20" />
+    <Integer Value="30" Weight="20" />
+    <Integer Value="35" Weight="20" />
+    <Integer Value="40" Weight="10" />
+    <Integer Value="45" Weight="10" />
+  </Droplist>-->
+
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter1ResourceName">
+    <String Value="EmpireMoney" Weight="100" />
+  </Droplist>
+
+  <!--Empire Plan Ministry & Level-->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter4EmpirePlanClass">
+    <String Value="EmpirePlanMilitary"/>
+    <String Value="EmpirePlanKnowledge"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter4EmpirePlanLevel">
+    <Integer Value="3" Weight="100" />
+  </Droplist>
+
+  <!--Tech Reward: Empire Bonus-->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter1Step3TechnologyReward">
+    <Technology Name="TechnologyDefinitionBrokenLords4"/>
+  </Droplist>
+
+  <!-- Tech Reward: Empire Bonus (Trait) -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter3Step1TechnologyReward" Fallback="DroplistMainQuestBrokenLordsChapter3Step1Fallback">
+    <Technology Name="TechnologyDefinitionBrokenLords5"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter3Step1Fallback">
+    <Resource Name="EmpireMoney" Quantity="20"/>
+  </Droplist>
+
+  <!-- Hero Reward: The Marquis-->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter3Step2HeroReward">
+    <Hero Name="UnitProfileBrokenLordsHero7"/>
+  </Droplist>
+  
+  <!-- Tech Reward: Empire Bonus -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter4Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionBrokenLords6"/>
+  </Droplist>
+
+  <!-- Tech Reward: City Improvement -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter8Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionBrokenLords7" />
+  </Droplist>
+
+
+  <!-- Tech Reward: Empire Bonus (Ending Reward) -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter8Step2TechnologyReward">
+    <Technology Name="TechnologyDefinitionBrokenLords8" />
+  </Droplist>
+  
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter2Step2ItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionBrokenLords9" ConstructibleName="ItemTomeBrokenLordsMainQuest1"/>
+  </Droplist>
+
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter5Step2ItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionBrokenLords10" ConstructibleName="ItemTomeBrokenLordsMainQuest2"/>
+  </Droplist>
+
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter6Step1ItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionBrokenLords12" ConstructibleName="ItemRingBrokenLordsMainQuest1"/>
+  </Droplist>
+  
+  <!-- Strat 5 Reward -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter6Step2StrategicResource5Reward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Resource Name="Strategic5" Quantity="60"/>
+  </Droplist>
+
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter6AltStep1ItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionBrokenLords13" ConstructibleName="ItemRingBrokenLordsMainQuest2"/>
+  </Droplist>
+
+  <!-- Strat 6 Reward -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter6AltStep2StrategicResource6Reward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Resource Name="Strategic6" Quantity="60"/>
+  </Droplist>
+  
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestBrokenLordsChapter7Step2ItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionBrokenLords11" ConstructibleName="ItemInsigniaBrokenLordsMainQuest1"/>
+  </Droplist>
+
+  <!-- Spawn Armies -->
+  
+  <Droplist Name="DroplistArmyDefinitionMainQuestBrokenLordsChapter1">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestBrokenLordsChapter6">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+  
+  <Droplist Name="DroplistArmyDefinitionMainQuestBrokenLordsChapter7">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBirdhiveHarpy#MinorEmpireEra6</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#MinorEmpireEra6</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#MinorEmpireEra6</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#MinorEmpireEra6</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#MinorEmpireEra6</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#MinorEmpireEra6</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestBrokenLordsChapter7Alt">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitProfileBrokenLordsHero7</UnitDesign>
+        <UnitDesign>UnitDesignBrokenLordsInfantry#1</UnitDesign>
+        <UnitDesign>UnitDesignBrokenLordsInfantry#1</UnitDesign>
+        <UnitDesign>UnitDesignBrokenLordsCavalry#1</UnitDesign>
+        <UnitDesign>UnitDesignBrokenLordsBlackBishop#1</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+
+  
+  <!-- ========================================
+       ================ VAULTERS ==============
+       ======================================== -->
+
+  <!-- Hero Reward for TUTO-->
+  <Droplist Name="DroplistMainQuestTutorialChapter7HeroReward">
+    <Hero Name="UnitProfileTutorialHero1"/>
+  </Droplist>
+
+  <!-- Influence transfer for TUTO-->
+  <Droplist Name="DroplistMainQuestTutorialChapter6ResourceName">
+    <String Value="EmpirePoint" Weight="100" />
+  </Droplist>
+  
+  <!-- City Growth transfer for TUTO-->
+  <Droplist Name="DroplistMainQuestTutorialChapter2ResourceName">
+    <String Value="CityGrowth" Weight="100" />
+  </Droplist>
+
+  <!-- Dye and Titanium reward for TUTO side quest-->
+  <Droplist Name="DroplistTutoDye">
+    <Resource Name="Luxury1"        Quantity="5" Weight="100"/>
+  </Droplist>
+  <Droplist Name="DroplistTutoTitanium">
+    <Resource Name="Strategic1"        Quantity="10" Weight="100"/>
+  </Droplist>
+
+  <!--Strategic Resource reward to encourage use for affinity-->
+  <Droplist Name="DroplistMainQuestVaultersChapter1StrategicReward">
+    <Resource Name="Strategic1"     Quantity="15"  Weight="30"/>
+    <Resource Name="Strategic2"     Quantity="15"  Weight="30"/>
+    <Resource Name="Strategic1"     Quantity="20"  Weight="15"/>
+    <Resource Name="Strategic2"     Quantity="20"  Weight="15"/>
+    <Resource Name="Strategic1"     Quantity="30"  Weight="5"/>
+    <Resource Name="Strategic2"     Quantity="30"  Weight="5"/>
+  </Droplist>
+
+  <!--Skill & Skill Level to unlock-->
+  <Droplist Name="DroplistMainQuestVaultersChapter6SkillToCheck">
+    <String Value="HeroSkillGovernor24"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestVaultersChapter6SkillLevelToCheck">
+    <Integer Value="3"/>
+  </Droplist>
+
+  <!--Skill & Skill Level to unlock-->
+  <Droplist Name="DroplistMainQuestVaultersChapter6AltSkillToCheck">
+    <String Value="HeroSkillGovernor12"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestVaultersChapter6AltSkillLevelToCheck">
+    <Integer Value="3"/>
+  </Droplist>
+
+  <!--Empire Plan Ministry & Level-->
+  <Droplist Name="DroplistMainQuestVaultersChapter7EmpirePlanClass">
+    <String Value="EmpirePlanKnowledge"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestVaultersChapter7EmpirePlanLevel">
+    <Integer Value="4" Weight="100" />
+  </Droplist>
+
+  <!--Item Reward-->
+  <Droplist Name="DroplistMainQuestVaultersChapter2ItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionVaulters8" ConstructibleName="ItemInsigniaVaultersMainQuest1"/>
+  </Droplist>
+
+  <!--Tech Reward: City Improvement-->
+  <Droplist Name="DroplistMainQuestVaultersChapter7TechnologyReward">
+    <Technology Name="TechnologyDefinitionVaulters9"/>
+  </Droplist>
+  
+  <!--Tech Reward: Empire Bonus (Trait)-->
+  <Droplist Name="DroplistMainQuestVaultersChapter2TechnologyReward">
+    <Technology Name="TechnologyDefinitionVaulters6"/>
+  </Droplist>
+
+  <!--Tech Reward: Empire Bonus (Trait)--><!--
+  <Droplist Name="DroplistMainQuestVaultersChapter5Step3TechnologyReward">
+    <Technology Name="TechnologyDefinitionCustomTrait10"/>
+  </Droplist>-->
+
+  <!--Tech Reward: Empire Bonus (Ending Reward)-->
+  <Droplist Name="DroplistMainQuestVaultersChapter8Step3TechnologyReward">
+    <Technology Name="TechnologyDefinitionVaulters7"/>
+  </Droplist>
+
+  <!-- Spawn Armies -->
+  
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter2">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter2Alt">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Delvers">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignDelversDwarf#Mace</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#Mace</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_SistersOfMercy">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#Quest#Spear</UnitDesign>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#Quest#Spear</UnitDesign>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#Quest#Spear</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Bos">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Hurnas">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Birdhive">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Geldirus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Gauran">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Urces">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Jotus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+  
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Silics">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step2Reward_Haunts">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+  
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter5Step3">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter8Step2Winter">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter8Step2Summer">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter8Step3Summer">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesLichbug#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestVaultersChapter8Step3Winter">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesLichbug#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+  
+  
+  
+  <!-- ========================================
+       ============ RAGE WIZARDS ==============
+       ======================================== -->
+
+  <!-- Army reward-->
+  <Droplist Name="DroplistArmyDefinitionRageWizardsMainQuest1">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignRageWizardsBattleMage#1</UnitDesign>
+        <UnitDesign>UnitDesignRageWizardsBattleMage#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignRageWizardsWitch#1</UnitDesign>
+        <UnitDesign>UnitDesignRageWizardsWitch#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <!-- Item Reward (Ancient Sceptre)-->
+  <Droplist Name="DroplistMainQuestRageWizardsChapter2UniqueItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionRageWizards1" ConstructibleName="ItemScepter2RageWizardsMainQuest1"/>
+  </Droplist>
+
+
+  <!-- Tech Reward -->
+  <Droplist Name="DroplistMainQuestRageWizardsChapter4Step1TechnologyReward" Fallback="DroplistMainQuestRageWizardsChapter4Step1Fallback">
+    <Technology Name="TechnologyDefinitionWeaponCommonTier3"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestRageWizardsChapter4Step1Fallback">
+    <Resource Name="EmpireMoney" Quantity="20"/>
+  </Droplist>
+  
+  
+  <!-- Tech Reward: City Improvement (Verda's Temple)-->
+  <Droplist Name="DroplistMainQuestRageWizardsChapter4Step2TechnologyReward" Fallback="DroplistMainQuestRageWizardsChapter4Step2Fallback">
+    <Technology Name="TechnologyDefinitionRageWizards2" />
+  </Droplist>
+  <Droplist Name="DroplistMainQuestRageWizardsChapter4Step2Fallback">
+    <Resource Name="EmpireMoney" Quantity="20"/>
+  </Droplist>
+
+  <!-- Tech Reward: Empire Bonus (Winter pillars/Spells effects)-->
+  <Droplist Name="DroplistMainQuestRageWizardsChapter5and5AltStep1TechnologyReward">
+    <Technology Name="TechnologyDefinitionRageWizards3" />
+  </Droplist>
+
+  <!-- Tech Reward: City Improvement (Altar of Transcendence)-->
+  <Droplist Name="DroplistMainQuestRageWizardsChapter7Step2TechnologyReward">
+    <Technology Name="TechnologyDefinitionRageWizards4Strategic35"/>
+    <Technology Name="TechnologyDefinitionRageWizards4Strategic46"/>
+  </Droplist>
+
+  <!-- Tech Reward: End quest (Boost pillars/Spells)-->
+  <Droplist Name="DroplistMainQuestRageWizardsChapter8and8AltStep2TechnologyReward">
+    <Technology Name="TechnologyDefinitionRageWizards6" />
+  </Droplist>
+
+  <!-- Spawn Armies Chapter7 Step1 -->
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter7Step1">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <!-- Spawn Armies Chapter2 Step1 -->
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Delvers">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_SistersOfMercy">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Ceratan">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Bos">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Erycis">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Kazanji">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Silics">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Urces">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Haunts">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Jotus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Hurnas">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Gauran">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Birdhive">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step1_Geldirus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+  
+  <!-- Spawn Armies Chapter2 Step3 -->
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Delvers">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_SistersOfMercy">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#1</UnitDesign>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#1</UnitDesign>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Ceratan">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Bos">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Erycis">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Kazanji">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#1</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Silics">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Urces">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Haunts">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Jotus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Hurnas">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Gauran">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Birdhive">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestRageWizardsChapter2Step3_Geldirus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ============= NECROPHAGES ==============
+       ======================================== -->
+
+  <Droplist Name="DroplistMainQuestNecrophagesChapter2Step2ResourceName">
+    <String Value="EmpireMoney" Weight="100" />
+  </Droplist>
+
+  <!-- Hero Reward: Necro Hero -->
+  <Droplist Name="DroplistMainQuestNecrophagesChapter2Step2HeroReward">
+    <Hero Name="UnitProfileNecrophagesHero7"/>
+  </Droplist>
+
+  <!--Skill & Skill Level to unlock-->
+  <Droplist Name="DroplistMainQuestNecrophagesChapter3SkillToCheck1">
+    <String Value="HeroSkillLeaderMap03" Weight="100" />
+  </Droplist>
+  <Droplist Name="DroplistMainQuestNecrophagesChapter3SkillLevelToCheck1">
+    <Integer Value="2" Weight="100" />
+  </Droplist>
+  <Droplist Name="DroplistMainQuestNecrophagesChapter3SkillToCheck2">
+    <String Value="HeroSkillCommon01" Weight="100" />
+  </Droplist>
+  <Droplist Name="DroplistMainQuestNecrophagesChapter3SkillLevelToCheck2">
+    <Integer Value="1" Weight="100" />
+  </Droplist>
+
+  <!-- Tech Reward: City Improvement (The Nest)-->
+  <Droplist Name="DroplistMainQuestNecrophagesChapter3Step2TechnologyReward">
+    <Technology Name="TechnologyDefinitionNecrophages7" />
+  </Droplist>
+
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestNecrophagesChapter6Step1ItemReward">
+    <Blueprint Name="TechnologyDefinitionNecrophages13" ConstructibleName="ItemTomeNecrophagesMainQuest1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistMainQuestNecrophagesChapter6Step2StrategicResource5Reward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Resource Name="Strategic5" Quantity="30"/>
+  </Droplist>
+  
+  <!-- Tech Reward: City Improvement (Necro Boost)-->
+  <Droplist Name="DroplistMainQuestNecrophagesChapter7and7AltStep2TechnologyReward">
+    <Technology Name="TechnologyDefinitionNecrophages9" />
+  </Droplist>
+
+  <!-- Tech Reward: Empire Bonus (Ending Reward) -->
+  <Droplist Name="DroplistMainQuestNecrophagesChapter8Step2TechnologyReward">
+    <Technology Name="TechnologyDefinitionNecrophages10" />
+  </Droplist>
+  
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter3Step2">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersTitan#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersMarine#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersDawnOfficer#1</UnitDesign>
+        <UnitDesign>UnitDesignVaultersDawnOfficer#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <!-- Army reward-->
+  <Droplist Name="DroplistArmyDefinitionNecrophagesMainQuest4">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesZombat#1</UnitDesign>
+      </UnitDesigns>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+        <UnitDesign>UnitDesignNecrophagesNecrohunter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Delvers">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_SistersOfMercy">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#Quest#Spear</UnitDesign>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#Quest#Spear</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Ceratan">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Bos">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Erycis">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Kazanji">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Silics">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Urces">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Haunts">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Jotus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Hurnas">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Gauran">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Birdhive">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestNecrophagesChapter1Alt_Geldirus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ============ ROVING CLANS ==============
+       ======================================== -->
+
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestRovingClansChapter1Step2UniqueItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionRovingClans1" ConstructibleName="ItemTomeRovingClansMainQuest1"/>
+  </Droplist>
+  
+  <!-- Tech Reward: City Improvement -->
+  <Droplist Name="DroplistMainQuestRovingClansChapter2Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionRovingClans2" />
+  </Droplist>
+
+  <!-- Tech Reward: Empire Bonus -->
+  <Droplist Name="DroplistMainQuestRovingClansChapter4and4AltStep1TechnologyReward">
+    <Technology Name="TechnologyDefinitionRovingClans3" />
+  </Droplist>
+
+  <!-- Tech Reward: City Improvement -->
+  <Droplist Name="DroplistMainQuestRovingClansChapter7Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionRovingClans4" />
+  </Droplist>
+
+  <!-- Tech Reward: Empire Bonus (ending quest reward) -->
+  <Droplist Name="DroplistMainQuestRovingClansChapter8Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionRovingClans5" />
+  </Droplist>
+
+  <!-- Spawn Army: Chapter5 Step2 -->
+  <Droplist Name="DroplistArmyDefinitionMainQuestRovingClansChapter5Step2">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ============== DRAKKENS ================
+       ======================================== -->
+
+  <!--Empire Plan Ministry & Level-->
+  <Droplist Name="DroplistMainQuestDrakkensChapter2EmpirePlanClass">
+    <String Value="EmpirePlanMilitary"/>
+    <String Value="EmpirePlanForeignAffairs"/>
+  </Droplist>
+  <Droplist Name="DroplistMainQuestDrakkensChapter2EmpirePlanLevel">
+    <Integer Value="2" Weight="100" />
+  </Droplist>
+
+  <!-- Tech Reward: Empire Bonus, +3 Influence per pacified village within empire -->
+  <Droplist Name="DroplistMainQuestDrakkensChapter2Step2TechnologyReward">
+    <Technology Name="TechnologyDefinitionDrakkens1" />
+  </Droplist>
+
+  <!-- City Impvt Reward: Hatchery  -->
+  <Droplist Name="DroplistMainQuestDrakkensChapter3Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionDrakkens2" />
+  </Droplist>
+
+  <!-- Item Reward -->
+  <Droplist Name="DroplistMainQuestDrakkensChapter4and4AltStep1UniqueItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionDrakkens3" ConstructibleName="ItemInsigniaDrakkensMainQuest1"/>
+  </Droplist>
+
+  <!-- Spawn Armies Chapter 7 Step1 -->
+  <Droplist Name="DroplistArmyDefinitionMainQuestDrakkensChapter7Step1">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <!-- City Impvt Reward  -->
+  <Droplist Name="DroplistMainQuestDrakkensChapter8Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionDrakkens4" />
+  </Droplist>
+
+  <!-- Ending Reward  -->
+  <Droplist Name="DroplistMainQuestDrakkensChapter8Step2TechnologyReward">
+    <Technology Name="TechnologyDefinitionDrakkens5" />
+  </Droplist>
+
+  
+  
+  <!-- ========================================
+       ============== CULTISTS ================
+       ======================================== -->
+
+  <!-- Item Reward Armor 1-->
+  <Droplist Name="DroplistMainQuestCultistsChapter2Step2UniqueItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionCultists1" ConstructibleName="ItemInsigniaCultistsMainQuest1"/>
+  </Droplist>
+
+  <!-- Item Reward Armor 2-->
+  <Droplist Name="DroplistMainQuestCultistsChapter5Step2UniqueItemReward" Fallback="DroplistMadFairiesMainQuestRewards">
+    <Blueprint Name="TechnologyDefinitionCultists2" ConstructibleName="ItemInsigniaCultistsMainQuest2"/>
+  </Droplist>
+
+  <!-- City Impvt Reward  -->
+  <Droplist Name="DroplistMainQuestCultistsChapter6and6AltStep1TechnologyReward">
+    <Technology Name="TechnologyDefinitionCultists3" />
+  </Droplist>
+
+  <!-- Empire Bonus Reward  -->
+  <Droplist Name="DroplistMainQuestCultistsChapter7Step2TechnologyReward">
+    <Technology Name="TechnologyDefinitionCultists4" />
+  </Droplist>
+  
+  <!-- Empire Bonus: Ending Reward  -->
+  <Droplist Name="DroplistMainQuestCultistsChapter8Step1TechnologyReward">
+    <Technology Name="TechnologyDefinitionCultists5" />
+  </Droplist>
+  
+  <!-- Spawn Armies Chapter2 Step1 -->
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Delvers">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#1</UnitDesign>
+        <UnitDesign>UnitDesignDelversDwarf#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_SistersOfMercy">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#1</UnitDesign>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#1</UnitDesign>
+        <UnitDesign>UnitDesignSistersOfMercyJusticere#Spear</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Ceratan">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+        <UnitDesign>UnitDesignCeratanDrider#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Bos">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+        <UnitDesign>UnitDesignBosCentaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Erycis">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+        <UnitDesign>UnitDesignErycisHydra#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Kazanji">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignKazanjiDevil#1</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#1</UnitDesign>
+        <UnitDesign>UnitDesignKazanjiDevil#Axe</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Silics">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#1</UnitDesign>
+        <UnitDesign>UnitDesignSilicsGolem#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Urces">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#1</UnitDesign>
+        <UnitDesign>UnitDesignUrcesGiantOgre#Mace</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Haunts">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+        <UnitDesign>UnitDesignHauntsSpecter#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Jotus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+        <UnitDesign>UnitDesignJotusEttin#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Hurnas">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+        <UnitDesign>UnitDesignHurnasOrc#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Gauran">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+        <UnitDesign>UnitDesignGauranMinotaur#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Birdhive">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+        <UnitDesign>UnitDesignBirdhiveHarpy#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+  <Droplist Name="DroplistArmyDefinitionMainQuestCultistsChapter4Step2_Geldirus">
+    <ArmyDefinition>
+      <UnitDesigns>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+        <UnitDesign>UnitDesignGeldirusIceWarg#1</UnitDesign>
+      </UnitDesigns>
+    </ArmyDefinition>
+  </Droplist>
+
+</Datatable>

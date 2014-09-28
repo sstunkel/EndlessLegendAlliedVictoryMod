@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="ItemDefinitions.xsl"?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################ -->
+  <!-- #######  ACCESSORIES     ####### -->
+  <!-- ################################ -->
+
+  <!-- #######     RING    ####### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemRingStrategic1Tier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic1Tier1" />
+    <Cost ResourceName="Production">10</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">2</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedDamage" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic1Tier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic1Tier2" />
+    <Cost ResourceName="Production">20</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedDamage" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic1Tier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic1Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic1Tier3" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedDamage" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemRingStrategic2Tier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic2Tier1" />
+    <Cost ResourceName="Production">10</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">2</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedInitiative" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic2Tier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic2Tier2" />
+    <Cost ResourceName="Production">20</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedInitiative" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic2Tier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic2Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic2Tier3" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedInitiative" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemRingStrategic3Tier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic3Tier1" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedDefense" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic3Tier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic3Tier2" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedDefense" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic3Tier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic3Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic3Tier3" />
+    <Cost ResourceName="Production">70</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedDefense" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemRingStrategic4Tier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic4Tier1" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedAttack" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic4Tier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic4Tier2" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedAttack" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic4Tier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic4Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic4Tier3" />
+    <Cost ResourceName="Production">70</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedAttack" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemRingStrategic5Tier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic5Tier1" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityCityGuard" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic5Tier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic5Tier2" />
+    <Cost ResourceName="Production">80</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityCityGuard" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic5Tier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic5Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic5Tier3" />
+    <Cost ResourceName="Production">110</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityCityGuard" Level="2" />
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemRingStrategic6Tier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic6Tier1" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityDiseaseImmunity" />
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic6Tier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic6Tier2" />
+    <Cost ResourceName="Production">80</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityImmuneDebuff" />
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingStrategic6Tier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingStrategic6Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesRingStrategic6Tier3" />
+    <Cost ResourceName="Production">110</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityUnstoppable" />
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemRingDustTier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesRingDustTier1" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="EmpireMoney" Instant="true">20</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedLife" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingDustTier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesRingDustTier2" />
+    <Cost ResourceName="Production">40</Cost>
+    <Cost ResourceName="EmpireMoney" Instant="true">40</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedLife" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingDustTier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingDustTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesRingDustTier3" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="EmpireMoney" Instant="true">80</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedLife" Level="2"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemRingIronTier1" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialIron" />
+    <SimulationDescriptorReference Name="ItemAttributesRingIronTier1" />
+    <Cost ResourceName="Production">10</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedVision" Level="0"/>
+    <UnitAbilityReference Name="UnitAbilitySharpSense"     Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingIronTier2" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialIron" />
+    <SimulationDescriptorReference Name="ItemAttributesRingIronTier2" />
+    <Cost ResourceName="Production">20</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedVision" Level="1"/>
+    <UnitAbilityReference Name="UnitAbilitySharpSense"     Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemRingIronTier3" SubCategory="SubCategoryRing">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingIronTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialIron" />
+    <SimulationDescriptorReference Name="ItemAttributesRingIronTier3" />
+    <Cost ResourceName="Production">40</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedVision" Level="2"/>
+    <UnitAbilityReference Name="UnitAbilitySharpSense"     Level="2"/>
+  </ItemDefinition>
+
+
+
+  <!-- #######     TALISMAN    ####### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemTalismanStrategic1Tier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic1Tier1" />
+    <Cost ResourceName="Production">10</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">2</Cost>
+    <UnitAbilityReference Name="UnitAbilityDeathOrGlory" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic1Tier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic1Tier2" />
+    <Cost ResourceName="Production">20</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityDeathOrGlory" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic1Tier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic1Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic1Tier3" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityDeathOrGlory" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemTalismanStrategic2Tier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic2Tier1" />
+    <Cost ResourceName="Production">10</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">2</Cost>
+    <UnitAbilityReference Name="UnitAbilityHighGround" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic2Tier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic2Tier2" />
+    <Cost ResourceName="Production">20</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityHighGround" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic2Tier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic2Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic2Tier3" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityHighGround" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemTalismanStrategic3Tier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic3Tier1" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityCityBreaker" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic3Tier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic3Tier2" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityCityBreaker" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic3Tier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic3Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic3Tier3" />
+    <Cost ResourceName="Production">70</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityCityBreaker" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemTalismanStrategic4Tier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic4Tier1" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityRetaliation" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic4Tier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic4Tier2" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityRetaliation" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic4Tier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic4Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic4Tier3" />
+    <Cost ResourceName="Production">70</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityRetaliation" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemTalismanStrategic5Tier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic5Tier1" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityShock" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic5Tier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic5Tier2" />
+    <Cost ResourceName="Production">80</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityShock" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic5Tier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic5Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic5Tier3" />
+    <Cost ResourceName="Production">110</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityShock" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemTalismanStrategic6Tier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic6Tier1" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityForestResonance" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic6Tier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic6Tier2" />
+    <Cost ResourceName="Production">80</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityForestResonance" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanStrategic6Tier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanStrategic6Tier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanStrategic6Tier3" />
+    <Cost ResourceName="Production">110</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityForestResonance" Level="2"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemTalismanDustTier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanDustTier1" />
+    <Cost ResourceName="Production">30</Cost>
+    <Cost ResourceName="EmpireMoney" Instant="true">20</Cost>
+    <UnitAbilityReference Name="UnitAbilityRegeneration" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanDustTier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanDustTier2" />
+    <Cost ResourceName="Production">40</Cost>
+    <Cost ResourceName="EmpireMoney" Instant="true">40</Cost>
+    <UnitAbilityReference Name="UnitAbilityRegeneration" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanDustTier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanDustTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanDustTier3" />
+    <Cost ResourceName="Production">50</Cost>
+    <Cost ResourceName="EmpireMoney" Instant="true">80</Cost>
+    <UnitAbilityReference Name="UnitAbilityRegeneration" Level="2"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemTalismanIronTier1" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialIron" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanIronTier1" />
+    <Cost ResourceName="Production">20</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedMovement" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanIronTier2" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialIron" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanIronTier2" />
+    <Cost ResourceName="Production">40</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedMovement" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTalismanIronTier3" SubCategory="SubCategoryTalisman">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTalismanIronTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialIron" />
+    <SimulationDescriptorReference Name="ItemAttributesTalismanIronTier3" />
+    <Cost ResourceName="Production">80</Cost>
+    <UnitAbilityReference Name="UnitAbilityImprovedMovement" Level="2"/>
+  </ItemDefinition>
+
+
+
+
+  <!-- #######     TOME    ####### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemTomeStrategic1Tier1" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic1Tier1" />
+    <Cost ResourceName="Strategic1" Instant="true">4</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic1Tier2" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic1Tier2" />
+    <Cost ResourceName="Strategic1" Instant="true">8</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic1Tier3" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic1Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic1Tier3" />
+    <Cost ResourceName="Strategic1" Instant="true">16</Cost>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemTomeStrategic2Tier1" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic2Tier1" />
+    <Cost ResourceName="Strategic2" Instant="true">4</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic2Tier2" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic2Tier2" />
+    <Cost ResourceName="Strategic2" Instant="true">8</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic2Tier3" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic2Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic2Tier3" />
+    <Cost ResourceName="Strategic2" Instant="true">16</Cost>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemTomeStrategic3Tier1" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic3Tier1" />
+    <Cost ResourceName="Strategic3" Instant="true">8</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic3Tier2" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic3Tier2" />
+    <Cost ResourceName="Strategic3" Instant="true">16</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic3Tier3" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic3Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic3Tier3" />
+    <Cost ResourceName="Strategic3" Instant="true">32</Cost>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemTomeStrategic4Tier1" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic4Tier1" />
+    <Cost ResourceName="Strategic4" Instant="true">8</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic4Tier2" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic4Tier2" />
+    <Cost ResourceName="Strategic4" Instant="true">16</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic4Tier3" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic4Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic4Tier3" />
+    <Cost ResourceName="Strategic4" Instant="true">32</Cost>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemTomeStrategic5Tier1" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic5Tier1" />
+    <Cost ResourceName="Strategic5" Instant="true">16</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic5Tier2" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic5Tier2" />
+    <Cost ResourceName="Strategic5" Instant="true">32</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic5Tier3" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic5Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic5Tier3" />
+    <Cost ResourceName="Strategic5" Instant="true">64</Cost>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemTomeStrategic6Tier1" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic6Tier1" />
+    <Cost ResourceName="Strategic6" Instant="true">16</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic6Tier2" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic6Tier2" />
+    <Cost ResourceName="Strategic6" Instant="true">32</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeStrategic6Tier3" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeStrategic6Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeStrategic6Tier3" />
+    <Cost ResourceName="Strategic6" Instant="true">64</Cost>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemTomeDustTier1" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeDustTier1" />
+    <Cost ResourceName="EmpireMoney" Instant="true">40</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeDustTier2" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeDustTier2" />
+    <Cost ResourceName="EmpireMoney" Instant="true">80</Cost>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemTomeDustTier3" SubCategory="SubCategoryTome">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeDustTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeDustTier3" />
+    <Cost ResourceName="EmpireMoney" Instant="true">160</Cost>
+  </ItemDefinition>
+
+
+
+  <!-- #######     INSIGNIA    ####### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemInsigniaStrategic1Tier1" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic1Tier1" />
+    <Cost ResourceName="Strategic1" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralDamage" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic1Tier2" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic1Tier2" />
+    <Cost ResourceName="Strategic1" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralDamage" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic1Tier3" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic1Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic1Tier3" />
+    <Cost ResourceName="Strategic1" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralDamage" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemInsigniaStrategic2Tier1" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic2Tier1" />
+    <Cost ResourceName="Strategic2" Instant="true">4</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralInitiative" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic2Tier2" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic2Tier2" />
+    <Cost ResourceName="Strategic2" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralInitiative" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic2Tier3" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryCommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic2Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic2Tier3" />
+    <Cost ResourceName="Strategic2" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralInitiative" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemInsigniaStrategic3Tier1" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic3Tier1" />
+    <Cost ResourceName="Strategic3" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralDefense" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic3Tier2" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic3Tier2" />
+    <Cost ResourceName="Strategic3" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralDefense" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic3Tier3" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic3Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic3Tier3" />
+    <Cost ResourceName="Strategic3" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralDefense" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemInsigniaStrategic4Tier1" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic4Tier1" />
+    <Cost ResourceName="Strategic4" Instant="true">8</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralAttack" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic4Tier2" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic4Tier2" />
+    <Cost ResourceName="Strategic4" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralAttack" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic4Tier3" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryUncommonTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic4Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic4Tier3" />
+    <Cost ResourceName="Strategic4" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralAttack" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemInsigniaStrategic5Tier1" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic5Tier1" />
+    <Cost ResourceName="Strategic5" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralResistance" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic5Tier2" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic5Tier2" />
+    <Cost ResourceName="Strategic5" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralResistance" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic5Tier3" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic5Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic5Tier3" />
+    <Cost ResourceName="Strategic5" Instant="true">64</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralResistance" Level="2"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemInsigniaStrategic6Tier1" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic6Tier1" />
+    <Cost ResourceName="Strategic6" Instant="true">16</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralPiercing" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic6Tier2" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic6Tier2" />
+    <Cost ResourceName="Strategic6" Instant="true">32</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralPiercing" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaStrategic6Tier3" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyAccessoryRareTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaStrategic6Tier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaStrategic6Tier3" />
+    <Cost ResourceName="Strategic6" Instant="true">64</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralPiercing" Level="2"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemInsigniaDustTier1" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier1"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaDustTier1" />
+    <Cost ResourceName="EmpireMoney" Instant="true">40</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralHealth" Level="0"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaDustTier2" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier2"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaDustTier2" />
+    <Cost ResourceName="EmpireMoney" Instant="true">80</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralHealth" Level="1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemInsigniaDustTier3" SubCategory="SubCategoryInsignia">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDustTier3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBaseTier3"/>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaDustTier3" />
+    <Cost ResourceName="EmpireMoney" Instant="true">160</Cost>
+    <UnitAbilityReference Name="UnitAbilityGeneralHealth" Level="2"/>
+  </ItemDefinition>
+
+</Datatable>

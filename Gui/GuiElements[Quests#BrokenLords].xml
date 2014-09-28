@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://BrokenLordsw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://BrokenLordsw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter1">
+    <Title>%MainQuestBrokenLords-Chapter1Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter1Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter1Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter1-Step1">%MainQuestBrokenLords-Chapter1-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter1-Step2">%MainQuestBrokenLords-Chapter1-Step2</Step>
+      <Step Name="MainQuestBrokenLords-Chapter1-Step2">%MainQuestBrokenLords-Chapter1-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter2">
+    <Title>%MainQuestBrokenLords-Chapter2Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter2Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter2Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter2-Step1">%MainQuestBrokenLords-Chapter2-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter2-Step2">%MainQuestBrokenLords-Chapter2-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter3">
+    <Title>%MainQuestBrokenLords-Chapter3Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter3Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter3Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter3-Step1">%MainQuestBrokenLords-Chapter3-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter3-Step2">%MainQuestBrokenLords-Chapter3-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter4">
+    <Title>%MainQuestBrokenLords-Chapter4Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter4Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter4Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter4-Step1">%MainQuestBrokenLords-Chapter4-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter4-Step2">%MainQuestBrokenLords-Chapter4-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter5">
+    <Title>%MainQuestBrokenLords-Chapter5Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter5Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter5Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter5-Step1">%MainQuestBrokenLords-Chapter5-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter5-Step2">%MainQuestBrokenLords-Chapter5-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter6">
+    <Title>%MainQuestBrokenLords-Chapter6Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter6Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter6Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter6-Step1">%MainQuestBrokenLords-Chapter6-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter6-Step2">%MainQuestBrokenLords-Chapter6-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6Alt -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter6Alt">
+    <Title>%MainQuestBrokenLords-Chapter6AltTitle</Title>
+    <Description>%MainQuestBrokenLords-Chapter6AltDescription</Description>
+    <Objective>%MainQuestBrokenLords-Chapter6AltObjective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter6AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter6Alt-Step1">%MainQuestBrokenLords-Chapter6Alt-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter6Alt-Step2">%MainQuestBrokenLords-Chapter6Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter7">
+    <Title>%MainQuestBrokenLords-Chapter7Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter7Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter7Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter7-Step1">%MainQuestBrokenLords-Chapter7-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter7-Step2">%MainQuestBrokenLords-Chapter7-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7Alt -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter7Alt">
+    <Title>%MainQuestBrokenLords-Chapter7AltTitle</Title>
+    <Description>%MainQuestBrokenLords-Chapter7AltDescription</Description>
+    <Objective>%MainQuestBrokenLords-Chapter7AltObjective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter7AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter7Alt-Step1">%MainQuestBrokenLords-Chapter7Alt-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter7Alt-Step2">%MainQuestBrokenLords-Chapter7Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestBrokenLords-Chapter8">
+    <Title>%MainQuestBrokenLords-Chapter8Title</Title>
+    <Description>%MainQuestBrokenLords-Chapter8Description</Description>
+    <Objective>%MainQuestBrokenLords-Chapter8Objective</Objective>
+    <Outcome>%MainQuestBrokenLords-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBrokenLords8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestBrokenLords-Chapter8-Step1">%MainQuestBrokenLords-Chapter8-Step1</Step>
+      <Step Name="MainQuestBrokenLords-Chapter8-Step2">%MainQuestBrokenLords-Chapter8-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

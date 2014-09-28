@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- ################################ -->
+	<!-- #######     MILITARY     ####### -->
+	<!-- ################################ -->
+
+  <GuiElement Name="UnitBody">
+    <Title>%CategoryUnitBodyTitle</Title>
+    <Description>%CategoryUnitBodyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryUnitSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitDesign">
+    <Title>%CategoryUnitDesignTitle</Title>
+    <Description>%CategoryUnitDesignDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryUnitSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfile">
+    <Title>%CategoryHeroTitle</Title>
+    <Description>%CategoryHeroDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classHeroHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitSkill">
+    <Title>%CategoryUnitSkillTitle</Title>
+    <Description>%CategoryUnitSkillDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classHeroHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Unit">
+    <Title>%CategoryUnitTitle</Title>
+    <Description>%CategoryUnitDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryUnitSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ArmyAction">
+    <Title>%CategoryArmyActionTitle</Title>
+    <Description>%CategoryArmyActionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryArmyActionSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleAction">
+    <Title>%CategoryBattleActionTitle</Title>
+    <Description>%CategoryBattleActionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryBattleActionSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ArmySize">
+    <Title>%CategoryArmySizeTitle</Title>
+    <Description>%CategoryArmySizeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryArmySizeSmall" />
+    </Icons>
+  </GuiElement>
+
+
+
+	<!-- ################################ -->
+	<!-- #######       WORLD      ####### -->
+	<!-- ################################ -->
+
+  <GuiElement Name="Anomaly">
+    <Title>%CategoryAnomalyTitle</Title>
+    <Description>%CategoryAnomalyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryAnomalySmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PointOfInterestImprovement">
+    <Title>%CategoryRegionExpansionTitle</Title>
+    <Description>%CategoryRegionExpansionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryExpansionSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Strategic">
+    <Title>%CategoryResourceDepositStrategicTitle</Title>
+    <Description>%CategoryResourceDepositStrategicDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStrategicSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ResourceDeposit_Luxury">
+    <Title>%CategoryResourceDepositLuxuryTitle</Title>
+    <Description>%CategoryResourceDepositLuxuryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryLuxurySmall" />
+    </Icons>
+  </GuiElement>
+
+
+
+	<!-- ################################ -->
+	<!-- #######      ECONOMY     ####### -->
+	<!-- ################################ -->
+
+  <GuiElement Name="Empire">
+    <Title>%CategoryEmpireTitle</Title>
+    <Description>%CategoryEmpireDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryEmpireHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Center">
+    <Title>%DistrictTypeCenterTitle</Title>
+  </GuiElement>
+  
+  <GuiElement Name="Extension">
+    <Title>%DistrictTypeExtensionTitle</Title>
+  </GuiElement>
+  
+  <GuiElement Name="Exploitation">
+    <Title>%DistrictTypeExploitationTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovement">
+    <Title>%CategoryCityImprovementTitle</Title>
+    <Description>%CategoryCityImprovementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DistrictImprovement">
+    <Title>%CategoryCityExpansionTitle</Title>
+    <Description>%CategoryCityExpansionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryExpansionSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="ItemDefinition">
+    <Title>%CategoryItemDefinitionTitle</Title>
+    <Description>%CategoryItemDefinitionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryItemSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Item">
+    <Title>%CategoryItemTitle</Title>
+    <Description>%CategoryItemDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryItemSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Diplomacy">
+    <Title>%CategoryDiplomacyTitle</Title>
+    <Description>%CategoryDiplomacyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryDiplomacySmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Treaty">
+    <Title>%CategoryDiplomacyTitle</Title>
+    <Description>%CategoryDiplomacyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryDiplomacySmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Marketplace">
+    <Title>%CategoryMarketplaceTitle</Title>
+    <Description>%CategoryMarketplaceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryMarketplaceHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Booster">
+    <Title>%CategoryBoosterTitle</Title>
+    <Description>%CategoryBoosterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryStockpileHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CategoryBuyout">
+    <Title>%CategoryBuyoutTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="fidsDustHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BoosterGenerator">
+    <Title>%CategoryBoosterTitle</Title>
+    <Description>%CategoryBoosterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryStockpileHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="MinorFaction">
+    <Title>%CategoryMinorFactionTitle</Title>
+    <Description>%CategoryMinorFactionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryMinorFactionSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="FactionTrait">
+    <Title>%CategoryFactionTraitTitle</Title>
+    <Description>%CategoryFactionTraitDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryEmpireHD" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

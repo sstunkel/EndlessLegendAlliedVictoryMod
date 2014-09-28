@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="IAmACheater" Type="Cheat">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="TechnologyCost" Operation="Multiplication" Value="0" Path="../ClassEmpire/ClassResearch" Priority="10" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="BrokenLordsShieldA_Defense" Type="Item">
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="BrokenLordsShieldA_Offense" Type="Item">
+    <SimulationModifierDescriptors>
+      <!--<SimulationModifierDescriptor TargetProperty="PhysicalDamage" Value="10" Operation="Addition" Path="../ClassUnit,AffinityBrokenLords/MainHand,BrokenLordShield_A" />-->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="OneHandedMeleeAxe" Type="Item">
+    <SimulationModifierDescriptors>
+      <!--<SimulationBinaryModifierDescriptor TargetProperty="PhysicalDamage" Value="6" Operation="Addition" />-->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="VariationA" Type="Variation">
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="VariationB" Type="Variation">
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="VariationC" Type="Variation">
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="VariationD" Type="Variation">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="KazanjiDevilSwordA" Type="Item">
+  </SimulationDescriptor>
+
+
+  <SimulationDescriptor Name="ItemBonusSword1BrokenLordsInfantry" Type="ItemBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="2" Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <SimulationDescriptor Name="ItemBonusSword2BrokenLordsInfantry" Type="ItemBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="4" Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemBonusSword1" Type="ItemBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="2" Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemBonus2H_SwordA" Type="ItemBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="4" Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemBonus1H_SpearA" Type="ItemBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="1" Operation="Addition" Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative" Value="1" Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemBonus2H_StaffA" Type="ItemBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="3" Operation="Addition" Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth" Value="10" Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemBonus2H_ScepterA" Type="ItemBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="1" Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--<SimulationDescriptor Name="ItemFactionBonusMaceAUrces" Type="ItemFactionBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="2" Operation="Addition" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemFactionBonusMaceAMadFairies" Type="ItemFactionBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="4" Operation="Addition" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemFactionBonusMaceASilics" Type="ItemFactionBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="4" Operation="Addition" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemFactionBonusMaceADelvers" Type="ItemFactionBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack" Value="4" Operation="Addition" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>-->
+
+  <SimulationDescriptor Name="CityConstructibleActionRazeTooltipEffect" Type="CityConstructibleAction">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityConstructibleActionMigrateTooltipEffect" Type="CityConstructibleAction">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PointOfInterestOnDistrict" Type="PointOfInterestOnDistrict"/>
+</Datatable>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ######################################################### -->
+  <!-- #################### GELDIRUS  UNITS #################### -->
+  <!-- ######################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#1"                    Model="1140100">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+  </UnitDesign>
+  
+  <!-- Used by the Minor Faction tribes to create village armies and roaming armies -->
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MinorEmpireEra1"      Model="1140111">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""                     />
+      <Slot Name="Torso"                           ItemName=""                     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MinorEmpireEra2"      Model="1140112">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="Head"                            ItemName=""                     />
+      <Slot Name="Torso"                           ItemName=""                     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MinorEmpireEra3"      Model="1140113">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="Head"                            ItemName=""                     />
+      <Slot Name="Torso"                           ItemName=""                     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MinorEmpireEra4"      Model="1140114">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="Head"                            ItemName=""                     />
+      <Slot Name="Torso"                           ItemName=""                     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MinorEmpireEra5"      Model="1140115">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="Head"                            ItemName=""                     />
+      <Slot Name="Torso"                           ItemName=""                     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MinorEmpireEra6"      Model="1140116">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="Head"                            ItemName=""                     />
+      <Slot Name="Torso"                           ItemName=""                     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MercenaryEra1"        Model="1140121">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MercenaryEra2"        Model="1140122">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MercenaryEra3"        Model="1140123">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MercenaryEra4"        Model="1140124">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MercenaryEra5"        Model="1140125">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MercenaryEra6"        Model="1140126">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#ConvertedEra1"        Model="1140131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <Tags>ConvertedVillageUnit,Era1,Geldirus,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#ConvertedEra2"        Model="1140132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <Tags>ConvertedVillageUnit,Era2,Geldirus,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#ConvertedEra3"        Model="1140133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <Tags>ConvertedVillageUnit,Era3,Geldirus,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#ConvertedEra4"        Model="1140134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <Tags>ConvertedVillageUnit,Era4,Geldirus,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#ConvertedEra5"        Model="1140135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <Tags>ConvertedVillageUnit,Era5,Geldirus,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#ConvertedEra6"        Model="1140136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <Tags>ConvertedVillageUnit,Era6,Geldirus,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by Quests to spawn armies -->
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#Mace"                 Model="1140103">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,QuestNPC</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"   ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"    ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Head"       ItemName="" />
+      <Slot Name="Torso"      ItemName="ItemTorsoIronTier1"    />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Default Unit Design proposed to Player when tutorial -->
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#Tutorial"             Model="1140104">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />    
+    <SimulationDescriptorReference Name="UnitTypeGeldirusIceWargTutorial" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor,AffinityTutorial/EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#MinorEmpire"          Model="1140101">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"   ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="OffHand"    ItemName="ItemClaw2IronTier1#1" />
+      <Slot Name="Head"       ItemName="" />
+      <Slot Name="Torso"      ItemName="ItemTorsoIronTier1"    />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGeldirusIceWarg#Mercenary"            Model="1140102">
+    <UnitBodyDefinitionReference Name="UnitBodyGeldirusIceWarg" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGeldirus,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

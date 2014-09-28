@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <!-- Booster exchanges -->
+
+  <DiplomaticTermBoosterExchangeDefinition Name="TruceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">WarToTruce</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+
+    <BoosterList>
+      <BoosterReference Name="BoosterScience" />
+      <BoosterReference Name="BoosterIndustry" />
+      <BoosterReference Name="BoosterFood" />
+    </BoosterList>
+    
+  
+</DiplomaticTermBoosterExchangeDefinition>
+  
+
+  <DiplomaticTermBoosterExchangeDefinition Name="PeaceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <BoosterList>
+      <BoosterReference Name="BoosterScience" />
+      <BoosterReference Name="BoosterIndustry" />
+      <BoosterReference Name="BoosterFood" />
+    </BoosterList>
+    
+  </DiplomaticTermBoosterExchangeDefinition>
+
+  <DiplomaticTermBoosterExchangeDefinition Name="ColdwarToAllianceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <BoosterList>
+      <BoosterReference Name="BoosterScience" />
+      <BoosterReference Name="BoosterIndustry" />
+      <BoosterReference Name="BoosterFood" />
+    </BoosterList>
+
+  </DiplomaticTermBoosterExchangeDefinition>
+
+  <DiplomaticTermBoosterExchangeDefinition Name="PeaceToAllianceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <BoosterList>
+      <BoosterReference Name="BoosterScience" />
+      <BoosterReference Name="BoosterIndustry" />
+      <BoosterReference Name="BoosterFood" />
+    </BoosterList>
+
+  </DiplomaticTermBoosterExchangeDefinition>
+
+
+  <DiplomaticTermBoosterExchangeDefinition Name="PeaceBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    
+    <BoosterList>
+      <BoosterReference Name="BoosterScience" />
+      <BoosterReference Name="BoosterIndustry" />
+      <BoosterReference Name="BoosterFood" />
+    </BoosterList>
+    
+  </DiplomaticTermBoosterExchangeDefinition>
+
+
+  <DiplomaticTermBoosterExchangeDefinition Name="AllianceBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <BoosterList>
+      <BoosterReference Name="BoosterScience" />
+      <BoosterReference Name="BoosterIndustry" />
+      <BoosterReference Name="BoosterFood" />
+    </BoosterList>
+    
+  </DiplomaticTermBoosterExchangeDefinition>
+
+  <DiplomaticTermBoosterExchangeDefinition Name="OpenBordersNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">OpenBorders</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <BoosterList>
+      <BoosterReference Name="BoosterScience" />
+      <BoosterReference Name="BoosterIndustry" />
+      <BoosterReference Name="BoosterFood" />
+    </BoosterList>
+
+  </DiplomaticTermBoosterExchangeDefinition>
+
+  <!-- City exchanges -->
+
+  <DiplomaticTermCityExchangeDefinition Name="TruceNegotiationCityDeal" PropositionMethod="Negotiation" Category="City">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">WarToTruce</DiplomaticContractContainsTermPrerequisite>
+    
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichProvides">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+  </DiplomaticTermCityExchangeDefinition>
+  
+
+  <!--<DiplomaticTermCityExchangeDefinition Name="PeaceNegotiationCityDeal" PropositionMethod="Negotiation" Category="City">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichProvides">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">20 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    
+  </DiplomaticTermCityExchangeDefinition>
+
+  <DiplomaticTermCityExchangeDefinition Name="ColdWarToAllianceNegotiationCityDeal" PropositionMethod="Negotiation" Category="City">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichProvides">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">20 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  
+</DiplomaticTermCityExchangeDefinition>
+
+  <DiplomaticTermCityExchangeDefinition Name="PeaceToAllianceNegotiationCityDeal" PropositionMethod="Negotiation" Category="City">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichProvides">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">12 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermCityExchangeDefinition>
+
+  <DiplomaticTermCityExchangeDefinition Name="PeaceCityDeal" PropositionMethod="Negotiation" Category="City">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStatePeace</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichProvides">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">12 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermCityExchangeDefinition>
+
+  <DiplomaticTermCityExchangeDefinition Name="AllianceCityDeal" PropositionMethod="Negotiation" Category="City">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichProvides">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+
+    <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
+      <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
+    </DiplomaticRelationStateEmpirePrerequisite>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermCityExchangeDefinition>-->
+  
+  <!-- Resource exchanges -->
+  
+  <DiplomaticTermResourceExchangeDefinition Name="TruceNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">WarToTruce</DiplomaticContractContainsTermPrerequisite>
+
+    <!--Exchange of goods costs Prestige ★.-->
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <TradableResourceList>
+      <TradableResourceReference Name="EmpireMoney" />
+      <TradableResourceReference Name="Strategic1" />
+      <TradableResourceReference Name="Strategic2" />
+      <TradableResourceReference Name="Strategic3" />
+      <TradableResourceReference Name="Strategic4" />
+      <TradableResourceReference Name="Strategic5" />
+      <TradableResourceReference Name="Strategic6" />
+      <TradableResourceReference Name="Luxury1" />
+      <TradableResourceReference Name="Luxury2" />
+      <TradableResourceReference Name="Luxury3" />
+      <TradableResourceReference Name="Luxury4" />
+      <TradableResourceReference Name="Luxury5" />
+      <TradableResourceReference Name="Luxury6" />
+      <TradableResourceReference Name="Luxury7" />
+      <TradableResourceReference Name="Luxury8" />
+      <TradableResourceReference Name="Luxury9" />
+      <TradableResourceReference Name="Luxury10" />
+      <TradableResourceReference Name="Luxury11" />
+      <TradableResourceReference Name="Luxury12" />
+      <TradableResourceReference Name="Luxury13" />
+      <TradableResourceReference Name="Luxury14" />
+      <TradableResourceReference Name="Luxury15" />
+    </TradableResourceList>
+
+  
+</DiplomaticTermResourceExchangeDefinition>
+
+  <DiplomaticTermResourceExchangeDefinition Name="PeaceNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <TradableResourceList>
+      <TradableResourceReference Name="EmpireMoney" />
+      <TradableResourceReference Name="Strategic1" />
+      <TradableResourceReference Name="Strategic2" />
+      <TradableResourceReference Name="Strategic3" />
+      <TradableResourceReference Name="Strategic4" />
+      <TradableResourceReference Name="Strategic5" />
+      <TradableResourceReference Name="Strategic6" />
+      <TradableResourceReference Name="Luxury1" />
+      <TradableResourceReference Name="Luxury2" />
+      <TradableResourceReference Name="Luxury3" />
+      <TradableResourceReference Name="Luxury4" />
+      <TradableResourceReference Name="Luxury5" />
+      <TradableResourceReference Name="Luxury6" />
+      <TradableResourceReference Name="Luxury7" />
+      <TradableResourceReference Name="Luxury8" />
+      <TradableResourceReference Name="Luxury9" />
+      <TradableResourceReference Name="Luxury10" />
+      <TradableResourceReference Name="Luxury11" />
+      <TradableResourceReference Name="Luxury12" />
+      <TradableResourceReference Name="Luxury13" />
+      <TradableResourceReference Name="Luxury14" />
+      <TradableResourceReference Name="Luxury15" />
+    </TradableResourceList>
+    
+  </DiplomaticTermResourceExchangeDefinition>
+
+  <DiplomaticTermResourceExchangeDefinition Name="ColdWarToAllianceNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <TradableResourceList>
+      <TradableResourceReference Name="EmpireMoney" />
+      <TradableResourceReference Name="Strategic1" />
+      <TradableResourceReference Name="Strategic2" />
+      <TradableResourceReference Name="Strategic3" />
+      <TradableResourceReference Name="Strategic4" />
+      <TradableResourceReference Name="Strategic5" />
+      <TradableResourceReference Name="Strategic6" />
+      <TradableResourceReference Name="Luxury1" />
+      <TradableResourceReference Name="Luxury2" />
+      <TradableResourceReference Name="Luxury3" />
+      <TradableResourceReference Name="Luxury4" />
+      <TradableResourceReference Name="Luxury5" />
+      <TradableResourceReference Name="Luxury6" />
+      <TradableResourceReference Name="Luxury7" />
+      <TradableResourceReference Name="Luxury8" />
+      <TradableResourceReference Name="Luxury9" />
+      <TradableResourceReference Name="Luxury10" />
+      <TradableResourceReference Name="Luxury11" />
+      <TradableResourceReference Name="Luxury12" />
+      <TradableResourceReference Name="Luxury13" />
+      <TradableResourceReference Name="Luxury14" />
+      <TradableResourceReference Name="Luxury15" />
+    </TradableResourceList>
+
+
+  </DiplomaticTermResourceExchangeDefinition>
+
+  <DiplomaticTermResourceExchangeDefinition Name="PeaceToAllianceNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+    <TradableResourceList>
+      <TradableResourceReference Name="EmpireMoney" />
+      <TradableResourceReference Name="Strategic1" />
+      <TradableResourceReference Name="Strategic2" />
+      <TradableResourceReference Name="Strategic3" />
+      <TradableResourceReference Name="Strategic4" />
+      <TradableResourceReference Name="Strategic5" />
+      <TradableResourceReference Name="Strategic6" />
+      <TradableResourceReference Name="Luxury1" />
+      <TradableResourceReference Name="Luxury2" />
+      <TradableResourceReference Name="Luxury3" />
+      <TradableResourceReference Name="Luxury4" />
+      <TradableResourceReference Name="Luxury5" />
+      <TradableResourceReference Name="Luxury6" />
+      <TradableResourceReference Name="Luxury7" />
+      <TradableResourceReference Name="Luxury8" />
+      <TradableResourceReference Name="Luxury9" />
+      <TradableResourceReference Name="Luxury10" />
+      <TradableResourceReference Name="Luxury11" />
+      <TradableResourceReference Name="Luxury12" />
+      <TradableResourceReference Name="Luxury13" />
+      <TradableResourceReference Name="Luxury14" />
+      <TradableResourceReference Name="Luxury15" />
+    </TradableResourceList>
+
+  </DiplomaticTermResourceExchangeDefinition>
+  
+  <DiplomaticTermResourceExchangeDefinition Name="PeaceResourceDeal" PropositionMethod="Negotiation" Category="Resource">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    
+    <!--Test costs-->
+    <!--<DiplomaticCost Responsible="EmpireWhichProvides" ResourceName="EmpirePoint">(10</DiplomaticCost>
+    <DiplomaticCost Responsible="EmpireWhichReceives" ResourceName="EmpirePoint">(5</DiplomaticCost>-->
+
+    <TradableResourceList>
+      <TradableResourceReference Name="EmpireMoney" />
+      <TradableResourceReference Name="Strategic1" />
+      <TradableResourceReference Name="Strategic2" />
+      <TradableResourceReference Name="Strategic3" />
+      <TradableResourceReference Name="Strategic4" />
+      <TradableResourceReference Name="Strategic5" />
+      <TradableResourceReference Name="Strategic6" />
+      <TradableResourceReference Name="Luxury1" />
+      <TradableResourceReference Name="Luxury2" />
+      <TradableResourceReference Name="Luxury3" />
+      <TradableResourceReference Name="Luxury4" />
+      <TradableResourceReference Name="Luxury5" />
+      <TradableResourceReference Name="Luxury6" />
+      <TradableResourceReference Name="Luxury7" />
+      <TradableResourceReference Name="Luxury8" />
+      <TradableResourceReference Name="Luxury9" />
+      <TradableResourceReference Name="Luxury10" />
+      <TradableResourceReference Name="Luxury11" />
+      <TradableResourceReference Name="Luxury12" />
+      <TradableResourceReference Name="Luxury13" />
+      <TradableResourceReference Name="Luxury14" />
+      <TradableResourceReference Name="Luxury15" />
+    </TradableResourceList>
+
+  </DiplomaticTermResourceExchangeDefinition>
+
+  <DiplomaticTermResourceExchangeDefinition Name="AllianceResourceDeal" PropositionMethod="Negotiation" Category="Resource">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    
+    <TradableResourceList>
+      <TradableResourceReference Name="EmpireMoney" />
+      <TradableResourceReference Name="Strategic1" />
+      <TradableResourceReference Name="Strategic2" />
+      <TradableResourceReference Name="Strategic3" />
+      <TradableResourceReference Name="Strategic4" />
+      <TradableResourceReference Name="Strategic5" />
+      <TradableResourceReference Name="Strategic6" />
+      <TradableResourceReference Name="Luxury1" />
+      <TradableResourceReference Name="Luxury2" />
+      <TradableResourceReference Name="Luxury3" />
+      <TradableResourceReference Name="Luxury4" />
+      <TradableResourceReference Name="Luxury5" />
+      <TradableResourceReference Name="Luxury6" />
+      <TradableResourceReference Name="Luxury7" />
+      <TradableResourceReference Name="Luxury8" />
+      <TradableResourceReference Name="Luxury9" />
+      <TradableResourceReference Name="Luxury10" />
+      <TradableResourceReference Name="Luxury11" />
+      <TradableResourceReference Name="Luxury12" />
+      <TradableResourceReference Name="Luxury13" />
+      <TradableResourceReference Name="Luxury14" />
+      <TradableResourceReference Name="Luxury15" />
+    </TradableResourceList>
+
+  </DiplomaticTermResourceExchangeDefinition>
+
+  <DiplomaticTermResourceExchangeDefinition Name="OpenBordersNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">OpenBorders</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
+    
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    
+    <TradableResourceList>
+      <TradableResourceReference Name="EmpireMoney" />
+      <TradableResourceReference Name="Strategic1" />
+      <TradableResourceReference Name="Strategic2" />
+      <TradableResourceReference Name="Strategic3" />
+      <TradableResourceReference Name="Strategic4" />
+      <TradableResourceReference Name="Strategic5" />
+      <TradableResourceReference Name="Strategic6" />
+      <TradableResourceReference Name="Luxury1" />
+      <TradableResourceReference Name="Luxury2" />
+      <TradableResourceReference Name="Luxury3" />
+      <TradableResourceReference Name="Luxury4" />
+      <TradableResourceReference Name="Luxury5" />
+      <TradableResourceReference Name="Luxury6" />
+      <TradableResourceReference Name="Luxury7" />
+      <TradableResourceReference Name="Luxury8" />
+      <TradableResourceReference Name="Luxury9" />
+      <TradableResourceReference Name="Luxury10" />
+      <TradableResourceReference Name="Luxury11" />
+      <TradableResourceReference Name="Luxury12" />
+      <TradableResourceReference Name="Luxury13" />
+      <TradableResourceReference Name="Luxury14" />
+      <TradableResourceReference Name="Luxury15" />
+    </TradableResourceList>
+
+  </DiplomaticTermResourceExchangeDefinition>
+
+  <!-- Technology exchanges -->
+
+  <DiplomaticTermTechnologyExchangeDefinition Name="TruceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">WarToTruce</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">3 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+  
+</DiplomaticTermTechnologyExchangeDefinition>
+
+
+  <DiplomaticTermTechnologyExchangeDefinition Name="PeaceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermTechnologyExchangeDefinition>
+
+  <DiplomaticTermTechnologyExchangeDefinition Name="ColdWarToAllianceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+  
+</DiplomaticTermTechnologyExchangeDefinition>
+
+
+  <DiplomaticTermTechnologyExchangeDefinition Name="PeaceToAllianceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">9 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermTechnologyExchangeDefinition>
+
+
+  <DiplomaticTermTechnologyExchangeDefinition Name="PeaceTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">9 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermTechnologyExchangeDefinition>
+
+
+  <DiplomaticTermTechnologyExchangeDefinition Name="AllianceTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">3 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermTechnologyExchangeDefinition>
+
+  
+  <DiplomaticTermTechnologyExchangeDefinition Name="OpenBordersNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
+    <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">OpenBorders</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
+    <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
+
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+
+  </DiplomaticTermTechnologyExchangeDefinition>
+
+</Datatable>

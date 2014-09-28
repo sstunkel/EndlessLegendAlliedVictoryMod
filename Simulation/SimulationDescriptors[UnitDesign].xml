@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- UNIT CLASS -->
+  
+  <!-- Battle Movement has been multiplied by 3 for the battle V2 -->
+  <SimulationDescriptor Name="Era1MilitiaBonus" Type="MilitiaBonus">
+    <SimulationModifierDescriptors>
+      
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Era2MilitiaBonus" Type="MilitiaBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeAttack"        Operation="Percent"  Value="0.2"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeDefense"       Operation="Percent"  Value="0.2"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeInitiative"    Operation="Percent"  Value="0.2"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeCritical"      Operation="Percent"  Value="0.2"  />
+      <SimulationModifierDescriptor TargetProperty="BaseMaximumHealth"          Operation="Percent"  Value="0.2"  />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Era3MilitiaBonus" Type="MilitiaBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeAttack"        Operation="Percent"  Value="0.4"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeDefense"       Operation="Percent"  Value="0.4"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeInitiative"    Operation="Percent"  Value="0.4"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeCritical"      Operation="Percent"  Value="0.4"  />
+      <SimulationModifierDescriptor TargetProperty="BaseMaximumHealth"          Operation="Percent"  Value="0.4"  />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Era4MilitiaBonus" Type="MilitiaBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeAttack"        Operation="Percent"  Value="0.6"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeDefense"       Operation="Percent"  Value="0.6"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeInitiative"    Operation="Percent"  Value="0.6"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeCritical"      Operation="Percent"  Value="0.6"  />
+      <SimulationModifierDescriptor TargetProperty="BaseMaximumHealth"          Operation="Percent"  Value="0.6"  />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Era5MilitiaBonus" Type="MilitiaBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeAttack"        Operation="Percent"  Value="0.8"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeDefense"       Operation="Percent"  Value="0.8"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeInitiative"    Operation="Percent"  Value="0.8"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeCritical"      Operation="Percent"  Value="0.8"  />
+      <SimulationModifierDescriptor TargetProperty="BaseMaximumHealth"          Operation="Percent"  Value="0.8"  />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Era6MilitiaBonus" Type="MilitiaBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeAttack"        Operation="Percent"  Value="1"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeDefense"       Operation="Percent"  Value="1"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeInitiative"    Operation="Percent"  Value="1"  />
+      <SimulationModifierDescriptor TargetProperty="BaseAttributeCritical"      Operation="Percent"  Value="1"  />
+      <SimulationModifierDescriptor TargetProperty="BaseMaximumHealth"          Operation="Percent"  Value="1"  />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+ 
+</Datatable>

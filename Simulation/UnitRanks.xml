@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <UnitRank Name="UnitRankStandard" MaximumLevel="9" LevelPropertyName="Level" LevelUpDescriptor="UnitLevelUpStandardDescriptor">
+  </UnitRank>
+  
+  <UnitRank Name="UnitRankHero" MaximumLevel="-1" LevelPropertyName="Level" LevelUpDescriptor="UnitLevelUpHeroDescriptor">
+    <UnitAbilityReference Name="UnitAbilityLastStand"/>
+  </UnitRank>
+  
+</Datatable>

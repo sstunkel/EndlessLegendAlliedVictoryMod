@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Positive abilities -->
+  <DiplomaticAbility Name="MapExchange" NotifyVisibilityHasChanged="true">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="VisionExchange" NotifyVisibilityHasChanged="true">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="CommercialAgreement">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="ResearchAgreement">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="TradeRoute">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="PrestigeTrend">
+    <SimulationDescriptorReference Name="PrestigeTrendBonus" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="PrestigeForKill">
+    <SimulationDescriptorReference Name="PrestigeForKillBonus" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="PassThroughArmies">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="PassThroughCities">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="ShareRoads">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="Unknown">
+    <SimulationDescriptorReference Name="UnknownCount" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="Truce">
+    <SimulationDescriptorReference Name="TruceCount" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="War">
+    <SimulationDescriptorReference Name="WarCount" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="ColdWar">
+    <SimulationDescriptorReference Name="ColdWarCount" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="Peace">
+    <SimulationDescriptorReference Name="PeaceCount" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="Alliance">
+    <SimulationDescriptorReference Name="AllianceCount" />
+  </DiplomaticAbility>
+
+  <!-- Negative abilities -->
+
+  <DiplomaticAbility Name="AttackArmies">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="AttackCities">
+  </DiplomaticAbility>
+  
+  <DiplomaticAbility Name="CloseBorders">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="ColdWarAttackArmies">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="SiegeCities">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="MarketBan">
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="MoneyPrint">
+    <SimulationDescriptorReference Name="MoneyPrint" />
+  </DiplomaticAbility>
+
+  <DiplomaticAbility Name="NoAggression">
+  </DiplomaticAbility>
+  
+</Datatable>

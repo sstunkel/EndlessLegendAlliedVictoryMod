@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="ItemClassShield1" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassSword1" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassAxe1" Type="ItemClass"/>
+  
+  <SimulationDescriptor Name="ItemClassHammer1" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassSword2" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassAxe2" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassHammer2" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassSpear2" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassStaff2" Type="ItemClass" />
+
+  <SimulationDescriptor Name="ItemClassWand2" Type="ItemClass" />
+
+  <SimulationDescriptor Name="ItemClassClaw2" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassBow2" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassCrossbow1" Type="ItemClass"/>
+
+  <SimulationDescriptor Name="ItemClassScepter2" Type="ItemClass" />
+
+  <SimulationDescriptor Name="ItemClassTorso" Type="ItemClass" />
+
+  <SimulationDescriptor Name="ItemClassHead" Type="ItemClass" />
+
+  <SimulationDescriptor Name="ItemClassLegs" Type="ItemClass" />
+
+  <SimulationDescriptor Name="ItemClassAccessory" Type="ItemClass" />
+  
+</Datatable>

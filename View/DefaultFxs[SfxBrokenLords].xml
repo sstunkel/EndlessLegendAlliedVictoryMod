@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX BROKENLORDS ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_DefenseShield">
+    <SoundEventName>Sfx/Test_Battle/BrokenLords/Test_Shield_Defense_01</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_FootStep">
+    <SoundEventName>Sfx/Faction/BrokenLords/Infantry/Infantry_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_Shield_Idle0">
+    <SoundEventName>Sfx/Faction/BrokenLords/Infantry/Infantry_Shield_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_BodyFall">
+    <SoundEventName>Sfx/Faction/BrokenLords/Infantry/Infantry_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Hero_Idle0">
+    <SoundEventName>Sfx/Faction/BrokenLords/Hero/BrokenLords_Hero_Idle0</SoundEventName> 
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Hero_FootStepRun">
+    <SoundEventName>Sfx/Faction/BrokenLords/Hero/BrokenLords_Run_Step</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_FootStep">
+    <SoundEventName>Sfx/Faction/BrokenLords/BlackBishop/BlackBishop_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Idle0">
+    <SoundEventName>Sfx/Faction/BrokenLords/BlackBishop/BlackBishop_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_BodyFall">
+    <SoundEventName>Sfx/Faction/BrokenLords/BlackBishop/BlackBishop_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Shield">
+    <SoundEventName>Sfx/Faction/BrokenLords/BlackBishop/BlackBishop_Shield</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <!-- <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Attack">
+    <SoundEventName>Sfx/Faction/BrokenLords/BlackBishop/BlackBishop_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition> -->
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_FootStep">
+    <SoundEventName>Sfx/Faction/BrokenLords/Cavalry/Cavalry_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_Idle0">
+    <SoundEventName>Sfx/Faction/BrokenLords/Cavalry/Cavalry_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_BodyFall">
+    <SoundEventName>Sfx/Faction/BrokenLords/Cavalry/Cavalry_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_Attack">
+    <SoundEventName>Sfx/Voices/BrokenLords/Infantry_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_Death">
+    <SoundEventName>Sfx/Voices/BrokenLords/Infantry_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_Defense">
+    <SoundEventName>Sfx/Voices/BrokenLords/Infantry_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_Click">
+    <SoundEventName>Sfx/Voices/BrokenLords/Infantry_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Infantry_Order">
+    <SoundEventName>Sfx/Voices/BrokenLords/Infantry_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_Attack">
+    <SoundEventName>Sfx/Voices/BrokenLords/Cavalry_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_HorseAttack">
+    <SoundEventName>Sfx/Faction/BrokenLords/Cavalry/HorseAttack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_Death">
+    <SoundEventName>Sfx/Voices/BrokenLords/Cavalry_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_HorseDeath">
+    <SoundEventName>Sfx/Faction/BrokenLords/Cavalry/HorseDeath</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_Defense">
+    <SoundEventName>Sfx/Voices/BrokenLords/Cavalry_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_Click">
+    <SoundEventName>Sfx/Voices/BrokenLords/Cavalry_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Cavalry_Order">
+    <SoundEventName>Sfx/Voices/BrokenLords/Cavalry_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Attack">
+    <SoundEventName>Sfx/Voices/BrokenLords/BlackBishop_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Incant">
+    <SoundEventName>Sfx/Voices/BrokenLords/BlackBishop_Voice_Incant</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Death">
+    <SoundEventName>Sfx/Voices/BrokenLords/BlackBishop_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Defense">
+    <SoundEventName>Sfx/Voices/BrokenLords/BlackBishop_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Click">
+    <SoundEventName>Sfx/Voices/BrokenLords/BlackBishop_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_BlackBishop_Order">
+    <SoundEventName>Sfx/Voices/BrokenLords/BlackBishop_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Hero_Attack">
+    <SoundEventName>Sfx/Voices/BrokenLords/Hero_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Hero_Death">
+    <SoundEventName>Sfx/Voices/BrokenLords/Hero_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Hero_Defense">
+    <SoundEventName>Sfx/Voices/BrokenLords/Hero_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Hero_Click">
+    <SoundEventName>Sfx/Voices/BrokenLords/Hero_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Hero_Order">
+    <SoundEventName>Sfx/Voices/BrokenLords/Hero_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Settler_Footstep">
+    <SoundEventName>Sfx/Faction/BrokenLords/Settler/Settler_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Settler_BodyFall">
+    <SoundEventName>Sfx/Faction/BrokenLords/Settler/Settler_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Settler_Attack">
+    <SoundEventName>Sfx/Voices/BrokenLords/Settler_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Settler_Death">
+    <SoundEventName>Sfx/Voices/BrokenLords/Settler_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BrokenLords_Settler_Defense">
+    <SoundEventName>Sfx/Voices/BrokenLords/Settler_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+</Datatable>

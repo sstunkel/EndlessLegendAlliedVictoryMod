@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <SimulationDescriptor Name="ResourceExtractor_Strategic1" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+    
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic1" Value="$(ResourceBonus)" Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic1" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Strategic2" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic2" Value="$(ResourceBonus)" Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic2" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Strategic3" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic3" Value="$(ResourceBonus)" Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic3" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Strategic4" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic4" Value="$(ResourceBonus)" Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic4" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Strategic5" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic5" Value="$(ResourceBonus)" Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic5" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Strategic6" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic6" Value="$(ResourceBonus)" Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetStrategic6" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury1" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury1" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury1" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="ResourceExtractor_Luxury2" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury2" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury2" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury3" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury3" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury3" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury4" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury4" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury4" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury5" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury5" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury5" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury6" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury6" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury6" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury7" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury7" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury7" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury8" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury8" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury8" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury9" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury9" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury9" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury10" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury10" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury10" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury11" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury11" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury11" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury12" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury12" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury12" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury13" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury13" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury13" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury14" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury14" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury14" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ResourceExtractor_Luxury15" Type="PointOfInterestImprovement">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ResourceGain" BaseValue="1"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury15" Value="$(ResourceBonus)"  Operation="Addition" Path="../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="NetLuxury15" Value="$(ResourceGain)"  Operation="Addition" Path="../ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  
+  
+  
+  <SimulationDescriptor Name="WatchTower0" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"   Operation="Addition" Value="0.15"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"              Operation="Addition" Value="3"/>
+      <SimulationModifierDescriptor TargetProperty="VisionHeight"             Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WatchTower1" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"   Operation="Addition" Value="0.20"/>
+      <SimulationModifierDescriptor TargetProperty="AlliedUnitRegenModifier"  Operation="Addition" Value="0.10"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"              Operation="Addition" Value="5"/>
+      <SimulationModifierDescriptor TargetProperty="VisionHeight"             Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WatchTower2" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"   Operation="Addition" Value="0.25"/>
+      <SimulationModifierDescriptor TargetProperty="AlliedUnitRegenModifier"  Operation="Addition" Value="0.20"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"              Operation="Addition" Value="7"/>
+      <SimulationModifierDescriptor TargetProperty="VisionHeight"             Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WatchTowerHealthEffectArea" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ExploitedPointOfInterest" Type="PointOfInterestState">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PointOfInterestBonusStrategic" Type="PointOfInterestBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PointOfInterestBonusLuxury" Type="PointOfInterestBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DestroyedVillage" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="QuestPOI" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ConvertedVillage" Type="VillageStateExclusive">
+    <SimulationPropertyDescriptors>
+	  <SimulationPropertyDescriptor Name="ExperienceRewardAtCreation" Composition="Sum"/>
+	
+      <SimulationPropertyDescriptor Name="DepositCountToResourceNet" BaseValue="0.1"/>
+      
+      <SimulationPropertyDescriptor Name="DistrictFood" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustry" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictDust" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictScience" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="DistrictCityPoint" Composition="Sum"/>
+    </SimulationPropertyDescriptors>
+	
+	<SimulationModifierDescriptors>
+		<SimulationModifierDescriptor TargetProperty="NumberOfConvertedVillages" Value="1" Operation="Addition" Path="../ClassEmpire/ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="PacifiedVillage" Type="VillageStateExclusive">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="RebuiltVillage" Type="VillageState">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NumberOfRebuildPacifiedVillage" Value="1" Operation="Addition" Path="PacifiedVillage/../ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="PopulationBonus" Value="1" Operation="Addition"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="Village_Urces" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UrcesUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithUrcesPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Urces" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Erycis" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ErycisUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithErycisPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Erycis" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Ceratan" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CeratanUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithCeratanPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Ceratan" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Kazanji" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="KazanjiUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithKazanjiPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Kazanji" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Bos" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BosUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithBosPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Bos" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Silics" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="SilicsUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithSilicsPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Silics" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="Village_Delvers" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DelversUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithDelversPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Delvers" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_SistersOfMercy" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="SistersOfMercyUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithSistersOfMercyPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_SistersOfMercy" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Haunts" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="HauntsUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithHauntsPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Haunts" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>     
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Jotus" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="JotusUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithJotusPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Jotus" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Hurnas" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="HurnasUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithHurnasPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Hurnas" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Gauran" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GauranUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithGauranPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Gauran" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Birdhive" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="BirdhiveUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithBirdhivePacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Birdhive" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Village_Geldirus" Type="PointOfInterestImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GeldirusUnitProductionCostReduction" Value="0.05" Operation="Addition" Path="../ClassCity,CityWithGeldirusPacified"/>
+      <SimulationModifierDescriptor TargetProperty="PacifiedVillages_Geldirus" Value="1" Operation="Addition" Path="../EmpireTypeMajor"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

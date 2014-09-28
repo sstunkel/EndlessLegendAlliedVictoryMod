@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--CHAPTER 1-->
+  <QuestDefinition Name="MainQuestTutorial-Chapter1" Category="Tuto" SubCategory="Introduction" 
+                     Cooldown="0" SkipLockedQuestTarget="true" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="1">
+    <Tags>EventTutorialGameStarted,Hidden</Tags>
+
+    <Prerequisites Target="$(Empire)">
+      <PathPrerequisite Flags="Prerequisite">../EmpireTypeMajor,AffinityTutorial</PathPrerequisite>
+    </Prerequisites>
+
+    <Controller_Sequence>
+      <!--Action Toggle “Off” buyout button-->
+      <Action_Tutorial_SetValue Key="EnableBuyout" Value="false" />
+      <!--Action Toggle “Off” End Turn button-->
+      <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+      <!--Action Toggle “Off” Assignment hero button-->
+      <Action_Tutorial_SetValue Key="EnableHeroAssignment" Value="false" />
+      <!--Action Toggle “Off” victory conditions-->
+      <Action_Tutorial_SetValue Key="EnableVictory" Value="false" />
+      <!--Action Toggle “Off” Colonize army actions button-->
+      <Action_Tutorial_SetValue Key="ArmyAction_Colonization" Value="false" />
+
+      <!--Deactivate Auto Explore and Guard army actions-->
+      <Action_Tutorial_SetValue Key="ArmyAction_AutoExplore" Value="false" />
+      <Action_Tutorial_SetValue Key="ArmyAction_Guard" Value="false" />
+    
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter1-Step1" State="InProgress"/>
+      <!--Showing text box #130-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title130" Content="%MainQuestTutorial-Content130" Blocker="true" Placement="CENTER" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #1-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title1" Content="%MainQuestTutorial-Content1" Action="%MainQuestTutorial-Action1" Blocker="false" Placement="LEFT" />
+      <!--Action check that army panel is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelArmy"/>
+      <!--Action start highlight Army panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="03-ArmyContentPanel" RectangularHighlight="true"/>
+      <!--Showing text box #3-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title3" Content="%MainQuestTutorial-Content3" Blocker="true" Placement="SAME" WheelBlocker="false"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Army panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter1-Step1" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter1-Step2" State="InProgress"/>
+      <!--Action start highlight settler unit-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="Unit000" RectangularHighlight="true"/>
+      <!--Showing text box #6-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title6" Content="%MainQuestTutorial-Content6" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight settler unit-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #4-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title4" Content="%MainQuestTutorial-Content4" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Life Stats-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="2HealthStat" RectangularHighlight="true"/>
+      <!--Showing text box #7-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title7" Content="%MainQuestTutorial-Content7" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Movement Stats-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3MoveStat" RectangularHighlight="true"/>
+      <!--Showing text box #8-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title8" Content="%MainQuestTutorial-Content8" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Vision Stats-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="4VisionStat" RectangularHighlight="true"/>
+      <!--Showing text box #9-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title9" Content="%MainQuestTutorial-Content9" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #10-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title10" Content="%MainQuestTutorial-Content10" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Army panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #5-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title5" Content="%MainQuestTutorial-Content5" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight End Turn Panel / FIDS button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1ToggleFIDSBackground" RectangularHighlight="true"/>
+      <!--Showing text box #2-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title2" Content="%MainQuestTutorial-Content2" Action="%MainQuestTutorial-Action2" Blocker="false" Placement="RIGHT" />
+      <Decorator_Tutorial_FIDSDisplayed />
+      <!--Action stop highlight End Turn Panel / FIDS button-->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter1-Step2" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter1-Step3" State="InProgress"/>
+      <!--Action Toggle On colonize army action button-->
+      <Action_Tutorial_SetValue Key="ArmyAction_Colonization" Value="true" RefreshPanelType="ArmyControlPanel" />
+      <!--Action start highlight Colonize Army Action-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="Action001" RectangularHighlight="true"/>
+      <!--Showing last text box #11 (about colonization) which should allow player interaction on screen -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title11" Content="%MainQuestTutorial-Content11" Action="%MainQuestTutorial-Action11" Blocker="false" Placement="LEFT" />
+      <Decorator_Colonize Initiator="Empire"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter1-Step3" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter1-Step1"/>
+      <Step Name="MainQuestTutorial-Chapter1-Step2"/>
+      <Step Name="MainQuestTutorial-Chapter1-Step3"/>
+    </Steps>
+
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>Tutorial2</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+  
+  <!--CHAPTER 2-->
+  <QuestDefinition Name="MainQuestTutorial-Chapter2" Category="Tuto" SubCategory="Introduction" 
+                     Cooldown="0" SkipLockedQuestTarget="true" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="1">
+    <Tags>Tutorial2,Hidden</Tags>
+    
+    <!--============ VARIABLES ============-->
+    <Vars>
+      <Var VarName="$CapitalCity">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+
+      <Var VarName="$PointOfInterest">
+          <From Source="$CapitalCity.$Region.$PointsOfInterest">
+            <Where>
+              <PathPrerequisite>PointOfInterestTypeQuestLocation</PathPrerequisite>
+            </Where>
+          </From>
+      </Var>
+
+      <Var VarName="$Villages">
+        <From Source="$CapitalCity.$Region.$Villages.$PointOfInterest"/>
+      </Var>
+
+      <DropListVar VarName="$GrowthResource" DropList="DroplistMainQuestTutorialChapter2ResourceName"/>
+
+      <Var VarName="$GrowthAmount" Value="25"/>
+    </Vars>
+
+    <Controller_Sequence>
+      <!--Action lock all interaction type-->
+      <Action_LockInteraction TargetVarName="$Villages" InteractionName="ArmyActionParley" InteractionLockOption="Lock"/>
+      <Action_LockInteraction TargetVarName="$Villages" InteractionName="ArmyActionAttack" InteractionLockOption="Lock"/>
+      <Action_LockInteraction TargetVarName="$Villages" InteractionName="ArmyActionBribe" InteractionLockOption="Lock"/>
+      <Action_LockInteraction TargetVarName="$PointOfInterest" InteractionName="ArmyActionSearch" InteractionLockOption="Lock"/>
+      <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step1" State="InProgress"/>
+      <!--Transfering city growth for pop at turn 1-->
+      <Action_TransferResource ResourceNameVarName="$GrowthResource" AmountVarName="$GrowthAmount"/>
+      <!--Showing text box #87-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title87" Content="%MainQuestTutorial-Content87" Action="%MainQuestTutorial-Action87" Blocker="false" Placement="TOP" />
+      <!--Action check that city panel is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+      <!--Showing text box #12-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title12" Content="%MainQuestTutorial-Content12" Blocker="true" Placement="RIGHT" WheelBlocker="true" WaitForPanelTypeName="MetaPanelCity" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #13-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title13" Content="%MainQuestTutorial-Content13" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Worker panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelTypeName="CityWorkersPanel" RectangularHighlight="true"/>
+      <!--Showing text box #14-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title14" Content="%MainQuestTutorial-Content14" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #137-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title137" Content="%MainQuestTutorial-Content137" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Worker panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Population row-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3WorkersRow" RectangularHighlight="true"/>
+      <!--Showing text box #15-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title15" Content="%MainQuestTutorial-Content15" Action="%MainQuestTutorial-Action15" Blocker="false" Placement="SAME" />
+      <!--Check population has been moved-->
+      <Decorator_Tutorial_WorkerDragged />
+      <!--Action stop highlight construction panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Food Column-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="7TutorialDummyFoodColumn" RectangularHighlight="true"/>
+      <!--Showing text box #16-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title16" Content="%MainQuestTutorial-Content16" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Food Column-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Population gauge-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3PopulationAndGrowthGroup" RectangularHighlight="true"/>
+      <!--Showing text box #102-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title102" Content="%MainQuestTutorial-Content102" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Population gauge-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Industry Column-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="8TutorialDummyIndustryColumn" RectangularHighlight="true"/>
+      <!--Showing text box #17-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title17" Content="%MainQuestTutorial-Content17" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Industry Column-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Make available the founder's memorial-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionUnlockFounderTutorial"/>
+      <!--Action start highlight Available Construction panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="03-CityOptionsFrame" RectangularHighlight="true"/>
+      <!--Showing text box #18-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title18" Content="%MainQuestTutorial-Content18" Blocker="true" Placement="LEFT" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Available Construction panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Available Construction panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="Option000" RectangularHighlight="true"/>
+      <!--Showing text box #19-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title19" Content="%MainQuestTutorial-Content19" Action="%MainQuestTutorial-Action19" Blocker="false" Placement="SAME" WheelBlocker="true"/>
+      <!--Check that city improvement founder's memorial is in queue-->
+      <Decorator_Tutorial_ConstructionQueued ConstructionName="CityImprovementFIDS1Tutorial" Initiator="Empire"/>
+      <!--Action stop highlight construction panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Construction Queue panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="04-CityQueueFrame" RectangularHighlight="true"/>
+      <!--Showing text box #20-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title20" Content="%MainQuestTutorial-Content20" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Construction queue panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step1" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step2" State="InProgress"/>
+      <!--Action start highlight Science Column-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="9TutorialDummyScienceColumn" RectangularHighlight="true"/>
+      <!--Showing text box #21-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title21" Content="%MainQuestTutorial-Content21" Blocker="true" Placement="RIGHT"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Science Column-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Control banner with research screen button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3ControlResearch" RectangularHighlight="false"/>
+      <!--Action unlock Research screen button-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionTutorialUnlockResearch"/>
+      <!--Showing text box #22-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title22" Content="%MainQuestTutorial-Content22" Action="%MainQuestTutorial-Action22" Blocker="false" Placement="LEFT"/>
+      <!--Action check that research screen is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="GameResearchScreen"/>
+      <!--Action stop highlight Research screen button-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #138-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title138" Content="%MainQuestTutorial-Content138" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #23-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title23" Content="%MainQuestTutorial-Content23" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #24-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title24" Content="%MainQuestTutorial-Content24" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #25-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title25" Content="%MainQuestTutorial-Content25" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight already researched techs-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="TechnologyDefinitionLuxuryExtractionCommon" RectangularHighlight="false"/>
+      <Action_Tutorial_ShowHighlightPanel PanelName="TechnologyDefinitionMapActionParley" RectangularHighlight="false"/>
+      <!--Showing text box #26-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title26" Content="%MainQuestTutorial-Content26" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Research screen button-->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step2" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step3" State="InProgress"/>
+      <!--Showing text box #27-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title27" Content="%MainQuestTutorial-Content27" Action="%MainQuestTutorial-Action27" Blocker="false " Placement="SAME" />
+
+      <!--CONTROLLER PARALLEL TO CHECK IF PLAYER COME BACK TO THE MAP AND HAS SELECTED CITY-->
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <!--Action check that Game World is displayed with City panel-->
+          <Decorator_Tutorial_PanelShowed PanelTypeName="GameWorldScreen">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelCity" />
+          </Decorator_Tutorial_PanelShowed>
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <!--Action check that Game World is displayed without city panel and ask for it then-->
+          <Decorator_Tutorial_PanelShowed PanelTypeName="GameWorldScreen">
+            <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelCity" />
+          </Decorator_Tutorial_PanelShowed>
+          <!--Showing text box #88-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="RIGHT" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+        </Controller_Sequence>
+      </Controller_Parallel>
+      
+      <!--Showing text box #103-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title103" Content="%MainQuestTutorial-Content103" Action="%MainQuestTutorial-Action103" Blocker="false" Placement="RIGHT" />
+      <!--Action start highlight End turn button panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelTypeName="EndTurnPanel" RectangularHighlight="false"/>
+      <!--Action Toggle “On” End Turn button-->
+      <Action_Tutorial_SetValue Key="EnableEndTurn" Value="true" RefreshPanelType="EndTurnPanel" />
+      
+      <!--CONTROLLER PARALLEL TO CHECK IF PLAYER HAS SELECTED CITY-->
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelCity" />
+          </Decorator_EndTurn >
+          <!--Action Toggle “Off” End Turn button-->
+          <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+        </Controller_Sequence>
+        
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelCity" />
+          </Decorator_EndTurn >
+          <!--Showing text box #88-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="RIGHT" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+          <!--Action Toggle “Off” End Turn button-->
+          <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+        </Controller_Sequence>
+
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameResearchScreen" />
+          </Decorator_EndTurn >
+          <!--Action Toggle “Off” End Turn button-->
+          <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+          <!--Showing text box #88-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="RIGHT" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+        </Controller_Sequence>
+      </Controller_Parallel>
+
+      <!--Showing text box #29-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title29" Content="%MainQuestTutorial-Content29" Blocker="true" Placement="RIGHT" WheelBlocker="true" WaitForPanelTypeName="MetaPanelCity"/>
+      <!--Action start highlight Worker panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelTypeName="CityWorkersPanel" RectangularHighlight="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Worker panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step3" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step4" State="InProgress"/>
+      <!--Action start highlight Available Construction panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="03-CityOptionsFrame" RectangularHighlight="true"/>
+      <!--Showing text box #30-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title30" Content="%MainQuestTutorial-Content30" Blocker="true" Placement="LEFT" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #31-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title31" Content="%MainQuestTutorial-Content31" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #32-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title32" Content="%MainQuestTutorial-Content32" Action="%MainQuestTutorial-Action32" Blocker="false" Placement="SAME" />
+      <!--Action check that city impvt is in city queue-->
+      <Decorator_Tutorial_ConstructionQueued ConstructionName="DistrictImprovement1" Initiator="Empire" />
+      <!--Action stop highlight Available Construction panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #33-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title33" Content="%MainQuestTutorial-Content33" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #34-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title34" Content="%MainQuestTutorial-Content34" Action="%MainQuestTutorial-Action34" Blocker="false" Placement="SAME" />
+      <!--Action start highlight approval panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="2ApprovalGroup" RectangularHighlight="true"/>
+      <!--Action Toggle “On” End Turn button-->
+      <Action_Tutorial_SetValue Key="EnableEndTurn" Value="true" RefreshPanelType="EndTurnPanel" />
+      <!--Action Toggle “Off” notification new population-->
+      <Action_Tutorial_SetValue Key="GuiNotificationPopulationModified" Value="false" />
+      
+      <!--CONTROLLER PARALLEL TO HIDE HIGHLIGHT IF NECESSARY -->
+      <Controller_Parallel CompletionPolicy="Any">
+        
+        <Controller_Sequence>
+
+          <!--CONTROLLER PARALLEL TO CHECK IF PLAYER HAS SELECTED CITY-->
+          <Controller_Parallel CompletionPolicy="Any">
+            <Controller_Sequence>
+              <Decorator_EndTurn Initiator="Empire">
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelCity" />
+              </Decorator_EndTurn >
+              <!--Action Toggle “Off” End Turn button-->
+              <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+              <!--Action stop highlight approval panel-->
+              <Action_Tutorial_HideHighlightPanel />
+            </Controller_Sequence>
+            <Controller_Sequence>
+              <Decorator_EndTurn Initiator="Empire">
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+                <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelCity" />
+              </Decorator_EndTurn >
+              <!--Showing text box #88-->
+              <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="RIGHT" />
+              <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+              <!--Action Toggle “Off” End Turn button-->
+              <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+              <!--Action stop highlight approval panel-->
+              <Action_Tutorial_HideHighlightPanel />
+            </Controller_Sequence>
+            <Controller_Sequence>
+              <Decorator_EndTurn Initiator="Empire">
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="GameResearchScreen" />
+              </Decorator_EndTurn >
+              <!--Action Toggle “Off” End Turn button-->
+              <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+              <!--Action stop highlight approval panel-->
+              <Action_Tutorial_HideHighlightPanel />
+              <!--Showing text box #88-->
+              <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="RIGHT" />
+              <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+            </Controller_Sequence>
+          </Controller_Parallel>
+        </Controller_Sequence>
+        
+        <Controller_Sequence>
+          <!--CONTROLLER PARALLEL TO CHECK IF PLAYER HAS SELECTED CITY-->
+          <Controller_Parallel CompletionPolicy="Any">
+            <Controller_Sequence>
+              <Decorator_EndTurn Initiator="Empire">
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelCity" />
+              </Decorator_EndTurn >
+              <!--Action Toggle “Off” End Turn button-->
+              <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+              <!--Action stop highlight approval panel-->
+              <Action_Tutorial_HideHighlightPanel />
+            </Controller_Sequence>
+            <Controller_Sequence>
+              <Decorator_EndTurn Initiator="Empire">
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+                <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelCity" />
+              </Decorator_EndTurn >
+              <!--Showing text box #88-->
+              <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="RIGHT" />
+              <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+              <!--Action Toggle “Off” End Turn button-->
+              <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+              <!--Action stop highlight approval panel-->
+              <Action_Tutorial_HideHighlightPanel />
+            </Controller_Sequence>
+            <Controller_Sequence>
+              <Decorator_EndTurn Initiator="Empire">
+                <ConditionCheck_IsGuiElementVisible PanelTypeName="GameResearchScreen" />
+              </Decorator_EndTurn >
+              <!--Action Toggle “Off” End Turn button-->
+              <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+              <!--Action stop highlight approval panel-->
+              <Action_Tutorial_HideHighlightPanel />
+              <!--Showing text box #88-->
+              <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="RIGHT" />
+              <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+            </Controller_Sequence>
+          </Controller_Parallel>
+        </Controller_Sequence>
+
+      </Controller_Parallel>
+      
+      <!--Make available the construction of units-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionTutorialUnit1"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter2-Step4" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter2-Step1"/>
+      <Step Name="MainQuestTutorial-Chapter2-Step2"/>
+      <Step Name="MainQuestTutorial-Chapter2-Step3"/>
+      <Step Name="MainQuestTutorial-Chapter2-Step4"/>
+    </Steps>
+    
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>Tutorial3</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+  
+</QuestDefinition>
+
+
+  <!--CHAPTER 3-->
+  <QuestDefinition Name="MainQuestTutorial-Chapter3" Category="Tuto" SubCategory="Introduction"
+                     Cooldown="0" SkipLockedQuestTarget="true" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="1">
+    <Tags>Tutorial3,Hidden</Tags>
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+      <Var VarName="$CapitalCity">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+
+      <Var VarName="$PointOfInterest">
+        <From Source="$CapitalCity.$Region.$PointsOfInterest">
+          <Where>
+            <PathPrerequisite>PointOfInterestTypeQuestLocation</PathPrerequisite>
+          </Where>
+        </From>
+      </Var>
+
+        <Var VarName="$QuestPOIToInspect1">
+          <Last>
+            <From Source="$PointOfInterest"/>
+          </Last>
+        </Var>
+        <Var VarName="$PointOfInterestToInspectLocation1">
+          <From Source="$QuestPOIToInspect1.$Position"/>
+        </Var>
+      
+      <DropListVar VarName="$DustResource" DropList="DroplistMainQuestBrokenLordsChapter1ResourceName"/>
+
+      <Var VarName="$DustAmount" Value="1000"/>
+    </Vars>
+
+    <Controller_Sequence>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step1" State="InProgress"/>
+      <!--Action start highlight Available Construction panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="03-CityOptionsFrame" RectangularHighlight="true"/>
+      <!--Showing text box #36-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title36" Content="%MainQuestTutorial-Content36" Blocker="true" Placement="LEFT" WheelBlocker="true" WaitForPanelTypeName="MetaPanelCity"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #37 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title37" Content="%MainQuestTutorial-Content37" Action="%MainQuestTutorial-Action37" Blocker="false" Placement="SAME" />
+      <!--Action check that units are in city queue-->
+      <Decorator_Tutorial_ConstructionQueued ConstructionName="UnitDesignTutorialUnit1#1" Initiator="Empire"/>
+      <Decorator_Tutorial_ConstructionQueued ConstructionName="UnitDesignTutorialUnit1#1" Initiator="Empire"/>
+      <!--Action stop highlight Available Construction panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step1" State="Completed"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step2" State="InProgress"/>
+      <!--Action start highlight City Queue panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="04-CityQueueFrame" RectangularHighlight="true"/>
+      <!--Transfering Dust for buyout-->
+      <Action_TransferResource ResourceNameVarName="$DustResource" AmountVarName="$DustAmount"/>
+      <!--Showing last text box #38 (about buyout system) which should allow player interaction on screen -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title38" Content="%MainQuestTutorial-Content38" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Transfering Dust for buyout-->
+      <Action_TransferResource ResourceNameVarName="$DustResource" AmountVarName="$DustAmount"/>
+      <!--Action start highlight Treasury panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1EmpireTreasuryPanel" RectangularHighlight="true"/>
+      <!--Showing text box #39-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title39" Content="%MainQuestTutorial-Content39" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight City Upkeep panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="4UpkeepGroup" RectangularHighlight="true"/>
+      <!--Showing text box #40-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title40" Content="%MainQuestTutorial-Content40" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Construction queue panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="04-CityQueueFrame" RectangularHighlight="true"/>
+      <!--Action Toggle “On” buyout button-->
+      <Action_Tutorial_SetValue Key="EnableBuyout" Value="true" RefreshPanelType="MetaPanelCity" />
+      <!--Showing text box #41-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title41" Content="%MainQuestTutorial-Content41" Action="%MainQuestTutorial-Action41" Blocker="false" Placement="SAME" />
+
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <!--Action check on units buyout-->
+          <Decorator_Tutorial_Buyout ConstructionName="UnitDesignTutorialUnit1#1" Initiator="Empire" />
+          <Decorator_Tutorial_Buyout ConstructionName="UnitDesignTutorialUnit1#1" Initiator="Empire" />
+          <!--Action stop highlight construction city panel-->
+          <Action_Tutorial_HideHighlightPanel />
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <!--Action check on units buyout-->
+          <Decorator_Tutorial_Buyout ConstructionName="UnitDesignTutorialUnit1#1" Initiator="Empire" />
+          <Decorator_Tutorial_Buyout ConstructionName="UnitDesignTutorialUnit1#1" Initiator="Empire" />
+        </Controller_Sequence>
+      </Controller_Parallel>
+
+      <!--Showing text box #42-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title42" Content="%MainQuestTutorial-Content42" Action="%MainQuestTutorial-Action42" Blocker="false" Placement="SAME" />
+      <!--Action Toggle “On” End Turn button-->
+      <Action_Tutorial_SetValue Key="EnableEndTurn" Value="true" RefreshPanelType="EndTurnPanel" />
+      <!--Action Toggle “On” buyout button-->
+      <Action_Tutorial_SetValue Key="EnableBuyout" Value="false" RefreshPanelType="MetaPanelCity" />
+
+      <!--CONTROLLER PARALLEL TO CHECK IF PLAYER HAS SELECTED CITY-->
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelCity" />
+          </Decorator_EndTurn >
+          <!--Action Toggle “Off” End Turn button-->
+          <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelCity" />
+          </Decorator_EndTurn >
+          <!--Showing text box #88-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="SAME" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+          <!--Action Toggle “Off” End Turn button-->
+          <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameResearchScreen" />
+          </Decorator_EndTurn >
+          <!--Action Toggle “Off” End Turn button-->
+          <Action_Tutorial_SetValue Key="EnableEndTurn" Value="false" RefreshPanelType="EndTurnPanel" />
+          <!--Showing text box #88-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="SAME" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+        </Controller_Sequence>
+      </Controller_Parallel>
+      
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step2" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step3" State="InProgress"/>
+      <!--Action start highlight Garrison panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="07-CityGarrisonPanelFrame" RectangularHighlight="true"/>
+      <!--Action Toggle “On” buyout button-->
+      <Action_Tutorial_SetValue Key="EnableBuyout" Value="true" RefreshPanelType="MetaPanelCity" />
+      <!--Showing text box #43-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title43" Content="%MainQuestTutorial-Content43" Blocker="true" Placement="RIGHT" WheelBlocker="true" WaitForPanelTypeName="MetaPanelCity" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #108-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title108" Content="%MainQuestTutorial-Content108" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #113-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title113" Content="%MainQuestTutorial-Content113" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Garrison panel -->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step3" State="InProgress"/>
+      <!--Action start highlight New army button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1CreateButton" RectangularHighlight="true"/>
+      <!--Showing text box #44-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title44" Content="%MainQuestTutorial-Content44" Action="%MainQuestTutorial-Action44" Blocker="false" Placement="SAME" WheelBlocker="true"/>
+      <!--Action check that army panel is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelArmy"/>
+      <!--Action stop highlight New army button -->
+      <Action_Tutorial_HideHighlightPanel />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step3" State="Completed"/>
+      
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step4" State="InProgress"/>
+      <!--Action unlock search interaction-->
+      <Action_LockInteraction TargetVarName="$PointOfInterest" InteractionName="ArmyActionSearch" InteractionLockOption="Unlock"/>
+      <!-- Showing text box #46 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title46" Content="%MainQuestTutorial-Content46" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!-- Showing text box #47 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title47" Content="%MainQuestTutorial-Content47" Blocker="true" Placement="SAME"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!-- Showing text box #45 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title45" Content="%MainQuestTutorial-Content45" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!-- Showing text box #105 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title105" Content="%MainQuestTutorial-Content105" Action="%MainQuestTutorial-Action105" Blocker="false" Placement="SAME" />
+      <!-- Action Toggle “On” End Turn button -->
+      <Action_Tutorial_SetValue Key="EnableEndTurn" Value="true" RefreshPanelType="EndTurnPanel" />
+      
+      <!--CONTROLLER PARALLEL TO CHECK IF PLAYER HAS SELECTED ARMY-->
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelArmy" />
+          </Decorator_EndTurn >
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelArmy" />
+          </Decorator_EndTurn >
+          <!--Showing text box #104-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title104" Content="%MainQuestTutorial-Content104" Action="%MainQuestTutorial-Action104" Blocker="false" Placement="SAME" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelArmy"/>
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameResearchScreen" />
+          </Decorator_EndTurn >
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+          <!--Showing text box #104-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title104" Content="%MainQuestTutorial-Content104" Action="%MainQuestTutorial-Action104" Blocker="false" Placement="SAME" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelArmy"/>
+        </Controller_Sequence>
+      </Controller_Parallel>
+      
+      <!--Action start highlight Army action panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelTypeName="ArmyControlPanel" RectangularHighlight="true"/>
+      <!-- Showing text box #49 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title49" Content="%MainQuestTutorial-Content49" Action="%MainQuestTutorial-Action49" Blocker="false" Placement="SAME" WaitForPanelTypeName="GameWorldScreen"/>
+      <!--Action focus on side Quest ruins-->
+      <Action_Tutorial_FocusCamera TargetWorldPositionVarName="$PointOfInterestToInspectLocation1" />
+      <!--Action inspecting a ruin-->
+      <Decorator_Inspect Output_InteractionTargetVarName="$InspectionTarget" Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$InspectionTarget">
+            <PathPrerequisite>PointOfInterestTypeQuestLocation</PathPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_Inspect>
+      <!--Action stop highlight Army action panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!-- Showing text box #131 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title131" Content="%MainQuestTutorial-Content131" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Split/Merge Army Action-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="Action002" RectangularHighlight="true"/>
+      <!-- Showing text box #50 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title50" Content="%MainQuestTutorial-Content50" Blocker="true" Placement="LEFT" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!-- Showing text box #51 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title51" Content="%MainQuestTutorial-Content51" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Split/Merge Army Action-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!-- Showing text box #52 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title52" Content="%MainQuestTutorial-Content52" Action="%MainQuestTutorial-Action52" Blocker="false" Placement="SAME" />
+      
+      <!--CONTROLLER PARALLEL TO CHECK IF PLAYER HAS SELECTED ARMY-->
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelArmy" />
+          </Decorator_EndTurn >
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameWorldScreen" />
+            <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelArmy" />
+          </Decorator_EndTurn >
+          <!--Showing text box #104-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title104" Content="%MainQuestTutorial-Content104" Action="%MainQuestTutorial-Action104" Blocker="false" Placement="SAME" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelArmy"/>
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <Decorator_EndTurn Initiator="Empire">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="GameResearchScreen" />
+          </Decorator_EndTurn >
+          <!--Action stop highlight End turn button panel-->
+          <Action_Tutorial_HideHighlightPanel />
+          <!--Showing text box #104-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title104" Content="%MainQuestTutorial-Content104" Action="%MainQuestTutorial-Action104" Blocker="false" Placement="SAME" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelArmy"/>
+        </Controller_Sequence>
+      </Controller_Parallel>
+      
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter3-Step4" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter3-Step1"/>
+      <Step Name="MainQuestTutorial-Chapter3-Step2"/>
+      <Step Name="MainQuestTutorial-Chapter3-Step3"/>
+      <Step Name="MainQuestTutorial-Chapter3-Step4"/>
+    </Steps>
+
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>Tutorial4</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+  
+  <!--CHAPTER 4-->
+  <QuestDefinition Name="MainQuestTutorial-Chapter4" Category="Tuto" SubCategory="Introduction"
+                     Cooldown="0" SkipLockedQuestTarget="true" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="1">
+    <Tags>Tutorial4,Hidden</Tags>
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+      <Var VarName="$CapitalCity">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+      
+      <Var VarName="$PointOfInterest">
+        <From Source="$CapitalCity.$Region.$PointsOfInterest">
+          <Where>
+            <PathPrerequisite>PointOfInterestTypeQuestLocation</PathPrerequisite>
+          </Where>
+        </From>
+      </Var>
+
+      <Var VarName="$QuestPOIToInspect2">
+        <First>
+          <From Source="$PointOfInterest"/>
+        </First>
+      </Var>
+      <Var VarName="$PointOfInterestToInspectLocation2">
+        <From Source="$QuestPOIToInspect2.$Position"/>
+      </Var>
+      
+      <Var VarName="$Villages">
+        <First>
+          <From Source="$CapitalCity.$Region.$Villages.$PointOfInterest"/>
+        </First>
+      </Var>
+      <Var VarName="$VillageToParleyLocation">
+        <From Source="$Villages.$Position"/>
+      </Var>
+      
+    </Vars>
+
+    <Controller_Sequence>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter4-Step1" State="InProgress"/>
+      <!--Action unlock parley interaction-->
+      <Action_LockInteraction TargetVarName="$Villages" InteractionName="ArmyActionParley" InteractionLockOption="Unlock"/>
+      <!-- Showing text box #53 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title53" Content="%MainQuestTutorial-Content53" Blocker="true" Placement="SAME" WheelBlocker="true" WaitForPanelTypeName="GameWorldScreen"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Focus camera on village-->
+      <Action_Tutorial_FocusCamera TargetWorldPositionVarName="$VillageToParleyLocation" />
+      <!-- Showing text box #54 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title54" Content="%MainQuestTutorial-Content54" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!-- Showing text box #55 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title55" Content="%MainQuestTutorial-Content55" Action="%MainQuestTutorial-Action109" Blocker="false" Placement="LEFT"/>
+      <!--Action start highlight Army action panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelTypeName="ArmyControlPanel" RectangularHighlight="true"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter4-Step1" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter4-Step2" State="InProgress"/>
+      <!--Talking with a village-->
+      <Decorator_Talk Initiator="Empire"/>
+      <!--Action stop highlight Army action panel-->
+      <Action_Tutorial_HideHighlightPanel/>
+      <!--Action focus on side Quest ruins-->
+      <Action_Tutorial_FocusCamera TargetWorldPositionVarName="$PointOfInterestToInspectLocation2" />
+      <!--Action unlock Quest screen button-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionTutorialUnlockQuest"/>
+      <!--Action lock search interaction-->
+      <Action_LockInteraction TargetVarName="$PointOfInterest" InteractionName="ArmyActionSearch" InteractionLockOption="Lock"/>
+      <!--Action start highlight banner-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="4ControlQuest" RectangularHighlight="false"/>
+      <!-- Showing text box #58 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title58" Content="%MainQuestTutorial-Content58" Action="%MainQuestTutorial-Action58" Blocker="false" Placement="LEFT" OverNotifications="true"/>
+      <!--Action check that quest notif is hidden-->
+      <Decorator_Tutorial_PanelShowed Inverted="true" PanelName="NotificationPanelQuest"/>
+      <!--Action check that quest journal is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="GameQuestScreen"/>
+      <!--Action stop highlight quest banner-->
+      <Action_Tutorial_HideHighlightPanel/>
+      <!--Action unlock search interaction-->
+      <Action_LockInteraction TargetVarName="$PointOfInterest" InteractionName="ArmyActionSearch" InteractionLockOption="Unlock"/>
+      <!--Action start highlight Objective quest-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3QuestStepsTable" RectangularHighlight="true"/>
+      <!-- Showing text box #129 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title129" Content="%MainQuestTutorial-Content129" Blocker="true" Placement="TOP" OverNotifications="true" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Objective quest-->
+      <Action_Tutorial_HideHighlightPanel/>
+      <!--Action start highlight pin toggle-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="PinToggleDummy" RectangularHighlight="false"/>
+      <!-- Showing text box #111 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title111" Content="%MainQuestTutorial-Content111" Action="%MainQuestTutorial-Action111" Blocker="false" Placement="SAME" OverNotifications="true" />
+      <!--Action check that world screen is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="GameWorldScreen"/>
+      <!--Action stop highlight pin toggle-->
+      <Action_Tutorial_HideHighlightPanel/>
+      <!--Action focus on side Quest ruins-->
+      <Action_Tutorial_FocusCamera TargetWorldPositionVarName="$PointOfInterestToInspectLocation2" />
+      <!-- Showing text box #57 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title57" Content="%MainQuestTutorial-Content57" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!-- Showing text box #110 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title110" Content="%MainQuestTutorial-Content110" Action="%MainQuestTutorial-Action110" Blocker="false" Placement="SAME"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter4-Step2" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter4-Step1"/>
+      <Step Name="MainQuestTutorial-Chapter4-Step2"/>
+    </Steps>
+
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>Tutorial5</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+  <!--CHAPTER 5-->
+  <QuestDefinition Name="MainQuestTutorial-Chapter5" Category="Tuto" SubCategory="Introduction"
+                     Cooldown="0" SkipLockedQuestTarget="true" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="1">
+    <Tags>Tutorial5,Hidden</Tags>
+
+    <Controller_Sequence>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step1" State="InProgress"/>
+      <!--Inspect the ruins but also checking there are 2 units in army-->
+      <Decorator_Inspect Output_InstigatorSimObjectVarName="$InspectionInstigatorSimObject" Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$InspectionInstigatorSimObject">
+            <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassArmy/ClassUnit) ge 2</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_Inspect>
+      <!-- Showing text box #114 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title114" Content="%MainQuestTutorial-Content114" Action="%MainQuestTutorial-Action114" Blocker="false" Placement="LEFT" />
+      <!--Action start highlight Attack Army action-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="Action000" RectangularHighlight="true"/>
+      <!--Check notif encounter is visible-->
+      <Decorator_Tutorial_PanelShowed PanelName="NotificationPanelEncounterSetup"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step1" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step2" State="InProgress"/>
+      <!--Action start highlight Strengh gauge-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="4SidesStrengthCircularGauge" RectangularHighlight="false"/>
+      <!--Showing text box #60-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title60" Content="%MainQuestTutorial-Content60" Blocker="true" Placement="RIGHT" OverNotifications="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight "auto" button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3AutoToggle" RectangularHighlight="true"/>
+      <!--Showing text box #61-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title61" Content="%MainQuestTutorial-Content61" Blocker="true" Placement="SAME" OverNotifications="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight "auto" button-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight strategies buttons-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1GlobalStrategyGroup" RectangularHighlight="true"/>
+      <!--Showing text box #62-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title62" Content="%MainQuestTutorial-Content62" Blocker="true" Placement="LEFT" OverNotifications="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight strategies buttons-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight start battle buttons-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1.1ReadyToFightButton" RectangularHighlight="true"/>
+      <!--Showing text box #63-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title63" Content="%MainQuestTutorial-Content63" Action="%MainQuestTutorial-Action63" Blocker="false" Placement="LEFT" OverNotifications="true"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step2" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step3" State="InProgress"/>
+      <!--Check that deployement is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="BattleDeploymentPanel"/>
+      <!--Lock targeting until end of boxes-->
+      <Action_Tutorial_SetValue Key="EnableDeploymentButton" Value="false" RefreshPanelType="BattleDeploymentPanel" />
+      <!--Showing text box #64-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title64" Content="%MainQuestTutorial-Content64" Blocker="true" Placement="RIGHT" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #65-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title65" Content="%MainQuestTutorial-Content65" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #66-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title66" Content="%MainQuestTutorial-Content66" Action="%MainQuestTutorial-Action66" Blocker="false" Placement="SAME"/>
+      <!--Check that battle unit GUI is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="BattleUnitCard">
+        <ConditionCheck_IsGuiElementVisible PanelName="6Strategy" />
+      </Decorator_Tutorial_PanelShowed>
+      <!--Action start highlight Battle Unit GUI panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="LeftBattleUnitCard" RectangularHighlight="true"/>
+      <!--Showing text box #68-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title68" Content="%MainQuestTutorial-Content68" Blocker="true" Placement="CENTER" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Battle Unit GUI panel-->
+      <Action_Tutorial_HideHighlightPanel /> 
+      <!--Action start highlight Battle Unit Unit class-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="0TutorialDummyBattleUnitCardClass" RectangularHighlight="true"/>
+      <!--Showing text box #71-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title71" Content="%MainQuestTutorial-Content71" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Battle Unit GUI panel-->
+      <Action_Tutorial_HideHighlightPanel /> 
+      <!--Action start highlight Battle Unit Unit class-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="2Attributes" RectangularHighlight="true"/>
+      <!--Showing text box #72-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title72" Content="%MainQuestTutorial-Content72" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #73-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title73" Content="%MainQuestTutorial-Content73" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #74-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title74" Content="%MainQuestTutorial-Content74" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Battle Unit GUI panel-->
+      <Action_Tutorial_HideHighlightPanel /> 
+      <!--Action start highlight Battle Unit Unit class-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3Capacities" RectangularHighlight="true"/>
+      <!--Showing text box #75-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title75" Content="%MainQuestTutorial-Content75" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #76-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title76" Content="%MainQuestTutorial-Content76" Action="%MainQuestTutorial-Action76" Blocker="false" Placement="RIGHT" />
+      <!--Action stop highlight Battle Unit GUI panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Unlock targeting following end of boxes-->
+      <Action_Tutorial_SetValue Key="EnableDeploymentButton" Value="true" RefreshPanelType="BattleDeploymentPanel" />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step3" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step4" State="InProgress"/>
+      <!--Check that battle targeting is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="BattleTargetingPanel"/>
+      <!--Lock launch -->
+      <Action_Tutorial_SetValue Key="EnableTargetingButton" Value="false" RefreshPanelType="BattleTargetingPanel" />
+      <!--Showing text box #132-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title132" Content="%MainQuestTutorial-Content132" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Initiative banner -->
+      <Action_Tutorial_ShowHighlightPanel PanelName="0TutorialDummyInitiativeBar" RectangularHighlight="true"/>
+      <!--Showing text box #78-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title78" Content="%MainQuestTutorial-Content78" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Initiative banner-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #79-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title79" Content="%MainQuestTutorial-Content79" Blocker="true" Placement="SAME" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #80-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title80" Content="%MainQuestTutorial-Content80" Action="%MainQuestTutorial-Action80" Blocker="false" Placement="SAME"/>
+      <!--Check that battle unit GUI is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="BattleUnitCard">
+        <ConditionCheck_IsGuiElementVisible PanelName="6Strategy" />
+      </Decorator_Tutorial_PanelShowed>
+      <!--Action start highlight Battle Strategies-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="6Strategy" RectangularHighlight="true"/>
+      <!--Showing text box #81-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title81" Content="%MainQuestTutorial-Content81" Action="%MainQuestTutorial-Action81" Blocker="false" Placement="TOP"/>
+      <!--Unlock launch-->
+      <Action_Tutorial_SetValue Key="EnableTargetingButton" Value="true" RefreshPanelType="BattleTargetingPanel" />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step4" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step5" State="InProgress"/>
+      <!--Check that battle Resolution Phase GUI is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="BattleResolutionPanel"/>
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #84-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title84" Content="%MainQuestTutorial-Content84" Action="%MainQuestTutorial-Action84" Blocker="false" Placement="TOP" />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step5" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step6" State="InProgress"/>
+      <!--Check that battle report is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="NotificationPanelEncounterEnded"/>
+      <!--Action start highlight XP-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="6StatsContainer" RectangularHighlight="true"/>
+      <!--Showing text box #86-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title86" Content="%MainQuestTutorial-Content86" Blocker="true" Placement="LEFT" OverNotifications="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight XP -->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #89-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title89" Content="%MainQuestTutorial-Content89" Action="%MainQuestTutorial-Action89" Blocker="false" Placement="SAME" OverNotifications="true"/>
+      <!--Action check city panel is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step6" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter5-Step1"/>
+      <Step Name="MainQuestTutorial-Chapter5-Step2"/>
+      <Step Name="MainQuestTutorial-Chapter5-Step3"/>
+      <Step Name="MainQuestTutorial-Chapter5-Step4"/>
+      <Step Name="MainQuestTutorial-Chapter5-Step5"/>
+      <Step Name="MainQuestTutorial-Chapter5-Step6"/>
+    </Steps>
+
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>Tutorial6</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+  <!--CHAPTER 6-->
+  <QuestDefinition Name="MainQuestTutorial-Chapter6" Category="Tuto" SubCategory="Introduction"
+                     Cooldown="0" SkipLockedQuestTarget="true" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="1">
+    <Tags>Tutorial6,Hidden</Tags>
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+      <Var VarName="$CapitalCity">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+
+      <Var VarName="$CapitalRegion">
+        <From Source="$CapitalCity.$Region"/>
+      </Var>
+      
+      <Var VarName="$FactionToAssimilate">
+        <From Source="$CapitalRegion.$NeighbourRegions.$MinorEmpire.$FactionName"/>
+      </Var>
+
+      <DropListVar VarName="$InfluenceResource" DropList="DroplistMainQuestTutorialChapter6ResourceName"/>
+
+      <Var VarName="$InfluenceAmount" Value="30"/>
+    </Vars>
+
+    <Controller_Sequence>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter6-Step1" State="InProgress"/>
+      <!--Action start highlight village panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="VillagesTable" RectangularHighlight="true"/>
+      <!--Showing text box #91 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title91" Content="%MainQuestTutorial-Content91" Blocker="true" Placement="LEFT" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight village panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action unlock Empire screen button-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionTutorialUnlockEmpire"/>
+      <!--Action start highlight Empire screen button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1ControlEmpire" RectangularHighlight="false"/>
+      <!--Showing text box #116 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title116" Content="%MainQuestTutorial-Content116" Action="%MainQuestTutorial-Action116" Blocker="false" Placement="SAME" />
+      <!--Action check that Empire screen is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="GameEmpireScreen"/>
+      <!--Action stop highlight Empire screen button -->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Luxury panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3LuxuryResourcesTable" RectangularHighlight="true"/>
+      <!--Showing text box #92-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title92" Content="%MainQuestTutorial-Content92" Blocker="true" Placement="RIGHT" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #115-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title115" Content="%MainQuestTutorial-Content115" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Luxury1 button -->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight faction panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1EmpireOverviewPanel" RectangularHighlight="true"/>
+      <!--Showing text box #94-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title94" Content="%MainQuestTutorial-Content94" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight faction panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight empire bonus panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="8EmpireBonusPanel" RectangularHighlight="true"/>
+      <!--Showing text box #95-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title95" Content="%MainQuestTutorial-Content95" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight empire bonus panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight empire plan panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="6EmpirePlanPanel" RectangularHighlight="true"/>
+      <!--Showing text box #96-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title96" Content="%MainQuestTutorial-Content96" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight empire plan panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Status Screen button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="9StatusButton" RectangularHighlight="true"/>
+      <!--Showing text box #118-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title118" Content="%MainQuestTutorial-Content118" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Status Screen button-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight assimilation panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="2MinorFactionsPanel" RectangularHighlight="true"/>
+      <!--Showing text box #98 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title98" Content="%MainQuestTutorial-Content98" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight assimilation panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Transfer enough resource of Influence to pacify-->
+      <Action_TransferResource ResourceNameVarName="$InfluenceResource" AmountVarName="$InfluenceAmount"/>
+      <!--Action start highlight assimilation slot--><!--
+      <Action_Tutorial_ShowHighlightPanel PanelName="2MinorFactionTable" RectangularHighlight="true"/>-->
+      <!--Showing text box #106 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title106" Content="%MainQuestTutorial-Content106" Action="%MainQuestTutorial-Action106" Blocker="false" Placement="SAME" OverModals="true"/>
+      <!--<Decorator_Tutorial_PanelHidden Inverted="true" PanelName="13-MinorFactionChoiceModalPanel"/>
+      --><!--Action stop highlight assimilation slot--><!--
+      <Action_Tutorial_HideHighlightPanel />-->
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter6-Step1" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter6-Step2" State="InProgress"/>
+      <!--Action check a faction has been assimilated-->
+      <Decorator_FactionAssimilated FactionName="SistersOfMercy" Initiator="Empire"/>
+      <!--Action stop highlight assimilation slot-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing text box #99-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title99" Content="%MainQuestTutorial-Content99" Blocker="true" Placement="SAME" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing text box #100-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title100" Content="%MainQuestTutorial-Content100" Action="%MainQuestTutorial-Action100" Blocker="false" Placement="SAME" />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter6-Step2" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter6-Step1"/>
+      <Step Name="MainQuestTutorial-Chapter6-Step2"/>
+    </Steps>
+
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>Tutorial7</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+  <!--CHAPTER 7-->
+  <QuestDefinition Name="MainQuestTutorial-Chapter7" Category="Tuto" SubCategory="Introduction"
+                     Cooldown="0" SkipLockedQuestTarget="true" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="1">
+    <Tags>Tutorial7,Hidden</Tags>
+
+    <Controller_Sequence>
+
+      <!--CONTROLLER PARALLEL TO CHECK IF PLAYER COME BACK TO THE MAP AND HAS SELECTED CITY-->
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Sequence>
+          <!--Action check that Game World is displayed with City panel-->
+          <Decorator_Tutorial_PanelShowed PanelTypeName="GameWorldScreen">
+            <ConditionCheck_IsGuiElementVisible PanelTypeName="MetaPanelCity" />
+          </Decorator_Tutorial_PanelShowed>
+        </Controller_Sequence>
+        <Controller_Sequence>
+          <!--Action check that Game World is displayed without city panel and ask for it then-->
+          <Decorator_Tutorial_PanelShowed PanelTypeName="GameWorldScreen">
+            <ConditionCheck_IsGuiElementVisible Inverted="true" PanelTypeName="MetaPanelCity" />
+          </Decorator_Tutorial_PanelShowed>
+          <!--Showing text box #88-->
+          <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title88" Content="%MainQuestTutorial-Content88" Action="%MainQuestTutorial-Action88" Blocker="false" Placement="LEFT" />
+          <Decorator_Tutorial_PanelShowed PanelTypeName="MetaPanelCity"/>
+        </Controller_Sequence>
+      </Controller_Parallel>
+      
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter7-Step1" State="InProgress"/>
+      <!--Make available the Luxury extractor-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionUnlockLuxuryExtractorTutorial"/>
+      <!--Action start highlight Available Construction panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="03-CityOptionsFrame" RectangularHighlight="true"/>
+      <!--Showing last text box #101 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title101" Content="%MainQuestTutorial-Content101" Action="%MainQuestTutorial-Action101" Blocker="false" Placement="SAME"/>
+      <!--Action check that city extractor is in city queue-->
+      <Decorator_Tutorial_ConstructionQueued ConstructionName="ResourceExtractor_Luxury1Tutorial" Initiator="Empire"/>
+      <!--Action stop highlight Available Construction panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing last text box #107 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title107" Content="%MainQuestTutorial-Content107" Blocker="true" Placement="RIGHT" WheelBlocker="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Make available the Strategic extractor-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionUnlockStrategicExtractorTutorial"/>
+      <!--Showing last text box #119 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title119" Content="%MainQuestTutorial-Content119" Blocker="true" Placement="SAME" OverNotifications="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight Control banner with Military screen button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="6ControlMilitary" RectangularHighlight="false"/>
+      <!--Action unlock Military screen button-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionTutorialUnlockMilitary"/>
+      <!--Showing last text box #120 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title120" Content="%MainQuestTutorial-Content120" Action="%MainQuestTutorial-Action120" Blocker="false" Placement="SAME" OverNotifications="true"/>
+      <!--Action check that Military screen is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="GameMilitaryScreen"/>
+      <!--Action stop highlight Military screen button-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Military list-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3ArmiesListPanel" RectangularHighlight="true"/>
+      <!--Showing last text box #121 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title121" Content="%MainQuestTutorial-Content121" Blocker="true" Placement="RIGHT"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Military list-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight New design-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="3CreateButton" RectangularHighlight="true"/>
+      <!--Showing last text box #122 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title122" Content="%MainQuestTutorial-Content122" Action="%MainQuestTutorial-Action122" Blocker="false" Placement="SAME" OverModals="true"/>
+      <!--Action check that Unit Design screen is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="UnitInfoPanel"/>
+      <!--Action stop highlight New design-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing last text box #133 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title133" Content="%MainQuestTutorial-Content133" Blocker="true" Placement="TOP" OverModals="true" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight equipement panel-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="4ForgePanel" RectangularHighlight="true"/>
+      <!--Showing last text box #123 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title123" Content="%MainQuestTutorial-Content123" Blocker="true" Placement="SAME" OverModals="true" />
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight equipement panel-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight new name -->
+      <Action_Tutorial_ShowHighlightPanel PanelName="2UnitNameTextField" RectangularHighlight="true"/>
+      <!--Showing last text box #124 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title124" Content="%MainQuestTutorial-Content124" Action="%MainQuestTutorial-Action124" Blocker="false" Placement="SAME" OverModals="true" />
+      <Decorator_EndTurn Initiator="Empire"/>
+      <!--Action stop highlight new name-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Control banner with Academy screen button-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="5ControlAcademy" RectangularHighlight="false"/>
+      <!--Action unlock Academy screen button-->
+      <Action_ForceUnlockTechnology TechnologyDefinitionName="TechnologyDefinitionTutorialUnlockAcademy"/>
+      <!--Showing last text box #125 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title125" Content="%MainQuestTutorial-Content125" Action="%MainQuestTutorial-Action125" Blocker="false" Placement="LEFT"/>
+      <!--Action check that Academy screen is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelTypeName="GameAcademyScreen"/>
+      <!--Action Toggle “On” Assignment hero button-->
+      <Action_Tutorial_SetValue Key="EnableHeroAssignment" Value="true"/>
+      <!--Action stop highlight Academy screen button-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action Toggle “Off” notification new hero button-->
+      <Action_Tutorial_SetValue Key="GuiNotificationHeroAvailable" Value="false" />
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter7-Step1" State="Completed"/>
+
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter7-Step2" State="InProgress"/>
+      <!--Showing last text box #134 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title134" Content="%MainQuestTutorial-Content134" Blocker="true" Placement="SAME"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action start highlight inspect button--><!-- NEED A DUMMY
+      <Action_Tutorial_ShowHighlightPanel PanelName="3InspectButton" RectangularHighlight="true"/>-->
+      <!--Showing last text box #135-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title135" Content="%MainQuestTutorial-Content135" Action="%MainQuestTutorial-Action135" Blocker="false" Placement="SAME"/>
+      <!--Check that Hero inspection panel is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelName="19-HeroInspectionModalPanel"/>
+      <!--Action start highlight Skill tree-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="2SkillTreeToggle" RectangularHighlight="true"/>
+      <!--Showing last text box #126 -->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title126" Content="%MainQuestTutorial-Content126" Action="%MainQuestTutorial-Action126" Blocker="false" Placement="BOTTOM" OverModals="true"/>
+      <!--Check that Hero Skill tree is displayed-->
+      <Decorator_Tutorial_PanelShowed PanelName="6SkillTreePanel"/>
+      <!--Action stop highlight Skill tree-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Action start highlight Skill points-->
+      <Action_Tutorial_ShowHighlightPanel PanelName="1SkillPointsLeftLabel" RectangularHighlight="true"/>
+      <!--Showing last text box #127-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title127" Content="%MainQuestTutorial-Content127" Blocker="true" Placement="SAME" OverModals="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Action stop highlight Skill points-->
+      <Action_Tutorial_HideHighlightPanel />
+      <!--Showing last text box #128-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title128" Content="%MainQuestTutorial-Content128" Blocker="true" Placement="SAME" OverModals="true"/>
+      <Decorator_Tutorial_InstructionNextClicked />
+      <!--Showing last text box #136-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title136" Content="%MainQuestTutorial-Content136" Action="%MainQuestTutorial-Action136" Blocker="false" Placement="TOP" OverModals="true"/>
+      <Action_Tutorial_SetValue Key="EnableVictory" Value="true" />
+      <Decorator_EndTurn Initiator="Empire" />
+      <Action_Tutorial_HideInstructionPanel />
+    
+      <!--
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-TitleTutorialEnded" Content="%MainQuestTutorial-ContentTutorialEnded" Blocker="true" Placement="CENTER" NextButtonVisibility="ForcedOff" WheelBlocker="true"/>
+      <Action_UpdateStep StepName="MainQuestTutorial-Chapter7-Step2" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    -->
+    </Controller_Sequence>
+
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter7-Step1">
+        <Reward Droplist="DroplistMainQuestTutorialChapter7HeroReward" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestTutorial-Chapter7-Step2"/>
+    </Steps>
+
+  </QuestDefinition>
+  
+</Datatable>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <!-- Economy -->  
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionEconomy1">
+    <AIParameter Name="AIEmpireMoney"                    Value="0.5"/><!--* $SumProperty(ClassEmpire/ClassCity:DustPopulation)"/>-->
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionEconomy2">
+    <AIParameter  Name="AIBuildingProduction"            Value="0.5"/>
+    <AIParameter  Name="AIEmpireMoney"                    Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionEconomy3">
+    <AIParameter Name="AIEmpireMoney"                    Value="1"/> <!-- plug the sim property when available -->
+    <AIParameter Name="AIEmpireResearch"                 Value="1"/> <!-- plug the sim property when available -->
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionEconomy4">
+    <AIParameter Name="AIEmpireMoney"                    Value="1.5"/>
+  </AIParameterDatatableElement>
+
+
+  <!-- Exploration -->  
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionForeignAffairs1">
+    <AIParameter Name="AIExploration"                    Value="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionForeignAffairs2">
+    <AIParameter Name="CityApproval"               Value="25"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionForeignAffairs3">
+    <AIParameter Name="AIExploration"                    Value="1"/>
+    <AIParameter Name="AIEmpireMilitaryDefense"          Value="0.75"/>
+    <AIParameter Name="AIEmpireMilitaryOffense"          Value="0.75"/>
+    <AIParameter Name="AIEmpireDefense"                  Value="0.75"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionForeignAffairs4">
+    <AIParameter  Name="AIEmpireGrowth"                  Value="1" /> <!--* $Count(ClassEmpire,!#Winter)"/>-->
+  </AIParameterDatatableElement>
+  
+  
+  <!-- Military -->
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionMilitary1">
+    <AIParameter  Name="AIUnitProduction"                   Value="1"/>
+    <AIParameter  Name="AIEmpireProduction"                  Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionMilitary2">
+    <AIParameter Name="AIEmpireMilitary"                 Value="1"/>
+    <AIParameter Name="AIEmpireOffense"                  Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionMilitary3">
+    <AIParameter Name="AIEmpireMoney"                    Value="0.5"/>
+    <AIParameter Name="AIEmpireMilitaryDefense"          Value="0.5"/> <!-- TBD: distinction between offense and defense -->
+    <AIParameter Name="AIEmpireMilitaryOffense"          Value="0.5"/> <!-- TBD: distinction between offense and defense -->
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionMilitary4">
+    <AIParameter Name="AIEmpireMilitary"                 Value="1"/>
+    <AIParameter Name="AIEmpireDefense"                  Value="0.5"/>
+    <AIParameter Name="AIEmpireOffense"                  Value="0.5"/>
+  </AIParameterDatatableElement>
+
+
+
+
+  <!-- Knowledge -->
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionKnowledge1">
+    <AIParameter Name="AIEmpireResearch"                 Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionKnowledge2">
+    <AIParameter Name="AIEmpireProduction"               Value="0.5"/>
+    <AIParameter  Name="AIBuildingProduction"            Value="1"/>
+  </AIParameterDatatableElement>
+  
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionKnowledge3">
+    <AIParameter Name="AIEmpireResearch"                 Value="0.2"  /> <!--* $SumProperty(ClassEmpire/ClassCity/ClassDistric,#Winter)"/>-->
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="EmpirePlanDefinitionKnowledge4">
+    <AIParameter Name="AIEmpireResearch"                 Value="2"/>
+  </AIParameterDatatableElement>
+  
+</Datatable>

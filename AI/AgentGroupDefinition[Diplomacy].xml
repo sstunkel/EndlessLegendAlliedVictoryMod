@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <Amas Name="DiplomacyEvaluationAmas">
+
+    <AgentReference Name="PeaceTechnologyAgent"/>
+    <AgentReference Name="AllianceTechnologyAgent"/>
+    <AgentReference Name="GlobalWarAgent"/>
+
+  </Amas>
+
+  <AgentGroup Name="RelationAgentGroup">
+
+    <AgentReference Name="WarTermAgent"/>
+    <AgentReference Name="TruceTermAgent"/>
+    <AgentReference Name="ColdWarTermAgent"/>
+    <AgentReference Name="PeaceTermAgent"/>
+    <AgentReference Name="AllianceTermAgent"/>
+
+    <AgentReference Name="MapExchangeTermAgent"/>
+    <AgentReference Name="VisionAndMapExchangeTermAgent"/>
+    <AgentReference Name="CommercialAgreementTermAgent"/>
+    <AgentReference Name="ResearchAgreementTermAgent"/>
+    <AgentReference Name="OpenBordersTermAgent"/>
+    <AgentReference Name="MarketBanRemovalTermAgent"/>
+    <AgentReference Name="MapEmbargoTermAgent"/>
+    <AgentReference Name="VisionAndMapEmbargoTermAgent"/>
+    <AgentReference Name="VisionEmbargoTermAgent"/>
+    <AgentReference Name="CommercialEmbargoTermAgent"/>
+    <AgentReference Name="ResearchEmbargoTermAgent"/>
+    <AgentReference Name="CloseBordersTermAgent"/>
+    <AgentReference Name="MarketBanNullificationTermAgent"/>
+    <AgentReference Name="MarketBanTermAgent"/>
+    <AgentReference Name="MoneyPrintTermAgent"/>
+    <AgentReference Name="MoneyPrintNullificationTermAgent"/>
+
+    <AgentReference Name="DiplomaticRelationScoreAgent"/>
+
+    <AgentReference Name="AttitudeScoreCommonFrontierAgent"/>
+    <AgentReference Name="AttitudeScoreCommonDiplomaticStatusAgent"/>
+    
+  </AgentGroup>
+      
+</Datatable>

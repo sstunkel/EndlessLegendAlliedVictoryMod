@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- #################################### -->
+  <!-- #### BROKEN LORDS HERO PROFILES #### -->
+  <!-- #################################### -->
+
+  <GuiElement Name="UnitProfileBrokenLordsHero1">
+    <Title>%UnitProfileBrokenLordsHero1Title</Title>
+    <Description>%UnitProfileBrokenLordsHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero1Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileBrokenLordsHero2">
+    <Title>%UnitProfileBrokenLordsHero2Title</Title>
+    <Description>%UnitProfileBrokenLordsHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero2Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileBrokenLordsHero3">
+    <Title>%UnitProfileBrokenLordsHero3Title</Title>
+    <Description>%UnitProfileBrokenLordsHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero3Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileBrokenLordsHero4">
+    <Title>%UnitProfileBrokenLordsHero4Title</Title>
+    <Description>%UnitProfileBrokenLordsHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero4Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileBrokenLordsHero5">
+    <Title>%UnitProfileBrokenLordsHero5Title</Title>
+    <Description>%UnitProfileBrokenLordsHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero5Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileBrokenLordsHero6">
+    <Title>%UnitProfileBrokenLordsHero6Title</Title>
+    <Description>%UnitProfileBrokenLordsHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero6Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileBrokenLordsHero7">
+    <Title>%UnitProfileBrokenLordsHero7Title</Title>
+    <Description>%UnitProfileBrokenLordsHero7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero7Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/BrokenLordsHero7Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- #################################### -->
+  <!-- ##### MAD FAIRIES HERO PROFILES #### -->
+  <!-- #################################### -->
+
+  <GuiElement Name="UnitProfileMadFairiesHero1">
+    <Title>%UnitProfileMadFairiesHero1Title</Title>
+    <Description>%UnitProfileMadFairiesHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero1Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileMadFairiesHero2">
+    <Title>%UnitProfileMadFairiesHero2Title</Title>
+    <Description>%UnitProfileMadFairiesHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero2Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileMadFairiesHero3">
+    <Title>%UnitProfileMadFairiesHero3Title</Title>
+    <Description>%UnitProfileMadFairiesHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero3Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileMadFairiesHero4">
+    <Title>%UnitProfileMadFairiesHero4Title</Title>
+    <Description>%UnitProfileMadFairiesHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero4Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileMadFairiesHero5">
+    <Title>%UnitProfileMadFairiesHero5Title</Title>
+    <Description>%UnitProfileMadFairiesHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero5Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileMadFairiesHero6">
+    <Title>%UnitProfileMadFairiesHero6Title</Title>
+    <Description>%UnitProfileMadFairiesHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero6Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileMadFairiesHero7">
+    <Title>%UnitProfileMadFairiesHero7Title</Title>
+    <Description>%UnitProfileMadFairiesHero7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero7Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MadFairiesHero7Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- #################################### -->
+  <!-- ##### NECROPHAGES HERO PROFILES #### -->
+  <!-- #################################### -->
+
+  <GuiElement Name="UnitProfileNecrophagesHero1">
+    <Title>%UnitProfileNecrophagesHero1Title</Title>
+    <Description>%UnitProfileNecrophagesHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero1Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileNecrophagesHero2">
+    <Title>%UnitProfileNecrophagesHero2Title</Title>
+    <Description>%UnitProfileNecrophagesHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero2Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileNecrophagesHero3">
+    <Title>%UnitProfileNecrophagesHero3Title</Title>
+    <Description>%UnitProfileNecrophagesHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero3Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileNecrophagesHero4">
+    <Title>%UnitProfileNecrophagesHero4Title</Title>
+    <Description>%UnitProfileNecrophagesHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero4Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileNecrophagesHero5">
+    <Title>%UnitProfileNecrophagesHero5Title</Title>
+    <Description>%UnitProfileNecrophagesHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero5Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileNecrophagesHero6">
+    <Title>%UnitProfileNecrophagesHero6Title</Title>
+    <Description>%UnitProfileNecrophagesHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero6Large" />
+    </Icons> 
+  </GuiElement>
+  
+  <GuiElement Name="UnitProfileNecrophagesHero7">
+    <Title>%UnitProfileNecrophagesHero7Title</Title>
+    <Description>%UnitProfileNecrophagesHero7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/NecrophagesHero5Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- #################################### -->
+  <!-- #### RAGE WIZARDS HERO PROFILES #### -->
+  <!-- #################################### -->
+
+  <GuiElement Name="UnitProfileRageWizardsHero1">
+    <Title>%UnitProfileRageWizardsHero1Title</Title>
+    <Description>%UnitProfileRageWizardsHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero1Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRageWizardsHero2">
+    <Title>%UnitProfileRageWizardsHero2Title</Title>
+    <Description>%UnitProfileRageWizardsHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero2Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRageWizardsHero3">
+    <Title>%UnitProfileRageWizardsHero3Title</Title>
+    <Description>%UnitProfileRageWizardsHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero3Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRageWizardsHero4">
+    <Title>%UnitProfileRageWizardsHero4Title</Title>
+    <Description>%UnitProfileRageWizardsHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero4Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRageWizardsHero5">
+    <Title>%UnitProfileRageWizardsHero5Title</Title>
+    <Description>%UnitProfileRageWizardsHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero5Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRageWizardsHero6">
+    <Title>%UnitProfileRageWizardsHero6Title</Title>
+    <Description>%UnitProfileRageWizardsHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RageWizardsHero6Large" />
+    </Icons> 
+  </GuiElement>
+
+
+
+  <!-- ################################ -->
+  <!-- #### VAULTERS HERO PROFILES #### -->
+  <!-- ################################ -->
+
+  <GuiElement Name="UnitProfileVaultersHero1">
+    <Title>%UnitProfileVaultersHero1Title</Title>
+    <Description>%UnitProfileVaultersHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero1Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileVaultersHero2">
+    <Title>%UnitProfileVaultersHero2Title</Title>
+    <Description>%UnitProfileVaultersHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileVaultersHero3">
+    <Title>%UnitProfileVaultersHero3Title</Title>
+    <Description>%UnitProfileVaultersHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileVaultersHero4">
+    <Title>%UnitProfileVaultersHero4Title</Title>
+    <Description>%UnitProfileVaultersHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileVaultersHero5">
+    <Title>%UnitProfileVaultersHero5Title</Title>
+    <Description>%UnitProfileVaultersHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero5Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileVaultersHero6">
+    <Title>%UnitProfileVaultersHero6Title</Title>
+    <Description>%UnitProfileVaultersHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/VaultersHero6Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- #################################### -->
+  <!-- #### ROVING CLANS HERO PROFILES #### -->
+  <!-- #################################### -->
+
+  <GuiElement Name="UnitProfileRovingClansHero1">
+    <Title>%UnitProfileRovingClansHero1Title</Title>
+    <Description>%UnitProfileRovingClansHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero1Large" />
+    </Icons> 
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRovingClansHero2">
+    <Title>%UnitProfileRovingClansHero2Title</Title>
+    <Description>%UnitProfileRovingClansHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRovingClansHero3">
+    <Title>%UnitProfileRovingClansHero3Title</Title>
+    <Description>%UnitProfileRovingClansHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRovingClansHero4">
+    <Title>%UnitProfileRovingClansHero4Title</Title>
+    <Description>%UnitProfileRovingClansHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRovingClansHero5">
+    <Title>%UnitProfileRovingClansHero5Title</Title>
+    <Description>%UnitProfileRovingClansHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero5Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileRovingClansHero6">
+    <Title>%UnitProfileRovingClansHero6Title</Title>
+    <Description>%UnitProfileRovingClansHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/RovingClansHero6Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- #################################### -->
+  <!-- ####   DRAKKENS HERO PROFILES   #### -->
+  <!-- #################################### -->
+  
+  <GuiElement Name="UnitProfileDrakkensHero1">
+    <Title>%UnitProfileDrakkensHero1Title</Title>
+    <Description>%UnitProfileDrakkensHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileDrakkensHero2">
+    <Title>%UnitProfileDrakkensHero2Title</Title>
+    <Description>%UnitProfileDrakkensHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileDrakkensHero3">
+    <Title>%UnitProfileDrakkensHero3Title</Title>
+    <Description>%UnitProfileDrakkensHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileDrakkensHero4">
+    <Title>%UnitProfileDrakkensHero4Title</Title>
+    <Description>%UnitProfileDrakkensHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileDrakkensHero5">
+    <Title>%UnitProfileDrakkensHero5Title</Title>
+    <Description>%UnitProfileDrakkensHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero5Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileDrakkensHero6">
+    <Title>%UnitProfileDrakkensHero6Title</Title>
+    <Description>%UnitProfileDrakkensHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero6Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileDrakkensHero7">
+    <Title>%UnitProfileDrakkensHero7Title</Title>
+    <Description>%UnitProfileDrakkensHero7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero7Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/DrakkensHero7Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- #################################### -->
+  <!-- ####   CULTISTS HERO PROFILES   #### -->
+  <!-- #################################### -->  
+
+  <GuiElement Name="UnitProfileCultistsHero1">
+    <Title>%UnitProfileCultistsHero1Title</Title>
+    <Description>%UnitProfileCultistsHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileCultistsHero2">
+    <Title>%UnitProfileCultistsHero2Title</Title>
+    <Description>%UnitProfileCultistsHero2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero2Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileCultistsHero3">
+    <Title>%UnitProfileCultistsHero3Title</Title>
+    <Description>%UnitProfileCultistsHero3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero3Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileCultistsHero4">
+    <Title>%UnitProfileCultistsHero4Title</Title>
+    <Description>%UnitProfileCultistsHero4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero4Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileCultistsHero5">
+    <Title>%UnitProfileCultistsHero5Title</Title>
+    <Description>%UnitProfileCultistsHero5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero5Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero5Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="UnitProfileCultistsHero6">
+    <Title>%UnitProfileCultistsHero6Title</Title>
+    <Description>%UnitProfileCultistsHero6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero6Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/CultistsHero6Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################### -->
+  <!-- ##### MEZARI HERO PROFILES ###### -->
+  <!-- ################################### -->
+
+  <GuiElement Name="UnitProfileMezariHero1">
+    <Title>%UnitProfileTutorialHero1Title</Title>
+    <Description>%UnitProfileTutorialHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Large" />
+    </Icons>
+  </GuiElement>
+  
+
+
+  <!-- ################################### -->
+  <!-- ##### TUTORIAL HERO PROFILES ###### -->
+  <!-- ################################### -->
+
+  <GuiElement Name="UnitProfileTutorialHero1">
+    <Title>%UnitProfileTutorialHero1Title</Title>
+    <Description>%UnitProfileTutorialHero1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Small" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/HeroPortraits/MezariHero1Large" />
+    </Icons>
+  </GuiElement>
+
+
+</Datatable>

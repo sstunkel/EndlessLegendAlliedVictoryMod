@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- The word 'Long', 'Short' and 'Chaotic' before the season name in the seasonDefinition name are here to match the future season game settings. -->
+  <!-- So a 'LongSummer' Must Have a 'LongWinter' (or a 'LongWathever') and not a 'ShortWinter' as following season. -->
+
+  <SeasonDefinition Name="LongSummer">
+    <SeasonName>Summer</SeasonName>
+    <FollowingSeason>LongWinter</FollowingSeason>
+    <SeasonDurationCurveReference Name="LongSummerDuration" />
+    <Randomness>30</Randomness>
+    <SimulationGlobalTag>Summer</SimulationGlobalTag>
+  </SeasonDefinition>
+
+  <SeasonDefinition Name="ShortSummer">
+    <SeasonName>Summer</SeasonName>
+    <FollowingSeason>ShortWinter</FollowingSeason>
+    <SeasonDurationCurveReference Name="ShortSummerDuration" />
+    <Randomness>15</Randomness>
+    <SimulationGlobalTag>Summer</SimulationGlobalTag>
+  </SeasonDefinition>
+
+  <SeasonDefinition Name="ChaoticSummer">
+    <SeasonName>Summer</SeasonName>
+    <FollowingSeason>ChaoticWinter</FollowingSeason>
+    <SeasonDurationCurveReference Name="ChaoticSummerDuration" />
+    <Randomness>50</Randomness>
+    <SimulationGlobalTag>Summer</SimulationGlobalTag>
+  </SeasonDefinition>
+
+  <!--a season without a following season will be infinite-->
+  <SeasonDefinition Name="InfiniteSummer">
+    <SeasonName>Summer</SeasonName>
+    <SimulationGlobalTag>Summer</SimulationGlobalTag>
+  </SeasonDefinition>
+
+  <SeasonDefinition Name="LongWinter">
+    <SeasonName>Winter</SeasonName>
+    <FollowingSeason>LongSummer</FollowingSeason>
+    <SeasonDurationCurveReference Name="LongWinterDuration" />
+    <Randomness>30</Randomness>
+    <SimulationGlobalTag>Winter</SimulationGlobalTag>
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterMovementReduction" />
+      <SimulationDescriptorReference Name="WinterIndustryReduction" />
+      <SimulationDescriptorReference Name="WinterFoodReduction" />
+      <SimulationDescriptorReference Name="WinterDustReduction" />
+      <SimulationDescriptorReference Name="WinterCityVisionRangeReduction" />
+      <SimulationDescriptorReference Name="WinterUnitVisionRangeReduction" />
+    </SimulationData>
+    <SimulationData>
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,FactionTraitVaultersMezari</PathPrerequisite>
+      <SimulationDescriptorReference Name="WinterNetAffinityStrategicBonus" />
+    </SimulationData>
+  </SeasonDefinition>
+
+  <SeasonDefinition Name="ShortWinter">
+    <SeasonName>Winter</SeasonName>
+    <FollowingSeason>ShortSummer</FollowingSeason>
+    <SeasonDurationCurveReference Name="ShortWinterDuration" />
+    <Randomness>15</Randomness>
+    <SimulationGlobalTag>Winter</SimulationGlobalTag>
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterMovementReduction" />
+      <SimulationDescriptorReference Name="WinterIndustryReduction" />
+      <SimulationDescriptorReference Name="WinterFoodReduction" />
+      <SimulationDescriptorReference Name="WinterDustReduction" />
+      <SimulationDescriptorReference Name="WinterCityVisionRangeReduction" />
+      <SimulationDescriptorReference Name="WinterUnitVisionRangeReduction" />
+    </SimulationData>
+    <SimulationData>
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,FactionTraitVaultersMezari</PathPrerequisite>
+      <SimulationDescriptorReference Name="WinterNetAffinityStrategicBonus" />
+    </SimulationData>
+  </SeasonDefinition>
+
+  <SeasonDefinition Name="ChaoticWinter">
+    <SeasonName>Winter</SeasonName>
+    <FollowingSeason>ChaoticSummer</FollowingSeason>
+    <SeasonDurationCurveReference Name="ChaoticWinterDuration" />
+    <Randomness>50</Randomness>
+    <SimulationGlobalTag>Winter</SimulationGlobalTag>
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterMovementReduction" />
+      <SimulationDescriptorReference Name="WinterFoodReduction" />
+      <SimulationDescriptorReference Name="WinterDustReduction" />
+      <SimulationDescriptorReference Name="WinterIndustryReduction" />
+      <SimulationDescriptorReference Name="WinterCityVisionRangeReduction" />
+      <SimulationDescriptorReference Name="WinterUnitVisionRangeReduction" />
+    </SimulationData>
+    <SimulationData>
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,FactionTraitVaultersMezari</PathPrerequisite>
+      <SimulationDescriptorReference Name="WinterNetAffinityStrategicBonus" />
+    </SimulationData>
+  </SeasonDefinition>
+
+  <!--a season without a following season will be infinite-->
+  <SeasonDefinition Name="InfiniteWinter">
+    <SeasonName>Winter</SeasonName>
+    <SimulationGlobalTag>Winter</SimulationGlobalTag>
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterMovementReduction" />
+      <SimulationDescriptorReference Name="WinterFoodReduction" />
+      <SimulationDescriptorReference Name="WinterDustReduction" />
+      <SimulationDescriptorReference Name="WinterIndustryReduction" />
+      <SimulationDescriptorReference Name="WinterCityVisionRangeReduction" />
+      <SimulationDescriptorReference Name="WinterUnitVisionRangeReduction" />
+    </SimulationData>
+    <SimulationData>
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,FactionTraitVaultersMezari</PathPrerequisite>
+      <SimulationDescriptorReference Name="WinterNetAffinityStrategicBonus" />
+    </SimulationData>
+  </SeasonDefinition>
+
+</Datatable>

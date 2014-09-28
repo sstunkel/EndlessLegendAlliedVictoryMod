@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX DELVERS ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Footstep">
+    <SoundEventName>Sfx/Faction/Delvers/Dwarf/Delvers_Dwarf_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_BodyFall">
+    <SoundEventName>Sfx/Faction/Delvers/Dwarf/Delvers_Dwarf_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Idle0">
+    <SoundEventName>Sfx/Faction/Delvers/Dwarf/Delvers_Dwarf_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Attack1H">
+    <SoundEventName>Sfx/Faction/Delvers/Dwarf/Delvers_Dwarf_Attack1H</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_AttackShield">
+    <SoundEventName>Sfx/Faction/Delvers/Dwarf/Delvers_Dwarf_AttackShield</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Attack">
+    <SoundEventName>Sfx/Voices/Dwarf/Dwarf_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Death">
+    <SoundEventName>Sfx/Voices/Dwarf/Dwarf_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Defense">
+    <SoundEventName>Sfx/Voices/Dwarf/Dwarf_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Click">
+    <SoundEventName>Sfx/Voices/Dwarf/Dwarf_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Delvers_Dwarf_Order">
+    <SoundEventName>Sfx/Voices/Dwarf/Dwarf_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+</Datatable>

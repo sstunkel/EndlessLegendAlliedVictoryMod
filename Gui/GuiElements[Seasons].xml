@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="LongSummer">
+    <Title>%SeasonSummerTitle</Title>
+    <Description>%SeasonSummerDescription</Description>
+    <Icons>
+      <Icon Path="SeasonSummerSmall" Size="Small" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ShortSummer">
+    <Title>%SeasonSummerTitle</Title>
+    <Description>%SeasonSummerDescription</Description>
+    <Icons>
+      <Icon Path="SeasonSummerSmall" Size="Small" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ChaoticSummer">
+    <Title>%SeasonSummerTitle</Title>
+    <Description>%SeasonSummerDescription</Description>
+    <Icons>
+      <Icon Path="SeasonSummerSmall" Size="Small" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="LongWinter">
+    <Title>%SeasonWinterTitle</Title>
+    <Description>%SeasonWinterDescription</Description>
+    <Icons>
+      <Icon Path="SeasonWinterSmall" Size="Small" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ShortWinter">
+    <Title>%SeasonWinterTitle</Title>
+    <Description>%SeasonWinterDescription</Description>
+    <Icons>
+      <Icon Path="SeasonWinterSmall" Size="Small" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ChaoticWinter">
+    <Title>%SeasonWinterTitle</Title>
+    <Description>%SeasonWinterDescription</Description>
+    <Icons>
+      <Icon Path="SeasonWinterSmall" Size="Small" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="InfiniteWinter">
+    <Title>%SeasonWinterTitle</Title>
+    <Description>%SeasonWinterDescription</Description>
+    <Icons>
+      <Icon Path="SeasonWinterSmall" Size="Small" />
+    </Icons>
+  </GuiElement>
+</Datatable>

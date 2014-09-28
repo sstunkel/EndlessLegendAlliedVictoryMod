@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://Cultistsw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://Cultistsw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter1">
+    <Title>%MainQuestCultists-Chapter1Title</Title>
+    <Description>%MainQuestCultists-Chapter1Description</Description>
+    <Objective>%MainQuestCultists-Chapter1Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter1-Step1">%MainQuestCultists-Chapter1-Step1</Step>
+      <Step Name="MainQuestCultists-Chapter1-Step2">%MainQuestCultists-Chapter1-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter2">
+    <Title>%MainQuestCultists-Chapter2Title</Title>
+    <Description>%MainQuestCultists-Chapter2Description</Description>
+    <Objective>%MainQuestCultists-Chapter2Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter2-Step1">%MainQuestCultists-Chapter2-Step1</Step>
+      <Step Name="MainQuestCultists-Chapter2-Step2">%MainQuestCultists-Chapter2-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter3">
+    <Title>%MainQuestCultists-Chapter3Title</Title>
+    <Description>%MainQuestCultists-Chapter3Description</Description>
+    <Objective>%MainQuestCultists-Chapter3Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter3-Step1">%MainQuestCultists-Chapter3-Step1</Step>
+      <Step Name="MainQuestCultists-Chapter3-Step2">%MainQuestCultists-Chapter3-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3Alt -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter3Alt">
+    <Title>%MainQuestCultists-Chapter3AltTitle</Title>
+    <Description>%MainQuestCultists-Chapter3AltDescription</Description>
+    <Objective>%MainQuestCultists-Chapter3AltObjective</Objective>
+    <Outcome>%MainQuestCultists-Chapter3AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter3Alt-Step1">%MainQuestCultists-Chapter3Alt-Step1</Step>
+      <Step Name="MainQuestCultists-Chapter3Alt-Step2">%MainQuestCultists-Chapter3Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter4">
+    <Title>%MainQuestCultists-Chapter4Title</Title>
+    <Description>%MainQuestCultists-Chapter4Description</Description>
+    <Objective>%MainQuestCultists-Chapter4Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter4-Step1">%MainQuestCultists-Chapter4-Step1</Step>
+      <Step Name="MainQuestCultists-Chapter4-Step2">%MainQuestCultists-Chapter4-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter5">
+    <Title>%MainQuestCultists-Chapter5Title</Title>
+    <Description>%MainQuestCultists-Chapter5Description</Description>
+    <Objective>%MainQuestCultists-Chapter5Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter5-Step1">%MainQuestCultists-Chapter5-Step1</Step>
+      <Step Name="MainQuestCultists-Chapter5-Step2">%MainQuestCultists-Chapter5-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter6">
+    <Title>%MainQuestCultists-Chapter6Title</Title>
+    <Description>%MainQuestCultists-Chapter6Description</Description>
+    <Objective>%MainQuestCultists-Chapter6Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter6-Step1">%MainQuestCultists-Chapter6-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6Alt -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter6Alt">
+    <Title>%MainQuestCultists-Chapter6AltTitle</Title>
+    <Description>%MainQuestCultists-Chapter6AltDescription</Description>
+    <Objective>%MainQuestCultists-Chapter6AltObjective</Objective>
+    <Outcome>%MainQuestCultists-Chapter6AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter6Alt-Step1">%MainQuestCultists-Chapter6Alt-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter7">
+    <Title>%MainQuestCultists-Chapter7Title</Title>
+    <Description>%MainQuestCultists-Chapter7Description</Description>
+    <Objective>%MainQuestCultists-Chapter7Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter7-Step1">%MainQuestCultists-Chapter7-Step1</Step>
+      <Step Name="MainQuestCultists-Chapter7-Step2">%MainQuestCultists-Chapter7-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestCultists-Chapter8">
+    <Title>%MainQuestCultists-Chapter8Title</Title>
+    <Description>%MainQuestCultists-Chapter8Description</Description>
+    <Objective>%MainQuestCultists-Chapter8Objective</Objective>
+    <Outcome>%MainQuestCultists-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestCultists8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestCultists-Chapter8-Step1">%MainQuestCultists-Chapter8-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  <BattleSequence Name="Normal">
+    <BattlePhase Name="BattlePhase1">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>1</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+
+    <BattlePhase Name="BattlePhase2">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>1</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+
+    <BattlePhase Name="BattlePhase3">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>1</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+
+    <BattlePhase Name="BattlePhase4">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>1</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+
+    <BattlePhase Name="BattlePhase5">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>1</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+
+    <BattlePhase Name="BattlePhase6">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>1</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+  </BattleSequence>
+
+  <BattleSequence Name="Advanced">
+    <BattlePhase Name="BattlePhase1">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>2</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+
+    <BattlePhase Name="BattlePhase2">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>2</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+
+    <BattlePhase Name="BattlePhase3">
+      <Simulation>
+        <Filters>BattlePhaseCombat</Filters>
+        <NumberOfRounds>2</NumberOfRounds>
+      </Simulation>
+    </BattlePhase>
+  </BattleSequence>
+
+</Datatable>

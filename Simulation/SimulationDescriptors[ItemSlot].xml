@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="ItemSlotShield1" Type="ItemSlot"/>
+
+  <SimulationDescriptor Name="ItemSlotSword1" Type="ItemSlot"/>
+  
+  <SimulationDescriptor Name="ItemSlotAxe1" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotHammer1" Type="ItemSlot" />
+
+  <SimulationDescriptor Name="ItemSlotSword2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotAxe2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotHammer2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotSpear2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotStaff2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotWand2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotClaw2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotBow2" Type="ItemSlot"/>
+  
+  <SimulationDescriptor Name="ItemSlotCrossbow1" Type="ItemSlot"/>
+  
+  <SimulationDescriptor Name="ItemSlotScepter2" Type="ItemSlot" />
+  
+  <SimulationDescriptor Name="ItemSlotTorso" Type="ItemSlot"/>
+  
+  <SimulationDescriptor Name="ItemSlotHead" Type="ItemSlot"/>
+  
+  <SimulationDescriptor Name="ItemSlotLegs" Type="ItemSlot"/>
+  
+  <SimulationDescriptor Name="ItemSlotAccessory" Type="ItemSlot"/>
+  
+</Datatable>

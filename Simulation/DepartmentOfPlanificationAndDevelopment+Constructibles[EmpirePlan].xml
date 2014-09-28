@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--Military-->
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionMilitary0" Class="EmpirePlanMilitary" Level="0">
+    <SimulationDescriptorReference Name="EmpirePlanMilitary0" />
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionMilitary1" Class="EmpirePlanMilitary" Level="1">
+    <SimulationDescriptorReference Name="EmpirePlanMilitary1" />
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab))* 20 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionMilitary2" Class="EmpirePlanMilitary" Level="2">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionMilitary1" />
+    <SimulationDescriptorReference Name="EmpirePlanMilitary2" />
+    <InterpreterPrerequisite Flags="TechnologyEra2">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 2</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 60 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionMilitary3" Class="EmpirePlanMilitary" Level="3">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionMilitary2" />
+    <SimulationDescriptorReference Name="EmpirePlanMilitary3" />
+    <InterpreterPrerequisite Flags="TechnologyEra3">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 3</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 150 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionMilitary4" Class="EmpirePlanMilitary" Level="4">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionMilitary3" />
+    <SimulationDescriptorReference Name="EmpirePlanMilitary4" />
+    <InterpreterPrerequisite Flags="TechnologyEra4">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 4</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 400 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+
+  <!--Knowledge-->
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionKnowledge0" Class="EmpirePlanKnowledge" Level="0">
+    <SimulationDescriptorReference Name="EmpirePlanKnowledge0" />
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionKnowledge1" Class="EmpirePlanKnowledge" Level="1">
+    <SimulationDescriptorReference Name="EmpirePlanKnowledge1" />
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 20 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionKnowledge2" Class="EmpirePlanKnowledge" Level="2">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionKnowledge1" />
+    <SimulationDescriptorReference Name="EmpirePlanKnowledge2" />
+    <InterpreterPrerequisite Flags="TechnologyEra2">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 2</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 60 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionKnowledge3" Class="EmpirePlanKnowledge" Level="3">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionKnowledge2" />
+    <SimulationDescriptorReference Name="EmpirePlanKnowledge3" />
+    <InterpreterPrerequisite Flags="TechnologyEra3">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 3</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 150 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionKnowledge4" Class="EmpirePlanKnowledge" Level="4">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionKnowledge3" />
+    <SimulationDescriptorReference Name="EmpirePlanKnowledge4" />
+    <InterpreterPrerequisite Flags="TechnologyEra4">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 4</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 400 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+  
+  
+  <!--ForeignAffairs-->
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionForeignAffairs0" Class="EmpirePlanForeignAffairs" Level="0">
+    <SimulationDescriptorReference Name="EmpirePlanForeignAffairs0" />
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionForeignAffairs1" Class="EmpirePlanForeignAffairs" Level="1">
+    <SimulationDescriptorReference Name="EmpirePlanForeignAffairs1" />
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 20 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionForeignAffairs2" Class="EmpirePlanForeignAffairs" Level="2">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionForeignAffairs1" />
+    <SimulationDescriptorReference Name="EmpirePlanForeignAffairs2" />
+    <InterpreterPrerequisite Flags="TechnologyEra2">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 2</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 60 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionForeignAffairs3" Class="EmpirePlanForeignAffairs" Level="3">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionForeignAffairs2" />
+    <SimulationDescriptorReference Name="EmpirePlanForeignAffairs3" />
+    <InterpreterPrerequisite Flags="TechnologyEra3">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 3</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 150 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionForeignAffairs4" Class="EmpirePlanForeignAffairs" Level="4">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionForeignAffairs3" />
+    <SimulationDescriptorReference Name="EmpirePlanForeignAffairs4" />
+    <InterpreterPrerequisite Flags="TechnologyEra4">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 4</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 400 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+
+  <!--Economy-->
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionEconomy0" Class="EmpirePlanEconomy" Level="0">
+    <SimulationDescriptorReference Name="EmpirePlanEconomy0" />
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionEconomy1" Class="EmpirePlanEconomy" Level="1">
+    <SimulationDescriptorReference Name="EmpirePlanEconomy1" />
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 20 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionEconomy2" Class="EmpirePlanEconomy" Level="2">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionEconomy1" />
+    <SimulationDescriptorReference Name="EmpirePlanEconomy2" />
+    <InterpreterPrerequisite Flags="TechnologyEra2">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 2</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 60 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionEconomy3" Class="EmpirePlanEconomy" Level="3">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionEconomy2" />
+    <SimulationDescriptorReference Name="EmpirePlanEconomy3" />
+    <InterpreterPrerequisite Flags="TechnologyEra3">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 3</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 150 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+
+  <EmpirePlanDefinition Name="EmpirePlanDefinitionEconomy4" Class="EmpirePlanEconomy" Level="4">
+    <EmpirePlanDefinitionReference Name="EmpirePlanDefinitionEconomy3" />
+    <SimulationDescriptorReference Name="EmpirePlanEconomy4" />
+    <InterpreterPrerequisite Flags="TechnologyEra4">$Property(EmpireTypeMajor:EmpirePlanLevelUnlocked) ge 4</InterpreterPrerequisite>
+    <CustomCost ResourceName="EmpirePoint" Instant="true">($Count(EmpireTypeMajor/ClassCity) + $Count(EmpireTypeMajor/Garrison/UnitTypeRovingClansScarab)) * 400 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+  </EmpirePlanDefinition>
+</Datatable>

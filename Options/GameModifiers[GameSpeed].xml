@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GameModifierDefinition Name="GameSpeedFast">
+    <DescriptorTypeToRemove>GameSpeedBonus</DescriptorTypeToRemove>
+    
+    <!-- Major Empire -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedFastMajorEmpire"/>
+      <PersonalityReference Name="PersonalityMajorFactionGameSpeedFast" />
+    </Effects>
+    
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedFastMinorEmpire"/>
+      <PersonalityReference Name="PersonalityMinorFactionGameSpeedFast" />
+    </Effects>
+
+    <!-- Lesser -->
+    <Effects>
+      <PathPrerequisite>../AffinityLesser</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedFastLesserEmpire"/>
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameSpeedNormal">
+    <DescriptorTypeToRemove>GameSpeedBonus</DescriptorTypeToRemove>
+
+    <!-- Major Empire -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedNormalMajorEmpire"/>
+      <PersonalityReference Name="PersonalityMajorFactionGameSpeedNormal" />
+    </Effects>
+
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedNormalMinorEmpire"/>
+      <PersonalityReference Name="PersonalityMinorFactionGameSpeedNormal" />
+    </Effects>
+
+    <!-- Lesser -->
+    <Effects>
+      <PathPrerequisite>../AffinityLesser</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedNormalLesserEmpire"/>
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameSpeedSlow">
+    <DescriptorTypeToRemove>GameSpeedBonus</DescriptorTypeToRemove>
+
+    <!-- Major Empire -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedSlowMajorEmpire"/>
+      <PersonalityReference Name="PersonalityMajorFactionGameSpeedSlow" />
+    </Effects>
+
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedSlowMinorEmpire"/>
+      <PersonalityReference Name="PersonalityMinorFactionGameSpeedSlow" />
+    </Effects>
+
+    <!-- Lesser -->
+    <Effects>
+      <PathPrerequisite>../AffinityLesser</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedSlowLesserEmpire"/>
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameSpeedEndless">
+    <DescriptorTypeToRemove>GameSpeedBonus</DescriptorTypeToRemove>
+
+    <!-- Major Empire -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedEndlessMajorEmpire"/>
+      <PersonalityReference Name="PersonalityMajorFactionGameSpeedEndless" />
+    </Effects>
+
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedFastMinorEmpire"/>
+      <PersonalityReference Name="PersonalityMinorFactionGameSpeedEndless" />
+    </Effects>
+
+    <!-- Lesser -->
+    <Effects>
+      <PathPrerequisite>../AffinityLesser</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameSpeedEndlessLesserEmpire"/>
+    </Effects>
+  </GameModifierDefinition>
+
+</Datatable>

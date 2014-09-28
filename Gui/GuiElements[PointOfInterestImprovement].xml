@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic1">
+    <Title>%ResourceExtractor_Strategic1Title</Title>
+    <Description>%ResourceExtractor_Strategic1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic1Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic1Tutorial">
+    <Title>%ResourceExtractor_Strategic1Title</Title>
+    <Description>%ResourceExtractor_Strategic1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic1Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic2">
+    <Title>%ResourceExtractor_Strategic2Title</Title>
+    <Description>%ResourceExtractor_Strategic2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic2Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic2Tutorial">
+    <Title>%ResourceExtractor_Strategic2Title</Title>
+    <Description>%ResourceExtractor_Strategic2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic2Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic3">
+    <Title>%ResourceExtractor_Strategic3Title</Title>
+    <Description>%ResourceExtractor_Strategic3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic3Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic4">
+    <Title>%ResourceExtractor_Strategic4Title</Title>
+    <Description>%ResourceExtractor_Strategic4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic4Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic4TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic5">
+    <Title>%ResourceExtractor_Strategic5Title</Title>
+    <Description>%ResourceExtractor_Strategic5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic5Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic5TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Strategic6">
+    <Title>%ResourceExtractor_Strategic6Title</Title>
+    <Description>%ResourceExtractor_Strategic6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_Strategic6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Strategic6Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Strategic6TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury1">
+    <Title>%ResourceExtractor_Luxury1Title</Title>
+    <Description>%ResourceExtractor_Luxury1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury1Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury1Tutorial">
+    <Title>%ResourceExtractor_Luxury1Title</Title>
+    <Description>%ResourceExtractor_Luxury1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury1Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury2">
+    <Title>%ResourceExtractor_Luxury2Title</Title>
+    <Description>%ResourceExtractor_Luxury2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury2Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury2Tutorial">
+    <Title>%ResourceExtractor_Luxury2Title</Title>
+    <Description>%ResourceExtractor_Luxury2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury2Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury3">
+    <Title>%ResourceExtractor_Luxury3Title</Title>
+    <Description>%ResourceExtractor_Luxury3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury3Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury3Tutorial">
+    <Title>%ResourceExtractor_Luxury3Title</Title>
+    <Description>%ResourceExtractor_Luxury3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury3Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury4">
+    <Title>%ResourceExtractor_Luxury4Title</Title>
+    <Description>%ResourceExtractor_Luxury4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury4Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury4TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury4Tutorial">
+    <Title>%ResourceExtractor_Luxury4Title</Title>
+    <Description>%ResourceExtractor_Luxury4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury4Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury4TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury5">
+    <Title>%ResourceExtractor_Luxury5Title</Title>
+    <Description>%ResourceExtractor_Luxury5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury5Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury5TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury5Tutorial">
+    <Title>%ResourceExtractor_Luxury5Title</Title>
+    <Description>%ResourceExtractor_Luxury5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryCommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury5Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury5TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury6">
+    <Title>%ResourceExtractor_Luxury6Title</Title>
+    <Description>%ResourceExtractor_Luxury6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryUncommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury6Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury6TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury7">
+    <Title>%ResourceExtractor_Luxury7Title</Title>
+    <Description>%ResourceExtractor_Luxury7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryUncommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury7Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury7TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury8">
+    <Title>%ResourceExtractor_Luxury8Title</Title>
+    <Description>%ResourceExtractor_Luxury8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryUncommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury8Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury8TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury9">
+    <Title>%ResourceExtractor_Luxury9Title</Title>
+    <Description>%ResourceExtractor_Luxury9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryUncommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury9Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury9TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury10">
+    <Title>%ResourceExtractor_Luxury10Title</Title>
+    <Description>%ResourceExtractor_Luxury10Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryUncommonSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury10Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury10TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury11">
+    <Title>%ResourceExtractor_Luxury11Title</Title>
+    <Description>%ResourceExtractor_Luxury11Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryRareSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury11Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury11TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury12">
+    <Title>%ResourceExtractor_Luxury12Title</Title>
+    <Description>%ResourceExtractor_Luxury12Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryRareSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury12Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury12TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury13">
+    <Title>%ResourceExtractor_Luxury13Title</Title>
+    <Description>%ResourceExtractor_Luxury13Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryRareSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury13Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury13TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury14">
+    <Title>%ResourceExtractor_Luxury14Title</Title>
+    <Description>%ResourceExtractor_Luxury14Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryRareSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury14Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury14TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ResourceExtractor_Luxury15">
+    <Title>%ResourceExtractor_Luxury15Title</Title>
+    <Description>%ResourceExtractor_Luxury15Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/ResourceExtractor_LuxuryRareSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/ResourceExtractor_Luxury15Large" />
+    </Icons>
+    <TooltipElement Ignore="true">
+      <EffectOverride>%ResourceExtractor_Luxury15TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  
+  
+  
+  
+  <GuiElement Name="WatchTower0">
+    <Title>%WatchTower0Title</Title>
+    <Description>%WatchTower0Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/WatchTower0Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/WatchTower0Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="WatchTower1">
+    <Title>%WatchTower1Title</Title>
+    <Description>%WatchTower1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/WatchTower1Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/WatchTower1Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="WatchTower2">
+    <Title>%WatchTower2Title</Title>
+    <Description>%WatchTower2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/WatchTower2Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/WatchTower2Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="WatchTowerHealthEffectArea">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%WatchTowerHealthEffectAreaTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+
+
+  <GuiElement Name="DestroyedVillage">
+    <Title>%DestroyedVillageTitle</Title>
+    <Description>%DestroyedVillageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/#DebugSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/#DebugLarge" />
+    </Icons>
+  </GuiElement>
+
+  
+  
+  
+  
+  <GuiElement Name="Village_Urces">
+    <Title>%Village_UrcesTitle</Title>
+    <Description>%Village_UrcesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageUrcesSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageUrcesLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Erycis">
+    <Title>%Village_ErycisTitle</Title>
+    <Description>%Village_ErycisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageErycisSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageErycisLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Ceratan">
+    <Title>%Village_CeratanTitle</Title>
+    <Description>%Village_CeratanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageCeratanSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageCeratanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Kazanji">
+    <Title>%Village_KazanjiTitle</Title>
+    <Description>%Village_KazanjiDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageKazanjiSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageKazanjiLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Bos">
+    <Title>%Village_BosTitle</Title>
+    <Description>%Village_BosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageBosSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageBosLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Silics">
+    <Title>%Village_SilicsTitle</Title>
+    <Description>%Village_SilicsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageSilicsSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageSilicsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Delvers">
+    <Title>%Village_DelversTitle</Title>
+    <Description>%Village_DelversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageDelversSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageDelversLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_SistersOfMercy">
+    <Title>%Village_SistersOfMercyTitle</Title>
+    <Description>%Village_SistersOfMercyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageSistersOfMercySmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageSistersOfMercyLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Haunts">
+    <Title>%Village_HauntsTitle</Title>
+    <Description>%Village_HauntsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageHauntsSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageHauntsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Jotus">
+    <Title>%Village_JotusTitle</Title>
+    <Description>%Village_JotusDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageJotusSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageJotusLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Hurnas">
+    <Title>%Village_HurnasTitle</Title>
+    <Description>%Village_HurnasDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageHurnasSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageHurnasLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Gauran">
+    <Title>%Village_GauranTitle</Title>
+    <Description>%Village_GauranDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageGauranSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageGauranLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Birdhive">
+    <Title>%Village_BirdhiveTitle</Title>
+    <Description>%Village_BirdhiveDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageBirdhiveSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageBirdhiveLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Village_Geldirus">
+    <Title>%Village_GeldirusTitle</Title>
+    <Description>%Village_GeldirusDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/POIs/VillageGeldirusSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/POIs/VillageGeldirusLarge" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

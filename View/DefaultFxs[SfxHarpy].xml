@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  <!-- ===================================== SFX HARPY ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Harpy_WingFlap">
+    <SoundEventName>Sfx/Faction/Harpy/Harpy_WingFlap</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Harpy_WingFlap_BodyFall">
+    <SoundEventName>Sfx/Faction/Harpy/Harpy_WingFlap_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Harpy_BodyFall">
+    <SoundEventName>Sfx/Faction/Harpy/Harpy_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Harpy_Voice_Attack">
+    <SoundEventName>Sfx/Voices/Harpy/Harpy_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Harpy_Voice_Idle0">
+    <SoundEventName>Sfx/Voices/Harpy/Harpy_Voice_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Harpy_Voice_Defense">
+    <SoundEventName>Sfx/Voices/Harpy/Harpy_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Harpy_Voice_Death">
+    <SoundEventName>Sfx/Voices/Harpy/Harpy_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+</Datatable>

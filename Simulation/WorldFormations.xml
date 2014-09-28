@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <WorldFormation Name="TinyDefense" Type="Defense">
+    <WorldFormationPosition IsFront="true" Angle="50" Radius="0.4"/>
+    <WorldFormationPosition IsFront="true" Angle="30" Radius="0.3"/>
+    <WorldFormationPosition IsFront="true" Angle="-30" Radius="0.3"/>
+    <WorldFormationPosition IsFront="true" Angle="-50" Radius="0.4"/>
+
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="0.2"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="-0.2"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="-0.5"/>
+
+    <WorldFormationPosition IsFront="false" Angle="130" Radius="0.4"/>
+    <WorldFormationPosition IsFront="false" Angle="150" Radius="0.3"/>
+    <WorldFormationPosition IsFront="false" Angle="210" Radius="0.3"/>
+    <WorldFormationPosition IsFront="false" Angle="235" Radius="0.4"/>
+  </WorldFormation>
+
+  <WorldFormation Name="SmallDefense" Type="Defense">
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0.4"/>
+    
+    <WorldFormationPosition IsFront="false" Angle="180" Radius="0.1"/>
+    <WorldFormationPosition IsFront="false" Angle="110" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="-110" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="160" Radius="0.7"/>
+    <WorldFormationPosition IsFront="false" Angle="-160" Radius="0.7"/>
+  </WorldFormation>
+  
+  <WorldFormation Name="MediumDefense" Type="Defense">
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0"/>
+    <WorldFormationPosition IsFront="false" Angle="130" Radius="0.6"/>
+    <WorldFormationPosition IsFront="false" Angle="250" Radius="0.6"/>
+  </WorldFormation>
+  
+  <WorldFormation Name="LargeDefense" Type="Defense">
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0"/>
+  </WorldFormation>
+  
+  <WorldFormation Name="TinyOffense" Type="Offense">
+    <WorldFormationPosition IsFront="true" Angle="50" Radius="0.75"/>
+    <WorldFormationPosition IsFront="true" Angle="10" Radius="1.1"/>
+    <WorldFormationPosition IsFront="true" Angle="-10" Radius="1.1"/>
+    <WorldFormationPosition IsFront="true" Angle="-50" Radius="0.75"/>
+
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="0.6"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="0.3"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="-0.3"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="-0.6"/>
+
+    <WorldFormationPosition IsFront="false" Angle="130" Radius="0.75"/>
+    <WorldFormationPosition IsFront="false" Angle="150" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="210" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="235" Radius="0.75"/>
+  </WorldFormation>
+
+  <WorldFormation Name="SmallOffense" Type="Offense">
+    <WorldFormationPosition IsFront="true" Angle="30" Radius="0.7"/>
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0.9"/>
+    <WorldFormationPosition IsFront="true" Angle="-30" Radius="0.7"/>
+
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="0" Radius="0"/>
+    <WorldFormationPosition IsFront="false" Angle="-90" Radius="0.5"/>
+  </WorldFormation>
+
+  <WorldFormation Name="MediumOffense" Type="Offense">
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0.7"/>
+    <WorldFormationPosition IsFront="false" Angle="110" Radius="0.4"/>
+    <WorldFormationPosition IsFront="false" Angle="270" Radius="0.4"/>
+  </WorldFormation>
+
+  <WorldFormation Name="LargeOffense" Type="Offense">
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0.5"/>
+  </WorldFormation>
+
+  <WorldFormation Name="TinyNormal" Type="Normal">
+    <WorldFormationPosition IsFront="true" Angle="50" Radius="0.75"/>
+    <WorldFormationPosition IsFront="true" Angle="30" Radius="0.5"/>
+    <WorldFormationPosition IsFront="true" Angle="-30" Radius="0.5"/>
+    <WorldFormationPosition IsFront="true" Angle="-50" Radius="0.75"/>
+
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="0.6"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="0.2"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="-0.2"/>
+    <WorldFormationPosition IsFront="false" Angle="90" Radius="-0.6"/>
+
+    <WorldFormationPosition IsFront="false" Angle="130" Radius="0.75"/>
+    <WorldFormationPosition IsFront="false" Angle="150" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="210" Radius="0.5"/>
+    <WorldFormationPosition IsFront="false" Angle="235" Radius="0.75"/>
+  </WorldFormation>
+  
+  <WorldFormation Name="SmallNormal" Type="Normal">
+    <WorldFormationPosition IsFront="true" Angle="50" Radius="0.6"/>
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0.3"/>
+    <WorldFormationPosition IsFront="true" Angle="310" Radius="0.6"/>
+
+    <WorldFormationPosition IsFront="false" Angle="130" Radius="0.6"/>
+    <WorldFormationPosition IsFront="false" Angle="180" Radius="0.3"/>
+    <WorldFormationPosition IsFront="false" Angle="250" Radius="0.6"/>
+  </WorldFormation>
+
+  <WorldFormation Name="MediumNormal" Type="Normal">
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0.3"/>
+    <WorldFormationPosition IsFront="false" Angle="130" Radius="0.6"/>
+    <WorldFormationPosition IsFront="false" Angle="250" Radius="0.6"/>
+  </WorldFormation>
+
+  <WorldFormation Name="LargeNormal" Type="Normal">
+    <WorldFormationPosition IsFront="true" Angle="0" Radius="0"/>
+  </WorldFormation>
+
+</Datatable>

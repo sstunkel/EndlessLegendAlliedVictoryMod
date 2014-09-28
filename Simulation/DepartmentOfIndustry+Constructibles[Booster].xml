@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ########################################## -->
+  <!-- ######   FIDS Conversion boosters   ###### -->
+  <!-- ########################################## -->
+
+  <!-- Industry to Food booster -->
+  <!-- TBD : city growth cost without removing already acquired growth -->
+  <!--<BoosterGeneratorDefinition         Name="BoosterGeneratorFood" SubCategory="SubCategoryFood">
+    <NextUpgradeName>BoosterGeneratorFoodBonus1</NextUpgradeName>
+    <SimulationDescriptorReference    Name="BoosterGeneratorFood" />
+    <BoosterDefinitionName>BoosterFood</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>-->
+    <!--<Cost ResourceName="CityGrowth">150</Cost>-->
+    <!--<CustomCost ResourceName="Production" Instant="false">250 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyBoosterFood</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyBoosterFoodBonus1</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyBoosterFoodBonus2</PathPrerequisite>
+  </BoosterGeneratorDefinition>-->
+
+  <BoosterGeneratorDefinition         Name="BoosterGeneratorFoodBonus1" SubCategory="SubCategoryFood">
+    <NextUpgradeName>BoosterGeneratorFoodBonus2</NextUpgradeName>
+    <SimulationDescriptorReference    Name="BoosterGeneratorFoodBonus1" />
+    <BoosterDefinitionName>BoosterFood</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <!--<Cost ResourceName="CityGrowth">750</Cost>-->
+    <CustomCost ResourceName="Production" Instant="false">1200 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyAllBoosterLevel1</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyAllBoosterLevel2</PathPrerequisite>
+  </BoosterGeneratorDefinition>
+
+  <BoosterGeneratorDefinition         Name="BoosterGeneratorFoodBonus2" SubCategory="SubCategoryFood">
+    <SimulationDescriptorReference    Name="BoosterGeneratorFoodBonus2" />
+    <BoosterDefinitionName>BoosterFood</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <!--<Cost ResourceName="CityGrowth">1500</Cost>-->
+    <CustomCost ResourceName="Production" Instant="false">2500 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyAllBoosterLevel2</TechnologyPrerequisite>
+  </BoosterGeneratorDefinition>
+
+  
+  
+  <!-- Industry to Industry booster -->
+  <!--<BoosterGeneratorDefinition         Name="BoosterGeneratorIndustry" SubCategory="SubCategoryIndustry">
+    <NextUpgradeName>BoosterGeneratorIndustryBonus1</NextUpgradeName>
+    <SimulationDescriptorReference    Name="BoosterGeneratorIndustry" />
+    <BoosterDefinitionName>BoosterIndustry</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <CustomCost ResourceName="Production" Instant="false">250 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyBoosterIndustry</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyBoosterIndustryBonus1</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyBoosterIndustryBonus2</PathPrerequisite>
+  </BoosterGeneratorDefinition>-->
+
+  <BoosterGeneratorDefinition         Name="BoosterGeneratorIndustryBonus1" SubCategory="SubCategoryIndustry">
+    <NextUpgradeName>BoosterGeneratorIndustryBonus2</NextUpgradeName>
+    <SimulationDescriptorReference    Name="BoosterGeneratorIndustryBonus1" />
+    <BoosterDefinitionName>BoosterIndustry</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <CustomCost ResourceName="Production" Instant="false">1200 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyAllBoosterLevel1</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyAllBoosterLevel2</PathPrerequisite>
+  </BoosterGeneratorDefinition>
+
+  <BoosterGeneratorDefinition         Name="BoosterGeneratorIndustryBonus2" SubCategory="SubCategoryIndustry">
+    <SimulationDescriptorReference    Name="BoosterGeneratorIndustryBonus2" />
+    <BoosterDefinitionName>BoosterIndustry</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <CustomCost ResourceName="Production" Instant="false">2500 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyAllBoosterLevel2</TechnologyPrerequisite>
+  </BoosterGeneratorDefinition>
+  
+  
+
+  <!-- Industry to Science booster -->
+  <!-- TBD : city research cost -->
+  <!--<BoosterGeneratorDefinition         Name="BoosterGeneratorScience" SubCategory="SubCategoryScience">
+    <NextUpgradeName>BoosterGeneratorScienceBonus1</NextUpgradeName>
+    <SimulationDescriptorReference    Name="BoosterGeneratorScience" />
+    <BoosterDefinitionName>BoosterScience</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <CustomCost ResourceName="Production" Instant="false">250 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>-->
+    <!--<Cost ResourceName="CityResearch">150</Cost>-->
+  <!--<TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyBoosterScience</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyBoosterScienceBonus1</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyBoosterScienceBonus2</PathPrerequisite>
+  </BoosterGeneratorDefinition>-->
+
+  <BoosterGeneratorDefinition         Name="BoosterGeneratorScienceBonus1" SubCategory="SubCategoryScience">
+    <NextUpgradeName>BoosterGeneratorScienceBonus2</NextUpgradeName>
+    <SimulationDescriptorReference    Name="BoosterGeneratorScienceBonus1" />
+    <BoosterDefinitionName>BoosterScience</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <CustomCost ResourceName="Production" Instant="false">1200 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <!--<Cost ResourceName="CityResearch">750</Cost>-->
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyAllBoosterLevel1</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassResearch,TechnologyAllBoosterLevel2</PathPrerequisite>
+  </BoosterGeneratorDefinition>
+
+  <BoosterGeneratorDefinition         Name="BoosterGeneratorScienceBonus2" SubCategory="SubCategoryScience">
+    <SimulationDescriptorReference    Name="BoosterGeneratorScienceBonus2" />
+    <BoosterDefinitionName>BoosterScience</BoosterDefinitionName>
+    <BuyoutCostModifier>0.5</BuyoutCostModifier>
+    <CustomCost ResourceName="Production" Instant="false">2500 * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
+    <!--<Cost ResourceName="CityResearch">1500</Cost>-->
+    <TechnologyPrerequisite           Flags="Prerequisite,Discard,Technology">TechnologyAllBoosterLevel2</TechnologyPrerequisite>
+  </BoosterGeneratorDefinition>
+
+
+</Datatable>

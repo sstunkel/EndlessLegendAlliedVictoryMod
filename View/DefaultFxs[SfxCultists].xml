@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  <!-- ===================================== SFX CULTIST ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Preacher_Attack0_Cape">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Attack0_Cape</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Attack0_Chaine">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Attack0_Chaine</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Attack1_Hit">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Attack1_Hit</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Death_CapeFall">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Death_CapeFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Death_Chaine">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Death_Chaine</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Death_Genoux">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Death_Genoux</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Idle0_Assoit">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Idle0_Assoit</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Idle0_Releve">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Idle0_Releve</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Run">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Run</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Walk_Chaine">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Walk_Chaine</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Walk_Stone">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Walk_Stone</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_Walk_StoneShort">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Walk_StoneShort</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Preacher_Footstep">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Preacher_FireBall">
+    <SoundEventName>Sfx/Faction/Cultist/Preacher/Preacher_FireBall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_Fanatic_Attack0_Combo">
+    <SoundEventName>Sfx/Faction/Cultist/Fanatic/Fanatic_Attack0_Combo</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Fanatic_Attack1_Combo">
+    <SoundEventName>Sfx/Faction/Cultist/Fanatic/Fanatic_Attack1_Combo</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Fanatic_Death_BodyFall">
+    <SoundEventName>Sfx/Faction/Cultist/Fanatic/Fanatic_Death_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Fanatic_Footstep">
+    <SoundEventName>Sfx/Faction/Cultist/Fanatic/Fanatic_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Fanatic_Idle0">
+    <SoundEventName>Sfx/Faction/Cultist/Fanatic/Fanatic_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_Hero_Attack0_Whoosh">
+    <SoundEventName>Sfx/Faction/Cultist/Hero/Hero_Attack0_Whoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Hero_Attack1_Whoosh">
+    <SoundEventName>Sfx/Faction/Cultist/Hero/Hero_Attack1_Whoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Hero_Death_BodyFall">
+    <SoundEventName>Sfx/Faction/Cultist/Hero/Hero_Death_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Hero_Footstep">
+    <SoundEventName>Sfx/Faction/Cultist/Hero/Hero_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Hero_Voice_Attack">
+    <SoundEventName>Sfx/Voices/Cultist/Cultist_Hero_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Hero_Voice_Defense">
+    <SoundEventName>Sfx/Voices/Cultist/Cultist_Hero_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Hero_Voice_Death">
+    <SoundEventName>Sfx/Voices/Cultist/Cultist_Hero_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  
+  
+  
+  <DefaultFxDefinition Name="SFX_Settler_Attack0">
+    <SoundEventName>Sfx/Faction/Cultist/Settler/Settler_Attack0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Settler_Death">
+    <SoundEventName>Sfx/Faction/Cultist/Settler/Settler_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Settler_Idle0">
+    <SoundEventName>Sfx/Faction/Cultist/Settler/Settler_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Settler_Footstep">
+    <SoundEventName>Sfx/Faction/Cultist/Settler/Settler_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Settler_Idle0_Movements">
+    <SoundEventName>Sfx/Faction/Cultist/Settler/Settler_Idle0_Movements</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+
+  <DefaultFxDefinition Name="SFX_Guard_Death">
+    <SoundEventName>Sfx/Faction/Cultist/Guard/Guard_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Guard_Footstep">
+    <SoundEventName>Sfx/Faction/Cultist/Guard/Guard_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Guard_Idle0">
+    <SoundEventName>Sfx/Faction/Cultist/Guard/Guard_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Guard_Idle0_Movements">
+    <SoundEventName>Sfx/Faction/Cultist/Guard/Guard_Idle0_Movements</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

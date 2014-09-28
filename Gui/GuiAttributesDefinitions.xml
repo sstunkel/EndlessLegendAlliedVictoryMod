@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiAttributesDefinition Class="ClassUnit">
+    <Attribute Value="Health" MaximumValue="MaximumHealth"/>
+    <Attribute Value="Movement" MaximumValue="MaximumMovement"/>
+    <Attribute Value="AttributeAttack"/>
+    <Attribute Value="AttributeDefense"/>
+    <Attribute Value="AttributeInitiative"/>
+    <Attribute Value="AttributeDamage"/>
+  </GuiAttributesDefinition>
+  
+  <GuiAttributesDefinition Class="ClassTradableUnit">
+    <Attribute Value="Health"/>
+    <Attribute Value="Movement"/>
+    <Attribute Value="AttributeAttack"/>
+    <Attribute Value="AttributeDefense"/>
+    <Attribute Value="AttributeInitiative"/>
+    <Attribute Value="AttributeDamage"/>
+    <Attribute Value="VisionRange"/>
+  </GuiAttributesDefinition>
+
+  <GuiAttributesDefinition Class="ClassUnitBattlefield">
+    <Attribute Value="Health" MaximumValue="MaximumHealth"/>
+    <Attribute Value="BattleMaximumMovement"/>
+    <Attribute Value="AttributeAttack"/>
+    <Attribute Value="AttributeDefense"/>
+    <Attribute Value="AttributeInitiative"/>
+    <Attribute Value="AttributeDamage"/>
+  </GuiAttributesDefinition>
+  
+  <GuiAttributesDefinition Class="ClassUnitDeployment">
+    <Attribute Value="Health" MaximumValue="MaximumHealth"/>
+    <Attribute Value="BattleMaximumMovement"/>
+    <Attribute Value="AttributeAttack"/>
+    <Attribute Value="AttributeDefense"/>
+    <Attribute Value="AttributeInitiative"/>
+    <Attribute Value="AttributeDamage"/>
+  </GuiAttributesDefinition>
+</Datatable>

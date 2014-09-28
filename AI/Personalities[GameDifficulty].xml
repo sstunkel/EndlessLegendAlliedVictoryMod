@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <AIPersonalityDefinition Name="PersonalityMajorFactionGameDifficultyNewbie">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MajorEmpire>
+          <NumberOfTurnInBesiege>1.5</NumberOfTurnInBesiege>
+        </MajorEmpire>
+      </AI>
+
+      <!-- AgentDefinition Database -->
+      <AgentDefinition>
+        
+        <!-- Economic Agents -->
+        
+        <TechnologyReferenceTurnCountAgent>
+          <IdealTechnologyUnlockPeriod>1.5</IdealTechnologyUnlockPeriod>
+          <MaximumPeriodGap>1.5</MaximumPeriodGap>
+        </TechnologyReferenceTurnCountAgent>
+
+        <DiplomacyNeedPrestigeRatioAgent>
+          <NumberOfTurnToReachObjective>1.5</NumberOfTurnToReachObjective>
+        </DiplomacyNeedPrestigeRatioAgent>
+
+        <EmpirePlanNeedPrestigeRatioAgent> <!-- The AI will want to stock X% of the wanted empire plan cost. -->
+          <WantedEmpirePlanCostRatio>1.5</WantedEmpirePlanCostRatio>
+        </EmpirePlanNeedPrestigeRatioAgent>
+
+        <IndustryReferenceTurnCountAgent>
+          <MaximumTurnCount>1.5</MaximumTurnCount>
+        </IndustryReferenceTurnCountAgent>
+
+        <MoneyReferenceRatioAgent>
+          <MoneyStockToMaintainUpkeepTurnCount>1.5</MoneyStockToMaintainUpkeepTurnCount>  <!-- We want a bank account at least greater than X turns upkeep. -->
+          <MoneyIncomeGrowthPercent>1.5</MoneyIncomeGrowthPercent>                        <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
+        </MoneyReferenceRatioAgent>
+
+        <PopulationBuyoutReferenceRatioAgent>
+          <MoneyIncomeBuyoutPercent>1.5</MoneyIncomeBuyoutPercent>
+        </PopulationBuyoutReferenceRatioAgent>
+
+        <PopulationReferenceTurnCountAgent>
+          <RangeRatio>1.5</RangeRatio>          <!-- Define the maximum criticy point. MaximumNumberOfTurn = RangeRatio *  IdealNumberOfTurnToReachNextPopulation -->
+        </PopulationReferenceTurnCountAgent>
+
+        <!-- Diplomatic Agents -->
+
+        <WarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <AggressiveColonizationMultiplier>1</AggressiveColonizationMultiplier>
+          <MilitaryPowerMultiplier>1</MilitaryPowerMultiplier>
+          <RegionCountMultiplier>1</RegionCountMultiplier>
+          <OtherEmpireLeadScoreMultiplier>1</OtherEmpireLeadScoreMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+          <AggressionInNeutralRegionDuringColdWarMultiplier>1</AggressionInNeutralRegionDuringColdWarMultiplier>
+          <OtherEmpireUnitsKilledDuringWarMultiplier>1</OtherEmpireUnitsKilledDuringWarMultiplier>
+          <OtherEmpireCityBesiegedDuringWarMultiplier>1</OtherEmpireCityBesiegedDuringWarMultiplier>
+          <OtherEmpireCitiesTakenDuringWarMultiplier>1</OtherEmpireCitiesTakenDuringWarMultiplier>
+          <VillageConvertedMultiplierParameterName>1</VillageConvertedMultiplierParameterName>
+          <WarMultiplier>0.5</WarMultiplier>
+        </WarTermAgent>
+
+        <TruceTermAgent>
+          <WarFatigueMultiplier>1</WarFatigueMultiplier>
+        </TruceTermAgent>
+
+        <ColdWarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+        </ColdWarTermAgent>
+
+        <PeaceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+        </PeaceTermAgent>
+
+        <AllianceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+          <GiftMultiplier>1</GiftMultiplier>
+        </AllianceTermAgent>
+
+        <MapExchangeTermAgent>
+          <ExplorationRatioScoreMultiplier>1</ExplorationRatioScoreMultiplier>
+        </MapExchangeTermAgent>
+
+        <VisionAndMapExchangeTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapExchangeTermAgent>
+
+        <CommercialAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialAgreementTermAgent>
+
+        <ResearchAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchAgreementTermAgent>
+
+        <OpenBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </OpenBordersTermAgent>
+
+        <MarketBanRemovalTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanRemovalTermAgent>
+
+        <MapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </MapEmbargoTermAgent>
+
+        <VisionAndMapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapEmbargoTermAgent>
+
+        <VisionEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionEmbargoTermAgent>
+
+        <CommercialEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialEmbargoTermAgent>
+
+        <ResearchEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchEmbargoTermAgent>
+
+        <CloseBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </CloseBordersTermAgent>
+
+        <MarketBanNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanNullificationTermAgent>
+
+        <MarketBanTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanTermAgent>
+
+        <MoneyPrintTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintTermAgent>
+
+        <MoneyPrintNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintNullificationTermAgent>
+        
+      </AgentDefinition>
+
+      <!-- AIQuestSolverDefinition -->
+      <AIQuestSolverDefinition>
+        <MinimalTurnDuration>1</MinimalTurnDuration>
+        <MaximalTurnDuration>1</MaximalTurnDuration>
+        <ChanceOfSuccess>1</ChanceOfSuccess>
+      </AIQuestSolverDefinition>
+      
+    </Multipliers>
+  </AIPersonalityDefinition>
+  
+  <AIPersonalityDefinition Name="PersonalityMajorFactionGameDifficultyEasy">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MajorEmpire>
+          <NumberOfTurnInBesiege>1.25</NumberOfTurnInBesiege>
+        </MajorEmpire>
+      </AI>
+
+      <!-- AgentDefinition Database -->
+      <AgentDefinition>
+        <TechnologyReferenceTurnCountAgent>
+          <IdealTechnologyUnlockPeriod>1.25</IdealTechnologyUnlockPeriod>
+          <MaximumPeriodGap>1.25</MaximumPeriodGap>
+        </TechnologyReferenceTurnCountAgent>
+
+      <!-- AIQuestSolverDefinition -->
+      <AIQuestSolverDefinition>
+        <MinimalTurnDuration>1</MinimalTurnDuration>
+        <MaximalTurnDuration>1</MaximalTurnDuration>
+        <ChanceOfSuccess>1</ChanceOfSuccess>
+      </AIQuestSolverDefinition>
+        <DiplomacyNeedPrestigeRatioAgent>
+          <NumberOfTurnToReachObjective>1.25</NumberOfTurnToReachObjective>
+        </DiplomacyNeedPrestigeRatioAgent>
+
+        <EmpirePlanNeedPrestigeRatioAgent>
+          <!-- The AI will want to stock X% of the wanted empire plan cost. -->
+          <WantedEmpirePlanCostRatio>1.25</WantedEmpirePlanCostRatio>
+        </EmpirePlanNeedPrestigeRatioAgent>
+
+        <IndustryReferenceTurnCountAgent>
+          <MaximumTurnCount>1.25</MaximumTurnCount>
+        </IndustryReferenceTurnCountAgent>
+
+        <MoneyReferenceRatioAgent>
+          <MoneyStockToMaintainUpkeepTurnCount>1.25</MoneyStockToMaintainUpkeepTurnCount>
+          <!-- We want a bank account at least greater than X turns upkeep. -->
+          <MoneyIncomeGrowthPercent>1.5</MoneyIncomeGrowthPercent>
+          <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
+        </MoneyReferenceRatioAgent>
+
+        <PopulationBuyoutReferenceRatioAgent>
+          <MoneyIncomeBuyoutPercent>1.25</MoneyIncomeBuyoutPercent>
+        </PopulationBuyoutReferenceRatioAgent>
+
+        <PopulationReferenceTurnCountAgent>
+          <RangeRatio>1.25</RangeRatio>
+          <!-- Define the maximum criticy point. MaximumNumberOfTurn = RangeRatio *  IdealNumberOfTurnToReachNextPopulation -->
+        </PopulationReferenceTurnCountAgent>
+
+        <!-- Diplomatic Agents -->
+
+        <WarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <AggressiveColonizationMultiplier>1</AggressiveColonizationMultiplier>
+          <MilitaryPowerMultiplier>1</MilitaryPowerMultiplier>
+          <RegionCountMultiplier>1</RegionCountMultiplier>
+          <OtherEmpireLeadScoreMultiplier>1</OtherEmpireLeadScoreMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+          <AggressionInNeutralRegionDuringColdWarMultiplier>1</AggressionInNeutralRegionDuringColdWarMultiplier>
+          <OtherEmpireUnitsKilledDuringWarMultiplier>1</OtherEmpireUnitsKilledDuringWarMultiplier>
+          <OtherEmpireCityBesiegedDuringWarMultiplier>1</OtherEmpireCityBesiegedDuringWarMultiplier>
+          <OtherEmpireCitiesTakenDuringWarMultiplier>1</OtherEmpireCitiesTakenDuringWarMultiplier>
+          <VillageConvertedMultiplierParameterName>1</VillageConvertedMultiplierParameterName>
+          <WarMultiplier>0.75</WarMultiplier>
+        </WarTermAgent>
+
+        <TruceTermAgent>
+          <WarFatigueMultiplier>1</WarFatigueMultiplier>
+        </TruceTermAgent>
+
+        <ColdWarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+        </ColdWarTermAgent>
+
+        <PeaceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+        </PeaceTermAgent>
+
+        <AllianceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+          <GiftMultiplier>1</GiftMultiplier>
+        </AllianceTermAgent>
+
+        <MapExchangeTermAgent>
+          <ExplorationRatioScoreMultiplier>1</ExplorationRatioScoreMultiplier>
+        </MapExchangeTermAgent>
+
+        <VisionAndMapExchangeTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapExchangeTermAgent>
+
+        <CommercialAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialAgreementTermAgent>
+
+        <ResearchAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchAgreementTermAgent>
+
+        <OpenBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </OpenBordersTermAgent>
+
+        <MarketBanRemovalTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanRemovalTermAgent>
+
+        <MapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </MapEmbargoTermAgent>
+
+        <VisionAndMapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapEmbargoTermAgent>
+
+        <VisionEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionEmbargoTermAgent>
+
+        <CommercialEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialEmbargoTermAgent>
+
+        <ResearchEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchEmbargoTermAgent>
+
+        <CloseBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </CloseBordersTermAgent>
+
+        <MarketBanNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanNullificationTermAgent>
+
+        <MarketBanTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanTermAgent>
+
+        <MoneyPrintTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintTermAgent>
+
+        <MoneyPrintNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintNullificationTermAgent>
+      </AgentDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMajorFactionGameDifficultyNormal">
+    <Multipliers>
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMajorFactionGameDifficultyHard">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MajorEmpire>
+          <NumberOfTurnInBesiege>1</NumberOfTurnInBesiege>
+        </MajorEmpire>
+      </AI>
+
+      <!-- AgentDefinition Database -->
+      <AgentDefinition>
+        <TechnologyReferenceTurnCountAgent>
+          <IdealTechnologyUnlockPeriod>0.75</IdealTechnologyUnlockPeriod>
+          <MaximumPeriodGap>0.75</MaximumPeriodGap>
+        </TechnologyReferenceTurnCountAgent>
+
+      <!-- AIQuestSolverDefinition -->
+      <AIQuestSolverDefinition>
+        <MinimalTurnDuration>1</MinimalTurnDuration>
+        <MaximalTurnDuration>1</MaximalTurnDuration>
+        <ChanceOfSuccess>1</ChanceOfSuccess>
+      </AIQuestSolverDefinition>
+
+        <DiplomacyNeedPrestigeRatioAgent>
+          <NumberOfTurnToReachObjective>0.75</NumberOfTurnToReachObjective>
+        </DiplomacyNeedPrestigeRatioAgent>
+
+        <EmpirePlanNeedPrestigeRatioAgent>
+          <!-- The AI will want to stock X% of the wanted empire plan cost. -->
+          <WantedEmpirePlanCostRatio>0.75</WantedEmpirePlanCostRatio>
+        </EmpirePlanNeedPrestigeRatioAgent>
+
+        <IndustryReferenceTurnCountAgent>
+          <MaximumTurnCount>0.75</MaximumTurnCount>
+        </IndustryReferenceTurnCountAgent>
+
+        <MoneyReferenceRatioAgent>
+          <MoneyStockToMaintainUpkeepTurnCount>0.75</MoneyStockToMaintainUpkeepTurnCount>
+          <!-- We want a bank account at least greater than X turns upkeep. -->
+          <MoneyIncomeGrowthPercent>0.75</MoneyIncomeGrowthPercent>
+          <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
+        </MoneyReferenceRatioAgent>
+
+        <PopulationBuyoutReferenceRatioAgent>
+          <MoneyIncomeBuyoutPercent>0.75</MoneyIncomeBuyoutPercent>
+        </PopulationBuyoutReferenceRatioAgent>
+
+        <PopulationReferenceTurnCountAgent>
+          <RangeRatio>0.75</RangeRatio>
+          <!-- Define the maximum criticy point. MaximumNumberOfTurn = RangeRatio *  IdealNumberOfTurnToReachNextPopulation -->
+        </PopulationReferenceTurnCountAgent>
+
+        <!-- Diplomatic Agents -->
+
+        <WarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <AggressiveColonizationMultiplier>1</AggressiveColonizationMultiplier>
+          <MilitaryPowerMultiplier>1</MilitaryPowerMultiplier>
+          <RegionCountMultiplier>1</RegionCountMultiplier>
+          <OtherEmpireLeadScoreMultiplier>1</OtherEmpireLeadScoreMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+          <AggressionInNeutralRegionDuringColdWarMultiplier>1</AggressionInNeutralRegionDuringColdWarMultiplier>
+          <OtherEmpireUnitsKilledDuringWarMultiplier>1</OtherEmpireUnitsKilledDuringWarMultiplier>
+          <OtherEmpireCityBesiegedDuringWarMultiplier>1</OtherEmpireCityBesiegedDuringWarMultiplier>
+          <OtherEmpireCitiesTakenDuringWarMultiplier>1</OtherEmpireCitiesTakenDuringWarMultiplier>
+          <VillageConvertedMultiplierParameterName>1</VillageConvertedMultiplierParameterName>
+          <WarMultiplier>1.1</WarMultiplier>
+        </WarTermAgent>
+
+        <TruceTermAgent>
+          <WarFatigueMultiplier>1</WarFatigueMultiplier>
+        </TruceTermAgent>
+
+        <ColdWarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+        </ColdWarTermAgent>
+
+        <PeaceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+        </PeaceTermAgent>
+
+        <AllianceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+          <GiftMultiplier>1</GiftMultiplier>
+        </AllianceTermAgent>
+
+        <MapExchangeTermAgent>
+          <ExplorationRatioScoreMultiplier>1</ExplorationRatioScoreMultiplier>
+        </MapExchangeTermAgent>
+
+        <VisionAndMapExchangeTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapExchangeTermAgent>
+
+        <CommercialAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialAgreementTermAgent>
+
+        <ResearchAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchAgreementTermAgent>
+
+        <OpenBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </OpenBordersTermAgent>
+
+        <MarketBanRemovalTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanRemovalTermAgent>
+
+        <MapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </MapEmbargoTermAgent>
+
+        <VisionAndMapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapEmbargoTermAgent>
+
+        <VisionEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionEmbargoTermAgent>
+
+        <CommercialEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialEmbargoTermAgent>
+
+        <ResearchEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchEmbargoTermAgent>
+
+        <CloseBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </CloseBordersTermAgent>
+
+        <MarketBanNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanNullificationTermAgent>
+
+        <MarketBanTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanTermAgent>
+
+        <MoneyPrintTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintTermAgent>
+
+        <MoneyPrintNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintNullificationTermAgent>
+      </AgentDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMajorFactionGameDifficultySerious">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MajorEmpire>
+          <NumberOfTurnInBesiege>1</NumberOfTurnInBesiege>
+        </MajorEmpire>
+      </AI>
+
+      <!-- AgentDefinition Database -->
+      <AgentDefinition>
+        <TechnologyReferenceTurnCountAgent>
+          <IdealTechnologyUnlockPeriod>0.5</IdealTechnologyUnlockPeriod>
+          <MaximumPeriodGap>0.5</MaximumPeriodGap>
+        </TechnologyReferenceTurnCountAgent>
+
+      <!-- AIQuestSolverDefinition -->
+      <AIQuestSolverDefinition>
+        <MinimalTurnDuration>1</MinimalTurnDuration>
+        <MaximalTurnDuration>1</MaximalTurnDuration>
+        <ChanceOfSuccess>1</ChanceOfSuccess>
+      </AIQuestSolverDefinition>
+
+        <DiplomacyNeedPrestigeRatioAgent>
+          <NumberOfTurnToReachObjective>0.5</NumberOfTurnToReachObjective>
+        </DiplomacyNeedPrestigeRatioAgent>
+
+        <EmpirePlanNeedPrestigeRatioAgent>
+          <!-- The AI will want to stock X% of the wanted empire plan cost. -->
+          <WantedEmpirePlanCostRatio>0.5</WantedEmpirePlanCostRatio>
+        </EmpirePlanNeedPrestigeRatioAgent>
+
+        <IndustryReferenceTurnCountAgent>
+          <MaximumTurnCount>0.5</MaximumTurnCount>
+        </IndustryReferenceTurnCountAgent>
+
+        <MoneyReferenceRatioAgent>
+          <MoneyStockToMaintainUpkeepTurnCount>0.5</MoneyStockToMaintainUpkeepTurnCount>
+          <!-- We want a bank account at least greater than X turns upkeep. -->
+          <MoneyIncomeGrowthPercent>0.5</MoneyIncomeGrowthPercent>
+          <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
+        </MoneyReferenceRatioAgent>
+
+        <PopulationBuyoutReferenceRatioAgent>
+          <MoneyIncomeBuyoutPercent>0.5</MoneyIncomeBuyoutPercent>
+        </PopulationBuyoutReferenceRatioAgent>
+
+        <PopulationReferenceTurnCountAgent>
+          <RangeRatio>0.5</RangeRatio>
+          <!-- Define the maximum criticy point. MaximumNumberOfTurn = RangeRatio *  IdealNumberOfTurnToReachNextPopulation -->
+        </PopulationReferenceTurnCountAgent>
+
+        <!-- Diplomatic Agents -->
+
+        <WarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <AggressiveColonizationMultiplier>1</AggressiveColonizationMultiplier>
+          <MilitaryPowerMultiplier>1</MilitaryPowerMultiplier>
+          <RegionCountMultiplier>1</RegionCountMultiplier>
+          <OtherEmpireLeadScoreMultiplier>1</OtherEmpireLeadScoreMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+          <AggressionInNeutralRegionDuringColdWarMultiplier>1</AggressionInNeutralRegionDuringColdWarMultiplier>
+          <OtherEmpireUnitsKilledDuringWarMultiplier>1</OtherEmpireUnitsKilledDuringWarMultiplier>
+          <OtherEmpireCityBesiegedDuringWarMultiplier>1</OtherEmpireCityBesiegedDuringWarMultiplier>
+          <OtherEmpireCitiesTakenDuringWarMultiplier>1</OtherEmpireCitiesTakenDuringWarMultiplier>
+          <VillageConvertedMultiplierParameterName>1</VillageConvertedMultiplierParameterName>
+          <WarMultiplier>1.2</WarMultiplier>
+        </WarTermAgent>
+
+        <TruceTermAgent>
+          <WarFatigueMultiplier>1</WarFatigueMultiplier>
+        </TruceTermAgent>
+
+        <ColdWarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+        </ColdWarTermAgent>
+
+        <PeaceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+        </PeaceTermAgent>
+
+        <AllianceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+          <GiftMultiplier>1</GiftMultiplier>
+        </AllianceTermAgent>
+
+        <MapExchangeTermAgent>
+          <ExplorationRatioScoreMultiplier>1</ExplorationRatioScoreMultiplier>
+        </MapExchangeTermAgent>
+
+        <VisionAndMapExchangeTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapExchangeTermAgent>
+
+        <CommercialAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialAgreementTermAgent>
+
+        <ResearchAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchAgreementTermAgent>
+
+        <OpenBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </OpenBordersTermAgent>
+
+        <MarketBanRemovalTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanRemovalTermAgent>
+
+        <MapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </MapEmbargoTermAgent>
+
+        <VisionAndMapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapEmbargoTermAgent>
+
+        <VisionEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionEmbargoTermAgent>
+
+        <CommercialEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialEmbargoTermAgent>
+
+        <ResearchEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchEmbargoTermAgent>
+
+        <CloseBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </CloseBordersTermAgent>
+
+        <MarketBanNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanNullificationTermAgent>
+
+        <MarketBanTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanTermAgent>
+
+        <MoneyPrintTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintTermAgent>
+
+        <MoneyPrintNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintNullificationTermAgent>
+      </AgentDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMajorFactionGameDifficultyImpossible">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MajorEmpire>
+          <NumberOfTurnInBesiege>1</NumberOfTurnInBesiege>
+        </MajorEmpire>
+      </AI>
+
+      <!-- AgentDefinition Database -->
+      <AgentDefinition>
+        <TechnologyReferenceTurnCountAgent>
+          <IdealTechnologyUnlockPeriod>0.25</IdealTechnologyUnlockPeriod>
+          <MaximumPeriodGap>0.25</MaximumPeriodGap>
+        </TechnologyReferenceTurnCountAgent>
+
+      <!-- AIQuestSolverDefinition -->
+      <AIQuestSolverDefinition>
+        <MinimalTurnDuration>1</MinimalTurnDuration>
+        <MaximalTurnDuration>1</MaximalTurnDuration>
+        <ChanceOfSuccess>1</ChanceOfSuccess>
+      </AIQuestSolverDefinition>
+
+        <DiplomacyNeedPrestigeRatioAgent>
+          <NumberOfTurnToReachObjective>0.25</NumberOfTurnToReachObjective>
+        </DiplomacyNeedPrestigeRatioAgent>
+
+        <EmpirePlanNeedPrestigeRatioAgent>
+          <!-- The AI will want to stock X% of the wanted empire plan cost. -->
+          <WantedEmpirePlanCostRatio>0.25</WantedEmpirePlanCostRatio>
+        </EmpirePlanNeedPrestigeRatioAgent>
+
+        <IndustryReferenceTurnCountAgent>
+          <MaximumTurnCount>0.25</MaximumTurnCount>
+        </IndustryReferenceTurnCountAgent>
+
+        <MoneyReferenceRatioAgent>
+          <MoneyStockToMaintainUpkeepTurnCount>0.25</MoneyStockToMaintainUpkeepTurnCount>
+          <!-- We want a bank account at least greater than X turns upkeep. -->
+          <MoneyIncomeGrowthPercent>0.25</MoneyIncomeGrowthPercent>
+          <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
+        </MoneyReferenceRatioAgent>
+
+        <PopulationBuyoutReferenceRatioAgent>
+          <MoneyIncomeBuyoutPercent>0.25</MoneyIncomeBuyoutPercent>
+        </PopulationBuyoutReferenceRatioAgent>
+
+        <PopulationReferenceTurnCountAgent>
+          <RangeRatio>0.25</RangeRatio>
+          <!-- Define the maximum criticy point. MaximumNumberOfTurn = RangeRatio *  IdealNumberOfTurnToReachNextPopulation -->
+        </PopulationReferenceTurnCountAgent>
+
+        <!-- Diplomatic Agents -->
+
+        <WarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <AggressiveColonizationMultiplier>1</AggressiveColonizationMultiplier>
+          <MilitaryPowerMultiplier>1</MilitaryPowerMultiplier>
+          <RegionCountMultiplier>1</RegionCountMultiplier>
+          <OtherEmpireLeadScoreMultiplier>1</OtherEmpireLeadScoreMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+          <AggressionInNeutralRegionDuringColdWarMultiplier>1</AggressionInNeutralRegionDuringColdWarMultiplier>
+          <OtherEmpireUnitsKilledDuringWarMultiplier>1</OtherEmpireUnitsKilledDuringWarMultiplier>
+          <OtherEmpireCityBesiegedDuringWarMultiplier>1</OtherEmpireCityBesiegedDuringWarMultiplier>
+          <OtherEmpireCitiesTakenDuringWarMultiplier>1</OtherEmpireCitiesTakenDuringWarMultiplier>
+          <VillageConvertedMultiplierParameterName>1</VillageConvertedMultiplierParameterName>
+          <WarMultiplier>1.3</WarMultiplier>
+        </WarTermAgent>
+
+        <TruceTermAgent>
+          <WarFatigueMultiplier>1</WarFatigueMultiplier>
+        </TruceTermAgent>
+
+        <ColdWarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+        </ColdWarTermAgent>
+
+        <PeaceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+        </PeaceTermAgent>
+
+        <AllianceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+          <GiftMultiplier>1</GiftMultiplier>
+        </AllianceTermAgent>
+
+        <MapExchangeTermAgent>
+          <ExplorationRatioScoreMultiplier>1</ExplorationRatioScoreMultiplier>
+        </MapExchangeTermAgent>
+
+        <VisionAndMapExchangeTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapExchangeTermAgent>
+
+        <CommercialAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialAgreementTermAgent>
+
+        <ResearchAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchAgreementTermAgent>
+
+        <OpenBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </OpenBordersTermAgent>
+
+        <MarketBanRemovalTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanRemovalTermAgent>
+
+        <MapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </MapEmbargoTermAgent>
+
+        <VisionAndMapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapEmbargoTermAgent>
+
+        <VisionEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionEmbargoTermAgent>
+
+        <CommercialEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialEmbargoTermAgent>
+
+        <ResearchEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchEmbargoTermAgent>
+
+        <CloseBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </CloseBordersTermAgent>
+
+        <MarketBanNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanNullificationTermAgent>
+
+        <MarketBanTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanTermAgent>
+
+        <MoneyPrintTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintTermAgent>
+
+        <MoneyPrintNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintNullificationTermAgent>
+      </AgentDefinition>
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMajorFactionGameDifficultyEndless">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MajorEmpire>
+          <NumberOfTurnInBesiege>1</NumberOfTurnInBesiege>
+        </MajorEmpire>
+      </AI>
+
+      <!-- AgentDefinition Database -->
+      <AgentDefinition>
+        <TechnologyReferenceTurnCountAgent>
+          <IdealTechnologyUnlockPeriod>0.1</IdealTechnologyUnlockPeriod>
+          <MaximumPeriodGap>0.1</MaximumPeriodGap>
+        </TechnologyReferenceTurnCountAgent>
+
+      <!-- AIQuestSolverDefinition -->
+      <AIQuestSolverDefinition>
+        <MinimalTurnDuration>1</MinimalTurnDuration>
+        <MaximalTurnDuration>1</MaximalTurnDuration>
+        <ChanceOfSuccess>1</ChanceOfSuccess>
+      </AIQuestSolverDefinition>
+
+        <DiplomacyNeedPrestigeRatioAgent>
+          <NumberOfTurnToReachObjective>0.1</NumberOfTurnToReachObjective>
+        </DiplomacyNeedPrestigeRatioAgent>
+
+        <EmpirePlanNeedPrestigeRatioAgent>
+          <!-- The AI will want to stock X% of the wanted empire plan cost. -->
+          <WantedEmpirePlanCostRatio>0.1</WantedEmpirePlanCostRatio>
+        </EmpirePlanNeedPrestigeRatioAgent>
+
+        <IndustryReferenceTurnCountAgent>
+          <MaximumTurnCount>0.1</MaximumTurnCount>
+        </IndustryReferenceTurnCountAgent>
+
+        <MoneyReferenceRatioAgent>
+          <MoneyStockToMaintainUpkeepTurnCount>0.1</MoneyStockToMaintainUpkeepTurnCount>
+          <!-- We want a bank account at least greater than X turns upkeep. -->
+          <MoneyIncomeGrowthPercent>0.1</MoneyIncomeGrowthPercent>
+          <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
+        </MoneyReferenceRatioAgent>
+
+        <PopulationBuyoutReferenceRatioAgent>
+          <MoneyIncomeBuyoutPercent>0.1</MoneyIncomeBuyoutPercent>
+        </PopulationBuyoutReferenceRatioAgent>
+
+        <PopulationReferenceTurnCountAgent>
+          <RangeRatio>0.1</RangeRatio>
+          <!-- Define the maximum criticy point. MaximumNumberOfTurn = RangeRatio *  IdealNumberOfTurnToReachNextPopulation -->
+        </PopulationReferenceTurnCountAgent>
+
+        <!-- Diplomatic Agents -->
+
+        <WarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <AggressiveColonizationMultiplier>1</AggressiveColonizationMultiplier>
+          <MilitaryPowerMultiplier>1</MilitaryPowerMultiplier>
+          <RegionCountMultiplier>1</RegionCountMultiplier>
+          <OtherEmpireLeadScoreMultiplier>1</OtherEmpireLeadScoreMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+          <AggressionInNeutralRegionDuringColdWarMultiplier>1</AggressionInNeutralRegionDuringColdWarMultiplier>
+          <OtherEmpireUnitsKilledDuringWarMultiplier>1</OtherEmpireUnitsKilledDuringWarMultiplier>
+          <OtherEmpireCityBesiegedDuringWarMultiplier>1</OtherEmpireCityBesiegedDuringWarMultiplier>
+          <OtherEmpireCitiesTakenDuringWarMultiplier>1</OtherEmpireCitiesTakenDuringWarMultiplier>
+          <VillageConvertedMultiplierParameterName>1</VillageConvertedMultiplierParameterName>
+          <WarMultiplier>1.4</WarMultiplier>
+        </WarTermAgent>
+
+        <TruceTermAgent>
+          <WarFatigueMultiplier>1</WarFatigueMultiplier>
+        </TruceTermAgent>
+
+        <ColdWarTermAgent>
+          <LivingspaceTenseMultiplier>1</LivingspaceTenseMultiplier>
+          <UnitsInTerritoryMultiplier>1</UnitsInTerritoryMultiplier>
+        </ColdWarTermAgent>
+
+        <PeaceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <CommonFrontierMultiplier>1</CommonFrontierMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+        </PeaceTermAgent>
+
+        <AllianceTermAgent>
+          <PeacefulMultiplier>1</PeacefulMultiplier>
+          <CommonFriendAllyMultiplier>1</CommonFriendAllyMultiplier>
+          <CommonEnemyMultiplier>1</CommonEnemyMultiplier>
+          <LastWarMultiplier>1</LastWarMultiplier>
+          <PositiveNegativeContractMultiplier>1</PositiveNegativeContractMultiplier>
+          <GiftMultiplier>1</GiftMultiplier>
+        </AllianceTermAgent>
+
+        <MapExchangeTermAgent>
+          <ExplorationRatioScoreMultiplier>1</ExplorationRatioScoreMultiplier>
+        </MapExchangeTermAgent>
+
+        <VisionAndMapExchangeTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapExchangeTermAgent>
+
+        <CommercialAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialAgreementTermAgent>
+
+        <ResearchAgreementTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchAgreementTermAgent>
+
+        <OpenBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </OpenBordersTermAgent>
+
+        <MarketBanRemovalTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanRemovalTermAgent>
+
+        <MapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </MapEmbargoTermAgent>
+
+        <VisionAndMapEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionAndMapEmbargoTermAgent>
+
+        <VisionEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </VisionEmbargoTermAgent>
+
+        <CommercialEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </CommercialEmbargoTermAgent>
+
+        <ResearchEmbargoTermAgent>
+          <Multiplier>1</Multiplier>
+        </ResearchEmbargoTermAgent>
+
+        <CloseBordersTermAgent>
+          <Multiplier>1</Multiplier>
+        </CloseBordersTermAgent>
+
+        <MarketBanNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanNullificationTermAgent>
+
+        <MarketBanTermAgent>
+          <Multiplier>1</Multiplier>
+        </MarketBanTermAgent>
+
+        <MoneyPrintTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintTermAgent>
+
+        <MoneyPrintNullificationTermAgent>
+          <Multiplier>1</Multiplier>
+        </MoneyPrintNullificationTermAgent>
+      </AgentDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+</Datatable>

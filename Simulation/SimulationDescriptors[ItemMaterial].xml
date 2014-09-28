@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="ItemMaterialStrategic1" Type="ItemMaterial">
+    <SimulationPropertyDescriptors>
+      <!-- require tooltip element percent = true -->
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+    
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemMaterialStrategic2" Type="ItemMaterial">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemMaterialStrategic3" Type="ItemMaterial" >
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemMaterialStrategic4" Type="ItemMaterial">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemMaterialStrategic5" Type="ItemMaterial" >
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemMaterialStrategic6" Type="ItemMaterial">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemMaterialDust" Type="ItemMaterial" >
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ItemMaterialIron" Type="ItemMaterial" >
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Efficiency" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMovement"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentAttack"            Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"           Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentInitiative"        Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth"     Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="EquipmentCritical"          Operation="Percent" Value="$(Efficiency)" Priority="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

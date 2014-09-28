@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################ -->
+  <!-- #######      START       ####### -->
+  <!-- ################################ -->
+  <AIStrategicPlanDefinition Name="Start">
+
+    <Scorings Name="Economy">
+      <AIScoring Name="Growth"              Value="1"/>
+      <AIScoring Name="UnitProduction"      Value="0"/>
+      <AIScoring Name="GlobalDefense"      Value="0"/>
+      <AIScoring Name="LocalDefense"      Value="0"/>
+    </Scorings>
+
+    <Scorings Name="AccountManager">
+      <!-- Money -->
+      <AIScoring Name="MilitaryAccount"      Value="0.5"/>
+      <AIScoring Name="EconomyAccount"       Value="0.5"/>
+      <AIScoring Name="HeroAccount"          Value="0.0"/>
+
+      <!-- Empire Point -->
+      <AIScoring Name="DiplomacyAccount"  Value="0.0"/>
+      <AIScoring Name="EmpirePlanAccount"  Value="1"/>      
+    </Scorings>
+
+    <Scorings Name="Category">
+      <!-- Use 0 to disable a category of Commander (Not recommended) -->
+      <!-- Use 1 if a you want a category of commander is infinitely interesting (not recommended) -->
+      <!-- Use higher value to set priority higher priority  -->
+      <AIScoring Name="Exploration"          Value="0.01"/>
+      <AIScoring Name="Patrol"               Value="0.01"/>      
+      <AIScoring Name="WarPatrol"            Value="0.01"/>
+      <AIScoring Name="War"                  Value="0.01"/>
+      <AIScoring Name="SiegeBreaker"         Value="0.9"/>      
+      <AIScoring Name="Defense"              Value="0.1"/>
+      <AIScoring Name="DefenseStressed"      Value="0.5"/>
+      <AIScoring Name="DefenseUnderSiege"    Value="0.9"/>          
+    </Scorings>
+    
+    <ParameterModifiers Name="Colonization">
+      <AIModifier Name="AIRegionEsperanceDistrictFood"                    Value="1.3"/>
+      <AIModifier Name="AIRegionEsperanceDistrictIndustry"                Value="0.8"/>
+      <AIModifier Name="AIRegionEsperanceDistrictDust"                    Value="0.3"/>
+      <AIModifier Name="AIRegionEsperanceDistrictScience"                 Value="0.5"/>
+      <AIModifier Name="AICityGrowth"                                     Value="1.3"/>
+      <AIModifier Name="AICityProduction"                                 Value="0.8"/>
+      <AIModifier Name="AICityMoney"                                      Value="0.3"/>
+      <AIModifier Name="AICityResearch"                                   Value="0.5"/>
+      <AIModifier Name="AICityEmpirePoint"                                Value="0.1"/>
+      <AIModifier Name="AICityApproval"                                   Value="0.1"/>
+      <AIModifier Name="AIRegionDistance"                                 Value="-50"/>
+      <AIModifier Name="AIRegionConnectivity"                             Value="100"/>
+      <AIModifier Name="AIRegionStrategicResources"                       Value="50"/>
+      <AIModifier Name="AIRegionLuxuryResources"                          Value="50"/>
+      <AIModifier Name="AIRegionSize"                                     Value="10"/>
+      <AIModifier Name="AIRegionNewContinent"                             Value="-50"/>
+      <AIModifier Name="AIRegionNewContinentState"                        Value="10"/>
+      <AIModifier Name="AIRegionCurrentContinentState"                    Value="-50"/>
+      <AIModifier Name="AIRegionCurrentVillageState"                      Value="20.0"/>
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="EmpirePlan">
+      <AIModifier  Name="AIEmpireProduction"               Value="0.5"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="0.5"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="1.0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="0.0"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="0.0"/>
+      <AIModifier  Name="AIExploration"                    Value="0.0"/>
+      <AIModifier  Name="CityApproval"                     Value="1"/>
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="ResourceBoosters">
+      <AIModifier  Name="AIEmpireProduction"               Value="0.5"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="0.5"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="1.0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="0.0"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="0.0"/>
+      <AIModifier  Name="AIExploration"                    Value="0.0"/>
+      <AIModifier  Name="CityApproval"                     Value="1"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="HeroTransfert">
+      <AIModifier  Name="AIYoungCityAssignment"           Value="1"/>
+      <AIModifier  Name="AIArmyAssignment"                Value="10"/>
+      <AIModifier  Name="AIMatureCityAssignment"          Value="1"/>
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="Research">
+      <AIModifier Name="AIEmpireGrowth"                   Value="1"/>         <!-- ok for now -->
+      <AIModifier Name="AIEmpireProduction"               Value="1"/>         <!-- ok for now -->
+      <AIModifier Name="AIUnitProduction"                 Value="0"/>
+      <AIModifier Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier Name="AIEmpireMoney"                    Value="0.5"/>       <!-- ok for now -->
+      <AIModifier Name="AIEmpireResearch"                 Value="0.7"/>       <!-- ok for now -->
+      <AIModifier Name="AIEmpireEmpirePoint"              Value="0.2"/>         <!-- need agents AMAS -->
+      <AIModifier Name="AIEmpireDefense"                  Value="0.2"/>       <!-- we need to include data about threat on the Empire: Empire at War, Connectivity with other Empires, Military Rank... -->
+      <AIModifier Name="AIEmpireStrategicResource1"       Value="0.2"/>       <!-- we need some input from the Military Department and the Economic Department to evaluate the importance of this resource -->
+      <AIModifier Name="AIEmpireStrategicResource2"       Value="0.2"/>       <!-- we need some input from the Military Department and the Economic Department to evaluate the importance of this resource -->
+      <AIModifier Name="AIEmpireStrategicResource3"       Value="0"/>         <!-- we need some input from the Military Department and the Economic Department to evaluate the importance of this resource -->
+      <AIModifier Name="AIEmpireStrategicResource4"       Value="0"/>         <!-- we need some input from the Military Department and the Economic Department to evaluate the importance of this resource -->
+      <AIModifier Name="AIEmpireStrategicResource5"       Value="0"/>         <!-- we need some input from the Military Department and the Economic Department to evaluate the importance of this resource -->
+      <AIModifier Name="AIEmpireStrategicResource6"       Value="0"/>         <!-- we need some input from the Military Department and the Economic Department to evaluate the importance of this resource -->
+      <AIModifier Name="AIEmpireLuxuryResource"           Value="0.1"/>       
+      <AIModifier Name="AIEmpireImproveSearch"            Value="0.1"/>       <!-- we need info on how many undiscovered POI there are-->
+      <AIModifier Name="AIEmpireImproveBribe"             Value="0.1"/>       <!-- we need to evaluate the percent of pacification of the world to see if unlocking a new method is useful-->
+      <AIModifier Name="AIEmpireImproveTalk"              Value="0"/>         <!-- we need to evaluate the percent of pacification of the world to see if unlocking a new method is useful-->
+      <AIModifier Name="AIEmpireBuyout"                   Value="0.3"/>       <!-- we need to determinate how hard it is to buyout to prioritize this research -->
+      <AIModifier Name="AIEmpireMilitaryDefense"          Value="0.1"/>       <!-- we need to include data about threat on the Empire: Empire at War, Connectivity with other Empires, Military Rank...  as well as the will of the AI to attack-->
+      <AIModifier Name="AIEmpireMilitaryOffense"          Value="0.1"/>       <!-- we need to include data about threat on the Empire: Empire at War, Connectivity with other Empires, Military Rank...  as well as the will of the AI to attack-->
+      <AIModifier Name="AIEmpireBoosterFood"              Value="0"/>         <!-- we need to see how the booster is going to be implemented -->
+      <AIModifier Name="AIEmpireBoosterIndustry"          Value="0"/>         <!-- we need to see how the booster is going to be implemented -->
+      <AIModifier Name="AIEmpireBoosterScience"           Value="0"/>         <!-- we need to see how the booster is going to be implemented -->
+      <AIModifier Name="AIEmpireDiplomacy"                Value="0"/>         <!-- AMAS should take care of those parameters at the end, and we may need 1 parameter per treaty type? -->
+      <AIModifier Name="AIEmpireMinorFactionAssimilation" Value="0"/>         <!-- AI should evalutate available minor faction and ther abilities to ponderate  -->
+      <AIModifier Name="AIEmpireBoosterScience"           Value="0"/>         <!-- we need to see how the booster is going to be implemented -->
+      <AIModifier Name="AIEmpireExploration"              Value="0.5"/>       <!-- keep this value != 0 -->  
+    </ParameterModifiers>
+
+    <AgentModifiers Name="Resource">
+      <AgentModifier CurveReference="TechnologyReferenceTurnCount_Default">
+        <AmasPath AgentReference="TechnologyReferenceTurnCount">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MoneyReference_Default">
+        <AmasPath AgentReference="MoneyReferenceRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpirePlanNeedPrestigeRatio_Default">
+        <AmasPath AgentReference="EmpirePlanNeedPrestigeRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier> 
+    </AgentModifiers>
+
+    <AgentModifiers Name="Activity">
+      <AgentModifier CurveReference="MilitaryEffort_Default">
+        <AmasPath AgentReference="MilitaryEffort">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EconomicGrowth_Default">
+        <AmasPath AgentReference="EconomicGrowth">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireSafety_Default">
+        <AmasPath AgentReference="EmpireSafety">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireExpansion_Default">
+        <AmasPath AgentReference="EmpireExpansion">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+
+      <AgentModifier CurveReference="RegionEconomicWeight_Default">
+        <AmasPath AgentReference="RegionEconomicWeight">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionEconomicGrowth_Default">
+        <AmasPath AgentReference="RegionEconomicGrowth">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MilitaryPacificationRelevance_Default">
+        <AmasPath AgentReference="MilitaryPacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="BribePacificationRelevance_Default">
+        <AmasPath AgentReference="BribePacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MinorFactionThreat_Default">
+        <AmasPath AgentReference="MinorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MajorFactionThreat_Default">
+        <AmasPath AgentReference="MajorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionSafety_Default">
+        <AmasPath AgentReference="RegionSafety">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <CitySpecializations CityMinimalDevelopmentPercent="0.9" MaximalSpecializationPercentage="0"/>
+    
+  </AIStrategicPlanDefinition>
+
+  <!-- ################################ -->
+  <!-- #######     ENHANCE      ####### -->
+  <!-- ################################ -->
+  <AIStrategicPlanDefinition Name="Enhance">
+
+    <Scorings Name="Economy">
+      <AIScoring Name="Growth"              Value="1"/>
+      <AIScoring Name="UnitProduction"      Value="0"/>
+      <AIScoring Name="GlobalDefense"      Value="0"/>
+      <AIScoring Name="LocalDefense"      Value="0"/>
+    </Scorings>
+
+    <Scorings Name="AccountManager">
+      <!-- Money -->
+      <AIScoring Name="MilitaryAccount"      Value="0.4"/>
+      <AIScoring Name="EconomyAccount"       Value="0.5"/>
+      <AIScoring Name="HeroAccount"          Value="0.1"/>
+      
+      <!-- Empire Point -->
+      <AIScoring Name="DiplomacyAccount"  Value="0.3"/>
+      <AIScoring Name="EmpirePlanAccount"  Value="0.7"/>
+    </Scorings>
+
+    <Scorings Name="Category">
+      <!-- Use 0 to disable a category of Commander (Not recommended) -->
+      <!-- Use 1 if a you want a category of commander is infinitely interesting (not recommended) -->
+      <!-- Use higher value to set priority higher priority  -->
+      <AIScoring Name="Exploration"          Value="0.01"/>
+      <AIScoring Name="Patrol"               Value="0.01"/>
+      <AIScoring Name="WarPatrol"            Value="0.2"/>
+      <AIScoring Name="War"                  Value="0.3"/>
+      <AIScoring Name="SiegeBreaker"         Value="0.8"/>
+      <AIScoring Name="Defense"              Value="0.1"/>
+      <AIScoring Name="DefenseStressed"      Value="0.5"/>
+      <AIScoring Name="DefenseUnderSiege"    Value="0.8"/>
+    </Scorings>
+
+    <ParameterModifiers Name="Colonization">
+      <AIModifier Name="AIRegionEsperanceDistrictFood"                   Value="1"/>
+      <AIModifier Name="AIRegionEsperanceDistrictIndustry"               Value="0.9"/>
+      <AIModifier Name="AIRegionEsperanceDistrictDust"                   Value="0.5"/>
+      <AIModifier Name="AIRegionEsperanceDistrictScience"                Value="0.5"/>
+      <AIModifier Name="AICityGrowth"                                    Value="1"/>
+      <AIModifier Name="AICityProduction"                                Value="0.9"/>
+      <AIModifier Name="AICityMoney"                                     Value="0.5"/>
+      <AIModifier Name="AICityResearch"                                  Value="0.5"/>
+      <AIModifier Name="AICityEmpirePoint"                               Value="0.1"/>
+      <AIModifier Name="AICityApproval"                                  Value="0.5"/>
+      <AIModifier Name="AIRegionDistance"                                Value="-50"/>
+      <AIModifier Name="AIRegionConnectivity"                            Value="100"/>
+      <AIModifier Name="AIRegionStrategicResources"                      Value="50"/>
+      <AIModifier Name="AIRegionLuxuryResources"                         Value="50"/>
+      <AIModifier Name="AIRegionSize"                                    Value="10"/>
+      <AIModifier Name="AIRegionNewContinent"                            Value="-50"/>
+      <AIModifier Name="AIRegionNewContinentState"                       Value="10"/>
+      <AIModifier Name="AIRegionCurrentContinentState"                   Value="-50"/>
+      <AIModifier Name="AIRegionCurrentVillageState"                     Value="20.0"/>
+    </ParameterModifiers>
+
+    
+
+    <ParameterModifiers Name="EmpirePlan">
+      <AIModifier  Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="0"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="1.0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="0.0"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="0.0"/>
+      <AIModifier  Name="AIExploration"                    Value="0.0"/>
+      <AIModifier  Name="CityApproval"                     Value="1"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="ResourceBoosters">
+      <AIModifier  Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="0"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="1.0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="0.0"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="0.0"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="0.0"/>
+      <AIModifier  Name="AIExploration"                    Value="0.0"/>
+      <AIModifier  Name="CityApproval"                     Value="1"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="HeroTransfert">
+      <AIModifier  Name="AIYoungCityAssignment"           Value="1"/>
+      <AIModifier  Name="AIArmyAssignment"                Value="5"/>
+      <AIModifier  Name="AIMatureCityAssignment"          Value="5"/>
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="Research">
+      <AIModifier Name="AIEmpireGrowth"                   Value="1"/>
+      <AIModifier Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier Name="AIEmpireEmpirePoint"              Value="0.7"/>
+      <AIModifier Name="AIUnitProduction"                 Value="0.0"/>
+      <AIModifier Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier Name="WonderVictory"                    Value="0.3"/>
+      <AIModifier Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier Name="AIEmpireResearch"                 Value="0.7"/>
+      <AIModifier Name="AIEmpireDefense"                  Value="0.4"/>
+      <AIModifier Name="AIEmpireStrategicResource1"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource2"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource3"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource4"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource5"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource6"       Value="1"/>
+      <AIModifier Name="AIEmpireLuxuryResource"           Value="1"/>
+      <AIModifier Name="AIEmpireImproveSearch"            Value="0.1"/>
+      <AIModifier Name="AIEmpireImproveBribe"             Value="0.5"/>
+      <AIModifier Name="AIEmpireBuyout"                   Value="0.7"/>
+      <AIModifier Name="AIEmpireMilitaryDefense"          Value="0.3"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier Name="AIEmpireMilitaryOffense"          Value="0.3"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier Name="AIEmpireBoosterFood"              Value="0.7"/>
+      <AIModifier Name="AIEmpireBoosterIndustry"          Value="0.7"/>
+      <AIModifier Name="AIEmpireBoosterScience"           Value="0.7"/>
+      <AIModifier Name="AIEmpireDiplomacy"                Value="1"/>
+      <AIModifier Name="AIEmpireMinorFactionAssimilation" Value="0.5"/>
+      <AIModifier Name="AIEmpireExploration"              Value="0.1"/>      <!-- keep this value != 0 -->
+    </ParameterModifiers>
+
+    <AgentModifiers Name="Resource">
+      <AgentModifier CurveReference="TechnologyReferenceTurnCount_Default">
+        <AmasPath AgentReference="TechnologyTurnCost">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MoneyReference_Default">
+        <AmasPath AgentReference="MoneyReferenceRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpirePlanNeedPrestigeRatio_Default">
+        <AmasPath AgentReference="EmpirePlanNeedPrestigeRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <AgentModifiers Name="Activity">
+      <AgentModifier CurveReference="MilitaryEffort_Default">
+        <AmasPath AgentReference="MilitaryEffort">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EconomicGrowth_Default">
+        <AmasPath AgentReference="EconomicGrowth">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireSafety_Default">
+        <AmasPath AgentReference="EmpireSafety">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireExpansion_SlowDown">
+        <AmasPath AgentReference="EmpireExpansion">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+
+      <AgentModifier CurveReference="RegionEconomicWeight_Default">
+        <AmasPath AgentReference="RegionEconomicWeight">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionEconomicGrowth_Default">
+        <AmasPath AgentReference="RegionEconomicGrowth">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MilitaryPacificationRelevance_Default">
+        <AmasPath AgentReference="MilitaryPacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="BribePacificationRelevance_Default">
+        <AmasPath AgentReference="BribePacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MinorFactionThreat_Default">
+        <AmasPath AgentReference="MinorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MajorFactionThreat_Default">
+        <AmasPath AgentReference="MajorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionSafety_Default">
+        <AmasPath AgentReference="RegionSafety">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <CitySpecializations CityMinimalDevelopmentPercent="0.5" MaximalSpecializationPercentage="0.2"/>
+    
+  </AIStrategicPlanDefinition>
+
+  <!-- ################################ -->
+  <!-- #######      EXPAND      ####### -->
+  <!-- ################################ -->
+  
+  <AIStrategicPlanDefinition Name="Expand">
+
+    <Scorings Name="Economy">
+      <AIScoring Name="Growth"              Value="0"/>
+      <AIScoring Name="UnitProduction"      Value="0"/>
+      <AIScoring Name="GlobalDefense"           Value="0"/>
+      <AIScoring Name="LocalDefense"           Value="0"/>
+    </Scorings>
+
+    <Scorings Name="AccountManager">
+      <!-- Money -->
+      <AIScoring Name="MilitaryAccount"      Value="0.4"/>
+      <AIScoring Name="EconomyAccount"       Value="0.5"/>
+      <AIScoring Name="HeroAccount"          Value="0.1"/>
+
+      <!-- Empire Point -->
+      <AIScoring Name="DiplomacyAccount"  Value="0.3"/>
+      <AIScoring Name="EmpirePlanAccount"  Value="0.7"/>
+    </Scorings>
+
+    <Scorings Name="Category">
+      <!-- Use 0 to disable a category of Commander (Not recommended) -->
+      <!-- Use 1 if a you want a category of commander is infinitely interesting (not recommended) -->
+      <!-- Use higher value to set priority higher priority  -->
+      <AIScoring Name="Exploration"          Value="0.01"/>
+      <AIScoring Name="Patrol"               Value="0.01"/>
+      <AIScoring Name="WarPatrol"            Value="0.01"/>
+      <AIScoring Name="War"                  Value="0.01"/>
+      <AIScoring Name="SiegeBreaker"         Value="0.8"/>
+      <AIScoring Name="Defense"              Value="0.3"/>
+      <AIScoring Name="DefenseStressed"      Value="0.6"/>
+      <AIScoring Name="DefenseUnderSiege"    Value="0.8"/>
+    </Scorings>
+
+    <ParameterModifiers Name="Colonization">
+      <AIModifier Name="AIRegionEsperanceDistrictFood"                    Value="1"/>
+      <AIModifier Name="AIRegionEsperanceDistrictIndustry"                Value="0.9"/>
+      <AIModifier Name="AIRegionEsperanceDistrictDust"                    Value="0.5"/>
+      <AIModifier Name="AIRegionEsperanceDistrictScience"                 Value="0.5"/>
+      <AIModifier Name="AICityGrowth"                                     Value="1"/>
+      <AIModifier Name="AICityProduction"                                 Value="0.9"/>
+      <AIModifier Name="AICityMoney"                                      Value="0.5"/>
+      <AIModifier Name="AICityResearch"                                   Value="0.5"/>
+      <AIModifier Name="AICityEmpirePoint"                                Value="0.1"/>
+      <AIModifier Name="AICityApproval"                                   Value="0.5"/>
+      <AIModifier Name="AIRegionDistance"                                 Value="-50"/>
+      <AIModifier Name="AIRegionConnectivity"                             Value="100"/>
+      <AIModifier Name="AIRegionStrategicResources"                       Value="50"/>
+      <AIModifier Name="AIRegionLuxuryResources"                          Value="50"/>
+      <AIModifier Name="AIRegionSize"                                     Value="10"/>
+      <AIModifier Name="AIRegionNewContinent"                             Value="-50"/>
+      <AIModifier Name="AIRegionNewContinentState"                        Value="10"/>
+      <AIModifier Name="AIRegionCurrentContinentState"                    Value="-50"/>
+      <AIModifier Name="AIRegionCurrentVillageState"                      Value="20.0"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="EmpirePlan">
+      <AIModifier  Name="AIEmpireProduction"               Value="0"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="0"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="0.5"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="0.5"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="0.5"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="0.0"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="1"/>
+      <AIModifier  Name="AIExploration"                    Value="1"/>
+      <AIModifier  Name="CityApproval"                     Value="1"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="ResourceBoosters">
+      <AIModifier  Name="AIEmpireProduction"               Value="0"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="0"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="0.5"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="0.5"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="0.5"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="0.0"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="1"/>
+      <AIModifier  Name="AIExploration"                    Value="1"/>
+      <AIModifier  Name="CityApproval"                     Value="1"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="HeroTransfert">
+      <AIModifier  Name="AIYoungCityAssignment"           Value="5"/>
+      <AIModifier  Name="AIArmyAssignment"                Value="5"/>
+      <AIModifier  Name="AIMatureCityAssignment"          Value="1"/>
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="Research">
+      <AIModifier Name="AIEmpireGrowth"                   Value=".3"/>
+      <AIModifier Name="AIEmpireProduction"               Value=".3"/>
+      <AIModifier Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier Name="AIBuildingProduction"             Value="0.0"/>
+      <AIModifier Name="AIEmpireMoney"                    Value="0.7"/>
+      <AIModifier Name="AIEmpireResearch"                 Value="0.7"/>
+      <AIModifier Name="AIEmpireEmpirePoint"              Value="0.7"/>
+      <AIModifier Name="AIEmpireDefense"                  Value="0.4"/>
+      <AIModifier Name="AIEmpireStrategicResource1"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource2"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource3"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource4"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource5"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource6"       Value="1"/>
+      <AIModifier Name="AIEmpireLuxuryResource"           Value="1"/>
+      <AIModifier Name="AIEmpireImproveBribe"             Value="0.5"/>
+      <AIModifier Name="AIEmpireBuyout"                   Value="0.7"/>
+      <AIModifier Name="AIEmpireMilitaryDefense"          Value="0.8"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier Name="AIEmpireMilitaryOffense"          Value="0.8"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier Name="AIEmpireBoosterFood"              Value="0.2"/>
+      <AIModifier Name="AIEmpireBoosterIndustry"          Value="0.2"/>
+      <AIModifier Name="AIEmpireBoosterScience"           Value="0.2"/>
+      <AIModifier Name="AIEmpireDiplomacy"                Value="0.5"/>
+      <AIModifier Name="AIEmpireMinorFactionAssimilation" Value="0.5"/>
+      <AIModifier Name="AIEmpireExploration"              Value="0.5"/>     <!-- keep this value != 0 -->
+    </ParameterModifiers>
+
+    <AgentModifiers Name="Resource">
+      <AgentModifier CurveReference="TechnologyReferenceTurnCount_Default">
+        <AmasPath AgentReference="TechnologyReferenceTurnCount">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MoneyReference_Default">
+        <AmasPath AgentReference="MoneyReferenceRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpirePlanNeedPrestigeRatio_Default">
+        <AmasPath AgentReference="EmpirePlanNeedPrestigeRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <AgentModifiers Name="Activity">
+      <AgentModifier CurveReference="MilitaryEffort_Default">
+        <AmasPath AgentReference="MilitaryEffort">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EconomicGrowth_Default">
+        <AmasPath AgentReference="EconomicGrowth">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireSafety_Default">
+        <AmasPath AgentReference="EmpireSafety">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireExpansion_Default">
+        <AmasPath AgentReference="EmpireExpansion">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+
+      <AgentModifier CurveReference="RegionEconomicWeight_Default">
+        <AmasPath AgentReference="RegionEconomicWeight">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionEconomicGrowth_Default">
+        <AmasPath AgentReference="RegionEconomicGrowth">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MilitaryPacificationRelevance_Default">
+        <AmasPath AgentReference="MilitaryPacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="BribePacificationRelevance_Default">
+        <AmasPath AgentReference="BribePacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MinorFactionThreat_Default">
+        <AmasPath AgentReference="MinorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MajorFactionThreat_Default">
+        <AmasPath AgentReference="MajorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionSafety_Default">
+        <AmasPath AgentReference="RegionSafety">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <CitySpecializations CityMinimalDevelopmentPercent="0.8" MaximalSpecializationPercentage="0.1"/>
+  </AIStrategicPlanDefinition>
+
+  <!-- ################################ -->
+  <!-- #######     Capture      ####### -->
+  <!-- ################################ -->
+  <AIStrategicPlanDefinition Name="Capture">
+
+    <Scorings Name="Economy">
+      <AIScoring Name="Growth"      Value="0.1"/>
+      <AIScoring Name="UnitProduction"      Value="0.5"/>
+      <AIScoring Name="GlobalDefense"      Value="0.3"/>
+      <AIScoring Name="LocalDefense"      Value="0.5"/>
+    </Scorings>
+
+    <Scorings Name="AccountManager">
+      <!-- Money -->
+      <AIScoring Name="MilitaryAccount"      Value="0.7"/>
+      <AIScoring Name="EconomyAccount"       Value="0.1"/>
+      <AIScoring Name="HeroAccount"          Value="0.2"/>
+
+      <!-- Empire Point -->
+      <AIScoring Name="DiplomacyAccount"  Value="0.5"/>
+      <AIScoring Name="EmpirePlanAccount"  Value="0.5"/>
+    </Scorings>
+
+    <Scorings Name="Category">
+      <!-- Use 0 to disable a category of Commander (Not recommended) -->
+      <!-- Use 1 if a you want a category of commander is infinitely interesting (not recommended) -->
+      <!-- Use higher value to set priority higher priority  -->
+      <AIScoring Name="Exploration"          Value="0.01"/>
+      <AIScoring Name="Patrol"               Value="0.01"/>
+      <AIScoring Name="WarPatrol"            Value="0.3"/>
+      <AIScoring Name="War"                  Value="0.5"/>
+      <AIScoring Name="SiegeBreaker"         Value="0.8"/>
+      <AIScoring Name="Defense"              Value="0.5"/>
+      <AIScoring Name="DefenseStressed"      Value="0.7"/>
+      <AIScoring Name="DefenseUnderSiege"    Value="0.8"/>
+    </Scorings>
+
+    -<ParameterModifiers Name="Colonization">
+      <AIModifier Name="AIRegionEsperanceDistrictFood"                   Value="1"/>
+      <AIModifier Name="AIRegionEsperanceDistrictIndustry"               Value="0.9"/>
+      <AIModifier Name="AIRegionEsperanceDistrictDust"                   Value="0.5"/>
+      <AIModifier Name="AIRegionEsperanceDistrictScience"                Value="0.5"/>
+      <AIModifier Name="AICityGrowth"                                    Value="1"/>
+      <AIModifier Name="AICityProduction"                                Value="0.9"/>
+      <AIModifier Name="AICityMoney"                                     Value="0.5"/>
+      <AIModifier Name="AICityResearch"                                  Value="0.5"/>
+      <AIModifier Name="AICityEmpirePoint"                               Value="0.1"/>
+      <AIModifier Name="AICityApproval"                                  Value="0.1"/>
+      <AIModifier Name="AIRegionDistance"                                 Value="-50"/>
+      <AIModifier Name="AIRegionConnectivity"                             Value="100"/>
+      <AIModifier Name="AIRegionStrategicResources"                       Value="50"/>
+      <AIModifier Name="AIRegionLuxuryResources"                          Value="50"/>
+      <AIModifier Name="AIRegionSize"                                     Value="10"/>
+      <AIModifier Name="AIRegionNewContinent"                             Value="-50"/>
+      <AIModifier Name="AIRegionNewContinentState"                        Value="10"/>
+      <AIModifier Name="AIRegionCurrentContinentState"                    Value="-50"/>
+      <AIModifier Name="AIRegionCurrentVillageState"                      Value="20.0"/>
+      
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="EmpirePlan">
+      <AIModifier  Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="1"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="1"/>
+      <AIModifier  Name="AIExploration"                    Value="0"/>
+      <AIModifier  Name="CityApproval"                     Value="0"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="ResourceBoosters">
+      <AIModifier  Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="1"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="1"/>
+      <AIModifier  Name="AIExploration"                    Value="0"/>
+      <AIModifier  Name="CityApproval"                     Value="0"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="HeroTransfert">
+      <AIModifier  Name="AIYoungCityAssignment"           Value="1"/>
+      <AIModifier  Name="AIArmyAssignment"                Value="10"/>
+      <AIModifier  Name="AIMatureCityAssignment"          Value="1"/>
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="Research">
+      <AIModifier Name="AIEmpireGrowth"                   Value="1"/>
+      <AIModifier Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier Name="AIEmpireEmpirePoint"              Value="0.7"/>
+      <AIModifier Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier Name="AIBuildingProduction"             Value="0.0"/>
+      <AIModifier Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier Name="AIEmpireResearch"                 Value="0.7"/>
+      <AIModifier Name="AIEmpireDefense"                  Value="0.8"/>
+      <AIModifier Name="AIEmpireStrategicResource1"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource2"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource3"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource4"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource5"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource6"       Value="1"/>
+      <AIModifier Name="AIEmpireLuxuryResource"           Value="0.3"/>
+      <AIModifier Name="AIEmpireImproveSearch"            Value="0.1"/>
+      <AIModifier Name="AIEmpireImproveBribe"             Value="0.5"/>
+      <AIModifier Name="AIEmpireBuyout"                   Value="0.7"/>
+      <AIModifier Name="AIEmpireMilitaryDefense"          Value="0.6"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier Name="AIEmpireMilitaryOffense"          Value="0.6"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier Name="AIEmpireExploration"              Value="0.8"/>
+      <AIModifier Name="AIEmpireBoosterFood"              Value="0.7"/>
+      <AIModifier Name="AIEmpireBoosterIndustry"          Value="0.7"/>
+      <AIModifier Name="AIEmpireBoosterScience"           Value="0.7"/>
+      <AIModifier Name="AIEmpireDiplomacy"                Value="0.5"/>
+      <AIModifier Name="AIEmpireMinorFactionAssimilation" Value="0.5"/>
+    </ParameterModifiers>
+
+    <AgentModifiers Name="Resource">
+      <AgentModifier CurveReference="TechnologyReferenceTurnCount_Default">
+        <AmasPath AgentReference="TechnologyTurnCost">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MoneyReference_Default">
+        <AmasPath AgentReference="MoneyReferenceRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpirePlanNeedPrestigeRatio_Default">
+        <AmasPath AgentReference="EmpirePlanNeedPrestigeRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <AgentModifiers Name="Activity">
+      <AgentModifier CurveReference="MilitaryEffort_Default">
+        <AmasPath AgentReference="MilitaryEffort">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EconomicGrowth_Default">
+        <AmasPath AgentReference="EconomicGrowth">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireSafety_Default">
+        <AmasPath AgentReference="EmpireSafety">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireExpansion_SlowDown">
+        <AmasPath AgentReference="EmpireExpansion">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+
+      <AgentModifier CurveReference="RegionEconomicWeight_Default">
+        <AmasPath AgentReference="RegionEconomicWeight">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionEconomicGrowth_Default">
+        <AmasPath AgentReference="RegionEconomicGrowth">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MilitaryPacificationRelevance_Default">
+        <AmasPath AgentReference="MilitaryPacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="BribePacificationRelevance_Default">
+        <AmasPath AgentReference="BribePacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MinorFactionThreat_Default">
+        <AmasPath AgentReference="MinorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MajorFactionThreat_Default">
+        <AmasPath AgentReference="MajorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionSafety_Default">
+        <AmasPath AgentReference="RegionSafety">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <CitySpecializations CityMinimalDevelopmentPercent="0.5" MaximalSpecializationPercentage="0.5"/>
+    
+  </AIStrategicPlanDefinition>
+
+
+  <!-- ################################ -->
+  <!-- #######     Defense      ####### -->
+  <!-- ################################ -->
+  <AIStrategicPlanDefinition Name="Defense">
+
+    <Scorings Name="Economy">
+      <AIScoring Name="Growth"      Value="0"/>
+      <AIScoring Name="UnitProduction"      Value="0"/>
+      <AIScoring Name="GlobalDefense"      Value="1"/>
+      <AIScoring Name="LocalDefense"      Value="1"/>
+    </Scorings>
+
+    <Scorings Name="AccountManager">
+      <!-- Money -->
+      <AIScoring Name="MilitaryAccount"      Value="0.7"/>
+      <AIScoring Name="EconomyAccount"       Value="0.1"/>
+      <AIScoring Name="HeroAccount"          Value="0.2"/>
+
+      <!-- Empire Point -->
+      <AIScoring Name="DiplomacyAccount"  Value="0.5"/>
+      <AIScoring Name="EmpirePlanAccount"  Value="0.5"/>
+    </Scorings>
+
+    <Scorings Name="Category">
+      <!-- Use 0 to disable a category of Commander (Not recommended) -->
+      <!-- Use 1 if a you want a category of commander is infinitely interesting (not recommended) -->
+      <!-- Use higher value to set priority higher priority  -->
+      <AIScoring Name="Exploration"          Value="0.01"/>
+      <AIScoring Name="Patrol"               Value="0.01"/>
+      <AIScoring Name="WarPatrol"            Value="0.3"/>
+      <AIScoring Name="War"                  Value="0.4"/>
+      <AIScoring Name="SiegeBreaker"         Value="0.8"/>
+      <AIScoring Name="Defense"              Value="0.3"/>
+      <AIScoring Name="DefenseStressed"      Value="0.5"/>
+      <AIScoring Name="DefenseUnderSiege"    Value="0.8"/>
+    </Scorings>
+
+    <ParameterModifiers Name="Colonization">
+      <AIModifier Name="AIRegionEsperanceDistrictFood"                   Value="1"/>
+      <AIModifier Name="AIRegionEsperanceDistrictIndustry"               Value="0.9"/>
+      <AIModifier Name="AIRegionEsperanceDistrictDust"                   Value="0.5"/>
+      <AIModifier Name="AIRegionEsperanceDistrictScience"                Value="0.5"/>
+      <AIModifier Name="AICityGrowth"                                    Value="1"/>
+      <AIModifier Name="AICityProduction"                                Value="0.9"/>
+      <AIModifier Name="AICityMoney"                                     Value="0.5"/>
+      <AIModifier Name="AICityResearch"                                  Value="0.5"/>
+      <AIModifier Name="AICityEmpirePoint"                               Value="0.1"/>
+      <AIModifier Name="AIRegionDistance"                                 Value="-50"/>
+      <AIModifier Name="AIRegionConnectivity"                             Value="100"/>
+      <AIModifier Name="AIRegionStrategicResources"                       Value="50"/>
+      <AIModifier Name="AIRegionLuxuryResources"                          Value="50"/>
+      <AIModifier Name="AIRegionSize"                                     Value="10"/>
+      <AIModifier Name="AIRegionNewContinent"                             Value="-50"/>
+      <AIModifier Name="AIRegionNewContinentState"                        Value="10"/>
+      <AIModifier Name="AIRegionCurrentContinentState"                    Value="-50"/>
+      <AIModifier Name="AIRegionCurrentVillageState"                      Value="20.0"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="EmpirePlan">
+      <AIModifier  Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="1"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="1"/>
+      <AIModifier  Name="AIExploration"                    Value="0"/>
+      <AIModifier  Name="CityApproval"                     Value="0"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="ResourceBoosters">
+      <AIModifier  Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier  Name="AIBuildingProduction"             Value="1"/>
+      <AIModifier  Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier  Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier  Name="AIEmpireResearch"                 Value="0.5"/>
+      <AIModifier  Name="AIEmpireGrowth"                   Value="0"/>
+      <AIModifier  Name="AIEmpireMilitaryDefense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireMilitaryOffense"          Value="1"/> <!-- TBD: distinction between offense and defense -->
+      <AIModifier  Name="AIEmpireDefense"                  Value="1"/>
+      <AIModifier  Name="AIEmpireOffense"                  Value="1"/>
+      <AIModifier  Name="AIExploration"                    Value="0"/>
+      <AIModifier  Name="CityApproval"                     Value="0"/>
+    </ParameterModifiers>
+
+    <ParameterModifiers Name="HeroTransfert">
+      <AIModifier  Name="AIYoungCityAssignment"           Value="1"/>
+      <AIModifier  Name="AIArmyAssignment"                Value="5"/>
+      <AIModifier  Name="AIMatureCityAssignment"          Value="10"/>
+    </ParameterModifiers>
+    
+    <ParameterModifiers Name="Research">
+      <AIModifier Name="AIEmpireGrowth"                   Value="1"/>
+      <AIModifier Name="AIEmpireProduction"               Value="1"/>
+      <AIModifier Name="AIUnitProduction"                 Value="1"/>
+      <AIModifier Name="AIEmpireEmpirePoint"              Value="0.7"/>
+      <AIModifier Name="AIBuildingProduction"             Value="0.0"/>
+      <AIModifier Name="AIEmpireMoney"                    Value="0.5"/>
+      <AIModifier Name="AIEmpireResearch"                 Value="0.7"/>
+      <AIModifier Name="AIEmpireDefense"                  Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource1"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource2"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource3"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource4"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource5"       Value="1"/>
+      <AIModifier Name="AIEmpireStrategicResource6"       Value="1"/>
+      <AIModifier Name="AIEmpireLuxuryResource"           Value="0.3"/>
+      <AIModifier Name="AIEmpireImproveSearch"            Value="0.1"/>
+      <AIModifier Name="AIEmpireImproveBribe"             Value="0.5"/>
+      <AIModifier Name="AIEmpireBuyout"                   Value="0.7"/>
+      <AIModifier Name="AIEmpireMilitaryDefense"          Value="0.6"/>
+      <AIModifier Name="AIEmpireMilitaryOffense"          Value="0.6"/>
+      <AIModifier Name="AIEmpireExploration"              Value="0.8"/>
+      <AIModifier Name="AIEmpireBoosterFood"              Value="0.7"/>
+      <AIModifier Name="AIEmpireBoosterIndustry"          Value="0.7"/>
+      <AIModifier Name="AIEmpireBoosterScience"           Value="0.7"/>
+      <AIModifier Name="AIEmpireDiplomacy"                Value="1"/>
+      <AIModifier Name="AIEmpireMinorFactionAssimilation" Value="0.5"/>
+    </ParameterModifiers>
+
+    <AgentModifiers Name="Resource">
+      <AgentModifier CurveReference="TechnologyReferenceTurnCount_Default">
+        <AmasPath AgentReference="TechnologyTurnCost">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MoneyReference_Default">
+        <AmasPath AgentReference="MoneyReferenceRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpirePlanNeedPrestigeRatio_Default">
+        <AmasPath AgentReference="EmpirePlanNeedPrestigeRatio">ResourceEvaluationAmas</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <AgentModifiers Name="Activity">
+      <AgentModifier CurveReference="MilitaryEffort_Default">
+        <AmasPath AgentReference="MilitaryEffort">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EconomicGrowth_Default">
+        <AmasPath AgentReference="EconomicGrowth">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireSafety_Default">
+        <AmasPath AgentReference="EmpireSafety">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="EmpireExpansion_SlowDown">
+        <AmasPath AgentReference="EmpireExpansion">ActivityEvaluationAmas</AmasPath>
+      </AgentModifier>
+
+      <AgentModifier CurveReference="RegionEconomicWeight_Default">
+        <AmasPath AgentReference="RegionEconomicWeight">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionEconomicGrowth_Default">
+        <AmasPath AgentReference="RegionEconomicGrowth">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MilitaryPacificationRelevance_Default">
+        <AmasPath AgentReference="MilitaryPacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="BribePacificationRelevance_Default">
+        <AmasPath AgentReference="BribePacificationRelevance">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MinorFactionThreat_Default">
+        <AmasPath AgentReference="MinorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="MajorFactionThreat_Default">
+        <AmasPath AgentReference="MajorFactionThreat">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+      <AgentModifier CurveReference="RegionSafety_Default">
+        <AmasPath AgentReference="RegionSafety">ActivityEvaluationAmas/Region</AmasPath>
+      </AgentModifier>
+    </AgentModifiers>
+
+    <CitySpecializations CityMinimalDevelopmentPercent="0.5" MaximalSpecializationPercentage="0.5"/>
+    
+  </AIStrategicPlanDefinition>
+  
+</Datatable>

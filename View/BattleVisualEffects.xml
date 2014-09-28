@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ############################################## -->
+  <!-- ######             VFX GROUND           ###### -->
+  <!-- ############################################## -->
+
+  
+  <!-- TEMPORARY VFX -->
+  <BattleVisualEffects Name="BattleEffectForestTileBonus">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>GroundEffectForest</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>GroundEffectForest</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectDistrictTileBonus">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>GroundEffectDistrict</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>GroundEffectDistrict</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="HighGroundEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+
+  <!-- ############################################## -->
+  <!-- ######          VFX CAPACITIES          ###### -->
+  <!-- ############################################## -->
+
+  <!-- Added Temporarily as a feedback for the capacities which needs a new one -->
+  <BattleVisualEffects Name="BattleEffectToDoVFX">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_BattleAction_MadFairies_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <!--######### SOUL LEECH (BrokenLord Infantry) #########-->
+  <BattleVisualEffects Name="BattleEffect_SoulLeech_Heal">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit" UnitSelectionMethod="InstigatorCurrentTarget"> 
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Infantry_Drain_01</StringParam>
+      </AlterationEvent>
+      <BattleVisualEffectTransition SourceUnitSelectionMethod="InstigatorCurrentTarget" TargetUnitSelectionMethod="EffectTarget">
+        <Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_BrokenLords_Infantry_Path_01" Speed="8" Trajectory="parabolic" Angle="30" AccelerationDistance="0.5" SpeedReductionFactorMax="0.91" LocalOriginOffset="0,0.4,0" LocalTargetOffset="0,0.5,0" ProgressionRatioBeforeFadeOut="0.9"/>
+        <TransitionEndAlterationEvent EventName="Alteration_DefaultFx">
+          <StringParam>Fx_PassiveCapacity_BrokenLords_Infantry_Heal_01</StringParam>
+        </TransitionEndAlterationEvent>
+      </BattleVisualEffectTransition>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### LIFE SIPHON (BrokenLords BlackBishop) #########-->
+  <BattleVisualEffects Name="BattleEffect_LifeSiphon_SiphonOff">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_BlackBishop_Drain_01</StringParam>
+      </AlterationEvent>
+      <BattleVisualEffectTransition SourceUnitSelectionMethod="InstigatorCurrentTarget" TargetUnitSelectionMethod="Instigator">
+        <Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_BrokenLords_BlackBishop_Path_01" Speed="8" Trajectory="parabolic" Angle="30" AccelerationDistance="1.5" SpeedReductionFactorMax="0.91" LocalOriginOffset="0,0.4,0" LocalTargetOffset="0,0.5,0" ProgressionRatioBeforeFadeOut="0.9"/>
+      </BattleVisualEffectTransition>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffect_LifeSiphon_HealTransition">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <BattleVisualEffectTransition SourceUnitSelectionMethod="Instigator" TargetUnitSelectionMethod="EffectTarget">
+        <Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_BrokenLords_BlackBishop_Path_01" Speed="7" Trajectory="parabolic" Angle="20" AccelerationDistance="0.5" SpeedReductionFactorMax="0.91" LocalOriginOffset="0,0.4,0" LocalTargetOffset="0,0.5,0" ProgressionRatioBeforeFadeOut="0.9"/>
+        <TransitionEndAlterationEvent EventName="Alteration_DefaultFx">
+          <StringParam>Fx_PassiveCapacity_BrokenLords_BlackBishop_Heal_02</StringParam>
+        </TransitionEndAlterationEvent>
+      </BattleVisualEffectTransition>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffect_AOE_LifeSiphon_Heal">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_BattleVisualEffectAOE_Wait">
+        <FloatParam>0.2</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <!--######### CHARGE  #########-->
+  <!-- BROKEN LORDS RYDERS -->
+  <BattleVisualEffects Name="BattleActionUnitBrokenLordsCavalryPassive_BattleEffectChargeUp">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Pawn">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_02</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_03</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_04</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Pawn">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_01;stop</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_02;stop</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_03;stop</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_BrokenLords_Cavalry_04;stop</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!-- VAULTERS DAWNOFFICER -->
+  <BattleVisualEffects Name="BattleActionUnitVaultersDawnOfficerPassive_BattleEffectChargeUp">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Pawn">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Vaulters_DawnOfficer_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Vaulters_DawnOfficer_02</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Vaulters_DawnOfficer_03</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  <BattleVisualEffects Name="BattleEffectResetCharge">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Pawn">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Vaulters_DawnOfficer_01;stop</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Vaulters_DawnOfficer_02;stop</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Vaulters_DawnOfficer_03;stop</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### SLOW DOWN  #########-->
+  <BattleVisualEffects Name="BattleEffect_SlowDownCast">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit" UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_SlowDown_Cast_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffect_AbilitySlowDown">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+    <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_SlowDown_Target_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectSlowDown</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectSlowDownPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectSlowDownPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+
+  <!--######### BARK SKIN (MadFairies Shaman) #########-->
+  <BattleVisualEffects Name="BarkSkinEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit" UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_MadFairies_Shaman_Cast_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_MadFairies_Shaman_Allies_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUpPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  <BattleVisualEffects Name="BattleEffect_BarkSkin">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUpPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+
+  <!--######### STRONG AGAINST FLYING #########-->
+  <BattleVisualEffects Name="AgainstFlyingEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_BattleAction_MadFairies_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### STRONG AGAINST CAVALRY #########-->
+  <BattleVisualEffects Name="AgainstCavalryEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_BattleAction_MadFairies_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  
+  <!--######### STRONG AGAINST RANGE #########-->
+  <BattleVisualEffects Name="AgainstRangeEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_BattleAction_MadFairies_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### STRONG AGAINST MELEE #########-->
+  <BattleVisualEffects Name="AgainstMeleeEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_BattleAction_MadFairies_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### POINTBLANK POWER #########-->
+  <BattleVisualEffects Name="PointblankPowerEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_BattleAction_MadFairies_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+
+  <!--######### ATTACK SWEEP (GiantOgre) #########-->
+  <BattleVisualEffects Name="BattleEffect_Sweep">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit"   UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_SweepAttack</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  <BattleVisualEffects Name="BattleEffect_SweepCritical">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit"   UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_SweepAttack</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### ATTACK BEAM (Silics)   #########-->
+  <!--<BattleVisualEffects Name="BattleEffect_Beam">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" >
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Beam</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>-->
+
+  <BattleVisualEffects Name="BattleEffect_BeamCritical">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" >
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Beam</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <BattleVisualEffects Name="BattleEffect_AOE_Beam">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_BattleVisualEffectAOE_Wait">
+        <FloatParam>0.25</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_BattleVisualEffectAOE_Fx">
+        <StringParam>Fx_PassiveCapacity_Beam</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### LIFE DRAIN #########-->
+  <BattleVisualEffects Name="BattleEffect_HealthDrain">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_LifeDrain_Target_01</StringParam>
+      </AlterationEvent>
+    <BattleVisualEffectTransition SourceUnitSelectionMethod="EffectTarget" TargetUnitSelectionMethod="Instigator">
+        <Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_LifeDrain_Path_01" Speed="8" Trajectory="parabolic" Angle="30" AccelerationDistance="1.5" SpeedReductionFactorMax="0.91" LocalOriginOffset="0,0.4,0" LocalTargetOffset="0,0.5,0" ProgressionRatioBeforeFadeOut="0.9"/>
+        <TransitionEndAlterationEvent EventName="Alteration_DefaultFx">
+          <StringParam>Fx_PassiveCapacity_LifeDrain_Cast_01</StringParam>
+        </TransitionEndAlterationEvent>
+    </BattleVisualEffectTransition>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+<!--
+  <BattleVisualEffects Name="BattleEffect_HealFromDrain">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_BattleAction_MadFairies_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+-->
+
+  <!--######### REGENERATION #########-->
+  <BattleVisualEffects Name="BattleEffect_HealthRegeneration">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Regeneration_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### BLOCK #########-->
+  <BattleVisualEffects Name="BattleEffect_Block">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Target_Bonus</StringParam>
+      </AlterationEvent>
+      <!--    <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>NumberOfPositiveStates</StringParam>
+      </AlterationEvent>-->
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <!--<BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>NumberOfPositiveStates</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>-->
+  </BattleVisualEffects>
+
+  <!--######### RETALIATION #########-->
+  <BattleVisualEffects Name="RetaliationEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Target_Bonus</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectCriticalUpPermanent</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectCriticalUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectCriticalUpPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### SWIFTNESS #########-->
+  <BattleVisualEffects Name="SwiftnessEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Target_Bonus</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUpPermanent</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUpPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### HALT #########-->
+  <BattleVisualEffects Name="HaltEfficiencyAffectation">
+  <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Target_Malus</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectInitiativeDownPermanent</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectInitiativeDown1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectInitiativeDownPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### FEEBLENESS #########-->
+  <BattleVisualEffects Name="FeeblenessEfficiencyAffectation">
+  <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Target_Malus</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectCriticalDownPermanent</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectCriticalDown1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectCriticalDownPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### UNSTEADY #########-->
+  <BattleVisualEffects Name="UnsteadyEfficiencyAffectation">
+  <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Target_Malus</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackDownPermanent</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackDown1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackDownPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### EXHAUSTION (Dwarf)   #########-->
+  <BattleVisualEffects Name="ExhaustionEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Target_Malus</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseDownPermanent</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseDown1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseDownPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <!--######### DEBUFF IMMUNITY (Sister Of Mercy) #########-->
+  <BattleVisualEffects Name="BattleEffect_DebuffImmunityCast">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit"> 
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_DebuffImmunity_Cast_01</StringParam>
+      </AlterationEvent>
+      <BattleVisualEffectTransition SourceUnitSelectionMethod="Instigator" TargetUnitSelectionMethod="InstigatorCurrentTarget">
+        <Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_DebuffImmunity_Path_01" Speed="8" Trajectory="parabolic" Angle="40" AccelerationDistance="1.3" SpeedReductionFactorMax="0.90" LocalOriginOffset="0,0.3,0" LocalTargetOffset="0,0.2,0" ProgressionRatioBeforeFadeOut="0.90"/>
+      </BattleVisualEffectTransition>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  <BattleVisualEffects Name="BattleEffect_DebuffImmunityTransition">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <BattleVisualEffectTransition SourceUnitSelectionMethod="InstigatorCurrentTarget" TargetUnitSelectionMethod="EffectTarget">
+        <Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_DebuffImmunity_Path_01" Speed="8" Trajectory="parabolic" Angle="40" AccelerationDistance="1.3" SpeedReductionFactorMax="0.90" LocalOriginOffset="0,0.3,0" LocalTargetOffset="0,0.2,0" ProgressionRatioBeforeFadeOut="0.90"/>
+        <TransitionEndAlterationEvent EventName="Alteration_DefaultFx">
+          <StringParam>Fx_PassiveCapacity_DebuffImmunity_Target_02</StringParam>
+        </TransitionEndAlterationEvent>
+      </BattleVisualEffectTransition>
+    </BattleVisualEffect>
+  </BattleVisualEffects>  
+  <BattleVisualEffects Name="BattleEffect_DebuffImmunity">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectImmuneToDebuff</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectImmuneToDebuffPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectImmuneToDebuffPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <!--######### CHAIN LIGHTNING (Spectre) #########-->
+  <BattleVisualEffects Name="BattleEffect_AOE_ChainLightning">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_BattleVisualEffectAOE_Wait">
+        <FloatParam>0.2</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_BattleVisualEffectAOE_Fx">
+        <StringParam>Fx_PassiveCapacity_ChainLightning_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### INTIMIDATION AURA (Kazanji) #########-->
+  <BattleVisualEffects Name="BattleEffect_LowerInitiative">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit"  UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Intimidation_Cast</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Intimidation_Target</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectInitiativeDown1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectInitiativeDownPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectInitiativeDownPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### CIRCULAR ATTACK (Hydre) #########-->
+  <BattleVisualEffects Name="BattleEffect_CircularAttack" >
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit"   UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_RotativeAttack</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### COCOON (Ceratan Dridder) #########-->
+  <BattleVisualEffects Name="BattleEffect_CocoonCast">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="Instigator"> 
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Cocoon_Cast</StringParam>
+      </AlterationEvent>
+      <BattleVisualEffectTransition SourceUnitSelectionMethod="Instigator" TargetUnitSelectionMethod="EffectTarget">
+        <Projectile AssetPath="Prefabs/Effects/Passive_Capacities/Fx_PassiveCapacity_Cocoon_Path" Speed="8" Trajectory="parabolic" Angle="40" AccelerationDistance="1.3" SpeedReductionFactorMax="0.90" LocalOriginOffset="0,0.3,0" LocalTargetOffset="0,0.2,0" ProgressionRatioBeforeFadeOut="0.90"/>
+      </BattleVisualEffectTransition>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <BattleVisualEffects Name="BattleEffect_Cocoon">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit"> 
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Cocoon_Target</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectStun</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### STUN  #########-->
+  <BattleVisualEffects Name="BattleEffect_Stun">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+    <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Stun</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectStun</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectStunPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectStunPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### DISEASE (necrophage) #########-->
+  <BattleVisualEffects Name="BattleEffectAddDiseaseAction">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit" UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Disease_Cast</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Disease_Target</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectPoisonedPermanent</StringParam>
+      </AlterationEvent>
+    <AlterationEvent EventName="Alteration_StatusFeedback">
+      <StringParam>BattleEffectPoisoned</StringParam>
+      <FloatParam>1.5</FloatParam>
+    </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  
+  <BattleVisualEffects Name="BattleEffect_DiseaseDamages">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Disease_Target</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectPoisoned</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### DEFENSIVE IMPULSE (Vaulter Titan) #########-->
+  <BattleVisualEffects Name="BattleEffect_DefensiveImpulse" >
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit"   UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_DefensiveImpulse</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_DefensiveImpulse_Target</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <!--######### SWEEP STRIKE BACK (ArdentMage BattleMage)  #########-->
+  <BattleVisualEffects Name="BattleEffect_SweepStrikeBack">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_SweepStrikeBack</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!--######### FIRE RAIN (ArdentMage Witch) #########-->
+  <BattleVisualEffects Name="BattleEffect_FireRain">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit"> 
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_FireRain</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+<!-- 	<BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_FireRain;stop</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect> -->
+  </BattleVisualEffects>
+
+
+  <!--######### HEAL (Hero Drakken) #########-->
+  <BattleVisualEffects Name="BattleEffect_Healing">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Pawn" UnitSelectionMethod="Instigator">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Drakkens_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Drakkens_Hero_Heal_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--######### SPELL #########-->
+  <!-- === SPELL 1 === -->
+  <BattleVisualEffects Name="BattleEffectSpell1Level1">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_MagicShield_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell1Level2">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_MagicShield_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell1Level3">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_MagicShield_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell1Level4">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_MagicShield_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell1Level5">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_MagicShield_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+
+  <!-- === SPELL 2 === -->
+  <BattleVisualEffects Name="BattleEffectSpell2Level1">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Strengthening_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell2Level2">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Strengthening_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell2Level3">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Strengthening_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell2Level4">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Strengthening_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell2Level5">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Strengthening_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  
+  <!-- === SPELL 3 === -->
+  <BattleVisualEffects Name="BattleEffectSpell3Level1">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_StunningPressure_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell3Level2">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_StunningPressure_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell3Level3">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_StunningPressure_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell3Level4">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_StunningPressure_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell3Level5">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_StunningPressure_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+
+  <!-- === SPELL 4 === -->
+  <BattleVisualEffects Name="BattleEffectSpell4Level1">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_BlueRain_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell4Level2">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_BlueRain_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell4Level3">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_BlueRain_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell4Level4">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_BlueRain_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell4Level5">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_BlueRain_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <!-- === SPELL 5 === -->
+  <BattleVisualEffects Name="BattleEffectSpell5Level1">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Regeneration_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell5Level2">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Regeneration_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell5Level3">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Regeneration_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell5Level4">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Regeneration_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+  <BattleVisualEffects Name="BattleEffectSpell5Level5">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Regeneration_EffectUnit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+  </BattleVisualEffects>
+
+ <!-- Phoenix egg -->
+  <BattleVisualEffects Name="BattleEffect_PhoenixToEgg">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Pawn">
+      <AlterationEvent EventName="Alteration_SwapPawnVisual">
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_RageWizards_Phoenix_Egg_Entry</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Pawn">
+      <AlterationEvent EventName="Alteration_SwapPawnVisual">
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_RageWizards_Phoenix_Egg_Exit</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <!-- ARDENT FIRE -->
+  <BattleVisualEffects Name="ArdentFireEfficiencyAffectation">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>FX_Spell_Regeneration_EffectUnit</StringParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!-- PARASITE -->
+  <BattleVisualEffects Name="BattleEffect_Parasite">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectParasite</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectParasitePermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectParasitePermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+
+  <!-- UNLEASHED POTENTIAL ICON  & FX -->
+  
+  <BattleVisualEffects Name="BattleEffectTriggerUnleashedPotential">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+	  <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Cultists_Preacher_Cast_01</StringParam>
+      </AlterationEvent>
+	</BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <BattleVisualEffects Name="BattleEffect_UnleashedPotential">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectUnleashedPotential</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectUnleashedPotentialPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_Cultists_Preacher_Allies_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectUnleashedPotentialPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!-- INCREASED FIRE ICON  & FX -->
+  <BattleVisualEffects Name="BattleEffectTriggerIncreasedFire">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+	  <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_RageWizard_Hero_Cast_01</StringParam>
+      </AlterationEvent>
+	</BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <BattleVisualEffects Name="BattleEffect_IncreasedFire">
+    <BattleVisualEffect AlterationTrigger="BattleActionStart" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectAttackUp3</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectAttackUpPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_DefaultFx">
+        <StringParam>Fx_PassiveCapacity_RageWizard_Hero_Allies_01</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <!-- Name to define -->
+        <StringParam>BattleEffectAttackUpPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  <!-- Sharp Sense-->
+  <BattleVisualEffects Name="UnitActionSharpSense">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUpPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUpPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+
+  <!-- Confidence -->
+  <BattleVisualEffects Name="UnitActionConfidence">
+    <BattleVisualEffect AlterationTrigger="BattleActionApplied" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUp1</StringParam>
+        <FloatParam>1.5</FloatParam>
+      </AlterationEvent>
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUpPermanent</StringParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+    <BattleVisualEffect AlterationTrigger="BattleActionEnd" Target="Unit" UnitSelectionMethod="EffectTarget">
+      <AlterationEvent EventName="Alteration_StatusFeedback">
+        <StringParam>BattleEffectDefenseUpPermanent</StringParam>
+        <BoolParam>false</BoolParam>
+      </AlterationEvent>
+    </BattleVisualEffect>
+  </BattleVisualEffects>
+  
+  
+</Datatable>

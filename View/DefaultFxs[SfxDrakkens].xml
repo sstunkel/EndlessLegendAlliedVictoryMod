@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  <!-- ===================================== SFX Drakken ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Drakken_AncientDragon_WingFlap">
+    <SoundEventName>Sfx/Faction/Drakken/AncientDragon/Drakken_AncientDragon_WingFlap</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_AncientDragon_Idle0_WingFlap">
+    <SoundEventName>Sfx/Faction/Drakken/AncientDragon/Drakken_AncientDragon_Idle0_WingFlap</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_AncientDragon_Idle0_SpitFire">
+    <SoundEventName>Sfx/Faction/Drakken/AncientDragon/Drakken_AncientDragon_Idle0_SpitFire</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_AncientDragon_TornadoCast">
+    <SoundEventName>Sfx/Faction/Drakken/AncientDragon/Drakken_AncientDragon_TornadoCast</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_AncientDragon_SpitFire">
+    <SoundEventName>Sfx/Faction/Drakken/AncientDragon/Drakken_AncientDragon_SpitFire</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Voice_AncientDragon_Attack">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_AncientDragon_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="Drakken_AncientDragon_Voice_Idle0">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_AncientDragon_Voice_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="Drakken_AncientDragon_Voice_Death">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_AncientDragon_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="Drakken_AncientDragon_Voice_Defense">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_AncientDragon_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Hero_Idle0">
+    <SoundEventName>Sfx/Faction/Drakken/Hero/Drakken_Hero_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Hero_Footstep">
+    <SoundEventName>Sfx/Faction/Drakken/Hero/Drakken_Hero_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Hero_Voice_AttackShort">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Hero_Voice_AttackShort</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Hero_Voice_AttackVener">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Hero_Voice_AttackVener</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Hero_Voice_Death">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Hero_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Hero_Voice_Defense">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Hero_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Drakkenling_Idle0">
+    <SoundEventName>Sfx/Faction/Drakken/Drakkenling/Drakken_Drakkenling_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Drakkenling_Footstep">
+    <SoundEventName>Sfx/Faction/Drakken/Drakkenling/Drakken_Drakkenling_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Drakkenling_BodyFall">
+    <SoundEventName>Sfx/Faction/Drakken/Drakkenling/Drakken_Drakkenling_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Drakken_Voice_Drakkenling_Attack">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Drakkenling_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Voice_Drakkenling_Defense">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Drakkenling_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Voice_Drakkenling_Death">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Drakkenling_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_Voice_Death">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Wyvern_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_Voice_Attack">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Wyvern_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_Voice_Defense">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Wyvern_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_Voice_AttackAlt">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Wyvern_Voice_AttackAlt</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_Voice_Idle0">
+    <SoundEventName>Sfx/Voices/Drakken/Drakken_Wyvern_Voice_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_BodyFall">
+    <SoundEventName>Sfx/Faction/Drakken/Wyvern/Drakken_Wyvern_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_AttackFlap">
+    <SoundEventName>Sfx/Faction/Drakken/Wyvern/Drakken_Wyvern_AttackFlap</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_AttackWhoosh">
+    <SoundEventName>Sfx/Faction/Drakken/Wyvern/Drakken_Wyvern_AttackWhoosh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Drakken_Wyvern_WingFlap">
+    <SoundEventName>Sfx/Faction/Drakken/Wyvern/Drakken_Wyvern_WingFlap</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

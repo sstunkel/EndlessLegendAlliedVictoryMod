@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--
+  <SeasonEffect Name="WinterEffect-Base"
+                SeasonName="Winter">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterCityVisionRangeReduction" />
+      <SimulationDescriptorReference Name="WinterDustReduction" />
+      <SimulationDescriptorReference Name="WinterFoodReduction" />
+      <SimulationDescriptorReference Name="WinterIndustryReduction" />
+      <SimulationDescriptorReference Name="WinterMovementReduction" />
+      <SimulationDescriptorReference Name="WinterUnitVisionRangeReduction" />
+    </SimulationData>
+    <SimulationData>
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,AffinityVaulters</PathPrerequisite>
+      <SimulationDescriptorReference Name="WinterNetAffinityStrategicBonus" />
+    </SimulationData>
+  </SeasonEffect>
+  -->
+
+  <SeasonEffect Name="WinterEffectEconomyFood1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="1">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFoodReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyFood2"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFoodReduction2" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyFood3"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFoodReduction3" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyFood4"
+                SeasonName="Winter"
+                NumberOfPastSeasons="5">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFoodReduction4" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyFood5"
+                SeasonName="Winter"
+                NumberOfPastSeasons="6">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFoodReduction5" />
+    </SimulationData>
+  </SeasonEffect>
+  
+  
+
+  <SeasonEffect Name="WinterEffectEconomyIndustry1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="1">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterIndustryReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyIndustry2"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterIndustryReduction2" />
+    </SimulationData>
+  </SeasonEffect>
+  
+  
+
+  <SeasonEffect Name="WinterEffectEconomyDust1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="1">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterDustReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyDust2"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterDustReduction2" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyDust3"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterDustReduction3" />
+    </SimulationData>
+  </SeasonEffect>
+
+
+
+  <SeasonEffect Name="WinterEffectEconomyFIDS1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="2">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFIDSReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyFIDS2"
+                SeasonName="Winter"
+                NumberOfPastSeasons="4">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFIDSReduction2" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyFIDS3"
+                SeasonName="Winter"
+                NumberOfPastSeasons="5">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFIDSReduction3" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyFIDS4"
+                SeasonName="Winter"
+                NumberOfPastSeasons="7">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterFIDSReduction4" />
+    </SimulationData>
+  </SeasonEffect>
+
+
+
+  <SeasonEffect Name="WinterEffectEconomyApproval1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterApprovalReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectEconomyApproval2"
+                SeasonName="Winter"
+                NumberOfPastSeasons="6">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterApprovalReduction2" />
+    </SimulationData>
+  </SeasonEffect>
+
+
+
+  <SeasonEffect Name="WinterEffectEconomyResource1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="4">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterResourceReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+
+
+  <SeasonEffect Name="WinterEffectMilitaryAttribute1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="1">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterAttributeReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectMilitaryAttribute2"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterAttributeReduction2" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectMilitaryAttribute3"
+                SeasonName="Winter"
+                NumberOfPastSeasons="4">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterAttributeReduction3" />
+    </SimulationData>
+  </SeasonEffect>
+
+  <SeasonEffect Name="WinterEffectMilitaryAttribute4"
+                SeasonName="Winter"
+                NumberOfPastSeasons="4">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterAttributeReduction4" />
+    </SimulationData>
+  </SeasonEffect>
+
+
+
+  <SeasonEffect Name="WinterEffectMilitaryMovement1"
+                SeasonName="Winter"
+                NumberOfPastSeasons="3">
+    <SimulationData>
+      <SimulationDescriptorReference Name="WinterMovementReduction1" />
+    </SimulationData>
+  </SeasonEffect>
+
+</Datatable>

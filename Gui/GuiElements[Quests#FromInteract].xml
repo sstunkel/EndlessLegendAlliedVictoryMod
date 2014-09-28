@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <QuestGuiElement Name="SideQuestPOI#0001">
+    <Title>%SideQuestPOI#0001Title</Title>
+    <Description>%SideQuestPOI#0001Description</Description>
+    <Objective>%SideQuestPOI#0001Objective</Objective>
+    <Outcome>%SideQuestPOI#0001Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestColonize" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0002-Step1">%SideQuestPOI#0001-Step1</Step>
+      <Step Name="SideQuestPOI#0002-Step2">%SideQuestPOI#0001-Step2</Step>
+      <Step Name="SideQuestPOI#0002-Step3">%SideQuestPOI#0001-Step3</Step>
+      <Step Name="SideQuestPOI#0002-Step4">%SideQuestPOI#0001-Step4</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0002">
+    <Title>%SideQuestPOI#0002Title</Title>
+    <Description>%SideQuestPOI#0002Description</Description>
+    <Objective>%SideQuestPOI#0002Objective</Objective>
+    <Outcome>%SideQuestPOI#0002Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBuild" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0002-Step1">%SideQuestPOI#0002-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0003">
+    <Title>%SideQuestPOI#0003Title</Title>
+    <Description>%SideQuestPOI#0003Description</Description>
+    <Objective>%SideQuestPOI#0003Objective</Objective>
+    <Outcome>%SideQuestPOI#0003Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestFailReach" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0003-Step1">%SideQuestPOI#0003-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+  <QuestGuiElement Name="SideQuestPOI#0004">
+    <Title>%SideQuestPOI#0004Title</Title>
+    <Description>%SideQuestPOI#0004Description</Description>
+    <Objective>%SideQuestPOI#0004Objective</Objective>
+    <Outcome>%SideQuestPOI#0004Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestKill" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0004-Step1">%SideQuestPOI#0004-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0005">
+    <Title>%SideQuestPOI#0005Title</Title>
+    <Description>%SideQuestPOI#0005Description</Description>
+    <Objective>%SideQuestPOI#0005Objective</Objective>
+    <Outcome>%SideQuestPOI#0005Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestReach2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0005-Step1">%SideQuestPOI#0005-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0006">
+    <Title>%SideQuestPOI#0006Title</Title>
+    <Description>%SideQuestPOI#0006Description</Description>
+    <Objective>%SideQuestPOI#0006Objective</Objective>
+    <Outcome>%SideQuestPOI#0006Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestColonize" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0006-Step1">%SideQuestPOI#0006-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0007">
+    <Title>%SideQuestPOI#0007Title</Title>
+    <Description>%SideQuestPOI#0007Description</Description>
+    <Objective>%SideQuestPOI#0007Objective</Objective>
+    <Outcome>%SideQuestPOI#0007Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestReach" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0007-Step1">%SideQuestPOI#0007-Step1</Step>
+      <Step Name="SideQuestPOI#0007-Step2">%SideQuestPOI#0007-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0008">
+    <Title>%SideQuestPOI#0008Title</Title>
+    <Description>%SideQuestPOI#0008Description</Description>
+    <Objective>%SideQuestPOI#0008Objective</Objective>
+    <Outcome>%SideQuestPOI#0008Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestExpansion" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0008-Step1">%SideQuestPOI#0008-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0009">
+    <Title>%SideQuestPOI#0009Title</Title>
+    <Description>%SideQuestPOI#0009Description</Description>
+    <Objective>%SideQuestPOI#0009Objective</Objective>
+    <Outcome>%SideQuestPOI#0009Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBuild" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0009-Step1">%SideQuestPOI#0009-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0010">
+    <Title>%SideQuestPOI#0010Title</Title>
+    <Description>%SideQuestPOI#0010Description</Description>
+    <Objective>%SideQuestPOI#0010Objective</Objective>
+    <Outcome>%SideQuestPOI#0010Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBuild" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0010-Step1">%SideQuestPOI#0010-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0011">
+    <Title>%SideQuestPOI#0011Title</Title>
+    <Description>%SideQuestPOI#0011Description</Description>
+    <Objective>%SideQuestPOI#0011Objective</Objective>
+    <Outcome>%SideQuestPOI#0011Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBuild" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0011-Step1">%SideQuestPOI#0011-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0012">
+    <Title>%SideQuestPOI#0012Title</Title>
+    <Description>%SideQuestPOI#0012Description</Description>
+    <Objective>%SideQuestPOI#0012Objective</Objective>
+    <Outcome>%SideQuestPOI#0012Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestBuild" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0012-Step1">%SideQuestPOI#0012-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0013">
+    <Title>%SideQuestPOI#0013Title</Title>
+    <Description>%SideQuestPOI#0013Description</Description>
+    <Objective>%SideQuestPOI#0013Objective</Objective>
+    <Outcome>%SideQuestPOI#0013Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestExpansion" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0013-Step1">%SideQuestPOI#0013-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0014">
+    <Title>%SideQuestPOI#0014Title</Title>
+    <Description>%SideQuestPOI#0014Description</Description>
+    <Objective>%SideQuestPOI#0014Objective</Objective>
+    <Outcome>%SideQuestPOI#0014Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestExpansion" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0014-Step1">%SideQuestPOI#0014-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0015">
+    <Title>%SideQuestPOI#0015Title</Title>
+    <Description>%SideQuestPOI#0015Description</Description>
+    <Objective>%SideQuestPOI#0015Objective</Objective>
+    <Outcome>%SideQuestPOI#0015Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestExpansion" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0015-Step1">%SideQuestPOI#0015-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0016">
+    <Title>%SideQuestPOI#0016Title</Title>
+    <Description>%SideQuestPOI#0016Description</Description>
+    <Objective>%SideQuestPOI#0016Objective</Objective>
+    <Outcome>%SideQuestPOI#0016Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestColonize" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0016-Step1">%SideQuestPOI#0016-Step1</Step>
+      <Step Name="SideQuestPOI#0016-Step1">%SideQuestPOI#0016-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="SideQuestPOI#0018">
+    <Title>%SideQuestPOI#0018Title</Title>
+    <Description>%SideQuestPOI#0018Description</Description>
+    <Objective>%SideQuestPOI#0018Objective</Objective>
+    <Outcome>%SideQuestPOI#0018Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestAssault" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="SideQuestPOI#0016-Step1">%SideQuestPOI#0018-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+</Datatable>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <!-- ===================================== SFX SISTERSofMERCY ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_Attack">
+    <SoundEventName>Sfx/Voices/Justiciere/Justiciere_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_Death">
+    <SoundEventName>Sfx/Voices/Justiciere/Justiciere_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_Defense">
+    <SoundEventName>Sfx/Voices/Justiciere/Justiciere_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_Click">
+    <SoundEventName>Sfx/Voices/Justiciere/Justiciere_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_Order">
+    <SoundEventName>Sfx/Voices/Justiciere/Justiciere_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_Footstep">
+    <SoundEventName>Sfx/Faction/SistersOfMercy/Justicere/SisterOfMercy_Justiciere_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_BodyFall">
+    <SoundEventName>Sfx/Faction/SistersOfMercy/Justicere/SisterOfMercy_Justiciere_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_1H_Idle0">
+    <SoundEventName>Sfx/Faction/SistersOfMercy/Justicere/SisterOfMercy_Justiciere_1H_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_SisterOfMercy_Justiciere_2H_Idle0">
+    <SoundEventName>Sfx/Faction/SistersOfMercy/Justicere/SisterOfMercy_Justiciere_1H_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+</Datatable>

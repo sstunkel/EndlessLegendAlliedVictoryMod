@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- ENVY -->
+  <AttitudeStateDefinition Name="AttitudeStateEnvyStrongPositive">
+    <MainAttitudeCategory>Envy</MainAttitudeCategory>
+    <MinimumValue>50</MinimumValue>
+  </AttitudeStateDefinition>
+  
+  <AttitudeStateDefinition Name="AttitudeStateEnvyWeakPositive">
+    <MainAttitudeCategory>Envy</MainAttitudeCategory>
+    <MaximumValue>50</MaximumValue>
+    <MinimumValue>10</MinimumValue>
+  </AttitudeStateDefinition>
+  
+  <AttitudeStateDefinition Name="AttitudeStateEnvyNeutral">
+    <MainAttitudeCategory>Envy</MainAttitudeCategory>
+    <MaximumValue>10</MaximumValue>
+    <MinimumValue>-10</MinimumValue>
+  </AttitudeStateDefinition>
+  
+  <AttitudeStateDefinition Name="AttitudeStateEnvyWeakNegative">
+    <MainAttitudeCategory>Envy</MainAttitudeCategory>
+    <MaximumValue>-10</MaximumValue>
+    <MinimumValue>-50</MinimumValue>
+  </AttitudeStateDefinition>
+  
+  <AttitudeStateDefinition Name="AttitudeStateEnvyStrongNegative">
+    <MainAttitudeCategory>Envy</MainAttitudeCategory>
+    <MaximumValue>-50</MaximumValue>
+  </AttitudeStateDefinition>
+
+
+  <!-- FEAR -->
+  <AttitudeStateDefinition Name="AttitudeStateFearStrongPositive">
+    <MainAttitudeCategory>Fear</MainAttitudeCategory>
+    <MinimumValue>50</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateFearWeakPositive">
+    <MainAttitudeCategory>Fear</MainAttitudeCategory>
+    <MaximumValue>50</MaximumValue>
+    <MinimumValue>10</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateFearNeutral">
+    <MainAttitudeCategory>Fear</MainAttitudeCategory>
+    <MaximumValue>10</MaximumValue>
+    <MinimumValue>-10</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateFearWeakNegative">
+    <MainAttitudeCategory>Fear</MainAttitudeCategory>
+    <MaximumValue>-10</MaximumValue>
+    <MinimumValue>-50</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateFearStrongNegative">
+    <MainAttitudeCategory>Fear</MainAttitudeCategory>
+    <MaximumValue>-50</MaximumValue>
+  </AttitudeStateDefinition>
+
+
+  <!-- TRUST -->
+  <AttitudeStateDefinition Name="AttitudeStateTrustStrongPositive">
+    <MainAttitudeCategory>Trust</MainAttitudeCategory>
+    <MinimumValue>50</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateTrustWeakPositive">
+    <MainAttitudeCategory>Trust</MainAttitudeCategory>
+    <MaximumValue>50</MaximumValue>
+    <MinimumValue>10</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateTrustNeutral">
+    <MainAttitudeCategory>Trust</MainAttitudeCategory>
+    <MaximumValue>10</MaximumValue>
+    <MinimumValue>-10</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateTrustWeakNegative">
+    <MainAttitudeCategory>Trust</MainAttitudeCategory>
+    <MaximumValue>-10</MaximumValue>
+    <MinimumValue>-50</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateTrustStrongNegative">
+    <MainAttitudeCategory>Trust</MainAttitudeCategory>
+    <MaximumValue>-50</MaximumValue>
+  </AttitudeStateDefinition>
+
+
+  <!-- WAR -->
+  <AttitudeStateDefinition Name="AttitudeStateWarStrongPositive">
+    <MainAttitudeCategory>War</MainAttitudeCategory>
+    <MinimumValue>50</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateWarWeakPositive">
+    <MainAttitudeCategory>War</MainAttitudeCategory>
+    <MaximumValue>50</MaximumValue>
+    <MinimumValue>10</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateWarNeutral">
+    <MainAttitudeCategory>War</MainAttitudeCategory>
+    <MaximumValue>10</MaximumValue>
+    <MinimumValue>-10</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateWarWeakNegative">
+    <MainAttitudeCategory>War</MainAttitudeCategory>
+    <MaximumValue>-10</MaximumValue>
+    <MinimumValue>-50</MinimumValue>
+  </AttitudeStateDefinition>
+
+  <AttitudeStateDefinition Name="AttitudeStateWarStrongNegative">
+    <MainAttitudeCategory>War</MainAttitudeCategory>
+    <MaximumValue>-50</MaximumValue>
+  </AttitudeStateDefinition>
+  
+</Datatable>

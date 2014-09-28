@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <CityConstructibleActionDefinition Name="CityConstructibleActionRaze" SubCategory="SubCategoryRazing" IsUnique="true">
+    <SimulationDescriptorReference Name="CityConstructibleActionRazeTooltipEffect" />
+    <Tags>NoBuyout,NoNotification</Tags>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Inverted="false" Flags="Prerequisite,Discard">$Property(ClassCity:Ownership) eq 1</InterpreterPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../EmpireTypeMajor,AffinityTutorial</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+    <Cost ResourceName="CityActionPoint">1</Cost>
+    <Action Name="Raze"/>
+  </CityConstructibleActionDefinition>
+  
+  <CityConstructibleActionDefinition Name="CityConstructibleActionMigrate" SubCategory="SubCategoryRazing" IsUnique="true">
+    <SimulationDescriptorReference Name="CityConstructibleActionMigrateTooltipEffect" />
+    <Tags>NoBuyout,NoNotification</Tags>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Inverted="false" Flags="Prerequisite,Discard">$Property(ClassCity:Ownership) eq 1</InterpreterPrerequisite>
+    <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../EmpireTypeMajor,AffinityRovingClans</PathPrerequisite>
+    <Cost ResourceName="CityActionPoint">1</Cost>
+    <Action Name="Migrate"/>
+  </CityConstructibleActionDefinition>
+
+</Datatable>

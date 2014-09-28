@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Opportunist when its convenient-->
+  <AIArmyMissionDefinition Name="AttackCity">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$TargetCity"/>
+    </Parameters>
+    <Controller_Sequence Debug="AttackCity_Root">
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$TargetCity" Output_DestinationVarName="$WorldPositionDestination"/>
+
+        <Controller_Selector Debug="AttackCity_Selector">
+          <Controller_Sequence Debug="StopSiege">
+            <Decorator_IsTargetBesieging PositiveCheckOn="NO" TargetVarName="$Army" TargetCityVarName="$TargetCity"/>
+            <Action_ToggleSiege  TargetVarName="$TargetCity" State="On"/>
+          </Controller_Sequence>
+
+          <Controller_Sequence Debug="EngageCity">
+            <!-- The decorator checks if the army is on an exploitation tile. This will need to be changed when the condition for besieging will become "when adjacent to a city hall or burrough (or bug with frontiers)-->
+            <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+            <Action_Attack TargetVarName="$TargetCity"/>
+          </Controller_Sequence>
+
+          <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+          <Controller_Sequence Debug="AttackCity_TryToAttackEnemyInRange">
+            <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+            <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Enemy" Output_TargetVarName="$Target"/>
+            <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+            <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+            <Decorator_EvaluateOpportunity OpportunityPosition="$AttackWorldPositionDestination" OpportunityType="Army" MainTargetPosition="$WorldPositionDestination" MainTargetType="City"/>
+
+            <Controller_Selector Debug="AttackCity_TryToAttackEnemyInRange_EnemyInRange">
+              <Controller_Sequence Debug="AttackCity_TryToAttackEnemyInRange_EnemyClose">
+                <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+                <Action_Attack TargetVarName="$Target"/>
+              </Controller_Sequence>
+
+              <Controller_Sequence Debug="AttackCity_TryToAttackEnemyInRange_GotoAndAttack">
+                <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+                <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+                <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+                <Decorator_MoveEnded PathVarName="$Path"/>
+              </Controller_Sequence>
+            </Controller_Selector>
+          </Controller_Sequence>
+          
+          <Controller_Sequence Debug="MoveTowardCity">
+            <Action_GeneratePath DestinationVarName="$WorldPositionDestination" Output_PathVarName="$Path"/>
+            <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+            <Decorator_MoveEnded PathVarName="$Path"/>
+            <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+            <Action_Attack TargetVarName="$TargetCity"/>
+          </Controller_Sequence>
+
+        </Controller_Selector>
+
+      </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- Opportunist when its convenient-->
+  <AIArmyMissionDefinition Name="BesiegeCity">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$TargetCity"/>
+      <Parameter ParameterIndex="1" VarName="$MayAttack"/>
+    </Parameters>
+    <Controller_Sequence Debug="BesiegeCity_Root">
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$TargetCity" Output_DestinationVarName="$WorldPositionDestination"/>
+      
+      <!-- Try to besiege the city. -->
+      <Controller_Selector Debug="BesiegeCity_Selector">
+
+        <!-- When we are already besieging and we can defeat the city, attack. -->
+        <Controller_Sequence Debug="MoveTowardCity">
+          <Decorator_IsTargetBesieging PositiveCheckOn="YES" TargetVarName="$Army" TargetCityVarName="$TargetCity"/>
+
+          <Controller_Selector>
+            <Controller_Sequence Debug="MoveTowardCity">
+              <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+              <Decorator_CanDefeatCity PositiveCheckOn="YES" TargetVarName="$TargetCity"/>
+              <Action_Attack TargetVarName="$TargetCity"/>
+            </Controller_Sequence>
+
+            <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          </Controller_Selector>
+        </Controller_Sequence>
+
+        <!-- When we are at destination, start the siege. -->
+        <Controller_Sequence Debug="EngageCity">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Action_ToggleSiege TargetVarName="$TargetCity" State="On"/>
+        </Controller_Sequence>
+
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="BesiegeCity_TryToAttackEnemyInRange">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Enemy" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+          <Decorator_EvaluateOpportunity OpportunityPosition="$AttackWorldPositionDestination" OpportunityType="Army" MainTargetPosition="$WorldPositionDestination" MainTargetType="City"/>
+          
+          <Controller_Selector Debug="BesiegeCity_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="BesiegeCity_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="BesiegeCity_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+        
+        <Controller_Sequence Debug="MoveTowardCity">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_MoveEnded PathVarName="$Path"/>
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Action_ToggleSiege TargetVarName="$TargetCity" State="On"/>
+        </Controller_Sequence>
+
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- Opportunist when its convenient-->
+  <AIArmyMissionDefinition Name="AttackArmy">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$TargetArmy"/>
+      <Parameter ParameterIndex="1" VarName="$RegionIndex"/>
+    </Parameters>
+    <Controller_Sequence Debug="AttackArmy_Root">
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+      <Decorator_IsTargetBesieging PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$TargetArmy" Output_DestinationVarName="$WorldPositionDestination"/>
+
+      <Controller_Selector Debug="AttackArmy_Selector">
+        <Controller_Sequence Debug="EngageArmy">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Attack"/>
+          <Action_Attack TargetVarName="$TargetArmy"/>
+        </Controller_Sequence>
+
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="AttackArmy_TryToAttackEnemyInRange">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList" RegionRestriction="$RegionIndex"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Enemy" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+          <Decorator_EvaluateOpportunity OpportunityPosition="$AttackWorldPositionDestination" OpportunityType="Army" MainTargetPosition="$WorldPositionDestination" MainTargetType="Army"/>
+          
+          <Controller_Selector Debug="AttackArmy_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="AttackArmy_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="AttackArmy_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+
+        <Controller_Sequence Debug="MoveTowardArmy">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_MoveEnded PathVarName="$Path"/>
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Attack"/>
+          <Action_Attack TargetVarName="$TargetArmy"/>
+        </Controller_Sequence>
+        
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- Not Opportunist at all-->
+  <AIArmyMissionDefinition Name="FreeCity">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$TargetCity"/>
+    </Parameters>
+    <Controller_Sequence Debug="FreeCity_Root">
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Controller_Selector Debug="FreeCity_Selector">
+
+        <!--IF Ennemy sieging the city is detected THEN Engage him-->
+        <Controller_Sequence Debug="FreeCity_TryToAttackEnemyInRange">
+          <Decorator_GetSiegingArmiesInRange CityUnderSiege="$TargetCity" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" Output_TargetVarName="$Target"/>
+          <!-- Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/-->
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+
+          <Controller_Selector Debug="FreeCity_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="AttackArmy_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="FreeCity_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+
+        <Controller_Sequence Debug="FreeCity_MoveTowardCity">
+          <Decorator_GetTargetPosition TargetVarName="$TargetCity" Output_DestinationVarName="$WorldPositionDestination"/>
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+        </Controller_Sequence>
+        
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- Not Opportunist at all-->
+  <AIArmyMissionDefinition Name="BribeVillage">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$RegionIndex"/>
+      <Parameter ParameterIndex="1" VarName="$VillageToBribe"/>
+    </Parameters>
+    <Controller_Sequence Debug="BribeVillage_Root">
+
+      <!-- If army locked, wait some.-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Controller_Selector>
+        
+        <Controller_Sequence Debug="BribeVillage_TryToBribeVillage">
+          <Decorator_GetTargetPosition TargetVarName="$VillageToBribe" Output_DestinationVarName="$VillagePosition"/>
+          <Action_GeneratePath DestinationVarName="$VillagePosition" TypeOfPath="Regular" Output_PathVarName="$PathToVillage"/>
+
+          <Controller_Selector>
+            <Controller_Sequence Debug="BribeVillage_AtDestinationToBribeVillage_1">
+              <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+              <Action_Bribe TargetVarName="$VillageToBribe"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="BribeVillage_BribeVillage">
+
+              <Decorator_VariableCheck VarName="$PathToVillage" CheckOperation="Exists"/>
+              <Action_Move PathVarName="$PathToVillage" TypeOfMove="Regular"/>
+              <Decorator_MoveEnded PathVarName="$PathToVillage" TypeOfCheck="Regular"/>
+              <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+              <Action_Bribe TargetVarName="$VillageToBribe"/>
+
+            </Controller_Sequence>
+            
+        </Controller_Selector>
+
+      </Controller_Sequence>
+
+        <Controller_Sequence Debug="BribeVillage_AtDestinationToBribeVillage_2">
+          <Decorator_GetTargetPosition TargetVarName="$VillageToBribe" Output_DestinationVarName="$VillagePosition"/>
+          <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+          <Action_Bribe TargetVarName="$VillageToBribe"/>
+
+        </Controller_Sequence>
+
+    </Controller_Selector>
+      
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- Not Opportunist at all-->
+  <AIArmyMissionDefinition Name="ConvertVillage">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$RegionIndex"/>
+      <Parameter ParameterIndex="1" VarName="$VillageToConvert"/>
+    </Parameters>
+    <Controller_Sequence Debug="ConvertVillage_Root">
+
+      <!-- If army locked, wait some.-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Controller_Selector>
+
+        <Controller_Sequence Debug="ConvertVillage_TryToConvertVillage">
+          <Decorator_GetTargetPosition TargetVarName="$VillageToConvert" Output_DestinationVarName="$VillagePosition"/>
+          <Action_GeneratePath DestinationVarName="$VillagePosition" TypeOfPath="Regular" Output_PathVarName="$PathToVillage"/>
+
+          <Controller_Selector>
+            <Controller_Sequence Debug="ConvertVillage_AtDestinationToConvertVillage_1">
+              <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+              <Action_ConvertVillage TargetVarName="$VillageToConvert"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="ConvertVillage_ConvertVillage">
+
+              <Decorator_VariableCheck VarName="$PathToVillage" CheckOperation="Exists"/>
+              <Action_Move PathVarName="$PathToVillage" TypeOfMove="Regular"/>
+              <Decorator_MoveEnded PathVarName="$PathToVillage" TypeOfCheck="Regular"/>
+              <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+              <Action_ConvertVillage TargetVarName="$VillageToConvert"/>
+
+            </Controller_Sequence>
+
+          </Controller_Selector>
+
+        </Controller_Sequence>
+
+        <Controller_Sequence Debug="ConvertVillage_AtDestinationToConvertVillage_2">
+          <Decorator_GetTargetPosition TargetVarName="$VillageToConvert" Output_DestinationVarName="$VillagePosition"/>
+          <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+          <Action_ConvertVillage TargetVarName="$VillageToConvert"/>
+
+        </Controller_Sequence>
+
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+  
+  <!-- Opportunist 100%-->
+  <AIArmyMissionDefinition Name="PacifyVillage">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$Village"/>
+    </Parameters>
+    <Controller_Sequence Debug="PacifyVillage_Root">
+
+      <!--IF Army locked (in battle) THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$Village" Output_DestinationVarName="$WorldPositionDestination"/>
+
+      <Controller_Selector Debug="PacifyVillage_Root2">
+        <Controller_Sequence Debug="BribeVillage">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Action_Bribe TargetVarName="$Village"/>
+        </Controller_Sequence>        
+        
+        <Controller_Sequence Debug="EngageVillage">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Action_Attack TargetVarName="$Village"/>
+        </Controller_Sequence>
+
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="PacifyVillage_TryToAttackEnemyInRange">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Enemy" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+          <Decorator_EvaluateOpportunity OpportunityPosition="$AttackWorldPositionDestination" OpportunityType="Army" MainTargetPosition="$WorldPositionDestination" MainTargetType="Army"/>
+
+          <Controller_Selector Debug="PacifyVillage_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="PacifyVillage_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="PacifyVillage_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>       
+        
+        <Controller_Sequence Debug="PacifyVillage_MoveTowardVillageToEngage">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" Output_PathVarName="$Path"/>
+
+          <Controller_Selector Debug="PacifyVillage_MoveAndEngageOrMove">
+            <Controller_Sequence Debug="PacifyVillage_MoveToward">
+              <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+              <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+              <Action_Attack TargetVarName="$Village"/>
+            </Controller_Sequence>
+            
+          </Controller_Selector>
+        </Controller_Sequence>
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- 100% Opportunist in principle-->
+  <AIArmyMissionDefinition Name="PacifyFirstRegion">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$RegionIndex"/>
+      <Parameter ParameterIndex="1" VarName="$VillageToDestroy"/>
+    </Parameters>
+    <Controller_Sequence Debug="PacifyFirstRegion_Root">
+
+      <!-- If army locked, wait some.-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Controller_Selector>
+        <!-- First, try to locate any army around. -->
+        <!-- Then, try to locate any village around. -->
+        <Controller_Sequence Debug="PacifyFirstRegion_TryToDestroyVillage">
+          <Decorator_GetTargetPosition TargetVarName="$VillageToDestroy" Output_DestinationVarName="$VillagePosition"/>
+          <Decorator_CheckPositionVisibility PositionVarName="$VillagePosition"/>
+          
+          <Action_GeneratePath DestinationVarName="$VillagePosition" TypeOfPath="Regular" Output_PathVarName="$PathToVillage"/>
+          <Decorator_CheckPathLength PathVarName="$PathToVillage" Value="5" CheckOperation="Lesser"/>
+          
+          <Controller_Selector>
+            <Controller_Sequence Debug="PacifyFirstRegion_DestroyVillage">
+              <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+              <Action_Attack TargetVarName="$VillageToDestroy"/>
+            </Controller_Sequence>
+            
+            <Action_GotoAndAttack PathVarName="$PathToVillage" TypeOfMove="Regular" TargetVarName="$VillageToDestroy"/>              
+          </Controller_Selector>
+        </Controller_Sequence>
+        
+        <!-- Finally move To the village to attack. -->
+        <Controller_Sequence Debug="PacifyFirstRegion_GoToVillage">                    
+          <Controller_Selector>
+            <Controller_Sequence Debug="PacifyFirstRegion_GoToVillage_EndingCondition">
+              <Decorator_VariableCheck VarName="$VillagePosition" CheckOperation="Exists"/>
+              <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+              <Action_Attack TargetVarName="$VillageToDestroy"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="PacifyFirstRegion_GoToVillage_GoToPreviousTarget">
+              <Decorator_VariableCheck VarName="$VillagePosition" CheckOperation="Exists"/>
+              <Action_GeneratePath DestinationVarName="$VillagePosition" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+            </Controller_Sequence>
+            
+            <Controller_Sequence Debug="PacifyFirstRegion_GoToVillage_GetTarget">
+              <Decorator_GetTargetPosition TargetVarName="$VillageToDestroy" Output_DestinationVarName="$VillagePosition"/>
+              <Action_GeneratePath DestinationVarName="$VillagePosition" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+
+          <Controller_Sequence Debug="PacifyFirstRegion_Move">
+            <Decorator_VariableCheck VarName="$Path" CheckOperation="Exists"/>
+            <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+            <Decorator_MoveEnded PathVarName="$Path" TypeOfCheck="Regular"/>
+            <Decorator_DestinationReached DestinationVarName="$VillagePosition" TypeOfCheck="Regular"/>
+          </Controller_Sequence>
+           
+        </Controller_Sequence>
+
+      </Controller_Selector>
+      
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- Opportunist when convenient -->
+  <AIArmyMissionDefinition Name="DestroyVillage">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$Village"/>
+      <Parameter ParameterIndex="1" VarName="$RegionIndex"/>
+    </Parameters>
+    <Controller_Sequence Debug="DestroyVillage_Root">
+
+      <!--IF Army locked (in battle) THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$Village" Output_DestinationVarName="$WorldPositionDestination"/>
+
+      <Controller_Selector Debug="DestroyVillage_Root2">
+    
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="DestroyVillage_TryToAttackEnemyInRange">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList" RegionRestriction="$RegionIndex"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Enemy" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+          <Decorator_EvaluateOpportunity OpportunityPosition="$AttackWorldPositionDestination" OpportunityType="Army" MainTargetPosition="$WorldPositionDestination" MainTargetType="Village"/>
+          
+          <Controller_Selector Debug="DestroyVillage_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="DestroyVillage_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="DestroyVillage_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+
+        <Controller_Sequence Debug="DestroyVillage_EngageVillage">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Action_Attack TargetVarName="$Village"/>
+        </Controller_Sequence>
+
+        <Controller_Sequence Debug="DestroyVillage_MoveTowardVillageToEngage">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" Output_PathVarName="$Path"/>
+
+          <Controller_Selector Debug="DestroyVillage_MoveAndEngageOrMove">
+
+            <Controller_Sequence Debug="DestroyVillage_MoveToward">
+              <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+              <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+              <Action_Attack TargetVarName="$Village"/>
+            </Controller_Sequence>
+
+          </Controller_Selector>
+        </Controller_Sequence>
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- Not Opportunist at all-->
+  <AIArmyMissionDefinition Name="ConvertToPrivateers">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$TargetCity"/>
+    </Parameters>
+    <Controller_Sequence Debug="ConvertToPrivateers_Root">
+
+      <!--IF Army locked (in battle) THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$TargetCity" Output_DestinationVarName="$WorldPositionDestination"/>
+
+      <Controller_Selector Debug="ConvertToPrivateers_Root2">
+        <!-- Not a privateers army? go to the closest region of the same empire and convert there-->
+        <Controller_Sequence Debug="ConvertToPrivateers_ArmyIsNotPrivateer">
+          <Decorator_IsPrivateersArmy PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+          <!--Go to nearest city of the same empire and convert to a Privateers Army-->
+          <Controller_Sequence Debug="ConvertToPrivateers_TryToConvert">
+            <!-- Ask for a destination. -->
+            <Controller_Selector>
+              <Controller_Sequence Debug="ConvertToPrivateers_TryConvertToPrivateers">
+                <Action_ConvertToPrivateers />
+              </Controller_Sequence>
+
+              <Controller_Sequence Debug="ConvertToPrivateers_GoToDestination">
+
+                <Controller_Selector>
+                  <Controller_Sequence Debug="ConvertToPrivateers_ConvertTargetReached">
+                    <Decorator_VariableCheck VarName="$ConvertDestination" CheckOperation="Exists"/>
+                    <Decorator_DestinationReached DestinationVarName="$ConvertDestination" TypeOfCheck="Regular"/>
+                    <Decorator_GetConvertToPrivateersTargetPosition Output_DestinationVarName="$ConvertDestination"/>
+                    <Action_ConvertToPrivateers TargetVarName="$Army"/>
+                  </Controller_Sequence>
+
+                  <Controller_Sequence Debug="ConvertToPrivateers_GoToConvertTarget">
+                    <Decorator_VariableCheck VarName="$ConvertDestination" CheckOperation="Exists"/>
+                    <Action_GeneratePath DestinationVarName="$ConvertDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+                  </Controller_Sequence>
+
+                  <Controller_Sequence Debug="ConvertToPrivateers_FirstTime">
+                    <Decorator_GetConvertToPrivateersTargetPosition Output_DestinationVarName="$ConvertDestination"/>
+                    <Action_GeneratePath DestinationVarName="$ConvertDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+                  </Controller_Sequence>
+
+                </Controller_Selector>
+
+                <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+                <Decorator_MoveEnded PathVarName="$Path" TypeOfCheck="Regular"/>
+                <Decorator_DestinationReached DestinationVarName="$ConvertDestination" TypeOfCheck="Regular"/>
+              </Controller_Sequence>
+
+            </Controller_Selector>
+          </Controller_Sequence>
+
+        </Controller_Sequence>
+
+        <!-- Is a privateers army? Sucess-->
+        <Controller_Sequence Debug="ConvertToPrivateers_ArmyIsPrivateer">
+          <Decorator_IsPrivateersArmy PositiveCheckOn="YES" TargetVarName="$Army"/>
+        </Controller_Sequence>
+      </Controller_Selector>
+
+    </Controller_Sequence>
+  </AIArmyMissionDefinition>
+  
+  <!--LesserAttackCity is not opportunist it will only targets the city without attacking any army -->
+  <AIArmyMissionDefinition Name="LesserAttackCity">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$TargetCity"/>
+      <Parameter ParameterIndex="1" VarName="$SiegeTurnsNumber"/>
+    </Parameters>
+
+    <Controller_Sequence Debug="LesserAttackCity_Root">
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$TargetCity" Output_DestinationVarName="$WorldPositionDestination"/>
+    
+      <!-- based on target type don't do the same stuff-->	  
+      <Controller_Selector Debug="LesserAttackCity_Root2">
+        <Controller_Sequence Debug="Lesser_AttackCity">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Controller_Selector Debug="LesserAttackCity_TryAttackOrSiegeCity">
+            <Controller_Sequence Debug="LesserAttackCity_TryAttackCity_CanAttack">
+              <Decorator_CityInteractionCheck CityInteractionType="Attack" TargetVarName="$TargetCity" SiegeTurnsNumberVarName="$SiegeTurnsNumber"/>
+              <Controller_Selector Debug="LesserAttackCity_TryAttackCity_Attack">
+                <Controller_Sequence Debug="LesserAttackCity_TryAttackCity_CanAttack_RemoveSiege">
+                  <Decorator_IsTargetBesieging PositiveCheckOn="YES" TargetVarName="$Army" TargetCityVarName="$TargetCity"/>
+                  <Action_Attack TargetVarName="$TargetCity"/>
+                </Controller_Sequence>
+                
+                <Action_Attack TargetVarName="$TargetCity"/>
+              </Controller_Selector>
+              
+            </Controller_Sequence>                    
+            
+            <Controller_Sequence Debug="LesserAttackCity_TryAttackCity_CanSiege">
+              <Decorator_CityInteractionCheck CityInteractionType="Siege" TargetVarName="$TargetCity" SiegeTurnsNumberVarName="$SiegeTurnsNumber"/>
+              <Decorator_IsTargetBesieging PositiveCheckOn="NO" TargetVarName="$Army" TargetCityVarName="$TargetCity"/>
+              <Action_ToggleSiege TargetVarName="$TargetCity" State="On"/>                    
+            </Controller_Sequence>														
+      
+            <Controller_Sequence Debug="LesserAttackCity_TryAttackCity_Wait">
+              <Decorator_VariableCheck VarName="$TargetCity" CheckOperation="Exists"/>					
+            </Controller_Sequence>
+          </Controller_Selector>  			
+        </Controller_Sequence>
+            
+        <Controller_Sequence Debug="LesserAttackCity_MoveTowardTarget">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+        </Controller_Sequence>		
+      </Controller_Selector>	  
+    
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+  
+  <!-- Minor besiege city only. -->
+
+  <!-- Opportunist when its convenient-->
+  <AIArmyMissionDefinition Name="MinorOnlyBesiegeCity">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$TargetCity"/>
+    </Parameters>
+    <Controller_Sequence Debug="BesiegeCity_Root">
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Decorator_GetTargetPosition TargetVarName="$TargetCity" Output_DestinationVarName="$WorldPositionDestination"/>
+
+      <!-- Try to besiege the city. -->
+      <Controller_Selector Debug="BesiegeCity_Selector">
+
+        <!-- When we are already besieging and we can defeat the city, attack. -->
+        <Controller_Sequence Debug="AlreadyAtTheBesiegedCity">
+          <Decorator_IsTargetBesieging PositiveCheckOn="YES" TargetVarName="$Army" TargetCityVarName="$TargetCity"/>
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>          
+        </Controller_Sequence>
+
+        <!-- When we are at destination, start the siege. -->
+        <Controller_Sequence Debug="EngageCity">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Action_ToggleSiege TargetVarName="$TargetCity" State="On"/>
+        </Controller_Sequence>
+
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="BesiegeCity_TryToAttackEnemyInRange">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Enemy" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+          <Decorator_EvaluateOpportunity OpportunityPosition="$AttackWorldPositionDestination" OpportunityType="Army" MainTargetPosition="$WorldPositionDestination" MainTargetType="City"/>
+
+          <Controller_Selector Debug="BesiegeCity_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="BesiegeCity_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="BesiegeCity_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+
+        <Controller_Sequence Debug="MoveTowardCity">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_MoveEnded PathVarName="$Path"/>
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+          <Action_ToggleSiege TargetVarName="$TargetCity" State="On"/>
+        </Controller_Sequence>
+
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+</Datatable>

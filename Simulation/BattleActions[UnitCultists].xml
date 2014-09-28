@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+  <!-- #################################    BATTLE ACTIONS WITH THE VISUAL DATA AND SPECIFIC GAMEPLAY   ########################################### -->
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+  
+  <!-- ===================================== CULTIST NAMELESS GUARD ======================================== -->
+  <!-- Default Hit -->
+  <BattleActionUnit Name="BattleActionUnitCultistsNamelessGuardAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Vaulters_Arrow_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" Angle="45" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Vaulters_Arrow_01" RangeRestriction="CloseRange" Speed="5" Trajectory="linear" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+    </BattleActionData>
+  </BattleActionUnit>
+
+  <!-- ===================================== CULTIST PREACHER ======================================== -->
+  <!-- Default Hit  -->
+  <BattleActionUnit Name="BattleActionUnitCultistsPreacherAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense Support">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Cultists_Preacher_01" RangeRestriction="LongRange" Speed="3" Trajectory="parabolic" AccelerationDistance="0.2" SpeedReductionFactorMax="0.50" Angle="45" OriginBoneName="Cav_LeftHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90">
+	    <ImpactFx>Pr_Cultists_Preacher_01_Hit</ImpactFx>
+	  </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Cultists_Preacher_01" RangeRestriction="LongRange" Speed="3" Trajectory="parabolic" AccelerationDistance="0.2" SpeedReductionFactorMax="0.2" Angle="45" OriginBoneName="Cav_RightHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90">
+	    <ImpactFx>Pr_Cultists_Preacher_01_Hit</ImpactFx>
+	  </Projectile>
+	  
+	  
+	  <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Cultists_Preacher_01" RangeRestriction="CloseRange" Speed="3" Trajectory="parabolic" AccelerationDistance="0.2" SpeedReductionFactorMax="0.8" Angle="3" OriginBoneName="Cav_LeftHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90">
+	    <ImpactFx>Pr_Cultists_Preacher_01_Hit</ImpactFx>
+	  </Projectile>
+	  <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Cultists_Preacher_01" RangeRestriction="CloseRange" Speed="3" Trajectory="parabolic" AccelerationDistance="0.2" SpeedReductionFactorMax="0.8" Angle="3" OriginBoneName="Cav_RightHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90">
+	    <ImpactFx>Pr_Cultists_Preacher_01_Hit</ImpactFx>
+	  </Projectile>
+    </BattleActionData>
+  </BattleActionUnit>
+</Datatable>

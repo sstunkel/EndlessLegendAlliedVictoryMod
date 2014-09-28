@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################ -->
+  <!-- #######       FOOD       ####### -->
+  <!-- ################################ -->
+
+  <!-- Public Granary -->
+  <GuiElement Name="CityImprovementFood0">
+    <Title>%CityImprovementFood0Title</Title>
+    <Description>%CityImprovementFood0Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood0Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood0Large" /> 
+    </Icons>
+  </GuiElement>
+  
+  <!-- Double unlock : Seed Storage -->
+  <GuiElement Name="CityImprovementFood1">
+    <Title>%CityImprovementFood1Title</Title>
+    <Description>%CityImprovementFood1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood1Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood1Large" /> 
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementFood7">
+    <Title>%CityImprovementFood7Title</Title>
+    <Description>%CityImprovementFood7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood7Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood7Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Public granary -->
+  <GuiElement Name="CityImprovementFood2">
+    <Title>%CityImprovementFood2Title</Title>
+    <Description>%CityImprovementFood2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood2Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood2Large" /> 
+    </Icons>
+  </GuiElement>
+  
+  <!-- Double unlock : Refrigeration Plant -->
+  <GuiElement Name="CityImprovementFood3">
+    <Title>%CityImprovementFood3Title</Title>
+    <Description>%CityImprovementFood3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood3Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood3Large" /> 
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementFood9">
+    <Title>%CityImprovementFood9Title</Title>
+    <Description>%CityImprovementFood9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood9Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood9Large" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- Double unlock : Fertilizer Plant -->
+  <GuiElement Name="CityImprovementFood4">
+    <Title>%CityImprovementFood4Title</Title>
+    <Description>%CityImprovementFood4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood4Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood4Large" /> 
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementFood10">
+    <Title>%CityImprovementFood10Title</Title>
+    <Description>%CityImprovementFood10Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood10Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood10Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementFood8">
+    <Title>%CityImprovementFood8Title</Title>
+    <Description>%CityImprovementFood8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood8Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood8Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--Subterranean Gardens-->
+  <!--<GuiElement Name="CityImprovementFood5">
+    <Title>%CityImprovementFood5Title</Title>
+    <Description>%CityImprovementFood5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood5Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood5Large" /> 
+    </Icons>
+  </GuiElement>-->
+
+  <!--Invariant Chamber-->
+  <!--<GuiElement Name="CityImprovementFood6">
+    <Title>%CityImprovementFood6Title</Title>
+    <Description>%CityImprovementFood6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFood6Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFood6Large" /> 
+    </Icons>
+  </GuiElement>-->
+  
+
+
+  <!-- ################################ -->
+  <!-- ######      INDUSTRY      ###### -->
+  <!-- ################################ -->
+
+  <!-- Mill Foundry -->
+  <GuiElement Name="CityImprovementIndustry0">
+    <Title>%CityImprovementIndustry0Title</Title>
+    <Description>%CityImprovementIndustry0Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry0Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry0Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <!-- Double unlock : Lumber Mill & Quarry -->
+  <GuiElement Name="CityImprovementIndustry1">
+    <Title>%CityImprovementIndustry1Title</Title>
+    <Description>%CityImprovementIndustry1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry1Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry1Large" /> 
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementIndustry7">
+    <Title>%CityImprovementIndustry7Title</Title>
+    <Description>%CityImprovementIndustry7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry7Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry7Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Canal System -->
+  <GuiElement Name="CityImprovementIndustry2">
+    <Title>%CityImprovementIndustry2Title</Title>
+    <Description>%CityImprovementIndustry2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry2Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry2Large" /> 
+    </Icons>
+  </GuiElement>
+  
+  <!-- Production Line -->
+  <GuiElement Name="CityImprovementIndustry3">
+    <Title>%CityImprovementIndustry3Title</Title>
+    <Description>%CityImprovementIndustry3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry3Large" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- Automated Production -->
+  <GuiElement Name="CityImprovementIndustry4">
+    <Title>%CityImprovementIndustry4Title</Title>
+    <Description>%CityImprovementIndustry4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry4Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry4Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <!--Inanimate Builders-->
+  <!--<GuiElement Name="CityImprovementIndustry5">
+    <Title>%CityImprovementIndustry5Title</Title>
+    <Description>%CityImprovementIndustry5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry5Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry5Large" />
+    </Icons>
+  </GuiElement>-->
+
+  <!-- Double unlock : Mining Rights -->
+  <GuiElement Name="CityImprovementIndustry6">
+    <Title>%CityImprovementIndustry6Title</Title>
+    <Description>%CityImprovementIndustry6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry6Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry6Large" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementIndustry8">
+    <Title>%CityImprovementIndustry8Title</Title>
+    <Description>%CityImprovementIndustry8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementIndustry8Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementIndustry8Large" />
+    </Icons>
+  </GuiElement>
+
+
+  
+  <!-- ################################ -->
+  <!-- #######       DUST       ####### -->
+  <!-- ################################ -->
+  <!-- Empire Mint -->
+  <GuiElement Name="CityImprovementDust0">
+    <Title>%CityImprovementDust0Title</Title>
+    <Description>%CityImprovementDust0Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust0Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust0Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <!-- Double unlock : Dust Refinery -->
+  <GuiElement Name="CityImprovementDust1">
+    <Title>%CityImprovementDust1Title</Title>
+    <Description>%CityImprovementDust1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust1Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust1Large" /> 
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementDust7">
+    <Title>%CityImprovementDust7Title</Title>
+    <Description>%CityImprovementDust7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust7Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust7Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Imperial Treasury -->
+  <GuiElement Name="CityImprovementDust2">
+    <Title>%CityImprovementDust2Title</Title>
+    <Description>%CityImprovementDust2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust2Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust2Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <!-- Dust Depository -->
+  <GuiElement Name="CityImprovementDust3">
+    <Title>%CityImprovementDust3Title</Title>
+    <Description>%CityImprovementDust3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust3Large" />
+    </Icons>
+  </GuiElement>
+ 
+  <!-- Double unlock : Dust Revitalizer --> 
+  <GuiElement Name="CityImprovementDust4">
+    <Title>%CityImprovementDust4Title</Title>
+    <Description>%CityImprovementDust4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust4Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust4Large" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementDust8">
+    <Title>%CityImprovementDust8Title</Title>
+    <Description>%CityImprovementDust8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust8Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust8Large" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="CityImprovementDust5">
+    <Title>%CityImprovementDust5Title</Title>
+    <Description>%CityImprovementDust5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust5Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--Dust-Driven Distillery-->
+  <GuiElement Name="CityImprovementDust6">
+    <Title>%CityImprovementDust6Title</Title>
+    <Description>%CityImprovementDust6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDust6Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDust6Large" /> 
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################ -->
+  <!-- ######      SCIENCE       ###### -->
+  <!-- ################################ -->
+
+  <!-- Public Library -->
+  <GuiElement Name="CityImprovementScience0">
+    <Title>%CityImprovementScience0Title</Title>
+    <Description>%CityImprovementScience0Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience0Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience0Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <!-- Era 1 : Geomic Labs -->
+  <GuiElement Name="CityImprovementScience8">
+    <Title>%CityImprovementScience8Title</Title>
+    <Description>%CityImprovementScience8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience8Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience8Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Alchemy Workshop -->
+  <GuiElement Name="CityImprovementScience3">
+    <Title>%CityImprovementScience3Title</Title>
+    <Description>%CityImprovementScience3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Double unlock : Advanced Alchemy Lab -->
+  <GuiElement Name="CityImprovementScience2">
+    <Title>%CityImprovementScience2Title</Title>
+    <Description>%CityImprovementScience2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience2Large" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementScience9">
+    <Title>%CityImprovementScience9Title</Title>
+    <Description>%CityImprovementScience9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience9Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience9Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Double unlock : Large-scale Aquatic Center -->
+  <GuiElement Name="CityImprovementScience1">
+    <Title>%CityImprovementScience1Title</Title>
+    <Description>%CityImprovementScience1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience1Large" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementScience7">
+    <Title>%CityImprovementScience7Title</Title>
+    <Description>%CityImprovementScience7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience7Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience7Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--Imperial Funding-->
+  <GuiElement Name="CityImprovementScience4">
+    <Title>%CityImprovementScience4Title</Title>
+    <Description>%CityImprovementScience4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience4Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience4Large" /> 
+    </Icons>
+  </GuiElement>
+
+  <!-- Double unlock : Living Lab Tools & The Crystal Labyrinth -->
+  <GuiElement Name="CityImprovementScience5">
+    <Title>%CityImprovementScience5Title</Title>
+    <Description>%CityImprovementScience5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience5Small" /> 
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience5Large" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementScience6">
+    <Title>%CityImprovementScience6Title</Title>
+    <Description>%CityImprovementScience6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementScience6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementScience6Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################ -->
+  <!-- #####    Empire points     ##### -->
+  <!-- ################################ -->
+
+  <!-- Aura of Empire -->
+  <GuiElement Name="CityImprovementEmpirePoint1">
+    <Title>%CityImprovementEmpirePoint1Title</Title>
+    <Description>%CityImprovementEmpirePoint1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint1Large" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- National Museum -->
+  <GuiElement Name="CityImprovementEmpirePoint2">
+    <Title>%CityImprovementEmpirePoint2Title</Title>
+    <Description>%CityImprovementEmpirePoint2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint2Large" />
+    </Icons>
+  </GuiElement>
+
+    <!-- Glory of Empire -->
+  <GuiElement Name="CityImprovementEmpirePoint3">
+    <Title>%CityImprovementEmpirePoint3Title</Title>
+    <Description>%CityImprovementEmpirePoint3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--Arena of Champions-->
+  <GuiElement Name="CityImprovementEmpirePoint4">
+    <Title>%CityImprovementEmpirePoint4Title</Title>
+    <Description>%CityImprovementEmpirePoint4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementEmpirePoint4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementEmpirePoint4Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################ -->
+  <!-- ######      Approval      ###### -->
+  <!-- ################################ -->
+
+  <!-- Sewer System -->
+  <GuiElement Name="CityImprovementApproval1">
+    <Title>%CityImprovementApproval1Title</Title>
+    <Description>%CityImprovementApproval1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementApproval1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementApproval1Large" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- Central Market -->
+  <GuiElement Name="CityImprovementApproval2">
+    <Title>%CityImprovementApproval2Title</Title>
+    <Description>%CityImprovementApproval2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementApproval2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementApproval2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementApproval3">
+    <Title>%CityImprovementApproval3Title</Title>
+    <Description>%CityImprovementApproval3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementApproval3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementApproval3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--Imperial News Network-->
+  <GuiElement Name="CityImprovementApproval4">
+    <Title>%CityImprovementApproval4Title</Title>
+    <Description>%CityImprovementApproval4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementApproval4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementApproval4Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--<GuiElement Name="CityImprovementApproval5">
+    <Title>%CityImprovementApproval5Title</Title>
+    <Description>%CityImprovementApproval5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementApproval5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementApproval5Large" />
+    </Icons>
+  </GuiElement>-->
+
+
+
+  <!-- ############################## -->
+  <!-- ######   Trade routes   ###### -->
+  <!-- ############################## -->
+
+  <GuiElement Name="CityImprovementTradeRoutes1">
+    <Title>%CityImprovementTradeRoutes1Title</Title>
+    <Description>%CityImprovementTradeRoutes1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementTradeRoutes1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementTradeRoutes1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementTradeRoutes2">
+    <Title>%CityImprovementTradeRoutes2Title</Title>
+    <Description>%CityImprovementTradeRoutes2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementTradeRoutes2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementTradeRoutes2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementTradeRoutes3">
+    <Title>%CityImprovementTradeRoutes3Title</Title>
+    <Description>%CityImprovementTradeRoutes3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementTradeRoutes3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementTradeRoutes3Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--<GuiElement Name="CityImprovementTradeRoutes4">
+    <Title>%CityImprovementTradeRoutes4Title</Title>
+    <Description>%CityImprovementTradeRoutes4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementTradeRoutes4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementTradeRoutes4Large" />
+    </Icons>
+  </GuiElement>-->
+
+
+
+  <!-- ############################# -->
+  <!-- ######      Roads      ###### -->
+  <!-- ############################# -->
+
+  <!--Right of Way-->
+  <ExtendedGuiElement Name="CityImprovementRoads">
+    <Title>%CityImprovementRoadsTitle</Title>
+    <Description>%CityImprovementRoadsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRoadsSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRoadsLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%LandRoadCreationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+
+
+  <!-- ###################################### -->
+  <!-- ####  Military Recruitment Bonus  #### -->
+  <!-- ###################################### -->
+
+  <GuiElement Name="CityImprovementMilitaryRecruitmentBonus1">
+    <Title>%CityImprovementMilitaryRecruitmentBonus1Title</Title>
+    <Description>%CityImprovementMilitaryRecruitmentBonus1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementMilitaryXP1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementMilitaryXP1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementMilitaryRecruitmentBonus3">
+    <Title>%CityImprovementMilitaryRecruitmentBonus3Title</Title>
+    <Description>%CityImprovementMilitaryRecruitmentBonus3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementMilitaryXP3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementMilitaryXP3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementMilitaryRecruitmentBonus5">
+    <Title>%CityImprovementMilitaryRecruitmentBonus5Title</Title>
+    <Description>%CityImprovementMilitaryRecruitmentBonus5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementMilitaryXP5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementMilitaryXP5Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ##################################### -->
+  <!-- ######   Unit cost reduction   ###### -->
+  <!-- ##################################### -->
+
+  <!--<GuiElement Name="CityImprovementUnitCostReduction1">
+    <Title>%CityImprovementUnitCostReduction1Title</Title>
+    <Description>%CityImprovementUnitCostReduction1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementUnitCostReduction1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementUnitCostReduction1Large" />
+    </Icons>
+  </GuiElement>-->
+
+  <GuiElement Name="CityImprovementUnitCostReduction3">
+    <Title>%CityImprovementUnitCostReduction3Title</Title>
+    <Description>%CityImprovementUnitCostReduction3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementUnitCostReduction3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementUnitCostReduction3Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################ -->
+  <!-- ######   Defense points   ###### -->
+  <!-- ################################ -->
+  
+  <!-- Double unlock : Stronghold Architecture & Infantry Cantina -->
+  <GuiElement Name="CityImprovementDefense1">
+    <Title>%CityImprovementDefense1Title</Title>
+    <Description>%CityImprovementDefense1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense1Large" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="CityImprovementDefense5">
+    <Title>%CityImprovementDefense5Title</Title>
+    <Description>%CityImprovementDefense5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense5Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementDefense2">
+    <Title>%CityImprovementDefense2Title</Title>
+    <Description>%CityImprovementDefense2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementDefense3">
+    <Title>%CityImprovementDefense3Title</Title>
+    <Description>%CityImprovementDefense3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementDefense4">
+    <Title>%CityImprovementDefense4Title</Title>
+    <Description>%CityImprovementDefense4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefense4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefense4Large" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ############################### -->
+  <!-- ######   Unit HP regen   ###### -->
+  <!-- ############################### -->
+
+  <GuiElement Name="CityImprovementUnitRegeneration1">
+    <Title>%CityImprovementUnitRegeneration1Title</Title>
+    <Description>%CityImprovementUnitRegeneration1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementUnitRegeneration1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementUnitRegeneration1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementUnitRegeneration2">
+    <Title>%CityImprovementUnitRegeneration2Title</Title>
+    <Description>%CityImprovementUnitRegeneration2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementLifeRegeneration2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementLifeRegeneration2Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ####################################### -->
+  <!-- ######   City defense recovery   ###### -->
+  <!-- ####################################### -->
+
+  <GuiElement Name="CityImprovementDefenseRecovery1">
+    <Title>%CityImprovementDefenseRecovery1Title</Title>
+    <Description>%CityImprovementDefenseRecovery1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDefenseRecovery1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDefenseRecovery1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!--<GuiElement Name="CityImprovementDefenseRecovery2">
+    <Title>%CityImprovementDefenseRecovery2Title</Title>
+    <Description>%CityImprovementDefenseRecovery2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/#DebugSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/#DebugLarge" />
+    </Icons>
+  </GuiElement>-->
+
+
+
+  <!-- ################################# -->
+  <!-- ######    FIDS building    ###### -->
+  <!-- ################################# -->
+
+  <GuiElement Name="CityImprovementFIDS1">
+    <Title>%CityImprovementFIDS1Title</Title>
+    <Description>%CityImprovementFIDS1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFIDS1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFIDS1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementFIDS1BrokenLords">
+    <Title>%CityImprovementFIDS1Title</Title>
+    <Description>%CityImprovementFIDS1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFIDS1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFIDS1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementFIDS1Tutorial">
+    <Title>%CityImprovementFIDS1Title</Title>
+    <Description>%CityImprovementFIDS1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementFIDS1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementFIDS1Large" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ################################## -->
+  <!-- ######   Capitol building   ###### -->
+  <!-- ################################## -->
+
+  <GuiElement Name="CityImprovementCapitol">
+    <Title>%CityImprovementCapitolTitle</Title>
+    <Description>%CityImprovementCapitolDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementCapitolSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementCapitolLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementCapitolTutorial">
+    <Title>%CityImprovementCapitolTitle</Title>
+    <Description>%CityImprovementCapitolDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementCapitolSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementCapitolLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################## -->
+  <!-- #####   City hall building   ##### -->
+  <!-- ################################## -->
+
+  <GuiElement Name="CityImprovementCityHall">
+    <Title>%CityImprovementCityHallTitle</Title>
+    <Description>%CityImprovementCityHallDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementCityHallSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementCityHallLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementCityHallBrokenLords">
+    <Title>%CityImprovementCityHallTitle</Title>
+    <Description>%CityImprovementCityHallDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementCityHallSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementCityHallLarge" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ########################################### -->
+  <!-- ######   Secondary Quest buildings   ###### -->
+  <!-- ########################################### -->
+
+  <GuiElement Name="CityImprovementSideQuestVillage003">
+    <Title>%CityImprovementSideQuestVillage003Title</Title>
+    <Description>%CityImprovementSideQuestVillage003Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementSideQuestVillage3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementSideQuestVillage3Large" />
+    </Icons>
+  </GuiElement>
+
+
+  <!-- ################################### -->
+  <!-- ######   Victory buildings   ###### -->
+  <!-- ################################### -->
+
+  <ExtendedGuiElement Name="CityImprovementEndlessTemple">
+    <Title>%CityImprovementEndlessTempleTitle</Title>
+    <Description>%CityImprovementEndlessTempleDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementEndlessTempleSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementEndlessTempleLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%CityImprovementEndlessTempleTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+
+
+  <!-- ########################################### -->
+  <!-- ######        Faction Specific       ###### -->
+  <!-- ########################################### -->
+
+  <GuiElement Name="CityImprovementVaulters3">
+    <Title>%CityImprovementVaulters3Title</Title>
+    <Description>%CityImprovementVaulters3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters3Large" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="CityImprovementVaulters6">
+    <Title>%CityImprovementVaulters6Title</Title>
+    <Description>%CityImprovementVaulters6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters6Large" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%CityImprovementVaulters6TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <GuiElement Name="CityImprovementVaulters2">
+    <Title>%CityImprovementVaulters2Title</Title>
+    <Description>%CityImprovementVaulters2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementVaulters9">
+    <Title>%CityImprovementVaulters9Title</Title>
+    <Description>%CityImprovementVaulters9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters9Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters9Large" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="CityImprovementVaulters4">
+    <Title>%CityImprovementVaulters4Title</Title>
+    <Description>%CityImprovementVaulters4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters4Large" />
+    </Icons>
+  </GuiElement>
+  
+  <ExtendedGuiElement Name="CityImprovementVaulters4TooltipEffect">
+    <TooltipElement>
+      <EffectOverride>%CityImprovementVaulters4TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <GuiElement Name="CityImprovementMadFairies5">
+    <Title>%CityImprovementMadFairies5Title</Title>
+    <Description>%CityImprovementMadFairies5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementMadFairies5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementMadFairies5Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementBrokenLords7">
+    <Title>%CityImprovementBrokenLords7Title</Title>
+    <Description>%CityImprovementBrokenLords7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementBrokenLords7Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementBrokenLords7Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementNecrophages7">
+    <Title>%CityImprovementNecrophages7Title</Title>
+    <Description>%CityImprovementNecrophages7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementNecrophages7Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementNecrophages7Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementNecrophages9">
+    <Title>%CityImprovementNecrophages9Title</Title>
+    <Description>%CityImprovementNecrophages9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementNecrophages9Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementNecrophages9Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementRageWizards2">
+    <Title>%CityImprovementRageWizards2Title</Title>
+    <Description>%CityImprovementRageWizards2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRageWizards2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRageWizards2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementRageWizards4Strategic46">
+    <Title>%CityImprovementRageWizards4Title</Title>
+    <Description>%CityImprovementRageWizards4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRageWizards4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRageWizards4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementRageWizards4Strategic35">
+    <Title>%CityImprovementRageWizards4Title</Title>
+    <Description>%CityImprovementRageWizards4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRageWizards4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRageWizards4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementRovingClans2">
+    <Title>%CityImprovementRovingClans2Title</Title>
+    <Description>%CityImprovementRovingClans2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRovingClans2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRovingClans2Large" />
+    </Icons>
+  </GuiElement>
+  
+  <ExtendedGuiElement Name="CityImprovementRovingClans4">
+    <Title>%CityImprovementRovingClans4Title</Title>
+    <Description>%CityImprovementRovingClans4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementRovingClans4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementRovingClans4Large" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%CityImprovementRovingClans4TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="CityImprovementDrakkens2">
+    <Title>%CityImprovementDrakkens2Title</Title>
+    <Description>%CityImprovementDrakkens2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDrakkens2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDrakkens2Large" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%CityImprovementDrakkens2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="CityImprovementDrakkens4">
+    <Title>%CityImprovementDrakkens4Title</Title>
+    <Description>%CityImprovementDrakkens4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementDrakkens4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementDrakkens4Large" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%CityImprovementDrakkens4TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="CityImprovementCultists3">
+    <Title>%CityImprovementCultists3Title</Title>
+    <Description>%CityImprovementCultists3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementCultists3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementCultists3Large" />
+    </Icons>
+  </ExtendedGuiElement>
+
+  <!-- DEBUG -->
+  <GuiElement Name="Debug1">
+    <Title>DEBUG</Title>
+    <Description>DEBUG</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/#DebugSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/#DebugLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <ExtendedGuiElement Name="OnlyOnePerEmpire">
+    <TooltipElement>
+      <EffectOverride>%OnlyOnePerEmpireTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="OnlyOnePerCity">
+    <TooltipElement>
+      <EffectOverride>%OnlyOnePerCityTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="CityImprovementExtractingCapacity">
+    <TooltipElement>
+      <EffectOverride>%CityImprovementExtractingCapacityTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AffinityResourceCostTooltipEffect">
+    <TooltipElement>
+      <EffectOverride>%AffinityResourceCostTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+
+  <!-- ########################################## -->
+  <!-- ######         PLACEHOLDERS         ###### -->
+  <!-- ########################################## -->
+  <!-- Fake improvements for Pillars and Spells -->
+  <!-- Arcana of Matter -->
+  <ExtendedGuiElement Name="CityImprovementRageWizards7FakePillar">
+    <Title>%Pillar1Title</Title>
+    <Description>%Pillar1Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards7FakePillarTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="CityImprovementRageWizards7FakeSpell">
+    <Title>%Spell1Title</Title>
+    <Description>%Spell1Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards7FakeSpellTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <!-- Arcana of Agility -->
+  <ExtendedGuiElement Name="CityImprovementRageWizards8FakePillar">
+    <Title>%Pillar2Title</Title>
+    <Description>%Pillar2Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards8FakePillarTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="CityImprovementRageWizards8FakeSpell">
+    <Title>%Spell2Title</Title>
+    <Description>%Spell2Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards8FakeSpellTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Arcana of Authority -->
+  <ExtendedGuiElement Name="CityImprovementRageWizards9FakePillar">
+    <Title>%Pillar3Title</Title>
+    <Description>%Pillar3Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards9FakePillarTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="CityImprovementRageWizards9FakeSpell">
+    <Title>%Spell3Title</Title>
+    <Description>%Spell3Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards9FakeSpellTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Arcana of Materializing -->
+  <ExtendedGuiElement Name="CityImprovementRageWizards10FakePillar">
+    <Title>%Pillar4Title</Title>
+    <Description>%Pillar4Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards10FakePillarTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="CityImprovementRageWizards10FakeSpell">
+    <Title>%Spell4Title</Title>
+    <Description>%Spell4Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards10FakeSpellTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Arcana of Renewal -->
+  <ExtendedGuiElement Name="CityImprovementRageWizards11FakePillar">
+    <Title>%Pillar5Title</Title>
+    <Description>%Pillar5Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards11FakePillarTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="CityImprovementRageWizards11FakeSpell">
+    <Title>%Spell5Title</Title>
+    <Description>%Spell5Description</Description>
+    <TooltipElement>
+      <EffectOverride>%RageWizards11FakeSpellTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######            CUSTOM            ###### -->
+  <!-- ########################################## -->
+
+  <GuiElement Name="CityImprovementVaulters2Custom">
+    <Title>%CityImprovementVaulters2Title</Title>
+    <Description>%CityImprovementVaulters2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementVaulters3Custom">
+    <Title>%CityImprovementVaulters3Title</Title>
+    <Description>%CityImprovementVaulters3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementVaulters4Custom">
+    <Title>%CityImprovementVaulters4Title</Title>
+    <Description>%CityImprovementVaulters4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters4Large" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="CityImprovementVaulters6Custom">
+    <Title>%CityImprovementVaulters6CustomTitle</Title>
+    <Description>%CityImprovementVaulters6CustomDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaulters6Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaulters6Large" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%CityImprovementVaulters6TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######          DEPRECATED          ###### -->
+  <!-- ########################################## -->
+  <!-- To remove for the Release Master -->
+  <!-- Vaulters -->
+  <GuiElement Name="CityImprovementVaultersShields">
+    <Title>%CityImprovementVaultersShieldsTitle</Title>
+    <Description>%CityImprovementVaultersShieldsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaultersShieldsSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaultersShieldsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="CityImprovementWinterShelters">
+    <Title>%CityImprovementWinterSheltersTitle</Title>
+    <Description>%CityImprovementWinterSheltersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementWinterSheltersSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementWinterSheltersLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%CityImprovementWinterSheltersTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="CityImprovementBackupGenerators">
+    <Title>%CityImprovementBackupGeneratorsTitle</Title>
+    <Description>%CityImprovementBackupGeneratorsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementBackupGeneratorsSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementBackupGeneratorsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementVaultersGenerators">
+    <Title>%CityImprovementVaultersGeneratorsTitle</Title>
+    <Description>%CityImprovementVaultersGeneratorsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementVaultersGeneratorsSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementVaultersGeneratorsLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="CityImprovementOldTechnologyRecyclingProcess">
+    <Title>%CityImprovementOldTechnologyRecyclingProcessTitle</Title>
+    <Description>%CityImprovementOldTechnologyRecyclingProcessDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityImprovementOldTechnologyRecyclingProcessSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityImprovementOldTechnologyRecyclingProcessLarge" />
+    </Icons>
+  </GuiElement>
+
+
+</Datatable>

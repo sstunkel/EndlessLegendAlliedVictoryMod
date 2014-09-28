@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ######################################################### -->
+  <!-- ################# GAURAN MINOTAUR UNITS ################# -->
+  <!-- ######################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignGauranMinotaur#1"                         Model="1120100">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction tribes to create village armies and roaming armies-->
+  <UnitDesign Name="UnitDesignGauranMinotaur#MinorEmpireEra1"           Model="1120111">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MinorEmpireEra2"           Model="1120112">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MinorEmpireEra3"           Model="1120113">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MinorEmpireEra4"           Model="1120114">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MinorEmpireEra5"           Model="1120115">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MinorEmpireEra6"           Model="1120116">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignGauranMinotaur#MercenaryEra1"             Model="1120121">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MercenaryEra2"             Model="1120122">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MercenaryEra3"             Model="1120123">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MercenaryEra4"             Model="1120124">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MercenaryEra5"             Model="1120125">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#MercenaryEra6"             Model="1120126">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignGauranMinotaur#ConvertedEra1"             Model="1120131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <Tags>ConvertedVillageUnit,Era1,Gauran,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#ConvertedEra2"             Model="1120132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <Tags>ConvertedVillageUnit,Era2,Gauran,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#ConvertedEra3"             Model="1120133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <Tags>ConvertedVillageUnit,Era3,Gauran,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#ConvertedEra4"             Model="1120134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <Tags>ConvertedVillageUnit,Era4,Gauran,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#ConvertedEra5"             Model="1120135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <Tags>ConvertedVillageUnit,Era5,Gauran,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#ConvertedEra6"             Model="1120136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <Tags>ConvertedVillageUnit,Era6,Gauran,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignGauranMinotaur#MinorEmpire"               Model="1120101">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSpear2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemSpear2IronTier1#1" />
+      <Slot Name="Head"                            ItemName="" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"    />
+      <Slot Name="Legs"                            ItemName="" />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignGauranMinotaur#Mercenary"                 Model="1120102">
+    <UnitBodyDefinitionReference Name="UnitBodyGauranMinotaur" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityGauran,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

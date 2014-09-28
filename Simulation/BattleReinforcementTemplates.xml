@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <ReinforcementTemplate Name="Default">
+    <TemplatePosition RelativeRow="3"   RelativeColumn="0" Priority="16"/>
+    <TemplatePosition RelativeRow="2"   RelativeColumn="0" Priority="20"/>
+    <TemplatePosition RelativeRow="1"   RelativeColumn="0" Priority="18"/>
+    <TemplatePosition RelativeRow="0"   RelativeColumn="0" Priority="21"/>
+    <TemplatePosition RelativeRow="-1"  RelativeColumn="0" Priority="17"/>
+    <TemplatePosition RelativeRow="-2"  RelativeColumn="0" Priority="19"/>
+    <TemplatePosition RelativeRow="-3"  RelativeColumn="0" Priority="15"/>
+
+    <TemplatePosition RelativeRow="3"   RelativeColumn="-1" Priority="11"/>
+    <TemplatePosition RelativeRow="2"   RelativeColumn="-1" Priority="14"/>
+    <TemplatePosition RelativeRow="1"   RelativeColumn="-1" Priority="9"/>
+    <TemplatePosition RelativeRow="0"   RelativeColumn="-1" Priority="12"/>
+    <TemplatePosition RelativeRow="-1"  RelativeColumn="-1" Priority="8"/>
+    <TemplatePosition RelativeRow="-2"  RelativeColumn="-1" Priority="13"/>
+    <TemplatePosition RelativeRow="-3"  RelativeColumn="-1" Priority="10"/>
+
+    <TemplatePosition RelativeRow="3"   RelativeColumn="-2" Priority="4"/>
+    <TemplatePosition RelativeRow="2"   RelativeColumn="-2" Priority="7"/>
+    <TemplatePosition RelativeRow="1"   RelativeColumn="-2" Priority="2"/>
+    <TemplatePosition RelativeRow="0"   RelativeColumn="-2" Priority="5"/>
+    <TemplatePosition RelativeRow="-1"  RelativeColumn="-2" Priority="1"/>
+    <TemplatePosition RelativeRow="-2"  RelativeColumn="-2" Priority="6"/>
+    <TemplatePosition RelativeRow="-3"  RelativeColumn="-2" Priority="3"/>
+  </ReinforcementTemplate>
+
+</Datatable>

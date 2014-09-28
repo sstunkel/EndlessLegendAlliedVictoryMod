@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Global agents -->
+
+  <Agent Name="PeaceTechnologyAgent" AssemblyQualifiedName="Amplitude.Unity.AI.Amas.Agent, Assembly-CSharp-firstpass" DisableAdjustValueTracker="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="Flat0" />
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+  </Agent>
+
+  <Agent Name="AllianceTechnologyAgent" AssemblyQualifiedName="Amplitude.Unity.AI.Amas.Agent, Assembly-CSharp-firstpass" DisableAdjustValueTracker="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="Flat0" />
+
+    <InfluencesReceived>
+      <ConstantInfluence OriginAgentReference="PeaceTechnologyAgent"      Value="100" />
+    </InfluencesReceived>
+  </Agent>
+
+  <Agent Name="GlobalWarAgent" AssemblyQualifiedName="Amplitude.Unity.AI.Amas.Agent, Assembly-CSharp-firstpass" DisableAdjustValueTracker="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="Flat0" />
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+  </Agent>
+  
+  <!-- Diplomatic relation state -->
+  
+  <SimulationAgent Name="WarTermAgent" AssemblyQualifiedName="WarTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="LivingspaceTenseMultiplier">1</Parameter>
+    <Parameter Name="CommonFrontierMultiplier">1</Parameter>
+    <Parameter Name="AggressiveColonizationMultiplier">1</Parameter>
+    <Parameter Name="MilitaryPowerMultiplier">1</Parameter>
+    <Parameter Name="RegionCountMultiplier">1</Parameter>
+    <Parameter Name="OtherEmpireLeadScoreMultiplier">1</Parameter>
+    <Parameter Name="UnitsInTerritoryMultiplier">1</Parameter>
+    <Parameter Name="AggressionInNeutralRegionDuringColdWarMultiplier">1</Parameter>
+    <Parameter Name="OtherEmpireUnitsKilledDuringWarMultiplier">1</Parameter>
+    <Parameter Name="OtherEmpireCityBesiegedDuringWarMultiplier">1</Parameter>
+    <Parameter Name="OtherEmpireCitiesTakenDuringWarMultiplier">1</Parameter>
+    <Parameter Name="VillageConvertedMultiplierParameterName">1</Parameter>
+    <Parameter Name="WarMultiplier">1.3</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="WarTermAgent_Default" />
+
+    <InfluencesReceived>
+      <!--<ConstantInfluence Path="../DiplomacyEvaluationAmas/RelationAgentGroup" OriginAgentReference="WarTermAgent"  Value="-50" DifferentAgentGroup="true" />-->
+      <ConstantInfluence Path="../DiplomacyEvaluationAmas" OriginAgentReference="GlobalWarAgent"  Value="100" />
+
+      <ConstantInfluence OriginAgentReference="AttitudeScoreCommonFrontierAgent"      Value="100" />
+      <ConstantInfluence OriginAgentReference="AttitudeScoreCommonDiplomaticStatusAgent"      Value="-100" />
+    </InfluencesReceived>
+  </SimulationAgent>
+
+  <SimulationAgent Name="TruceTermAgent" AssemblyQualifiedName="TruceTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="WarFatigueMultiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="TruceTermAgent_Default" />
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+  </SimulationAgent>
+
+  <SimulationAgent Name="ColdWarTermAgent" AssemblyQualifiedName="ColdWarTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="LivingspaceTenseMultiplier">1</Parameter>
+    <Parameter Name="UnitsInTerritoryMultiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="ColdWarTermAgent_Default" />
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+  </SimulationAgent>
+  
+  <SimulationAgent Name="PeaceTermAgent" AssemblyQualifiedName="PeaceTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="PeacefulMultiplier">1.3</Parameter>
+    <Parameter Name="CommonFriendAllyMultiplier">1</Parameter>
+    <Parameter Name="CommonEnemyMultiplier">1</Parameter>
+    <Parameter Name="LastWarMultiplier">1</Parameter>
+    <Parameter Name="PositiveNegativeContractMultiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="PeaceTermAgent_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence Path="../DiplomacyEvaluationAmas" OriginAgentReference="PeaceTechnologyAgent"  Value="100" />
+      
+      <ConstantInfluence OriginAgentReference="AttitudeScoreCommonFrontierAgent"              Value="100" />
+      <ConstantInfluence OriginAgentReference="AttitudeScoreCommonDiplomaticStatusAgent"      Value="100" />
+    </InfluencesReceived>
+  </SimulationAgent>
+
+  <SimulationAgent Name="AllianceTermAgent" AssemblyQualifiedName="AllianceTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="PeacefulMultiplier">1</Parameter>
+    <Parameter Name="CommonFriendAllyMultiplier">1</Parameter>
+    <Parameter Name="CommonEnemyMultiplier">1</Parameter>
+    <Parameter Name="LastWarMultiplier">1</Parameter>
+    <Parameter Name="PositiveNegativeContractMultiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="AllianceTermAgent_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence Path="../DiplomacyEvaluationAmas" OriginAgentReference="AllianceTechnologyAgent"  Value="100" />
+    </InfluencesReceived>
+  </SimulationAgent>
+
+  <!-- Treaties -->
+
+  <SimulationAgent Name="MapExchangeTermAgent" AssemblyQualifiedName="MapExchangeTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="ExplorationRatioScoreMultiplier">0.75</Parameter>
+    
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="VisionAndMapExchangeTermAgent" AssemblyQualifiedName="VisionAndMapExchangeTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">0.25</Parameter>
+    
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="CommercialAgreementTermAgent" AssemblyQualifiedName="CommercialAgreementTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+    
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+  
+  <SimulationAgent Name="ResearchAgreementTermAgent" AssemblyQualifiedName="ResearchAgreementTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+    
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="OpenBordersTermAgent" AssemblyQualifiedName="OpenBordersTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+    
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="MarketBanRemovalTermAgent" AssemblyQualifiedName="MarketBanRemovalTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+    
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="MapEmbargoTermAgent" AssemblyQualifiedName="MapEmbargoTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="VisionAndMapEmbargoTermAgent" AssemblyQualifiedName="VisionAndMapEmbargoTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="VisionEmbargoTermAgent" AssemblyQualifiedName="VisionEmbargoTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="CommercialEmbargoTermAgent" AssemblyQualifiedName="CommercialEmbargoTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="ResearchEmbargoTermAgent" AssemblyQualifiedName="ResearchEmbargoTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="CloseBordersTermAgent" AssemblyQualifiedName="CloseBordersTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="MarketBanNullificationTermAgent" AssemblyQualifiedName="MarketBanNullificationTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="MarketBanTermAgent" AssemblyQualifiedName="MarketBanTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="MoneyPrintTermAgent" AssemblyQualifiedName="MoneyPrintTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+
+  <SimulationAgent Name="MoneyPrintNullificationTermAgent" AssemblyQualifiedName="MoneyPrintNullificationTermAgent, Assembly-CSharp" DisableAdjustValueTracker="true">
+
+    <Parameter Name="Multiplier">1</Parameter>
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="DefaultLinear" />
+  </SimulationAgent>
+  
+  <!-- Other -->
+
+  <SimulationAgent Name="DiplomaticRelationScoreAgent" AssemblyQualifiedName="DiplomaticRelationScoreAgent, Assembly-CSharp" DisableAdjustValueTracker="false">
+
+    <ValueMin>-100</ValueMin>
+    <ValueMax>100</ValueMax>
+
+    <CurveReference Name="DiplomaticRelationScoreAgent_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence OriginAgentReference="WarTermAgent"      Value="-100" />
+      <ConstantInfluence OriginAgentReference="ColdWarTermAgent"  Value="-50" />
+      <ConstantInfluence OriginAgentReference="PeaceTermAgent"    Value="50" />
+      <ConstantInfluence OriginAgentReference="AllianceTermAgent" Value="100" />
+    </InfluencesReceived>
+  </SimulationAgent>
+  
+  <!--##################### Attitude agents ##################### -->
+
+  <AttitudeScoreAgent Name="AttitudeScoreCommonFrontierAgent" DisableAdjustValueTracker="false">
+
+    <ValueMax>0</ValueMax>
+    <ValueMin>-60</ValueMin>
+    
+    <CurveReference Name="AttitudeScoreCommonFrontierAgent_Default" />
+
+    <AttitudeModifierName>AttitudeScoreCommonFrontier</AttitudeModifierName>
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+  </AttitudeScoreAgent>
+
+
+  <AttitudeScoreAgent Name="AttitudeScoreCommonDiplomaticStatusAgent" DisableAdjustValueTracker="false">
+
+    <ValueMax>150</ValueMax>
+    <ValueMin>0</ValueMin>
+
+    <CurveReference Name="AttitudeScoreCommonDiplomaticStatusAgent_Default" />
+
+    <AttitudeModifierName>AttitudeScoreCommonAlly</AttitudeModifierName>
+    <AttitudeModifierName>AttitudeScoreCommonEnemy</AttitudeModifierName>
+    <AttitudeModifierName>AttitudeScoreCommonFriend</AttitudeModifierName>
+
+    <InfluencesReceived>
+    </InfluencesReceived>
+  </AttitudeScoreAgent>
+
+</Datatable>

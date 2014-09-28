@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="TechnologyUnlockWeaponTier1"                Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockWeaponTier2"                Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockWeaponTier3"                Type="TechnologyUnlock" />
+
+  <SimulationDescriptor Name="TechnologyUnlockArmorTier1"                 Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockArmorTier2"                 Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockArmorTier3"                 Type="TechnologyUnlock" />
+
+  <SimulationDescriptor Name="TechnologyUnlockAccessoryTier1"             Type="TechnologyUnlock"/>
+  <SimulationDescriptor Name="TechnologyUnlockAccessoryTier2"             Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockAccessoryTier3"             Type="TechnologyUnlock" />
+
+  <SimulationDescriptor Name="TechnologyUnlockWeaponIronMaterial"         Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockWeaponDustMaterial"         Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockWeaponCommonMaterial"       Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockWeaponUncommonMaterial"     Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockWeaponRareMaterial"         Type="TechnologyUnlock" />
+
+  <SimulationDescriptor Name="TechnologyUnlockArmorIronMaterial"          Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockArmorDustMaterial"          Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockArmorCommonMaterial"        Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockArmorUncommonMaterial"      Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockArmorRareMaterial"          Type="TechnologyUnlock" />
+
+  <SimulationDescriptor Name="TechnologyUnlockAccessoryDustMaterial"      Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockAccessoryCommonMaterial"    Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockAccessoryUncommonMaterial"  Type="TechnologyUnlock" />
+  <SimulationDescriptor Name="TechnologyUnlockAccessoryRareMaterial"      Type="TechnologyUnlock" />
+  
+  
+  <SimulationDescriptor Name="ColdWarToPeace"                             Type="TechnologyUnlock"> 
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ColdWarToPeaceDeclaration"                  Type="TechnologyUnlock">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AllianceToPeace"                            Type="TechnologyUnlock" >
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ColdWarToAlliance"                          Type="TechnologyUnlock" >
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PeaceToAlliance"                            Type="TechnologyUnlock" >
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ColdWarToAllianceDeclaration"               Type="TechnologyUnlock" >
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="PeaceToAllianceDeclaration"                 Type="TechnologyUnlock" >
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MoneyPrintNullification"                 Type="TechnologyUnlock" >
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

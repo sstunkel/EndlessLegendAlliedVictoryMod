@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="BiomeTypeCold" Type="BiomeType" />
+  
+  <SimulationDescriptor Name="BiomeTypeChilly" Type="BiomeType" />
+  
+  <SimulationDescriptor Name="BiomeTypeTemperate" Type="BiomeType" />
+  
+  <SimulationDescriptor Name="BiomeTypeWarm" Type="BiomeType" />
+  
+  <SimulationDescriptor Name="BiomeTypeHot" Type="BiomeType" />
+  
+</Datatable>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <GuiElement Name="VictoryConditionGlobalScoreWhenLastTurnReached">
+    <Title>%VictoryConditionGlobalScoreWhenLastTurnReachedTitle</Title>
+    <Description>%VictoryConditionGlobalScoreWhenLastTurnReachedDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="VictoryConditionLastEmpireStanding">
+    <Title>%VictoryConditionLastEmpireStandingTitle</Title>
+    <Description>%VictoryConditionLastEmpireStandingDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="VictoryConditionExpansion">
+    <Title>%VictoryConditionExpansionTitle</Title>
+    <Description>%VictoryConditionExpansionDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="VictoryConditionEconomy">
+    <Title>%VictoryConditionEconomyTitle</Title>
+    <Description>%VictoryConditionEconomyDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="VictoryConditionDiplomacy">
+    <Title>%VictoryConditionDiplomacyTitle</Title>
+    <Description>%VictoryConditionDiplomacyDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="VictoryConditionWonder">
+    <Title>%VictoryConditionWonderTitle</Title>
+    <Description>%VictoryConditionWonderDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="VictoryConditionQuest">
+    <Title>%VictoryConditionQuestTitle</Title>
+    <Description>%VictoryConditionQuestDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="VictoryConditionMostTechnologiesDiscovered">
+    <Title>%VictoryConditionMostTechnologiesDiscoveredTitle</Title>
+    <Description>%VictoryConditionMostTechnologiesDiscoveredDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="VictoryConditionSupremacy">
+		<Title>%VictoryConditionSupremacyTitle</Title>
+    <Description>%VictoryConditionSupremacyDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="VictoryConditionTutorial">
+		<Title>%VictoryConditionTutorialTitle</Title>
+    <Description>%VictoryConditionTutorialDescription</Description>
+  </GuiElement>
+    
+</Datatable>

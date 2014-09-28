@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://Necrophagesw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://Necrophagesw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter1">
+    <Title>%MainQuestNecrophages-Chapter1Title</Title>
+    <Description>%MainQuestNecrophages-Chapter1Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter1Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter1-Step1">%MainQuestNecrophages-Chapter1-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter1-Step2">%MainQuestNecrophages-Chapter1-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 1Alt -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter1Alt">
+    <Title>%MainQuestNecrophages-Chapter1AltTitle</Title>
+    <Description>%MainQuestNecrophages-Chapter1AltDescription</Description>
+    <Objective>%MainQuestNecrophages-Chapter1AltObjective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter1AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter1-Step1">%MainQuestNecrophages-Chapter1Alt-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter1-Step2">%MainQuestNecrophages-Chapter1Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter2">
+    <Title>%MainQuestNecrophages-Chapter2Title</Title>
+    <Description>%MainQuestNecrophages-Chapter2Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter2Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter2-Step1">%MainQuestNecrophages-Chapter2-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter2-Step2">%MainQuestNecrophages-Chapter2-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter3">
+    <Title>%MainQuestNecrophages-Chapter3Title</Title>
+    <Description>%MainQuestNecrophages-Chapter3Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter3Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter3-Step1">%MainQuestNecrophages-Chapter3-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter3-Step2">%MainQuestNecrophages-Chapter3-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter4">
+    <Title>%MainQuestNecrophages-Chapter4Title</Title>
+    <Description>%MainQuestNecrophages-Chapter4Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter4Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter4-Step1">%MainQuestNecrophages-Chapter4-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter4-Step2">%MainQuestNecrophages-Chapter4-Step2</Step>
+      <Step Name="MainQuestNecrophages-Chapter4-Step2">%MainQuestNecrophages-Chapter4-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter5">
+    <Title>%MainQuestNecrophages-Chapter5Title</Title>
+    <Description>%MainQuestNecrophages-Chapter5Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter5Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter5-Step1">%MainQuestNecrophages-Chapter5-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter5-Step2">%MainQuestNecrophages-Chapter5-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 5Alt -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter5Alt">
+    <Title>%MainQuestNecrophages-Chapter5AltTitle</Title>
+    <Description>%MainQuestNecrophages-Chapter5AltDescription</Description>
+    <Objective>%MainQuestNecrophages-Chapter5AltObjective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter5AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter5Alt-Step1">%MainQuestNecrophages-Chapter5Alt-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter5Alt-Step2">%MainQuestNecrophages-Chapter5Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter6">
+    <Title>%MainQuestNecrophages-Chapter6Title</Title>
+    <Description>%MainQuestNecrophages-Chapter6Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter6Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter6-Step1">%MainQuestNecrophages-Chapter6-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter7">
+    <Title>%MainQuestNecrophages-Chapter7Title</Title>
+    <Description>%MainQuestNecrophages-Chapter7Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter7Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter7-Step1">%MainQuestNecrophages-Chapter7-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter7-Step2">%MainQuestNecrophages-Chapter7-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7Alt -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter7Alt">
+    <Title>%MainQuestNecrophages-Chapter7AltTitle</Title>
+    <Description>%MainQuestNecrophages-Chapter7AltDescription</Description>
+    <Objective>%MainQuestNecrophages-Chapter7AltObjective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter7AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter7Alt-Step1">%MainQuestNecrophages-Chapter7Alt-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter7Alt-Step2">%MainQuestNecrophages-Chapter7Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestNecrophages-Chapter8">
+    <Title>%MainQuestNecrophages-Chapter8Title</Title>
+    <Description>%MainQuestNecrophages-Chapter8Description</Description>
+    <Objective>%MainQuestNecrophages-Chapter8Objective</Objective>
+    <Outcome>%MainQuestNecrophages-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestNecrophages8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestNecrophages-Chapter8-Step1">%MainQuestNecrophages-Chapter8-Step1</Step>
+      <Step Name="MainQuestNecrophages-Chapter8-Step2">%MainQuestNecrophages-Chapter8-Step2</Step>
+      <Step Name="MainQuestNecrophages-Chapter8-Step3">%MainQuestNecrophages-Chapter8-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <GuiElement Name="EmpirePlanMilitary">
+    <Title>%PlanCategoryMilitaryTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/PlanCategories/PlanCategoryMilitary" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanKnowledge">
+    <Title>%PlanCategoryScienceTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/PlanCategories/PlanCategoryScience" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="EmpirePlanForeignAffairs">
+    <Title>%PlanCategoryEmpireTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/PlanCategories/PlanCategoryEmpire" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanEconomy">
+    <Title>%PlanCategoryEconomyTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/PlanCategories/PlanCategoryEconomy" />
+    </Icons>
+  </GuiElement>
+</Datatable>

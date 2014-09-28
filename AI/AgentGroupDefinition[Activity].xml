@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Amas Name="ActivityEvaluationAmas">
+
+    <AgentReference Name="MilitaryEffort"/>
+    <AgentReference Name="EmpireSafety"/>
+    <AgentReference Name="EconomicGrowth"/>
+    <AgentReference Name="EmpireExpansion"/>
+    <AgentReference Name="TechnologyParleyRelevance"/>
+
+  </Amas>
+
+  <AgentGroup Name="Region">
+    
+    <AgentReference Name="MinorFactionThreat"/>
+    <AgentReference Name="RegionEconomicGrowth"/>
+    <AgentReference Name="RegionEconomicWeight"/>
+    <AgentReference Name="MilitaryPacificationRelevance"/>
+    <AgentReference Name="MajorFactionThreat"/>
+    <AgentReference Name="BribePacificationRelevance"/>
+    <AgentReference Name="RegionSafety"/>
+    
+  </AgentGroup>
+  
+
+</Datatable>

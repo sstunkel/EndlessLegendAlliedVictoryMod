@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <AIParameterDatatableElement Name="BoosterLuxury1">
+      <AIParameter Name="CityCityPointPercent"       Value="0.5"/>
+      <AIParameter Name="CityApproval"               Value="5"/>
+  </AIParameterDatatableElement>
+
+  <!--waiting for Trade Routes Implementation in order to implement the right Luxury2 bonus on them. Bonus on Dust as placeholder-->
+  <AIParameterDatatableElement Name="BoosterLuxury2">
+      <AIParameter Name="TradeRouteMoneyGainPercent" Value="1"   />
+      <AIParameter Name="CityApproval"               Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury3">
+      <AIParameter Name="CityMoneyUpkeepPercent" Value="-0.50" />
+      <AIParameter Name="CityApproval"           Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury4">
+      <AIParameter Name="CityFoodPercent"   Value="0.50"/>
+      <AIParameter Name="CityApproval" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury5">
+      <AIParameter Name="CityApproval" Value="30"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury6">
+       <AIParameter Name="AIEmpireMilitaryOffense" Value="1.5 * $Count(ClassEmpire/Garrison/ClassUnit)"    />
+      <AIParameter  Name="CityApproval"            Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury7">
+      <!--<AIParameter TargetProperty="MaximumCityDefensePoint" Operation="Percent"   Value="0.33"  Path="./ClassEmpire/ClassCity"/>-->
+      <AIParameter Name="CityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury8">
+      <AIParameter Name="CitySciencePercent"   Value="0.50"/>
+      <AIParameter Name="CityApproval"         Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury9">
+      <!--<AIParameter TargetProperty="ExperienceGainModifier" Operation="Percent"   Value="1"     Path="./ClassEmpire/Garrison/UnitRankStandard"/>-->
+      <AIParameter Name="CityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury10">
+      <AIParameter Name="CityProductionPercent" Value="0.50"/>
+      <AIParameter Name="CityApproval"          Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury11">
+      <AIParameter Name="CityFoodPercent"       Value="0.25"/>
+      <AIParameter Name="CityProductionPercent" Value="0.25"/>
+      <AIParameter Name="CityDustPercent"       Value="0.25"/>
+      <AIParameter Name="CitySciencePercent"    Value="0.25"/>
+      <AIParameter Name="CityApproval"          Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury12">
+      <AIParameter Name="CityDustPercent"   Value="0.50"/>
+      <AIParameter Name="CityApproval"      Value="10"/>
+  </AIParameterDatatableElement>
+
+  <!--waiting for Trade Routes Implementation in order to implement the right Luxury13 bonus on them. Bonus on Food as placeholder-->
+  <AIParameterDatatableElement Name="BoosterLuxury13">
+      <AIParameter Name="TradeRouteGrowthGainPercent" Value="1.00"  />
+      <AIParameter Name="CityApproval"                Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury14">
+      <AIParameter Name="AIEmpireMilitaryDefense" Value="2" />
+      <AIParameter Name="CityApproval"            Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterLuxury15">
+      <!--unlock bonus for heroes in Cities and Armies-->
+      <AIParameter Name="AIEmpireMilitaryOffense" Value="1.5 * ($Count(ClassEmpire/ClassCity/UnitRankHero) + $Count(ClassEmpire/ClassArmy/UnitRankHero))"    />
+      <AIParameter Name="AIEmpireMilitaryDefense" Value="1.5 * ($Count(ClassEmpire/ClassCity/UnitRankHero) + $Count(ClassEmpire/ClassArmy/UnitRankHero))"    />
+      <AIParameter Name="CityApproval"            Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterStrategic1">
+      <AIParameter Name="CitySciencePercent"   Value="0.20"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterStrategic2">
+      <AIParameter Name="CityDustPercent"   Value="0.20"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterStrategic3">
+      <AIParameter Name="CityProductionPercent" Value="0.20"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterStrategic4">
+      <AIParameter Name="CityFoodPercent"   Value="0.20"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterStrategic5">
+      <AIParameter Name="CityProductionPercent" Value="0.15"/>
+      <AIParameter Name="CityDustPercent"       Value="0.15"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="BoosterStrategic6">
+      <AIParameter Name="CityFoodPercent"      Value="0.15"/>
+      <AIParameter Name="CitySciencePercent"   Value="0.15"/>
+  </AIParameterDatatableElement>
+
+</Datatable>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- UNIT CLASS -->
+  
+  <!-- Battle Movement has been multiplied by 3 for the battle V2 -->
+  <SimulationDescriptor Name="UnitClassInfantry" Type="UnitClass">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement"           Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DeploymentPriority"        Operation="Addition" Value="0"/>
+
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleMaximumMovement"  Operation="Addition"  Value="2"/>
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleRange"            Operation="Addition"  Value="1"/>
+      
+      <SimulationModifierDescriptor TargetProperty="VisionRange"            Operation="Addition" Value="3"/>
+      <!--<SimulationModifierDescriptor TargetProperty="Strength" Value="$(Agility)" Operation="Addition" Path="../ClassArmy/UnitClassCavalry" BindOnSource="true"/>-->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="UnitClassCavalry" Type="UnitClass">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement"           Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="DeploymentPriority"        Operation="Addition" Value="1"/>
+
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleMaximumMovement"  Operation="Addition"  Value="4"/>
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleRange"            Operation="Addition"  Value="1"/>
+      
+      <SimulationModifierDescriptor TargetProperty="VisionRange"            Operation="Addition" Value="3"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="UnitClassRanged" Type="UnitClass">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement"        Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="CanAttackThroughImpassableTransition"        Operation="Addition" Value="1"/>
+      <SimulationModifierDescriptor TargetProperty="DeploymentPriority"        Operation="Addition" Value="3"/>
+
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleMaximumMovement"  Operation="Addition"  Value="2"/>
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleRange"            Operation="Addition"  Value="3"/>
+
+      <SimulationModifierDescriptor       TargetProperty="VisionRange"      Operation="Addition" Value="3"/>
+
+      <SimulationModifierDescriptor TargetProperty="OffensiveMilitaryPower"        Operation="Percent" Value="0.1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="UnitClassFlying" Type="UnitClass">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement"        Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="DeploymentPriority"        Operation="Addition" Value="2"/>
+
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleMaximumMovement"  Operation="Addition"  Value="3"/>
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleRange"            Operation="Addition"  Value="1"/>
+
+      <SimulationModifierDescriptor TargetProperty="VisionRange"            Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="UnitClassSupport" Type="UnitClass">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement"        Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="CanAttackThroughImpassableTransition"        Operation="Addition" Value="1"/>
+      <SimulationModifierDescriptor TargetProperty="DeploymentPriority"        Operation="Addition" Value="4"/>
+
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleMaximumMovement"  Operation="Addition"  Value="2"/>
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleRange"            Operation="Addition"  Value="3"/>
+      
+      <SimulationModifierDescriptor TargetProperty="VisionRange"            Operation="Addition" Value="3"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="UnitSettler" Type="UnitJob">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CanAttackThroughImpassableTransition"        Operation="Force" Value="0" Priority="1"/>
+      <SimulationModifierDescriptor TargetProperty="DeploymentPriority"        Operation="Addition" Value="5"/>
+
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleMaximumMovement"  Operation="Addition"  Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="BaseBattleRange"            Operation="Addition"  Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MigrationUnit" Type="UnitJob">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="NetFreeBorough"           BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="FreeBoroughStock"         BaseValue="0" IsSealed="true"/>
+      <SimulationPropertyDescriptor Name="NetCityGrowth"            BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="CityGrowthStock"          IsSealed="true"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+</Datatable>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX OneHand ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_Attack_1H">
+    <SoundEventName>Sfx/Items/Weapons/1H/1H_$(UnitMainSlotItemAudioID)</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+    <ReferenceUnitMainSlotName>MainHand</ReferenceUnitMainSlotName>
+  </DefaultFxDefinition>
+
+  
+  <!-- ===================================== SFX TwoHand ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Attack_2H">
+    <SoundEventName>Sfx/Items/Weapons/2H/2H_$(UnitMainSlotItemAudioID)</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+    <ReferenceUnitMainSlotName>MainHand</ReferenceUnitMainSlotName>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_BowRope">
+    <SoundEventName>Sfx/Items/Weapons/2H/2H_BowRope</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+    <ReferenceUnitMainSlotName>MainHand</ReferenceUnitMainSlotName>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_AttackShield">
+    <SoundEventName>Sfx/Items/Weapons/1H/1H_ShieldDefault</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+    <ReferenceUnitMainSlotName>MainHand</ReferenceUnitMainSlotName>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_AttackSword">
+    <SoundEventName>Sfx/Items/Weapons/SwordAttack_$(UnitMainSlotItemAudioID)</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+    <ReferenceUnitMainSlotName>MainHand</ReferenceUnitMainSlotName>
+  </DefaultFxDefinition>
+
+
+  <!-- ===================================== SFX Spell ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_BrokenLordLightning">
+    <SoundEventName>Sfx/Faction/BrokenLords/BlackBishop/BlackBishop_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+    <ReferenceUnitMainSlotName>MainHand</ReferenceUnitMainSlotName>
+  </DefaultFxDefinition>
+
+  <!-- ===================================== SFX ForestSpirit ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_AttackHit">
+    <SoundEventName>Sfx/Faction/MadFairies/ForestSpirit/MadFairies_ForestSpiritAttack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_MadFairies_ForestSpirit_AttackLarge">
+    <SoundEventName>Sfx/Faction/MadFairies/ForestSpirit/MadFairies_ForestSpiritAttackLarge</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <!-- ===================================== SFX Titan ======================================== -->
+  
+  <DefaultFxDefinition Name="SFX_Vaulter_Titan_Attack">
+    <SoundEventName>Sfx/Faction/Vaulters/Titan_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <!-- ===================================== SFX Shaman ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_MadFairies_Shaman_Spell">
+    <SoundEventName>Sfx/Faction/MadFairies/Shaman/MadFairies_Shaman_Spell</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <!-- ===================================== SFX Silic ======================================== -->
+
+  <DefaultFxDefinition Name="SFX_Silic_Golem_Attack">
+    <SoundEventName>Sfx/Faction/Silic/CrystalGolem/Silic_CrystalGolem_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+</Datatable>

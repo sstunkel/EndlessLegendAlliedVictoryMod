@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+
+  <!-- ========================================
+       ============ BROKEN LORDS ==============
+       ======================================== -->
+  
+  <GuiElement Name="BattleActionUserBrokenLordsBlackBishop">
+    <Title>%BattleActionUserBrokenLordsBlackBishopTitle</Title>
+    <Description>%BattleActionUserBrokenLordsBlackBishopDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsBlackBishopSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsBlackBishopLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserBrokenLordsCavalry">
+    <Title>%BattleActionUserBrokenLordsCavalryTitle</Title>
+    <Description>%BattleActionUserBrokenLordsCavalryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsCavalrySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsCavalryLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserBrokenLordsInfantry">
+    <Title>%BattleActionUserBrokenLordsInfantryTitle</Title>
+    <Description>%BattleActionUserBrokenLordsInfantryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsInfantrySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsInfantryLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserBrokenLordsCaptain">
+    <Title>%BattleActionUserBrokenLordsCaptainTitle</Title>
+    <Description>%BattleActionUserBrokenLordsCaptainDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsCaptainSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBrokenLordsCaptainLarge" />
+    </Icons>
+  </GuiElement>
+  
+  
+
+  <!-- ========================================
+       ============ MAD FAIRIES ===============
+       ======================================== -->
+  
+  <GuiElement Name="BattleActionUserMadFairiesForestSpirit">
+    <Title>%BattleActionUserMadFairiesForestSpiritTitle</Title>
+    <Description>%BattleActionUserMadFairiesForestSpiritDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesForestSpiritSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesForestSpiritLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserMadFairiesShaman">
+    <Title>%BattleActionUserMadFairiesShamanTitle</Title>
+    <Description>%BattleActionUserMadFairiesShamanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesShamanSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesShamanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserMadFairiesArcher">
+    <Title>%BattleActionUserMadFairiesArcherTitle</Title>
+    <Description>%BattleActionUserMadFairiesArcherDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesArcherSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesArcherLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserMadFairiesCaptain">
+    <Title>%BattleActionUserMadFairiesCaptainTitle</Title>
+    <Description>%BattleActionUserMadFairiesCaptainDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesCaptainSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserMadFairiesCaptainLarge" />
+    </Icons>
+  </GuiElement>
+  
+
+  <!-- ========================================
+       ============ RAGE WIZARDS ==============
+       ======================================== -->
+  
+  <GuiElement Name="BattleActionUserRageWizardsBattleMage">
+    <Title>%BattleActionUserRageWizardsBattleMageTitle</Title>
+    <Description>%BattleActionUserRageWizardsBattleMageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsBattleMageSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsBattleMageLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserRageWizardsWitch">
+    <Title>%BattleActionUserRageWizardsWitchTitle</Title>
+    <Description>%BattleActionUserRageWizardsWitchDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsWitchSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsWitchLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="BattleActionUserRageWizardsPhoenix">
+    <Title>%BattleActionUserRageWizardsPhoenixTitle</Title>
+    <Description>%BattleActionUserRageWizardsPhoenixDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsPhoenixSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsPhoenixLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserRageWizardsCaptain">
+    <Title>%BattleActionUserRageWizardsCaptainTitle</Title>
+    <Description>%BattleActionUserRageWizardsCaptainDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsCaptainSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsCaptainLarge" />
+    </Icons>
+  </GuiElement>
+
+  
+  
+  <!-- ========================================
+       ============ NECROPHAGES ==============
+       ======================================== -->
+
+  <GuiElement Name="BattleActionUserNecrophagesNecrohunter">
+    <Title>%BattleActionUserNecrophagesNecrohunterTitle</Title>
+    <Description>%BattleActionUserNecrophagesNecrohunterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsBattleMageSmall" /> --><!--Temporary image -->
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsBattleMageLarge" /> --><!--Temporary image -->
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="BattleActionUserNecrophagesZombat">
+    <Title>%BattleActionUserNecrophagesZombatTitle</Title>
+    <Description>%BattleActionUserNecrophagesZombatDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsWitchSmall" /> --><!--Temporary image -->
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsWitchLarge" /> --><!--Temporary image -->
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserNecrophagesLichbug">
+    <Title>%BattleActionUserNecrophagesLichbugTitle</Title>
+    <Description>%BattleActionUserNecrophagesLichbugDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsPhoenixSmall" /> --><!--Temporary image -->
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsPhoenixLarge" /> --><!--Temporary image -->
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserNecrophagesCaptain">
+    <Title>%BattleActionUserNecrophagesCaptainTitle</Title>
+    <Description>%BattleActionUserNecrophagesCaptainDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsCaptainSmall" /> --><!--Temporary image -->
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsCaptainLarge" /> --><!--Temporary image -->
+    </Icons>
+  </GuiElement>
+  
+  
+
+  <!-- ========================================
+       ============ MINOR FACTIONS ============
+       ======================================== -->
+  
+  
+  <GuiElement Name="BattleActionUserUrcesGiantOgre">
+    <Title>%BattleActionUserUrcesGiantOgreTitle</Title>
+    <Description>%BattleActionUserUrcesGiantOgreDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsWitchSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserRageWizardsWitchLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserCeratanDrider">
+    <Title>%BattleActionUserCeratanDriderTitle</Title>
+    <Description>%BattleActionUserCeratanDriderDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserCeratanDriderSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserCeratanDriderLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserErycisHydra">
+    <Title>%BattleActionUserErycisHydraTitle</Title>
+    <Description>%BattleActionUserErycisHydraDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserErycisHydraSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserErycisHydraLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserKazanjiDevil">
+    <Title>%BattleActionUserKazanjiDevilTitle</Title>
+    <Description>%BattleActionUserKazanjiDevilDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserKazanjiDevilSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserKazanjiDevilLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserBosCentaur">
+    <Title>%BattleActionUserBosCentaurTitle</Title>
+    <Description>%BattleActionUserBosCentaurDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBosCentaurSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserBosCentaurLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserSilicsGolem">
+    <Title>%BattleActionUserSilicsGolemTitle</Title>
+    <Description>%BattleActionUserSilicsGolemDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserSilicsGolemSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserSilicsGolemLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleActionUserDelversDwarf">
+    <Title>%BattleActionUserDelversDwarfTitle</Title>
+    <Description>%BattleActionUserDelversDwarfDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserDelversDwarfSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/BattleActions/BattleActionUserDelversDwarfLarge" />
+    </Icons>
+  </GuiElement>
+  
+</Datatable>

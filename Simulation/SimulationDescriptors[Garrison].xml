@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="Garrison" Type="Garrison" IsSerializable="false">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="UnitSlotCount"/>
+      <SimulationPropertyDescriptor Name="UnitsCount" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="MaximumUnitSlotCount" />
+      <SimulationPropertyDescriptor Name="ReinforcementPointCount"  BaseValue="2" />
+      <SimulationPropertyDescriptor Name="EmpireMoneyUpkeep" Composition="Sum"/>
+      <SimulationPropertyDescriptor Name="MilitaryPower" Composition="Sum"/>
+      
+      <SimulationPropertyDescriptor Name="MaximumNumberOfActionPoints" Composition="Minimum"/>
+      <SimulationPropertyDescriptor Name="ActionPointsSpent" IsSealed="true" Composition="Maximum"/>
+      <SimulationPropertyDescriptor Name="ExperienceGainPerTurn" />
+
+      <SimulationPropertyDescriptor Name="UnitOverStack"          BaseValue="0" MinValue="0"/>
+    </SimulationPropertyDescriptors>
+
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MilitaryPower"                      Operation="Multiplication" Value="$(UnitsCount)"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"  Operation="Addition"      Value="$(UnitSlotCount)"         Path="Garrison/ClassUnit,UnitHero"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"  Operation="Addition"      Value="3"                        Path="ClassCity/ClassUnit,UnitHero"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"  Operation="Addition"      Value="$(ExperienceGainPerTurn)" Path="ClassCity/ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"  Operation="Addition"      Value="$(ExperienceGainPerTurn)" Path="ClassCity/Militia/ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="MilitaryUpkeep"         Operation="Addition"      Value="$(MaximumUnitSlotCount)"  Path="ClassArmy"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="UnitOverStack"   Operation="Addition"       Left="$(UnitSlotCount)" BinaryOperation="Subtraction" Right="$(MaximumUnitSlotCount)" />
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryUpkeep"  Operation="Multiplication" Left="1"                BinaryOperation="Addition"    Right="$(UnitOverStack)" Path="ClassArmy" />
+      <BinarySimulationModifierDescriptor TargetProperty="MilitaryUpkeep"  Operation="Multiplication" Left="1"                BinaryOperation="Addition"    Right="$(UnitOverStack)" Path="ClassCity" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Militia" Type="Militia" IsSerializable="false">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumUnitSlotCount"  Operation="Addition"       Value="1"/>
+      <SimulationModifierDescriptor TargetProperty="MilitaryUpkeep"        Operation="Multiplication" Value="0"   Path="Militia/ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="Privateers" Type="Privateers">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MilitaryUpkeep"  Operation="Multiplication" Value="3"   Path="ClassArmy" Priority="2" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+</Datatable>

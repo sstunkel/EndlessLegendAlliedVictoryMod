@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- COMMON -->
+  <!-- Black Earth -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly1" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="6"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Mineral Rich -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly2" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"       Operation="Addition" Value="6"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Crystal Flowers -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly3" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Moss Pearls -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly5" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Clay -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly6" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <!-- Hidden Springs -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly7" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <!-- Azotic Exotics -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly8" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Chromatic Land -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly9" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <!-- Rumbling Stones -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly10" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <!-- Geothermal Pit -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly11" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"      Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Salt Desert -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly12" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Escaped specimens -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly13" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Black Dust -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly14" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Mutant Marsh -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly15" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Igloo Larvae -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly16" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Ruby Cactus Fields -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly17" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="4"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Massive Tree -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly18" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Ice Sculptures -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly20" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="6"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Geysers -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly29" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"      Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Meteor Fields -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly52" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"      Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"       Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Northern Loam -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly53" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="6"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- RARE -->
+
+  <!-- Life Tree -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly19" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Steppe Soil -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly21" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Earth Tower -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly22" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Botanical Garden -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly23" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Steel Stalks -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly24" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Weaver Worms -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly25" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Stasis Pillar -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly26" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Earthspine -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly27" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="4"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Spiral Rock Peel -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly28" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Mychordia -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly30" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Wizard Stone -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly34" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Dragon Tree -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly36" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="DistrictScience"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Oasis -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly39" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictFood"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="6"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="10"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+
+
+  <!-- UNIQUE -->
+  <!-- Golden Tree -->
+  <SimulationDescriptor Name="AnomalyTypeAnomaly43" Type="AnomalyType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DistrictIndustry"/>
+      <SimulationPropertyDescriptor Name="DistrictDust"/>
+      <SimulationPropertyDescriptor Name="CityApproval"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"   Operation="Addition" Value="2"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="8"/>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"       Operation="Addition" Value="20"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+</Datatable>

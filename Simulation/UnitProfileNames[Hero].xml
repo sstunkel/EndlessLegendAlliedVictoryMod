@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!-- Broken Lords -->
+  <UnitProfileNames Name="UnitProfileBrokenLordsHero1">
+    <Name>%HeroNameBrokenLordsHero1Version1Title</Name>
+    <Name>%HeroNameBrokenLordsHero1Version2Title</Name>
+    <Name>%HeroNameBrokenLordsHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileBrokenLordsHero2">
+    <Name>%HeroNameBrokenLordsHero2Version1Title</Name>
+    <Name>%HeroNameBrokenLordsHero2Version2Title</Name>
+    <Name>%HeroNameBrokenLordsHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileBrokenLordsHero3">
+    <Name>%HeroNameBrokenLordsHero3Version1Title</Name>
+    <Name>%HeroNameBrokenLordsHero3Version2Title</Name>
+    <Name>%HeroNameBrokenLordsHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileBrokenLordsHero4">
+    <Name>%HeroNameBrokenLordsHero4Version1Title</Name>
+    <Name>%HeroNameBrokenLordsHero4Version2Title</Name>
+    <Name>%HeroNameBrokenLordsHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileBrokenLordsHero5">
+    <Name>%HeroNameBrokenLordsHero5Version1Title</Name>
+    <Name>%HeroNameBrokenLordsHero5Version2Title</Name>
+    <Name>%HeroNameBrokenLordsHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileBrokenLordsHero6">
+    <Name>%HeroNameBrokenLordsHero6Version1Title</Name>
+    <Name>%HeroNameBrokenLordsHero6Version2Title</Name>
+    <Name>%HeroNameBrokenLordsHero6Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileBrokenLordsHero7">
+    <Name>%HeroNameBrokenLordsHero7Version1Title</Name>
+  </UnitProfileNames>
+
+
+
+<!-- Mad Fairies -->
+  <UnitProfileNames Name="UnitProfileMadFairiesHero1">
+    <Name>%HeroNameMadFairiesHero1Version1Title</Name>
+    <Name>%HeroNameMadFairiesHero1Version2Title</Name>
+    <Name>%HeroNameMadFairiesHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileMadFairiesHero2">
+    <Name>%HeroNameMadFairiesHero2Version1Title</Name>
+    <Name>%HeroNameMadFairiesHero2Version2Title</Name>
+    <Name>%HeroNameMadFairiesHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileMadFairiesHero3">
+    <Name>%HeroNameMadFairiesHero3Version1Title</Name>
+    <Name>%HeroNameMadFairiesHero3Version2Title</Name>
+    <Name>%HeroNameMadFairiesHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileMadFairiesHero4">
+    <Name>%HeroNameMadFairiesHero4Version1Title</Name>
+    <Name>%HeroNameMadFairiesHero4Version2Title</Name>
+    <Name>%HeroNameMadFairiesHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileMadFairiesHero5">
+    <Name>%HeroNameMadFairiesHero5Version1Title</Name>
+    <Name>%HeroNameMadFairiesHero5Version2Title</Name>
+    <Name>%HeroNameMadFairiesHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileMadFairiesHero6">
+    <Name>%HeroNameMadFairiesHero6Version1Title</Name>
+    <Name>%HeroNameMadFairiesHero6Version2Title</Name>
+    <Name>%HeroNameMadFairiesHero6Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileMadFairiesHero7">
+    <Name>%HeroNameMadFairiesHero7Version1Title</Name>
+  </UnitProfileNames>
+
+
+
+<!-- Necrophages -->
+  <UnitProfileNames Name="UnitProfileNecrophagesHero1">
+    <Name>%HeroNameNecrophagesHero1Version1Title</Name>
+    <Name>%HeroNameNecrophagesHero1Version2Title</Name>
+    <Name>%HeroNameNecrophagesHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileNecrophagesHero2">
+    <Name>%HeroNameNecrophagesHero2Version1Title</Name>
+    <Name>%HeroNameNecrophagesHero2Version2Title</Name>
+    <Name>%HeroNameNecrophagesHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileNecrophagesHero3">
+    <Name>%HeroNameNecrophagesHero3Version1Title</Name>
+    <Name>%HeroNameNecrophagesHero3Version2Title</Name>
+    <Name>%HeroNameNecrophagesHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileNecrophagesHero4">
+    <Name>%HeroNameNecrophagesHero4Version1Title</Name>
+    <Name>%HeroNameNecrophagesHero4Version2Title</Name>
+    <Name>%HeroNameNecrophagesHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileNecrophagesHero5">
+    <Name>%HeroNameNecrophagesHero5Version1Title</Name>
+    <Name>%HeroNameNecrophagesHero5Version2Title</Name>
+    <Name>%HeroNameNecrophagesHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileNecrophagesHero6">
+    <Name>%HeroNameNecrophagesHero6Version1Title</Name>
+    <Name>%HeroNameNecrophagesHero6Version2Title</Name>
+    <Name>%HeroNameNecrophagesHero6Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileNecrophagesHero7">
+    <Name>%HeroNameNecrophagesHero7Version1Title</Name>
+  </UnitProfileNames>
+
+
+
+<!-- Rage Wizards -->
+  <UnitProfileNames Name="UnitProfileRageWizardsHero1">
+    <Name>%HeroNameRageWizardsHero1Version1Title</Name>
+    <Name>%HeroNameRageWizardsHero1Version2Title</Name>
+    <Name>%HeroNameRageWizardsHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRageWizardsHero2">
+    <Name>%HeroNameRageWizardsHero2Version1Title</Name>
+    <Name>%HeroNameRageWizardsHero2Version2Title</Name>
+    <Name>%HeroNameRageWizardsHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRageWizardsHero3">
+    <Name>%HeroNameRageWizardsHero3Version1Title</Name>
+    <Name>%HeroNameRageWizardsHero3Version2Title</Name>
+    <Name>%HeroNameRageWizardsHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRageWizardsHero4">
+    <Name>%HeroNameRageWizardsHero4Version1Title</Name>
+    <Name>%HeroNameRageWizardsHero4Version2Title</Name>
+    <Name>%HeroNameRageWizardsHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRageWizardsHero5">
+    <Name>%HeroNameRageWizardsHero5Version1Title</Name>
+    <Name>%HeroNameRageWizardsHero5Version2Title</Name>
+    <Name>%HeroNameRageWizardsHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRageWizardsHero6">
+    <Name>%HeroNameRageWizardsHero6Version1Title</Name>
+    <Name>%HeroNameRageWizardsHero6Version2Title</Name>
+    <Name>%HeroNameRageWizardsHero6Version3Title</Name>
+  </UnitProfileNames>
+
+
+
+<!-- Vaulters -->
+  <UnitProfileNames Name="UnitProfileVaultersHero1">
+    <Name>%HeroNameVaultersHero1Version1Title</Name>
+    <Name>%HeroNameVaultersHero1Version2Title</Name>
+    <Name>%HeroNameVaultersHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileVaultersHero2">
+    <Name>%HeroNameVaultersHero2Version1Title</Name>
+    <Name>%HeroNameVaultersHero2Version2Title</Name>
+    <Name>%HeroNameVaultersHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileVaultersHero3">
+    <Name>%HeroNameVaultersHero3Version1Title</Name>
+    <Name>%HeroNameVaultersHero3Version2Title</Name>
+    <Name>%HeroNameVaultersHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileVaultersHero4">
+    <Name>%HeroNameVaultersHero4Version1Title</Name>
+    <Name>%HeroNameVaultersHero4Version2Title</Name>
+    <Name>%HeroNameVaultersHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileVaultersHero5">
+    <Name>%HeroNameVaultersHero5Version1Title</Name>
+    <Name>%HeroNameVaultersHero5Version2Title</Name>
+    <Name>%HeroNameVaultersHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileVaultersHero6">
+    <Name>%HeroNameVaultersHero6Version1Title</Name>
+    <Name>%HeroNameVaultersHero6Version2Title</Name>
+    <Name>%HeroNameVaultersHero6Version3Title</Name>
+  </UnitProfileNames>
+
+
+
+<!-- Roving Clans -->
+  <UnitProfileNames Name="UnitProfileRovingClansHero1">
+    <Name>%HeroNameRovingClansHero1Version1Title</Name>
+    <Name>%HeroNameRovingClansHero1Version2Title</Name>
+    <Name>%HeroNameRovingClansHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRovingClansHero2">
+    <Name>%HeroNameRovingClansHero2Version1Title</Name>
+    <Name>%HeroNameRovingClansHero2Version2Title</Name>
+    <Name>%HeroNameRovingClansHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRovingClansHero3">
+    <Name>%HeroNameRovingClansHero3Version1Title</Name>
+    <Name>%HeroNameRovingClansHero3Version2Title</Name>
+    <Name>%HeroNameRovingClansHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRovingClansHero4">
+    <Name>%HeroNameRovingClansHero4Version1Title</Name>
+    <Name>%HeroNameRovingClansHero4Version2Title</Name>
+    <Name>%HeroNameRovingClansHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRovingClansHero5">
+    <Name>%HeroNameRovingClansHero5Version1Title</Name>
+    <Name>%HeroNameRovingClansHero5Version2Title</Name>
+    <Name>%HeroNameRovingClansHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileRovingClansHero6">
+    <Name>%HeroNameRovingClansHero6Version1Title</Name>
+    <Name>%HeroNameRovingClansHero6Version2Title</Name>
+    <Name>%HeroNameRovingClansHero6Version3Title</Name>
+  </UnitProfileNames>
+
+
+
+  <!-- Drakkens -->
+  <UnitProfileNames Name="UnitProfileDrakkensHero1">
+    <Name>%HeroNameDrakkensHero1Version1Title</Name>
+    <Name>%HeroNameDrakkensHero1Version2Title</Name>
+    <Name>%HeroNameDrakkensHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileDrakkensHero2">
+    <Name>%HeroNameDrakkensHero2Version1Title</Name>
+    <Name>%HeroNameDrakkensHero2Version2Title</Name>
+    <Name>%HeroNameDrakkensHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileDrakkensHero3">
+    <Name>%HeroNameDrakkensHero3Version1Title</Name>
+    <Name>%HeroNameDrakkensHero3Version2Title</Name>
+    <Name>%HeroNameDrakkensHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileDrakkensHero4">
+    <Name>%HeroNameDrakkensHero4Version1Title</Name>
+    <Name>%HeroNameDrakkensHero4Version2Title</Name>
+    <Name>%HeroNameDrakkensHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileDrakkensHero5">
+    <Name>%HeroNameDrakkensHero5Version1Title</Name>
+    <Name>%HeroNameDrakkensHero5Version2Title</Name>
+    <Name>%HeroNameDrakkensHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileDrakkensHero6">
+    <Name>%HeroNameDrakkensHero6Version1Title</Name>
+    <Name>%HeroNameDrakkensHero6Version2Title</Name>
+    <Name>%HeroNameDrakkensHero6Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileDrakkensHero7">
+    <Name>%HeroNameDrakkensHero7Version1Title</Name>
+    <Name>%HeroNameDrakkensHero7Version2Title</Name>
+    <Name>%HeroNameDrakkensHero7Version3Title</Name>
+  </UnitProfileNames>
+
+
+
+  <!-- Cultists -->
+  <UnitProfileNames Name="UnitProfileCultistsHero1">
+    <Name>%HeroNameCultistsHero1Version1Title</Name>
+    <Name>%HeroNameCultistsHero1Version2Title</Name>
+    <Name>%HeroNameCultistsHero1Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileCultistsHero2">
+    <Name>%HeroNameCultistsHero2Version1Title</Name>
+    <Name>%HeroNameCultistsHero2Version2Title</Name>
+    <Name>%HeroNameCultistsHero2Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileCultistsHero3">
+    <Name>%HeroNameCultistsHero3Version1Title</Name>
+    <Name>%HeroNameCultistsHero3Version2Title</Name>
+    <Name>%HeroNameCultistsHero3Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileCultistsHero4">
+    <Name>%HeroNameCultistsHero4Version1Title</Name>
+    <Name>%HeroNameCultistsHero4Version2Title</Name>
+    <Name>%HeroNameCultistsHero4Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileCultistsHero5">
+    <Name>%HeroNameCultistsHero5Version1Title</Name>
+    <Name>%HeroNameCultistsHero5Version2Title</Name>
+    <Name>%HeroNameCultistsHero5Version3Title</Name>
+  </UnitProfileNames>
+
+  <UnitProfileNames Name="UnitProfileCultistsHero6">
+    <Name>%HeroNameCultistsHero6Version1Title</Name>
+    <Name>%HeroNameCultistsHero6Version2Title</Name>
+    <Name>%HeroNameCultistsHero6Version3Title</Name>
+  </UnitProfileNames>
+
+  
+  
+  <!--  Mezari -->
+  <UnitProfileNames Name="UnitProfileMezariHero1">
+    <Name>%HeroNameTutorialHero1Version1Title</Name>
+    <Name>%HeroNameTutorialHero1Version2Title</Name>
+    <Name>%HeroNameTutorialHero1Version3Title</Name>
+  </UnitProfileNames>
+  
+  
+  
+  <!-- Faction Tutorial -->
+  <UnitProfileNames Name="UnitProfileTutorialHero1">
+    <Name>%HeroNameTutorialHero1Version1Title</Name>
+    <Name>%HeroNameTutorialHero1Version2Title</Name>
+    <Name>%HeroNameTutorialHero1Version3Title</Name>
+  </UnitProfileNames>
+
+</Datatable>

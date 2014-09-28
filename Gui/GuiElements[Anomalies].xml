@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="Anomaly1">
+    <Title>%AnomalyTypeAnomaly1Title</Title>
+    <Description>%AnomalyTypeAnomaly1Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly1Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="Anomaly2">
+    <Title>%AnomalyTypeAnomaly2Title</Title>
+    <Description>%AnomalyTypeAnomaly2Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly2Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly3">
+    <Title>%AnomalyTypeAnomaly3Title</Title>
+    <Description>%AnomalyTypeAnomaly3Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly3Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly5">
+    <Title>%AnomalyTypeAnomaly5Title</Title>
+    <Description>%AnomalyTypeAnomaly5Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly5Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly6">
+    <Title>%AnomalyTypeAnomaly6Title</Title>
+    <Description>%AnomalyTypeAnomaly6Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly6Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly7">
+    <Title>%AnomalyTypeAnomaly7Title</Title>
+    <Description>%AnomalyTypeAnomaly7Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly7Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly8">
+    <Title>%AnomalyTypeAnomaly8Title</Title>
+    <Description>%AnomalyTypeAnomaly8Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly8Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly9">
+    <Title>%AnomalyTypeAnomaly9Title</Title>
+    <Description>%AnomalyTypeAnomaly9Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly9Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly10">
+    <Title>%AnomalyTypeAnomaly10Title</Title>
+    <Description>%AnomalyTypeAnomaly10Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly10Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly11">
+    <Title>%AnomalyTypeAnomaly11Title</Title>
+    <Description>%AnomalyTypeAnomaly11Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly11Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly12">
+    <Title>%AnomalyTypeAnomaly12Title</Title>
+    <Description>%AnomalyTypeAnomaly12Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly12Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly13">
+    <Title>%AnomalyTypeAnomaly13Title</Title>
+    <Description>%AnomalyTypeAnomaly13Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly13Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly14">
+    <Title>%AnomalyTypeAnomaly14Title</Title>
+    <Description>%AnomalyTypeAnomaly14Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly14Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly15">
+    <Title>%AnomalyTypeAnomaly15Title</Title>
+    <Description>%AnomalyTypeAnomaly15Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly15Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly16">
+    <Title>%AnomalyTypeAnomaly16Title</Title>
+    <Description>%AnomalyTypeAnomaly16Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly16Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly17">
+    <Title>%AnomalyTypeAnomaly17Title</Title>
+    <Description>%AnomalyTypeAnomaly17Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly17Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly18">
+    <Title>%AnomalyTypeAnomaly18Title</Title>
+    <Description>%AnomalyTypeAnomaly18Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly18Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly19">
+    <Title>%AnomalyTypeAnomaly19Title</Title>
+    <Description>%AnomalyTypeAnomaly19Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly19Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly20">
+    <Title>%AnomalyTypeAnomaly20Title</Title>
+    <Description>%AnomalyTypeAnomaly20Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly20Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly21">
+    <Title>%AnomalyTypeAnomaly21Title</Title>
+    <Description>%AnomalyTypeAnomaly21Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly21Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly22">
+    <Title>%AnomalyTypeAnomaly22Title</Title>
+    <Description>%AnomalyTypeAnomaly22Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly22Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly23">
+    <Title>%AnomalyTypeAnomaly23Title</Title>
+    <Description>%AnomalyTypeAnomaly23Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly23Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly24">
+    <Title>%AnomalyTypeAnomaly24Title</Title>
+    <Description>%AnomalyTypeAnomaly24Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly24Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly25">
+    <Title>%AnomalyTypeAnomaly25Title</Title>
+    <Description>%AnomalyTypeAnomaly25Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly25Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly26">
+    <Title>%AnomalyTypeAnomaly26Title</Title>
+    <Description>%AnomalyTypeAnomaly26Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly26Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly27">
+    <Title>%AnomalyTypeAnomaly27Title</Title>
+    <Description>%AnomalyTypeAnomaly27Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly27Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly28">
+    <Title>%AnomalyTypeAnomaly28Title</Title>
+    <Description>%AnomalyTypeAnomaly28Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly28Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly29">
+    <Title>%AnomalyTypeAnomaly29Title</Title>
+    <Description>%AnomalyTypeAnomaly29Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly29Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly30">
+    <Title>%AnomalyTypeAnomaly30Title</Title>
+    <Description>%AnomalyTypeAnomaly30Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly30Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly34">
+    <Title>%AnomalyTypeAnomaly34Title</Title>
+    <Description>%AnomalyTypeAnomaly34Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly34Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly36">
+    <Title>%AnomalyTypeAnomaly36Title</Title>
+    <Description>%AnomalyTypeAnomaly36Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly36Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly39">
+    <Title>%AnomalyTypeAnomaly39Title</Title>
+    <Description>%AnomalyTypeAnomaly39Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly39Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly41">
+    <Title>%AnomalyTypeAnomaly41Title</Title>
+    <Description>%AnomalyTypeAnomaly41Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly42">
+    <Title>%AnomalyTypeAnomaly42Title</Title>
+    <Description>%AnomalyTypeAnomaly42Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly43">
+    <Title>%AnomalyTypeAnomaly43Title</Title>
+    <Description>%AnomalyTypeAnomaly43Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly43Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly44">
+    <Title>%AnomalyTypeAnomaly44Title</Title>
+    <Description>%AnomalyTypeAnomaly44Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly45">
+    <Title>%AnomalyTypeAnomaly45Title</Title>
+    <Description>%AnomalyTypeAnomaly45Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly46">
+    <Title>%AnomalyTypeAnomaly46Title</Title>
+    <Description>%AnomalyTypeAnomaly46Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly47">
+    <Title>%AnomalyTypeAnomaly47Title</Title>
+    <Description>%AnomalyTypeAnomaly47Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly48">
+    <Title>%AnomalyTypeAnomaly48Title</Title>
+    <Description>%AnomalyTypeAnomaly48Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly49">
+    <Title>%AnomalyTypeAnomaly49Title</Title>
+    <Description>%AnomalyTypeAnomaly49Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly50">
+    <Title>%AnomalyTypeAnomaly50Title</Title>
+    <Description>%AnomalyTypeAnomaly50Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly51">
+    <Title>%AnomalyTypeAnomaly51Title</Title>
+    <Description>%AnomalyTypeAnomaly51Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/#DebugLarge" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly52">
+    <Title>%AnomalyTypeAnomaly52Title</Title>
+    <Description>%AnomalyTypeAnomaly52Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly52Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Anomaly53">
+    <Title>%AnomalyTypeAnomaly53Title</Title>
+    <Description>%AnomalyTypeAnomaly53Description</Description>
+    <Icons>
+      <Icon Path="GUI/AtlasedBitmaps/#DebugSmall" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Anomalies/Anomaly53Large" Size="Large" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

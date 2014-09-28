@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="ItemCategoryWeapon" Type="ItemCategory" />
+  <SimulationDescriptor Name="ItemCategoryArmor" Type="ItemCategory" />
+  <SimulationDescriptor Name="ItemCategoryAccessory" Type="ItemCategory" >
+    <SimulationPropertyDescriptors>
+      <!-- require tooltip element percent = true -->
+      <SimulationPropertyDescriptor Name="HeroLevel" BaseValue="0"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

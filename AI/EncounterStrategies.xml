@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <AIEncounterStrategyDefinition  Name="LoseTheLess">
+  	<!-- DESCRIPTION
+  	The AI plays as defensive as possible.
+  	Harassers are used to make the enemy ones loose time while the AI's units are escaping.
+  	-->
+    <Modifier Name="AllyIsAttacking" Value="-999"/>
+    <Modifier Name="AllyHasASettler" Value="10"/>
+    <Modifier Name="AllyHasGlobalAdvantage" Value="-10"/>
+
+    <ArchetypeBehavior Archetype="AI_Settler" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Initiative" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_DefenseBreaker" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Resistant" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Initiative" Strategy="BattleTargetingStrategyOffense" Target="Harasser"/>
+    <ArchetypeBehavior Archetype="AI_Protector_DefenseBreaker" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Strong" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Initiative" Strategy="BattleTargetingStrategyOffense" Target="Harasser"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Resistant" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Strong" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_DefenseBreaker" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Strong" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Resistant" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Resistant" Strategy="BattleTargetingStrategyOffense" Target="Harasser"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Healthful" Strategy="BattleTargetingStrategyOffense" Target="Harasser"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_DefenseBreaker" Strategy="BattleTargetingStrategyOffense" Target="Harasser"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Strong" Strategy="BattleTargetingStrategyOffense" Target="Harasser"/>
+    <ArchetypeBehavior Archetype="AI_HealerBishop" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_HealerCeratan" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_BufferSister" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_BufferShaman" Strategy="BattleTargetingStrategyDefense"/>
+
+  </AIEncounterStrategyDefinition>
+
+  <AIEncounterStrategyDefinition  Name="WallOfArrows">
+    <!-- DESCRIPTION
+    The AI stays at its initial position and use its artillery to weaken the enemy.
+    -->
+    <Modifier Name="AllyHasArtilleryAdvantage" Value="10"/>
+    <Modifier Name="AllyHasGlobalAdvantage" Value="-10"/>
+
+    <ArchetypeBehavior Archetype="AI_Settler" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Initiative" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_DefenseBreaker" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Resistant" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_DefenseBreaker" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Strong" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Resistant" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Strong" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Resistant" Strategy="BattleTargetingStrategyOffense" Target="Artillery"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Healthful" Strategy="BattleTargetingStrategyOffense" Target="Artillery"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_DefenseBreaker" Strategy="BattleTargetingStrategyOffense" Target="Artillery"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Strong" Strategy="BattleTargetingStrategyOffense" Target="Artillery"/>
+    <ArchetypeBehavior Archetype="AI_HealerBishop" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_HealerCeratan" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_BufferSister" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_BufferShaman" Strategy="BattleTargetingStrategyDefense"/>
+
+  </AIEncounterStrategyDefinition>
+
+  <AIEncounterStrategyDefinition  Name="Aggressive">
+    <!-- DESCRIPTION
+    The AI has a default aggressive behavior
+    -->
+    <Modifier Name="AllyHasGlobalAdvantage" Value="10"/>
+
+    <ArchetypeBehavior Archetype="AI_Settler" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Healthful" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_HealerBishop" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_HealerCeratan" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_BufferSister" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_BufferShaman" Strategy="BattleTargetingStrategyOffense"/>
+
+  </AIEncounterStrategyDefinition>
+
+  <AIEncounterStrategyDefinition  Name="Careful">
+    <!-- DESCRIPTION
+    TThe AI is aggressive with its fighters and defensive with its supports and artilleries
+    -->
+    <Modifier Name="AllyHasGlobalAdvantage" Value="-20"/>
+    <Modifier Name="AllyHasProtectorAdvantage" Value="10"/>
+    <Modifier Name="AllyHasKillerAdvantage" Value="10"/>
+    <Modifier Name="AllyHasDefenseBreakerAdvantage" Value="10"/>
+
+    <ArchetypeBehavior Archetype="AI_Settler" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Killer_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Protector_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Initiative" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_DefenseBreaker_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_DefenseBreaker" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Strong" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Artillery_Resistant" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Resistant" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Healthful" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_DefenseBreaker" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_Harasser_Strong" Strategy="BattleTargetingStrategyOffense"/>
+    <ArchetypeBehavior Archetype="AI_HealerBishop" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_HealerCeratan" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_BufferSister" Strategy="BattleTargetingStrategyDefense"/>
+    <ArchetypeBehavior Archetype="AI_BufferShaman" Strategy="BattleTargetingStrategyDefense"/>
+
+  </AIEncounterStrategyDefinition>
+
+
+</Datatable>

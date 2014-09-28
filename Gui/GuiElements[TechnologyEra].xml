@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <TechnologyEraGuiElement Name="TechnologyEraDefinition1">
+    <Title>%TechnologyEraDefinition1Title</Title>
+    <Description>%TechnologyEraDefinition1Description</Description>
+
+    <TechnologyEraNumber>1</TechnologyEraNumber>
+  </TechnologyEraGuiElement>
+
+  <TechnologyEraGuiElement Name="TechnologyEraDefinition2">
+    <Title>%TechnologyEraDefinition2Title</Title>
+    <Description>%TechnologyEraDefinition2Description</Description>
+
+    <TechnologyEraNumber>2</TechnologyEraNumber>
+  </TechnologyEraGuiElement>
+
+  <TechnologyEraGuiElement Name="TechnologyEraDefinition3">
+    <Title>%TechnologyEraDefinition3Title</Title>
+    <Description>%TechnologyEraDefinition3Description</Description>
+
+    <TechnologyEraNumber>3</TechnologyEraNumber>
+  </TechnologyEraGuiElement>
+
+  <TechnologyEraGuiElement Name="TechnologyEraDefinition4">
+    <Title>%TechnologyEraDefinition4Title</Title>
+    <Description>%TechnologyEraDefinition4Description</Description>
+
+    <TechnologyEraNumber>4</TechnologyEraNumber>
+  </TechnologyEraGuiElement>
+
+  <TechnologyEraGuiElement Name="TechnologyEraDefinition5">
+    <Title>%TechnologyEraDefinition5Title</Title>
+    <Description>%TechnologyEraDefinition5Description</Description>
+
+    <TechnologyEraNumber>5</TechnologyEraNumber>
+  </TechnologyEraGuiElement>
+
+  <TechnologyEraGuiElement Name="TechnologyEraDefinition6">
+    <Title>%TechnologyEraDefinition6Title</Title>
+    <Description>%TechnologyEraDefinition6Description</Description>
+
+    <TechnologyEraNumber>6</TechnologyEraNumber>
+  </TechnologyEraGuiElement>
+
+</Datatable>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ###########################  Disinterested/ Greedy  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Disinterested" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityDisinterested</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityGreedy</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityBrokenLords</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityRovingClans</PathPrerequisite>
+    
+    <PersonalityReference Name="PersonalityDisinterested" />
+  </AIRandomPersonalityDescriptor>
+
+
+  <AIRandomPersonalityDescriptor Name="Greedy" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityDisinterested</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityGreedy</PersonalityPrerequisite>
+    
+    <PersonalityReference Name="PersonalityGreedy" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Hospitable / Inhospitable  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Hospitable" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityHospitable</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityInhospitable</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityHospitable" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Inhospitable" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityInhospitable</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityHospitable</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityInhospitable" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Arrogant / Humble  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Arrogant" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityArrogant</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityHumble</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityArrogant" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Humble" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityArrogant</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityHumble</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityHumble" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Brave / Coward  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Brave" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityBrave</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityCoward</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityBrave" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Coward" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityBrave</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityCoward</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityCoward" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Firm / Uncertain  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Firm" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityFirm</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityUncertain</PersonalityPrerequisite>
+
+    <!--<PersonalityReference Name="PersonalityFirm" />-->
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Uncertain" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityFirm</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityUncertain</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityUncertain" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Expansionist / Reserved  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Expansionist" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityExpansionist</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityUncertain</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityExpansionist" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Reserved" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityExpansionist</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityReserved</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityReserved" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Militarist / Pacifist  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Militarist" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityMilitarist</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityPacifist</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityDrakkens</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityRonvingClans</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityMilitarist" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Pacifist" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityMilitarist</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityPacifist</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityPacifist" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Sociable / Asocial  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Sociable" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalitySociable</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityAsocial</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalitySociable" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Asocial" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalitySociable</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityAsocial</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityDrakkens</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityAsocial" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Opportunistic / Standing still  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Opportunistic" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityOpportunistic</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityStandingStill</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityOpportunistic" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="StandingStill" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityOpportunistic</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityStandingStill</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityDrakkens</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityStandingStill" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Bitter / Indulgent  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Bitter" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityBitter</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityIndulgent</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalityBitter" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Indulgent" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityBitter</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityIndulgent</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityIndulgent" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Suspicious / Naïve  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Suspicious" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalitySuspicious</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityNaive</PersonalityPrerequisite>
+
+    <PersonalityReference Name="PersonalitySuspicious" />
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="Naive" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalitySuspicious</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityNaive</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityNaive" />
+  </AIRandomPersonalityDescriptor>
+
+  <!-- ###########################  Negotiator / Bad talker  ########################### -->
+
+  <AIRandomPersonalityDescriptor Name="Negotiator" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityNegotiator</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityBadTalker</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+
+    <!--<PersonalityReference Name="PersonalityNegotiator" />-->
+  </AIRandomPersonalityDescriptor>
+
+  <AIRandomPersonalityDescriptor Name="BadTalker" Weight="1">
+    <PersonalityPrerequisite Inverted="true">PersonalityNegotiator</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityBadTalker</PersonalityPrerequisite>
+
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityDrakkens</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityRovingClans</PathPrerequisite>
+
+    <PersonalityReference Name="PersonalityBadTalker" />
+  </AIRandomPersonalityDescriptor>
+
+<!-- ############################################################################################################## -->
+  <AIRandomPersonalityDescriptor Name="Example" Weight="2">
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityBrokenLords</PathPrerequisite>
+    <PathPrerequisite Inverted="true">../EmpireTypeMajor,AffinityRovingClans</PathPrerequisite>
+
+    <InterpreterPrerequisite Inverted="false">$Path(../EmpireTypeMajor,AffinityBrokenLords) or $Path(../EmpireTypeMajor,AffinityRovingClans)</InterpreterPrerequisite>
+    
+    <PersonalityPrerequisite Inverted="true">PersonalityDisinterested</PersonalityPrerequisite>
+    <PersonalityPrerequisite Inverted="true">PersonalityGreedy</PersonalityPrerequisite>
+    
+    <!--<PersonalityReference Name="PersonalityGreedy" />-->
+  </AIRandomPersonalityDescriptor>
+
+</Datatable>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="Pillar1">
+    <Title>%Pillar1Title</Title>
+    <Description>%Pillar1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/Pillar1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/Pillar1Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Pillar2">
+    <Title>%Pillar2Title</Title>
+    <Description>%Pillar2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/Pillar2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/Pillar2Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Pillar3">
+    <Title>%Pillar3Title</Title>
+    <Description>%Pillar3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/Pillar3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/Pillar3Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Pillar4">
+    <Title>%Pillar4Title</Title>
+    <Description>%Pillar4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/Pillar4Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/Pillar4Large" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="Pillar5">
+    <Title>%Pillar5Title</Title>
+    <Description>%Pillar5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/Region/Pillar5Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/Region/Pillar5Large" />
+    </Icons>
+  </GuiElement>
+</Datatable>

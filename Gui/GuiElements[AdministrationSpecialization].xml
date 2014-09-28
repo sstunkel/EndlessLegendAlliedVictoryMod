@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="AdministrationSpecialization_None">
+    <Title>%AdministrationSpecialization_NoneTitle</Title>
+    <Description>%AdministrationSpecialization_NoneDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="AINone" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AdministrationSpecialization_Balanced">
+    <Title>%AdministrationSpecialization_BalancedTitle</Title>
+    <Description>%AdministrationSpecialization_BalancedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="AIBalanced" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AdministrationSpecialization_Growth">
+    <Title>%AdministrationSpecialization_GrowthTitle</Title>
+    <Description>%AdministrationSpecialization_GrowthDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="AIFood" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AdministrationSpecialization_Production">
+    <Title>%AdministrationSpecialization_ProductionTitle</Title>
+    <Description>%AdministrationSpecialization_ProductionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="AIIndustry" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AdministrationSpecialization_Money">
+    <Title>%AdministrationSpecialization_MoneyTitle</Title>
+    <Description>%AdministrationSpecialization_MoneyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="AIMoney" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AdministrationSpecialization_Research">
+    <Title>%AdministrationSpecialization_ResearchTitle</Title>
+    <Description>%AdministrationSpecialization_ResearchDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="AIScience" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AdministrationSpecialization_EmpirePoint">
+    <Title>%AdministrationSpecialization_EmpirePointTitle</Title>
+    <Description>%AdministrationSpecialization_EmpirePointDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="AIEmpirePoint" />
+    </Icons>
+  </GuiElement>
+</Datatable>

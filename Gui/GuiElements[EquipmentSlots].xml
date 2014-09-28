@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- The symbol string X_Y is used to place slots in the equipment window -->
+  <!-- X = table where to put the slot : 0 = left table, 1 = right table, 2 = bottom table -->
+  <!-- Y = sort order in each table from top (right or left tables) or left (bottom table) with an increasing number -->
+  <!-- So for the head slot, 1_1 means the slot is placed in the right table with the 1 sorting order, above 1_2 for the torso slot -->
+  
+  <ExtendedGuiElement Name="MainHand">
+    <Title>%EquipmentSlotMainHandTitle</Title>
+    <Description>%EquipmentSlotMainHandDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentSlots/EquipmentSlotMainHandSmall" />
+    </Icons>
+    <SymbolString>0_1</SymbolString>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="Head">
+    <Title>%EquipmentSlotHeadTitle</Title>
+    <Description>%EquipmentSlotHeadDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentSlots/EquipmentSlotHeadSmall" />
+    </Icons>
+    <SymbolString>1_1</SymbolString>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="Torso">
+    <Title>%EquipmentSlotTorsoTitle</Title>
+    <Description>%EquipmentSlotTorsoDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentSlots/EquipmentSlotTorsoSmall" />
+    </Icons>
+    <SymbolString>1_2</SymbolString>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="OffHand">
+    <Title>%EquipmentSlotOffHandTitle</Title>
+    <Description>%EquipmentSlotOffHandDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentSlots/EquipmentSlotOffHandSmall" />
+    </Icons>
+    <SymbolString>1_3</SymbolString>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="Legs">
+    <Title>%EquipmentSlotLegsTitle</Title>
+    <Description>%EquipmentSlotLegsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentSlots/EquipmentSlotLegsSmall" />
+    </Icons>
+    <SymbolString>1_4</SymbolString>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="Accessory">
+    <Title>%EquipmentSlotAccessoryTitle</Title>
+    <Description>%EquipmentSlotAccessoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/EquipmentSlots/EquipmentSlotAccessorySmall" />
+    </Icons>
+    <SymbolString>2_1</SymbolString>
+  </ExtendedGuiElement>
+  
+</Datatable>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- INDIFFERENT -->
+  <GuiElement Name="AttitudeStateIndifferent">
+    <Title>%AttitudeStateIndifferentTitle</Title>
+    <Description>%AttitudeStateIndifferentDescription</Description>
+  </GuiElement>
+  
+  <!-- ENVY -->
+  <GuiElement Name="AttitudeStateEnvyStrongPositive">
+    <Title>%AttitudeStateEnvyStrongPositiveTitle</Title>
+    <Description>%AttitudeStateEnvyStrongPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateEnvyWeakPositive">
+    <Title>%AttitudeStateEnvyWeakPositiveTitle</Title>
+    <Description>%AttitudeStateEnvyWeakPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateEnvyNeutral">
+    <Title>%AttitudeStateEnvyNeutralTitle</Title>
+    <Description>%AttitudeStateEnvyNeutralDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateEnvyWeakNegative">
+    <Title>%AttitudeStateEnvyWeakNegativeTitle</Title>
+    <Description>%AttitudeStateEnvyWeakNegativeDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateEnvyStrongNegative">
+    <Title>%AttitudeStateEnvyStrongNegativeTitle</Title>
+    <Description>%AttitudeStateEnvyStrongNegativeDescription</Description>
+  </GuiElement>
+  
+  <!-- FEAR -->
+  <GuiElement Name="AttitudeStateFearStrongPositive">
+    <Title>%AttitudeStateFearStrongPositiveTitle</Title>
+    <Description>%AttitudeStateFearStrongPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateFearWeakPositive">
+    <Title>%AttitudeStateFearWeakPositiveTitle</Title>
+    <Description>%AttitudeStateFearWeakPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateFearNeutral">
+    <Title>%AttitudeStateFearNeutralTitle</Title>
+    <Description>%AttitudeStateFearNeutralDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateFearWeakNegative">
+    <Title>%AttitudeStateFearWeakNegativeTitle</Title>
+    <Description>%AttitudeStateFearWeakNegativeDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateFearStrongNegative">
+    <Title>%AttitudeStateFearStrongNegativeTitle</Title>
+    <Description>%AttitudeStateFearStrongNegativeDescription</Description>
+  </GuiElement>
+  
+  <!-- TRUST -->
+  <GuiElement Name="AttitudeStateTrustStrongPositive">
+    <Title>%AttitudeStateTrustStrongPositiveTitle</Title>
+    <Description>%AttitudeStateTrustStrongPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateTrustWeakPositive">
+    <Title>%AttitudeStateTrustWeakPositiveTitle</Title>
+    <Description>%AttitudeStateTrustWeakPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateTrustNeutral">
+    <Title>%AttitudeStateTrustNeutralTitle</Title>
+    <Description>%AttitudeStateTrustNeutralDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateTrustWeakNegative">
+    <Title>%AttitudeStateTrustWeakNegativeTitle</Title>
+    <Description>%AttitudeStateTrustWeakNegativeDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateTrustStrongNegative">
+    <Title>%AttitudeStateTrustStrongNegativeTitle</Title>
+    <Description>%AttitudeStateTrustStrongNegativeDescription</Description>
+  </GuiElement>
+  
+  <!-- WAR -->
+  <GuiElement Name="AttitudeStateWarStrongPositive">
+    <Title>%AttitudeStateWarStrongPositiveTitle</Title>
+    <Description>%AttitudeStateWarStrongPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateWarWeakPositive">
+    <Title>%AttitudeStateWarWeakPositiveTitle</Title>
+    <Description>%AttitudeStateWarWeakPositiveDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateWarNeutral">
+    <Title>%AttitudeStateWarNeutralTitle</Title>
+    <Description>%AttitudeStateWarNeutralDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateWarWeakNegative">
+    <Title>%AttitudeStateWarWeakNegativeTitle</Title>
+    <Description>%AttitudeStateWarWeakNegativeDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="AttitudeStateWarStrongNegative">
+    <Title>%AttitudeStateWarStrongNegativeTitle</Title>
+    <Description>%AttitudeStateWarStrongNegativeDescription</Description>
+  </GuiElement>
+  
+</Datatable>

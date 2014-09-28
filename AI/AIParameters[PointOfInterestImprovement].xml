@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################# -->
+  <!-- ###### STRATEGIC RESOURCES ###### -->
+  <!-- ################################# -->
+  <AIParameterDatatableElement Name="ResourceExtractor_Strategic1">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireStrategicResource1" Value="2 * $Count(ClassCity/ResourceDepositTypeStrategic1)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Strategic2">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireStrategicResource2" Value="2 * $Count(ClassCity/ResourceDepositTypeStrategic2)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Strategic3">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireStrategicResource3" Value="2 * $Count(ClassCity/ResourceDepositTypeStrategic3)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Strategic4">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireStrategicResource4" Value="2 * $Count(ClassCity/ResourceDepositTypeStrategic4)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Strategic5">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireStrategicResource5" Value="2 * $Count(ClassCity/ResourceDepositTypeStrategic5)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Strategic6">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireStrategicResource6" Value="2 * $Count(ClassCity/ResourceDepositTypeStrategic6)"/>
+  </AIParameterDatatableElement>
+
+  <!-- ################################# -->
+  <!-- ###### LUXURY RESOURCES ######### -->
+  <!-- ################################# -->
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury1">
+    <AIParameter Name="AIEmpireExploration"        Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource"       Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury1)"/>
+    <AIParameter Name="LuxuryCityApproval"         Value="5"/>
+    <AIParameter Name="LuxuryCityCityPointPercent" Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury2">
+    <AIParameter Name="AIEmpireExploration"              Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource"             Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury2)"/>
+    <AIParameter Name="LuxuryCityApproval"               Value="5"/>
+    <AIParameter Name="LuxuryTradeRouteMoneyGainPercent" Value="1"   />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury3">
+    <AIParameter Name="AIEmpireExploration"      Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource"     Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury3)"/>
+    <AIParameter Name="LuxuryCityApproval"       Value="5"/>
+    <AIParameter Name="LuxuryCityMoneyUpkeepPercent" Value="-0.50" />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury4">
+    <AIParameter Name="AIEmpireExploration"      Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource"     Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury4)"/>
+    <AIParameter Name="LuxuryCityApproval"       Value="5"/>
+    <AIParameter Name="LuxuryCityFoodPercent"   Value="0.50"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury5">
+    <AIParameter Name="AIEmpireExploration"      Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource"     Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury5)"/>
+    <AIParameter Name="LuxuryCityApproval"       Value="30"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury6">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury6)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury7">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury7)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury8">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury8)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury9">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury9)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury10">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury10)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury11">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury11)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury12">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury12)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury13">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury13)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury14">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury14)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExtractor_Luxury15">
+    <AIParameter Name="AIEmpireExploration" Value=".25"/>
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassCity/ResourceDepositTypeLuxury15)"/>
+    <AIParameter Name="LuxuryCityApproval" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <!-- ################################# -->
+  <!-- ######   WATCH TOWER    ######### -->
+  <!-- ################################# -->
+  <AIParameterDatatableElement Name="WatchTower0">
+    <AIParameter Name="WatchTower" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="WatchTower1">
+    <AIParameter Name="WatchTower" Value="2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="WatchTower2">
+    <AIParameter Name="WatchTower" Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!--<AIParameterDatatableElement Name="WatchTower3">
+    <AIParameter Name="WatchTower" Value="4"/>
+  </AIParameterDatatableElement>-->
+
+  <!-- ################################# -->
+  <!-- #########    VILLAGES   ######### -->
+  <!-- ################################# -->
+
+  <AIParameterDatatableElement Name="Village_Urces">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Urces" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Erycis">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Erycis" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Ceratan">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Ceratan" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Kazanji">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Kazanji" Value ="1"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="Village_Bos">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Bos" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Silics">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Silics" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Delvers">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Delvers" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_SistersOfMercy">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_SistersOfMercy" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Haunts">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Haunts" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Jotus">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Jotus" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Hurnas">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Hurnas" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Gauran">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Gauran" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Birdhive">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Birdhive" Value ="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Village_Geldirus">
+    <AIParameter Name="Village" Value="1"/>
+    <AIParameter Name="AIEmpireExploration" Value="1"/>
+    <AIParameter Name="Unit_Geldirus" Value ="1"/>
+  </AIParameterDatatableElement>
+  
+</Datatable>

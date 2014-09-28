@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Registry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Debug>
+    <GodCursor>
+      <SpawnArmy>UnitDesignCultistsPreacher#1,UnitDesignVaultersTitan#1,UnitDesignVaultersTitan#1,UnitDesignVaultersDawnOfficer#1,UnitDesignVaultersDawnOfficer#1,UnitDesignVaultersMarine#1,UnitDesignVaultersMarine#1,UnitDesignKazanjiDevil#1</SpawnArmy>
+      <SpawnEnnemyArmy>UnitDesignMadFairiesShaman#1,UnitDesignMadFairiesShaman#1,UnitDesignMadFairiesArcher#1,UnitDesignMadFairiesArcher#1,UnitDesignMadFairiesForestSpirit#1,UnitDesignMadFairiesForestSpirit#1,UnitDesignHauntsSpecter#MinorEmpire,UnitDesignHauntsSpecter#MinorEmpire</SpawnEnnemyArmy>
+    </GodCursor>
+  </Debug>
+  <Gameplay>
+    <Agencies>
+      <DepartmentOfPlanificationAndDevelopment>
+        <TradeRoutes>
+          <BaseMultiplier>0.5</BaseMultiplier>
+          <DistanceMultiplier>0.25</DistanceMultiplier>
+        </TradeRoutes>
+        <EmpirePlanImminentNotificationTurnCount>6</EmpirePlanImminentNotificationTurnCount>
+      </DepartmentOfPlanificationAndDevelopment>
+      <DepartmentOfTheInterior>
+        <GrowthFormula>($(Population) ^ 2.75 ) * 5.0 * $Property(ClassEmpire:GameSpeedMultiplier)</GrowthFormula>
+        <!--<GrowthFormula>(($(Population)) ^ 3 ) * 3.0</GrowthFormula>-->
+        <AssimilationFormula>(((($Property(ClassEmpire:MinorFactionAssimilatedCount) + $(Delta) + 1) ^ 3) * 10) + 20) * $Property(ClassEmpire:GameSpeedMultiplier)</AssimilationFormula>
+    <DoesRazingDetroyRegionBuilding>true</DoesRazingDetroyRegionBuilding>
+      </DepartmentOfTheInterior>
+      <DepartmentOfPlanificationAndDevelopment>
+        <!-- Duration between two empire plan choices -->
+        <EmpirePlanPeriod>20 * $Property(ClassEmpire:GameSpeedMultiplier)</EmpirePlanPeriod>
+      </DepartmentOfPlanificationAndDevelopment>
+    </Agencies>
+    <Ancillaries>
+      <Marketplace>
+        <Tradable>
+          <!-- Tax applied when buying -->
+          <BuyoutMultiplier>1.25</BuyoutMultiplier>
+          <!-- Depreciation is applied for each consecutive turn when tradable is neither bought nor sold on the marketplace -->
+          <!-- Depreciation is reset as soon as some quantity of tradable is either bought or sold -->
+          <DepreciationMultiplier>-0.03</DepreciationMultiplier>
+          <InflationMultiplier>0.02</InflationMultiplier>
+          <!-- Tendency is modified each time some quantity of tradable is bought -->
+          <PositiveTendencyMultiplier>0.02</PositiveTendencyMultiplier>  
+          <!-- Tendency is modified each time some quantity of tradable is sold -->
+          <NegativeTendencyMultiplier>-0.02</NegativeTendencyMultiplier>
+          <!-- Max / Min price -->
+          <MaximumPriceMultiplier>3.0</MaximumPriceMultiplier>
+          <MinimumPriceMultiplier>0.33</MinimumPriceMultiplier>
+          <!-- Tax applied when selling -->
+          <SelloutMultiplier>0.75</SelloutMultiplier>
+          <!-- Increasing Market Place cost at each Unit or Hero level -->
+          <UnitLevelMultiplier>0.20</UnitLevelMultiplier>
+        </Tradable>
+      </Marketplace>
+      <Season>
+        <StartingSeason>Summer</StartingSeason>
+        <InfiniteSeasonDefinitionName>InfiniteWinter</InfiniteSeasonDefinitionName>
+        <InfiniteSeasonStartingTurn>3001</InfiniteSeasonStartingTurn>
+      </Season>
+      <Pathfinding>
+        <MinimumTransitionCost>0.25</MinimumTransitionCost> <!-- Don't set this value to 0 ! -->
+        <ZoneOfControlMovementPointMalus>1</ZoneOfControlMovementPointMalus> 
+      </Pathfinding>
+      <Pillar>
+        <LineOfSightVisionHeight>1</LineOfSightVisionHeight>
+        <LineOfSightVisionRange>1</LineOfSightVisionRange>
+      </Pillar>
+      <Science>
+        <ArcheologyTechnologyDefinitionName>TechnologyDefinitionMapActionArchaeology</ArcheologyTechnologyDefinitionName>
+      </Science>
+      <VictoryManager>
+        <LobbyDataFilter>WorldSize,GameDifficulty,GameSpeed</LobbyDataFilter>
+      </VictoryManager>
+    </Ancillaries>
+    <MinorEmpire>
+      <GarrisonInitialSize>2</GarrisonInitialSize>
+    </MinorEmpire>
+  <FactionTrait>
+    <Drakkens>
+      <TechnologyDefinitionDrakkenEndQuestReward>TechnologyDefinitionDrakkens5</TechnologyDefinitionDrakkenEndQuestReward>
+      <TechnologyDefinitionDrakkenVisionDuringFirstTurn>TechnologyDefinitionDrakkens7</TechnologyDefinitionDrakkenVisionDuringFirstTurn>
+    </Drakkens>
+  </FactionTrait>
+  </Gameplay>
+  <Settings>
+    <Views>
+      <WorldView>
+        <DefaultResourceRenderer>
+          <Scale>0.88</Scale>
+        </DefaultResourceRenderer>
+        <DefaultRenderStatisticsPatchRenderer>
+          <!-- Adrien's factor -->
+          <ElevationFactor>2</ElevationFactor>
+          <TerrainTypesToTrack>Ocean,DriftIce,CoralReef,CoastalWaters,InlandWater,FrozenWaters,TundraWaters,ChillyWaters,CoastalWaters,TropicalWaters,DesertWaters</TerrainTypesToTrack>
+        </DefaultRenderStatisticsPatchRenderer>
+      </WorldView>
+    </Views>
+  </Settings>
+</Registry>

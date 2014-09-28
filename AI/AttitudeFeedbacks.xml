@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ###### NEGATIVE FEEDBACK ######-->
+  
+  <AttitudeFeedback Name="PeacefulFeedbackNegative" ModifierName="AttitudeScorePeaceful" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="10" MaximumValue="15"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+    
+  <AttitudeFeedback Name="CommonEnemyFeedbackNegative" ModifierName="AttitudeScoreCommonEnemy" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonFriendFeedbackNegative" ModifierName="AttitudeScoreCommonFriend" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonAllyFeedbackNegative" ModifierName="AttitudeScoreCommonAlly" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="2"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonFrontierFeedbackNegative" ModifierName="AttitudeScoreAggressiveColonization" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-5" MaximumValue="0"/>
+    <TrendRangeTrigger MinimumValue="-2" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+  
+  <AttitudeFeedback Name="WarFatigueFeedbackNegative" ModifierName="AttitudeScoreWarFatigue" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="55" MaximumValue="60"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="LastWarForgetNegative" ModifierName="AttitudeScoreLastWar" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-5" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="AggressionDuringColdWarFeedbackNegative" ModifierName="AttitudeScoreArmyAggressionInNeutralRegionDuringColdWar" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-100" MaximumValue="-50"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireCitiesTakenFeedbackNegative" ModifierName="AttitudeScoreOtherEmpireCitiesTakenDuringWar" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="30" MaximumValue="35"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="MyEmpireCitiesTakenFeedbackNegative" ModifierName="AttitudeScoreMyEmpireCitiesTakenDuringWar" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="75" MaximumValue="80"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="MyEmpireLeadMilitaryPowerFeedbackNegative" ModifierName="AttitudeScoreMyEmpireLeadMilitaryPower" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="-150" MaximumValue="-145"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireLeadMilitaryPowerFeedbackNegative" ModifierName="AttitudeScoreOtherEmpireLeadMilitaryPower" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="95" MaximumValue="100"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="UnitsInMyTerritoryFeedbackNegative" ModifierName="AttitudeScoreUnitsInMyTerritory" MaximumOccurrenceCount="1" ProbabilityBonus="10">
+    <ValueRangeTrigger MinimumValue="10" MaximumValue="50"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="1"/>
+    <CategoryValueRangeTrigger MinimumValue="-Infinity" MaximumValue="-10"/>
+  </AttitudeFeedback>
+
+  <!-- ###### NEUTRAL FEEDBACK ######-->
+
+  <AttitudeFeedback Name="PeacefulFeedbackNeutral" ModifierName="AttitudeScorePeaceful" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="10" MaximumValue="15"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonEnemyFeedbackNeutral" ModifierName="AttitudeScoreCommonEnemy" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonFriendFeedbackNeutral" ModifierName="AttitudeScoreCommonFriend" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonAllyFeedbackNeutral" ModifierName="AttitudeScoreCommonAlly" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="2"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonFrontierFeedbackNeutral" ModifierName="AttitudeScoreAggressiveColonization" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-5" MaximumValue="0"/>
+    <TrendRangeTrigger MinimumValue="-2" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="WarFatigueFeedbackNeutral" ModifierName="AttitudeScoreWarFatigue" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="55" MaximumValue="60"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="LastWarForgetNeutral" ModifierName="AttitudeScoreLastWar" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-5" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="AggressionDuringColdWarFeedbackNeutral" ModifierName="AttitudeScoreArmyAggressionInNeutralRegionDuringColdWar" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-100" MaximumValue="-50"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireCitiesTakenFeedbackNeutral" ModifierName="AttitudeScoreOtherEmpireCitiesTakenDuringWar" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="30" MaximumValue="35"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="MyEmpireCitiesTakenFeedbackNeutral" ModifierName="AttitudeScoreMyEmpireCitiesTakenDuringWar" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="75" MaximumValue="80"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="MyEmpireLeadMilitaryPowerFeedbackNeutral" ModifierName="AttitudeScoreMyEmpireLeadMilitaryPower" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="-150" MaximumValue="-145"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireLeadMilitaryPowerFeedbackNeutral" ModifierName="AttitudeScoreOtherEmpireLeadMilitaryPower" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="95" MaximumValue="100"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="MyEmpireLeadScoreFeedbackNeutral" ModifierName="AttitudeScoreMyEmpireLeadScore" MaximumOccurrenceCount="1" ProbabilityBonus="10">
+    <ValueRangeTrigger MinimumValue="70" MaximumValue="75"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireLeadScoreFeedbackNeutral" ModifierName="AttitudeScoreOtherEmpireLeadScore" MaximumOccurrenceCount="1" ProbabilityBonus="10">
+    <ValueRangeTrigger MinimumValue="-40" MaximumValue="-35"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="UnitsInMyTerritoryFeedbackNeutral" ModifierName="AttitudeScoreUnitsInMyTerritory" MaximumOccurrenceCount="1" ProbabilityBonus="10">
+    <ValueRangeTrigger MinimumValue="10" MaximumValue="50"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="1"/>
+    <CategoryValueRangeTrigger MinimumValue="-10" MaximumValue="10"/>
+  </AttitudeFeedback>
+
+  <!-- ###### POSITIVE FEEDBACK ######-->
+
+  <AttitudeFeedback Name="PeacefulFeedbackPositive" ModifierName="AttitudeScorePeaceful" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="10" MaximumValue="15"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonEnemyFeedbackPositive" ModifierName="AttitudeScoreCommonEnemy" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonFriendFeedbackPositive" ModifierName="AttitudeScoreCommonFriend" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonAllyFeedbackPositive" ModifierName="AttitudeScoreCommonAlly" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="5"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="2"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="CommonFrontierFeedbackPositive" ModifierName="AttitudeScoreAggressiveColonization" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-5" MaximumValue="0"/>
+    <TrendRangeTrigger MinimumValue="-2" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="WarFatigueFeedbackPositive" ModifierName="AttitudeScoreWarFatigue" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="55" MaximumValue="60"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="LastWarForgetPositive" ModifierName="AttitudeScoreLastWar" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-5" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="AggressionDuringColdWarFeedbackPositive" ModifierName="AttitudeScoreArmyAggressionInNeutralRegionDuringColdWar" MaximumOccurrenceCount="1" ProbabilityBonus="25">
+    <ValueRangeTrigger MinimumValue="-100" MaximumValue="-50"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="0"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireCitiesTakenFeedbackPositive" ModifierName="AttitudeScoreOtherEmpireCitiesTakenDuringWar" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="30" MaximumValue="35"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="MyEmpireCitiesTakenFeedbackPositive" ModifierName="AttitudeScoreMyEmpireCitiesTakenDuringWar" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="75" MaximumValue="80"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireLeadMilitaryPowerFeedbackPositive" ModifierName="AttitudeScoreOtherEmpireLeadMilitaryPower" MaximumOccurrenceCount="1" ProbabilityBonus="100">
+    <ValueRangeTrigger MinimumValue="95" MaximumValue="100"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="MyEmpireLeadScoreFeedbackPositive" ModifierName="AttitudeScoreMyEmpireLeadScore" MaximumOccurrenceCount="1" ProbabilityBonus="10">
+    <ValueRangeTrigger MinimumValue="70" MaximumValue="75"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="OtherEmpireLeadScoreFeedbackPositive" ModifierName="AttitudeScoreOtherEmpireLeadScore" MaximumOccurrenceCount="1" ProbabilityBonus="10">
+    <ValueRangeTrigger MinimumValue="-40" MaximumValue="-35"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+
+  <AttitudeFeedback Name="UnitsInMyTerritoryFeedbackPositive" ModifierName="AttitudeScoreUnitsInMyTerritory" MaximumOccurrenceCount="1" ProbabilityBonus="10">
+    <ValueRangeTrigger MinimumValue="0" MaximumValue="50"/>
+    <TrendRangeTrigger MinimumValue="0" MaximumValue="1"/>
+    <CategoryValueRangeTrigger MinimumValue="10" MaximumValue="Infinity"/>
+  </AttitudeFeedback>
+  
+</Datatable>

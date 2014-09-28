@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- RelationStateChanges -->
+  <GuiElement Name="WarToTruce">
+    <Title>%DiplomaticTermWarToTruceTitle</Title>
+    <Description>%DiplomaticTermWarToTruceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="WarToTruceDeclaration">
+    <Title>%DiplomaticTermWarToTruceDeclarationTitle</Title>
+    <Description>%DiplomaticTermWarToTruceDeclarationDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="PeaceToColdWar">
+    <Title>%DiplomaticTermPeaceToColdWarTitle</Title>
+    <Description>%DiplomaticTermPeaceToColdWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="AllianceToColdWar">
+    <Title>%DiplomaticTermAllianceToColdWarTitle</Title>
+    <Description>%DiplomaticTermAllianceToColdWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="TruceToWar">
+    <Title>%DiplomaticTermTruceToWarTitle</Title>
+    <Description>%DiplomaticTermTruceToWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="ColdWarToWar">
+    <Title>%DiplomaticTermColdWarToWarTitle</Title>
+    <Description>%DiplomaticTermColdWarToWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="PeaceToWar">
+    <Title>%DiplomaticTermPeaceToWarTitle</Title>
+    <Description>%DiplomaticTermPeaceToWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="AllianceToWar">
+    <Title>%DiplomaticTermAllianceToWarTitle</Title>
+    <Description>%DiplomaticTermAllianceToWarDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="ColdWarToPeace">
+    <Title>%DiplomaticTermColdWarToPeaceTitle</Title>
+    <Description>%DiplomaticTermColdWarToPeaceDescription</Description>
+    <Icons>
+      <Icon Path="CategoryTreatyNegotiationSD" Size="Small" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermColdWarToPeaceTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ColdWarToPeaceDeclaration">
+    <Title>%DiplomaticTermColdWarToPeaceDeclarationTitle</Title>
+    <Description>%DiplomaticTermColdWarToPeaceDeclarationDescription</Description>
+    <Icons>
+      <Icon Path="CategoryTreatyDeclarationSD" Size="Small" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermColdWarToPeaceDeclarationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AllianceToPeace">
+    <Title>%DiplomaticTermAllianceToPeaceTitle</Title>
+    <Description>%DiplomaticTermAllianceToPeaceDescription</Description>
+    <Icons>
+      <Icon Path="CategoryTreatyNegotiationSD" Size="Small" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermAllianceToPeaceTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ColdWarToAlliance">
+    <Title>%DiplomaticTermColdWarToAllianceTitle</Title>
+    <Description>%DiplomaticTermColdWarToAllianceDescription</Description>
+    <Icons>
+      <Icon Path="CategoryTreatyNegotiationSD" Size="Small" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermColdWarToAllianceTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ColdWarToAllianceDeclaration">
+    <Title>%DiplomaticTermColdWarToAllianceDeclarationTitle</Title>
+    <Description>%DiplomaticTermColdWarToAllianceDeclarationDescription</Description>
+    <Icons>
+      <Icon Path="CategoryTreatyDeclarationSD" Size="Small" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermColdWarToAllianceDeclarationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="PeaceToAlliance">
+    <Title>%DiplomaticTermPeaceToAllianceTitle</Title>
+    <Description>%DiplomaticTermPeaceToAllianceDescription</Description>
+    <Icons>
+      <Icon Path="CategoryTreatyNegotiationSD" Size="Small" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermPeaceToAllianceTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="PeaceToAllianceDeclaration">
+    <Title>%DiplomaticTermPeaceToAllianceDeclarationTitle</Title>
+    <Description>%DiplomaticTermPeaceToAllianceDeclarationDescription</Description>
+    <Icons>
+      <Icon Path="CategoryTreatyDeclarationSD" Size="Small" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermPeaceToAllianceDeclarationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Treaties -->
+  <!-- Map Exchange -->
+  <GuiElement Name="PeaceMapExchange">
+    <Title>%DiplomaticTermMapExchangeTitle</Title>
+    <Description>%DiplomaticTermMapExchangeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceMapExchange">
+    <Title>%DiplomaticTermMapExchangeTitle</Title>
+    <Description>%DiplomaticTermMapExchangeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- Vision and Map Exchange -->
+  <GuiElement Name="PeaceVisionAndMapExchange">
+    <Title>%DiplomaticTermVisionAndMapExchangeTitle</Title>
+    <Description>%DiplomaticTermVisionAndMapExchangeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceVisionAndMapExchange">
+    <Title>%DiplomaticTermVisionAndMapExchangeTitle</Title>
+    <Description>%DiplomaticTermVisionAndMapExchangeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- CommercialAgreement -->
+  <GuiElement Name="PeaceCommercialAgreement">
+    <Title>%DiplomaticTermCommercialAgreementTitle</Title>
+    <Description>%DiplomaticTermCommercialAgreementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceCommercialAgreement">
+    <Title>%DiplomaticTermCommercialAgreementTitle</Title>
+    <Description>%DiplomaticTermCommercialAgreementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- ResearchAgreement -->
+  <GuiElement Name="PeaceResearchAgreement">
+    <Title>%DiplomaticTermResearchAgreementTitle</Title>
+    <Description>%DiplomaticTermResearchAgreementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceResearchAgreement">
+    <Title>%DiplomaticTermResearchAgreementTitle</Title>
+    <Description>%DiplomaticTermResearchAgreementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- OpenBorders -->
+  <GuiElement Name="OpenBorders">
+    <Title>%DiplomaticTermOpenBordersTitle</Title>
+    <Description>%DiplomaticTermOpenBordersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- MarketBan -->
+  <GuiElement Name="MarketBan">
+    <Title>%DiplomaticTermMarketBanTitle</Title>
+    <Description>%DiplomaticTermMarketBanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- MarketBanRemoval -->
+  <GuiElement Name="MarketBanRemoval">
+    <Title>%DiplomaticTermMarketBanRemovalTitle</Title>
+    <Description>%DiplomaticTermMarketBanRemovalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyNegotiationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- MarketBanNullification -->
+  <GuiElement Name="MarketBanNullification">
+    <Title>%DiplomaticTermMarketBanNullificationTitle</Title>
+    <Description>%DiplomaticTermMarketBanNullificationDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- MoneyPrint -->
+  <ExtendedGuiElement Name="MoneyPrint">
+    <Title>%DiplomaticTermMoneyPrintTitle</Title>
+    <Description>%DiplomaticTermMoneyPrintDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermMoneyPrintTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <!-- MoneyPrintNullification -->
+  <ExtendedGuiElement Name="MoneyPrintNullification">
+    <Title>%DiplomaticTermMoneyPrintNullificationTitle</Title>
+    <Description>%DiplomaticTermMoneyPrintNullificationDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%DiplomaticTermMoneyPrintNullificationTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  <!-- MapEmbargo -->
+  <GuiElement Name="MapEmbargo">
+    <Title>%DiplomaticTermMapEmbargoTitle</Title>
+    <Description>%DiplomaticTermMapEmbargoDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- VisionEmbargo -->
+  <GuiElement Name="VisionEmbargo">
+    <Title>%DiplomaticTermVisionEmbargoTitle</Title>
+    <Description>%DiplomaticTermVisionEmbargoDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- VisionAndMapEmbargo -->
+  <GuiElement Name="VisionAndMapEmbargo">
+    <Title>%DiplomaticTermVisionAndMapEmbargoTitle</Title>
+    <Description>%DiplomaticTermVisionAndMapEmbargoDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- CommercialEmbargo -->
+  <GuiElement Name="CommercialEmbargo">
+    <Title>%DiplomaticTermCommercialEmbargoTitle</Title>
+    <Description>%DiplomaticTermCommercialEmbargoDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- ResearchEmbargo -->
+  <GuiElement Name="ResearchEmbargo">
+    <Title>%DiplomaticTermResearchEmbargoTitle</Title>
+    <Description>%DiplomaticTermResearchEmbargoDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  <!-- CloseBorders -->
+  <GuiElement Name="CloseBorders">
+    <Title>%DiplomaticTermCloseBordersTitle</Title>
+    <Description>%DiplomaticTermCloseBordersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="DiplomaticTermGratify">
+    <Title>%DiplomaticTermGratifyTitle</Title>
+    <Description>%DiplomaticTermGratifyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="DiplomaticTermWarning">
+    <Title>%DiplomaticTermWarningTitle</Title>
+    <Description>%DiplomaticTermWarningDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyDeclarationSD" />
+    </Icons>
+  </GuiElement>
+ 
+  
+  <!-- Exchanges -->
+  <!-- Negotiation Resource -->
+  <GuiElement Name="TruceNegotiationResourceDeal">
+    <Title>%DiplomaticTermNegotiationResourceDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationResourceDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceNegotiationResourceDeal">
+    <Title>%DiplomaticTermNegotiationResourceDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationResourceDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ColdWarToAllianceNegotiationResourceDeal">
+    <Title>%DiplomaticTermNegotiationResourceDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationResourceDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceToAllianceNegotiationResourceDeal">
+    <Title>%DiplomaticTermNegotiationResourceDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationResourceDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Resource -->
+  <GuiElement Name="PeaceResourceDeal">
+    <Title>%DiplomaticTermResourceDealTitle</Title>
+    <Description>%DiplomaticTermResourceDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceResourceDeal">
+    <Title>%DiplomaticTermResourceDealTitle</Title>
+    <Description>%DiplomaticTermResourceDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Negotiation City -->
+  <GuiElement Name="TruceNegotiationCityDeal">
+    <Title>%DiplomaticTermNegotiationCityDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationCityDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceNegotiationCityDeal">
+    <Title>%DiplomaticTermNegotiationCityDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationCityDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ColdWarToAllianceNegotiationCityDeal">
+    <Title>%DiplomaticTermNegotiationCityDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationCityDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceToAllianceNegotiationCityDeal">
+    <Title>%DiplomaticTermNegotiationCityDealTitle</Title>
+    <Description>%DiplomaticTermNegotiationCityDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+
+  <!-- City -->
+  <GuiElement Name="PeaceCityDeal">
+    <Title>%DiplomaticTermPeaceCityDealTitle</Title>
+    <Description>%DiplomaticTermPeaceCityDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceCityDeal">
+    <Title>%DiplomaticTermAllianceCityDealTitle</Title>
+    <Description>%DiplomaticTermAllianceCityDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Negotiation Booster -->
+  <GuiElement Name="TruceNegotiationBoosterDeal">
+    <Title>%DiplomaticTermTruceNegotiationBoosterDealTitle</Title>
+    <Description>%DiplomaticTermTruceNegotiationBoosterDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileSD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceNegotiationBoosterDeal">
+    <Title>%DiplomaticTermPeaceNegotiationBoosterDealTitle</Title>
+    <Description>%DiplomaticTermPeaceNegotiationBoosterDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileSD" />
+    </Icons>
+  </GuiElement>  
+  <GuiElement Name="ColdwarToAllianceNegotiationBoosterDeal">
+    <Title>%DiplomaticTermColdwarToAllianceNegotiationBoosterDealTitle</Title>
+    <Description>%DiplomaticTermColdwarToAllianceNegotiationBoosterDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileSD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceToAllianceNegotiationBoosterDeal">
+    <Title>%DiplomaticTermPeaceToAllianceNegotiationBoosterDealTitle</Title>
+    <Description>%DiplomaticTermPeaceToAllianceNegotiationBoosterDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileSD" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Booster -->
+  <GuiElement Name="PeaceBoosterDeal">
+    <Title>%DiplomaticTermPeaceBoosterDealTitle</Title>
+    <Description>%DiplomaticTermPeaceBoosterDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileSD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceBoosterDeal">
+    <Title>%DiplomaticTermAllianceBoosterDealTitle</Title>
+    <Description>%DiplomaticTermAllianceBoosterDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileSD" />
+    </Icons>
+  </GuiElement>~
+
+  <!-- Negotiation Technology -->
+  <GuiElement Name="TruceNegotiationTechnologyDeal">
+    <Title>%DiplomaticTermTruceNegotiationTechnologyDealTitle</Title>
+    <Description>%DiplomaticTermTruceNegotiationTechnologyDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTechnologyHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceNegotiationTechnologyDeal">
+    <Title>%DiplomaticTermPeaceNegotiationTechnologyDealTitle</Title>
+    <Description>%DiplomaticTermPeaceNegotiationTechnologyDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTechnologyHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ColdWarToAllianceNegotiationTechnologyDeal">
+    <Title>%DiplomaticTermColdWarToAllianceNegotiationTechnologyDealTitle</Title>
+    <Description>%DiplomaticTermColdWarToAllianceNegotiationTechnologyDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTechnologyHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="PeaceToAllianceNegotiationTechnologyDeal">
+    <Title>%DiplomaticTermPeaceToAllianceNegotiationTechnologyDealTitle</Title>
+    <Description>%DiplomaticTermPeaceToAllianceNegotiationTechnologyDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTechnologyHD" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Technology -->
+  <GuiElement Name="PeaceTechnologyDeal">
+    <Title>%DiplomaticTermPeaceTechnologyDealTitle</Title>
+    <Description>%DiplomaticTermPeaceTechnologyDealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTechnologyHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="AllianceTechnologyDeal">
+    <Title>%DiplomaticTermAllianceTechnologyDealTitle</Title>
+    <Description>%DiplomaticTermAllianceTechnologyDeallDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTechnologyHD" />
+    </Icons>
+  </GuiElement>
+
+</Datatable>

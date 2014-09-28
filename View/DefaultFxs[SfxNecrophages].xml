@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX NECROPHAGES ======================================== -->
+  
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_Walk">
+    <SoundEventName>Sfx/Faction/Necrophages/LichBug/Necrophage_LichBug_Walk</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_SwarmAttack">
+    <SoundEventName>Sfx/Faction/Necrophages/LichBug/Necrophage_LichBug_SwarmAttack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_Idle0">
+    <SoundEventName>Sfx/Faction/Necrophages/LichBug/Necrophage_LichBug_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_BodyFall">
+    <SoundEventName>Sfx/Faction/Necrophages/LichBug/Necrophage_LichBug_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Necrophage_Zombat_WalkLoop">
+    <SoundEventName>Sfx/Faction/Necrophages/Zombat/Necrophage_Zombat_Walk</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>true</IsSoundPersistent>
+  </DefaultFxDefinition>  
+  
+  <DefaultFxDefinition Name="SFX_Necrophage_Zombat_Idle0">
+    <SoundEventName>Sfx/Faction/Necrophages/Zombat/Necrophage_Zombat_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>   
+  
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Idle0">
+    <SoundEventName>Sfx/Faction/Necrophages/Hunter/Necrophage_Hunter_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>  
+  
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Idle">
+    <SoundEventName>Sfx/Faction/Necrophages/Hunter/Necrophage_Hunter_Idle</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+    <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Footstep">
+    <SoundEventName>Sfx/Faction/Necrophages/Hunter/Necrophage_Hunter_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_BodyFall">
+    <SoundEventName>Sfx/Faction/Necrophages/Hunter/Necrophage_Hunter_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_Idle0">
+    <SoundEventName>Sfx/Faction/Necrophages/Hero/Necrophage_Hero_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_BodyFall">
+    <SoundEventName>Sfx/Faction/Necrophages/Hero/Necrophage_Hero_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Attack">
+    <SoundEventName>Sfx/Voices/Necrophages/Hunter_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Death">
+    <SoundEventName>Sfx/Voices/Necrophages/Hunter_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Defense">
+    <SoundEventName>Sfx/Voices/Necrophages/Hunter_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Click">
+    <SoundEventName>Sfx/Voices/Necrophages/Hunter_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hunter_Order">
+    <SoundEventName>Sfx/Voices/Necrophages/Hunter_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_Attack">
+    <SoundEventName>Sfx/Voices/Necrophages/LichBug_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_Death">
+    <SoundEventName>Sfx/Voices/Necrophages/LichBug_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_Defense">
+    <SoundEventName>Sfx/Voices/Necrophages/LichBug_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_Click">
+    <SoundEventName>Sfx/Voices/Necrophages/LichBug_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_LichBug_Order">
+    <SoundEventName>Sfx/Voices/Necrophages/LichBug_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Zombat_Attack">
+    <SoundEventName>Sfx/Voices/Necrophages/Zombat_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Zombat_Death">
+    <SoundEventName>Sfx/Voices/Necrophages/Zombat_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Zombat_Defense">
+    <SoundEventName>Sfx/Voices/Necrophages/Zombat_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Zombat_Click">
+    <SoundEventName>Sfx/Voices/Necrophages/Zombat_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Zombat_Order">
+    <SoundEventName>Sfx/Voices/Necrophages/Zombat_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_Footstep">
+    <SoundEventName>Sfx/Faction/Necrophages/Hero/Necrophage_Hero_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_Attack">
+    <SoundEventName>Sfx/Faction/Necrophages/Hero/Necrophage_Hero_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_Death">
+    <SoundEventName>Sfx/Faction/Necrophages/Hero/Necrophage_Hero_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_Defense">
+    <SoundEventName>Sfx/Voices/Necrophages/Hero_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_Click">
+    <SoundEventName>Sfx/Voices/Necrophages/Hero_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Hero_Order">
+    <SoundEventName>Sfx/Voices/Necrophages/Hero_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Settler_Footstep">
+    <SoundEventName>Sfx/Faction/Necrophages/Settler/Necrophage_Settler_Footsteps</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Settler_BodyFall">
+    <SoundEventName>Sfx/Faction/Necrophages/Settler/Necrophage_Settler_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Settler_Attack">
+    <SoundEventName>Sfx/Voices/Necrophages/Settler_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Settler_Death">
+    <SoundEventName>Sfx/Voices/Necrophages/Settler_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Necrophage_Settler_Defense">
+    <SoundEventName>Sfx/Voices/Necrophages/Settler_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

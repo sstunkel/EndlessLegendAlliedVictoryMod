@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MouseCursorRule Name = "Default" Priority = "0" GuiCursorName="Default">
+  </MouseCursorRule>
+
+  <!-- Loading & video -->
+  <MouseCursorRule Name = "Loading" Priority = "1000" GuiCursorName="Timer">
+    <Condition Key="Loading"/>
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "Turn_End" Priority = "1000" GuiCursorName="Timer">
+    <Condition Key="Turn_End" />
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "Turn_FinishedAndLocked" Priority = "1000" GuiCursorName="Timer">
+    <Condition Key="Turn_FinishedAndLocked"/>
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "Video" Priority = "1000" GuiCursorName="Default" AccessLevel ="Public">
+    <Condition Key="Video"/>
+  </MouseCursorRule>
+  
+  <!-- Camera -->
+  <MouseCursorRule Name = "CameraDrag" Priority = "500" GuiCursorName="Grab" AccessLevel ="Public">
+    <Condition Key="CameraDrag"/>
+  </MouseCursorRule>
+
+  <!-- Interface 2D -->
+
+  <MouseCursorRule Name = "MouseCovered" Priority = "100" GuiCursorName="Default" AccessLevel ="Public">
+    <Condition And ="true">
+      <Conditions Key="MouseCovered"/>
+      <Conditions Key="ArmyLabel" Not ="true"/>
+      <Conditions Key="CityLabel" Not ="true"/>
+      <Conditions Key="GeoConstructibleLabel" Not ="true"/>
+      <Conditions Key="VillageLabel" Not ="true"/>
+    </Condition>
+  </MouseCursorRule>
+
+  <!-- Selection -->
+  <MouseCursorRule Name = "Selection" Priority = "1" GuiCursorName="Selectable" AccessLevel ="Public">
+    <Condition And ="true">
+      <Conditions>
+        <Conditions Key="WorldCursor"/>
+        <Conditions Key="ArmyWorldCursor"/>
+        <Conditions Key="VillageWorldCursor"/>
+        <Conditions Key="DistrictWorldCursor"/>
+      </Conditions>
+      <Conditions>
+        
+        <!-- you may select an army. -->
+        <Conditions Key="PlayerArmy"/>
+        <Conditions Key="OtherPlayerArmy"/>
+        <Conditions Key="MinorEmpireArmy"/>
+        <Conditions Key="PrivateersArmy"/>
+        <Conditions Key="ArmyLabel"/>
+        
+        <!-- you may select one of your city. -->
+        <Conditions And = "true">
+          <Conditions Key="PlayerWorldDistrict"/>
+          <Conditions>
+            <Conditions Key="Center"/>
+            <Conditions Key="Extension"/>
+            <Conditions Key="Exploitation"/>
+          </Conditions>
+        </Conditions>
+        <Conditions Key="CityLabel"/>
+
+        <!-- you may select a encounter. -->
+        <Conditions Key="InEncounter"/>
+        
+        <!-- you may select an owned converted village. -->
+        <Conditions Key="ConvertedByCurrentPlayer"/>
+        <Conditions Key="VillageLabel"/>
+        
+      </Conditions>
+    </Condition>
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "SelectionInBattle" Priority = "1" GuiCursorName="Selectable" AccessLevel ="Public">
+    <Condition And ="true">
+      
+      <Conditions>
+        <Conditions Key="EncounterWorldCursor"/>
+        <Conditions Key="EncounterDeploymentWorldCursor"/>
+        <Conditions Key="EncounterBattleWorldCursor"/>
+        <Conditions Key="EncounterTargetingPhaseWorldCursor"/>
+      </Conditions>
+
+      <Conditions>
+        <Conditions And ="true">
+          <!-- Inside the current battle... -->
+          <Conditions Key="InCurrentEncounter"/>
+      
+          <Conditions>
+            <!-- you may select an battle unit. -->
+            <Conditions Key="PlayerBattleUnit"/>
+            <Conditions Key="OtherPlayerBattleUnit"/>
+          </Conditions>
+        </Conditions>
+
+        <!-- Outside the current battle you may select another battle. -->
+        <Conditions And ="true">
+          <Conditions Key="InCurrentEncounter" Not ="true"/>
+          <Conditions Key="InEncounter"/>
+        </Conditions>
+      </Conditions>
+      
+    </Condition>
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "Interact" Priority = "2" GuiCursorName="Interact" AccessLevel ="Public">
+    <Condition And ="true">
+      <Conditions Key="PlayerArmyWorldCursor"/>
+      <Conditions>
+        <!-- you may interact with a quest location if it is not yet visited or if there is a quest marker on it. -->
+        <Conditions And ="true">
+          <Conditions Key="QuestLocation"/>
+          <Conditions>
+            <Conditions Key="Interacted" Not = "true" />
+            <Conditions Key="QuestMarker"/>
+          </Conditions>
+        </Conditions>
+
+        <!--  you may interact with a village -->
+        <Conditions And ="true">
+          <Conditions Key="Village"/>
+          <Conditions>
+            <!-- if there is a quest marker on it. If it is not pacified the attack rule will apply with a higher priority. -->
+            <Conditions Key="QuestMarker"/>
+
+            <!-- if you can convert it. -->
+            <Conditions And ="true">
+              <Conditions Key="HasArmyAction_Convert"/>
+              <Conditions Key="PacifiedVillage"/>
+            </Conditions>
+
+            <!-- if it is not pacified or converted. If it is an attack interaction the attack rule will apply with a higher priority.-->
+            <Conditions And ="true">
+              <Conditions Key="PacifiedVillage" Not = "true" />
+              <Conditions Key="ConvertedVillage" Not = "true" />
+            </Conditions>
+
+            <!-- if it is converted by another player. -->
+            <Conditions Key ="OtherPlayerConverted">
+            </Conditions>
+          </Conditions>
+        </Conditions>
+        
+        <!-- you may interact with an another player's army . If it is an attack interaction the attack rule will apply with a higher priority. -->
+        <Conditions Key="OtherPlayerArmy"/>
+
+        <!-- you may interact with an another player's city . If it is an attack interaction the attack rule will apply with a higher priority. -->
+        <Conditions And = "true">
+          <Conditions Key="OtherPlayerWorldDistrict"/>
+          <Conditions>
+            <Conditions Key="Center"/>
+            <Conditions Key="Extension"/>
+          </Conditions>
+        </Conditions>
+        
+      </Conditions>
+    </Condition>
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "InteractInCity" Priority = "3" GuiCursorName="Interact" AccessLevel ="Public">
+    <Condition And ="true">
+      <Conditions Key="DistrictWorldCursor"/>
+      <Conditions Key="GeoConstructibleLabel"/>
+    </Condition>  
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "WorldPlacement" Priority = "4" GuiCursorName="Interact" AccessLevel ="Public">
+    <Condition And ="true">
+      <Conditions>
+        <Conditions Key="DistrictImprovementWorldPlacementCursor"/>
+        <Conditions Key="FreeDistrictImprovementWorldPlacementCursor"/>
+        <Conditions Key="CoastalDistrictImprovementWorldPlacementCursor"/>
+        <Conditions Key="ArmyActionColonizationWorldPlacementCursor"/>
+        <Conditions Key="ArmyActionResettleWorldPlacementCursor"/>
+        <Conditions Key="PointOfInterestImprovementWorldPlacementCursor"/>
+        <Conditions Key="PillarWorldPlacementCursor"/>
+      </Conditions>
+      <Conditions Key="ValidPlacementPosition"/>
+    </Condition>
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "Attack" Priority = "5" GuiCursorName="Attack"  AccessLevel ="Public">
+    <Condition And="true">
+      <Conditions Key="PlayerArmyWorldCursor"/>
+      <Conditions>
+        
+        <!-- you may attack an another player's army if you are at war with it or if you are at cold war with it and the army is not in his mother land. ( Otherwise you have to declare war )-->
+        <Conditions And = "true">
+          <Conditions Key="OtherPlayerArmy"/>
+          <Conditions>
+            <Conditions Key="DiplomaticRelationStateWar"/>
+            <Conditions And = "true">
+              <Conditions Key="DiplomaticRelationStateColdWar"/>
+              <Conditions Key="InHisEmpireLand" Not ="true" />
+            </Conditions>
+          </Conditions>
+        </Conditions>
+        
+        <!-- you may attack an minor empire army or a privateers army -->
+        <Conditions Key="MinorEmpireArmy"/>
+        <Conditions Key="PrivateersArmy"/>
+        
+        <!-- you may attack an another player's city if you are at war with it. ( Otherwise you have to declare war ) -->
+        <Conditions And = "true">
+          <Conditions Key="OtherPlayerWorldDistrict"/>
+          <Conditions>
+            <Conditions Key="Center"/>
+            <Conditions Key="Extension"/>
+          </Conditions>
+          <Conditions>
+            <Conditions Key="DiplomaticRelationStateWar"/>
+          </Conditions>
+        </Conditions>
+        
+        <Conditions And ="true">
+          <Conditions Key="Village"/>
+          <Conditions>
+            
+            <!-- You may attack a village not pacified and not converted if you cant bribe or parley-->
+            <Conditions And ="true">
+              <Conditions Key="PacifiedVillage" Not = "true" />
+              <Conditions Key="ConvertedVillage" Not = "true" />
+              <Conditions Key="HasArmyAction_Bribe" Not = "true" />
+              <Conditions Key="HasArmyAction_Parley" Not = "true" />
+            </Conditions>
+            
+            <!-- You may attack a village converted by other player in war or in cold war if the village is not in his mother land. -->
+            <Conditions And ="true">
+              <Conditions Key="OtherPlayerConverted"/>
+              <Conditions>
+                <Conditions Key="DiplomaticRelationStateWar"/>
+                <Conditions And = "true">
+                  <Conditions Key="DiplomaticRelationStateColdWar"/>
+                  <Conditions Key="InHisEmpireLand"  Not ="true" />
+                </Conditions>
+              </Conditions>
+            </Conditions>
+            
+          </Conditions>
+        </Conditions>
+      </Conditions>
+    </Condition>
+  </MouseCursorRule>
+
+  <!-- ArmyAction -->
+  <MouseCursorRule Name = "ArmyAction_Attack" Priority = "10" GuiCursorName="Attack"  AccessLevel ="Public">
+    <Condition And="true">
+      <Conditions Key="ArmyActionValid"/>
+      <Conditions>
+        <Conditions Key="ArmyAction_Attack"/>
+        <Conditions Key="ArmyAction_Siege"/>
+      </Conditions>
+    </Condition>
+  </MouseCursorRule>
+
+  <MouseCursorRule Name = "ArmyAction_NotAttack" Priority = "10" GuiCursorName="Interact"  AccessLevel ="Public">
+    <Condition And="true">
+      <Conditions Key="ArmyActionValid"/>
+      <Conditions>
+        <Conditions Key="ArmyAction_Bribe"/>
+        <Conditions Key="ArmyAction_Convert"/>
+        <Conditions Key="ArmyAction_Guard"/>
+        <Conditions Key="ArmyAction_Parley"/>
+        <Conditions Key="ArmyAction_Search"/>
+        <Conditions Key="ArmyAction_Teleport"/>
+        <Conditions Key="ArmyAction_TransferToCity"/>
+        <Conditions Key="ArmyAction_TransferUnits"/>
+        <Conditions Key="TransferUnitWorldPlacementCursor"/>
+      </Conditions>
+    </Condition>
+  </MouseCursorRule>
+
+</Datatable>

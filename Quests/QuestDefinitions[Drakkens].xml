@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://Drakkensw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://Drakkensw.w3.org/2001/XMLSchema">
+
+  <!-- ======================================
+     ========== DRAKKENS-CHAPTER 1 ==========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter1" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter1,BeginTurn</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,AffinityDrakkens</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity) ge 1</InterpreterPrerequisite>
+    </Prerequisites>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter1-Step1" State="InProgress" />
+      <Decorator_BeginTurn Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$PropertyFilteredCount(EmpireTypeMajor/Garrison/ClassUnit,UnitTypeDrakkensDrakkenling:LevelDisplayed;ge;2) ge 2</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter1-Step1" State="Completed" />
+      
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter1-Step2" State="InProgress" />
+      <Decorator_BeginTurn Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$MaxProperty(ClassEmpire/ClassCity:NetCityEmpirePoint) ge 10</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter1-Step2" State="Completed" />
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter1-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter1-Step2">
+        <Reward Droplist="DroplistPrestige" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter2</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+  
+
+  <!-- ======================================
+     ============ DRAKKENS-CHAPTER 2 ===========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter2" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter2</Tags>
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+      <DropListVar VarName="$WantedEmpirePlanClass" DropList="DroplistMainQuestDrakkensChapter2EmpirePlanClass"/>
+      <DropListVar VarName="$WantedEmpirePlanLevel" DropList="DroplistMainQuestDrakkensChapter2EmpirePlanLevel"/>
+
+      <LocalizationVar LocalizationKey="$Ministry" Source="$WantedEmpirePlanClass"/>
+      <LocalizationVar LocalizationKey="$EmpirePlanLevel" Source="$WantedEmpirePlanLevel"/>
+    </Vars>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter2-Step1" State="InProgress"/>
+      <Decorator_BeginTurn Initiator="Empire">
+        <ConditionCheck_HasEmpirePlan EmpirePlanClassVarName="$WantedEmpirePlanClass" EmpirePlanLevelVarName="$WantedEmpirePlanLevel"/>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter2-Step1" State="Completed" />
+      
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter2-Step2" State="InProgress"/>
+
+      <Controller_Parallel CompletionPolicy="Any">
+        <Controller_Loop LoopCount="3">
+          <Decorator_KillArmy CountAllDeadEnemyArmiesForStepProgression="true" Output_WinnerVarName="$EmpireArmy" LinkedStepProgression="MainQuestDrakkens-Chapter2-Step2" TargetOption="All" Initiator="Empire">
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$EmpireArmy">
+                <PathPrerequisite Flags="Prerequisite">ClassArmy/UnitHero,AffinityDrakkens</PathPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_KillArmy>
+        </Controller_Loop>
+
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire">
+            <ConditionCheck_IsStepProgressionComplete StepName="MainQuestDrakkens-Chapter2-Step2"/>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+          
+      </Controller_Parallel>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter2-Step2" State="Completed" />
+
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter2-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter2-Step2">
+        <ProgressionRange StartValue="0" EndValue="3"/>
+        <Reward Droplist="DroplistMainQuestDrakkensChapter2Step2TechnologyReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter3</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+
+  <!-- ======================================
+     ============ DRAKKENS-CHAPTER 3 ==============
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter3" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter3</Tags>
+
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter3-Step1" State="InProgress"/>
+      <Decorator_BeginTurn Initiator="Empire" >
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire/ClassResearch:Era2UnlockedTechnologyCount) ge 8</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter3-Step1" State="Completed"/>
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter3-Step2" State="InProgress"/>
+      <Decorator_ConstructionEnded ConstructionName="CityImprovementDrakkens2" Initiator="Empire"/>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter3-Step2" State="Completed"/>
+
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter3-Step1">
+        <Reward Droplist="DroplistMainQuestDrakkensChapter3Step1TechnologyReward" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter3-Step2">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter4</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+
+
+
+  <!-- ========================================
+     ============ DRAKKENS-CHAPTER 4 =============
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter4" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter4</Tags>
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+
+      <Var VarName="$MinimumRegions">
+        <Limit LimitMin="1" LimitMax="7" Clamp="false">
+          <From Source="$Regions">
+            <Where>
+              <FilterRegionIsContinent/>
+            </Where>
+          </From>
+        </Limit>
+      </Var>
+      
+    </Vars>
+    
+      <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter4-Step1" State="InProgress"/>
+      <Controller_Parallel CompletionPolicy="All">
+
+        <!--Check that 2 Minor factions are assimilated-->
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire" >
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:MinorFactionAssimilatedCount) ge 2</InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+
+        <!--Check that at least 6 villages are pacified but not necessary rebuilt -->
+         <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire">
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/PacifiedVillage) ge 6</InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+
+      </Controller_Parallel>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter4-Step1" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter4-Step1">
+        <Reward Droplist="DroplistMainQuestDrakkensChapter4and4AltStep1UniqueItemReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter5</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+
+
+
+  <!-- =======================================
+     ========== DRAKKENS-CHAPTER 4Alt ========
+     ========================================= -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter4Alt" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter4</Tags>
+
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter4Alt-Step1" State="InProgress"/>
+      <Controller_Parallel CompletionPolicy="All">
+
+        <!--Check that 2 Minor factions are assimilated-->
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire" >
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:MinorFactionAssimilatedCount) ge 2</InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+
+        <!--Check that at least 5 villages are pacified and rebuilt by assimilated Minor Faction-->
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire">
+            <ConditionCheck_Prerequisite>
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity/RebuiltVillage) ge 5</InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+
+      </Controller_Parallel>
+
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter4Alt-Step1" State="Completed"/>
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter4Alt-Step1">
+        <ProgressionRange StartValue="0" EndValue="2"/>
+        <Reward Droplist="DroplistMainQuestDrakkensChapter4and4AltStep1UniqueItemReward" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter5</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+  
+  
+  
+  
+  <!-- ======================================
+     =========== DRAKKENS-CHAPTER 5 ============
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter5" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter5</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestDrakkens-Chapter5Alt" QuestState="Completed"/>
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestDrakkens-Chapter5Alt" QuestState="InProgress"/>
+    </Prerequisites>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5-Step1" State="InProgress" />
+      <Controller_Loop LoopCount="5">
+        <Controller_Sequence ResetPolicy="onFail">
+          <Decorator_BeginTurn LinkedStepProgression="MainQuestDrakkens-Chapter5-Step1" Initiator="Empire">
+            <ConditionCheck_Prerequisite IsFailureCondition="true">
+              <Prerequisites Target="$Empire">
+                <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassEmpire/ClassCity,!ApprovalStatusTagCityHappy) eq 0 </InterpreterPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+        </Controller_Sequence>
+      </Controller_Loop>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5-Step1" State="Completed"/>
+      
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5-Step2" State="InProgress"/>
+      <Controller_Loop LoopCount="3">
+        <Decorator_DistrictLevelUp Level="0" LinkedStepProgression="MainQuestDrakkens-Chapter5-Step2" Output_DistrictSimObjectVarName="$District" Initiator="Empire">
+          <ConditionCheck_Prerequisite>
+            <Prerequisites Target="$District">
+              <PathPrerequisite Flags="Prerequisite">DistrictTypeExtension</PathPrerequisite>
+            </Prerequisites>
+          </ConditionCheck_Prerequisite>
+        </Decorator_DistrictLevelUp>
+      </Controller_Loop>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5-Step2" State="Completed"/>
+      
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter5-Step1">
+        <ProgressionRange StartValue="0" EndValue="5"/>
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter5-Step2">
+        <ProgressionRange StartValue="0" EndValue="3"/>
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter6</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+  <!-- ======================================
+     ========= DRAKKENS-CHAPTER 5Alt ==========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter5Alt" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter5</Tags>
+
+    <!--============ PREREQUISITES ============-->
+    <Prerequisites Target="$(Empire)">
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestDrakkens-Chapter5" QuestState="Completed"/>
+      <QuestStatePrerequisite Inverted="true" QuestDefinitionName="MainQuestDrakkens-Chapter5" QuestState="InProgress"/>
+    </Prerequisites>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5Alt-Step1" State="InProgress" />
+        <Controller_Loop LoopCount="5">
+          <Controller_Sequence ResetPolicy="onFail">
+            <Decorator_BeginTurn LinkedStepProgression="MainQuestDrakkens-Chapter5Alt-Step1" Initiator="Empire">
+              <ConditionCheck_Prerequisite IsFailureCondition="true">
+                <Prerequisites Target="$Empire">
+                  <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassEmpire/ClassCity,ApprovalStatusTagCityEcstatic) ge 2</InterpreterPrerequisite>
+                </Prerequisites>
+              </ConditionCheck_Prerequisite>
+            </Decorator_BeginTurn>
+          </Controller_Sequence>
+        </Controller_Loop>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5Alt-Step1" State="Completed"/>
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5Alt-Step2" State="InProgress"/>
+      <Decorator_DistrictLevelUp Level="1" Initiator="Empire"/>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter5Alt-Step2" State="Completed"/>
+
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter5Alt-Step1">
+        <ProgressionRange StartValue="0" EndValue="5"/>
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter5Alt-Step2">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter6</Tags>
+      </OnQuestCompleted>
+    </Triggers>
+
+  </QuestDefinition>
+  
+  
+  
+  <!-- ======================================
+     ============ DRAKKENS-CHAPTER 6 ==========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter6" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="0" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter6,MainQuestBrokenLordsDrakkens-Chapter6</Tags>
+
+    <!--============ VARIABLES ============-->
+    <Vars>
+      <!--Set Player's Empire-->
+      <Var VarName="$MyEmpire">
+        <From Source="$Empire"/>
+      </Var>
+
+      <!--Set the City to capture-->
+      <Var VarName="$CityToCapture">
+        <Any>
+          <From Source="$Regions.$City">
+            <Where>
+              <FilterCityByEmpire Inverted="true" EmpireVarName="$MyEmpire"/>
+            </Where>
+          </From>
+        </Any>
+      </Var>
+
+      <!--Set the Quest POI to inspect in the region-->
+      <Var VarName="$CityToCaptureRegion">
+        <From Source="$CityToCapture.$Region"/>
+      </Var>
+
+      <LocalizationVar LocalizationKey="$CityName" Source="$CityToCaptureRegion"/>
+    
+    </Vars>
+
+    <!--============ SEQUENCE ============-->
+              
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter6-Step1" State="InProgress"/>
+      <Controller_Parallel CompletionPolicy="Any">
+
+        <Controller_Parallel CompletionPolicy="All">
+          
+          <Controller_Sequence>
+            <Decorator_CaptureCity TargetCityVarName="$CityToCapture" TargetRegionVarName="$CityToCaptureRegion" Initiator="Empire"/>
+          </Controller_Sequence>
+
+          <Controller_Sequence>
+            <Controller_Loop LoopCount="10">
+              <Decorator_BeginTurn LinkedStepProgression="MainQuestDrakkens-Chapter6-Step1" Initiator="Empire">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$CityToCapture">
+                    <PathPrerequisite Flags="Prerequisite">ClassCity/UnitTypeDrakkensHero</PathPrerequisite>
+                    <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassCity/UnitTypeDrakkensHero:LevelDisplayed) ge 6</InterpreterPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_BeginTurn>
+            </Controller_Loop>
+          </Controller_Sequence>
+        
+        </Controller_Parallel>
+    
+        <Controller_Sequence>
+          <Decorator_BeginTurn Initiator="Empire">
+            <ConditionCheck_Prerequisite Inverted="true">
+              <Prerequisites Target="$CityToCapture">
+                <PathPrerequisite Flags="Prerequisite">ClassCity</PathPrerequisite>
+              </Prerequisites>
+            </ConditionCheck_Prerequisite>
+          </Decorator_BeginTurn>
+          <Action_UpdateQuest State="Failed"/>
+        </Controller_Sequence>
+
+      </Controller_Parallel>
+      
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter6-Step1" State="Completed"/>
+      
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter6-Step2" State="InProgress"/>
+      <Decorator_BeginTurn Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:MinorFactionAssimilatedCount) ge 3</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter6-Step2" State="Completed"/>
+      
+      <Action_UpdateQuest State="Completed"/>
+    </Controller_Sequence>
+
+    
+      <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter6-Step1">
+        <ProgressionRange StartValue="0" EndValue="10"/>
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+       </Step>
+      <Step Name="MainQuestDrakkens-Chapter6-Step2">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter7</Tags>
+      </OnQuestCompleted>
+    <OnQuestFailed>
+      <Tags>MainQuestBrokenLordsDrakkens-Chapter6</Tags>
+    </OnQuestFailed>
+  </Triggers>
+
+  </QuestDefinition>
+
+  
+  
+  <!-- ======================================
+     ============ DRAKKENS-CHAPTER 7 ========
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter7" Category="Alpha" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="0" NumberOfOccurencesPerGame="0">
+
+    
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter7,MainQuestDrakkens-Chapter7</Tags>
+
+    
+    <!--============ VARIABLES ============-->
+    <Vars>
+
+      <!--Set Player's empire-->
+      <Var VarName="$InstigatorEmpire">
+        <From Source="$Empire"/>
+      </Var>
+      <!--Set one Player's city-->
+      <Var VarName="$SelectedPlayerCity">
+        <Any>
+          <From Source="$Empire.$Cities"/>
+        </Any>
+      </Var>
+      <!--Set all continent regions -->
+      <Var VarName="$AllContinentRegions">
+        <From Source="$Regions">
+          <Where>
+            <FilterRegionIsContinent/>
+          </Where>
+        </From>
+      </Var>
+      <!--Set the location of the selected Player's city-->
+      <Var VarName="$SelectedPlayerCityLocation">
+        <From Source="$SelectedPlayerCity.$Position"/>
+      </Var>
+      <!--Sort bydtance all regions that doesn't belong to Player-->
+      <Var VarName="$SortedAllContinentRegions">
+        <From Source="$AllContinentRegions">
+          <OrderBy>
+            <SortRegionByDistance SortBy="Nearest" PositionToCompareVarName="$SelectedPlayerCityLocation"/>
+          </OrderBy>
+        </From>
+      </Var>
+      <!--Set the region of the 2nd Quest POI to inspect-->
+      <Var VarName="$QuestPOIs">
+        <Limit LimitMin="3" LimitMax="15">
+          <From Source="$SortedAllContinentRegions.$PointsOfInterest">
+            <Where>
+              <PathPrerequisite Flags="Prerequisite">PointOfInterestTypeQuestLocation,QuestLocationTypeTemple</PathPrerequisite>
+            </Where>
+          </From>
+        </Limit>
+      </Var>
+      <!--Set the 1st Quest POI to inspect-->
+      <Var VarName="$QuestPOI1">
+        <Any>
+          <From Source="$QuestPOIs"/>
+        </Any>
+      </Var>
+      <Var VarName="$LocationToSpawnArmyID1">
+          <From Source="$QuestPOI1.$Position"/>
+      </Var>
+      <!--Set the 2nd Quest POI to inspect-->
+      <Var VarName="$QuestPOI2">
+        <Limit LimitMin="10" LimitMax="11">
+          <From Source="$SortedAllContinentRegions.$PointsOfInterest">
+            <Where>
+              <PathPrerequisite Flags="Prerequisite">PointOfInterestTypeQuestLocation,QuestLocationTypeRuin</PathPrerequisite>
+            </Where>
+          </From>
+        </Limit>
+      </Var>
+      <Var VarName="$QuestPOI2Region">
+        <From Source="$QuestPOI2.$Position.$Region"/>
+      </Var>
+      
+      <LocalizationVar LocalizationKey="$QuestPOI1Name" Source="$QuestPOI1"/>
+      <LocalizationVar LocalizationKey="$QuestPOI2Name" Source="$QuestPOI2"/>
+      <LocalizationVar LocalizationKey="$QuestPOI2RegionName" Source="$QuestPOI2Region"/>
+
+
+    </Vars>
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+      <Action_LockQuestTarget TargetVarName="$QuestPOI1" LockOption="Lock"/>
+      <Action_LockQuestTarget TargetVarName="$QuestPOI2" LockOption="Lock"/>
+
+      <Controller_Parallel CompletionPolicy="Any">
+
+        <Controller_Sequence>
+
+          <!--Step 1-->
+          <Action_UpdateStep StepName="MainQuestDrakkens-Chapter7-Step1" State="InProgress"/>
+          <Action_StartTimer Output_TimerVarName="$TimeBeforeReset"/>
+          <Action_UpdateTimerLocalization TurnCountBeforeTimeOut="4" TimerLocalizationKey="$Timer" TimerVarName="$TimeBeforeReset"/>
+          <Action_AddQuestMarker TargetEntityVarName="$QuestPOI1" Tags="Ruins" RevealUnexploredLand="true" MarkerVisibleInFogOfWar="true" Output_QuestMarkerVarName="$QuestMarkerQuestPOI1"/>
+          <Decorator_Inspect TargetEntityVarName="$QuestPOI1" PrerequisiteNotVerifiedMessage="%QuestPrerequisiteNotVerified" Initiator="Empire"/>
+          <Action_RemoveQuestMarker TargetQuestMarkerVarName="$QuestMarkerQuestPOI1"/>
+          <Action_LockQuestTarget TargetVarName="$QuestPOI1" LockOption="Unlock"/>
+          <Action_UpdateStep StepName="MainQuestDrakkens-Chapter7-Step1" State="Completed"/>
+          <Action_SpawnArmy SpawnLocationVarName="$LocationToSpawnArmyID1" ArmyDroplist="DroplistArmyDefinitionMainQuestDrakkensChapter7Step1" Output_EnemyArmyGUIDVarName="$ArmyID1" />
+          <Action_UpdateArmyObjective ArmyGUIDVarName="$ArmyID1" TargetEmpireVarName="$InstigatorEmpire" BehaviourName="Roaming"/>
+
+          <Controller_Parallel CompletionPolicy="Any">
+
+            <Controller_Sequence ResetPolicy="onFail">
+              <Decorator_BeginTurn Initiator="Empire"/>
+              <Action_StartTimer Output_TimerVarName="$TimeBeforeReset"/>
+              <Action_Fail/>
+            </Controller_Sequence>
+
+            <Controller_Sequence>
+
+              <!--Step 2-->
+              <Action_UpdateStep StepName="MainQuestDrakkens-Chapter7-Step2" State="InProgress"/>
+              <Decorator_KillArmy TargetOption="All" Initiator="AllEmpires">
+                <EnemyArmyGUIDVarName>$ArmyID1</EnemyArmyGUIDVarName>
+              </Decorator_KillArmy>
+              <Action_UpdateStep StepName="MainQuestDrakkens-Chapter7-Step2" State="Completed" />
+
+              <!--Step 3-->
+              <Action_UpdateStep StepName="MainQuestDrakkens-Chapter7-Step3" State="InProgress"/>
+              <Action_AddQuestMarker TargetEntityVarName="$QuestPOI2" Tags="Ruins" RevealUnexploredLand="false" MarkerVisibleInFogOfWar="false" Output_QuestMarkerVarName="$QuestMarkerQuestPOI2"/>
+              <Decorator_Inspect TargetEntityVarName="$QuestPOI2" Output_InstigatorSimObjectVarName="$InspectionInstigatorSimObject" PrerequisiteNotVerifiedMessage="%QuestPrerequisiteNotVerified" Initiator="Empire">
+                <ConditionCheck_Prerequisite>
+                  <Prerequisites Target="$InspectionInstigatorSimObject">
+                    <PathPrerequisite Flags="Prerequisite">ClassArmy/UnitHero,AffinityDrakkens/ItemAttributesInsigniaDrakkensMainQuest1</PathPrerequisite>
+                    <PathPrerequisite Flags="Prerequisite">!#Winter</PathPrerequisite>
+                  </Prerequisites>
+                </ConditionCheck_Prerequisite>
+              </Decorator_Inspect>
+              <Action_RemoveQuestMarker TargetQuestMarkerVarName="$QuestMarkerQuestPOI2"/>
+              <Action_LockQuestTarget TargetVarName="$QuestPOI2" LockOption="Unlock"/>
+              <Action_UpdateStep StepName="MainQuestDrakkens-Chapter7-Step3" State="Completed" />
+
+              <Action_UpdateQuest State="Completed"/>
+            </Controller_Sequence>
+
+          </Controller_Parallel>
+        </Controller_Sequence>
+
+        <Controller_Sequence>
+          <Decorator_TimerEnded TimerVarName="$TimeBeforeReset" TurnCountBeforeTimeOut="4" TimerLocalizationKey="$Timer" Initiator="Empire"/>
+          <Action_LockQuestTarget TargetVarName="$QuestPOI1" LockOption="Unlock"/>
+          <Action_RemoveQuestMarker TargetQuestMarkerVarName="$QuestMarkerQuestPOI1"/>
+          <Action_UpdateStep StepName="MainQuestDrakkens-Chapter7-Step1" State="Failed"/>
+          <Action_UpdateQuest State="Failed"/>
+        </Controller_Sequence>
+
+      </Controller_Parallel>
+
+    </Controller_Sequence>
+    
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter7-Step1">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter7-Step2">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter7-Step3">
+        <Reward Droplist="DroplistMadFairiesMainQuestRewards" Picks="1"/>
+      </Step>
+    </Steps>
+
+    <!--============ TRIGGER ============-->
+    <Triggers>
+      <OnQuestCompleted>
+        <Tags>MainQuest,Drakkens,Chapter8</Tags>
+      </OnQuestCompleted>
+      <OnQuestFailed>
+        <Tags>MainQuestDrakkens-Chapter7</Tags>
+      </OnQuestFailed>
+    </Triggers>
+
+  </QuestDefinition>
+
+
+  
+
+  <!-- ======================================
+     ============ DRAKKENS-CHAPTER 8 ==============
+     ======================================== -->
+  <QuestDefinition Name="MainQuestDrakkens-Chapter8" Category="MainQuest" SubCategory="Drakkens" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="0" NumberOfOccurencesPerEmpire="1" NumberOfOccurencesPerGame="0">
+
+    <!--============ TAGS ============-->
+    <Tags>MainQuest,Drakkens,Chapter8,FinalQuest</Tags>
+
+
+    <!--============ SEQUENCE ============-->
+    <Controller_Sequence>
+
+      <!--Step 1-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter8-Step1" State="InProgress"/>
+      <Decorator_BeginTurn Initiator="Empire">
+        <ConditionCheck_Prerequisite>
+          <Prerequisites Target="$Empire">
+            <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:WarCount) eq 0</InterpreterPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:TruceCount) eq 0</InterpreterPrerequisite>
+          </Prerequisites>
+        </ConditionCheck_Prerequisite>
+      </Decorator_BeginTurn>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter8-Step1" State="Completed" />
+
+      <!--Step 2-->
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter8-Step2" State="InProgress"/>
+      <Controller_Sequence ResetPolicy="onFail">
+        <Decorator_BeginTurn Initiator="Empire">
+          <ConditionCheck_Prerequisite IsFailureCondition="true">
+            <Prerequisites Target="$Empire">
+              <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassEmpire/ClassCity/CityImprovementDrakkens4) eq $Count(ClassEmpire/ClassCity)</InterpreterPrerequisite>
+            </Prerequisites>
+          </ConditionCheck_Prerequisite>
+        </Decorator_BeginTurn>
+      </Controller_Sequence>
+      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter8-Step2" State="Completed" />
+      
+      <Action_UpdateQuest State="Completed"/>
+
+    </Controller_Sequence>
+
+    <!--============ REWARDS ============-->
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter8-Step1">
+        <Reward Droplist="DroplistMainQuestDrakkensChapter8Step1TechnologyReward" Picks="1"/>
+      </Step>
+      <Step Name="MainQuestDrakkens-Chapter8-Step2">
+        <Reward Droplist="DroplistMainQuestDrakkensChapter8Step2TechnologyReward" Picks="1"/>
+        <Reward Droplist="DroplistWonderVictory" Picks="1"/>
+      </Step>
+    </Steps>
+    
+  </QuestDefinition>
+
+</Datatable>

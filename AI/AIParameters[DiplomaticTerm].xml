@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+  <!--
+  #########################
+  ### DIPLOMATIC STATES ###
+  #########################
+  -->
+
+  <!-- The interpreter context simulation object is null -->
+
+  <AIParameterDatatableElement Name="WarToTruce">
+    <AIParameter Name="DiplomacyInfluence" Value="(300 * ($(TruceTermAgentCriticity) - $(WarTermAgentCriticity)) - 5) min 100"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TruceToWar">
+    <AIParameter Name="DiplomacyMilitary" Value="300 * ($(WarTermAgentCriticity) - $(ColdWarTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TruceToColdWar">
+    <AIParameter Name="DiplomacyMilitary" Value="(600 * $(ColdWarTermAgentCriticity)) - 300"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TruceToPeace">
+    <AIParameter Name="DiplomacyMilitary" Value="(100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+    <AIParameter Name="DiplomacyEconomy" Value="(100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+    <AIParameter Name="DiplomacyResearch" Value="(100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TruceToAlliance">
+    <AIParameter Name="DiplomacyMilitary" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+    <AIParameter Name="DiplomacyInfluence" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+    <AIParameter Name="DiplomacyExploration" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+    <AIParameter Name="DiplomacyEconomy" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+    <AIParameter Name="DiplomacyResearch" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)) - 5)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ColdWarToWar">
+    <AIParameter Name="DiplomacyMilitary" Value="300 * ($(WarTermAgentCriticity) - $(ColdWarTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ColdWarToPeace">
+    <AIParameter Name="DiplomacyMilitary" Value="((100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyEconomy" Value="((100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyResearch" Value="((100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ColdWarToAlliance">
+    <AIParameter Name="DiplomacyMilitary" Value="((60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyInfluence" Value="((60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyExploration" Value="((60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyEconomy" Value="((60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyResearch" Value="((60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity))) - 5) min 20"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceToWar">
+    <AIParameter Name="DiplomacyMilitary" Value="300 * ($(WarTermAgentCriticity) - $(PeaceTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceToColdWar">
+    <AIParameter Name="DiplomacyMilitary" Value="300 * ($(ColdWarTermAgentCriticity) - $(PeaceTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceToAlliance">
+    <AIParameter Name="DiplomacyMilitary" Value="((60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyInfluence" Value="((60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyExploration" Value="((60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyEconomy" Value="((60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity))) - 5) min 20"/>
+    <AIParameter Name="DiplomacyResearch" Value="((60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity))) - 5) min 20"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceToWar">
+    <AIParameter Name="DiplomacyMilitary" Value="300 * ($(WarTermAgentCriticity) - $(AllianceTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceToColdWar">
+    <AIParameter Name="DiplomacyMilitary" Value="300 * ($(ColdWarTermAgentCriticity)- $(AllianceTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceToPeace">
+    <AIParameter Name="DiplomacyMilitary" Value="100 * ($(PeaceTermAgentCriticity) - $(AllianceTermAgentCriticity))"/>
+    <AIParameter Name="DiplomacyEconomy" Value="100 * ($(PeaceTermAgentCriticity) - $(AllianceTermAgentCriticity))"/>
+    <AIParameter Name="DiplomacyResearch" Value="100 * ($(PeaceTermAgentCriticity) - $(AllianceTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="WarToTruceDeclaration">
+    <AIParameter Name="DiplomacyInfluence" Value="300 * ($(TruceTermAgentCriticity) - $(WarTermAgentCriticity))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ColdWarToPeaceDeclaration">
+    <AIParameter Name="DiplomacyMilitary" Value="(100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyEconomy" Value="(100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyResearch" Value="(100 * ($(PeaceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ColdWarToAllianceDeclaration">
+    <AIParameter Name="DiplomacyMilitary" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyInfluence" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyExploration" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyEconomy" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyResearch" Value="(60 * ($(AllianceTermAgentCriticity) - $(ColdWarTermAgentCriticity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceToAllianceDeclaration">
+    <AIParameter Name="DiplomacyMilitary" Value="(60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyInfluence" Value="(60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyExploration" Value="(60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyEconomy" Value="(60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity)))"/>
+    <AIParameter Name="DiplomacyResearch" Value="(60 * ($(AllianceTermAgentCriticity) - $(PeaceTermAgentCriticity)))"/>
+  </AIParameterDatatableElement>
+
+  <!--
+  #######################
+  ### MAP AND BORDERS ###
+  #######################
+  -->
+
+  <!-- The interpreter context simulation object is null -->
+
+  <AIParameterDatatableElement Name="PeaceMapExchange">
+    <AIParameter Name="DiplomacyExploration" Value="(15 * $(MapExchangeTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceMapExchange">
+    <AIParameter Name="DiplomacyExploration" Value="(15 * $(MapExchangeTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="MapEmbargo">
+    <AIParameter Name="DiplomacyMilitary" Value="(15 * $(MapEmbargoTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="VisionAndMapEmbargo">
+    <AIParameter Name="DiplomacyMilitary" Value="(15 * $(VisionAndMapEmbargoTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="VisionEmbargo">
+    <AIParameter Name="DiplomacyMilitary" Value="(15 * $(VisionEmbargoTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <!-- Deprecated! -->
+  <AIParameterDatatableElement Name="VisionAndMapExchange">
+    <AIParameter Name="DiplomacyMilitary" Value="(15 * $(VisionAndMapExchangeTermAgentCriticity)) - 5"/>
+    <AIParameter Name="DiplomacyExploration" Value="(15 * $(VisionAndMapExchangeTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+  <!-- ### -->
+  
+  <AIParameterDatatableElement Name="PeaceVisionAndMapExchange">
+    <AIParameter Name="DiplomacyMilitary" Value="(15 * $(VisionAndMapExchangeTermAgentCriticity)) - 5"/>
+    <AIParameter Name="DiplomacyExploration" Value="(15 * $(VisionAndMapExchangeTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceVisionAndMapExchange">
+    <AIParameter Name="DiplomacyMilitary" Value="(15 * $(VisionAndMapExchangeTermAgentCriticity)) - 5"/>
+    <AIParameter Name="DiplomacyExploration" Value="(15 * $(VisionAndMapExchangeTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CloseBorders">
+    <AIParameter Name="DiplomacyMilitary" Value="(20 * $(CloseBordersTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="OpenBorders">
+    <AIParameter Name="DiplomacyMilitary" Value="(30 * $(OpenBordersTermAgentCriticity)) + 5"/>
+    <AIParameter Name="DiplomacyExploration" Value="(15 * $(OpenBordersTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="MarketBan">
+    <AIParameter Name="DiplomacyMilitary" Value="(20 * $(MarketBanTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="MarketBanNullification">
+    <AIParameter Name="DiplomacyMarket" Value="(20 * $(MarketBanNullificationTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="MarketBanRemoval">
+    <AIParameter Name="DiplomacyMarket" Value="(20 * $(MarketBanRemovalTermAgentCriticity)) + 5"/>
+  </AIParameterDatatableElement>
+
+  <!--
+  ##################
+  ### AGREEMENTS ###
+  ##################
+  -->
+
+  <AIParameterDatatableElement Name="PeaceCommercialAgreement">
+    <AIParameter Name="DiplomacyMarket" Value="(20 * $(CommercialAgreementTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceCommercialAgreement">
+    <AIParameter Name="DiplomacyMarket" Value="(20 * $(CommercialAgreementTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceResearchAgreement">
+    <AIParameter Name="DiplomacyMarket" Value="(20 * $(ResearchAgreementTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceResearchAgreement">
+    <AIParameter Name="DiplomacyMarket" Value="(20 * $(ResearchAgreementTermAgentCriticity)) - 5"/>
+  </AIParameterDatatableElement>
+
+  <!--
+  ##################
+  ### STOCKPILES ###
+  ##################
+  -->
+  
+  <!-- The interpreter context simulation object is the empire who analyse the term -->
+  
+  <!-- Food -->
+  
+  <AIParameterDatatableElement Name="BoosterExchangeBoosterFood">
+    <AIParameter Name="CityFood" Value="$(ResourceAmount) * 
+                 (($SumProperty(EmpireTypeMajor/ClassCity:Population) * 10) / ($SumProperty(EmpireTypeMajor/ClassCity:NetCityGrowth) max 1))"/>
+    <AIParameter Name="DiplomacyMarket" Value="($(MarketPlaceBoostersValue) / (($Property(EmpireTypeMajor:BankAccount) + (5 * $Property(EmpireTypeMajor:NetEmpireMoney))) max 1))"/>
+  </AIParameterDatatableElement>
+
+  <!-- Industry -->
+
+  <AIParameterDatatableElement Name="BoosterExchangeBoosterIndustry">
+    <AIParameter Name="DiplomacyExpand" Value="$(ResourceAmount) * 
+                 ((($Count(EmpireTypeMajor/ClassCity/ClassImprovement) + $Count(EmpireTypeMajor/ClassCity/ClassDistrict)) / ($SumProperty(EmpireTypeMajor/ClassCity:NetCityProduction) max 1)))"/>
+    <AIParameter Name="DiplomacyMarket" Value="($(MarketPlaceBoostersValue) / (($Property(EmpireTypeMajor:BankAccount) + (5 * $Property(EmpireTypeMajor:NetEmpireMoney))) max 1))"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science -->
+
+  <AIParameterDatatableElement Name="BoosterExchangeBoosterScience">
+    <AIParameter Name="DiplomacyResearch" Value="$(ResourceAmount) * $(TechnologyReferenceTurnCountAgentCriticity)"/>
+    <AIParameter Name="DiplomacyMarket" Value="($(MarketPlaceBoostersValue) / (($Property(EmpireTypeMajor:BankAccount) + (5 * $Property(EmpireTypeMajor:NetEmpireMoney))) max 1))"/>
+  </AIParameterDatatableElement>
+
+  <!--
+  ####################
+  ### TECHNOLOGIES ###
+  ####################
+  -->
+  
+  <!-- The interpreter context simulation object is the empire who analyse the term -->
+  
+  <!-- TODO: evaluate differently my technos and their technos -->
+
+  <AIParameterDatatableElement Name="TruceNegotiationTechnologyDeal">
+    <AIParameter Name="DiplomacyResearch" Value="(($(TechnologyEvaluationScore) + 2) * ($(TechnologyRemainingTurn) + 2)) min 100"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceNegotiationTechnologyDeal">
+    <AIParameter Name="DiplomacyResearch" Value="(($(TechnologyEvaluationScore) + 2) * ($(TechnologyRemainingTurn) + 2)) min 100"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ColdwarToAllianceNegotiationTechnologyDeal">
+    <AIParameter Name="DiplomacyResearch" Value="(($(TechnologyEvaluationScore) + 2) * ($(TechnologyRemainingTurn) + 2)) min 100"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceToAllianceNegotiationTechnologyDeal">
+    <AIParameter Name="DiplomacyResearch" Value="(($(TechnologyEvaluationScore) + 2) * ($(TechnologyRemainingTurn) + 2)) min 100"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="PeaceTechnologyDeal">
+    <AIParameter Name="DiplomacyResearch" Value="(($(TechnologyEvaluationScore) + 2) * ($(TechnologyRemainingTurn) + 2)) min 100"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="AllianceTechnologyDeal">
+    <AIParameter Name="DiplomacyResearch" Value="(($(TechnologyEvaluationScore) + 2) * ($(TechnologyRemainingTurn) + 2)) min 100"/>
+  </AIParameterDatatableElement>
+
+  <!--
+  ##############
+  ### CITIES ###
+  ##############
+  -->
+
+  <!-- The interpreter context simulation object is the city -->
+  
+  <AIParameterDatatableElement Name="CityExchange">
+    <AIParameter Name="DiplomacyInfluence" Value="((25 + $Property(ClassCity:Population) + (50 * $(IsCapital))) * (($Property(ClassCity:NetCityEmpirePoint) / (1 max $MaxProperty(../ClassEmpire/ClassCity:NetCityEmpirePoint))))) +
+                 (($Property(ClassCity:NetLuxury1) +
+                 $Property(ClassCity:NetLuxury13)) * 5)"/>
+    <AIParameter Name="CityFood"      Value="((25 + $Property(ClassCity:Population)) * (($Property(ClassCity:NetCityGrowth) / ($MaxProperty(../ClassEmpire/ClassCity:NetCityGrowth) max 1)))) +
+                 (($Property(ClassCity:NetLuxury4) +
+                 $Property(ClassCity:NetLuxury11)) * 5)"/>
+    <AIParameter Name="DiplomacyExpand"  Value="((25 + $Property(ClassCity:Population)) * (($Property(ClassCity:NetCityProduction) / (1 max $MaxProperty(../ClassEmpire/ClassCity:NetCityProduction))))) +
+                 (($Property(ClassCity:NetLuxury10) +
+                 $Property(ClassCity:NetLuxury11)) * 5)"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="((25 + $Property(ClassCity:Population)) * (($Property(ClassCity:NetCityMoney) / (1 max $MaxProperty(../ClassEmpire/ClassCity:NetCityMoney))) + ($Property(ClassCity:NetCityApproval) / 100))) +
+                 (($Property(ClassCity:NetLuxury2) + 
+                 $Property(ClassCity:NetLuxury3) + 
+                 $Property(ClassCity:NetLuxury5) +
+                 $Property(ClassCity:NetLuxury11) +
+                 $Property(ClassCity:NetLuxury12)) * 5)"/>
+    <AIParameter Name="DiplomacyResearch"  Value="((25 + $Property(ClassCity:Population)) * (($Property(ClassCity:NetCityResearch) / (1 max $MaxProperty(../ClassEmpire/ClassCity:NetCityResearch))) + ($Property(ClassCity:NetCityApproval) / 100))) +
+                 (($Property(ClassCity:NetLuxury5) +
+                 $Property(ClassCity:NetLuxury8) +
+                 $Property(ClassCity:NetLuxury11)) * 5)"/>
+    <AIParameter Name="DiplomacyMilitary"  Value="(10 * $(BorderLengthCommonWithMyEmpire)) + 
+                 (($Property(ClassCity:NetStrategic1) + 
+                 $Property(ClassCity:NetStrategic2) + 
+                 $Property(ClassCity:NetStrategic3) + 
+                 $Property(ClassCity:NetStrategic4) + 
+                 $Property(ClassCity:NetStrategic5) + 
+                 $Property(ClassCity:NetStrategic6)) * 15) +
+                 (($Property(ClassCity:NetLuxury6) +
+                 $Property(ClassCity:NetLuxury7) +
+                 $Property(ClassCity:NetLuxury9) +
+                 $Property(ClassCity:NetLuxury14) +
+                 $Property(ClassCity:NetLuxury15)) * 5)"/>
+  </AIParameterDatatableElement>
+
+  <!--
+  #################
+  ### RESOURCES ###
+  #################
+  -->
+
+  <!-- The interpreter context simulation object is the empire who analyse the term -->
+
+  <!-- Dust -->
+
+  <AIParameterDatatableElement Name="ResourceExchangeEmpireMoney">
+    <AIParameter Name="DiplomacyEconomy" Value="$(ResourceAmount) * ($(MoneyReferenceRatioAgentCriticity) max 0.1) * (500 / (1 max $Property(EmpireTypeMajor:BankAccount)) min 1)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury1">
+    <AIParameter Name="DiplomacyInfluence" Value="$(ResourceAmount) * 5 * 
+                 (($(BestEmpireNetEmpirePointValue) - $Property(EmpireTypeMajor:NetEmpirePoint)) / (1 max $(BestEmpireNetEmpirePointValue))) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+  <!-- TBD (traderoutes) :-->
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury2">
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + ((($(BestEmpireNetEmpireMoneyValue) - $Property(EmpireTypeMajor:NetEmpireMoney)) / (1 max $(BestEmpireNetEmpireMoneyValue)))) * 5) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury3">
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 1 * 
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + ((($Property(EmpireTypeMajor:EmpireMoneyUpkeep) + $SumProperty(../ClassEmpire/ClassCity:CityMoneyUpkeep)) / (1 max $Property(EmpireTypeMajor:NetEmpireMoney))))) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury4">
+    <AIParameter Name="CityFood"           Value="$(ResourceAmount) * 25 * 
+                 (($SumProperty(EmpireTypeMajor/ClassCity:Population) * 10) / ($SumProperty(EmpireTypeMajor/ClassCity:NetCityGrowth) max 1)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury5">
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 6 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 6 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 6 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury6">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 0.005 *
+                 ($(GlobalWarTermAgentCriticity) max 0.1) *
+                 $SumProperty(EmpireTypeMajor/Garrison/ClassUnit:AttributeAttack) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+ 
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury7">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 5 * 
+                 $(TruceTermAgentCriticity)"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 *
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 *
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury8">
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 1 * 
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + (5 * $(TechnologyReferenceTurnCountAgentCriticity))) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury9">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 1.25 *
+                 $Count(EmpireTypeMajor/Garrison,!Militia/ClassUnit) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury10">
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 *
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + (($Count(EmpireTypeMajor/ClassCity/ClassImprovement) + $Count(EmpireTypeMajor/ClassCity/ClassDistrict)) / ($SumProperty(EmpireTypeMajor/ClassCity:NetCityProduction) max 1))) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury11">
+    <AIParameter Name="CityFood"           Value="$(ResourceAmount) * 5 * 
+                 (($SumProperty(EmpireTypeMajor/ClassCity:Population) * 10) / ($SumProperty(EmpireTypeMajor/ClassCity:NetCityGrowth) max 1)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + (($Count(EmpireTypeMajor/ClassCity/ClassImprovement) + $Count(EmpireTypeMajor/ClassCity/ClassDistrict)) / ($SumProperty(EmpireTypeMajor/ClassCity:NetCityProduction) max 1))) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + $(MoneyReferenceRatioAgentCriticity)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + $(TechnologyReferenceTurnCountAgentCriticity)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury12">
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 ((1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) + 5 * $(MoneyReferenceRatioAgentCriticity)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+  <!-- TBD (traderoutes) :-->
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury13">
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 *
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 *
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury14">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 10 *
+                 ($(GlobalWarTermAgentCriticity) max 0.1) *
+                 $SumProperty(EmpireTypeMajor/Garrison/ClassUnit:UnitRegen) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="ResourceExchangeLuxury15">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 5 *
+                 $Property(EmpireTypeMajor:HeroCount) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyExpand"    Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyEconomy"   Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) * 
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+    <AIParameter Name="DiplomacyResearch"  Value="$(ResourceAmount) * 5 * 
+                 (1 - ($Property(EmpireTypeMajor:ApprovalAverage) / 100)) *
+                 1 / (5 + (5 * $Count(EmpireTypeMajor/ClassCity)))"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeStrategic1">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 1 *
+                 ($(WarTermAgentCriticity) max 0.1)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeStrategic2">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 1 *
+                 ($(WarTermAgentCriticity) max 0.1)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeStrategic3">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 1.5 *
+                 ($(WarTermAgentCriticity) max 0.1)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeStrategic4">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 1.5 *
+                 ($(WarTermAgentCriticity) max 0.1)"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="ResourceExchangeStrategic5">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 2 *
+                 ($(WarTermAgentCriticity) max 0.1)"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ResourceExchangeStrategic6">
+    <AIParameter Name="DiplomacyMilitary"  Value="$(ResourceAmount) * 2 *
+                 ($(WarTermAgentCriticity) max 0.1)"/>
+  </AIParameterDatatableElement>
+
+</Datatable>

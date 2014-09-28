@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ===================================== SFX CERATAN ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_Footstep">
+    <SoundEventName>Sfx/Faction/Ceratan/Drider/Ceratan_Drider_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_FootstepFlesh">
+    <SoundEventName>Sfx/Faction/Ceratan/Drider/Ceratan_Drider_FootstepFlesh</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_Attack">
+    <SoundEventName>Sfx/Voices/Drider/Drider_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_SpellAttack">
+    <SoundEventName>Sfx/Faction/Ceratan/Drider/Ceratan_Drider_SpellAttack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_Death">
+    <SoundEventName>Sfx/Voices/Drider/Drider_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_Defense">
+    <SoundEventName>Sfx/Voices/Drider/Drider_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_Click">
+    <SoundEventName>Sfx/Voices/Drider/Drider_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Ceratan_Drider_Order">
+    <SoundEventName>Sfx/Voices/Drider/Drider_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+</Datatable>

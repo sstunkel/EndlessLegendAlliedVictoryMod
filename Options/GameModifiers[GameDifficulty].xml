@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GameModifierDefinition Name="GameDifficultyNewbie">
+    <DescriptorTypeToRemove>GameDifficultyBonus</DescriptorTypeToRemove>
+
+    <!-- Human -->
+    <Effects PlayerTypeFilter="Human">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyNewbieHumanMajorEmpire"/>
+    </Effects>
+
+    <!-- AI -->
+    <Effects PlayerTypeFilter="AI">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyNewbieAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Major Empire-->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMajorFactionGameDifficultyNewbie" />
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameDifficultyEasy">
+    <DescriptorTypeToRemove>GameDifficultyBonus</DescriptorTypeToRemove>
+
+    <!-- Human -->
+    <Effects PlayerTypeFilter="Human">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyEasyHumanMajorEmpire"/>
+    </Effects>
+
+    <!-- AI -->
+    <Effects PlayerTypeFilter="AI">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyEasyAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Major Empire-->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMajorFactionGameDifficultyEasy" />
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameDifficultyNormal">
+    <DescriptorTypeToRemove>GameDifficultyBonus</DescriptorTypeToRemove>
+
+    <!-- Human -->
+    <Effects PlayerTypeFilter="Human">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyNormalHumanMajorEmpire"/>
+    </Effects>
+
+    <!-- AI -->
+    <Effects PlayerTypeFilter="AI">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyNormalAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Major Empire-->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMajorFactionGameDifficultyNormal" />
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameDifficultyHard">
+    <DescriptorTypeToRemove>GameDifficultyBonus</DescriptorTypeToRemove>
+
+    <!-- Human -->
+    <Effects PlayerTypeFilter="Human">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyHardHumanMajorEmpire"/>
+    </Effects>
+
+    <!-- AI -->
+    <Effects PlayerTypeFilter="AI">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyHardAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Major Empire-->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMajorFactionGameDifficultyHard" />
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameDifficultySerious">
+    <DescriptorTypeToRemove>GameDifficultyBonus</DescriptorTypeToRemove>
+
+    <!-- Human -->
+    <Effects PlayerTypeFilter="Human">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultySeriousHumanMajorEmpire"/>
+    </Effects>
+
+    <!-- AI -->
+    <Effects PlayerTypeFilter="AI">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultySeriousAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Major Empire-->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMajorFactionGameDifficultySerious" />
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameDifficultyImpossible">
+    <DescriptorTypeToRemove>GameDifficultyBonus</DescriptorTypeToRemove>
+
+    <!-- Human -->
+    <Effects PlayerTypeFilter="Human">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyImpossibleHumanMajorEmpire"/>
+    </Effects>
+
+    <!-- AI -->
+    <Effects PlayerTypeFilter="AI">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyImpossibleAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Major Empire-->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMajorFactionGameDifficultyImpossible" />
+    </Effects>
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="GameDifficultyEndless">
+    <DescriptorTypeToRemove>GameDifficultyBonus</DescriptorTypeToRemove>
+
+    <!-- Human -->
+    <Effects PlayerTypeFilter="Human">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyEndlessHumanMajorEmpire"/>
+    </Effects>
+
+    <!-- AI -->
+    <Effects PlayerTypeFilter="AI">
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <SimulationDescriptorReference Name="GameDifficultyEndlessAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Major Empire-->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMajorFactionGameDifficultyEndless" />
+    </Effects>
+  </GameModifierDefinition>
+  
+</Datatable>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ########################################################### -->
+  <!-- #################### HAUNTS SPECTER UNITS ################# -->
+  <!-- ########################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignHauntsSpecter#1"                     Model="1080100">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction tribes to create village armies and roaming armies -->
+  <UnitDesign Name="UnitDesignHauntsSpecter#MinorEmpireEra1"       Model="1080111">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MinorEmpireEra2"       Model="1080112">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MinorEmpireEra3"       Model="1080113">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MinorEmpireEra4"       Model="1080114">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MinorEmpireEra5"       Model="1080115">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MinorEmpireEra6"       Model="1080116">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignHauntsSpecter#MercenaryEra1"         Model="1080121">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MercenaryEra2"         Model="1080122">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MercenaryEra3"         Model="1080123">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MercenaryEra4"         Model="1080124">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MercenaryEra5"         Model="1080125">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#MercenaryEra6"         Model="1080126">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignHauntsSpecter#ConvertedEra1"         Model="1080131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <Tags>ConvertedVillageUnit,Era1,Haunts,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#ConvertedEra2"         Model="1080132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <Tags>ConvertedVillageUnit,Era2,Haunts,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#ConvertedEra3"         Model="1080133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <Tags>ConvertedVillageUnit,Era3,Haunts,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#ConvertedEra4"         Model="1080134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <Tags>ConvertedVillageUnit,Era4,Haunts,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier1#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier1#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#ConvertedEra5"         Model="1080135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <Tags>ConvertedVillageUnit,Era5,Haunts,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier2#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier2#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#ConvertedEra6"         Model="1080136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <Tags>ConvertedVillageUnit,Era6,Haunts,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2DustTier3#1"  />
+      <Slot Name="OffHand"                         ItemName="ItemSword2DustTier3#1"  />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by Quests to spawn armies -->
+  <UnitDesign Name="UnitDesignHauntsSpecter#Mace"                  Model="1080103">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,QuestNPC</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""                       />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignHauntsSpecter#MinorEmpire"           Model="1080101">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemSword2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemSword2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""                      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"    />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHauntsSpecter#Mercenary"             Model="1080102">
+    <UnitBodyDefinitionReference Name="UnitBodyHauntsSpecter" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHaunts,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

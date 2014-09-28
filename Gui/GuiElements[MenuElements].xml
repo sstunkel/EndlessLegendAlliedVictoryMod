@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="GameLogo">
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Backdrop/EndlessLegendLogo" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="NewGameMenuGameSettingsSummary">
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Backdrop/NewGameMenuGameSettingsSummary" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="NewGameMenuScenarioSummary">
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Backdrop/NewGameMenuScenarioSummary" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="NewGameMenuWorldSettingsSummary">
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Backdrop/NewGameMenuWorldSettingsSummary" />
+    </Icons>
+  </GuiElement>
+
+
+</Datatable>

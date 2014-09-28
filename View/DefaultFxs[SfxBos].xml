@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  <!-- ===================================== SFX BOS ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_FootstepRun">
+    <SoundEventName>Sfx/Faction/Bos/Centaur/Bos_Centaur_FootstepsRun</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_FootstepWalk">
+    <SoundEventName>Sfx/Faction/Bos/Centaur/Bos_Centaur_FootstepsWalk</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_BodyFall">
+    <SoundEventName>Sfx/Faction/Bos/Centaur/Bos_Centaur_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_Attack">
+    <SoundEventName>Sfx/Voices/Centaur/Centaur_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_Death">
+    <SoundEventName>Sfx/Voices/Centaur/Centaur_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_Defense">
+    <SoundEventName>Sfx/Voices/Centaur/Centaur_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_Click">
+    <SoundEventName>Sfx/Voices/Centaur/Centaur_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Bos_Centaur_Order">
+    <SoundEventName>Sfx/Voices/Centaur/Centaur_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+</Datatable>

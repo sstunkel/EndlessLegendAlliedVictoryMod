@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--For each defcon level, the simplecondition must ALL be satisfied-->
+  <AIMinorEmpireDefCon Name="DefCon0" Gravity="0">
+    <ArmyProductionCooldown>Infinity</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>Infinity</GarrisonGrowthCooldown>
+    <RoamingArmySize>0</RoamingArmySize>
+  </AIMinorEmpireDefCon>
+
+  <AIMinorEmpireDefCon Name="DefCon1" Gravity="1">
+    <SimpleCondition Name="ColonizedNeighbours" LimitMax="0"/>
+    <SimpleCondition Name="IsRegionExplored"    IsTrue="true"/>
+
+    <ArmyProductionCooldown>40</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>30</GarrisonGrowthCooldown>
+    <RoamingArmySize>3</RoamingArmySize>
+  </AIMinorEmpireDefCon>
+
+  <AIMinorEmpireDefCon Name="DefCon2" Gravity="2">
+    <SimpleCondition Name="ColonizedNeighbours" LimitMin="1"/>
+    <SimpleCondition Name="IsRegionExplored"    IsTrue="false"/>
+
+    <ArmyProductionCooldown>30</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>30</GarrisonGrowthCooldown>
+    <RoamingArmySize>4</RoamingArmySize>
+  </AIMinorEmpireDefCon>
+
+  <AIMinorEmpireDefCon Name="DefCon3" Gravity="3">
+    <SimpleCondition Name="ColonizedNeighbours" LimitMin="1"/>
+    <SimpleCondition Name="IsRegionExplored"    IsTrue="true"/>
+
+    <ArmyProductionCooldown>20</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>30</GarrisonGrowthCooldown>
+    <RoamingArmySize>5</RoamingArmySize>
+  </AIMinorEmpireDefCon>
+
+  <!--This condition can't be checked for now, as we can't know which armies are in the region-->
+ <!-- 
+ <AIMinorEmpireDefCon Name="DefCon4-army" Gravity="4">
+    <SimpleCondition Name="IsPlayerArmyInRegion" IsTrue="true"/>
+
+    <ArmyProductionCooldown>6</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>4</GarrisonGrowthCooldown>
+    <GarrisonGrowthCooldown>1</GarrisonGrowthCooldown>
+  </AIMinorEmpireDefCon>-->
+
+  <AIMinorEmpireDefCon Name="DefCon4-village" Gravity="4">
+    <SimpleCondition Name="DestroyedVillages" LimitMin="1"/>
+
+    <ArmyProductionCooldown>15</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>30</GarrisonGrowthCooldown>
+    <RoamingArmySize>6</RoamingArmySize>
+  </AIMinorEmpireDefCon>
+
+  <AIMinorEmpireDefCon Name="DefCon4-city" Gravity="4">
+    <SimpleCondition Name="IsPlayerCityInRegion" IsTrue="true"/>
+
+    <ArmyProductionCooldown>15</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>30</GarrisonGrowthCooldown>
+    <RoamingArmySize>6</RoamingArmySize>
+  </AIMinorEmpireDefCon>
+
+  <AIMinorEmpireDefCon Name="DefCon5" Gravity="5">
+    <SimpleCondition Name="IsPlayerCityInRegion" IsTrue="true"/>
+    <SimpleCondition Name="DestroyedVillages" LimitMin="1"/>
+
+    <ArmyProductionCooldown>15</ArmyProductionCooldown>
+    <GarrisonGrowthCooldown>15</GarrisonGrowthCooldown>
+    <RoamingArmySize>6</RoamingArmySize>
+  </AIMinorEmpireDefCon>
+
+</Datatable>

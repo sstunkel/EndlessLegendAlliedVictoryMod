@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Economy -->
+  <GuiElement Name="EmpirePlanEconomy0">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanEconomy1">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanEconomy2">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="EmpirePlanEconomy3">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EmpirePlanEconomy4">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </ExtendedGuiElement>
+
+  <!-- Exploration -->
+  <GuiElement Name="EmpirePlanForeignAffairs0">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanForeignAffairs1">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanForeignAffairs2">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanForeignAffairs3">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanForeignAffairs4">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <!-- Military -->
+  <GuiElement Name="EmpirePlanMilitary0">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanMilitary1">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+  
+  <GuiElement Name="EmpirePlanMilitary2">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+  
+  <GuiElement Name="EmpirePlanMilitary3">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="EmpirePlanMilitary4">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </ExtendedGuiElement>
+  
+  <!-- Knowledge -->
+  <GuiElement Name="EmpirePlanKnowledge0">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanKnowledge1">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanKnowledge2">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanKnowledge3">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+
+  <GuiElement Name="EmpirePlanKnowledge4">
+    <Title>%EmpirePlanEffectsTitle</Title>
+  </GuiElement>
+</Datatable>

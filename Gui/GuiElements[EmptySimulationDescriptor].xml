@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="WinterFoodReductionImmunity">
+    <Title>%WinterFoodReductionImmunityTitle</Title>
+    <Description>%WinterFoodReductionImmunityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="WinterDustReductionImmunity">
+    <Title>%WinterDustReductionImmunityTitle</Title>
+    <Description>%WinterDustReductionImmunityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="WinterIndustryReductionImmunity">
+    <Title>%WinterIndustryReductionImmunityTitle</Title>
+    <Description>%WinterIndustryReductionImmunityDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="WinterFIDSReductionImmunity">
+    <Title>%WinterFIDSReductionImmunityTitle</Title>
+    <Description>%WinterFIDSReductionImmunityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="WinterApprovalReductionImmunity">
+    <Title>%WinterApprovalReductionImmunityTitle</Title>
+    <Description>%WinterApprovalReductionImmunityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="WinterResourceReductionImmunity">
+    <Title>%WinterResourceReductionImmunityTitle</Title>
+    <Description>%WinterResourceReductionImmunityDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="WinterMovementReductionImmunity">
+    <Title>%WinterMovementReductionImmunityTitle</Title>
+    <Description>%WinterMovementReductionImmunityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="WinterAttributeReductionImmunity">
+    <Title>%WinterAttributeReductionImmunityTitle</Title>
+    <Description>%WinterAttributeReductionImmunityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="WinterCityVisionRangeReductionImmunity">
+    <Title>%WinterCityVisionRangeReductionImmunityTitle</Title>
+    <Description>%WinterCityVisionRangeReductionImmunityDescription</Description>
+  </GuiElement>
+</Datatable>

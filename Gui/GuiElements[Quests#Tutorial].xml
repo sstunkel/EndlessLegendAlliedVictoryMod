@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestGuiElement Name="MainQuestTutorial-Chapter1">
+    <Title>%MainQuestTutorial-Chapter1Title</Title>
+    <Description>%MainQuestTutorial-Chapter1Description</Description>
+    <Objective>%MainQuestTutorial-Chapter1Objective</Objective>
+    <Outcome>%MainQuestTutorial-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter1-Step1">%MainQuestTutorial-Chapter1-Step1</Step>
+      <Step Name="MainQuestTutorial-Chapter1-Step2">%MainQuestTutorial-Chapter1-Step2</Step>
+      <Step Name="MainQuestTutorial-Chapter1-Step3">%MainQuestTutorial-Chapter1-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="MainQuestTutorial-Chapter2">
+    <Title>%MainQuestTutorial-Chapter2Title</Title>
+    <Description>%MainQuestTutorial-Chapter2Description</Description>
+    <Objective>%MainQuestTutorial-Chapter2Objective</Objective>
+    <Outcome>%MainQuestTutorial-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter2-Step1">%MainQuestTutorial-Chapter2-Step1</Step>
+      <Step Name="MainQuestTutorial-Chapter2-Step2">%MainQuestTutorial-Chapter2-Step2</Step>
+      <Step Name="MainQuestTutorial-Chapter2-Step3">%MainQuestTutorial-Chapter2-Step3</Step>
+      <Step Name="MainQuestTutorial-Chapter2-Step4">%MainQuestTutorial-Chapter2-Step4</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="MainQuestTutorial-Chapter3">
+    <Title>%MainQuestTutorial-Chapter3Title</Title>
+    <Description>%MainQuestTutorial-Chapter3Description</Description>
+    <Objective>%MainQuestTutorial-Chapter3Objective</Objective>
+    <Outcome>%MainQuestTutorial-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter3-Step1">%MainQuestTutorial-Chapter3-Step1</Step>
+      <Step Name="MainQuestTutorial-Chapter3-Step2">%MainQuestTutorial-Chapter3-Step2</Step>
+      <Step Name="MainQuestTutorial-Chapter3-Step3">%MainQuestTutorial-Chapter3-Step3</Step>
+      <Step Name="MainQuestTutorial-Chapter3-Step4">%MainQuestTutorial-Chapter3-Step4</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="MainQuestTutorial-Chapter4">
+    <Title>%MainQuestTutorial-Chapter4Title</Title>
+    <Description>%MainQuestTutorial-Chapter4Description</Description>
+    <Objective>%MainQuestTutorial-Chapter4Objective</Objective>
+    <Outcome>%MainQuestTutorial-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter4-Step1">%MainQuestTutorial-Chapter4-Step1</Step>
+      <Step Name="MainQuestTutorial-Chapter4-Step2">%MainQuestTutorial-Chapter4-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="MainQuestTutorial-Chapter5">
+    <Title>%MainQuestTutorial-Chapter5Title</Title>
+    <Description>%MainQuestTutorial-Chapter5Description</Description>
+    <Objective>%MainQuestTutorial-Chapter5Objective</Objective>
+    <Outcome>%MainQuestTutorial-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter5-Step1">%MainQuestTutorial-Chapter5-Step1</Step>
+      <Step Name="MainQuestTutorial-Chapter5-Step2">%MainQuestTutorial-Chapter5-Step2</Step>
+      <Step Name="MainQuestTutorial-Chapter5-Step3">%MainQuestTutorial-Chapter5-Step3</Step>
+      <Step Name="MainQuestTutorial-Chapter5-Step4">%MainQuestTutorial-Chapter5-Step4</Step>
+      <Step Name="MainQuestTutorial-Chapter5-Step5">%MainQuestTutorial-Chapter5-Step5</Step>
+      <Step Name="MainQuestTutorial-Chapter5-Step6">%MainQuestTutorial-Chapter5-Step6</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="MainQuestTutorial-Chapter6">
+    <Title>%MainQuestTutorial-Chapter6Title</Title>
+    <Description>%MainQuestTutorial-Chapter6Description</Description>
+    <Objective>%MainQuestTutorial-Chapter6Objective</Objective>
+    <Outcome>%MainQuestTutorial-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter6-Step1">%MainQuestTutorial-Chapter6-Step1</Step>
+      <Step Name="MainQuestTutorial-Chapter6-Step2">%MainQuestTutorial-Chapter6-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <QuestGuiElement Name="MainQuestTutorial-Chapter7">
+    <Title>%MainQuestTutorial-Chapter7Title</Title>
+    <Description>%MainQuestTutorial-Chapter7Description</Description>
+    <Objective>%MainQuestTutorial-Chapter7Objective</Objective>
+    <Outcome>%MainQuestTutorial-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestTutorial-Chapter7-Step1">%MainQuestTutorial-Chapter7-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

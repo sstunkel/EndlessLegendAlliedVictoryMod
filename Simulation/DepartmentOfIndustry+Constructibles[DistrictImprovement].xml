@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <DistrictImprovementDefinition Name="DistrictImprovement1" SubCategory="SubCategoryDistrict">
+    <CustomCost ResourceName="Production">($Count(ClassCity/DistrictTypeExtension) + 1) * 150</CustomCost>
+    <SimulationDescriptorReference Name="DistrictTypeExtension"/>
+    <SimulationDescriptorReference Name="DistrictImprovementExtractingCapacity" />
+    <InterpreterPrerequisite Inverted="false" Flags="Prerequisite,Discard,AIEconomicRatio">$Property(FreeBoroughStock) eq 0</InterpreterPrerequisite>
+    <PathPrerequisite        Inverted="false" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,!FactionTraitNecrophages12</PathPrerequisite>
+    <InterpreterPrerequisite Inverted="false" Flags="Prerequisite,Disable,AIEconomicRatio">$Property(Population) ge (($Count(ClassCity/DistrictTypeExtension) + 1) * 2)</InterpreterPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+  </DistrictImprovementDefinition>
+ 
+  <DistrictImprovementDefinition Name="DistrictImprovement1Necrophage" SubCategory="SubCategoryDistrict">
+    <CustomCost ResourceName="Production">($Count(ClassCity/DistrictTypeExtension) + 1) * 100</CustomCost>
+    <SimulationDescriptorReference Name="DistrictTypeExtension"/>
+    <SimulationDescriptorReference Name="DistrictImprovementExtractingCapacity" />
+    <PathPrerequisite        Inverted="false" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,FactionTraitNecrophages12</PathPrerequisite>
+    <InterpreterPrerequisite Inverted="false" Flags="Prerequisite,Disable,AIEconomicRatio">$Property(Population) ge (($Count(ClassCity/DistrictTypeExtension) + 1) * 1)</InterpreterPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+  </DistrictImprovementDefinition>
+
+  <CoastalDistrictImprovementDefinition Name="DistrictImprovementDocks" SubCategory="SubCategoryDistrict">
+    <CustomCost ResourceName="Production">600</CustomCost>
+    <SimulationDescriptorReference    Name="OnlyOnePerCity" />
+    <SimulationDescriptorReference    Name="DocksLocation" />
+    <SimulationDescriptorReference    Name="OceanRoadCreation" />
+    <SimulationDescriptorReference    Name="DistrictImprovementDocksDescriptor" />
+    <SimulationDescriptorReference    Name="EmbarkDisembarkBonus" />
+    <PathPrerequisite        Inverted="false" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire/TechnologyDocks</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Discard">ClassCity/DistrictImprovementDocks</PathPrerequisite>
+    <!-- Match="Any" ... improvement is accepted if anyone of the tags does math -->
+    <!-- Match="All" ... improvement is accepted if all the tags do math -->
+    <WorldPlacementTags Match="Any">TerrainTypeCoastalWaters;TerrainTypeInlandWater;TerrainTypeOcean</WorldPlacementTags>
+  </CoastalDistrictImprovementDefinition>
+
+  <FreeDistrictImprovementDefinition Name="FreeDistrictImprovement1" SubCategory="SubCategoryDistrict" IsUnique="false">
+    <CustomCost ResourceName="FreeBorough" InstantOnCompletion="true">1</CustomCost>
+    <CustomCost ResourceName="QueuedFreeBorough" Instant="true">1</CustomCost>
+    <SimulationDescriptorReference Name="DistrictTypeExtension"/>
+    <SimulationDescriptorReference Name="DistrictImprovementExtractingCapacity" />
+    <PathPrerequisite        Inverted="false" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,AffinityRovingClans</PathPrerequisite>
+    <InterpreterPrerequisite Inverted="false" Flags="Discard,AIEconomicRatio">$Property(QueuedFreeBoroughStock) gt 0</InterpreterPrerequisite>
+  </FreeDistrictImprovementDefinition>
+  
+</Datatable>

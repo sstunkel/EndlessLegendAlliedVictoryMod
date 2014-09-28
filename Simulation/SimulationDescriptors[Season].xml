@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Movement maluses / immunity -->
+  <SimulationDescriptor Name="WinterMovementReduction">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement"  Operation="Percent"         Value="-0.50" Path="ClassEmpire,!WinterMovementReductionImmunity/!WinterMovementReductionImmunity,Garrison/!WinterMovementReductionImmunity,ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="WinterMovementReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement"        Operation="Percent"   Value="-0.25" Path="ClassEmpire,!WinterMovementReductionImmunity/!WinterMovementReductionImmunity,Garrison/!WinterMovementReductionImmunity,ClassUnit"/>
+      <SimulationModifierDescriptor TargetProperty="BattleMaximumMovement"  Operation="Percent"   Value="-0.50" Path="ClassEmpire,!WinterMovementReductionImmunity/!WinterMovementReductionImmunity,Garrison/!WinterMovementReductionImmunity,ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="WinterMovementReductionImmunity">
+  </SimulationDescriptor>
+  
+  
+
+  <!-- Food maluses / immunity -->
+  <SimulationDescriptor Name="WinterFoodReduction">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFoodReductionImmunity/TerrainTagFood"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFoodReductionImmunity/ConvertedVillage/TerrainTagFood" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFoodReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"         Operation="Percent"         Value="-0.25" Path="EmpireTypeMajor/!WinterFoodReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFoodReduction2">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFoodReductionImmunity/TerrainTagFood"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFoodReductionImmunity/ConvertedVillage/TerrainTagFood" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFoodReduction3">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"         Operation="Multiplication"  Value="0.5"   Path="EmpireTypeMajor/!WinterFoodReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFoodReduction4">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityFood"         Operation="Multiplication"  Value="0.5"   Path="EmpireTypeMajor/!WinterFoodReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFoodReduction5">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFoodReductionImmunity/TerrainTagFood"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFoodReductionImmunity/ConvertedVillage/TerrainTagFood" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFoodReductionImmunity">
+  </SimulationDescriptor>
+
+
+
+  <!-- Dust maluses / immunity -->
+  <SimulationDescriptor Name="WinterDustReduction">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterDustReductionImmunity/TerrainTagDust"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterDustReductionImmunity/ConvertedVillage/TerrainTagDust" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterDustReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDust"         Operation="Percent"         Value="-0.25" Path="EmpireTypeMajor/!WinterDustReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterDustReduction2">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteGain"   Operation="Multiplication"  Value="0.5"   Path="EmpireTypeMajor/ClassCity,!WinterDustReductionImmunity/ClassTradeRoute"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterDustReduction3">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"  Operation="Percent"         Value="1.00"  Path="EmpireTypeMajor/!WinterDustReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterDustReductionImmunity">
+  </SimulationDescriptor>
+
+
+
+  <!-- Industry maluses / immunity -->
+  <SimulationDescriptor Name="WinterIndustryReduction">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterIndustryReductionImmunity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterIndustryReductionImmunity/ConvertedVillage/DistrictTypeExploitation" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterIndustryReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"     Operation="Percent"         Value="-0.25" Path="EmpireTypeMajor/!WinterIndustryReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterIndustryReductionImmunity">
+  </SimulationDescriptor>
+
+
+
+  <!-- FIDS maluses / immunity -->
+  <SimulationDescriptor Name="WinterFIDSReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/TerrainTagRiver"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/TerrainTagRiver"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/TerrainTagRiver" TooltipHidden="true"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/TerrainTagRiver" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFIDSReduction2">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/TerrainTagRiver"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/TerrainTagRiver"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/TerrainTagRiver" TooltipHidden="true"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"        Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/TerrainTagRiver" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFIDSReduction3">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"  Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/DistrictTypeExploitation" TooltipHidden="true"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/DistrictTypeExploitation" TooltipHidden="true"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"  Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/DistrictTypeExploitation" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFIDSReduction4">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"  Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/DistrictTypeExploitation"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry" Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/DistrictTypeExploitation" TooltipHidden="true"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"     Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/DistrictTypeExploitation" TooltipHidden="true"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"  Operation="Subtraction"     Value="2"     Path="EmpireTypeMajor/ClassCity,!WinterFIDSReductionImmunity/ConvertedVillage/DistrictTypeExploitation" TooltipHidden="true"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterFIDSReductionImmunity">
+  </SimulationDescriptor>
+
+
+
+  <!-- Approval maluses / immunity -->
+  <SimulationDescriptor Name="WinterApprovalReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"     Operation="Subtraction"     Value="15"    Path="EmpireTypeMajor/!WinterApprovalReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterApprovalReduction2">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityApproval"     Operation="Subtraction"     Value="25"    Path="EmpireTypeMajor/!WinterApprovalReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterApprovalReductionImmunity">
+  </SimulationDescriptor>
+
+
+
+  <!-- Resource maluses / immunity -->
+  <SimulationDescriptor Name="WinterResourceReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="ResourceGain"     Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity,!WinterResourceReductionImmunity/PointOfInterestTypeResourceDeposit,ResourceTypeStrategic"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterResourceReductionImmunity">
+  </SimulationDescriptor>
+
+
+
+  <!-- Attribute maluses / immunity -->
+  <SimulationDescriptor Name="WinterAttributeReduction1">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"  Operation="Addition" Value="-0.50" Path="EmpireTypeMajor/!WinterAttributeReductionImmunity,ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="AlliedUnitRegenModifier" Operation="Addition" Value="-0.50" Path="EmpireTypeMajor/!WinterAttributeReductionImmunity,ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterAttributeReduction2">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"  Operation="Percent"         Value="-0.3" Path="EmpireTypeMajor/Garrison,!WinterAttributeReductionImmunity/ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterAttributeReduction3">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense" Operation="Percent"         Value="-0.3" Path="EmpireTypeMajor/Garrison,!WinterAttributeReductionImmunity/ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterAttributeReduction4">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumHealth"    Operation="Percent"         Value="-0.20" Path="EmpireTypeMajor/Garrison,!WinterAttributeReductionImmunity/ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterAttributeReductionImmunity">
+  </SimulationDescriptor>
+
+
+
+  <!-- Vision maluses / immunities -->
+  <SimulationDescriptor Name="WinterUnitVisionRangeReduction">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"      Operation="Subtraction"     Value="1"     Path="ClassEmpire/Garrison/!WinterUnitVisionRangeReductionImmunity,ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterUnitVisionRangeReductionImmunity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterCityVisionRangeReduction">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"      Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity/!WinterCityVisionRangeReductionImmunity,ClassPointOfInterest"/>
+      <SimulationModifierDescriptor TargetProperty="VisionRange"      Operation="Subtraction"     Value="1"     Path="EmpireTypeMajor/ClassCity/!WinterCityVisionRangeReductionImmunity,ClassDistrict"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="WinterCityVisionRangeReductionImmunity">
+  </SimulationDescriptor>
+
+  
+  
+  <!-- Resource bonuses / maluses / immunity -->
+  <SimulationDescriptor Name="WinterNetAffinityStrategicBonus">
+    <SimulationModifierDescriptors>
+      <!--<SimulationModifierDescriptor TargetProperty="NetAffinityStrategic" Operation="Percent" Value="2.00"  Path="AffinityStrategicWinterBoosterBonus,EmpireTypeMajor"/>-->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+</Datatable>

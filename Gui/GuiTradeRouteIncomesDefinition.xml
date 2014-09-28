@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiTradeRouteIncomesDefinition Name="AllTradeRoutes">
+    <!--<TradeRouteIncome Value="TotalTradeRoutesCityFoodIncome"/>-->
+    <TradeRouteIncome Value="TotalTradeRoutesCityDustIncome"/>
+    <TradeRouteIncome Value="TotalTradeRoutesCityScienceIncome"/>
+  </GuiTradeRouteIncomesDefinition>
+  
+  <GuiTradeRouteIncomesDefinition Name="AllIntermediateTradeRoutes">
+    <!--<TradeRouteIncome Value="IntermediateTradeRoutesCityFoodIncome"/>-->
+    <TradeRouteIncome Value="IntermediateTradeRoutesCityDustIncome"/>
+    <TradeRouteIncome Value="IntermediateTradeRoutesCityScienceIncome"/>
+  </GuiTradeRouteIncomesDefinition>
+  
+  <GuiTradeRouteIncomesDefinition Name="OtherEmpireTradeRoutes">
+    <!--<TradeRouteIncome Value="TradeRouteCityFoodIncome"/>-->
+    <TradeRouteIncome Value="TradeRouteCityDustIncome"/>
+    <TradeRouteIncome Value="TradeRouteCityScienceIncome"/>
+  </GuiTradeRouteIncomesDefinition>
+  
+  <GuiTradeRouteIncomesDefinition Name="CityTradeRoutes">
+    <!--<TradeRouteIncome Value="TotalTradeRoutesCityFoodIncome"/>-->
+    <TradeRouteIncome Value="TotalTradeRoutesCityDustIncome"/>
+    <TradeRouteIncome Value="TotalTradeRoutesCityScienceIncome"/>
+  </GuiTradeRouteIncomesDefinition>
+  
+  <GuiTradeRouteIncomesDefinition Name="CityIntermediateTradeRoutes">
+    <!--<TradeRouteIncome Value="IntermediateTradeRoutesCityFoodIncome"/>-->
+    <TradeRouteIncome Value="IntermediateTradeRoutesCityDustIncome"/>
+    <TradeRouteIncome Value="IntermediateTradeRoutesCityScienceIncome"/>
+  </GuiTradeRouteIncomesDefinition>
+  
+  <GuiTradeRouteIncomesDefinition Name="OneTradeRoute">
+    <!--<TradeRouteIncome Value="TradeRouteCityFoodIncome"/>-->
+    <TradeRouteIncome Value="TradeRouteCityDustIncome"/>
+    <TradeRouteIncome Value="TradeRouteCityScienceIncome"/>
+  </GuiTradeRouteIncomesDefinition>
+</Datatable>

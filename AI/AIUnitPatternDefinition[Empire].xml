@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--
+    The sum of the AIUnitAttributeProportion must be equal to 1 !
+  -->
+
+  <!-- ############################################ -->
+  <!-- #######      Archetype "Settler"     ####### -->
+  <!-- ############################################ -->
+  <AIUnitPatternDefinition Name="AI_Settler" Category="Settler">
+    <PathPrerequisite Flags="WithUnitAbilityColonization">WithUnitAbilityColonization</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"     Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="1"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+
+  <!-- ############################################ -->
+  <!-- #######      Archetype "Killer"      ####### -->
+  <!-- ############################################ -->
+  <AIUnitPatternDefinition Name="AI_Killer_Initiative" Category="Killer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"     Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Killer_DefenseBreaker" Category="Killer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"     Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Killer_Resistant" Category="Killer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Killer_Weak" Category="Killer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="false">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+
+  </AIUnitPatternDefinition>
+
+  <!-- ############################################ -->
+  <!-- #######      Archetype "Protector"   ####### -->
+  <!-- ############################################ -->
+  <AIUnitPatternDefinition Name="AI_Protector_Initiative" Category="Protector">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"     Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Protector_DefenseBreaker" Category="Protector">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.08"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Protector_Strong" Category="Protector">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"     Value="0.08"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+
+  <!-- ################################################### -->
+  <!-- #######      Archetype "DefenseBreaker"     ####### -->
+  <!-- ################################################### -->
+  <AIUnitPatternDefinition Name="AI_DefenseBreaker_Initiative" Category="DefenseBreaker">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.08"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"     Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"  Value="0.01"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_DefenseBreaker_Resistant" Category="DefenseBreaker">
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"     Value="0.39"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.29"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.29"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_DefenseBreaker_Strong" Category="DefenseBreaker">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.5"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.07"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+
+  <!-- ############################################# -->
+  <!-- #######      Archetype "Artillery"     ####### -->
+  <!-- ############################################# -->
+  <AIUnitPatternDefinition Name="AI_Artillery_DefenseBreaker" Category="Artillery">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <InterpreterPrerequisite Flags="2">$Property(ClassUnit:BattleRange) ge 2</InterpreterPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.16"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Artillery_Strong" Category="Artillery">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <InterpreterPrerequisite Flags="2">$Property(ClassUnit:BattleRange) ge 2</InterpreterPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.16"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Artillery_Resistant" Category="Artillery">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <InterpreterPrerequisite Flags="2">$Property(ClassUnit:BattleRange) ge 2</InterpreterPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.28"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.28"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Artillery_Initiative" Category="Artillery">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <InterpreterPrerequisite Flags="2">$Property(ClassUnit:BattleRange) ge 2</InterpreterPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.28"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.28"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+
+  <!-- ############################################# -->
+  <!-- #######      Archetype "Harasser"     ####### -->
+  <!-- ############################################# -->
+  <AIUnitPatternDefinition Name="AI_Harasser_Resistant" Category="Harasser">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.17"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.37"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.27"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.1"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.07"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Harasser_Healthful" Category="Harasser">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.23"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.11"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.23"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Harasser_DefenseBreaker" Category="Harasser">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.07"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.2"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.3"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_Harasser_Strong" Category="Harasser">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithoutUnitAbilityLowDamage" Inverted="true">WithUnitAbilityLowDamage</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.28"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.4"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.28"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.01"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <!-- ############################################# -->
+  <!-- #######      Archetype "Healer"      ####### -->
+  <!-- ############################################# -->
+  <AIUnitPatternDefinition Name="AI_HealerBishop" Category="Healer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityLowDamage">WithUnitAbilityLowDamage</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityLifeSiphon">WithUnitAbilityLifeSiphon</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_HealerCeratan" Category="Healer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityLowDamage">WithUnitAbilityLowDamage</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityCocoon">WithUnitAbilityCocoon</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_HealerEyelessOnes" Category="Healer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityLowDamage">WithUnitAbilityLowDamage</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityCocoon">WithUnitHealingHalo</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_HealerHeroDrakken" Category="Healer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityHeal">WithUnitHeal</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <!-- ############################################# -->
+  <!-- #######      Archetype "Buffer"       ####### -->
+  <!-- ############################################# -->
+  <AIUnitPatternDefinition Name="AI_BufferSister" Category="Buffer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityLowDamage">WithUnitAbilityLowDamage</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityDebuffImmunity">WithUnitAbilityDebuffImmunity</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.25"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.22"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_BufferShaman" Category="Buffer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityLowDamage">WithUnitAbilityLowDamage</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityBarkSkin">WithUnitAbilityBarkSkin</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.15"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.32"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_BufferAncientDragon" Category="Buffer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityBarkSkin">WithUnitAbilitySharedWisdom</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.15"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.32"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_BufferPreacher" Category="Buffer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityBarkSkin">WithUnitAbilityUnleashedPotential</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.15"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.32"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+
+  <AIUnitPatternDefinition Name="AI_BufferHeroArdentMages" Category="Buffer">
+    <PathPrerequisite Flags="WithoutUnitAbilityColonization" Inverted="true">WithUnitAbilityColonization</PathPrerequisite>
+    <PathPrerequisite Flags="WithUnitAbilityBarkSkin">WithUnitAbilityIncreasedFire</PathPrerequisite>
+    <AIUnitAttributeProportion Name="AIUnitAttackRatio"     Value="0.45"/>
+    <AIUnitAttributeProportion Name="AIUnitDamageRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitDefenseRatio"    Value="0.15"/>
+    <AIUnitAttributeProportion Name="AIUnitInitiativeRatio" Value="0.32"/>
+    <AIUnitAttributeProportion Name="AIUnitMaxHealthRatio"  Value="0.0"/>
+    <AIUnitAttributeProportion Name="AIUnitMovementRatio"   Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitRangeRatio"      Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitHealthRatio"     Value="0.02"/>
+    <AIUnitAttributeProportion Name="AIUnitWoundedRatio"    Value="0.0"/>
+  </AIUnitPatternDefinition>
+  
+</Datatable>

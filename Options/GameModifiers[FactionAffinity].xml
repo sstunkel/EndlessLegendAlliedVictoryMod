@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GameModifierDefinition Name="PersonalityAffinity">
+
+    <!-- BrokenLords -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityBrokenLords</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityBrokenLords" />
+    </Effects>
+
+    <!-- Rage Wizards -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityRageWizards</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityRageWizards" />
+    </Effects>
+
+    <!-- Mad Fairies -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityMadFairies</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityMadFairies" />
+    </Effects>
+
+    <!-- Necrophages -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityNecrophages</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityNecrophages" />
+    </Effects>
+
+    <!-- Vaulters -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityVaulters</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityVaulters" />
+    </Effects>
+
+    <!-- Mezari -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityMezari</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityVaulters" />
+    </Effects>
+
+    <!-- Roving Clans -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityRovingClans</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityRovingClans" />
+    </Effects>
+
+    <!-- Drakkens -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityDrakkens</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityDrakkens" />
+    </Effects>
+
+    <!-- Cultists -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMajor,AffinityCultists</PathPrerequisite>
+      <PersonalityReference Name="PersonalityAffinityCultists" />
+    </Effects>
+
+    <!-- Tutorial -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor,EmpireTutorial</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMinorFactionAffinityTutorial" />
+    </Effects>
+
+  </GameModifierDefinition>
+  
+</Datatable>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Pillar 1 (Science) -->
+  <AIParameterDatatableElement Name="Pillar1_Effect1">
+    <AIParameter Name="AICityResearch" Value="2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect2">
+    <AIParameter Name="AICityResearch" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect3">
+    <AIParameter Name="AICityResearch" Value="6"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect4">
+    <AIParameter Name="AICityResearch" Value="9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect5">
+    <AIParameter Name="AICityResearch" Value="16"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect1_Winter">
+    <AIParameter Name="AICityResearch" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect2_Winter">
+    <AIParameter Name="AICityResearch" Value="8"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect3_Winter">
+    <AIParameter Name="AICityResearch" Value="9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect4_Winter">
+    <AIParameter Name="AICityResearch" Value="12"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar1_Effect5_Winter">
+    <AIParameter Name="AICityResearch" Value="19"/>
+  </AIParameterDatatableElement>
+
+
+
+  <!-- Pillar 2 (Speed) -->
+  <AIParameterDatatableElement Name="Pillar2_Effect1">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect2">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect3">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect4">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect5">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect1_Winter">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect2_Winter">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect3_Winter">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect4_Winter">
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar2_Effect5_Winter">
+  </AIParameterDatatableElement>
+
+
+
+  <!-- Pillar 3 (Influence) -->
+  <AIParameterDatatableElement Name="Pillar3_Effect1">
+    <AIParameter Name="AICityEmpirePoint" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect2">
+    <AIParameter Name="AICityEmpirePoint" Value="2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect3">
+    <AIParameter Name="AICityEmpirePoint" Value="2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect4">
+    <AIParameter Name="AICityEmpirePoint" Value="3"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect5">
+    <AIParameter Name="AICityEmpirePoint" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect1_Winter">
+    <AIParameter Name="AICityEmpirePoint" Value="1+1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect2_Winter">
+    <AIParameter Name="AICityEmpirePoint" Value="2+1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect3_Winter">
+    <AIParameter Name="AICityEmpirePoint" Value="2+1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect4_Winter">
+    <AIParameter Name="AICityEmpirePoint" Value="3+1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar3_Effect5_Winter">
+    <AIParameter Name="AICityEmpirePoint" Value="5+1"/>
+  </AIParameterDatatableElement>
+
+
+
+  <!-- Pillar 4 (Dust) -->
+  <AIParameterDatatableElement Name="Pillar4_Effect1">
+    <AIParameter Name="AICityMoney" Value="2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect2">
+    <AIParameter Name="AICityMoney" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect3">
+    <AIParameter Name="AICityMoney" Value="6"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect4">
+    <AIParameter Name="AICityMoney" Value="9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect5">
+    <AIParameter Name="AICityMoney" Value="16"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect1_Winter">
+    <AIParameter Name="AICityMoney" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect2_Winter">
+    <AIParameter Name="AICityMoney" Value="8"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect3_Winter">
+    <AIParameter Name="AICityMoney" Value="9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect4_Winter">
+    <AIParameter Name="AICityMoney" Value="12"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar4_Effect5_Winter">
+    <AIParameter Name="AICityMoney" Value="19"/>
+  </AIParameterDatatableElement>
+
+
+
+  <!-- Pillar 5 (Regen) -->
+  <AIParameterDatatableElement Name="Pillar5_Effect1">
+    <AIParameter Name="AICityGrowth" Value="2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect2">
+    <AIParameter Name="AICityGrowth" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect3">
+    <AIParameter Name="AICityGrowth" Value="6"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect4">
+    <AIParameter Name="AICityGrowth" Value="9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect5">
+    <AIParameter Name="AICityGrowth" Value="16"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect1_Winter">
+    <AIParameter Name="AICityGrowth" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect2_Winter">
+    <AIParameter Name="AICityGrowth" Value="8"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect3_Winter">
+    <AIParameter Name="AICityGrowth" Value="9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect4_Winter">
+    <AIParameter Name="AICityGrowth" Value="12"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="Pillar5_Effect5_Winter">
+    <AIParameter Name="AICityGrowth" Value="19"/>
+  </AIParameterDatatableElement>
+
+</Datatable>

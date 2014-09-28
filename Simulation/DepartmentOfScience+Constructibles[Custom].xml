@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Deep Generator -->
+  <TechnologyDefinition  Name="TechnologyDefinitionVaulters2Custom" TechnologyFlags="Affinity">
+    <UnlockCategoryOverride Category="CityImprovement" SubCategory="SubCategoryAffinityResource"/>
+    <SimulationDescriptorReference Name="TechnologyVaulters2Custom" />
+    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra2" />
+    <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era2CostMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable">EmpireTypeMajor,FactionTraitVaulters2Custom</PathPrerequisite>
+  </TechnologyDefinition>
+
+  <!-- Strength of the Vault -->
+  <TechnologyDefinition  Name="TechnologyDefinitionVaulters3Custom" TechnologyFlags="Affinity">
+    <UnlockCategoryOverride Category="CityImprovement" SubCategory="SubCategoryMilitary"/>
+    <SimulationDescriptorReference Name="TechnologyVaulters3Custom" />
+    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra3" />
+    <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era3CostMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable">EmpireTypeMajor,FactionTraitVaulters3Custom</PathPrerequisite>
+  </TechnologyDefinition>
+
+  <!-- Endless Recycling -->
+  <TechnologyDefinition  Name="TechnologyDefinitionVaulters4Custom" TechnologyFlags="Affinity">
+    <UnlockCategoryOverride Category="CityImprovement" SubCategory="SubCategoryScience"/>
+    <SimulationDescriptorReference Name="TechnologyVaulters4Custom" />
+    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra3" />
+    <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era3CostMultiplier)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable">EmpireTypeMajor,FactionTraitVaulters4Custom</PathPrerequisite>
+  </TechnologyDefinition>
+
+  <!-- Winter Shelter -->
+  <TechnologyDefinition  Name="TechnologyDefinitionVaulters6Custom" Visibility="VisibleWhenUnlocked">
+    <SimulationDescriptorReference Name="TechnologyVaulters6Custom" />
+  </TechnologyDefinition>
+
+</Datatable>

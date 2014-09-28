@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://Vaultersw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://Vaultersw.w3.org/2001/XMLSchema">
+
+  <QuestDefinition Name="VictoryCondition-SurviveTheInstantElimination" Category="VictoryCondition" SubCategory="Elimination" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="0" NumberOfOccurencesPerGame="0">
+    <Tags>Exclusive,Hidden,VictoryManager,VictoryManagerOnBeginTurn,Volatile</Tags>
+    <Prerequisites Target="$(Empire)">
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,!EmpireEliminated</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Prerequisite">($Count(EmpireTypeMajor/ClassCity) eq 0) and ($Count(EmpireTypeMajor/Garrison/ClassUnit,UnitSettler) eq 0) and ($Count(EmpireTypeMajor/Garrison/ClassUnit,MigrationUnit) eq 0)</InterpreterPrerequisite>
+    </Prerequisites>
+    <Controller_Sequence>
+      <Action_Elimination Target="Empire"/>
+      <Action_UpdateQuest State="Failed"/>
+    </Controller_Sequence>
+  </QuestDefinition>
+
+  <QuestDefinition Name="VictoryCondition-SurviveTheEliminiation" Category="VictoryCondition" SubCategory="Elimination" Cooldown="0" SkipLockedQuestTarget="false" NumberOfConcurrentInstances="1" NumberOfOccurencesPerEmpire="0" NumberOfOccurencesPerGame="0">
+    <Tags>Exclusive,Hidden,VictoryManager,VictoryManagerOnBeginTurn,Volatile</Tags>
+    <Prerequisites Target="$(Empire)">
+      <PathPrerequisite Flags="Prerequisite">EmpireTypeMajor,!EmpireEliminated</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Prerequisite">($Count(EmpireTypeMajor/ClassCity) eq 0) and (($Count(EmpireTypeMajor/Garrison/ClassUnit,UnitSettler) gt 0) or ($Count(EmpireTypeMajor/Garrison/ClassUnit,MigrationUnit) gt 0))</InterpreterPrerequisite>
+    </Prerequisites>
+    <Controller_Parallel CompletionPolicy="Any">
+      <Controller_Sequence>
+        <Decorator_BeginTurn Initiator="Empire">
+          <ConditionCheck_Prerequisite>
+            <Prerequisites Target="$Empire">
+              <InterpreterPrerequisite Flags="Prerequisite">$Count(EmpireTypeMajor/ClassCity) gt 0</InterpreterPrerequisite>
+            </Prerequisites>
+          </ConditionCheck_Prerequisite>
+        </Decorator_BeginTurn>
+        <Action_UpdateQuest State="Completed"/>
+      </Controller_Sequence>
+      <Controller_Sequence>
+        <Action_UpdateStep StepName="VictoryCondition-SurviveTheEliminiation-Step1" State="InProgress"/>
+        <!--<Action_Alert Priority="Informative" PanelType="" Message="%VictoryCondition-SurviveTheEliminiation"/>-->
+        <Action_StartTimer Output_TimerVarName="$TimeBeforeElimination"/>
+        <Controller_Parallel CompletionPolicy="All">
+          <Controller_Sequence>
+            <Decorator_TimerEnded TimerVarName="$TimeBeforeElimination" TurnCountBeforeTimeOut="4" Initiator="Empire"/>
+            <Decorator_BeginTurn Initiator="Empire"/>
+            <!--<Action_Alert Message="%VictoryCondition-SurviveTheEliminiation-Minus5"/>-->
+            <Decorator_BeginTurn Initiator="Empire"/>
+            <!--<Action_Alert Message="%VictoryCondition-SurviveTheEliminiation-Minus4"/>-->
+            <Decorator_BeginTurn Initiator="Empire"/>
+            <Action_Alert Message="%VictoryCondition-SurviveTheEliminiation-Minus3"/>
+            <Decorator_BeginTurn Initiator="Empire"/>
+            <Action_Alert Message="%VictoryCondition-SurviveTheEliminiation-Minus2"/>
+            <Decorator_BeginTurn Initiator="Empire"/>
+            <Action_Alert Message="%VictoryCondition-SurviveTheEliminiation-Minus1"/>
+          </Controller_Sequence>
+          <Controller_Sequence>
+            <Decorator_TimerEnded TimerVarName="$TimeBeforeElimination" TurnCountBeforeTimeOut="10" TimerLocalizationKey="$Timer" Initiator="Empire"/>
+          </Controller_Sequence>
+        </Controller_Parallel>
+        <Action_UpdateStep StepName="VictoryCondition-SurviveTheEliminiation-Step1" State="Failed"/>
+        <Action_UpdateQuest State="Failed"/>
+        <Action_Elimination Target="Empire"/>
+      </Controller_Sequence>
+    </Controller_Parallel>
+    <Steps>
+      <Step Name="VictoryCondition-SurviveTheEliminiation-Step1"/>
+    </Steps>
+  </QuestDefinition>
+
+</Datatable>

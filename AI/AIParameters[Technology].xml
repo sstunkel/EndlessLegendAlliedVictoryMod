@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################ -->
+  <!-- #######       ERA1       ####### -->
+  <!-- ################################ -->
+  <!-- Food0 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionFood0">
+    <AIParameter Name="CityFood"              Value="10"/>
+    <AIParameter Name="CityFoodPercent"       Value="0.15"/>
+  </AIParameterDatatableElement>
+
+  <!-- Industry0 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionIndustry0">
+    <AIParameter Name="CityProduction"        Value="6"/>
+    <AIParameter Name="CityProductionPercent" Value="0.15"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust0 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDust0">
+    <AIParameter Name="CityMoney"           Value="5"/>
+    <AIParameter Name="CityMoneyPercent"    Value="0.15"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDust1">
+    <AIParameter Name="DistrictDustRiver"   Value="2"/>
+    <AIParameter Name="DistrictDustWater"   Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science0-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience0">
+    <AIParameter Name="CityScience"         Value="10"/>
+    <AIParameter Name="CitySciencePercent"  Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science0-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience8">
+    <AIParameter Name="DistrictScienceScience"     Value="2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Approval 1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionApproval1">
+    <AIParameter Name="CityApproval"              Value="20"/>
+    <AIParameter Name="CityCityPointHappy"        Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Defense 1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDefense1">
+    <AIParameter Name="CityDefense"               Value="60"/>
+    <AIParameter Name="CityMilitia"               Value="1"/>
+    <AIParameter Name="CityExperienceGainPerTurn" Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <!-- Strategic Common -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionStrategicExtractionCommon">
+    <AIParameter Name="EmpireStrategicResource1"  Value="1"  /> 
+    <AIParameter Name="EmpireStrategicResource2"  Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- Luxury Common -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionLuxuryExtractionCommon">
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury1)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury2)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury3)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury4)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury5)"  />
+  </AIParameterDatatableElement>
+
+  <!-- Improve Loot -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionSearchBonus">
+    <AIParameter Name="EmpireBetterLoot" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Bribe & Talk -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMapActionParley">
+    <AIParameter Name="EmpireBribe" Value="1" />
+    <AIParameter Name="EmpireTalk" Value="1"/>
+    <AIParameter Name="AIEmpireDefense" Value="15 + 30 * $(ParleyTechnologyWeight)" />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionWeaponCommonTier1">
+    <AIParameter Name="EmpireMilitaryOffense" Value="5 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+  </AIParameterDatatableElement>
+
+  <!-- Common Armor and accessories Tier 1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionArmorCommonTier1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="5 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="1 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+  </AIParameterDatatableElement>
+  
+  <!-- Common accessories Tier 1 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAccessoryCommonTier1">
+    <AIParameter Name="EmpireMilitaryOffense" Value="0"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Hero Buy (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMarketplaceHeroes">
+    <AIParameter Name="EmpireHeroRecruitment" Value="0"/>
+  </AIParameterDatatableElement>
+
+  <!-- Hero and mercenaries market -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMarketplaceMercenaries">
+    <AIParameter Name="EmpireMilitaryDefense" Value="4"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="4"  />
+    <AIParameter Name="EmpireHeroRecruitment" Value="4"/>
+  </AIParameterDatatableElement>
+  
+  <!-- ################################ -->
+  <!-- #######   ERA1 FACTION   ####### -->
+  <!-- ################################ -->
+
+  <!-- Ryder -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBrokenLordsUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7.5"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7.5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Shaman -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMadFairiesUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="15"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Ateshi Zealot -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizardsUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7.5"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7.5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Necrodrone-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionNecrophagesUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="0"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="15"  />
+  </AIParameterDatatableElement>
+
+  <!-- Dawn Officer -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionVaultersUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7.5"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7.5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Kassai -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRovingClansUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="15"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Wyvern -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDrakkensUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7.5"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7.5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Fanatic -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionCultistsUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7.5"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7.5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Tutorial Faction unit#2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionTutorialUnit2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="1"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- Drakkens Well Connected -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDrakkens7">
+    <AIParameter Name="EmpireMilitaryDefense" Value="8"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="8"  />
+  </AIParameterDatatableElement>
+
+  <!-- Drakkens: Assimilation limit max 1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAssimilationLimitMax1Drakkens">
+    <AIParameter Name="AIEmpireMinorFactionAssimilation" Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- Rage Wizards Starting tech: Pillar 1 / Spell 1 -->
+  <!-- TBD -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards7">
+    <AIParameter Name="CityScience"       Value="6"  />
+  </AIParameterDatatableElement>
+
+  <!-- Rage Wizards Starting tech: Pillar 2 / Spell 2 -->
+  <!-- TBD -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards8">
+    <AIParameter Name="AIEmpireExploration"   Value="1"  />
+    <AIParameter Name="AIExploration"         Value="0.5"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="0.1"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="0.1"  />
+  </AIParameterDatatableElement>
+
+  <!-- ################################ -->
+  <!-- #######       ERA2       ####### -->
+  <!-- ################################ -->
+  
+  <!-- Food1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionFood1">
+    <AIParameter Name="DistrictFoodRiver"     Value="3"/>
+    <AIParameter Name="DistrictFoodWater"     Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Food2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionFood2">
+    <AIParameter Name="CityFood"              Value="15"/>
+    <AIParameter Name="BaseFoodPerPopulation" Value="2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Industry1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionIndustry1">
+    <AIParameter Name="DistrictIndustryForest"        Value="1"/>
+    <AIParameter Name="DistrictIndustryExploitation"  Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Industry2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionIndustry2">
+    <AIParameter Name="DistrictIndustryIndustry"      Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience3">
+    <AIParameter Name="CityScience"             Value="15"/>
+    <AIParameter Name="CitySciencePercent"      Value="0.2"/>
+  </AIParameterDatatableElement>
+
+   <!--Booster Food (obsolete)-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBoosterFood">
+    <AIParameter Name="AIEmpireBoosterFood"     Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!--Booster Industry (obsolete)-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBoosterIndustry">
+    <AIParameter Name="AIEmpireBoosterIndustry" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Approval 2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionApproval2">
+    <AIParameter Name="CityApproval"              Value="25"/>
+    <AIParameter Name="CityFoodPercentEcstatic"   Value="0.1"/>
+    <AIParameter Name="CityMoneyPercentEcstatic"  Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- MilitaryXP1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMilitaryRecruitmentBonus1">
+    <AIParameter Name="CityExperienceGain"      Value="40"/>
+  </AIParameterDatatableElement>
+
+  <!-- Empire bonus: Prisoners, Slaves and Volunteers -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionConstructionBuyout">
+    <AIParameter Name="EmpireBuyout" Value="1"  />
+  </AIParameterDatatableElement>
+  
+  <!-- UnitReduction1--><!--
+  <AIParameterDatatableElement Name="TechnologyDefinitionUnitCostReduction1">
+  </AIParameterDatatableElement>-->
+
+  <!--(obsolete)-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionOutpost0">
+    <AIParameter Name="WatchTower" Value="0"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionArmySize1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"/>
+    <AIParameter Name="EmpireMilitaryOffense" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <!-- Ship -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionShip">
+    <AIParameter Name="AIEmpireExploration" Value="10"  />
+  </AIParameterDatatableElement>
+
+  <!-- Prestige1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionEmpirePoint1">
+    <AIParameter Name="CityCityPoint"               Value="5"  />
+    <AIParameter Name="BaseCityPointPerPopulation"  Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!--(obsolete)-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAccessorySlotBonus1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="0"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- $(PeaceTechnologyWeight) is a value in [0,1] that represent the envy of making peace with other empire. -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDiplomacyPeace">
+    <AIParameter Name="AIEmpireDiplomacy" Value="15 + 30 * $(PeaceTechnologyWeight)"  />
+  </AIParameterDatatableElement>
+
+  <!-- Weapon common T2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionWeaponCommonTier2">
+    <AIParameter Name="EmpireMilitaryOffense" Value="7 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+  </AIParameterDatatableElement>
+
+  <!-- Armor and Accessory common T2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionArmorCommonTier2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="2 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+  </AIParameterDatatableElement>
+
+  <!-- Accessory common T2 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAccessoryCommonTier2">
+    <AIParameter Name="EmpireMilitaryOffense" Value="0"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Market Place Resource -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMarketplaceResources">
+    <AIParameter Name="AIEmpireStrategicResource1" Value="1"/>
+    <AIParameter Name="AIEmpireStrategicResource2" Value="1"/>
+    <AIParameter Name="AIEmpireStrategicResource3" Value="1"/>
+    <AIParameter Name="AIEmpireStrategicResource4" Value="1"/>
+    <AIParameter Name="AIEmpireStrategicResource5" Value="1"/>
+    <AIParameter Name="AIEmpireStrategicResource6" Value="1"/>
+    <AIParameter Name="AIEmpireLuxuryResource"     Value="16"/>
+  </AIParameterDatatableElement>
+
+  <!-- Roads still WIP -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRoad">
+    <AIParameter Name="ActivateTradeRoutes" Value="1"  />
+    <AIParameter Name="AIExploration"       Value="5"  />
+    <AIParameter Name="WatchTower"          Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Assimilation 1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAssimilationLimitMax1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="8"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="8"  />
+  </AIParameterDatatableElement>
+  
+  <!-- ################################ -->
+  <!-- #######   ERA2 FACTION   ####### -->
+  <!-- ################################ -->
+
+  <!-- Black Bishop -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBrokenLordsUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7.5"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7.5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Spirit Forest -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMadFairiesUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Eneqa Wing -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizardsUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="7.5"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7.5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Limburg -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionNecrophagesUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Titan -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionVaultersUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Yirmark -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRovingClansUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Ancient -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDrakkensUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="5"  />
+  </AIParameterDatatableElement>
+
+  <!-- Nameless Guard -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionCultistsUnit3">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="5"  />
+  </AIParameterDatatableElement>
+
+  <!-- TechnologyDefinitionBrokenLords5 : quest reward -->
+  <!-- TechnologyDefinitionBrokenLords6 : quest reward -->
+
+  <!-- would require development to allow AI to use it! -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionNecrophages6">
+    <AIParameter Name="EmpireUnitUpkeep"    Value="0.5"  />
+    <AIParameter Name="EmpireHeroUpkeep"    Value="0.2"  />
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="TechnologyDefinitionNecrophages8">
+    <AIParameter Name="CityApproval"        Value="30"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionVaulters2">
+    <AIParameter Name="CityFoodPercent"       Value="0.1"  />
+    <AIParameter Name="CityMoneyPercent"      Value="0.1"  />
+    <AIParameter Name="CityProductionPercent" Value="0.1"  />
+    <AIParameter Name="CitySciencePercent"    Value="0.1"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards9">
+    <AIParameter Name="CityCityPoint"       Value="6"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionPrivateersRovingClans">
+    <AIParameter Name="EmpireMilitaryOffense"       Value="100"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCultists13">
+    <AIParameter Name="CityExperienceGain"       Value="40"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCultists12">
+    <AIParameter Name="AIEmpireBoosterScience" Value="2"  />
+  </AIParameterDatatableElement>
+  
+  <!-- ################################ -->
+  <!-- #######       ERA3       ####### --> 
+  <!-- ################################ -->
+
+  <!-- Food8 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionFood8">
+    <AIParameter Name="DistrictFoodExploitation"  Value="3"/>
+  </AIParameterDatatableElement>
+  
+  <!-- Dust2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDust2">
+    <AIParameter Name="CityMoney"             Value="20"/>
+    <AIParameter Name="CityMoneyPercent"      Value="0.3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDust3">
+    <AIParameter Name="BaseDustPerPopulation" Value="4"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience2">
+    <AIParameter Name="DistrictScience"           Value="3"/>
+    <AIParameter Name="CityScience"               Value="3"/>
+    <AIParameter Name="BaseSciencePerPopulation"  Value="3"/>
+    <AIParameter Name="DistrictScienceAnomaly"    Value="15"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience1">
+    <AIParameter Name="DistrictScienceWater"      Value="3"/>
+    <AIParameter Name="DistrictScienceRiver"      Value="3"/>
+    <AIParameter Name="BaseSciencePerPopulation"  Value="2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Prestige2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionEmpirePoint2">
+    <AIParameter Name="DistrictCityPointExtension"  Value="2"/>
+    <AIParameter Name="CityCityPoint"               Value="2"/>
+    <AIParameter Name="BaseCityPointPerPopulation"  Value="2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Booster Science (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBoosterScience">
+    <AIParameter Name="AIEmpireBoosterScience" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Docks -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDocks">
+    <AIParameter Name="ActivateTradeRoutes" Value="1"  />
+    <AIParameter Name="AIExploration"       Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Trade route bonus 1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionTradeRouteBonus1">
+    <AIParameter Name="TradeRouteMoneyGainPercent" Value="0.5"  />
+    <AIParameter Name="NewTradeRoute" Value="1"  />
+    <AIParameter Name="WatchTower"    Value="2"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="3"  />
+  </AIParameterDatatableElement>
+
+  <!-- Defense  2 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDefense2">
+    <AIParameter Name="CityDefense"   Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Defense Recovery 1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDefenseRecovery1">
+    <AIParameter Name="CityDefense"               Value="300"/>
+    <AIParameter Name="CityUnitRegen"             Value="10"/>
+    <AIParameter Name="CityExperienceGainPerTurn" Value="1"/>
+    <AIParameter Name="CityDefenseRecovery"       Value="10"/>
+  </AIParameterDatatableElement>
+
+  <!-- Life Regen 1 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionLifeRegeneration1">
+    <AIParameter Name="CityUnitRegen" Value="0"/>
+  </AIParameterDatatableElement>
+
+  <!-- Outpost 1 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionOutpost1">
+    <AIParameter Name="WatchTower"    Value="0"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Region building: Luxury extraction (uncommon)-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionLuxuryExtractionUncommon">
+    <AIParameter Name="EmpireLuxuryResource"   Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury6)"  />
+    <AIParameter Name="EmpireLuxuryResource"   Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury7)"  />
+    <AIParameter Name="EmpireLuxuryResource"   Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury8)"  />
+    <AIParameter Name="EmpireLuxuryResource"   Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury9)"  />
+    <AIParameter Name="EmpireLuxuryResource"   Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury10)"  />
+  </AIParameterDatatableElement>
+
+  <!-- Region building: Strategic extraction (uncommon)-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionStrategicExtractionUncommon">
+    <AIParameter Name="EmpireStrategicResource3" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic3)"  />
+    <AIParameter Name="EmpireStrategicResource4" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic4)"  />
+  </AIParameterDatatableElement>
+
+  <!-- Expansion Disapproval 1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionExpansionDisapprovalReduction1">
+    <AIParameter Name="CityApproval" Value="5 * $Count(ClassEmpire/ClassCity)"  />
+  </AIParameterDatatableElement>
+  
+  <!--Weapon uncommon T1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionWeaponUncommonTier1">
+    <AIParameter Name="EmpireMilitaryOffense" Value="9 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
+  </AIParameterDatatableElement>
+
+  <!--Armor uncommon T1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionArmorUncommonTier1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="9 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="4 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))" />
+  </AIParameterDatatableElement>
+
+  <!--Accessory uncommon T1 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAccessoryUncommonTier1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="0" />
+    <AIParameter Name="EmpireMilitaryOffense" Value="0" />
+  </AIParameterDatatableElement>
+
+  <!-- Boosters Level 1-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAllBoosterLevel1">
+    <AIParameter Name="AIEmpireBoosterFood" Value="1"  />
+    <AIParameter Name="AIEmpireBoosterIndustry" Value="1"  />
+    <AIParameter Name="AIEmpireBoosterScience" Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- ################################## -->
+  <!-- #######    ERA3 FACTION    ####### -->
+  <!-- ################################## -->
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionVaulters3">
+    <AIParameter Name="CityDefense"         Value="80"/>
+    <AIParameter Name="CityDefenseRecovery" Value="5"/>
+  </AIParameterDatatableElement>
+
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionVaulters4">
+    <AIParameter Name="DistrictScienceLevelUpExtension" Value="4"  />
+  </AIParameterDatatableElement>
+
+  <!-- TechnologyDefinitionNecrophages7 :   Quest reward -->
+  <!-- TechnologyDefinitionNecrophages11 :  Quest reward -->
+  <!-- TechnologyDefinitionRageWizards3 :   Quest reward -->
+  <!-- TechnologyDefinitionRovingClans3 :   Quest reward -->
+
+  <!-- required development in order to let the AI use them -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards10">
+    <AIParameter Name="CityDust"          Value="15"  />
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards14">
+    <AIParameter Name="CityFood"      Value="4"  />
+    <AIParameter Name="CityScience"   Value="4"  />
+    <AIParameter Name="CityCityPoint" Value="2"  />
+  </AIParameterDatatableElement>
+
+  <!-- TBD -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards12">
+    <AIParameter Name="CityApproval"        Value="0.5"  />
+  </AIParameterDatatableElement>
+  
+  <!-- ################################ -->
+  <!-- #######       ERA4       ####### --> <!-- TBD -->
+  <!-- ################################ -->
+
+  <!-- Food3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionFood3">
+    <AIParameter Name="BaseFoodPerPopulation"     Value="3"/>
+    <AIParameter Name="CityFoodPercent"           Value="0.25"/>
+    <AIParameter Name="DistrictFoodWinter"        Value="15"/>
+  </AIParameterDatatableElement>
+
+  <!-- Food4 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionFood4">
+    <AIParameter Name="DistrictFoodFood"          Value="3"/>
+    <AIParameter Name="DistrictFoodExploitation"  Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Industry3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionIndustry3">
+    <AIParameter Name="BaseIndustryPerPopulation" Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Industry4 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionIndustry4">
+    <AIParameter Name="DistrictIndustryIndustry"            Value="3"/>
+    <AIParameter Name="DistrictStrategicResourceExtractor"  Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- Science4 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience4">
+    <AIParameter Name="DistrictScienceScience"  Value="5"/>
+  </AIParameterDatatableElement>
+
+  <!-- Booster Food (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBoosterFoodBonus1">
+    <AIParameter Name="AIEmpireBoosterFood" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Booster Industry (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBoosterIndustryBonus1">
+    <AIParameter Name="AIEmpireBoosterIndustry" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Recruitment bonus 3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMilitaryRecruitmentBonus3">
+    <AIParameter Name="CityExperienceGain"  Value="100"/>
+  </AIParameterDatatableElement>
+
+  <!-- Strat Rare -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionStrategicExtractionRare">
+    <AIParameter Name="EmpireStrategicResource5" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic5)"  />
+    <AIParameter Name="EmpireStrategicResource6" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeStrategic6)"  />
+  </AIParameterDatatableElement>
+
+  <!-- Lux Rare -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionLuxuryExtractionRare">
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury11)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury12)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury13)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury14)"  />
+    <AIParameter Name="EmpireLuxuryResource" Value="1 * $Count(ClassEmpire/ClassCity/ResourceDepositTypeLuxury15)"  />
+  </AIParameterDatatableElement>
+
+  <!-- Archeology -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMapActionArchaeology">
+    <AIParameter Name="AIEmpireExploration" Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- Road Speed Bonus 1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRoadSpeedBonus1">
+    <AIParameter Name="AIEmpireExploration" Value="1"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="1"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- Military Bonus 1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMilitaryBonus1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="4"  />
+  </AIParameterDatatableElement>
+
+  <!-- Alliance: $(AllianceTechnologyWeight) is a value in [0,1] that represent the envy of making alliance with other empire. -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDiplomacyAlliance">
+    <AIParameter Name="AIEmpireDiplomacy" Value="20 + 50 * $(AllianceTechnologyWeight)"  />
+  </AIParameterDatatableElement>
+
+  <!-- Privateers -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionPrivateers">
+    <AIParameter Name="EmpireMilitaryOffense" Value="40"  />
+  </AIParameterDatatableElement>
+
+
+  
+  <AIParameterDatatableElement Name="TechnologyDefinitionArmySize2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="20"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="20"  />
+  </AIParameterDatatableElement>
+
+  <!-- Weapon Rare Tiers 1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionWeaponRareTier1">
+    <AIParameter Name="EmpireMilitaryOffense" Value="11 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))"  />
+  </AIParameterDatatableElement>
+
+  <!-- Armor Rare Tiers 1 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionArmorRareTier1">
+    <AIParameter Name="EmpireMilitaryDefense" Value="11 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="6 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))"  />
+  </AIParameterDatatableElement>
+
+  <!-- Accessory Rare Tiers 1 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAccessoryRareTier1">  
+    <AIParameter Name="EmpireMilitaryOffense" Value="0"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Boosters Level 2-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAllBoosterLevel2">
+    <AIParameter Name="AIEmpireBoosterFood" Value="1"  />
+    <AIParameter Name="AIEmpireBoosterIndustry" Value="1"  />
+    <AIParameter Name="AIEmpireBoosterScience" Value="1"  />
+  </AIParameterDatatableElement>
+  
+  <!-- ################################## -->
+  <!-- #######    ERA4 FACTION    ####### -->
+  <!-- ################################## -->
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionMadFairies2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+  </AIParameterDatatableElement>
+
+  <!-- required development in order to let the AI use them -->
+  <!-- TBD : set the right AI Parameter when it will be regen instead of food -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards11">
+    <AIParameter Name="CityFood" Value="18"  />
+  </AIParameterDatatableElement>
+  
+  
+  
+  <!-- ################################ -->
+  <!-- #######       ERA5       ####### --> 
+  <!-- ################################ -->
+
+  <!-- Industry6 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionIndustry6">
+    <AIParameter Name="DistrictIndustryStrategicResources"  Value="50"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust4 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDust4">
+    <AIParameter Name="DistrictDustDust"      Value="5"/>
+    <AIParameter Name="LuxuryBonusPerLuxury"  Value="4"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust5 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDust5">
+    <AIParameter Name="CityMoney"             Value="50"/>
+    <AIParameter Name="CityMoneyPercent"      Value="0.4"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science5 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience5">
+    <AIParameter Name="CitySciencePercent"              Value="1"/>
+    <AIParameter Name="DistrictScienceLevelUpExtension" Value="5"/>
+  </AIParameterDatatableElement>
+
+  <!-- Booster Science (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionBoosterScienceBonus1">
+    <AIParameter Name="AIEmpireBoosterScience" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <!-- Trade routes + watch towers -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionTradeRouteBonus3">
+    <AIParameter Name="ActivateTradeRoutes"           Value="4"/>
+    <AIParameter Name="TradeRouteResearchGainPercent" Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <!-- Approval3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionApproval3">
+    <AIParameter Name="CityApproval"                  Value="30"/>
+    <AIParameter Name="CitySciencePercentEcstatic"    Value="0.1"/>
+    <AIParameter Name="CityCityPointPercentEcstatic"  Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Approval4 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionApproval4">
+    <AIParameter Name="CityApproval"                      Value="20"/>
+    <AIParameter Name="BaseFoodPerPopulationHappy"        Value="2"/>
+    <AIParameter Name="BaseIndustryPerPopulationHappy"    Value="2"/>
+    <AIParameter Name="BaseDustPerPopulationHappy"        Value="2"/>
+    <AIParameter Name="BaseSciencePerPopulationHappy"     Value="2"/>
+    <AIParameter Name="BaseEmpirePointPerPopulationHappy" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- EmpirePoint3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionEmpirePoint3">
+    <AIParameter Name="DistrictCityPointLevelUpExtension" Value="15"/>
+    <AIParameter Name="BaseEmpirePointPerPopulation"      Value="4"/>
+  </AIParameterDatatableElement>
+
+  <!-- EmpirePoint4 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionEmpirePoint4">
+    <AIParameter Name="CityEmpirePointPercent"      Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- MilitaryRecruitmentBonus5 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionMilitaryRecruitmentBonus5">
+    <AIParameter Name="CityExperienceGain"  Value="100"/>   <!-- TBD-->
+  </AIParameterDatatableElement>
+
+  <!-- Defense3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDefense3">
+    <AIParameter Name="CityDefense"     Value="400"/>
+    <AIParameter Name="CityMilitia"     Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- UnitRegeneration2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionLifeRegeneration2">
+    <AIParameter Name="CityUnitRegen"       Value="15"/>
+    <AIParameter Name="CityExperienceGain"  Value="150"/>
+  </AIParameterDatatableElement>
+
+  <!-- Weapon Uncommon Tier 2 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionWeaponUncommonTier2">
+    <AIParameter Name="EmpireMilitaryOffense" Value="13 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
+  </AIParameterDatatableElement>
+
+  <!--Armor Uncommon Tier 2-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionArmorUncommonTier2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="13 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="6 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))" />
+  </AIParameterDatatableElement>
+
+  <!--Accessory Uncommon Tier 2 (obsolete) -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAccessoryUncommonTier2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="0" />
+    <AIParameter Name="EmpireMilitaryOffense" Value="0" />
+  </AIParameterDatatableElement>
+
+  <!-- TBD -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionAssimilationLimitMax2Drakkens">
+    <AIParameter Name="AIEmpireMinorFactionAssimilation" Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- Expansion Disapproval 2-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionExpansionDisapprovalReduction2">
+    <AIParameter Name="CityApproval" Value="5 * $Count(ClassEmpire/ClassCity)"  />
+  </AIParameterDatatableElement>
+
+
+
+  <!-- ################################## -->
+  <!-- #######    ERA5 FACTION    ####### -->
+  <!-- ################################## -->
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards13">
+    <AIParameter Name="CityFood"      Value="4"  />
+    <AIParameter Name="CityScience"   Value="4"  />
+    <AIParameter Name="CityCityPoint" Value="2"  />
+  </AIParameterDatatableElement>
+  
+  <!-- ################################ -->
+  <!-- #######       ERA6       ####### --> <!-- TBD -->
+  <!-- ################################ -->
+
+  <!-- Dust6 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDust6">
+    <AIParameter Name="CityMoneyPercent"                  Value="0.4"/>
+    <AIParameter Name="TradeRouteMoneyGainPercent"        Value="0.5"/>
+    <AIParameter Name="TradeRouteResearchGainPercent"     Value="0.5"/>
+    <AIParameter Name="IntermediateTradeRouteGainPercent" Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  <!-- Food6 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionFood6">
+    <AIParameter Name="CityFoodPercent" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Industry6 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionIndustry5">
+    <AIParameter Name="CityProductionPercent" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Science6 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionScience6">
+    <AIParameter Name="CitySciencePercent" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Influence6 --> 
+  <!-- TBD: AIParameter for diplomatic points -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionEmpire1">
+    <AIParameter Name="CityCityPointPercent" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Units Improved -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionUnitImproved1">
+    <AIParameter Name="EmpireUnitLifePercent"   Value="1"/>
+    <AIParameter Name="EmpireUnitDamagePercent" Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Defense4 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionDefense4">
+    <AIParameter Name="CityDefense"           Value="$Property(MaximumCityDefensePoint) * 1.4"/>
+    <AIParameter Name="CityExperienceGain"    Value="2"/>
+    <AIParameter Name="CityMilitia"           Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!--Wonder TBD -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionEndlessTemple">
+    <AIParameter Name="CityProductionPercent"    Value="0"/>
+  </AIParameterDatatableElement>
+
+  <!-- Unit Cost 3 -->
+  <AIParameterDatatableElement Name="TechnologyDefinitionUnitCostReduction3">
+    <AIParameter Name="CityUnitCost"    Value="-15"/>
+  </AIParameterDatatableElement>
+
+  <!--Rare Tier 2-->
+  <AIParameterDatatableElement Name="TechnologyDefinitionEquipmentRareTier2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="15 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))" />
+    <AIParameter Name="EmpireMilitaryOffense" Value="8 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))" />
+  </AIParameterDatatableElement>
+
+
+
+  <!-- ################################## -->
+  <!-- #######    ERA6 FACTION    ####### -->
+  <!-- ################################## -->
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionRageWizards15">
+    <AIParameter Name="CityFood"      Value="6"  />
+    <AIParameter Name="CityDust"      Value="6"  />
+    <AIParameter Name="CityScience"   Value="6"  />
+    <AIParameter Name="CityCityPoint" Value="3"  />
+  </AIParameterDatatableElement>
+  
+
+
+  <!-- ########################################## -->
+  <!-- ######          DEPRECATED          ###### -->
+  <!-- ########################################## -->
+  <!-- To remove for the Release Master -->
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCustomTrait4">
+    <AIParameter Name="CityFoodPercent"       Value="0.1"  />
+    <AIParameter Name="CityMoneyPercent"      Value="0.1"  />
+    <AIParameter Name="CityProductionPercent" Value="0.1"  />
+    <AIParameter Name="CitySciencePercent"    Value="0.1"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCustomTrait3">
+    <AIParameter Name="CityDefense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCustomTrait7">
+    <AIParameter Name="CityDefense" Value="25"  />
+  </AIParameterDatatableElement>
+
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCustomTrait8">
+    <AIParameter Name="DistrictScienceLevelUpExtension"       Value="4"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionFactionTraitMadFairies2">
+    <AIParameter Name="EmpireMilitaryDefense" Value="10"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCustomTrait2">
+    <AIParameter Name="CityDefense" Value="0"  />
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TechnologyDefinitionCustomTrait5">
+    <AIParameter Name="CityDefense" Value="0"  />
+  </AIParameterDatatableElement>
+</Datatable>

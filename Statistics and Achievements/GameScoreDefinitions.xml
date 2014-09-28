@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GameScoreDefinition Name="GlobalScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="SumOfAllUnitsLevels"     Weight="2.0"/>
+    <WeighedGameStatisticReference Name="SumOfAllHeroesLevels"    Weight="5.0"/>
+    <WeighedGameStatisticReference Name="NumberOfCities"          Weight="5.0"/>
+    <WeighedGameStatisticReference Name="NumberOfDistricts"       Weight="2.0"/>
+    <WeighedGameStatisticReference Name="NumberOfLevel1Districts" Weight="5.0"/>
+    <WeighedGameStatisticReference Name="NumberOfLevel2Districts" Weight="10.0"/>
+    <WeighedGameStatisticReference Name="TotalPopulation"         Weight="3.0"/>
+    <WeighedGameStatisticReference Name="NumberOfImprovements"    Weight="1.0"/>
+    <WeighedGameStatisticReference Name="NumberOfTechnologies"    Weight="5.0"/>
+  </GameScoreDefinition>
+
+  <GameScoreDefinition Name="MilitaryScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="MilitaryPower" Weight="0.001"/>
+  </GameScoreDefinition>
+
+  <!-- Total number of City tiles -->
+  <GameScoreDefinition Name="ExpansionScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="NumberOfCities"          Weight="1.0"/>
+    <WeighedGameStatisticReference Name="NumberOfDistricts"       Weight="1.0"/>
+  </GameScoreDefinition>
+
+  <GameScoreDefinition Name="PopulationScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="TotalPopulation"         Weight="1.0"/>
+  </GameScoreDefinition>
+
+  <!-- Total number of Technologies researched -->
+  <GameScoreDefinition Name="ScienceScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="NumberOfTechnologies"    Weight="1.0"/>
+  </GameScoreDefinition>
+
+  <!-- FIDS-I per turn -->
+  <GameScoreDefinition Name="FoodPerTurnScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="ProductionPerTurnFood"       Weight="1.0"/>
+  </GameScoreDefinition>
+  <GameScoreDefinition Name="IndustryPerTurnScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="ProductionPerTurnIndustry"   Weight="1.0"/>
+  </GameScoreDefinition>
+  <GameScoreDefinition Name="DustPerTurnScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="ProductionPerTurnDust"       Weight="1.0"/>
+  </GameScoreDefinition>
+  <GameScoreDefinition Name="SciencePerTurnScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="ProductionPerTurnScience"    Weight="1.0"/>
+  </GameScoreDefinition>
+  <GameScoreDefinition Name="EmpirePointPerTurnScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="ProductionPerTurnCityPoint"  Weight="1.0"/>
+  </GameScoreDefinition>
+  
+  <!-- Empire Approval -->
+  <GameScoreDefinition Name="ApprovalScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="AverageApproval" Weight="1.0"/>
+  </GameScoreDefinition>
+
+  <!-- Peace Point -->
+  <GameScoreDefinition Name="PeacePointScore" Tags="Global,Ranked">
+    <WeighedGameStatisticReference Name="NumberOfPeacePoints" Weight="1.0"/>
+  </GameScoreDefinition>
+
+</Datatable>

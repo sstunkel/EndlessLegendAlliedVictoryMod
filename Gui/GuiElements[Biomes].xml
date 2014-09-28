@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="ArcticDry">
+    <Title>%BiomeArcticDryTitle</Title>
+    <Description>%BiomeArcticDryDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ArcticTemperate">
+    <Title>%BiomeArcticTemperateTitle</Title>
+    <Description>%BiomeArcticTemperateDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraDry">
+    <Title>%BiomeTundraDryTitle</Title>
+    <Description>%BiomeTundraDryDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraTemperate">
+    <Title>%BiomeTundraTemperateTitle</Title>
+    <Description>%BiomeTundraTemperateDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HighlandsTemperate">
+    <Title>%BiomeHighlandsTemperateTitle</Title>
+    <Description>%BiomeHighlandsTemperateDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HighlandsWet">
+    <Title>%BiomeHighlandsWetTitle</Title>
+    <Description>%BiomeHighlandsWetDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="GrasslandsTemperate">
+    <Title>%BiomeGrasslandsTemperateTitle</Title>
+    <Description>%BiomeGrasslandsTemperateDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="GrasslandsWet">
+    <Title>%BiomeGrasslandsWetTitle</Title>
+    <Description>%BiomeGrasslandsWetDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="JungleTemperate">
+    <Title>%BiomeJungleTemperateTitle</Title>
+    <Description>%BiomeJungleTemperateDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="JungleWet">
+    <Title>%BiomeJungleWetTitle</Title>
+    <Description>%BiomeJungleWetDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DesertDry">
+    <Title>%BiomeDesertDryTitle</Title>
+    <Description>%BiomeDesertDryDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DesertTemperate">
+    <Title>%BiomeDesertTemperateTitle</Title>
+    <Description>%BiomeDesertTemperateDescription</Description>
+  </GuiElement>
+
+</Datatable>

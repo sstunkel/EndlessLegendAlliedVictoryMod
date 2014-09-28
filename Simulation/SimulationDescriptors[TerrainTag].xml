@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- Terrain tags (terrain type) -->
+  <SimulationDescriptor Name="TerrainTagForest"   Type="TerrainTag">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictIndustry"       Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagWater"    Type="TerrainTag">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="1"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="TerrainTagPlains"   Type="TerrainTag">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagRocks"    Type="TerrainTag">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagArid"     Type="TerrainTag">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictDust"       Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  
+  <!-- Terrain tags (FIDS gain type) -->
+  <SimulationDescriptor Name="TerrainTagFood"     Type="TerrainTag">
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="TerrainTagIndustry" Type="TerrainTag">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagDust"     Type="TerrainTag">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagScience"  Type="TerrainTag">
+  </SimulationDescriptor>
+
+
+  <!-- Terrain tags (anomalies) -->
+  <SimulationDescriptor Name="TerrainTagAnomaly"  Type="TerrainTagObject">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagRiver"    Type="TerrainTagFlow">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"       Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagPointOfInterest" Type="TerrainTagObject">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TerrainTagQuestLocation" Type="TerrainTagObject">
+  </SimulationDescriptor>
+</Datatable>

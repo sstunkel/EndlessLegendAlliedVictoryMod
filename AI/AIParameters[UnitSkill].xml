@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- #################################### -->
+  <!-- #####   HERO GOVERNOR SKILLS   ##### -->
+  <!-- #################################### -->
+  <!-- Necrotic Agriculture -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor01" >
+    <!-- The 3 first parameters are for the skill point assignment -->
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <!-- The 3 last parameters are for the hero assignment -->
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Natural Resources -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor02" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Renaissance Thinker -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor03" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Cultural Ambassador -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor04" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Narrative Master -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor05" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Irrigation Expert -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor06" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Woodland Forager -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor07" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust Diviner -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor08" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Aquatic Dust -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor09" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Travelling Salesman -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor10" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Scientific Literacy -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor11" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Alchemical Genius -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor12" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Cadaverous Pesticides -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor13" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Natural Architect -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor14" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust Trickery -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor15" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor15Cultists" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Firestarter -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor16" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor16Cultists" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Persuasive Methods -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor17" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="2"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Living Walls -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor18" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Slave Driver -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor19Necrophages" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="2"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Game Theory -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor19RovingClans" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="2"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Behemoth Tamer -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor20" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Mining Authority -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor21" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Safe Passage -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor22" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Fast Trader -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor23" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Mechanical Exhibitionist -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor24" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Black Marketeer -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor25" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Defender -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor26" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+  <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+  <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+  <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+  
+  <!-- Subterranean Networker -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor27" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Tunnel Rat -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor28" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Inspirational Leader -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor29" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="2"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor30" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor31" >
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillGovernor32" >
+    <AIParameter Name="AICity"           Value="1"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+
+
+
+
+  <!-- ####################################### -->
+  <!-- ##### HERO LEADER (battle) SKILLS ##### -->
+  <!-- ####################################### -->
+  <!-- Berserker Pheromone -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle01">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Deadly Anatomy -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle02">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Strength of the Wild -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle03">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Thick Skinned -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle04">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Perfectly Balanced -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle05">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Garb of Battle -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle06">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Defensive Tactician -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle07">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Concentrated Fire -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle08">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Staggered Blows -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle09">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Iron Taskmaster -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle10Infantry">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Last Reserves -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle10Support">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust Regeneration -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle11">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Distributed Defenses -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle12">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle12Cultists">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Seething Fire -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle13">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle13Cultists">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Battlesaur -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle14">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Rallying Call -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle15Infantry">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Keen Observer -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle15Support">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Armor Engineer -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle16Infantry">
+    <AIParameter Name="AICity"           Value="2"/>
+    <AIParameter Name="AIArmy"           Value="2"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dark Materials -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle16Ranged">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Spare Quiver -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle17Ranged">
+    <AIParameter Name="AICity"           Value="2"/>
+    <AIParameter Name="AIArmy"           Value="2"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Armor Ergonomics -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle17Support">
+    <AIParameter Name="AICity"           Value="2"/>
+    <AIParameter Name="AIArmy"           Value="2"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Ice in the Veins -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderBattle18">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+
+
+
+
+  <!-- #################################### -->
+  <!-- ##### HERO LEADER (map) SKILLS ##### -->
+  <!-- #################################### -->
+  <!-- Roadside Picnic -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap01">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="2"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Iron Constitution -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap02">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="2"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- No Idle Hands -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap03">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="3"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Thrifty -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap04">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="2"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Indiana Bones -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap05">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="3"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+
+
+  <!-- Friendly Banner -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap07">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="1"/>
+    <AIParameter Name="AIExploration"    Value="3"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Farsighted -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap08">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="1"/>
+    <AIParameter Name="AIExploration"    Value="3"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Raptor's Eye -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap09">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="1"/>
+    <AIParameter Name="AIExploration"    Value="3"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Agile Mover -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap10">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="1"/>
+    <AIParameter Name="AIExploration"    Value="3"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Siege Engine -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap12">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD name -->
+  <AIParameterDatatableElement Name="HeroSkillLeaderMap14">
+    <AIParameter Name="AICity"           Value="1"/>
+    <AIParameter Name="AIArmy"           Value="1"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.25"/>
+    <AIParameter Name="AIArmyAssignment"          Value="1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="1"/>
+  </AIParameterDatatableElement>
+
+
+
+
+
+  <!-- #################################### -->
+  <!-- #####    HERO COMMON SKILLS    ##### -->
+  <!-- #################################### -->
+  <!-- Fast Healer -->
+  <AIParameterDatatableElement Name="HeroSkillCommon01">
+    <AIParameter Name="AICity"           Value="0"/>
+    <AIParameter Name="AIArmy"           Value="3"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="0.1"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Functioning Insomniac -->
+  <AIParameterDatatableElement Name="HeroSkillCommon02">
+    <AIParameter Name="AICity"           Value="2"/>
+    <AIParameter Name="AIArmy"           Value="2"/>
+    <AIParameter Name="AIExploration"    Value="2"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Escape Artist -->
+  <AIParameterDatatableElement Name="HeroSkillCommon03">
+    <AIParameter Name="AICity"           Value="3"/>
+    <AIParameter Name="AIArmy"           Value="0"/>
+    <AIParameter Name="AIExploration"    Value="0"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="0.1"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Cold Operator -->
+  <AIParameterDatatableElement Name="HeroSkillCommon04">
+    <AIParameter Name="AICity"           Value="1"/>
+    <AIParameter Name="AIArmy"           Value="1"/>
+    <AIParameter Name="AIExploration"    Value="1"/>
+    <AIParameter Name="AIYoungCityAssignment"     Value="3"/>
+    <AIParameter Name="AIArmyAssignment"          Value="3"/>
+    <AIParameter Name="AIMatureCityAssignment"    Value="3"/>
+  </AIParameterDatatableElement>
+
+
+</Datatable>

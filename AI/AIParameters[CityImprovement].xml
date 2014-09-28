@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ########################################################################################################################## -->
+  <!-- #################################    AI PARAMETERS FOR THE CITY IMPROVEMENTS   ########################################### -->
+  <!-- ########    - Those parameters can either be "Final Parameters" directly used in the CityStates and StrategicPlan ######## -->
+  <!-- #####################    OR it can be "Converted Paramters", transformed in ParametersConverter  ######################### -->
+  <!-- ########################################################################################################################## -->
+  
+  <!-- ################################ -->
+  <!-- #######    UNIT DESIGN   ####### -->
+  <!-- ################################ -->
+  <!-- City.Layer_Production has to compare Unit request from Empire to its own building request, event if Unit doesn't improve City -->
+  <!-- Public Granary -->
+  <AIParameterDatatableElement Name="UnitDesign">
+    <AIParameter Name="AIEmpireExploration"   Value="1"/>
+    <AIParameter Name="AIEmpireColonization"  Value="1"/>
+    <AIParameter Name="AIEmpireMilitaryDefense"      Value="1"/> <!-- TBD: distinction between offense and defense -->
+	<AIParameter Name="AIEmpireMilitaryOffense"      Value="1"/> <!-- TBD: distinction between offense and defense -->
+  </AIParameterDatatableElement>
+
+  <!-- ################################ -->
+  <!-- #######       FOOD       ####### -->
+  <!-- ################################ -->
+  
+  <!-- Public Granary -->
+  <AIParameterDatatableElement Name="CityImprovementFood0">
+    <AIParameter Name="CityFood" Value="10"/>
+    <AIParameter Name="CityFoodPercent"   Value="0.15"/>
+    <AIParameter Name="CityMoneyUpkeep"   Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Seed Storage -->
+  <AIParameterDatatableElement Name="CityImprovementFood1">
+    <AIParameter Name="DistrictFoodRiver" Value="3"/>
+    <AIParameter Name="CityMoneyUpkeep"   Value="-2"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementFood7">
+    <AIParameter Name="DistrictFoodWater" Value="3"/>
+    <AIParameter Name="CityMoneyUpkeep"   Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Plow Factory -->
+  <AIParameterDatatableElement Name="CityImprovementFood2">
+    <AIParameter Name="CityFood"                  Value="10"/>
+    <AIParameter Name="BaseFoodPerPopulation"     Value="2"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD -->
+  <AIParameterDatatableElement Name="CityImprovementFood8">
+    <AIParameter Name="DistrictFoodExploitation"  Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-4"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Refrigeration Plant -->
+  <AIParameterDatatableElement Name="CityImprovementFood3">
+    <AIParameter Name="BaseFoodPerPopulation"     Value="3"/>
+    <AIParameter Name="CityFoodPercent"           Value="0.25"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-7"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementFood9">
+    <AIParameter Name="DistrictFoodExtension"     Value="2"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-7"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Fertilizer Plant -->
+  <AIParameterDatatableElement Name="CityImprovementFood4">
+    <AIParameter Name="DistrictFoodFood"          Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-7"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementFood10">
+    <AIParameter Name="DistrictFoodExploitation"  Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-7"/>
+  </AIParameterDatatableElement>
+
+  <!-- ??? -->
+  <!--<AIParameterDatatableElement Name="CityImprovementFood5">
+    <AIParameter Name="CityFood" Value="15"/>
+    <AIParameter Name="CityFoodPercent" Value="0.3"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-12"/>
+  </AIParameterDatatableElement>-->
+
+  <!-- ??? -->
+  <!--<AIParameterDatatableElement Name="CityImprovementFood6">
+    <AIParameter Name="DistrictFood" Value="4"/>
+    <AIParameter Name="BaseFoodPerPopulation" Value="3"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-12"/>
+  </AIParameterDatatableElement>-->
+
+  
+  
+  <!-- ################################ -->
+  <!-- #######       INDUSTRY   ####### -->
+  <!-- ################################ -->
+  <!-- Camshaft Foundry  -->
+  <AIParameterDatatableElement Name="CityImprovementIndustry0">
+    <AIParameter Name="CityProduction"            Value="6"/>
+    <AIParameter Name="CityProductionPercent"     Value="0.15"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Lumber Mill & Quarry -->
+  <AIParameterDatatableElement Name="CityImprovementIndustry1">
+    <AIParameter Name="DistrictIndustryForest"    Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-2"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementIndustry7">
+    <AIParameter Name="DistrictIndustryExploitation"  Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"               Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Canal System -->
+  <AIParameterDatatableElement Name="CityImprovementIndustry2">
+    <AIParameter Name="DistrictIndustryIndustry"  Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <!-- ??? -->
+  <AIParameterDatatableElement Name="CityImprovementIndustry3">
+    <AIParameter Name="BaseIndustryPerPopulation" Value="3"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-7"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementIndustry4">
+    <AIParameter Name="DistrictIndustryIndustry"  Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-7"/>
+  </AIParameterDatatableElement>
+
+  <!-- ??? -->
+  <!--<AIParameterDatatableElement Name="CityImprovementIndustry5">
+    <AIParameter Name="BaseIndustryPerPopulation" Value="4"/>
+    <AIParameter Name="CityProductionPercent" Value="0.3"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-12"/>
+  </AIParameterDatatableElement>-->
+  
+  <!-- ??? -->
+  <AIParameterDatatableElement Name="CityImprovementIndustry6">
+    <AIParameter Name="DistrictIndustryIndustry"  Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-10"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementIndustry8">
+    <AIParameter Name="DistrictStrategicResourceExtractor"  Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"                     Value="-10"/>
+  </AIParameterDatatableElement>
+  
+  
+  
+  <!-- ################################ -->
+  <!-- #######       DUST       ####### -->
+  <!-- ################################ -->
+  <!-- Imperial Treasury -->
+  <AIParameterDatatableElement Name="CityImprovementDust0">
+    <AIParameter Name="CityMoney"         Value="5"/>
+    <AIParameter Name="CityMoneyPercent"  Value="0.15"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Dust Depository -->
+  <AIParameterDatatableElement Name="CityImprovementDust1">
+    <AIParameter Name="DistrictDustRiver" Value="2"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementDust7">
+    <AIParameter Name="DistrictDustWater" Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- Dust Refinery -->
+  <AIParameterDatatableElement Name="CityImprovementDust2">
+    <AIParameter Name="CityMoney"         Value="10"/>
+    <AIParameter Name="CityMoneyPercent"  Value="0.3"/>
+  </AIParameterDatatableElement>
+
+  <!-- ??? -->
+  <AIParameterDatatableElement Name="CityImprovementDust3">
+    <AIParameter Name="BaseDustPerPopulation" Value="4"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Dust Revitalizer -->
+  <AIParameterDatatableElement Name="CityImprovementDust4">
+    <AIParameter Name="DistrictDust" Value="1 * $Count(ClassCity/TerrainTagDust)"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementDust8">
+    <AIParameter Name="DistrictDust"          Value="4 * $Count(ClassCity/PointOfInterestTypeResourceDeposit,ResourceTypeLuxury)"/>
+    <AIParameter Name="DistrictDustAnomaly"   Value="3"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD -->
+  <AIParameterDatatableElement Name="CityImprovementDust5">
+    <AIParameter Name="CityMoney"             Value="10"/>
+    <AIParameter Name="CityMoneyPercent"      Value="0.4"/>
+  </AIParameterDatatableElement>
+
+  <!-- TBD -->
+  <AIParameterDatatableElement Name="CityImprovementDust6">
+    <AIParameter Name="CityMoneyPercent"                  Value="0.4"/>
+    <AIParameter Name="TradeRouteMoneyGainPercent"        Value="0.5"/>
+    <AIParameter Name="TradeRouteResearchGainPercent"     Value="0.5"/>
+    <AIParameter Name="IntermediateTradeRouteGainPercent" Value="0.5"/>
+  </AIParameterDatatableElement>
+
+  
+  
+  <!-- ################################ -->
+  <!-- ######      SCIENCE       ###### -->
+  <!-- ################################ -->
+  <!-- Public Library -->
+  <AIParameterDatatableElement Name="CityImprovementScience0">
+    <AIParameter Name="CityScience"               Value="10"/>
+    <AIParameter Name="CitySciencePercent"        Value="0.1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Era 1 : TBD -->
+  <AIParameterDatatableElement Name="CityImprovementScience8">
+    <AIParameter Name="DistrictScience"           Value="2 * $Count(ClassCity/TerrainTagScience)"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <!-- Alchemy Workshop -->
+  <AIParameterDatatableElement Name="CityImprovementScience3">
+    <AIParameter Name="CityScience"               Value="10"/>
+    <AIParameter Name="CitySciencePercent"        Value="0.2"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Advanced Alchemy Lab -->
+  <AIParameterDatatableElement Name="CityImprovementScience2">
+    <AIParameter Name="DistrictScience"           Value="2"/>
+    <AIParameter Name="DistrictScienceExtension"  Value="2"/>
+    <AIParameter Name="BaseSciencePerPopulation"  Value="3"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-4"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementScience9">
+    <AIParameter Name="DistrictScienceAnomaly"    Value="2"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-4"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Large-scale Aquatic Center -->
+  <AIParameterDatatableElement Name="CityImprovementScience1">
+    <AIParameter Name="DistrictScienceWater"      Value="3"/>
+    <AIParameter Name="BaseSciencePerPopulation"  Value="2"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-4"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementScience7">
+    <AIParameter Name="DistrictScienceRiver"      Value="3"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-4"/>
+  </AIParameterDatatableElement>
+
+  <!--Imperial Funding-->
+  <AIParameterDatatableElement Name="CityImprovementScience4">
+    <AIParameter Name="DistrictScience"           Value="2 * $Count(ClassCity/TerrainTagScience)"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-10"/>
+  </AIParameterDatatableElement>
+
+  <!-- Double unlock : Living Lab Tools & The Crystal Labyrinth -->
+  <AIParameterDatatableElement Name="CityImprovementScience5">
+    <AIParameter Name="CitySciencePercent"        Value="0.5"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-10"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementScience6">
+    <AIParameter Name="DistrictScience"           Value="5 * $Count(ClassCity/DistrictLevel1)"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-10"/>
+  </AIParameterDatatableElement>
+
+
+  
+  <!-- ################################ -->
+  <!-- ######      FIDS          ###### -->
+  <!-- ################################ -->
+  <!-- Foundation Memorial -->
+  <AIParameterDatatableElement Name="CityImprovementFIDS1">
+      <AIParameter Name="CityFood"          Value="2"  />
+      <AIParameter Name="CityProduction"    Value="2"  />
+      <AIParameter Name="CityMoney"         Value="2"  />
+      <AIParameter Name="CityScience"       Value="2"  />
+      <AIParameter Name="CityCityPoint"     Value="1"  />
+  </AIParameterDatatableElement>
+
+  <!-- ??? -->
+  <AIParameterDatatableElement Name="CityImprovementFIDS1BrokenLords">
+    <AIParameter Name="CityProduction"      Value="2"  />
+    <AIParameter Name="CityMoney"           Value="2"  />
+    <AIParameter Name="CityScience"         Value="2"  />
+    <AIParameter Name="DistrictCityPoint"   Value="1"  />
+  </AIParameterDatatableElement>
+
+
+  
+  <!-- ################################ -->
+  <!-- ######      PRETSIGE      ###### -->
+  <!-- ################################ -->
+
+  <AIParameterDatatableElement Name="CityImprovementEmpirePoint1">
+    <AIParameter Name="CityCityPoint"               Value="5"  />
+    <AIParameter Name="BaseCityPointPerPopulation"  Value="3 * $Property(ClassCity:CityPointPopulation)"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-4"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementEmpirePoint2">
+    <AIParameter Name="DistrictCityPointExtension"  Value="2"  />
+    <AIParameter Name="CityCityPoint"               Value="2"  />
+    <AIParameter Name="CityMoneyUpkeep"             Value="-4"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementEmpirePoint3">
+    <AIParameter Name="DistrictCityPoint"           Value="5 * $Count(ClassCity/DistrictLevel1)"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementEmpirePoint4">
+    <AIParameter Name="CityEmpirePointPercent"      Value="0.5"  />
+    <AIParameter Name="BaseCityPointPerPopulation"  Value="4 * $Property(ClassCity:CityPointPopulation)"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-10"/>
+  </AIParameterDatatableElement>
+  
+  
+
+  <!-- ################################ -->
+  <!-- ######      APPROVAL      ###### -->
+  <!-- ################################ -->
+  <AIParameterDatatableElement Name="CityImprovementApproval1">
+    <AIParameter Name="CityApproval"                Value="20"/>
+    <AIParameter Name="CityCityPointHappy"          Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementApproval2">
+    <AIParameter Name="CityApproval"                Value="25"/>
+    <AIParameter Name="CityFoodPercentEcstatic"     Value="0.1"/>
+    <AIParameter Name="CityMoneyPercentEcstatic"    Value="0.1"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementApproval3">
+    <AIParameter Name="CityApproval"                Value="30"/>
+    <AIParameter Name="CitySciencePercentEcstatic"  Value="0.1"/>
+    <AIParameter Name="CityCityPointEcstatic"       Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementApproval4">
+    <AIParameter Name="CityApproval"                      Value="20"/>
+    <AIParameter Name="BaseFoodPerPopulationHappy"        Value="1"/>
+    <AIParameter Name="BaseIndustryPerPopulationHappy"    Value="1"/>
+    <AIParameter Name="BaseDustPerPopulationHappy"        Value="1"/>
+    <AIParameter Name="BaseSciencePerPopulationHappy"     Value="1"/>
+    <AIParameter Name="BaseEmpirePointPerPopulationHappy" Value="1"/>
+    <AIParameter Name="Money"                             Value="-10"/>
+  </AIParameterDatatableElement>
+
+  <!--<AIParameterDatatableElement Name="CityImprovementApproval5">
+    <AIParameter Name="CityApproval"    Value="10 * $Count(../ClassEmpire/ClassCity)"  />
+    <AIParameter Name="CityMoneyUpkeep" Value="-12"/>
+  </AIParameterDatatableElement>-->
+
+  
+  
+  <!-- ################################ -->
+  <!-- ######    TRADE ROUTES    ###### -->
+  <!-- ################################ -->
+  <AIParameterDatatableElement Name="CityImprovementTradeRoutes1">
+    <AIParameter Name="NewTradeRoute"                     Value="1"/>
+    <AIParameter Name="TradeRouteMoneyGainPercent"        Value="0.5"/>
+    <AIParameter Name="CityMoneyUpkeep"                   Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementTradeRoutes2">
+    <AIParameter Name="IntermediateTradeRouteGainPercent" Value="0.5"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-4"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="CityImprovementTradeRoutes3">
+    <AIParameter Name="NewTradeRoute"                     Value="1"/>
+    <AIParameter Name="TradeRouteResearchGainPercent"     Value="0.5"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-7"/>
+  </AIParameterDatatableElement>
+  
+  <!--<AIParameterDatatableElement Name="CityImprovementTradeRoutes4">
+    <AIParameter Name="TradeRouteGainPercent"             Value="0.5"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-12"/>
+  </AIParameterDatatableElement>-->
+
+
+
+  <!-- ################################### -->
+  <!-- ###### ACTIVATE TRADE ROUTES ###### -->
+  <!-- ################################### -->
+  <AIParameterDatatableElement Name="CityImprovementRoads">
+    <AIParameter Name="ActivateTradeRoutes" Value="1"  />
+  </AIParameterDatatableElement>
+
+  
+
+  <!-- ###################################### -->
+  <!-- ####  MILITARY RECRUITMENT BONUS  #### -->
+  <!-- ###################################### -->
+  <AIParameterDatatableElement Name="CityImprovementMilitaryRecruitmentBonus1">
+    <AIParameter Name="CityExperienceGain"  Value="40"/>    <!-- TBD-->
+    <AIParameter Name="CityMoneyUpkeep"     Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementMilitaryRecruitmentBonus3">
+    <AIParameter Name="CityExperienceGain"  Value="60"/>    <!-- TBD-->
+    <AIParameter Name="CityMoneyUpkeep"     Value="-7"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementMilitaryRecruitmentBonus5">
+    <AIParameter Name="CityExperienceGain"  Value="100"/>   <!-- TBD-->
+    <AIParameter Name="CityMoneyUpkeep"     Value="-10"/>
+  </AIParameterDatatableElement>
+
+
+
+  <!-- ##################################### -->
+  <!-- ######   UNIT COST REDUCTION   ###### -->
+  <!-- ##################################### -->
+  <AIParameterDatatableElement Name="CityImprovementUnitCostReduction3">
+    <!-- TBD-->
+    <AIParameter Name="CityUnitCost"    Value="-15"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-5"/>
+  </AIParameterDatatableElement>
+
+
+  <!-- ################################## -->
+  <!-- ######     DEFENSE POINT    ###### -->
+  <!-- ################################## -->
+  <!-- Double unlock : Stronghold Architecture -->
+  <AIParameterDatatableElement Name="CityImprovementDefense1">
+    <AIParameter Name="CityDefense"               Value="15"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-1"/>
+  </AIParameterDatatableElement>
+  <AIParameterDatatableElement Name="CityImprovementDefense5">
+    <AIParameter Name="CityMilitia"               Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementDefense2">
+    <!-- TBD-->
+    <AIParameter Name="CityDefense"               Value="25"/>
+    <AIParameter Name="CityExperienceGainMilitia" Value="0.5"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementDefense3">
+    <!-- TBD-->
+    <AIParameter Name="CityDefense"               Value="25"/>
+    <AIParameter Name="CityMilitia"               Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementDefense4">
+    <!-- TBD-->
+    <AIParameter Name="CityDefense"               Value="$Property(MaximumCityDefensePoint) * 1.4"/>
+    <AIParameter Name="CityExperienceGain"        Value="2"/>
+    <AIParameter Name="CityMilitia"               Value="1"/>
+    <AIParameter Name="CityMoneyUpkeep"           Value="-4"/>
+  </AIParameterDatatableElement>
+
+
+  <!-- ################################### -->
+  <!-- ######    HP REGENERATION    ###### -->
+  <!-- ################################### -->
+  <AIParameterDatatableElement Name="CityImprovementUnitRegeneration1">
+    <!-- TBD-->
+    <AIParameter Name="CityUnitRegen"   Value="10"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-3"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementUnitRegeneration2">
+    <!-- TBD-->
+    <AIParameter Name="CityUnitRegen"   Value="15"/>
+    <AIParameter Name="CityMoneyUpkeep" Value="-5"/>
+  </AIParameterDatatableElement>
+
+
+  <!-- #################################### -->
+  <!-- ######    DEFENSE RECOVERY    ###### -->
+  <!-- #################################### -->
+  <AIParameterDatatableElement Name="CityImprovementDefenseRecovery1">
+    <!-- TBD-->
+    <AIParameter Name="CityDefenseRecovery" Value="10"/>
+    <AIParameter Name="CityMoneyUpkeep"     Value="-1"/>
+  </AIParameterDatatableElement>
+
+  <!--<AIParameterDatatableElement Name="CityImprovementDefenseRecovery2">
+    <AIParameter Name="CityDefenseRecovery" Value="15"/>
+    <AIParameter Name="CityMoneyUpkeep"     Value="-8"/>
+  </AIParameterDatatableElement>-->
+
+  <!-- #################################### -->
+  <!-- ######    VICTORY BUILDING    ###### -->
+  <!-- #################################### -->
+
+  <!-- Endless Temple -->
+  <AIParameterDatatableElement Name="CityImprovementEndlessTemple">
+    <AIParameter Name="WonderVictory"     Value="77"/>
+  </AIParameterDatatableElement>
+
+  <!-- #################################### -->
+  <!-- ######    FACTIONS BUILDING   ###### -->
+  <!-- #################################### -->
+
+  <!-- Vaulters -->
+  <AIParameterDatatableElement Name="CityImprovementVaulters6">
+    <AIParameter Name="CityMoneyUpkeep"       Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Vaulters -->
+  <AIParameterDatatableElement Name="CityImprovementVaulters2">
+    <AIParameter Name="CityFoodPercent"       Value="0.1"/>
+    <AIParameter Name="CityMoneyPercent"      Value="0.1"/>
+    <AIParameter Name="CityProductionPercent" Value="0.1"/>
+    <AIParameter Name="CitySciencePercent"    Value="0.1"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementVaulters3">
+    <AIParameter Name="CityDefense"           Value="20"/>
+    <AIParameter Name="CityDefenseRecovery"   Value="5"/>
+    <AIParameter Name="CityMoneyUpkeep"       Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementVaulters4">
+    <AIParameter Name="DistrictScienceLevelUpExtension" Value="4"/>
+    <AIParameter Name="CityMoneyUpkeep"                 Value="-4"/>
+  </AIParameterDatatableElement>
+
+  <!-- Vaulters -->
+  <AIParameterDatatableElement Name="CityImprovementVaulters9">
+    <AIParameter Name="DistrictAffinityStrategicResourceGain"  Value="10"/>
+  </AIParameterDatatableElement>
+
+  <!-- Necro -->
+  <AIParameterDatatableElement Name="CityImprovementNecrophages7">
+    <AIParameter Name="BaseFoodPerPopulation"       Value="4"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-5"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="CityImprovementNecrophages9">
+    <AIParameter Name="CityExperienceGain"          Value="25"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-7"/>
+  </AIParameterDatatableElement>
+
+  <!-- Rage Wizards -->
+  <AIParameterDatatableElement Name="CityImprovementRageWizards2">
+    <AIParameter Name="DistrictScience" Value="2 * $Count(ClassCity/TerrainTagScience)"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementRageWizards4">
+    <AIParameter Name="BaseCityPointPerPopulation"  Value="5 * $Property(ClassCity:CityPointPopulation)"/>
+    <AIParameter Name="CityCityPoint"               Value="10"/>
+    <AIParameter Name="CityApproval"                Value="30"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-7"/>
+  </AIParameterDatatableElement>
+
+  <!-- Roving Clans -->
+  <AIParameterDatatableElement Name="CityImprovementRovingClans2">
+    <AIParameter Name="CityScience"                 Value="5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementRovingClans4">
+    <AIParameter Name="NewTradeRoute"               Value="2"/>
+  </AIParameterDatatableElement>
+
+  <!-- Drakkens -->
+  <AIParameterDatatableElement Name="CityImprovementDrakkens2">
+    <AIParameter Name="CityFood"                    Value="10"/>
+    <AIParameter Name="CityExperienceGain"          Value="25"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CityImprovementDrakkens4">
+    <AIParameter Name="CityApproval"                Value="20"/>
+    <AIParameter Name="CityCityPoint"               Value="10"/>
+    <AIParameter Name="CityMoneyUpkeep"             Value="-4"/>
+  </AIParameterDatatableElement>
+
+</Datatable>

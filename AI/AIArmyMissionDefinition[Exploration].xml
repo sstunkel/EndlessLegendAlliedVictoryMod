@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- 100% opportunist -->
+  <AIArmyMissionDefinition Name="ExploreAt">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$RegionIndex"/>
+    </Parameters>
+
+    <Controller_Sequence>
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+      
+      <Controller_Selector>
+     
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="Explore_TryToAttackEnemyInRange">
+          
+          <!-- First, select a target. -->
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Any" Output_TargetVarName="$Target"/>
+          
+          <Controller_Selector>
+            <Controller_Sequence>
+              <!-- Check if we ca defeat this target. -->
+              <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+              <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+
+              <Controller_Selector Debug="Explore_TryToAttackEnemyInRange_EnemyInRange">
+                <Controller_Sequence Debug="Explore_TryToAttackEnemyInRange_EnemyClose">
+                  <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+                  <Action_Attack TargetVarName="$Target"/>
+                </Controller_Sequence>
+
+                <Controller_Sequence Debug="Explore_TryToAttackEnemyInRange_GotoAndAttack">
+                  <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+                  <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+                  <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+                  <Decorator_MoveEnded PathVarName="$Path"/>
+                </Controller_Sequence>
+              </Controller_Selector>
+            </Controller_Sequence>
+
+            <!--IF EnnemyDetected AND I can not defeat him THEN retreat him-->
+            <Controller_Sequence Debug="Explore_TryToRetreat">
+              <Decorator_CanDefeatTarget PositiveCheckOn="NO" TargetVarName="$Target"/>
+              <Decorator_ComputeSavingPosition TargetListVarName="$TargetList" Output_DestinationVarName="$SafeWorldPositionDestination"/>
+              <Action_GeneratePath DestinationVarName="$SafeWorldPositionDestination" TypeOfPath="FuzzyDestination" Output_PathVarName="$SafePath"/>
+              <Action_Move PathVarName="$SafePath" TypeOfMove="Regular"/>
+              <Decorator_MoveEnded PathVarName="$SafePath" TypeOfCheck="Regular"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+        
+        <!--IF RuinDetected THEN explore Ruin-->
+        <Controller_Sequence Debug="Explore_SearchRuin">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Ruin" Output_TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$RuinWorldPositionDestination"/>
+
+          <Controller_Selector>            
+            <Controller_Sequence Debug="Explore_SearchRuin_AlreadyAtDestination">
+              <Decorator_DestinationReached DestinationVarName="$RuinWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_SearchInRuin TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="Explore_SearchRuin_MoveToRuin">
+              <Action_GeneratePath DestinationVarName="$RuinWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$RuinPath"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$RuinWorldPositionDestination" PathVarName="$RuinPath"/>
+              <Action_Move PathVarName="$RuinPath" TypeOfMove="Regular"/>
+              <Decorator_MoveEnded PathVarName="$RuinPath" TypeOfCheck="InRangeDestination"/>
+              <Action_SearchInRuin TargetVarName="$Target"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+        
+        <!--IF NO EnnemyDetected THEN Move to Destination-->
+        <Controller_Sequence Debug="Exploration_TryToFollowTheBorder">
+          <!-- Ask for a destination. -->
+          <Controller_Selector>
+            <Controller_Sequence Debug="Exploration_TryToFollowTheBorder_ChangeTarget">
+              <Decorator_VariableCheck VarName="$BorderDestination" CheckOperation="Exists"/>
+              <Decorator_DestinationReached DestinationVarName="$BorderDestination" TypeOfCheck="Regular"/>
+              <Decorator_GetNextRegionBorderPosition TargetRegionVarName="$RegionIndex" Output_DestinationVarName="$BorderDestination"/>
+              <Action_GeneratePath DestinationVarName="$BorderDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="Exploration_TryToFollowTheBorder_GoToPreviousTarget">
+              <Decorator_VariableCheck VarName="$BorderDestination" CheckOperation="Exists"/>
+              <Action_GeneratePath DestinationVarName="$BorderDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="Exploration_TryToFollowTheBorder_FirstTime">
+              <Decorator_GetNextRegionBorderPosition TargetRegionVarName="$RegionIndex" Output_DestinationVarName="$BorderDestination"/>
+              <Action_GeneratePath DestinationVarName="$BorderDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+            </Controller_Sequence>
+            
+          </Controller_Selector>
+
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_MoveEnded PathVarName="$Path" TypeOfCheck="Regular"/>
+          <Decorator_DestinationReached DestinationVarName="$BorderDestination" TypeOfCheck="Regular"/>
+        </Controller_Sequence>
+
+      </Controller_Selector>
+      
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+
+  <!-- 100% opportunist-->
+  <AIArmyMissionDefinition Name="ScoutRegion">
+    <Parameters>
+      <Parameter ParameterIndex="0" VarName="$WorldPositionDestination"/>
+    </Parameters>
+
+    <Controller_Sequence>
+
+      <!--IF Army in under control THEN Mission failed-->
+      <Decorator_IsTargetLocked PositiveCheckOn="NO" TargetVarName="$Army"/>
+
+      <Controller_Selector>
+        <!--IF EnnemyDetected AND I can defeat him THEN Engage him-->
+        <Controller_Sequence Debug="ScoutRegion_TryToAttackEnemyInRange">
+          <Decorator_GetTargetInRange PositiveCheckOn="YES" Output_TargetListVarName="$TargetList"/>
+          <Decorator_SelectTarget TargetListVarName="$TargetList" TypeOfTarget="Army" TypeOfDiplomaticRelation="Enemy" Output_TargetVarName="$Target"/>
+          <Decorator_CanDefeatTarget PositiveCheckOn="YES" TargetVarName="$Target"/>
+          <Decorator_GetTargetPosition TargetVarName="$Target" Output_DestinationVarName="$AttackWorldPositionDestination"/>
+      
+          <Controller_Selector Debug="ScoutRegion_TryToAttackEnemyInRange_EnemyInRange">
+            <Controller_Sequence Debug="ScoutRegion_TryToAttackEnemyInRange_EnemyClose">
+              <Decorator_DestinationReached DestinationVarName="$AttackWorldPositionDestination" TypeOfCheck="Attack"/>
+              <Action_Attack TargetVarName="$Target"/>
+            </Controller_Sequence>
+
+            <Controller_Sequence Debug="AttackCity_TryToAttackEnemyInRange_GotoAndAttack">
+              <Action_GeneratePath DestinationVarName="$AttackWorldPositionDestination" TypeOfPath="Regular" Output_PathVarName="$Path"/>
+              <Decorator_CanReachPositionInTurn PositiveCheckOn="YES" DestinationVarName="$AttackWorldPositionDestination" PathVarName="$Path"/>
+              <Action_GotoAndAttack TargetVarName="$Target" PathVarName="$Path"/>
+              <Decorator_MoveEnded PathVarName="$Path"/>
+            </Controller_Sequence>
+          </Controller_Selector>
+        </Controller_Sequence>
+        
+        <Controller_Sequence Debug="ScoutRegion_AlreadyAtDestination">
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+        </Controller_Sequence>
+
+        <!--Move to Destination-->
+        <Controller_Sequence Debug="ScoutRegion_Move">
+          <Action_GeneratePath DestinationVarName="$WorldPositionDestination" TypeOfPath="FuzzyDestination" Output_PathVarName="$Path"/>
+          <Action_Move PathVarName="$Path" TypeOfMove="Regular"/>
+          <Decorator_MoveEnded PathVarName="$Path"  TypeOfCheck="Regular"/>
+          <Decorator_DestinationReached DestinationVarName="$WorldPositionDestination" TypeOfCheck="Regular"/>
+        </Controller_Sequence>
+
+      </Controller_Selector>
+
+    </Controller_Sequence>
+
+  </AIArmyMissionDefinition>
+</Datatable>

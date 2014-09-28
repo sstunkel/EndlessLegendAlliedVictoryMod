@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- FIDS RESOURCES -->
+  <BoosterDefinition Name="BoosterFood" Duration="1" BoosterType="DelayingTime" AutoActivation="false" TargetType="City" TargetPath="ClassCity">
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterFood</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterFood"/>
+    </Effect>
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterFoodBonus1</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterFoodBonus1"/>
+    </Effect>
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterFoodBonus2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterFoodBonus2"/>
+    </Effect>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterIndustry" Duration="1" BoosterType="DelayingTime" AutoActivation="false" TargetType="City" TargetPath="ClassCity">
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterIndustry</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterIndustry"/>
+    </Effect>
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterIndustryBonus1</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterIndustryBonus1"/>
+    </Effect>
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterIndustryBonus2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterIndustryBonus2"/>
+    </Effect>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterScience" Duration="1" BoosterType="DelayingTime" AutoActivation="false">
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterScience</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterScience"/>
+    </Effect>
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterScienceBonus1</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterScienceBonus1"/>
+    </Effect>
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyBoosterScienceBonus2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterScienceBonus2"/>
+    </Effect>
+  </BoosterDefinition>
+
+  <!-- LUXURY RESOURCES -->
+  <BoosterDefinition Name="BoosterLuxury1" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury1" />
+    <CustomCost ResourceName="Luxury1" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury2" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury2" />
+    <CustomCost ResourceName="Luxury2" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury3" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury3" />
+    <CustomCost ResourceName="Luxury3" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+  
+  <BoosterDefinition Name="BoosterLuxury4" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury4" />
+    <CustomCost ResourceName="Luxury4" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury5" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury5" />
+    <CustomCost ResourceName="Luxury5" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+  
+  <BoosterDefinition Name="BoosterLuxury6" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury6" />
+    <CustomCost ResourceName="Luxury6" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+  
+  <BoosterDefinition Name="BoosterLuxury7" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury7" />
+    <CustomCost ResourceName="Luxury7" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury8" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury8" />
+    <CustomCost ResourceName="Luxury8" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+  
+  <BoosterDefinition Name="BoosterLuxury9" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury9" />
+    <CustomCost ResourceName="Luxury9" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury10" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury10" />
+    <CustomCost ResourceName="Luxury10" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+  
+  <BoosterDefinition Name="BoosterLuxury11" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury11" />
+    <CustomCost ResourceName="Luxury11" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury12" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury12" />
+    <CustomCost ResourceName="Luxury12" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury13" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury13" />
+    <CustomCost ResourceName="Luxury13" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+  
+  <BoosterDefinition Name="BoosterLuxury14" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury14" />
+    <CustomCost ResourceName="Luxury14" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterLuxury15" Duration="10">
+    <SimulationDescriptorReference Name="EmpireBoosterLuxury15" />
+    <CustomCost ResourceName="Luxury15" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+  </BoosterDefinition>
+
+  <!-- STRATEGIC RESOURCES -->
+  <BoosterDefinition Name="BoosterStrategic1" Duration="10">
+    <ParentSimulationDescriptorReference ParentTags="ClassEmpire">
+      <SimulationDescriptorReference Name="AffinityStrategicWinterBoosterBonus"/>
+      <SimulationDescriptorReference Name="BoosterTeleport"/>
+      <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
+    </ParentSimulationDescriptorReference>
+    <SimulationDescriptorReference Name="EmpireBoosterStrategic1" />
+    <CustomCost ResourceName="Strategic1" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterStrategic2" Duration="10">
+    <ParentSimulationDescriptorReference ParentTags="ClassEmpire">
+      <SimulationDescriptorReference Name="AffinityStrategicWinterBoosterBonus"/>
+      <SimulationDescriptorReference Name="BoosterTeleport"/>
+      <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
+    </ParentSimulationDescriptorReference>
+    <SimulationDescriptorReference Name="EmpireBoosterStrategic2" />
+    <CustomCost ResourceName="Strategic2" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterStrategic3" Duration="10">
+    <ParentSimulationDescriptorReference ParentTags="ClassEmpire">
+      <SimulationDescriptorReference Name="AffinityStrategicWinterBoosterBonus"/>
+      <SimulationDescriptorReference Name="BoosterTeleport"/>
+      <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
+    </ParentSimulationDescriptorReference>
+    <SimulationDescriptorReference Name="EmpireBoosterStrategic3" />
+    <CustomCost ResourceName="Strategic3" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterStrategic4" Duration="10">
+    <ParentSimulationDescriptorReference ParentTags="ClassEmpire">
+      <SimulationDescriptorReference Name="AffinityStrategicWinterBoosterBonus"/>
+      <SimulationDescriptorReference Name="BoosterTeleport"/>
+      <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
+    </ParentSimulationDescriptorReference>
+    <SimulationDescriptorReference Name="EmpireBoosterStrategic4" />
+    <CustomCost ResourceName="Strategic4" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterStrategic5" Duration="10">
+    <ParentSimulationDescriptorReference ParentTags="ClassEmpire">
+      <SimulationDescriptorReference Name="AffinityStrategicWinterBoosterBonus"/>
+      <SimulationDescriptorReference Name="BoosterTeleport"/>
+      <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
+    </ParentSimulationDescriptorReference>
+    <SimulationDescriptorReference Name="EmpireBoosterStrategic5" />
+    <CustomCost ResourceName="Strategic5" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterStrategic6" Duration="10">
+    <ParentSimulationDescriptorReference ParentTags="ClassEmpire">
+      <SimulationDescriptorReference Name="AffinityStrategicWinterBoosterBonus"/>
+      <SimulationDescriptorReference Name="BoosterTeleport"/>
+      <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
+    </ParentSimulationDescriptorReference>
+    <SimulationDescriptorReference Name="EmpireBoosterStrategic6" />
+    <CustomCost ResourceName="Strategic6" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterSacrificePopulation" Duration="1" BoosterType="DelayingTime" AutoActivation="true" TargetType="City" TargetPath="ClassCity">
+    <Effect>
+      <SimulationDescriptorReference Name="BoosterSacrificePopulationTimer"/>
+      <SimulationDescriptorReference Name="BoosterSacrificePopulation"/>
+    </Effect>
+  </BoosterDefinition>
+
+  <BoosterDefinition Name="BoosterSacrificePopulationVariableDuration" Duration="0" BoosterType="DelayingTime" AutoActivation="true" TargetType="City" TargetPath="ClassCity">
+    <ParentSimulationDescriptorReference ParentTags="ClassCity">
+      <SimulationDescriptorReference Name="BoosterSacrificePopulationVariableDuration"/>
+    </ParentSimulationDescriptorReference>
+  </BoosterDefinition>
+
+  
+  
+  <!-- Necrophages Food booster -->
+  <BoosterDefinition Name="BoosterCadavers" Duration="1" BoosterType="DelayingTime" AutoActivation="false" Unsalable="true" TargetType="City" TargetPath="ClassCity">
+    <Effect>
+      <SimulationDescriptorReference Name="BoosterCadaver"/>
+    </Effect>
+    <Effect>
+      <TechnologyPrerequisite Inverted="false" Flags="Prerequisite,Discard,Technology">TechnologyNecrophages11</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="BoosterCadaverBonus1"/>
+    </Effect>
+    <CustomCost ResourceName="Cadaver" Instant="true">8</CustomCost>
+  </BoosterDefinition>
+</Datatable>

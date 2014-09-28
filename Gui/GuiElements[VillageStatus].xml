@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ExtendedGuiElement Name="VillageStatusHostile">
+    <Title>%VillageStatusHostileTitle</Title>
+    <Description>%VillageStatusHostileDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="VillageStatusHostile" />
+    </Icons>
+    <Color Red="225" Green="96" Blue="89" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="VillageStatusConverted">
+    <Title>%VillageStatusConvertedTitle</Title>
+    <Description>%VillageStatusConvertedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="VillageStatusConverted" />
+    </Icons>
+    <Color Red="129" Green="95" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="VillageStatusDestroyed">
+    <Title>%VillageStatusDestroyedTitle</Title>
+    <Description>%VillageStatusDestroyedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="VillageStatusDestroyed" />
+    </Icons>
+    <Color Red="240" Green="240" Blue="240" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="VillageStatusPacified">
+    <Title>%VillageStatusPacifiedTitle</Title>
+    <Description>%VillageStatusPacifiedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="VillageStatusPacified" />
+    </Icons>
+    <Color Red="129" Green="225" Blue="95" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="VillageStatusUnknown">
+    <Title>%VillageStatusUnknownTitle</Title>
+    <Description>%VillageStatusUnknownDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="VillageStatusUnknown" />
+    </Icons>
+    <Color Red="128" Green="128" Blue="128" Alpha="255" />
+  </ExtendedGuiElement>
+</Datatable>

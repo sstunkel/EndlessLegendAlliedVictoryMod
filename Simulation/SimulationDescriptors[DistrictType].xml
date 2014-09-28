@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SimulationDescriptor Name="DistrictTypeExploitation" Type="DistrictType">
+    <SimulationModifierDescriptors>
+      <!--
+      <SimulationModifierDescriptor TargetProperty="Food" Operation="Multiplication" Value="1"/>
+      -->
+      <!--<SimulationModifierDescriptor TargetProperty="VisionRange" Operation="Addition" Value="1"/>-->
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="DistrictTypeCenter" Type="DistrictType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="CityApproval" MinValue="Negative"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor       TargetProperty="DistrictFood"             Operation="Addition"    Value="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictDust"             Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictScience"          Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictCityPoint"        Operation="Addition"    Value="1"/>
+      <BinarySimulationModifierDescriptor TargetProperty="DistrictDust"             Operation="Addition"    Left="2"    BinaryOperation="Multiplication" Right="$(Level)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Left="2"    BinaryOperation="Multiplication" Right="$(Level)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="DistrictCityPoint"        Operation="Addition"    Left="2"    BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"    Left="20"    BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="CityApproval"             Operation="Addition"    Left="15"   BinaryOperation="Multiplication" Right="$(Level)" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DistrictTypeExtension" Type="DistrictType">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="CityApproval" MinValue="Negative"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor       TargetProperty="DistrictFood"             Operation="Addition"    Value="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictDust"             Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictScience"          Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictCityPoint"        Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="CityApproval"             Operation="Subtraction" Value="10"  />
+      <BinarySimulationModifierDescriptor TargetProperty="DistrictDust"             Operation="Addition"    Left="2"    BinaryOperation="Multiplication" Right="$(Level)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Left="2"    BinaryOperation="Multiplication" Right="$(Level)"/>
+      <BinarySimulationModifierDescriptor TargetProperty="DistrictCityPoint"        Operation="Addition"    Left="2"    BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"    Left="20"    BinaryOperation="Multiplication" Right="$(Level)" Path="./ClassCity"/>
+      <BinarySimulationModifierDescriptor TargetProperty="CityApproval"             Operation="Addition"    Left="15"   BinaryOperation="Multiplication" Right="$(Level)" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DistrictTypeImprovement" Type="DistrictType">
+    <!--
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor       TargetProperty="DistrictFood"             Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictDust"             Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="CityApproval"             Operation="Addition"    Value="10"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+    -->
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DistrictImprovementDocks" Type="DistrictImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor       TargetProperty="DistrictFood"             Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictDust"             Operation="Addition"    Value="1"/>
+      <SimulationModifierDescriptor       TargetProperty="DistrictIndustry"         Operation="Addition"    Value="5"   Path="./ClassCity/TerrainTagWater"/>
+      <SimulationModifierDescriptor       TargetProperty="CityApproval"             Operation="Addition"    Value="10"  Path="./ClassCity"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="OnlyOnePerCity" Type="DistrictImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DocksLocation" Type="DistrictImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="OceanRoadCreation" Type="DistrictImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmbarkDisembarkBonus" Type="DistrictImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DistrictImprovementExtractingCapacity" Type="DistrictImprovement">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

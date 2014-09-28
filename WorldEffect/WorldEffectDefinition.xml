@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Pillar 1 (Science) -->
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect1" Range="1">
+    <SimulationDescriptorReference Name="Pillar1_lvl1"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect2" Range="1">
+    <SimulationDescriptorReference Name="Pillar1_lvl2"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect3" Range="2">
+    <SimulationDescriptorReference Name="Pillar1_lvl3"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect4" Range="2">
+    <SimulationDescriptorReference Name="Pillar1_lvl4"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect5" Range="2">
+    <SimulationDescriptorReference Name="Pillar1_lvl5"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect1_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar1_lvl1"/>
+    <SimulationDescriptorReference Name="Pillar1_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect2_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar1_lvl2"/>
+    <SimulationDescriptorReference Name="Pillar1_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect3_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar1_lvl3"/>
+    <SimulationDescriptorReference Name="Pillar1_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect4_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar1_lvl4"/>
+    <SimulationDescriptorReference Name="Pillar1_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar1_Effect5_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar1_lvl5"/>
+    <SimulationDescriptorReference Name="Pillar1_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards7</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar1Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+
+
+  <!-- Pillar 2 (Speed) -->
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect1" Range="1" MovementCostModifier="-0.5">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect2" Range="2" MovementCostModifier="-0.5">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect3" Range="3" MovementCostModifier="-0.5">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect4" Range="3" MovementCostModifier="-0.75">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect5" Range="4" MovementCostModifier="-0.75">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect1_Winter" Range="1" MovementCostModifier="-0.75">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect2_Winter" Range="2" MovementCostModifier="-0.75">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect3_Winter" Range="3" MovementCostModifier="-0.75">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect4_Winter" Range="3" MovementCostModifier="-0.75">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+  <WorldEffectDefinition_MovementCostModifier Name="Pillar2_Effect5_Winter" Range="4" MovementCostModifier="-0.75">
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards8</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar2Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_MovementCostModifier>
+
+
+
+  <!-- Pillar 3 (Influence) -->
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect1" Range="1">
+    <SimulationDescriptorReference Name="Pillar3_lvl1"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect2" Range="1">
+    <SimulationDescriptorReference Name="Pillar3_lvl2"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect3" Range="2">
+    <SimulationDescriptorReference Name="Pillar3_lvl3"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect4" Range="2">
+    <SimulationDescriptorReference Name="Pillar3_lvl4"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect5" Range="2">
+    <SimulationDescriptorReference Name="Pillar3_lvl5"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect1_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar3_lvl1"/>
+    <SimulationDescriptorReference Name="Pillar3_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect2_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar3_lvl2"/>
+    <SimulationDescriptorReference Name="Pillar3_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect3_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar3_lvl3"/>
+    <SimulationDescriptorReference Name="Pillar3_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect4_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar3_lvl4"/>
+    <SimulationDescriptorReference Name="Pillar3_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar3_Effect5_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar3_lvl5"/>
+    <SimulationDescriptorReference Name="Pillar3_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards9</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar3Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+
+
+  <!-- Pillar 4 (Dust) -->
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect1" Range="1">
+    <SimulationDescriptorReference Name="Pillar4_lvl1"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect2" Range="1">
+    <SimulationDescriptorReference Name="Pillar4_lvl2"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect3" Range="2">
+    <SimulationDescriptorReference Name="Pillar4_lvl3"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect4" Range="2">
+    <SimulationDescriptorReference Name="Pillar4_lvl4"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect5" Range="2">
+    <SimulationDescriptorReference Name="Pillar4_lvl5"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect1_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar4_lvl1"/>
+    <SimulationDescriptorReference Name="Pillar4_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect2_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar4_lvl2"/>
+    <SimulationDescriptorReference Name="Pillar4_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect3_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar4_lvl3"/>
+    <SimulationDescriptorReference Name="Pillar4_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect4_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar4_lvl4"/>
+    <SimulationDescriptorReference Name="Pillar4_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar4_Effect5_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar4_lvl5"/>
+    <SimulationDescriptorReference Name="Pillar4_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards10</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar4Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+
+
+  <!-- Pillar 5 (Regen) -->
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect1" Range="1">
+    <SimulationDescriptorReference Name="Pillar5_lvl1"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect2" Range="1">
+    <SimulationDescriptorReference Name="Pillar5_lvl2"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect3" Range="2">
+    <SimulationDescriptorReference Name="Pillar5_lvl3"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect4" Range="2">
+    <SimulationDescriptorReference Name="Pillar5_lvl4"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect5" Range="2">
+    <SimulationDescriptorReference Name="Pillar5_lvl5"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="true"   Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect1_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar5_lvl1"/>
+    <SimulationDescriptorReference Name="Pillar5_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 1</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect2_Winter" Range="1">
+    <SimulationDescriptorReference Name="Pillar5_lvl2"/>
+    <SimulationDescriptorReference Name="Pillar5_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 2</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect3_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar5_lvl3"/>
+    <SimulationDescriptorReference Name="Pillar5_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 3</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect4_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar5_lvl4"/>
+    <SimulationDescriptorReference Name="Pillar5_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 4</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+
+  <WorldEffectDefinition_FIDSModifier Name="Pillar5_Effect5_Winter" Range="2">
+    <SimulationDescriptorReference Name="Pillar5_lvl5"/>
+    <SimulationDescriptorReference Name="Pillar5_Winter"/>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards11</TechnologyPrerequisite>
+    <TechnologyPrerequisite   Inverted="false"  Flags="Prerequisite,Discard,Technology">TechnologyRageWizards3</TechnologyPrerequisite>
+    <InterpreterPrerequisite  Inverted="false"  Flags="Prerequisite,Discard">$Property(Pillar5Level) eq 5</InterpreterPrerequisite>
+  </WorldEffectDefinition_FIDSModifier>
+  
+
+
+  <!-- Pillar 6 (No pillar 6) -->
+  <!--<WorldEffectDefinition_FIDSModifier Name="Pillar6_Effect1" Range="1">
+    <SimulationDescriptorReference Name="Pillar6_lvl1"/>
+  </WorldEffectDefinition_FIDSModifier>-->
+
+</Datatable>

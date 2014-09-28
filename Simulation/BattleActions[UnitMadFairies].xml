@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+  <!-- #################################    BATTLE ACTIONS WITH THE VISUAL DATA AND SPECIFIC GAMEPLAY   ########################################### -->
+  <!-- ############################################################################################################################################ -->
+  <!-- ############################################################################################################################################ -->
+  
+  <!--  MAD FAIRIES SETTLER  -->
+  
+  <!--  MAD FAIRIES FOREST SPIRIT  -->
+  
+  <!--  MAD FAIRIES ARCHER  -->
+  <BattleActionUnit Name="BattleActionUnitMadFairiesArcherAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Arrow_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" Angle="45" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.90"/>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Arrow_01" RangeRestriction="CloseRange" Speed="5" Trajectory="linear" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.90"/>
+    </BattleActionData>
+  </BattleActionUnit>
+  
+  <!-- MAD FAIRIES SHAMAN -->
+  <BattleActionUnit Name="BattleActionUnitMadFairiesShamanAttackDefenseSupport" Defensible="false" TerrainConsideration="Range" Type="Attack Defense Support">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Shaman_01" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Speed="5" Trajectory="parabolic" Angle="15" OriginBoneName="LeftHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_MadFairies_Shaman_01_Hit</ImpactFx>
+      </Projectile>
+	  </BattleActionData>
+  </BattleActionUnit>
+  
+  <!-- MAD FAIRIES HERO -->
+  <BattleActionUnit Name="BattleActionUnitMadFairiesHeroAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Arrow_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" Angle="45" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.95"/>
+	  <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Hero_01" RangeRestriction="LongRange" AccelerationDistance="0.2" SpeedReductionFactorMax="0.5" Speed="5" Trajectory="parabolic" Angle="20" OriginBoneName="RightHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.80">
+        <ImpactFx>Pr_MadFairies_Hero_01_Hit</ImpactFx>
+      </Projectile>
+	  <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Hero_01" RangeRestriction="LongRange" AccelerationDistance="0.2" SpeedReductionFactorMax="0.5" Speed="5" Trajectory="parabolic" Angle="20" OriginBoneName="LeftHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.80">
+        <ImpactFx>Pr_MadFairies_Hero_01_Hit</ImpactFx>
+      </Projectile>
+	  
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Arrow_01" RangeRestriction="CloseRange" Speed="5" Trajectory="linear" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.90"/>
+	  <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Hero_01" RangeRestriction="CloseRange" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Speed="5" Trajectory="linear" OriginBoneName="RightHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.80">
+        <ImpactFx>Pr_MadFairies_Hero_01_Hit</ImpactFx>
+      </Projectile>
+	  <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_MadFairies_Hero_01" RangeRestriction="CloseRange" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Speed="5" Trajectory="linear" OriginBoneName="LeftHand" TargetBoneName="Hips" ProgressionRatioBeforeFadeOut="0.80">
+        <ImpactFx>Pr_MadFairies_Hero_01_Hit</ImpactFx>
+      </Projectile>
+    </BattleActionData>
+  </BattleActionUnit>
+</Datatable>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Sorts -->
+  <GuiElement Name="JoinGameSortName">
+    <Title>%JoinGameSortNameTitle</Title>
+    <Description>%JoinGameSortNameDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortPlayersCount">
+    <Title>%JoinGameSortPlayersCountTitle</Title>
+    <Description>%JoinGameSortPlayersCountDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortWorldType">
+    <Title>%JoinGameSortWorldTypeTitle</Title>
+    <Description>%JoinGameSortWorldTypeDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortGameState">
+    <Title>%JoinGameSortGameStateTitle</Title>
+    <Description>%JoinGameSortGameStateDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortDifficulty">
+    <Title>%JoinGameSortDifficultyTitle</Title>
+    <Description>%JoinGameSortDifficultyDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortSpeed">
+    <Title>%JoinGameSortSpeedTitle</Title>
+    <Description>%JoinGameSortSpeedDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortTimers">
+    <Title>%JoinGameSortTimersTitle</Title>
+    <Description>%JoinGameSortTimersDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortWithCustomFactions">
+    <Title>%JoinGameSortWithCustomFactionsTitle</Title>
+    <Description>%JoinGameSortWithCustomFactionsDescription</Description>
+  </GuiElement>
+  <GuiElement Name="JoinGameSortTurn">
+    <Title>%JoinGameSortTurnTitle</Title>
+    <Description>%JoinGameSortTurnDescription</Description>
+  </GuiElement>
+</Datatable>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Filters -->
+  <GuiElement Name="NegotiationFilterTreaty">
+    <Title>%NegotiationFilterTreatiesTitle</Title>
+    <Description>%NegotiationFilterTreatiesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTreatyHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="NegotiationFilterResource">
+    <Title>%NegotiationFilterResourcesTitle</Title>
+    <Description>%NegotiationFilterResourcesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryLuxurySmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="NegotiationFilterBooster">
+    <Title>%NegotiationFilterBoostersTitle</Title>
+    <Description>%NegotiationFilterBoostersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="NegotiationFilterCity">
+    <Title>%NegotiationFilterCitiesTitle</Title>
+    <Description>%NegotiationFilterCitiesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryCityImprovementSmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="NegotiationFilterTechnology">
+    <Title>%NegotiationFilterTechnologiesTitle</Title>
+    <Description>%NegotiationFilterTechnologiesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryTechnologyHD" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- Sorts -->
+  <GuiElement Name="NegotiationSortTermType">
+    <Title>%NegotiationSortTermTypeTitle</Title>
+    <Description>%NegotiationSortTermTypeDescription</Description>
+  </GuiElement>
+  <GuiElement Name="NegotiationSortLocalizedName">
+    <Title>%NegotiationSortLocalizedNameTitle</Title>
+    <Description>%NegotiationSortLocalizedNameDescription</Description>
+  </GuiElement>
+  <GuiElement Name="NegotiationSortQuantity">
+    <Title>%NegotiationSortQuantityTitle</Title>
+    <Description>%NegotiationSortQuantityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="NegotiationSortCost">
+    <Title>%NegotiationSortCostTitle</Title>
+    <Description>%NegotiationSortCostDescription</Description>
+  </GuiElement>
+</Datatable>

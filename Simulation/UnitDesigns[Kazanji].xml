@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ######################################################### -->
+  <!-- ################## KAZANJI DEVIL UNITS ################## -->
+  <!-- ######################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignKazanjiDevil#1"                      Model="1040100">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction tribes to create village armies and roaming armies -->
+  <UnitDesign Name="UnitDesignKazanjiDevil#MinorEmpireEra1"        Model="1040111">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""   />
+      <Slot Name="Torso"                           ItemName=""  />
+      <Slot Name="Legs"                            ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MinorEmpireEra2"        Model="1040112">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier2#1" />
+      <Slot Name="Head"                            ItemName=""   />
+      <Slot Name="Torso"                           ItemName=""  />
+      <Slot Name="Legs"                            ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MinorEmpireEra3"        Model="1040113">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier3#1" />
+      <Slot Name="Head"                            ItemName=""   />
+      <Slot Name="Torso"                           ItemName=""  />
+      <Slot Name="Legs"                            ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MinorEmpireEra4"        Model="1040114">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier1#1" />
+      <Slot Name="Head"                            ItemName=""   />
+      <Slot Name="Torso"                           ItemName=""  />
+      <Slot Name="Legs"                            ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MinorEmpireEra5"        Model="1040115">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier2#1" />
+      <Slot Name="Head"                            ItemName=""   />
+      <Slot Name="Torso"                           ItemName=""  />
+      <Slot Name="Legs"                            ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MinorEmpireEra6"        Model="1040116">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier3#1" />
+      <Slot Name="Head"                            ItemName=""   />
+      <Slot Name="Torso"                           ItemName=""  />
+      <Slot Name="Legs"                            ItemName=""   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignKazanjiDevil#MercenaryEra1"          Model="1040121">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MercenaryEra2"          Model="1040122">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MercenaryEra3"          Model="1040123">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MercenaryEra4"          Model="1040124">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MercenaryEra5"          Model="1040125">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#MercenaryEra6"          Model="1040126">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignKazanjiDevil#ConvertedEra1"          Model="1040131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <Tags>ConvertedVillageUnit,Era1,Kazanji,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#ConvertedEra2"          Model="1040132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <Tags>ConvertedVillageUnit,Era2,Kazanji,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#ConvertedEra3"          Model="1040133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <Tags>ConvertedVillageUnit,Era3,Kazanji,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#ConvertedEra4"          Model="1040134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <Tags>ConvertedVillageUnit,Era4,Kazanji,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#ConvertedEra5"          Model="1040135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <Tags>ConvertedVillageUnit,Era5,Kazanji,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#ConvertedEra6"          Model="1040136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <Tags>ConvertedVillageUnit,Era6,Kazanji,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"   />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"  />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"   />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by Quests to spawn armies -->
+  <UnitDesign Name="UnitDesignKazanjiDevil#Axe"                    Model="1040103">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,QuestNPC</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""                    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"  />
+      <Slot Name="Legs"                            ItemName=""                    />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                    />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignKazanjiDevil#MinorEmpire"            Model="1040101">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemAxe2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""                    />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"  />
+      <Slot Name="Legs"                            ItemName=""                    />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                    />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignKazanjiDevil#Mercenary"              Model="1040102">
+    <UnitBodyDefinitionReference Name="UnitBodyKazanjiDevil" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityKazanji,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

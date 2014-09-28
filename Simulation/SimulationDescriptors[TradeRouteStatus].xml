@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="TradeRouteCommercialAgreement" Type="TradeRouteBonus">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="NumberOfTurnSinceCommercialAggreementBegining" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="CommercialAgreementBonus" BaseValue="0" MaxValue="0.2"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <BinarySimulationModifierDescriptor TargetProperty="CommercialAgreementBonus" Operation="Addition" Left="$(NumberOfTurnSinceCommercialAggreementBegining)" BinaryOperation="Division" Right="100" />
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityDustIncome"     Operation="Percent" Value="$(CommercialAgreementBonus)"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TradeRouteResearchAgreement" Type="TradeRouteBonus">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="NumberOfTurnSinceResearchAgreementBegining" BaseValue="0"/>
+      <SimulationPropertyDescriptor Name="ResearchAgreementBonus" BaseValue="0" MaxValue="0.2"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <BinarySimulationModifierDescriptor TargetProperty="ResearchAgreementBonus" Operation="Addition" Left="$(NumberOfTurnSinceResearchAgreementBegining)" BinaryOperation="Division" Right="100" />
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityScienceIncome"  Operation="Percent" Value="$(ResearchAgreementBonus)"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="TradeRouteStatusSiegeBlocked" Type="TradeRouteStatus">
+    <SimulationModifierDescriptors>
+      <!--<SimulationModifierDescriptor TargetProperty="TradeRouteCityFoodIncome"     Operation="Multiplication" Value="0"/>-->
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityDustIncome"     Operation="Multiplication" Value="0"/>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityScienceIncome"  Operation="Multiplication" Value="0"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TradeRouteStatusSwapBlocked" Type="TradeRouteStatus">
+    <SimulationModifierDescriptors>
+      <!--<SimulationModifierDescriptor TargetProperty="TradeRouteCityFoodIncome"     Operation="Multiplication" Value="0"/>-->
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityDustIncome"     Operation="Multiplication" Value="0"/>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityScienceIncome"  Operation="Multiplication" Value="0"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="TradeRouteStatusRelationBlocked" Type="TradeRouteStatus">
+    <SimulationModifierDescriptors>
+      <!--<SimulationModifierDescriptor TargetProperty="TradeRouteCityFoodIncome"     Operation="Multiplication" Value="0"/>-->
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityDustIncome"     Operation="Multiplication" Value="0"/>
+      <SimulationModifierDescriptor TargetProperty="TradeRouteCityScienceIncome"  Operation="Multiplication" Value="0"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+</Datatable>

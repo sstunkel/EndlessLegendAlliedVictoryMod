@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GameModifierDefinition Name="MinorFactionDifficultyEasy">
+    <DescriptorTypeToRemove>MinorFactionDifficultyBonus</DescriptorTypeToRemove>
+    
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <SimulationDescriptorReference Name="MinorFactionDifficultyEasy"/>
+      <PersonalityReference Name="PersonalityMinorFactionMinorFactionDifficultyEasy" />
+    </Effects>
+
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="MinorFactionDifficultyNormal">
+    <DescriptorTypeToRemove>MinorFactionDifficultyBonus</DescriptorTypeToRemove>
+    
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <SimulationDescriptorReference Name="MinorFactionDifficultyNormal"/>
+      <PersonalityReference Name="PersonalityMinorFactionMinorFactionDifficultyNormal" />
+    </Effects>
+
+  </GameModifierDefinition>
+
+
+  <GameModifierDefinition Name="MinorFactionDifficultyHard">
+    <DescriptorTypeToRemove>MinorFactionDifficultyBonus</DescriptorTypeToRemove>
+    
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <SimulationDescriptorReference Name="MinorFactionDifficultyHard"/>
+      <PersonalityReference Name="PersonalityMinorFactionMinorFactionDifficultyHard" />
+    </Effects>
+
+  </GameModifierDefinition>
+</Datatable>

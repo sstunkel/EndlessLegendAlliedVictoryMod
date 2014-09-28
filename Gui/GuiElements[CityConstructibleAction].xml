@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Raze -->
+  <GuiElement Name="CityConstructibleActionRaze">
+    <Title>%CityConstructibleActionRazeTitle</Title>
+    <Description>%CityConstructibleActionRazeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityConstructibleActionRazeSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityConstructibleActionRazeLarge" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="CityConstructibleActionRazeTooltipEffect">
+    <TooltipElement>
+      <EffectOverride>%CityConstructibleActionRazeTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Migrate -->
+  <GuiElement Name="CityConstructibleActionMigrate">
+    <Title>%CityConstructibleActionMigrateTitle</Title>
+    <Description>%CityConstructibleActionMigrateDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Improvements/City/CityConstructibleActionMigrateSmall" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/Improvements/City/CityConstructibleActionMigrateLarge" />
+    </Icons>
+  </GuiElement>
+
+  <ExtendedGuiElement Name="CityConstructibleActionMigrateTooltipEffect">
+    <TooltipElement>
+      <EffectOverride>%CityConstructibleActionMigrateTooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+</Datatable>

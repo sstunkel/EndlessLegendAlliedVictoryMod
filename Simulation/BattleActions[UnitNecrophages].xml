@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- ============================================================================================================================================= -->
+  <!-- ============================================================================================================================================= -->
+  <!-- ===================================== NEED TO UPDATE THE DIFFERENT ACTION TO IMPLEMENT CRITICAL HERE ======================================== -->
+  <!-- ============================================================================================================================================= -->
+  <!-- ============================================================================================================================================= -->
+  
+  <!--  NECROPHAGES SETTLER  -->
+
+
+  <!--  NECROPHAGES NECROHUNTER  -->
+
+  
+  <!--  NECROPHAGES ZOMBAT -->
+
+
+
+  <!-- NECROPHAGES LICHBUG -->
+
+  <BattleActionUnit Name="BattleActionUnitNecrophagesLichbugAttackDefensePassive" Defensible="false" TerrainConsideration="Range" Type="Attack Defense Support">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Necrophages_Lichbug_01" RangeRestriction="LongRange" Speed="4" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="5" OriginBoneName="Head_EXT" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_Necrophages_Lichbug_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Necrophages_Lichbug_01" RangeRestriction="CloseRange" Speed="4" Trajectory="linear" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" OriginBoneName="Head_EXT" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_Necrophages_Lichbug_01_Hit</ImpactFx>
+      </Projectile>
+    </BattleActionData>
+
+  </BattleActionUnit>
+
+  <!-- ===================================== NECROPHAGES HERO ======================================== -->
+
+</Datatable>

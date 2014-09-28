@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiCursor Name="Default">
+    <Image Path="GUI/DynamicBitmaps/Cursors/cursor_default" />
+    <HotSpot X="0" Y="0" />
+  </GuiCursor>
+  <GuiCursor Name="Attack">
+    <Image Path="GUI/DynamicBitmaps/Cursors/cursor_temp_0" />
+    <HotSpot X="0" Y="0" />
+  </GuiCursor>
+  <GuiCursor Name="Temp_1">
+    <Image Path="GUI/DynamicBitmaps/Cursors/cursor_default" />
+    <HotSpot X="0" Y="0" />
+  </GuiCursor>
+  <GuiCursor Name="Selectable">
+    <Image Path="GUI/DynamicBitmaps/Cursors/cursor_temp_2" />
+    <HotSpot X="0" Y="0" />
+  </GuiCursor>
+  <GuiCursor Name="Interact">
+    <Image Path="GUI/DynamicBitmaps/Cursors/cursor_temp_3" />
+    <HotSpot X="0" Y="0" />
+  </GuiCursor>
+  <GuiCursor Name="Timer">
+    <Image Path="GUI/DynamicBitmaps/Cursors/cursor_wait" />
+    <HotSpot X="0" Y="0" />
+  </GuiCursor>
+  <GuiCursor Name="Grab">
+    <Image Path="GUI/DynamicBitmaps/Cursors/cursor_grab" />
+    <HotSpot X="0" Y="0" />
+  </GuiCursor>
+</Datatable>

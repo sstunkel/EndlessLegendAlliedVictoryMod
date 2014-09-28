@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <TradableCategoryDefinition Name="TradableBoosterFood" Category="TradableBooster" SubCategory="Booster">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>100</MaximumStackSize>
+    <ReferencePrice>150</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableBoosterIndustry" Category="TradableBooster" SubCategory="Booster">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>100</MaximumStackSize>
+    <ReferencePrice>150</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableBoosterScience" Category="TradableBooster" SubCategory="Booster">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>100</MaximumStackSize>
+    <ReferencePrice>100</ReferencePrice>
+  </TradableCategoryDefinition>
+  
+  <TradableCategoryDefinition Name="TradableHero" Category="TradableHero" SubCategory="Hero">
+    <MaximumNumberOfOccurencesOnMarket>7</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>1</MaximumStackSize>
+    <SensitivityToInflation>1.2</SensitivityToInflation>
+    <SensitivityToTendency>3</SensitivityToTendency>
+    <ReferencePrice>100</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableHeroExclusive" Category="TradableHero" SubCategory="Hero">
+    <MaximumNumberOfOccurencesOnMarket>50</MaximumNumberOfOccurencesOnMarket><!-- minimum of 3 per empire * 8 empires, plus bonuses -->
+    <MaximumStackSize>1</MaximumStackSize>
+    <SensitivityToInflation>1.2</SensitivityToInflation>
+    <SensitivityToTendency>3</SensitivityToTendency>
+    <ReferencePrice>100</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury1" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>5</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury2" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>5</ReferencePrice>
+  </TradableCategoryDefinition>
+  
+  <TradableCategoryDefinition Name="TradableResourceLuxury3" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>5</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury4" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>5</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury5" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>5</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury6" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>6</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury7" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>6</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury8" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>6</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury9" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>6</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury10" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>6</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury11" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>7</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury12" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>7</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury13" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>7</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury14" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>7</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceLuxury15" Category="TradableResource" SubCategory="Luxury">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>7</ReferencePrice>
+  </TradableCategoryDefinition>
+  
+  <TradableCategoryDefinition Name="TradableResourceStrategic1" Category="TradableResource" SubCategory="Strategic">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>12</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceStrategic2" Category="TradableResource" SubCategory="Strategic">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>12</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceStrategic3" Category="TradableResource" SubCategory="Strategic">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>18</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceStrategic4" Category="TradableResource" SubCategory="Strategic">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>18</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceStrategic5" Category="TradableResource" SubCategory="Strategic">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>24</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableResourceStrategic6" Category="TradableResource" SubCategory="Strategic">
+    <MaximumNumberOfOccurencesOnMarket>1</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>999</MaximumStackSize>
+    <ReferencePrice>24</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableUnit" Category="TradableUnit" SubCategory="Unit">
+    <MaximumLifeTimeOnMarket>10</MaximumLifeTimeOnMarket>
+    <MaximumNumberOfOccurencesOnMarket>30</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>1</MaximumStackSize>
+    <SensitivityToTendency>0.5</SensitivityToTendency>
+    <SensitivityToInflation>1.2</SensitivityToInflation>
+    <ReferencePrice>20</ReferencePrice>
+  </TradableCategoryDefinition>
+
+  <TradableCategoryDefinition Name="TradableUnitNeutral" Category="TradableUnit" SubCategory="Unit">
+    <MaximumLifeTimeOnMarket>10</MaximumLifeTimeOnMarket>
+    <MaximumNumberOfOccurencesOnMarket>10</MaximumNumberOfOccurencesOnMarket>
+    <MaximumStackSize>1</MaximumStackSize>
+    <SensitivityToTendency>0.5</SensitivityToTendency>
+    <SensitivityToInflation>1.2</SensitivityToInflation>
+    <ReferencePrice>20</ReferencePrice>
+  </TradableCategoryDefinition>
+  
+</Datatable>

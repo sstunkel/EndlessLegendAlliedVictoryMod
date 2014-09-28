@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <ExtendedGuiElement Name="Health">
+    <Title>%UnitAttributeHealthTitle</Title>
+    <Description>%UnitAttributeHealthDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%UnitAttributeHealthTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="MaximumHealth">
+    <Title>%UnitAttributeMaximumHealthTitle</Title>
+    <Description>%UnitAttributeMaximumHealthDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeMaximumHealthSmall" />
+    </Icons>
+    <SymbolString>%UnitAttributeMaximumHealthTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="UnitRegen">
+    <Title>%UnitAttributeRegenTitle</Title>
+    <Description>%UnitAttributeRegenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%UnitAttributeRegenTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="OwnedUnitRegenModifier">
+    <Title>%UnitAttributeRegenTitle</Title>
+    <Description>%UnitAttributeRegenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%UnitAttributeRegenTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AlliedUnitRegenModifier">
+    <Title>%AlliedUnitAttributeRegenTitle</Title>
+    <Description>%AlliedUnitAttributeRegenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%AlliedUnitAttributeRegenTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="NoneAlliedUnitRegenModifier">
+    <Title>%NoneAlliedUnitAttributeRegenTitle</Title>
+    <Description>%NoneAlliedUnitAttributeRegenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%NoneAlliedUnitAttributeRegenTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="GlobalUnitRegenImprovement">
+    <Title>%GlobalUnitRegenImprovementTitle</Title>
+    <Description>%GlobalUnitRegenImprovementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%GlobalUnitRegenImprovementTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="AttributeArmor">
+    <Title>%UnitAttributeArmorTitle</Title>
+    <Description>%UnitAttributeArmorDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/GameVariables/cityDefenseHD.png" />
+    </Icons>
+    <SymbolString>%UnitAttributeArmorTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AttributeAttack">
+    <Title>%UnitAttributeAttackTitle</Title>
+    <Description>%UnitAttributeAttackDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeOffenseSmall" />
+    </Icons>
+    <SymbolString>%UnitAttributeAttackTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="Movement">
+    <Title>%UnitAttributeMovementTitle</Title>
+    <Description>%UnitAttributeMovementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeMovementSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeMovementTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="MaximumMovement">
+    <Title>%UnitAttributeMovementTitle</Title>
+    <Description>%UnitAttributeMovementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeMovementSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeMovementTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="BattleMovement">
+    <Title>%UnitAttributeMovementTitle</Title>
+    <Description>%UnitAttributeMovementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeMovementSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeBattleMovementTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="BattleMaximumMovement">
+    <Title>%UnitAttributeMovementTitle</Title>
+    <Description>%UnitAttributeMovementDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeMovementSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeBattleMovementTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AttributeDefense">
+    <Title>%UnitAttributeDefenseTitle</Title>
+    <Description>%UnitAttributeDefenseDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeDefenseSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeDefenseTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AttributeInitiative">
+    <Title>%UnitAttributeInitiativeTitle</Title>
+    <Description>%UnitAttributeInitiativeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI\AtlasedBitmaps\UnitAttributes\UnitAttributeInitiativeSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeInitiativeTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AttributeCritical">
+    <Title>%UnitAttributeCriticalTitle</Title>
+    <Description>%UnitAttributeCriticalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI\AtlasedBitmaps\UnitAttributes\UnitAttributeCriticalSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeCriticalTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AttributeDamage">
+    <Title>%UnitAttributeDamageTitle</Title>
+    <Description>%UnitAttributeDamageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI\AtlasedBitmaps\UnitAttributes\UnitAttributeCriticalSmall" />
+    </Icons>
+    <SymbolString>%UnitAttributeDamageTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="ForestDefenseBonus">
+    <Title>%ForestDefenseBonusTitle</Title>
+    <Description>%ForestDefenseBonusDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeDefenseSmall" />
+    </Icons>
+    <SymbolString>%IconAttributeDefenseTitle</SymbolString>
+    <Color Red="225" Green="225" Blue="225" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+</Datatable>

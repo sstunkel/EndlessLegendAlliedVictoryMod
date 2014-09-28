@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="AffinityBrokenLords" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityRageWizards" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMadFairies" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityNecrophages" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityVaulters" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityRovingClans" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityDrakkens" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityCultists" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityMezari" Type="Affinity">
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="AffinityTutorial" Type="Affinity">
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="AffinityUrces" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityErycis" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityCeratan" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityKazanji" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityBos" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinitySilics" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityDelvers" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinitySistersOfMercy" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityHaunts" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityJotus" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityHurnas" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityGauran" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityBirdhive" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityGeldirus" Type="Affinity">
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AffinityLesser" Type="Affinity">
+    <SimulationModifierDescriptors>
+      
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- include city by default at InitialValue -->
+  <BattleAnalysisRuleDefinition  Name="Terrain" PropagationTime="None" InitialValue="1">
+    <RuleAssemblyName>AIParameterGridRule_Terrain, Assembly-CSharp</RuleAssemblyName>
+    <!-- force the modifier instead of initial value -->
+    <Modifier Name="CrystalForest"            Value="0.5"/>
+    <Modifier Name="Taiga"                    Value="0.5"/>
+    <Modifier Name="TundraHighMountainForest" Value="0.5"/>
+    <Modifier Name="ColdForest"               Value="0.5"/>
+    <Modifier Name="HighMountainForest"       Value="0.5"/>
+    <Modifier Name="EnchantedForest"          Value="0.5"/>
+    <Modifier Name="TemperateForest"          Value="0.5"/>
+    <Modifier Name="TropicalWetland"          Value="0.5"/>
+    <Modifier Name="PalmTrees"                Value="0.5"/>
+    <Modifier Name="TropicalMountainForest"   Value="0.5"/>
+    <Modifier Name="Savanna"                  Value="0.5"/>
+  </BattleAnalysisRuleDefinition>
+
+  <BattleAnalysisRuleDefinition    Name="Altitude"            PropagationTime="None">
+    <RuleAssemblyName>AIParameterGridRule_Altitude, Assembly-CSharp</RuleAssemblyName>
+  </BattleAnalysisRuleDefinition>
+
+  <BattleAnalysisRuleDefinition    Name="ReinforcementPoints" PropagationTime="None"       InitialValue="-100">
+    <RuleAssemblyName>AIParameterGridRule_ReinforcementPoints, Assembly-CSharp</RuleAssemblyName>
+  </BattleAnalysisRuleDefinition>
+
+  <BattleAnalysisRuleDefinition    Name="NearEnemyLines"      PropagationTime="BeforeUnit" PropagationMode="AvoidAllied,Terrain" PropagationCost="Absolute" PropagationRange="4" PropagationCoefficient="0.8">
+    <RuleAssemblyName>AIParameterGridRule_DistanceToEnemy, Assembly-CSharp</RuleAssemblyName>
+  </BattleAnalysisRuleDefinition>
+
+  <BattleAnalysisRuleDefinition    Name="NearAllied"          PropagationTime="BeforeUnit" PropagationMode="Absolute"    PropagationOperation="Sum"        PropagationRange="1" PropagationCoefficient="0.5">
+    <RuleAssemblyName>AIParameterGridRule_DistanceToAllied, Assembly-CSharp</RuleAssemblyName>
+  </BattleAnalysisRuleDefinition>
+
+  <BattleAnalysisRuleDefinition    Name="FarFromCenter"       PropagationTime="None">
+    <RuleAssemblyName>AIParameterFlatRule_DistanceFromCenter, Assembly-CSharp</RuleAssemblyName>
+  </BattleAnalysisRuleDefinition>
+</Datatable>

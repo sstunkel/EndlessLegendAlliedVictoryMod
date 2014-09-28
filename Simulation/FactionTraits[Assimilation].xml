@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <FactionTrait Name="AssimilationTraitBos" Hidden="true">
+    <!-- winter: +1 food on tiles providing food -->
+    <!-- summer: +25% armor on units -->
+    <SimulationDescriptorReference Name="AssimilationTraitBos"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitCeratan" Hidden="true">
+    <!-- +20% defense on units -->
+    <SimulationDescriptorReference Name="AssimilationTraitCeratan"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitDelvers" Hidden="true">
+    <!-- +1 dust on tiles providing dust -->
+    <SimulationDescriptorReference Name="AssimilationTraitDelvers"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitErycis" Hidden="true">
+    <!-- -50% movement cost on armies -->
+    <SimulationDescriptorReference Name="AssimilationTraitErycis"/>
+  </FactionTrait>
+  
+  <FactionTrait Name="AssimilationTraitHaunts" Hidden="true">
+    <!-- +1 science on tiles providing science -->
+    <SimulationDescriptorReference Name="AssimilationTraitHaunts"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitKazanji" Hidden="true">
+    <!-- -25% industry cost on units -->
+    <SimulationDescriptorReference Name="AssimilationTraitKazanji"/>
+  </FactionTrait>
+  
+  <FactionTrait Name="AssimilationTraitSilics" Hidden="true">
+    <!-- +1 strategic resource on mines -->
+    <SimulationDescriptorReference Name="AssimilationTraitSilics"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitSistersOfMercy" Hidden="true">
+    <!-- +100% life regeneration on armies -->
+    <SimulationDescriptorReference Name="AssimilationTraitSistersOfMercy"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitUrces" Hidden="true">
+    <!-- -25% industry cost on buildings -->
+    <SimulationDescriptorReference Name="AssimilationTraitUrces"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitJotus" Hidden="true">
+    <!-- +4 vision range on armies -->
+    <SimulationDescriptorReference Name="AssimilationTraitJotus"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitHurnas" Hidden="true">
+    <!-- +20% damage on units -->
+    <SimulationDescriptorReference Name="AssimilationTraitHurnas"/>
+  </FactionTrait>
+
+  <FactionTrait Name="AssimilationTraitGauran" Hidden="true">
+    <!-- +5% max health on units per village -->
+    <SimulationDescriptorReference Name="AssimilationTraitGauran"/>
+  </FactionTrait>
+ 
+  <FactionTrait Name="AssimilationTraitBirdhive" Hidden="true">
+    <!-- +5% initiative on units per village -->
+    <SimulationDescriptorReference Name="AssimilationTraitBirdhive"/>
+  </FactionTrait> 
+ 
+  <FactionTrait Name="AssimilationTraitGeldirus" Hidden="true">
+    <!-- +5% initiative on units per village -->
+    <SimulationDescriptorReference Name="AssimilationTraitGeldirus"/>
+  </FactionTrait> 
+
+</Datatable>

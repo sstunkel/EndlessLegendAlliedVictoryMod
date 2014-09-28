@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ============================================================================================================================================= -->
+  <!-- ============================================================================================================================================= -->
+  <!-- ===================================== NEED TO UPDATE THE DIFFERENT ACTION TO IMPLEMENT CRITICAL HERE ======================================== -->
+  <!-- ============================================================================================================================================= -->
+  <!-- ============================================================================================================================================= -->
+  <!-- ===================================== RAGE WIZARDS SETTLER ======================================== -->
+  <!-- ===================================== RAGE WIZARDS BATTLE MAGE ======================================== -->
+  <!-- ===================================== RAGE WIZARDS WITCH ======================================== -->
+
+  <BattleActionUnit Name="BattleActionUnitRageWizardsWitchAttack" Defensible="false" TerrainConsideration="Range" Type="Attack">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_RageWizardsWitch_MagicBolt_01" Speed="5"  Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="20" OriginBoneName="LeftHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_RageWizardsWitch_MagicBolt_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_RageWizardsWitch_MagicBolt_01" Speed="5"  Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="20" OriginBoneName="RightHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_RageWizardsWitch_MagicBolt_01_Hit</ImpactFx>
+      </Projectile>
+
+   </BattleActionData>
+  </BattleActionUnit>
+
+  <BattleActionUnit Name="BattleActionUnitRageWizardsWitchDefense" Defensible="false" TerrainConsideration="Range" Type="Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_RageWizardsWitch_MagicBolt_01" Speed="5" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="20" OriginBoneName="LeftHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_RageWizardsWitch_MagicBolt_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_RageWizardsWitch_MagicBolt_01" Speed="5" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="20" OriginBoneName="RightHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_RageWizardsWitch_MagicBolt_01_Hit</ImpactFx>
+      </Projectile>
+
+	</BattleActionData>
+  </BattleActionUnit>
+
+  
+  
+  
+  
+  <!--  RAGE WIZARDS PHOENIX -->
+  <!--  RAGE WIZARDS HERO  -->
+  <BattleActionUnit Name="BattleActionUnitRageWizardsHeroAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_RageWizardsWitch_MagicBolt_01" Speed="5" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="20" OriginBoneName="LeftHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_RageWizardsWitch_MagicBolt_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_RageWizardsWitch_MagicBolt_01" Speed="5" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="20" OriginBoneName="RightHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_RageWizardsWitch_MagicBolt_01_Hit</ImpactFx>
+      </Projectile>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_RageWizardsWitch_MagicBolt_01" Speed="5" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="20" OriginBoneName="Ctrl_LeftHand" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_RageWizardsWitch_MagicBolt_01_Hit</ImpactFx>
+      </Projectile>
+	  </BattleActionData>
+  </BattleActionUnit>
+
+</Datatable>

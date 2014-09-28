@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ExtendedGuiElement Name="QuestStatusAll">
+    <Title>%QuestStatusAllTitle</Title>
+    <Description>%QuestStatusAllDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="QuestStatusAll" />
+    </Icons>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="QuestStatusCurrent">
+    <Title>%QuestStatusCurrentTitle</Title>
+    <Description>%QuestStatusCurrentDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="QuestStatusCurrent" />
+    </Icons>
+    <Color Red="57" Green="205" Blue="205" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="QuestStatusComplete">
+    <Title>%QuestStatusCompleteTitle</Title>
+    <Description>%QuestStatusCompleteDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="QuestStatusComplete" />
+    </Icons>
+    <Color Red="151" Green="179" Blue="133" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="QuestStatusFailed">
+    <Title>%QuestStatusFailedTitle</Title>
+    <Description>%QuestStatusFailedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="QuestStatusFailed" />
+    </Icons>
+    <Color Red="193" Green="39" Blue="45" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <GuiElement Name="QuestTypeMain">
+    <Title>%QuestTypeMainTitle</Title>
+    <Description>%QuestTypeMainDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="QuestTypeSideVillage">
+    <Title>%QuestTypeSideTitle</Title>
+    <Description>%QuestTypeSideDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="QuestTypeSideVillageIconSmall" />
+      <Icon Size="Large" Path="QuestTypeSideVillageIconLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="QuestTypeSidePOI">
+    <Title>%QuestTypeSideTitle</Title>
+    <Description>%QuestTypeSideDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="QuestTypeSidePOIIconSmall" />
+      <Icon Size="Large" Path="QuestTypeSidePOIIconLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="QuestTypeCooperative">
+    <Title>%QuestTypeCooperativeTitle</Title>
+    <Description>%QuestTypeCooperativeDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="QuestTypeCompetitive">
+    <Title>%QuestTypeCompetitiveTitle</Title>
+    <Description>%QuestTypeCompetitiveDescription</Description>
+  </GuiElement>
+
+</Datatable>

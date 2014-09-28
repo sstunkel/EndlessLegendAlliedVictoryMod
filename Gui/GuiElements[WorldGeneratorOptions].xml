@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="WorldGeneratorOptionDefinitionWorldShape">
+    <Title>%WorldGeneratorOptionWorldShapeTitle</Title>
+    <Description>%WorldGeneratorOptionWorldShapeDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Options/WorldGeneratorOptionWorldShape" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="WorldGeneratorOptionDefinitionContinentShape">
+    <Title>%WorldGeneratorOptionContinentShapeTitle</Title>
+    <Description>%WorldGeneratorOptionContinentShapeDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Options/WorldGeneratorOptionContinentShape" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="WorldGeneratorOptionDefinitionTopography">
+    <Title>%WorldGeneratorOptionTopographyTitle</Title>
+    <Description>%WorldGeneratorOptionTopographyDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Options/WorldGeneratorOptionTopography" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="WorldGeneratorOptionDefinitionWorldDifficulty">
+    <Title>%WorldGeneratorOptionWorldDifficultyTitle</Title>
+    <Description>%WorldGeneratorOptionWorldDifficultyDescription</Description>
+    <Icons>
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/Options/WorldGeneratorOptionWorldDifficulty" />
+    </Icons>
+  </GuiElement>
+
+  </Datatable>

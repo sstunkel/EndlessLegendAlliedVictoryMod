@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="ItemDefinitions.xsl"?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################ -->
+  <!-- #######     WEAPON       ####### -->
+  <!-- ################################ -->
+
+  <!-- ########## 1H_Sword ########### -->
+
+  <!--Side Quest Item: Strategic4-->
+  <SimulationDescriptor Name="ItemAttributesItemSword1Strategic4Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.4"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.1"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.2"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.3"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Item: Strategic6-->
+  <SimulationDescriptor Name="ItemAttributesItemSword1Strategic6Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.5"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.05"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.45"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- ########## 2H_Sword ########### -->
+
+  <!--Side Quest Item: Strategic2-->
+  <SimulationDescriptor Name="ItemAttributesItemSword2Strategic2Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.3"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.1"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.4"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.3"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- ########## 2H_Axe ########### -->
+
+  <!--Side Quest Item: Strategic5-->
+  <SimulationDescriptor Name="ItemAttributesItemAxe2Strategic5Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.25"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.25"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.25"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.50"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  
+  <!-- ########### 2H_Bow ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 3-->
+  <SimulationDescriptor Name="ItemAttributesItemBow2Strategic3Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.4"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.15"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.3"   Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Droplist Reward: Strategic 4-->
+  <SimulationDescriptor Name="ItemAttributesItemBow2Strategic4Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.4"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.2"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.3"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- MAD FAIRIES Quest Reward-->
+  <SimulationDescriptor Name="ItemAttributesBow2MadFairiesMainQuest" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.2"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.2"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.1"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.5"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <!-- ########### 1H_Crossbow ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <SimulationDescriptor Name="ItemAttributesItemCrossbow1Strategic1Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.5"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.05"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.4"   Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <SimulationDescriptor Name="ItemAttributesItemCrossbow1Strategic2Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.3"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.05"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.15"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <!-- ########## 2H_Scepter ########### -->
+
+  <!--Side Quest Item: Strategic3-->
+  <SimulationDescriptor Name="ItemAttributesItemScepter2Strategic3Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumHealth"        Value="0.15" Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.4"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.1"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.3"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Item: Strategic4-->
+  <SimulationDescriptor Name="ItemAttributesItemScepter2Strategic4Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumHealth"        Value="0.15" Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.4"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.25"  Operation="Percent" Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.3"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- RAGE WIZARDS Quest Reward-->
+  <SimulationDescriptor Name="ItemAttributesScepter2RageWizardsMainQuest" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumHealth"        Value="0.2"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.5"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.5"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <!-- ########## 2H_Staff ########### -->
+
+  <!--Side Quest Item: Strategic1-->
+  <SimulationDescriptor Name="ItemAttributesItemStaff2Strategic1Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.3"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.05"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.15"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Item: Strategic6-->
+  <SimulationDescriptor Name="ItemAttributesItemStaff2Strategic6Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.5"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.1"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.4"   Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  
+
+  
+  <!-- ################################ -->
+  <!-- #######     ARMOR       ####### -->
+  <!-- ################################ -->
+
+  <!-- ########### Head ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <SimulationDescriptor Name="ItemAttributesItemHeadStrategic1Tier2SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="3"   Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <SimulationDescriptor Name="ItemAttributesItemHeadStrategic2Tier2SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="2"   Operation="Addition" Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth" Value="4"  Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- ########### Torso ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <SimulationDescriptor Name="ItemAttributesItemTorsoStrategic1Tier2SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="6"   Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <SimulationDescriptor Name="ItemAttributesItemTorsoStrategic2Tier2SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="3"   Operation="Addition" Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth" Value="12"  Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+  <!-- ########### Legs ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <SimulationDescriptor Name="ItemAttributesItemLegsStrategic1Tier2SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="3"   Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <SimulationDescriptor Name="ItemAttributesItemLegsStrategic2Tier2SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="2"   Operation="Addition" Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth" Value="4"  Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- ########### Shield ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <SimulationDescriptor Name="ItemAttributesItemShield1Strategic1Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"      Value="0.45"   Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.10"   Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--Side Quest Droplist Reward: Strategic 3-->
+  <SimulationDescriptor Name="ItemAttributesItemShield1Strategic3Tier4SideQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.8"   Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- ################################ -->
+  <!-- #######  ACCESSORIES     ####### -->
+  <!-- ################################ -->
+
+
+  <!-- ########### Tome ########### -->
+
+  <!--BROKEN LORDS Quest Reward: Dust-->
+  <SimulationDescriptor Name="ItemAttributesTomeBrokenLordsMainQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"   Value="7"   Operation="Addition" Path="../ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="CityDust"       Value="7"   Operation="Addition" Path="../ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="CityScience"    Value="7"   Operation="Addition" Path="../ClassCity" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--BROKEN LORDS Quest Reward: Dust-->
+  <SimulationDescriptor Name="ItemAttributesTomeBrokenLordsMainQuest2" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityScience"    Value="20"   Operation="Addition" Path="../ClassCity" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <!--NECROPHAGES Quest Reward: Incubator-->
+  <SimulationDescriptor Name="ItemAttributesTomeNecrophagesMainQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth" Value="100"  Operation="Subtraction" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--ROVING CLANS Quest Reward: Book-->
+  <SimulationDescriptor Name="ItemAttributesTomeRovingClansMainQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityIndustry"   Value="8"   Operation="Addition" Path="../ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="MaximumMovement" Operation="Addition" Value="1"   Path="../ClassArmy/ClassUnit"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- ########### Insignia ########### -->
+
+  <!--BROKEN LORDS Quest Reward: Dust-->
+  <SimulationDescriptor Name="ItemAttributesInsigniaBrokenLordsMainQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="6"   Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--VAULTERS Quest Reward: Strategic 1-->
+  <SimulationDescriptor Name="ItemAttributesInsigniaVaultersMainQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative" Operation="Addition"  Value="5" Path="../Garrison/ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--DRAKKENS Quest Reward: Pendant-->
+  <SimulationDescriptor Name="ItemAttributesInsigniaDrakkensMainQuest1" Type="ItemAttributes"/>
+
+  <!--CULTISTS Quest Reward: -->
+  <SimulationDescriptor Name="ItemAttributesInsigniaCultistsMainQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="AttributeDefense"     Value="0.35"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeInitiative"  Value="0.35"  Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeDamage"      Value="0.35"  Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--CULTISTS Quest Reward: -->
+  <SimulationDescriptor Name="ItemAttributesInsigniaCultistsMainQuest2" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="MaximumHealth"         Value="0.35" Operation="Percent"  Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="AttributeAttack"       Value="0.35" Operation="Percent"  Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- ########### Ring ########### -->
+
+  <!--BROKEN LORDS Quest Reward: Strategic 5-->
+  <SimulationDescriptor Name="ItemAttributesRingBrokenLordsMainQuest1" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="6"   Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!--BROKEN LORDS Quest Reward:Strategic 6-->
+  <SimulationDescriptor Name="ItemAttributesRingBrokenLordsMainQuest2" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="EquipmentMaximumHealth" Value="12"  Operation="Addition" Path="../ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="EquipmentDefense"       Value="3"   Operation="Addition" Path="../ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+
+
+  <!-- ################################ -->
+  <!-- ############  MISC.  ########### -->
+  <!-- ################################ -->
+
+  <SimulationDescriptor Name="OnlyOneEquippedHero" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="HeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="BrokenLordsFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="BrokenLordsHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MadFairiesFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MadFairiesHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="VaultersFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="VaultersHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MezariHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="RageWizardsFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="RageWizardsHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="NecrophagesFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="NecrophagesHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="RovingClansFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="RovingClansHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DrakkensFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="DrakkensHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CultistsFactionOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CultistsHeroesOnly" Type="ItemAttributes">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

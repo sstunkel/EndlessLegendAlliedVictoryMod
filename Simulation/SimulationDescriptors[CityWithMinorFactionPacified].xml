@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="CityWithBosPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="BosUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="BosUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityWithCeratanPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="CeratanUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="CeratanUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityWithDelversPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="DelversUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="DelversUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityWithErycisPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="ErycisUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="ErycisUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityWithHauntsPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="HauntsUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="HauntsUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityWithKazanjiPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="KazanjiUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="KazanjiUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityWithSilicsPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="SilicsUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="SilicsUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityWithSistersOfMercyPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="SistersOfMercyUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="SistersOfMercyUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="CityWithUrcesPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="UrcesUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="UrcesUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityWithJotusPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="JotusUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="JotusUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityWithHurnasPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="HurnasUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="HurnasUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityWithGauranPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="GauranUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="GauranUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityWithBirdhivePacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="BirdhiveUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="BirdhiveUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="CityWithGeldirusPacified" Type="CityWithMinorFactionPacified">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="GeldirusUnitProductionCostReduction"/>
+      <SimulationPropertyDescriptor Name="GeldirusUnitBuyoutReduction"/>
+    </SimulationPropertyDescriptors>
+  </SimulationDescriptor>
+
+</Datatable>

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- #################################### -->
+  <!-- #### BROKEN LORDS HERO PROFILES #### -->
+  <!-- #################################### -->
+  
+  <UnitProfile Name="UnitProfileBrokenLordsHero1" ProfileGuiElementName="UnitProfileBrokenLordsHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyBrokenLordsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileBrokenLordsHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityDustPopulationEfficiency"      Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileBrokenLordsHero2" ProfileGuiElementName="UnitProfileBrokenLordsHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyBrokenLordsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileBrokenLordsHero2"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostDust"              Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileBrokenLordsHero3" ProfileGuiElementName="UnitProfileBrokenLordsHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyBrokenLordsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileBrokenLordsHero3"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileBrokenLordsHero4" ProfileGuiElementName="UnitProfileBrokenLordsHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyBrokenLordsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileBrokenLordsHero4"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostDust"              Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileBrokenLordsHero5" ProfileGuiElementName="UnitProfileBrokenLordsHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyBrokenLordsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileBrokenLordsHero5"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostDust"              Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileBrokenLordsHero6" ProfileGuiElementName="UnitProfileBrokenLordsHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyBrokenLordsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileBrokenLordsHero6"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDamage"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityDustPopulationEfficiency"      Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeBalanced"/>
+  </UnitProfile>
+
+  <!--  Broken Lords Main Quest Hero 1 (Marquis) Profile -->
+  <UnitProfile Name="UnitProfileBrokenLordsHero7" ProfileGuiElementName="UnitProfileBrokenLordsHero7">
+    <UnitBodyDefinitionReference Name="UnitBodyBrokenLordsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileBrokenLordsHero7"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityUnsalable"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralInitiative"             Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostPrestige"          Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeBalanced"/>
+  </UnitProfile>
+
+
+
+  <!-- #################################### -->
+  <!-- ##### MAD FAIRIES HERO PROFILES #### -->
+  <!-- #################################### -->
+  
+  <UnitProfile Name="UnitProfileMadFairiesHero1" ProfileGuiElementName="UnitProfileMadFairiesHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyMadFairiesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMadFairiesHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityIndustryPopulationEfficiency"  Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralOverall"                Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+  
+  <UnitProfile Name="UnitProfileMadFairiesHero2" ProfileGuiElementName="UnitProfileMadFairiesHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyMadFairiesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMadFairiesHero2"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostIndustry"          Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileMadFairiesHero3" ProfileGuiElementName="UnitProfileMadFairiesHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyMadFairiesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMadFairiesHero3"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileMadFairiesHero4" ProfileGuiElementName="UnitProfileMadFairiesHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyMadFairiesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMadFairiesHero4"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDamage"                 Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralOverall"                Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileMadFairiesHero5" ProfileGuiElementName="UnitProfileMadFairiesHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyMadFairiesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMadFairiesHero5"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostFood"              Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostIndustry"          Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderMap"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileMadFairiesHero6" ProfileGuiElementName="UnitProfileMadFairiesHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyMadFairiesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMadFairiesHero6"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDamage"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityIndustryPopulationEfficiency"  Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderMap"/>
+  </UnitProfile>
+
+  <!--  Mad Fairies Main Quest Hero 1 (Architect) Profile -->
+  <UnitProfile Name="UnitProfileMadFairiesHero7" ProfileGuiElementName="UnitProfileMadFairiesHero7">
+    <UnitBodyDefinitionReference Name="UnitBodyMadFairiesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMadFairiesHero7"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostIndustry"          Level="2"/>
+    <ProfileAbilityReferences Name="UnitAbilityUnsalable"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeBalanced"/>
+  </UnitProfile>
+
+
+
+  <!-- #################################### -->
+  <!-- ##### NECROPHAGES HERO PROFILES #### -->
+  <!-- #################################### -->
+
+  <UnitProfile Name="UnitProfileNecrophagesHero1" ProfileGuiElementName="UnitProfileNecrophagesHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyNecrophagesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileNecrophagesHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilitySlavery"                       Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileNecrophagesHero2" ProfileGuiElementName="UnitProfileNecrophagesHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyNecrophagesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileNecrophagesHero2"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilitySlavery"                       Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDamage"                 Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileNecrophagesHero3" ProfileGuiElementName="UnitProfileNecrophagesHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyNecrophagesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileNecrophagesHero3"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDamage"                 Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileNecrophagesHero4" ProfileGuiElementName="UnitProfileNecrophagesHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyNecrophagesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileNecrophagesHero4"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostIndustry"          Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileNecrophagesHero5" ProfileGuiElementName="UnitProfileNecrophagesHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyNecrophagesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileNecrophagesHero5"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilitySlavery"                       Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralOverall"                Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderMap"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileNecrophagesHero6" ProfileGuiElementName="UnitProfileNecrophagesHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyNecrophagesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileNecrophagesHero6"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostFood"              Level="2"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostIndustry"          Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeBalanced"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileNecrophagesHero7" ProfileGuiElementName="UnitProfileNecrophagesHero7">
+    <UnitBodyDefinitionReference Name="UnitBodyNecrophagesHero"/>
+    <SimulationDescriptorReference Name="UnitProfileNecrophagesHero7"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilitySlavery"                       Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityUnsalable"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderMap"/>
+  </UnitProfile>
+
+
+
+  <!-- #################################### -->
+  <!-- #### RAGE WIZARDS HERO PROFILES #### -->
+  <!-- #################################### -->
+  
+  <UnitProfile Name="UnitProfileRageWizardsHero1" ProfileGuiElementName="UnitProfileRageWizardsHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRageWizardsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRageWizardsHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDamage"                 Level="2"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRageWizardsHero2" ProfileGuiElementName="UnitProfileRageWizardsHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRageWizardsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRageWizardsHero2"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralInitiative"             Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRageWizardsHero3" ProfileGuiElementName="UnitProfileRageWizardsHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRageWizardsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRageWizardsHero3"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralInitiative"             Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRageWizardsHero4" ProfileGuiElementName="UnitProfileRageWizardsHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRageWizardsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRageWizardsHero4"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralOverall"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeGovernor"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRageWizardsHero5" ProfileGuiElementName="UnitProfileRageWizardsHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRageWizardsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRageWizardsHero5"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderMap"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRageWizardsHero6" ProfileGuiElementName="UnitProfileRageWizardsHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRageWizardsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRageWizardsHero6"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralOverall"                Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeBalanced"/>
+  </UnitProfile>
+
+
+
+  <!-- ################################ -->
+  <!-- #### VAULTERS HERO PROFILES #### -->
+  <!-- ################################ -->
+  
+  <UnitProfile Name="UnitProfileVaultersHero1" ProfileGuiElementName="UnitProfileVaultersHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyVaultersHero"/>
+    <SimulationDescriptorReference Name="UnitProfileVaultersHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilitySciencePopulationEfficiency"   Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileVaultersHero2" ProfileGuiElementName="UnitProfileVaultersHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyVaultersHero"/>
+    <SimulationDescriptorReference Name="UnitProfileVaultersHero2"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="2"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileVaultersHero3" ProfileGuiElementName="UnitProfileVaultersHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyVaultersHero"/>
+    <SimulationDescriptorReference Name="UnitProfileVaultersHero3"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilitySciencePopulationEfficiency"   Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileVaultersHero4" ProfileGuiElementName="UnitProfileVaultersHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyVaultersHero"/>
+    <SimulationDescriptorReference Name="UnitProfileVaultersHero4"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileVaultersHero5" ProfileGuiElementName="UnitProfileVaultersHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyVaultersHero"/>
+    <SimulationDescriptorReference Name="UnitProfileVaultersHero5"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralInitiative"             Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileVaultersHero6" ProfileGuiElementName="UnitProfileVaultersHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyVaultersHero"/>
+    <SimulationDescriptorReference Name="UnitProfileVaultersHero6"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+
+
+  <!-- #################################### -->
+  <!-- #### ROVING CLANS HERO PROFILES #### -->
+  <!-- #################################### -->
+  
+  <UnitProfile Name="UnitProfileRovingClansHero1" ProfileGuiElementName="UnitProfileRovingClansHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRovingClansHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRovingClansHero1"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityDustPopulationEfficiency"      Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRovingClansHero2" ProfileGuiElementName="UnitProfileRovingClansHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRovingClansHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRovingClansHero2"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralInitiative"             Level="2"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostDust"              Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRovingClansHero3" ProfileGuiElementName="UnitProfileRovingClansHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRovingClansHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRovingClansHero3"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralInitiative"             Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRovingClansHero4" ProfileGuiElementName="UnitProfileRovingClansHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRovingClansHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRovingClansHero4"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityDustPopulationEfficiency"      Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRovingClansHero5" ProfileGuiElementName="UnitProfileRovingClansHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRovingClansHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRovingClansHero5"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralInitiative"             Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostDust"              Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileRovingClansHero6" ProfileGuiElementName="UnitProfileRovingClansHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyRovingClansHero"/>
+    <SimulationDescriptorReference Name="UnitProfileRovingClansHero6"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostFood"              Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityDustPopulationEfficiency"      Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+
+
+  <!-- #################################### -->
+  <!-- ####   DRAKKENS HERO PROFILES   #### -->
+  <!-- #################################### -->
+
+  <UnitProfile Name="UnitProfileDrakkensHero1" ProfileGuiElementName="UnitProfileDrakkensHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyDrakkensHero"/>
+    <SimulationDescriptorReference Name="UnitProfileDrakkensHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="2"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostFood"              Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileDrakkensHero2" ProfileGuiElementName="UnitProfileDrakkensHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyDrakkensHero"/>
+    <SimulationDescriptorReference Name="UnitProfileDrakkensHero2"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralOverall"                Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostPrestige"          Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileDrakkensHero3" ProfileGuiElementName="UnitProfileDrakkensHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyDrakkensHero"/>
+    <SimulationDescriptorReference Name="UnitProfileDrakkensHero3"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostPrestige"          Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileDrakkensHero4" ProfileGuiElementName="UnitProfileDrakkensHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyDrakkensHero"/>
+    <SimulationDescriptorReference Name="UnitProfileDrakkensHero4"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostFood"              Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileDrakkensHero5" ProfileGuiElementName="UnitProfileDrakkensHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyDrakkensHero"/>
+    <SimulationDescriptorReference Name="UnitProfileDrakkensHero5"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityFoodPopulationEfficiency"      Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileDrakkensHero6" ProfileGuiElementName="UnitProfileDrakkensHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyDrakkensHero"/>
+    <SimulationDescriptorReference Name="UnitProfileDrakkensHero6"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostPrestige"          Level="2"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostFood"              Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <!-- DownloadableContent.FounderPack -->
+  <UnitProfile Name="UnitProfileDrakkensHero7" ProfileGuiElementName="UnitProfileDrakkensHero7">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyDrakkensHero"/>
+    <SimulationDescriptorReference Name="UnitProfileDrakkensHero7"/>
+    <SimulationDescriptorReference Name="VariationD" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralOverall"                Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostFood"              Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+
+
+  <!-- #################################### -->
+  <!-- ####   CULTISTS HERO PROFILES   #### -->
+  <!-- #################################### -->
+
+  <UnitProfile Name="UnitProfileCultistsHero1" ProfileGuiElementName="UnitProfileCultistsHero1">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyCultistsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileCultistsHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostPrestige"          Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileCultistsHero2" ProfileGuiElementName="UnitProfileCultistsHero2">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyCultistsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileCultistsHero2"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="0"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileCultistsHero3" ProfileGuiElementName="UnitProfileCultistsHero3">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyCultistsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileCultistsHero3"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDamage"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileCultistsHero4" ProfileGuiElementName="UnitProfileCultistsHero4">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyCultistsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileCultistsHero4"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralAttack"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostPrestige"          Level="0"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileCultistsHero5" ProfileGuiElementName="UnitProfileCultistsHero5">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyCultistsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileCultistsHero5"/>
+    <SimulationDescriptorReference Name="VariationB" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityIndustryPopulationEfficiency"  Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  <UnitProfile Name="UnitProfileCultistsHero6" ProfileGuiElementName="UnitProfileCultistsHero6">
+    <Tags>Pool</Tags>
+    <UnitBodyDefinitionReference Name="UnitBodyCultistsHero"/>
+    <SimulationDescriptorReference Name="UnitProfileCultistsHero6"/>
+    <SimulationDescriptorReference Name="VariationC" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralHealth"                 Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostPrestige"          Level="2"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  
+  
+  <!-- ################################### -->
+  <!-- ##### MEZARI HERO PROFILES ###### -->
+  <!-- ################################### -->
+
+  <UnitProfile Name="UnitProfileMezariHero1" ProfileGuiElementName="UnitProfileMezariHero1">
+    <UnitBodyDefinitionReference Name="UnitBodyMezariHero"/>
+    <SimulationDescriptorReference Name="UnitProfileMezariHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"                Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilityInitialBoostScience"           Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+
+  
+  
+  <!-- ################################### -->
+  <!-- ##### TUTORIAL HERO PROFILES ###### -->
+  <!-- ################################### -->
+
+  <UnitProfile Name="UnitProfileTutorialHero1" ProfileGuiElementName="UnitProfileTutorialHero1">
+    <UnitBodyDefinitionReference Name="UnitBodyTutorialHero"/>
+    <SimulationDescriptorReference Name="UnitProfileTutorialHero1"/>
+    <SimulationDescriptorReference Name="VariationA" />
+    <SimulationDescriptorReference Name="UnitHero"/>
+    <ProfileAbilityReferences Name="UnitAbilityGeneralDefense"              Level="1"/>
+    <ProfileAbilityReferences Name="UnitAbilitySciencePopulationEfficiency" Level="1"/>
+    <UnitSkillAllocationSchemeReference Name="HeroSkillAllocationSchemeLeaderBattle"/>
+  </UnitProfile>
+    
+</Datatable>

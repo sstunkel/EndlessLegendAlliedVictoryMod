@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="HeroAffinityBrokenLords">
+    <Title>%FactionBrokenLordsTitle</Title>
+    <Description>%FactionBrokenLordsDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HeroAffinityRageWizards">
+    <Title>%FactionRageWizardsTitle</Title>
+    <Description>%FactionRageWizardsDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HeroAffinityMadFairies">
+    <Title>%FactionMadFairiesTitle</Title>
+    <Description>%FactionMadFairiesDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HeroAffinityNecrophages">
+    <Title>%FactionNecrophagesTitle</Title>
+    <Description>%FactionNecrophagesDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="HeroAffinityVaulters">
+    <Title>%FactionVaultersTitle</Title>
+    <Description>%FactionVaultersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HeroAffinityRovingClans">
+    <Title>%FactionRovingClansTitle</Title>
+    <Description>%FactionRovingClansDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HeroAffinityDrakkens">
+    <Title>%FactionDrakkensTitle</Title>
+    <Description>%FactionDrakkensDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HeroAffinityCultists">
+    <Title>%FactionCultistsTitle</Title>
+    <Description>%FactionCultistsDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HeroAffinityTutorial">
+    <Title>%FactionVaultersTitle</Title>
+    <Description>%FactionVaultersDescription</Description>
+  </GuiElement>
+
+</Datatable>

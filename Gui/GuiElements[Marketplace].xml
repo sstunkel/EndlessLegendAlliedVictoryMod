@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Filters -->
+  <GuiElement Name="MarketplaceFilterStrategic">
+    <Title>%MarketplaceFilterStrategicTitle</Title>
+    <Description>%MarketplaceFilterStrategicDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStrategicSmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="MarketplaceFilterLuxury">
+    <Title>%MarketplaceFilterLuxuryTitle</Title>
+    <Description>%MarketplaceFilterLuxuryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryLuxurySmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="MarketplaceFilterBooster">
+    <Title>%MarketplaceFilterBoosterTitle</Title>
+    <Description>%MarketplaceFilterBoosterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryStockpileHD" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="MarketplaceFilterUnit">
+    <Title>%MarketplaceFilterUnitTitle</Title>
+    <Description>%MarketplaceFilterUnitDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryUnitSmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="MarketplaceFilterHero">
+    <Title>%MarketplaceFilterHeroTitle</Title>
+    <Description>%MarketplaceFilterHeroDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="classHeroHD" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- Sorts -->
+  <GuiElement Name="MarketplaceSortLocalizedName">
+    <Title>%MarketplaceSortLocalizedNameTitle</Title>
+    <Description>%MarketplaceSortLocalizedNameDescription</Description>
+  </GuiElement>
+  <GuiElement Name="MarketplaceSortClass">
+    <Title>%MarketplaceSortClassTitle</Title>
+    <Description>%MarketplaceSortClassDescription</Description>
+  </GuiElement>
+  <GuiElement Name="MarketplaceSortLevel">
+    <Title>%MarketplaceSortLevelTitle</Title>
+    <Description>%MarketplaceSortLevelDescription</Description>
+  </GuiElement>
+  <GuiElement Name="MarketplaceSortQuantity">
+    <Title>%MarketplaceSortQuantityTitle</Title>
+    <Description>%MarketplaceSortQuantityDescription</Description>
+  </GuiElement>
+  <GuiElement Name="MarketplaceSortPriceLevel">
+    <Title>%MarketplaceSortPriceLevelTitle</Title>
+    <Description>%MarketplaceSortPriceLevelDescription</Description>
+  </GuiElement>
+  <GuiElement Name="MarketplaceSortPrice">
+    <Title>%MarketplaceSortPriceTitle</Title>
+    <Description>%MarketplaceSortPriceDescription</Description>
+  </GuiElement>
+</Datatable>

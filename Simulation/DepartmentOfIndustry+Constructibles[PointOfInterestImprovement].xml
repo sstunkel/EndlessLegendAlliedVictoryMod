@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic1" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic1</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic1</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic1" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyStrategicExtractionCommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic1) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic1)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic1Tutorial" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic1</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic1</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic1" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyUnlockStrategicExtractorTutorial</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic1) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic1)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic2" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic2</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic2</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic2" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyStrategicExtractionCommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic2) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic2)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic2Tutorial" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic2</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic2</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic2" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyUnlockStrategicExtractorTutorial</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic2) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic2)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic3" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">300</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic3</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic3</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic3" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyStrategicExtractionUncommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic3) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic3)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic4" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">300</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic4</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic4</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic4" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyStrategicExtractionUncommon</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic4) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic4)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic5" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">600</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic5</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic5</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic5" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyStrategicExtractionRare</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic5) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic5)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+  
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Strategic6" SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">600</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Strategic6</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic6</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Strategic6" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyStrategicExtractionRare</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Strategic6) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeStrategic6)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury1"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury1</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury1</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury1" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionCommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury1) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury1)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury1Tutorial"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury1</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury1</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury1" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyUnlockLuxuryExtractorTutorial</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury1) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury1)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury2"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury2</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury2</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury2" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionCommon</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury2) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury2)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury2Tutorial"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury2</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury2</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury2" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyUnlockLuxuryExtractorTutorial</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury2) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury2)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury3"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury3</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury3</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury3" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionCommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury3) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury3)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury3Tutorial"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury3</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury3</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury3" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyUnlockLuxuryExtractorTutorial</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury3) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury3)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury4"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury4</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury4</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury4" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionCommon</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury4) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury4)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury4Tutorial"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury4</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury4</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury4" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyUnlockLuxuryExtractorTutorial</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury4) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury4)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury5"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury5</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury5</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury5" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionCommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury5) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury5)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury5Tutorial"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">60</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury5</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury5</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury5" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyUnlockLuxuryExtractorTutorial</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury5) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury5)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury6"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">300</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury6</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury6</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury6" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionUncommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury6) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury6)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury7"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">300</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury7</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury7</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury7" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionUncommon</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury7) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury7)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury8"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">300</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury8</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury8</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury8" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionUncommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury8) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury8)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury9"    SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">300</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury9</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury9</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury9" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionUncommon</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury9) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury9)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury10"   SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">300</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury10</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury10</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury10" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionUncommon</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury10) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury10)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  
+  
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury11"   SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">600</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury11</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury11</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury11" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionRare</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury11) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury11)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury12"   SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">600</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury12</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury12</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury12" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionRare</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury12) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury12)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury13"   SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">600</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury13</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury13</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury13" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionRare</TechnologyPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity, CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury13) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury13)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury14"   SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">600</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury14</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury14</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury14" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionRare</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury14) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury14)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="ResourceExtractor_Luxury15"   SubCategory="SubCategoryExploit">
+    <Cost ResourceName="Production" Instant="false">600</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
+    <PointOfInterestTemplateName>ResourceDeposit_Luxury15</PointOfInterestTemplateName>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury15</PathPrerequisite>
+    <SimulationDescriptorReference Name="ResourceExtractor_Luxury15" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLuxuryExtractionRare</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(ClassCity/ResourceExtractor_Luxury15) lt $Count(../ClassCity/PointOfInterestTypeResourceDeposit,ResourceDepositTypeLuxury15)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+
+
+  <PointOfInterestImprovementDefinition Name="WatchTower0"                  SubCategory="SubCategoryVision">
+    <NextUpgradeName>WatchTower1</NextUpgradeName>
+    <Cost ResourceName="Production" Instant="false">160</Cost>
+    <PointOfInterestTemplateName>WatchTower</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="WatchTower0" />
+    <SimulationDescriptorReference Name="WatchTowerHealthEffectArea" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRoad</TechnologyPrerequisite>
+
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire/ClassResearch,TechnologyTradeRouteBonus1</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire/ClassResearch,TechnologyTradeRouteBonus3</PathPrerequisite>
+
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">($Count(../ClassCity/WatchTower0) + $Count(../ClassCity/WatchTower1)+ $Count(../ClassCity/WatchTower2) )lt $Count(../ClassCity/PointOfInterestTypeWatchTower)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="WatchTower1"                  SubCategory="SubCategoryVision">
+    <NextUpgradeName>WatchTower2</NextUpgradeName>
+    <Cost ResourceName="Production" Instant="false">160</Cost>
+    <PointOfInterestTemplateName>WatchTower</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="WatchTower1" />
+    <SimulationDescriptorReference Name="WatchTowerHealthEffectArea" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyTradeRouteBonus1</TechnologyPrerequisite>
+
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire/ClassResearch,TechnologyTradeRouteBonus3</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">($Count(../ClassCity/WatchTower0) + $Count(../ClassCity/WatchTower1)+ $Count(../ClassCity/WatchTower2) )lt $Count(../ClassCity/PointOfInterestTypeWatchTower)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="WatchTower2"                  SubCategory="SubCategoryVision">
+    <Cost ResourceName="Production" Instant="false">160</Cost>
+    <PointOfInterestTemplateName>WatchTower</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="WatchTower2" />
+    <SimulationDescriptorReference Name="WatchTowerHealthEffectArea" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyTradeRouteBonus3</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">($Count(../ClassCity/WatchTower0) + $Count(../ClassCity/WatchTower1)+ $Count(../ClassCity/WatchTower2) )lt $Count(../ClassCity/PointOfInterestTypeWatchTower)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  
+  <PointOfInterestImprovementDefinition Name="DestroyedVillage"             SubCategory="SubCategoryVillage">
+    <PathPrerequisite Flags="Prerequisite,Discard">false</PathPrerequisite>
+    <SimulationDescriptorReference Name="DestroyedVillage" />
+    <PathPrerequisite Flags="Prerequisite,Discard">false</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege">ClassCity,CityStatusSiege</PathPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="QuestPOI"                     SubCategory="SubCategoryQuestPOI">
+    <PathPrerequisite Flags="Prerequisite,Discard">false</PathPrerequisite>
+    <PointOfInterestTemplateName>QuestPOI</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="QuestPOI" />
+  </PointOfInterestImprovementDefinition>
+
+
+
+  <PointOfInterestImprovementDefinition Name="Village_Erycis"               SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Erycis</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Erycis" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeErycis</PathPrerequisite>
+   <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeErycis,Village_Erycis) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeErycis)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+  
+  <PointOfInterestImprovementDefinition Name="Village_Urces"                SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Urces</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Urces" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeUrces</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeUrces,Village_Urces) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeUrces)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+  
+  <PointOfInterestImprovementDefinition Name="Village_Ceratan"              SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Ceratan</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Ceratan" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeCeratan</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,Village_Ceratan) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeCeratan)</InterpreterPrerequisite>  
+</PointOfInterestImprovementDefinition>
+  
+  <PointOfInterestImprovementDefinition Name="Village_Kazanji"              SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Kazanji</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Kazanji" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeKazanji</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeKazanji,Village_Kazanji) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeKazanji)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+  
+  <PointOfInterestImprovementDefinition Name="Village_Bos"                  SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Bos</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Bos" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeBos</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeBos,Village_Bos) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeBos)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="Village_Silics"               SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Silics</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Silics" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeSilics</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeSilics,Village_Silics) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeSilics)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+  
+  <PointOfInterestImprovementDefinition Name="Village_Delvers"              SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Delvers</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Delvers" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeDelvers</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeDelvers,Village_Delvers) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeDelvers)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+  
+  <PointOfInterestImprovementDefinition Name="Village_SistersOfMercy"       SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_SistersOfMercy</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_SistersOfMercy" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeSistersOfMercy</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeSistersOfMercy,Village_SistersOfMercy) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeSistersOfMercy)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="Village_Haunts"               SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Haunts</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Haunts" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeHaunts</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeHaunts,Village_Haunts) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeHaunts)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="Village_Jotus"                SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Jotus</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Jotus" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeJotus</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeJotus,Village_Jotus) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeJotus)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="Village_Hurnas"               SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Hurnas</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Hurnas" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeHurnas</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeHurnas,Village_Hurnas) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeHurnas)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="Village_Gauran"               SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Gauran</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Gauran" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeGauran</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeGauran,Village_Gauran) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeGauran)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="Village_Birdhive"               SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Birdhive</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Birdhive" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeBirdhive</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeBirdhive,Village_Birdhive) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeBirdhive)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+  <PointOfInterestImprovementDefinition Name="Village_Geldirus"               SubCategory="SubCategoryVillage">
+    <Cost ResourceName="Production" Instant="false">120</Cost>
+    <PointOfInterestTemplateName>Village_Geldirus</PointOfInterestTemplateName>
+    <SimulationDescriptorReference Name="Village_Geldirus" />
+    <SimulationDescriptorReference Name="RebuiltVillage" />
+    <SimulationDescriptorReference Name="ExploitedPointOfInterest" />
+    <PathPrerequisite        Inverted="true"  Flags="Prerequisite,Siege,AIEconomicRatio">ClassCity,CityStatusSiege</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,AIEconomicRatio">../ClassCity/PointOfInterestTypeVillage,VillageTypeGeldirus</PathPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">$Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeGeldirus,Village_Geldirus) lt $Count(../ClassCity/PointOfInterestTypeVillage,VillageTypeGeldirus)</InterpreterPrerequisite>
+  </PointOfInterestImprovementDefinition>
+
+</Datatable>

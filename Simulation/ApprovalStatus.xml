@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- City Approval -->
+  <!-- Strike : from 0% to 10% included -->
+  <ApprovalStatus                   Name="ApprovalStatusCity0"      TargetClass="ClassCity" MinimalApproval="0"    MaximalApproval="11">
+    <SimulationDescriptorReference  Name="ApprovalStatusCity0"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityUnhappy"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityStrike"/>
+  </ApprovalStatus>
+
+  <!-- Unhappy : between 10% and 40% (not included) -->
+  <ApprovalStatus                   Name="ApprovalStatusCity1"      TargetClass="ClassCity" MinimalApproval="11"   MaximalApproval="40">
+    <SimulationDescriptorReference  Name="ApprovalStatusCity1"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityUnhappy"/>
+  </ApprovalStatus>
+
+  <!-- Content : from 40% to 60% included -->
+  <ApprovalStatus                   Name="ApprovalStatusCity2"     TargetClass="ClassCity" MinimalApproval="40"   MaximalApproval="61">
+    <SimulationDescriptorReference  Name="ApprovalStatusCity2"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityContent"/>
+  </ApprovalStatus>
+
+  <!-- Happy : between 60% and 90% (not included) -->
+  <ApprovalStatus                   Name="ApprovalStatusCity3"     TargetClass="ClassCity" MinimalApproval="61"   MaximalApproval="90">
+    <SimulationDescriptorReference  Name="ApprovalStatusCity3"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityContent"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityHappy"/>
+  </ApprovalStatus>
+
+  <!-- Ecstatic : from 90% to 100% included -->
+  <ApprovalStatus                   Name="ApprovalStatusCity4"     TargetClass="ClassCity" MinimalApproval="90"   MaximalApproval="100">
+    <SimulationDescriptorReference  Name="ApprovalStatusCity4"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityContent"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityHappy"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagCityEcstatic"/>
+  </ApprovalStatus>
+
+
+
+  <!-- Empire Support -->
+  <!-- Rebellion : from 0% to 10% included -->
+  <ApprovalStatus                   Name="ApprovalStatusEmpire0"    TargetClass="ClassEmpire" MinimalApproval="0"  MaximalApproval="11">
+    <SimulationDescriptorReference  Name="ApprovalStatusEmpire0"/>
+  </ApprovalStatus>
+  
+  <!-- Unhappy : between 10% and 40% (not included) -->
+  <ApprovalStatus                   Name="ApprovalStatusEmpire1"    TargetClass="ClassEmpire" MinimalApproval="11"  MaximalApproval="40">
+    <SimulationDescriptorReference  Name="ApprovalStatusEmpire1"/>
+  </ApprovalStatus>
+
+  <!-- Content : from 40% to 60% included -->
+  <ApprovalStatus                   Name="ApprovalStatusEmpire2"   TargetClass="ClassEmpire" MinimalApproval="40" MaximalApproval="61">
+    <SimulationDescriptorReference  Name="ApprovalStatusEmpire2"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagEmpireContent"/>
+  </ApprovalStatus>
+
+  <!-- Happy : between 60% and 90% (not included) -->
+  <ApprovalStatus                   Name="ApprovalStatusEmpire3"   TargetClass="ClassEmpire" MinimalApproval="61" MaximalApproval="90">
+    <SimulationDescriptorReference  Name="ApprovalStatusEmpire3"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagEmpireContent"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagEmpireHappy"/>
+  </ApprovalStatus>
+
+  <!-- Fervent : from 90% to 100% included -->
+  <ApprovalStatus                   Name="ApprovalStatusEmpire4"   TargetClass="ClassEmpire" MinimalApproval="90" MaximalApproval="100">
+    <SimulationDescriptorReference  Name="ApprovalStatusEmpire4"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagEmpireContent"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagEmpireHappy"/>
+    <SimulationDescriptorReference  Name="ApprovalStatusTagEmpireFervent"/>
+  </ApprovalStatus>
+
+</Datatable>

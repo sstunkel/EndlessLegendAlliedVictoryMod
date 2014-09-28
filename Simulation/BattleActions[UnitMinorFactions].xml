@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- ####################################### -->
+  <!-- ######      URCES GIANT OGRE     ###### -->
+  <!-- ####################################### -->
+  <!-- Prerequisites for BattleAction: default is initiator; "Target;" to use target properties-->
+   
+  
+  <!-- ##################################### -->
+  <!-- ######      CERATAN DRIDER     ###### -->
+  <!-- ##################################### -->
+
+  <!-- Counter Hit -->
+  <BattleActionUnit Name="BattleActionUnitCeratanDriderAttackDefenseSupport" Defensible="false" TerrainConsideration="Range" Type="Attack Defense Support">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_CeratanDrider_01" Speed="5" Trajectory="parabolic" AccelerationDistance="0.5" SpeedReductionFactorMax="0.5" Angle="45" OriginBoneName="Abd3" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.85">
+        <ImpactFx>Pr_CeratanDrider_01_Hit</ImpactFx>
+      </Projectile>
+    </BattleActionData>
+  </BattleActionUnit>
+
+
+
+  <!-- ##################################### -->
+  <!-- ######       ERYCIS HYDRA      ###### -->
+  <!-- ##################################### -->
+
+
+
+  <!-- ##################################### -->
+  <!-- ######      KAZANJI DEVIL      ###### -->
+  <!-- ##################################### -->
+  
+  
+
+  <!-- ===================================== BOS CENTAUR ======================================== -->
+
+  <!-- ##################################### -->
+  <!-- ######       SILICS GOLEM      ###### -->
+  <!-- ##################################### -->
+
+
+
+  <!-- ###################################### -->
+  <!-- ######       DELVERS DWARF      ###### -->
+  <!-- ###################################### -->
+  
+
+  
+  <!-- ################################################ -->
+  <!-- ######       SISTERS OF MERCY JUSTICERE    ##### -->
+  <!-- ################################################ -->
+  
+
+
+  <!-- ###################################### -->
+  <!-- ######       HAUNTS SPECTER     ###### -->
+  <!-- ###################################### -->
+
+
+
+  <!-- ###################################### -->
+  <!-- ######       JOTUS ETTIN     ######### -->
+  <!-- ###################################### -->
+  <BattleActionUnit Name="BattleActionUnitJotusEttinAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Jotus_Arrow_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" Angle="45" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Jotus_Arrow_01" RangeRestriction="CloseRange" Speed="5" Trajectory="linear" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+    </BattleActionData>
+  </BattleActionUnit>
+
+
+
+  <!-- ###################################### -->
+  <!-- ######       HURNAS ORC      ######### -->
+  <!-- ###################################### -->
+  <BattleActionUnit Name="BattleActionUnitHurnasOrcAttackDefense" Defensible="false" TerrainConsideration="Range" Type="Attack Defense">
+    <BattleEffects TargetsFilter="Target Alive">
+      <BattleEffect_Void Name="BattleEffectTriggerData" />
+    </BattleEffects>
+
+    <BattleActionData>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Hurnas_Arrow_01" RangeRestriction="LongRange" Speed="5" Trajectory="parabolic" Angle="45" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+      <Projectile AssetPath="Prefabs/Effects/Projectiles/Pr_Hurnas_Arrow_01" RangeRestriction="CloseRange" Speed="5" Trajectory="linear" OriginBoneName="AuxDummy_Root" TargetBoneName="Hips"  ProgressionRatioBeforeFadeOut="0.90"/>
+    </BattleActionData>
+  </BattleActionUnit>
+  
+  
+  
+</Datatable>

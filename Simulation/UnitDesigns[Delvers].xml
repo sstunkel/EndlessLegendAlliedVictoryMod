@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ########################################################### -->
+  <!-- #################### DELVERS DWARF UNITS ################## -->
+  <!-- ########################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignDelversDwarf#1"                      Model="1070100">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction tribes to create village armies and roaming armies -->
+  <UnitDesign Name="UnitDesignDelversDwarf#MinorEmpireEra1"        Model="1070111">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MinorEmpireEra2"        Model="1070112">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier2#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MinorEmpireEra3"        Model="1070113">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier3#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MinorEmpireEra4"        Model="1070114">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier1#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MinorEmpireEra5"        Model="1070115">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier2#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MinorEmpireEra6"        Model="1070116">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier3#1" />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Legs"                            ItemName=""      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignDelversDwarf#MercenaryEra1"          Model="1070121">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MercenaryEra2"          Model="1070122">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MercenaryEra3"          Model="1070123">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+   </UnitEquipmentSet>
+ </UnitDesign>
+ <UnitDesign Name="UnitDesignDelversDwarf#MercenaryEra4"          Model="1070124">
+   <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+   <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers,Mercenary</PathPrerequisite>
+   <Tags>Era4</Tags>
+   <UnitEquipmentSet>
+     <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier1#1" />
+     <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier1#1" />
+     <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+     <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+     <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+     <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MercenaryEra5"          Model="1070125">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#MercenaryEra6"          Model="1070126">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignDelversDwarf#ConvertedEra1"          Model="1070131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <Tags>ConvertedVillageUnit,Era1,Delvers,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#ConvertedEra2"          Model="1070132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <Tags>ConvertedVillageUnit,Era2,Delvers,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#ConvertedEra3"          Model="1070133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <Tags>ConvertedVillageUnit,Era3,Delvers,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#ConvertedEra4"          Model="1070134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <Tags>ConvertedVillageUnit,Era4,Delvers,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier1#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#ConvertedEra5"          Model="1070135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <Tags>ConvertedVillageUnit,Era5,Delvers,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier2#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#ConvertedEra6"          Model="1070136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <Tags>ConvertedVillageUnit,Era6,Delvers,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2DustTier3#1" />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"      />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Used by Quests to spawn armies -->
+  <UnitDesign Name="UnitDesignDelversDwarf#Mace"                   Model="1070103">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,QuestNPC</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""                       />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName=""                       />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignDelversDwarf#MinorEmpire"            Model="1070101">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemHammer2IronTier1#1" />
+      <Slot Name="Head"                            ItemName=""                       />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Legs"                            ItemName=""                       />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignDelversDwarf#Mercenary"              Model="1070102">
+    <UnitBodyDefinitionReference Name="UnitBodyDelversDwarf" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityDelvers,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

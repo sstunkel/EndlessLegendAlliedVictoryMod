@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ######################################################### -->
+  <!-- ################## CERATAN DRIDER UNITS ################# -->
+  <!-- ######################################################### --> 
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignCeratanDrider#1"                     Model="1030100">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor/EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+  </UnitDesign>
+  
+  <!--Used by the Minor Faction tribes to create village armies and roaming armies-->
+  <UnitDesign Name="UnitDesignCeratanDrider#MinorEmpireEra1"       Model="1030111">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MinorEmpireEra2"       Model="1030112">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1"   />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MinorEmpireEra3"       Model="1030113">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1"   />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MinorEmpireEra4"       Model="1030114">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1"   />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MinorEmpireEra5"       Model="1030115">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1"   />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MinorEmpireEra6"       Model="1030116">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1"   />
+      <Slot Name="Head"                            ItemName=""      />
+      <Slot Name="Torso"                           ItemName=""     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignCeratanDrider#MercenaryEra1"         Model="1030121">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MercenaryEra2"         Model="1030122">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MercenaryEra3"         Model="1030123">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MercenaryEra4"         Model="1030124">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan,Mercenary</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MercenaryEra5"         Model="1030125">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#MercenaryEra6"         Model="1030126">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignCeratanDrider#ConvertedEra1"         Model="1030131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <Tags>ConvertedVillageUnit,Era1,Ceratan,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#ConvertedEra2"         Model="1030132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <Tags>ConvertedVillageUnit,Era2,Ceratan,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier2#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#ConvertedEra3"         Model="1030133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <Tags>ConvertedVillageUnit,Era3,Ceratan,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier3#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#ConvertedEra4"         Model="1030134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <Tags>ConvertedVillageUnit,Era4,Ceratan,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier1#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier1#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#ConvertedEra5"         Model="1030135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <Tags>ConvertedVillageUnit,Era5,Ceratan,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier2#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignCeratanDrider#ConvertedEra6"         Model="1030136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <Tags>ConvertedVillageUnit,Era6,Ceratan,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2DustTier3#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2DustTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"      />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"     />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignCeratanDrider#MinorEmpire"           Model="1030101">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="OffHand"                         ItemName="ItemClaw2IronTier1#1"   />
+      <Slot Name="Head"                            ItemName=""                       />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"     />
+      <Slot Name="Accessory0"                      ItemName=""                       />
+      <Slot Name="Accessory1"                      ItemName=""                       />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName="" />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  
+  <UnitDesign Name="UnitDesignCeratanDrider#Mercenary"             Model="1030102">
+    <UnitBodyDefinitionReference Name="UnitBodyCeratanDrider" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityCeratan,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

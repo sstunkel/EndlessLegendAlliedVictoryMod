@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ########################################## -->
+  <!-- ######            CUSTOM            ###### -->
+  <!-- ########################################## -->
+
+  <!-- Deep Generator -->
+  <!-- Cannot be used, as it requires the Holy resource -->
+  <FactionTrait Name="FactionTraitVaulters2Custom"                SubCategory="FactionTechnologyTrait" Family="Technology" Custom="true" Cost="15">
+    <Prerequisites>!AffinityVaulters,!AffinityMezari,!AffinityBrokenLords,!AffinityMadFairies,!AffinityCultists,!AffinityNecrophages,!AffinityDrakkens,!AffinityRovingClans,!AffinityRageWizards</Prerequisites>
+    <FactionTraitTooltipOverride Type="Technology" OverrideName="TechnologyDefinitionVaulters2Custom"/>
+    <SimulationDescriptorReference Name="FactionTraitVaulters2Custom"/>
+  </FactionTrait>
+
+  <!-- Strength of the Vault -->
+  <FactionTrait Name="FactionTraitVaulters3Custom"                SubCategory="FactionTechnologyTrait" Family="Technology" Custom="true" Cost="5">
+    <Prerequisites>!AffinityVaulters,!AffinityMezari</Prerequisites>
+    <FactionTraitTooltipOverride Type="Technology" OverrideName="TechnologyDefinitionVaulters3Custom"/>
+    <SimulationDescriptorReference Name="FactionTraitVaulters3Custom"/>
+  </FactionTrait>
+
+  <!-- Endless Recycling -->
+  <FactionTrait Name="FactionTraitVaulters4Custom"                SubCategory="FactionTechnologyTrait" Family="Technology" Custom="true" Cost="15">
+    <Prerequisites>!AffinityVaulters,!AffinityMezari</Prerequisites>
+    <FactionTraitTooltipOverride Type="Technology" OverrideName="TechnologyDefinitionVaulters4Custom"/>
+    <SimulationDescriptorReference Name="FactionTraitVaulters4Custom"/>
+  </FactionTrait>
+
+  <!-- Winter Shelters -->
+  <FactionTrait Name="FactionTraitVaulters6Custom"                SubCategory="TechnologyTrait"        Family="Technology" Custom="true" Cost="10">
+    <Prerequisites>!AffinityVaulters,!AffinityMezari</Prerequisites>
+    <Command Name="UnlockTechnology" Arguments="TechnologyDefinitionVaulters6Custom"/>
+  </FactionTrait>
+
+  <!-- Arcana Use -->
+  <FactionTrait Name="FactionTraitRageWizardsArcanaUseCustom"     SubCategory="AffinityTrait"                                            Cost="0" Hidden="true">
+    <SimulationDescriptorReference Name="FactionTraitRageWizardsArcanaUse"/>
+  </FactionTrait>
+
+  <!-- Founder Pack -->
+  <FactionTrait Name="FactionTraitFounderPack1"                   SubCategory="StandardTrait"        Family="Trait" Custom="true" Cost="10">
+    <Prerequisites>dlc:FounderPack</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitFounderPack1"/>
+    <SimulationDescriptorReference Name="WinterMovementReductionImmunity"/>
+  </FactionTrait>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######          DIPLOMACY           ###### -->
+  <!-- ########################################## -->
+  
+  <!-- Naive -->
+  <FactionTrait Name="FactionTraitDiplomacy1Level1"     SubCategory="CustomTrait" Family="Diplomacy" Root="FactionTraitDiplomacy1" Level="1" Custom="true" Cost="5">
+    <SimulationDescriptorReference Name="FactionTraitDiplomacy1Level1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitDiplomacy1Level2"     SubCategory="CustomTrait" Family="Diplomacy" Root="FactionTraitDiplomacy1" Level="2" Custom="true" Cost="10">
+    <SimulationDescriptorReference Name="FactionTraitDiplomacy1Level2"/>
+  </FactionTrait>
+
+
+
+  <!-- ########################################## -->
+  <!-- ######             ARMY             ###### -->
+  <!-- ########################################## -->
+
+  <!-- Meticulous Analysis -->
+  <FactionTrait Name="FactionTraitArmy1Level1"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy1" Level="1" Custom="true" Cost="3">
+    <SimulationDescriptorReference Name="FactionTraitArmy1Level1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitArmy1Level2"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy1" Level="2" Custom="true" Cost="6">
+    <SimulationDescriptorReference Name="FactionTraitArmy1Level2"/>
+  </FactionTrait>
+
+  <!-- Fragile Health -->
+  <FactionTrait Name="FactionTraitArmy2Level1"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy2" Level="1" Custom="true" Cost="-3">
+    <SimulationDescriptorReference Name="FactionTraitArmy2Level1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitArmy2Level2"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy2" Level="2" Custom="true" Cost="-6">
+    <SimulationDescriptorReference Name="FactionTraitArmy2Level2"/>
+  </FactionTrait>
+
+  <!-- Big Armies -->
+  <FactionTrait Name="FactionTraitArmy3PositiveLevel1"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy3Positive" Level="1" Custom="true" Cost="10">
+    <Prerequisites>!FactionTraitArmy3NegativeLevel1,!FactionTraitArmy3NegativeLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy3PositiveLevel1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitArmy3PositiveLevel2"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy3Positive" Level="2" Custom="true" Cost="25">
+    <Prerequisites>!FactionTraitArmy3NegativeLevel1,!FactionTraitArmy3NegativeLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy3PositiveLevel2"/>
+  </FactionTrait>
+
+  <!-- Anarchists -->
+  <FactionTrait Name="FactionTraitArmy3NegativeLevel1"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy3Negative" Level="1" Custom="true" Cost="-6">
+    <Prerequisites>!FactionTraitArmy3PositiveLevel1,!FactionTraitArmy3PositiveLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy3NegativeLevel1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitArmy3NegativeLevel2"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy3Negative" Level="2" Custom="true" Cost="-15">
+    <Prerequisites>!FactionTraitArmy3PositiveLevel1,!FactionTraitArmy3PositiveLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy3NegativeLevel2"/>
+  </FactionTrait>
+
+  <!-- Fast Travelers -->
+  <FactionTrait Name="FactionTraitArmy4PositiveLevel1"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy4Positive" Level="1" Custom="true" Cost="10">
+    <Prerequisites>!FactionTraitArmy4NegativeLevel1,!FactionTraitArmy4NegativeLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy4PositiveLevel1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitArmy4PositiveLevel2"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy4Positive" Level="2" Custom="true" Cost="25">
+    <Prerequisites>!FactionTraitArmy4NegativeLevel1,!FactionTraitArmy4NegativeLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy4PositiveLevel2"/>
+  </FactionTrait>
+
+  <!-- Slow Travelers -->
+  <FactionTrait Name="FactionTraitArmy4NegativeLevel1"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy4Negative" Level="1" Custom="true" Cost="-6">
+    <Prerequisites>!FactionTraitArmy4PositiveLevel1,!FactionTraitArmy4PositiveLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy4NegativeLevel1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitArmy4NegativeLevel2"     SubCategory="CustomTrait" Family="Military" Root="FactionTraitArmy4Negative" Level="2" Custom="true" Cost="-15">
+    <Prerequisites>!FactionTraitArmy4PositiveLevel1,!FactionTraitArmy4PositiveLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy4NegativeLevel2"/>
+  </FactionTrait>
+
+  <!-- Offense Last -->
+  <FactionTrait Name="FactionTraitArmy5"     SubCategory="CustomTrait" Family="Military" Custom="true" Cost="-5">
+    <Prerequisites>!FactionTraitArmy7</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy5"/>
+  </FactionTrait>
+
+  <!-- Weak Defense -->
+  <FactionTrait Name="FactionTraitArmy6"     SubCategory="CustomTrait" Family="Military" Custom="true" Cost="-5">
+    <Prerequisites>!FactionTraitArmy8</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy6"/>
+  </FactionTrait>
+
+  <!-- Offense First -->
+  <FactionTrait Name="FactionTraitArmy7"     SubCategory="CustomTrait" Family="Military" Custom="true" Cost="10">
+    <Prerequisites>!FactionTraitArmy5</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy7"/>
+  </FactionTrait>
+
+  <!-- Optimal Defense -->
+  <FactionTrait Name="FactionTraitArmy8"     SubCategory="CustomTrait" Family="Military" Custom="true" Cost="10">
+    <Prerequisites>!FactionTraitArmy6</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitArmy8"/>
+  </FactionTrait>
+
+
+  <!-- ########################################## -->
+  <!-- ######            ECONOMY           ###### -->
+  <!-- ########################################## -->
+  
+  <!-- Businessmen -->
+  <FactionTrait Name="FactionTraitEconomy1PositiveLevel1"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy1Positive" Level="1" Custom="true" Cost="8">
+    <Prerequisites>!FactionTraitEconomy1NegativeLevel1,!FactionTraitEconomy1NegativeLevel2,!FactionTraitEconomy1NegativeLevel3</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy1PositiveLevel1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitEconomy1PositiveLevel2"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy1Positive" Level="2" Custom="true" Cost="16">
+    <Prerequisites>!FactionTraitEconomy1NegativeLevel1,!FactionTraitEconomy1NegativeLevel2,!FactionTraitEconomy1NegativeLevel3</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy1PositiveLevel2"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitEconomy1PositiveLevel3"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy1Positive" Level="3" Custom="true" Cost="24">
+    <Prerequisites>!FactionTraitEconomy1NegativeLevel1,!FactionTraitEconomy1NegativeLevel2,!FactionTraitEconomy1NegativeLevel3</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy1PositiveLevel3"/>
+  </FactionTrait>
+
+  <!-- Spendthrifts -->
+  <FactionTrait Name="FactionTraitEconomy1NegativeLevel1"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy1Negative" Level="1" Custom="true" Cost="-5">
+    <Prerequisites>!FactionTraitEconomy1PositiveLevel1,!FactionTraitEconomy1PositiveLevel2,!FactionTraitEconomy1PositiveLevel3</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy1NegativeLevel1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitEconomy1NegativeLevel2"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy1Negative" Level="2" Custom="true" Cost="-10">
+    <Prerequisites>!FactionTraitEconomy1PositiveLevel1,!FactionTraitEconomy1PositiveLevel2,!FactionTraitEconomy1PositiveLevel3</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy1NegativeLevel2"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitEconomy1NegativeLevel3"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy1Negative" Level="3" Custom="true" Cost="-16">
+    <Prerequisites>!FactionTraitEconomy1PositiveLevel1,!FactionTraitEconomy1PositiveLevel2,!FactionTraitEconomy1PositiveLevel3</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy1NegativeLevel3"/>
+  </FactionTrait>
+
+  <!-- Dust Archaeology -->
+  <FactionTrait Name="FactionTraitEconomy2PositiveLevel1"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy2Positive" Level="1" Custom="true" Cost="2">
+    <Prerequisites>!FactionTraitEconomy2NegativeLevel1,!FactionTraitEconomy2NegativeLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy2PositiveLevel1"/>
+    <Command                        Name="TransferResources"                    Arguments="EmpireMoney,20"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitEconomy2PositiveLevel2"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy2Positive" Level="2" Custom="true" Cost="4">
+    <Prerequisites>!FactionTraitEconomy2NegativeLevel1,!FactionTraitEconomy2NegativeLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy2PositiveLevel2"/>
+    <Command                        Name="TransferResources"                    Arguments="EmpireMoney,42"/>
+  </FactionTrait>
+
+  <!-- Dust Starved -->
+  <FactionTrait Name="FactionTraitEconomy2NegativeLevel1"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy2Negative" Level="1" Custom="true" Cost="-1">
+    <Prerequisites>!FactionTraitEconomy2PositiveLevel1,!FactionTraitEconomy2PositiveLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy2NegativeLevel1"/>
+    <Command                        Name="TransferResources"                    Arguments="EmpireMoney,-15"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitEconomy2NegativeLevel2"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy2Negative" Level="2" Custom="true" Cost="-2">
+    <Prerequisites>!FactionTraitEconomy2PositiveLevel1,!FactionTraitEconomy2PositiveLevel2</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy2NegativeLevel2"/>
+    <Command                        Name="TransferResources"                    Arguments="EmpireMoney,-35"/>
+  </FactionTrait>
+
+  <!-- Entrepreneur -->
+  <FactionTrait Name="FactionTraitEconomy3"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="20">
+    <SimulationDescriptorReference Name="FactionTraitEconomy3"/>
+  </FactionTrait>
+
+  <!-- Merchants -->
+  <FactionTrait Name="FactionTraitEconomy4Level1"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy4" Level="1" Custom="true" Cost="8">
+    <SimulationDescriptorReference Name="FactionTraitEconomy4Level1"/>
+  </FactionTrait>
+  <FactionTrait Name="FactionTraitEconomy4Level2"     SubCategory="CustomTrait" Family="Economy" Root="FactionTraitEconomy4" Level="2" Custom="true" Cost="16">
+    <SimulationDescriptorReference Name="FactionTraitEconomy4Level2"/>
+  </FactionTrait>
+
+  <!-- Titanium Legacy -->
+  <FactionTrait Name="FactionTraitEconomy5"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="10">
+    <SimulationDescriptorReference Name="FactionTraitEconomy5"/>
+    <Command                        Name="TransferResources"                    Arguments="Strategic1,15"/>
+  </FactionTrait>
+
+  <!-- Glassteel Legacy -->
+  <FactionTrait Name="FactionTraitEconomy6"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="10">
+    <SimulationDescriptorReference Name="FactionTraitEconomy6"/>
+    <Command                        Name="TransferResources"                    Arguments="Strategic2,15"/>
+  </FactionTrait>
+
+  <!-- Food Efficient -->
+  <FactionTrait Name="FactionTraitEconomy7Positive"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="25">
+    <Prerequisites>!AffinityBrokenLords</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy7Positive"/>
+  </FactionTrait>
+
+  <!-- Industry Efficient -->
+  <FactionTrait Name="FactionTraitEconomy8Positive"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="25">
+    <Prerequisites>!FactionTraitEconomy8Negative</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy8Positive"/>
+  </FactionTrait>
+  
+  <!-- Industry Inefficient -->
+  <FactionTrait Name="FactionTraitEconomy8Negative"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="-10">
+    <Prerequisites>!FactionTraitEconomy8Positive</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy8Negative"/>
+  </FactionTrait>
+
+  <!-- Goods of Auriga -->
+  <FactionTrait Name="FactionTraitEconomy9"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="15">
+    <SimulationDescriptorReference Name="FactionTraitEconomy9"/>
+  </FactionTrait>
+  
+  <!-- Dust Inefficient -->
+  <FactionTrait Name="FactionTraitEconomy10Negative"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="-10">
+    <Prerequisites>!FactionTraitBrokenLords1</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy10Negative"/>
+  </FactionTrait>
+  
+  <!-- Science Inefficient -->
+  <FactionTrait Name="FactionTraitEconomy11Negative"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="-10">
+    <Prerequisites>!FactionTraitVaulters1</Prerequisites>
+    <SimulationDescriptorReference Name="FactionTraitEconomy11Negative"/>
+  </FactionTrait>
+  
+  <!-- Landscapist -->
+  <FactionTrait Name="FactionTraitEconomy12"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="15">
+    <SimulationDescriptorReference Name="FactionTraitEconomy12"/>
+  </FactionTrait>
+
+</Datatable>

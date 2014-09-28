@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  <!-- ===================================== SFX KAZANJI ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_WingFlap">
+    <SoundEventName>Sfx/Faction/Kazanji/Devil/Kazanji_Devil_WingFlap</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_TakeOff">
+    <SoundEventName>Sfx/Faction/Kazanji/Devil/Kazanji_Devil_TakeOff</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_Idle0">
+    <SoundEventName>Sfx/Faction/Kazanji/Devil/Kazanji_Devil_Idle0</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_BodyFall">
+    <SoundEventName>Sfx/Faction/Kazanji/Devil/Kazanji_Devil_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_Attack">
+    <SoundEventName>Sfx/Voices/Devil/Devil_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_Death">
+    <SoundEventName>Sfx/Voices/Devil/Devil_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_Defense">
+    <SoundEventName>Sfx/Voices/Devil/Devil_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_Click">
+    <SoundEventName>Sfx/Voices/Devil/Devil_Voice_Click</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Kazanji_Devil_Order">
+    <SoundEventName>Sfx/Voices/Devil/Devil_Voice_Order</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+  
+</Datatable>

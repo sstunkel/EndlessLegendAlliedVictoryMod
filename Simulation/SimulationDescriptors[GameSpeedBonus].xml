@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Converted villages' unit production is modified by game speed directly in code so it is not required here for now. Plus, there is an issue with non-integer values like in Fast or Slow. -->
+  <!--<SimulationModifierDescriptor TargetProperty="ConvertedVillageUnitProductionTimer"  Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire/ClassCity/ConvertedVillage" />-->
+  
+  <!-- Major empire -->
+  <SimulationDescriptor Name="GameSpeedFastMajorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="TechnologyCost"                       Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire/ClassResearch" Priority="9" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionCostReduction"     Operation="Addition"        Value="0.5"   Path="../ClassEmpire/ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionCostReduction"     Operation="Addition"        Value="0.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="0.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionToMoneyMultiplier" Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="ResourceGain"                         Operation="Multiplication"  Value="2"     Path="../ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit"/>
+      <SimulationModifierDescriptor TargetProperty="ResourceBonus"                        Operation="Multiplication"  Value="2"     Path="../ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit"/>
+      <SimulationModifierDescriptor TargetProperty="GlobalLeachModifier"                  Operation="Multiplication"  Value="2"     Path="../ClassEmpire/ClassCity/ConvertedVillage"/>
+      <SimulationModifierDescriptor TargetProperty="BoosterDurationMultiplier"            Operation="Force"           Value="0.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="MaximumSeasonPredictabilityError"     Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="DurationOfHeroesExclusivity"          Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="OwnershipRecoveryRate"                Operation="Multiplication"  Value="2"     Path="../ClassEmpire/ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="InjuredRecoveryPerTurn"               Operation="Multiplication"  Value="2"     Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="InjuredValueToEmpireMoneyConversion"  Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/Garrison/ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedNormalMajorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedSlowMajorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="TechnologyCost"                       Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire/ClassResearch" Priority="9" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionCostReduction"     Operation="Addition"        Value="-0.5"  Path="../ClassEmpire/ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionCostReduction"     Operation="Addition"        Value="-0.5"  Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="1.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionToMoneyMultiplier" Operation="Multiplication"  Value="0.875" Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="ResourceGain"                         Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit"/>
+      <SimulationModifierDescriptor TargetProperty="ResourceBonus"                        Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit"/>
+      <SimulationModifierDescriptor TargetProperty="GlobalLeachModifier"                  Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/ClassCity/ConvertedVillage"/>
+      <SimulationModifierDescriptor TargetProperty="BoosterDurationMultiplier"            Operation="Force"           Value="1.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="MaximumSeasonPredictabilityError"     Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="DurationOfHeroesExclusivity"          Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="OwnershipRecoveryRate"                Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="InjuredRecoveryPerTurn"               Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="InjuredValueToEmpireMoneyConversion"  Operation="Multiplication"  Value="1.25"  Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.25"  Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.25"  Path="../ClassEmpire/Garrison/ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedEndlessMajorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="TechnologyCost"                       Operation="Multiplication"  Value="2"     Path="../ClassEmpire/ClassResearch" Priority="9" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionCostReduction"     Operation="Addition"        Value="-1"    Path="../ClassEmpire/ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionCostReduction"     Operation="Addition"        Value="-1"    Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="2"     Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="GameSpeedProductionToMoneyMultiplier" Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="ResourceGain"                         Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit"/>
+      <SimulationModifierDescriptor TargetProperty="ResourceBonus"                        Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire/ClassCity/ClassPointOfInterest,PointOfInterestTypeResourceDeposit"/>
+      <SimulationModifierDescriptor TargetProperty="GlobalLeachModifier"                  Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire/ClassCity/ConvertedVillage"/>
+      <SimulationModifierDescriptor TargetProperty="BoosterDurationMultiplier"            Operation="Force"           Value="2"     Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="MaximumSeasonPredictabilityError"     Operation="Multiplication"  Value="2"     Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="DurationOfHeroesExclusivity"          Operation="Multiplication"  Value="2"     Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="OwnershipRecoveryRate"                Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire/ClassCity" />
+      <SimulationModifierDescriptor TargetProperty="InjuredRecoveryPerTurn"               Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="InjuredValueToEmpireMoneyConversion"  Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire/UnitHero" />
+      <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire/Garrison/ClassUnit" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Minor empire -->
+  <SimulationDescriptor Name="GameSpeedFastMinorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="0.5"   Path="../ClassEmpire" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedNormalMinorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedSlowMinorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="1.5"   Path="../ClassEmpire" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedEndlessMinorEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="2"     Path="../ClassEmpire" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <!-- Lesser empire -->
+  <SimulationDescriptor Name="GameSpeedFastLesserEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="0.5"   Path="../ClassEmpire" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedNormalLesserEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedSlowLesserEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="1.5"   Path="../ClassEmpire" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="GameSpeedEndlessLesserEmpire" Type="GameSpeedBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="GameSpeedMultiplier"                  Operation="Force"           Value="2"     Path="../ClassEmpire" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+</Datatable>

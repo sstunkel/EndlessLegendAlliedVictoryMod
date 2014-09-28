@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <ExtendedGuiElement Name="EventAlert">
+    <Title>%NotificationAlertTitle</Title>
+    <Description>%NotificationAlertDescription</Description>
+    <Icons>
+      <Icon Path="NotificationAlertIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/Warning" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventAssimilationLost">
+    <Title>%NotificationAssimilationLostTitle</Title>
+    <Description>%NotificationAssimilationLostDescription</Description>
+    <Icons>
+      <Icon Path="NotificationAssimilationLostIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/AssimilationLosted" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventBailiffWarning">
+    <Title>%NotificationBailiffWarningTitle</Title>
+    <Description>%NotificationBailiffWarningDescription</Description>
+    <Icons>
+      <Icon Path="NotificationBailiffWarningIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/Alert" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventAIAttitudeFeedbackReceived">
+    <Title>%NotificationAIAttitudeFeedbackReceivedTitle</Title>
+    <Description>%NotificationAIAttitudeFeedbackReceivedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationAIAttitudeFeedbackReceivedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventBailiffReport">
+    <Title>%NotificationBailiffReportTitle</Title>
+    <Description>%NotificationBailiffReportDescription</Description>
+    <Icons>
+      <Icon Path="NotificationBailiffReportIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/BailiffReport" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventCityCaptured">
+    <Title>%NotificationCityCapturedTitle</Title>
+    <Description>%NotificationCityCapturedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationCityCapturedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/CityCaptured" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventCityRazed">
+    <Title>%NotificationCityRazedTitle</Title>
+    <Description>%NotificationCityRazedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationCityRazedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/CityRazed" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventCitySiegeUpdate">
+    <Title>%NotificationCitySiegeUpdateTitle</Title>
+    <Description>%NotificationCitySiegeUpdateDescription</Description>
+    <Icons>
+      <Icon Path="NotificationCitySiegeUpdateIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventBoosterEnded">
+    <Title>%NotificationBoosterEndedTitle</Title>
+    <Description>%NotificationBoosterEndedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationBoosterEndedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/BoosterEnd" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventCityStarvation">
+    <Title>%NotificationCityStarvationTitle</Title>
+    <Description>%NotificationCityStarvationDescription</Description>
+    <Icons>
+      <Icon Path="NotificationCityStarvationIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationCityStarvationLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/CityStarvation" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventConstructionEnded">
+    <Title>%NotificationConstructionEndedTitle</Title>
+    <Description>%NotificationConstructionEndedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationConstructionEndedIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationConstructionEndedLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+    
+  <ExtendedGuiElement Name="EventDiplomaticRelationStateChange">
+    <Title>%NotificationDiplomaticRelationStateChangeTitle</Title>
+    <Description>%NotificationDiplomaticRelationStateChangeDescription</Description>
+    <Icons>
+      <Icon Path="NotificationDiplomaticRelationStateChangeIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventEmpireEliminated">
+    <Title>%NotificationEmpireDefeatTitle</Title>
+    <Description>%NotificationEmpireDefeatDescription</Description>
+    <Icons>
+      <Icon Path="NotificationEmpireDefeatIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EmpireDefeat" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventEmpirePlanImminent">
+    <Title>%NotificationEmpirePlanImminentTitle</Title>
+    <Description>%NotificationEmpirePlanImminentDescription</Description>
+    <Icons>
+      <Icon Path="NotificationEmpirePlanImminentIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventEmpirePlanNeeded">
+    <Title>%NotificationEmpirePlanNeededTitle</Title>
+    <Description>%NotificationEmpirePlanNeededDescription</Description>
+    <Icons>
+      <Icon Path="NotificationEmpirePlanNeededIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EmpirePlan" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventGameEndedDefeat">
+    <Title>%NotificationGameEndedDefeatTitle</Title>
+    <Description>%NotificationGameEndedDefeatDescription</Description>
+    <Icons>
+      <Icon Path="NotificationEmpireDefeatIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/Defeat" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/Warning" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventGameEndedVictory">
+    <Title>%NotificationGameEndedVictoryTitle</Title>
+    <Description>%NotificationGameEndedVictoryDescription</Description>
+    <Icons>
+      <Icon Path="NotificationGameEndedVictoryIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/Victory" Type="OnFirstShow" />      
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventEncounterStateChangeSetup">
+    <Title>%NotificationEncounterBegunTitle</Title>
+    <Description>%NotificationEncounterBegunDescription</Description>
+    <Icons>
+      <Icon Path="NotificationEncounterIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/BattleStart" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/UnitEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventEncounterStateChangeBattleHasEnded">
+    <Title>%NotificationEncounterEndedTitle</Title>
+    <Description>%NotificationEncounterEndedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationEncounterIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/BattleVictory" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/UnitEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventHeroAvailable">
+    <Title>%NotificationHeroAvailableTitle</Title>
+    <Description>%NotificationHeroAvailableDescription</Description>
+    <Icons>
+      <Icon Path="NotificationHeroAvailableIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/UnitEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventHeroInjured">
+    <Title>%NotificationHeroInjuredTitle</Title>
+    <Description>%NotificationHeroInjuredDescription</Description>
+    <Icons>
+      <Icon Path="NotificationHeroInjuredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/HeroInjured" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventHeroLevelUp">
+    <Title>%NotificationHeroLevelUpTitle</Title>
+    <Description>%NotificationHeroLevelUpDescription</Description>
+    <Icons>
+      <Icon Path="NotificationHeroLevelUpIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/HeroLvlUp" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventHeroRecovered">
+    <Title>%NotificationHeroRecoveredTitle</Title>
+    <Description>%NotificationHeroRecoveredDescription</Description>
+    <Icons>
+      <Icon Path="NotificationHeroRecoveredIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/UnitEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventHeroUnassigned">
+    <Title>%NotificationHeroUnassignedTitle</Title>
+    <Description>%NotificationHeroUnassignedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationHeroUnassignedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/UnitEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventInteractionFailed">
+    <Title>%NotificationInteractionFailedTitle</Title>
+    <Description>%NotificationInteractionFailedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationInteractionFailedIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationInteractionFailedLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/ReportFail" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventInteractionSucceeded">
+    <Title>%NotificationInteractionSucceededTitle</Title>
+    <Description>%NotificationInteractionSucceededDescription</Description>
+    <Icons>
+      <Icon Path="NotificationInteractionSucceededIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationInteractionSucceededLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/ReportSuccess" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventMajorFactionDiscovery">
+    <Title>%NotificationMajorFactionDiscoveryTitle</Title>
+    <Description>%NotificationMajorFactionDiscoveryDescription</Description>
+    <Icons>
+      <Icon Path="NotificationMajorFactionDiscoveryIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <!--<Sound EventName="Gui/Jingles/MajorFactionDiscover" Type="OnFirstShow" />-->
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>  
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventMinorFactionAssimilable">
+    <Title>%NotificationMinorFactionAssimilableTitle</Title>
+    <Description>%NotificationMinorFactionAssimilableFormat</Description>
+    <Icons>
+      <Icon Path="NotificationMinorFactionAssimilableIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventMinorFactionDiscovery">
+    <Title>%NotificationMinorFactionDiscoveryTitle</Title>
+    <Description>%NotificationMinorFactionDiscoveryDescription</Description>
+    <Icons>
+      <Icon Path="NotificationMinorFactionDiscoveryIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/MinorFactionDiscover" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/DiplomaticEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+      
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventNewEra">
+    <Title>%NotificationNewEraTitle</Title>
+    <Description>%NotificationNewEraDescription</Description>
+    <Icons>
+      <Icon Path="NotificationNewEraIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EraEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+      <!--<Sound EventName="Gui/Jingles/EraJingle" Type="OnFirstShow" />-->
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventNewEra2">
+    <Title>%NotificationNewEraTitle</Title>
+    <Description>%NotificationNewEra2Description</Description>
+    <Icons>
+      <Icon Path="NotificationNewEraIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationEra2Large" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EraEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+      <!--<Sound EventName="Gui/Jingles/EraJingle" Type="OnFirstShow" />-->
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventNewEra3">
+    <Title>%NotificationNewEraTitle</Title>
+    <Description>%NotificationNewEra3Description</Description>
+    <Icons>
+      <Icon Path="NotificationNewEraIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationEra3Large" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EraEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+      <!--<Sound EventName="Gui/Jingles/EraJingle" Type="OnFirstShow" />-->
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventNewEra4">
+    <Title>%NotificationNewEraTitle</Title>
+    <Description>%NotificationNewEra4Description</Description>
+    <Icons>
+      <Icon Path="NotificationNewEraIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationEra4Large" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EraEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+      <!--<Sound EventName="Gui/Jingles/EraJingle" Type="OnFirstShow" />-->
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventNewEra5">
+    <Title>%NotificationNewEraTitle</Title>
+    <Description>%NotificationNewEra5Description</Description>
+    <Icons>
+      <Icon Path="NotificationNewEraIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationEra5Large" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EraEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+      <!--<Sound EventName="Gui/Jingles/EraJingle" Type="OnFirstShow" />-->
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventNewEra6">
+    <Title>%NotificationNewEraTitle</Title>
+    <Description>%NotificationNewEra6Description</Description>
+    <Icons>
+      <Icon Path="NotificationNewEraIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationEra6Large" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/EraEvent" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+      <!--<Sound EventName="Gui/Jingles/EraJingle" Type="OnFirstShow" />-->
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventPopulationModified">
+    <Title>%NotificationPopulationModifiedTitle</Title>
+    <Description>%NotificationPopulationModifiedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationPopulationModifiedIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationPopulationModifiedLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/PopulationModified" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventQuestBegun">
+    <Title>%NotificationQuestBegunTitle</Title>
+    <Description>%NotificationQuestBegunDescription</Description>
+    <Icons>
+      <Icon Path="NotificationQuestBegunIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/QuestStart" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/QuestGeneral" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventQuestUpdated">
+    <Title>%NotificationQuestUpdatedTitle</Title>
+    <Description>%NotificationQuestUpdatedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationQuestUpdatedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/QuestUpdated" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/QuestGeneral" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventQuestComplete">
+    <Title>%NotificationQuestCompleteTitle</Title>
+    <Description>%NotificationQuestCompleteDescription</Description>
+    <Icons>
+      <Icon Path="NotificationQuestCompletedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/QuestComplete" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/QuestGeneral" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventQuestFailed">
+    <Title>%NotificationQuestFailedTitle</Title>
+    <Description>%NotificationQuestFailedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationQuestFailedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/QuestFailed" Type="OnFirstShow" />
+      <Sound EventName="Gui/Jingles/QuestGeneral" Type="OnLoadEvent" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventResourceTypeLuxuryDiscovered">
+    <Title>%NotificationResourceTypeLuxuryDiscoveredTitle</Title>
+    <Description>%NotificationResourceTypeLuxuryDiscoveredDescription</Description>
+    <Icons>
+      <Icon Path="NotificationRevealedLuxuryIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventResourceTypeStrategicDiscovered">
+    <Title>%NotificationResourceTypeStrategicDiscoveredTitle</Title>
+    <Description>%NotificationResourceTypeStrategicDiscoveredDescription</Description>
+    <Icons>
+      <Icon Path="NotificationRevealedStrategicIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventSeasonChangeWinter">
+    <Title>%NotificationSeasonChangeWinterTitle</Title>
+    <Description>%NotificationSeasonChangeWinterDescription</Description>
+    <Icons>
+      <Icon Path="NotificationSeasonChangedIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationSeasonChangeWinterLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/WinterJingle" Type="OnFirstShow" />
+      <!-- Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/SeasonEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventSeasonChangeSummer">
+    <Title>%NotificationSeasonChangeSummerTitle</Title>
+    <Description>%NotificationSeasonChangeSummerDescription</Description>
+    <Icons>
+      <Icon Path="NotificationSeasonChangedIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationSeasonChangeSummerLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/SummerJingle" Type="OnFirstShow" />
+      <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/SeasonEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventTechnologyNeeded">
+    <Title>%NotificationTechnologyNeededTitle</Title>
+    <Description>%NotificationTechnologyNeededDescription</Description>
+    <Icons>
+      <Icon Path="NotificationTechnologyNeededIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/MissingResearch" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventTechnologyEnded">
+    <Title>%NotificationTechnologyEndedTitle</Title>
+    <Description>%NotificationTechnologyEndedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationTechnologyEndedIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationTechnologyEndedLarge" Size="Large" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/TechnoEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="EventUnitLevelUp">
+    <Title>%NotificationUnitLevelUpTitle</Title>
+    <Description>%NotificationUnitLevelUpDescription</Description>
+    <Icons>
+      <Icon Path="NotificationUnitLevelUpIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationUnitLevelUpLarge" Size="Large" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/UnitLvlUp" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventVictoryConditionAlert">
+  <!-- We will have a specific type for each victory condition (to deal with "an expansion victory", "a diplomacy victory"...) -->
+  <!-- Furthermore, within each type we might have multiple alert (like "5 regions left to colonize for victory" and then "1 region left to colonize for victory") -->
+    <Title>%NotificationVictoryConditionAlert{0}#{1}Title</Title>
+    <Description>%NotificationVictoryConditionAlert{0}#{1}Description</Description>
+    <Icons>
+      <Icon Path="NotificationVictoryConditionAlertIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/VictoryConditionAlert" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventVillageConverted">
+    <Title>%NotificationVillageConvertedTitle</Title>
+    <Description>%NotificationVillageConvertedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationVillageConvertedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/VillageConverted" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventVillageUnitSpawned">
+    <Title>%NotificationVillageUnitSpawnedTitle</Title>
+    <Description>%NotificationVillageUnitSpawnedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationVillageUnitSpawnedIcon" Size="Small" />
+      <Icon Path="GUI/DynamicBitmaps/Notifications/NotificationUnitLevelUpLarge" Size="Large" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/UnitLvlUp" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+</Datatable>

@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementColonyBase">
+    <AIParameter Name="Food">1.1000000000000001</AIParameter>
+    <AIParameter Name="Industry">1.1000000000000001</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood1">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood2">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood3">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood3Swarm">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood3Sower">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood4">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood5">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementFood6">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementIndustry1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2.5</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementIndustry2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.3</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementIndustry3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementIndustry3Automaton">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2.2000000000000002</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementIndustry4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementIndustry5">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementIndustry6">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementMoney1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementMoney2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementMoney3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementMoney4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementMoney4Amoeba">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2.5</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementMoney5">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementMoney6">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">3</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience3Sophon">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience5">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience6">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementScience7">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military">1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementHabitat1">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementHabitat2">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementHabitat3">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementHabitat3Horatio">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementHabitat4">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementApproval1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementApproval2">
+    <AIParameter Name="Food">0.1</AIParameter>
+    <AIParameter Name="Industry">0.1</AIParameter>
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science">0.1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementApproval2Sower">
+    <AIParameter Name="Food">0.1</AIParameter>
+    <AIParameter Name="Industry">0.6</AIParameter>
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science">0.1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2.2000000000000002</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementApproval3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementApproval4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementApproval5">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementTrade1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes">1</AIParameter>
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementTrade2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes">1</AIParameter>
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementTrade3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes">1</AIParameter>
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementTrade4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes">1</AIParameter>
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementTrade5">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes">1</AIParameter>
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementTrade6">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes">1</AIParameter>
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementDefense1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1.25</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementDefense2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1.25</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementDefense3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1.25</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementDefense4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1.25</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementDefense4Automaton">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1.45</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementDefense5">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1.25</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementDefense6">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1.25</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueTerran">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueResistance">
+    <AIParameter Name="Food">0.1</AIParameter>
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science">0.1</AIParameter>
+    <AIParameter Name="Military">0.1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueHissho">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">0.2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueSower">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueHoratio">
+    <AIParameter Name="Food">2.5</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueAmoeba">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">0.6</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.6</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueSophon">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementUniqueAutomaton">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementFood1">
+    <AIParameter Name="Food">2.1</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementIndustry1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2.1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementMoney1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2.1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementScience1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2.1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementFood2">
+    <AIParameter Name="Food">2.2000000000000002</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementIndustry2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2.2000000000000002</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementMoney2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2.2000000000000002</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementScience2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2.2000000000000002</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementFood3">
+    <AIParameter Name="Food">2.2999999999999998</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementIndustry3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2.2999999999999998</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementMoney3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">2.2999999999999998</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetaryImprovementScience3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2.2999999999999998</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToLava">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">0.1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToBarren">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToDesert">
+    <AIParameter Name="Food">0.35</AIParameter>
+    <AIParameter Name="Industry">0.7</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.35</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToArctic">
+    <AIParameter Name="Food">0.35</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">0.7</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.35</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToArid">
+    <AIParameter Name="Food">0.32</AIParameter>
+    <AIParameter Name="Industry">0.16</AIParameter>
+    <AIParameter Name="Money">0.8</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.32</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToTundra">
+    <AIParameter Name="Food">0.32</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.16</AIParameter>
+    <AIParameter Name="Science">0.8</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.32</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToTerran">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.2</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science">0.2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToTerranAutomaton">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">0.4</AIParameter>
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science">0.4</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToJungle">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">0.2</AIParameter>
+    <AIParameter Name="Science">0.2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToOcean">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.2</AIParameter>
+    <AIParameter Name="Money">0.2</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToLavaFromGas">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">0.1</AIParameter>
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToBarrenFromGas">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science">0.1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToGasMethane">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToGasHelium">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="TerraformationToGasHydrogen">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="AnomalyReduction1">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly22Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly23Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly26Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly30Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly31Reduction1">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly33Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly34Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly35Reduction1">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly36Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly37Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly38Reduction1">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly39Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly51Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly52Reduction1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="AnomalyReduction2">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly40Reduction2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly41Reduction2">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly42Reduction2">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly43Reduction2">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly44Reduction2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly45Reduction2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly46Reduction2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly47Reduction2">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly48Reduction2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly49Reduction2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly50Reduction2">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetAnomaly53Reduction2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder01Restoration">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder02Restoration">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military">0.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder03Restoration">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">2.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder04Restoration">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">2.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder05Restoration">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">1.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder06Restoration">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">2.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder07Restoration">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military">0.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="PlanetEndlessWonder08Restoration">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.5</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeTerran">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.4</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeJungle">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">0.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.4</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeOcean">
+    <AIParameter Name="Food">1</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.4</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeArid">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.5</AIParameter>
+    <AIParameter Name="Money">1.2</AIParameter>
+    <AIParameter Name="Science">0.2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.3</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeTundra">
+    <AIParameter Name="Food">0.5</AIParameter>
+    <AIParameter Name="Industry">0.2</AIParameter>
+    <AIParameter Name="Money">0.5</AIParameter>
+    <AIParameter Name="Science">1.2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.3</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeDesert">
+    <AIParameter Name="Food">0.2</AIParameter>
+    <AIParameter Name="Industry">1.2</AIParameter>
+    <AIParameter Name="Money">0</AIParameter>
+    <AIParameter Name="Science">0.2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeArctic">
+    <AIParameter Name="Food">0.2</AIParameter>
+    <AIParameter Name="Industry">0</AIParameter>
+    <AIParameter Name="Money">0.2</AIParameter>
+    <AIParameter Name="Science">1.2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.2</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeLava">
+    <AIParameter Name="Food">0</AIParameter>
+    <AIParameter Name="Industry">1</AIParameter>
+    <AIParameter Name="Money">0.2</AIParameter>
+    <AIParameter Name="Science">0</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeBarren">
+    <AIParameter Name="Food">0</AIParameter>
+    <AIParameter Name="Industry">0.2</AIParameter>
+    <AIParameter Name="Money">1</AIParameter>
+    <AIParameter Name="Science">0</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.1</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeGasGiant">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeAsteroids">
+    <AIParameter Name="Food">0</AIParameter>
+    <AIParameter Name="Industry">0.8</AIParameter>
+    <AIParameter Name="Money">0.8</AIParameter>
+    <AIParameter Name="Science">0.8</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeGasHydrogen">
+    <AIParameter Name="Food">0</AIParameter>
+    <AIParameter Name="Industry">0.1</AIParameter>
+    <AIParameter Name="Money">1.5</AIParameter>
+    <AIParameter Name="Science">0.1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeGasHelium">
+    <AIParameter Name="Food">0</AIParameter>
+    <AIParameter Name="Industry">0.1</AIParameter>
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science">1.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeGasMethane">
+    <AIParameter Name="Food">0</AIParameter>
+    <AIParameter Name="Industry">1.5</AIParameter>
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science">0.1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="ColonizeBase">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="MoonSurvey">
+    <AIParameter Name="Food">0.4</AIParameter>
+    <AIParameter Name="Industry">0.4</AIParameter>
+    <AIParameter Name="Money">0.4</AIParameter>
+    <AIParameter Name="Science">0.4</AIParameter>
+    <AIParameter Name="Military">0.4</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">0.5</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingInformation1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingInformation2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingInformation3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingInformation3Sophon">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingInformation4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">0.1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingSpecial1">
+    <AIParameter Name="Food">1.2</AIParameter>
+    <AIParameter Name="Industry">1.2</AIParameter>
+    <AIParameter Name="Money">1.2</AIParameter>
+    <AIParameter Name="Science">1.2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingSpecial2">
+    <AIParameter Name="Food">1.5</AIParameter>
+    <AIParameter Name="Industry">1.5</AIParameter>
+    <AIParameter Name="Money">1.5</AIParameter>
+    <AIParameter Name="Science">1.5</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingSpecial2Automaton">
+    <AIParameter Name="Food">1.7</AIParameter>
+    <AIParameter Name="Industry">1.7</AIParameter>
+    <AIParameter Name="Money">1.7</AIParameter>
+    <AIParameter Name="Science">1.7</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="SystemBuildingSpecial5">
+    <AIParameter Name="Food">2</AIParameter>
+    <AIParameter Name="Industry">2</AIParameter>
+    <AIParameter Name="Money">2</AIParameter>
+    <AIParameter Name="Science">2</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementBuildingVictory">
+    <AIParameter Name="Food">3</AIParameter>
+    <AIParameter Name="Industry">3</AIParameter>
+    <AIParameter Name="Money">3</AIParameter>
+    <AIParameter Name="Science">3</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval">3</AIParameter>
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementShipQuality1">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementShipQuality2">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">1</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementShipQuality3">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemImprovementShipQuality4">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military">2</AIParameter>
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemConversionIndustryToDust">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money">0.1</AIParameter>
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemConversionIndustryToScience">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science">0.1</AIParameter>
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+  <AIParametersDatatableElement ConstructibleElement="StarSystemEvacuation">
+    <AIParameter Name="Food" />
+    <AIParameter Name="Industry" />
+    <AIParameter Name="Money" />
+    <AIParameter Name="Science" />
+    <AIParameter Name="Military" />
+    <AIParameter Name="Diplomacy" />
+    <AIParameter Name="Approval" />
+    <AIParameter Name="TradeRoutes" />
+  </AIParametersDatatableElement>
+</Datatable>

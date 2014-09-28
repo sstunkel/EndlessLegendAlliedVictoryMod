@@ -1,0 +1,2193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="ItemDefinitions.xsl"?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################ -->
+  <!-- #######     WEAPON       ####### -->
+  <!-- ################################ -->
+
+
+  <!-- ########## 1H_Sword ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemSword1Strategic1Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic1Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic1Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemSword1Strategic2Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic2Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic2Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemSword1Strategic3Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic3Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic3Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemSword1Strategic4Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic4Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic4Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemSword1Strategic5Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic5Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic5Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemSword1Strategic6Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic6Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1Strategic6Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemSword1DustTier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1DustTier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1DustTier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemSword1IronTier1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1IronTier2" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword1IronTier3" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########### 2H_Sword ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemSword2Strategic1Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic1Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic1Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemSword2Strategic2Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic2Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic2Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemSword2Strategic3Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic3Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic3Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemSword2Strategic4Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic4Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic4Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemSword2Strategic5Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic5Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic5Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemSword2Strategic6Tier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic6Tier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2Strategic6Tier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Dust-->
+  <ItemDefinition Name="ItemSword2DustTier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2DustTier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2DustTier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemSword2IronTier1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2IronTier2" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSword2IronTier3" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSword2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ############ Spear ############# -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemSpear2Strategic1Tier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic1Tier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic1Tier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemSpear2Strategic2Tier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic2Tier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic2Tier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemSpear2Strategic3Tier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic3Tier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic3Tier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemSpear2Strategic4Tier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic4Tier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic4Tier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemSpear2Strategic5Tier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic5Tier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic5Tier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemSpear2Strategic6Tier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic6Tier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2Strategic6Tier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+    
+  <!--Dust-->
+  <ItemDefinition Name="ItemSpear2DustTier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2DustTier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2DustTier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemSpear2IronTier1" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2IronTier2" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemSpear2IronTier3" AudioID="SpearDefault" SubCategory="SubCategorySpear2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemSpear2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########## Staff2 ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemStaff2Strategic1Tier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic1Tier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic1Tier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemStaff2Strategic2Tier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic2Tier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic2Tier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemStaff2Strategic3Tier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic3Tier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic3Tier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemStaff2Strategic4Tier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic4Tier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic4Tier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemStaff2Strategic5Tier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic5Tier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic5Tier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemStaff2Strategic6Tier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic6Tier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2Strategic6Tier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemStaff2DustTier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2DustTier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2DustTier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemStaff2IronTier1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2IronTier2" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemStaff2IronTier3" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStaff2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########## Scepter2 ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemScepter2Strategic1Tier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic1Tier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic1Tier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemScepter2Strategic2Tier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic2Tier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic2Tier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemScepter2Strategic3Tier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic3Tier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic3Tier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemScepter2Strategic4Tier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic4Tier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic4Tier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemScepter2Strategic5Tier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic5Tier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic5Tier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemScepter2Strategic6Tier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic6Tier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2Strategic6Tier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemScepter2DustTier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2DustTier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2DustTier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemScepter2IronTier1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2IronTier2" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemScepter2IronTier3" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemScepter2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########## 1H_Axe ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemAxe1Strategic1Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic1Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic1Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemAxe1Strategic2Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic2Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic2Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemAxe1Strategic3Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic3Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic3Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemAxe1Strategic4Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic4Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic4Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemAxe1Strategic5Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic5Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic5Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemAxe1Strategic6Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic6Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1Strategic6Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemAxe1DustTier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1DustTier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1DustTier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemAxe1IronTier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1IronTier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe1IronTier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########### 2H_Axe ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemAxe2Strategic1Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic1Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic1Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemAxe2Strategic2Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic2Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic2Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemAxe2Strategic3Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic3Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic3Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemAxe2Strategic4Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic4Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic4Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemAxe2Strategic5Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic5Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic5Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemAxe2Strategic6Tier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic6Tier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2Strategic6Tier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Dust-->
+  <ItemDefinition Name="ItemAxe2DustTier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2DustTier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2DustTier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemAxe2IronTier1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2IronTier2" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemAxe2IronTier3" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAxe2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########## 1H_Hammer ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemHammer1Strategic1Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic1Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic1Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemHammer1Strategic2Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic2Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic2Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemHammer1Strategic3Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic3Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic3Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemHammer1Strategic4Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic4Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic4Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemHammer1Strategic5Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic5Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic5Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemHammer1Strategic6Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic6Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1Strategic6Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemHammer1DustTier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1DustTier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1DustTier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Iron-->
+  <ItemDefinition Name="ItemHammer1IronTier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1IronTier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer1IronTier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########### 2H_Hammer ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemHammer2Strategic1Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic1Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic1Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemHammer2Strategic2Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic2Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic2Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemHammer2Strategic3Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic3Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic3Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemHammer2Strategic4Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic4Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic4Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemHammer2Strategic5Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic5Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic5Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemHammer2Strategic6Tier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic6Tier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2Strategic6Tier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Dust-->
+  <ItemDefinition Name="ItemHammer2DustTier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2DustTier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2DustTier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemHammer2IronTier1" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2IronTier2" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemHammer2IronTier3" AudioID="HammerDefault" SubCategory="SubCategoryHammer2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHammer2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########### 2H_Bow ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemBow2Strategic1Tier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic1Tier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic1Tier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemBow2Strategic2Tier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic2Tier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic2Tier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemBow2Strategic3Tier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic3Tier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic3Tier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemBow2Strategic4Tier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic4Tier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic4Tier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemBow2Strategic5Tier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic5Tier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic5Tier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemBow2Strategic6Tier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic6Tier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2Strategic6Tier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Dust-->
+  <ItemDefinition Name="ItemBow2DustTier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2DustTier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2DustTier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemBow2IronTier1" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2IronTier2" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemBow2IronTier3" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemBow2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########### 1H_Crossbow ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemCrossbow1Strategic1Tier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic1Tier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic1Tier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemCrossbow1Strategic2Tier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic2Tier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic2Tier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemCrossbow1Strategic3Tier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic3Tier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic3Tier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon1BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemCrossbow1Strategic4Tier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic4Tier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic4Tier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon1BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemCrossbow1Strategic5Tier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic5Tier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic5Tier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon1BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemCrossbow1Strategic6Tier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic6Tier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1Strategic6Tier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon1BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Dust-->
+  <ItemDefinition Name="ItemCrossbow1DustTier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1DustTier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1DustTier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon1BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemCrossbow1IronTier1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1IronTier2" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemCrossbow1IronTier3" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemCrossbow1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon1BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########### 2H_Claw ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemClaw2Strategic1Tier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic1Tier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic1Tier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemClaw2Strategic2Tier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic2Tier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic2Tier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemClaw2Strategic3Tier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic3Tier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic3Tier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemClaw2Strategic4Tier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic4Tier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic4Tier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemClaw2Strategic5Tier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic5Tier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic5Tier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemClaw2Strategic6Tier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic6Tier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2Strategic6Tier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Dust-->
+  <ItemDefinition Name="ItemClaw2DustTier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2DustTier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2DustTier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemClaw2IronTier1" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2IronTier2" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemClaw2IronTier3" AudioID="ClawsDefault" SubCategory="SubCategoryClaw2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemClaw2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- ########### 2H_Wand ########### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemWand2Strategic1Tier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic1Tier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic1Tier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemWand2Strategic2Tier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic2Tier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic2Tier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemWand2Strategic3Tier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic3Tier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic3Tier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3Weapon2BaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemWand2Strategic4Tier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic4Tier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic4Tier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemWand2Strategic5Tier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic5Tier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic5Tier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemWand2Strategic6Tier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic6Tier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2Strategic6Tier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6Weapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Dust-->
+  <ItemDefinition Name="ItemWand2DustTier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2DustTier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2DustTier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustWeapon2BaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemWand2IronTier1" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2IronTier2" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemWand2IronTier3" AudioID="Default" SubCategory="SubCategoryWand2">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemWand2BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronWeapon2BaseTier3"/>
+  </ItemDefinition>
+
+
+
+  <!-- #######     SHIELD       ####### -->
+
+  <!--Strategic1-->
+  <ItemDefinition Name="ItemShield1Strategic1Tier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1ShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic1Tier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1ShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic1Tier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic1ShieldBaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic2-->
+  <ItemDefinition Name="ItemShield1Strategic2Tier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2ShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic2Tier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2ShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic2Tier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponCommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic2ShieldBaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic3-->
+  <ItemDefinition Name="ItemShield1Strategic3Tier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3ShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic3Tier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3ShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic3Tier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic3ShieldBaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic4-->
+  <ItemDefinition Name="ItemShield1Strategic4Tier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4ShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic4Tier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4ShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic4Tier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponUncommonTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic4ShieldBaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic5-->
+  <ItemDefinition Name="ItemShield1Strategic5Tier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5ShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic5Tier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5ShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic5Tier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic5ShieldBaseTier3"/>
+  </ItemDefinition>
+
+  <!--Strategic6-->
+  <ItemDefinition Name="ItemShield1Strategic6Tier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6ShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic6Tier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6ShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1Strategic6Tier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyWeaponRareTier3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemStrategic6ShieldBaseTier3"/>
+  </ItemDefinition>
+
+  <!--Dust-->
+  <ItemDefinition Name="ItemShield1DustTier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra4</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1DustTier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra5</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1DustTier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra6</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemDustShieldBaseTier3"/>
+  </ItemDefinition>
+  
+  <!--Iron-->
+  <ItemDefinition Name="ItemShield1IronTier1" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra1</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier1"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronShieldBaseTier1"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1IronTier2" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra2</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier2"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronShieldBaseTier2"/>
+  </ItemDefinition>
+
+  <ItemDefinition Name="ItemShield1IronTier3" SubCategory="SubCategoryShield1">
+    <PathPrerequisite Flags="Prerequisite,Discard,Technology">../ClassEmpire/ClassResearch,TechnologyEra3</PathPrerequisite>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemShield1BaseTier3"/>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemIronShieldBaseTier3"/>
+  </ItemDefinition>
+
+</Datatable>

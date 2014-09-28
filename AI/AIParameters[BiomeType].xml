@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <AIParameterDatatableElement Name="ArcticDry">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="1.2"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="3.5"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="1.2"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="9.3"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="ArcticTemperate">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="1.2"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="3.5"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="1.2"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="9.3"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TundraDry">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="5.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="6.1"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="1.8"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="3.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="TundraTemperate">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="5.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="6.1"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="1.8"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="3.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="HighlandsTemperate">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="5.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="4.7"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="2.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="3.9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="HighlandsWet">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="5.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="4.7"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="2.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="3.9"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="GrasslandsTemperate">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="8.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="5.6"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="1.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="1.4"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="GrasslandsWet">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="8.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="5.6"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="1.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="1.4"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="JungleTemperate">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="5.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="4.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="4.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="3.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="JungleWet">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="5.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="4.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="4.4"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="3.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="DesertDry">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="1.2"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="3.5"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="9.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="1.2"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="DesertTemperate">
+    <AIParameter Name="AIRegionEsperanceDistrictFood"     Value="1.2"/>
+    <AIParameter Name="AIRegionEsperanceDistrictIndustry" Value="3.5"/>
+    <AIParameter Name="AIRegionEsperanceDistrictScience"  Value="9.3"/>
+    <AIParameter Name="AIRegionEsperanceDistrictDust"     Value="1.2"/>
+  </AIParameterDatatableElement>
+
+  <!-- <AIParameterDatatableElement Name="RiftDry">
+    <AIParameter Name="DistrictFood" Value="0"/>
+    <AIParameter Name="DistrictIndustry" Value="0"/>
+    <AIParameter Name="DistrictScience" Value="0"/>
+    <AIParameter Name="DistrictDust" Value="0"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="RiftTemperate">
+    <AIParameter Name="DistrictFood" Value="0"/>
+    <AIParameter Name="DistrictIndustry" Value="0"/>
+    <AIParameter Name="DistrictScience" Value="0"/>
+    <AIParameter Name="DistrictDust" Value="0"/>
+  </AIParameterDatatableElement>
+  
+  <AIParameterDatatableElement Name="VolcanicLandsDry">
+    <AIParameter Name="DistrictFood" Value="0"/>
+    <AIParameter Name="DistrictIndustry" Value="0"/>
+    <AIParameter Name="DistrictScience" Value="0"/>
+    <AIParameter Name="DistrictDust" Value="0"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="VolcanicLandsTemperate">
+    <AIParameter Name="DistrictFood" Value="0"/>
+    <AIParameter Name="DistrictIndustry" Value="0"/>
+    <AIParameter Name="DistrictScience" Value="0"/>
+    <AIParameter Name="DistrictDust" Value="0"/>
+  </AIParameterDatatableElement>
+
+ <AIParameterDatatableElement Name="MarshLandsTemperate">
+    <AIParameter Name="DistrictFood" Value="5.3"/>
+    <AIParameter Name="DistrictIndustry" Value="4.4"/>
+    <AIParameter Name="DistrictScience" Value="4.4"/>
+    <AIParameter Name="DistrictDust" Value="3.5"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="MarshLandsWet">
+    <AIParameter Name="DistrictFood" Value="5.3"/>
+    <AIParameter Name="DistrictIndustry" Value="4.4"/>
+    <AIParameter Name="DistrictScience" Value="4.4"/>
+    <AIParameter Name="DistrictDust" Value="3.5"/>
+  </AIParameterDatatableElement>
+   
+  <AIParameterDatatableElement Name="CrystalPlainsTemperate">
+    <AIParameter Name="DistrictFood" Value="10"/>
+    <AIParameter Name="DistrictIndustry" Value="10"/>
+    <AIParameter Name="DistrictScience" Value="10"/>
+    <AIParameter Name="DistrictDust" Value="10"/>
+  </AIParameterDatatableElement>
+
+  <AIParameterDatatableElement Name="CrystalPlainsWet">
+    <AIParameter Name="DistrictFood" Value="10"/>
+    <AIParameter Name="DistrictIndustry" Value="10"/>
+    <AIParameter Name="DistrictScience" Value="10"/>
+    <AIParameter Name="DistrictDust" Value="10"/>
+  </AIParameterDatatableElement>
+
+  -->
+
+</Datatable>

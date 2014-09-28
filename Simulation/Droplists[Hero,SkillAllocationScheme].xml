@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!--<Droplist Name="HeroSkillAllocationSchemeBalanced">
+    <String Value="SubCategorySkillClass" Weight="1"/>
+    <String Value="SubCategorySkillCommon" Weight="1"/>
+    <String Value="SubCategorySkillFaction" Weight="8"/>
+  </Droplist>-->
+
+  <Droplist Name="HeroSkillAllocationSchemeGovernor">
+    <String Value="SubCategoryHeroSkillGovernor" Weight="6"/>
+    <String Value="SubCategoryHeroSkillLeaderBattle" Weight="1"/>
+    <String Value="SubCategoryHeroSkillLeaderMap" Weight="1"/>
+  </Droplist>
+  
+  <Droplist Name="HeroSkillAllocationSchemeLeaderBattle">
+    <String Value="SubCategoryHeroSkillGovernor" Weight="1"/>
+    <String Value="SubCategoryHeroSkillLeaderBattle" Weight="6"/>
+    <String Value="SubCategoryHeroSkillLeaderMap" Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="HeroSkillAllocationSchemeLeaderMap">
+    <String Value="SubCategoryHeroSkillGovernor" Weight="1"/>
+    <String Value="SubCategoryHeroSkillLeaderBattle" Weight="1"/>
+    <String Value="SubCategoryHeroSkillLeaderMap" Weight="6"/>
+  </Droplist>
+
+  <Droplist Name="HeroSkillAllocationSchemeBalanced">
+    <String Value="SubCategoryHeroSkillGovernor" Weight="1"/>
+    <String Value="SubCategoryHeroSkillLeaderBattle" Weight="1"/>
+    <String Value="SubCategoryHeroSkillLeaderMap" Weight="1"/>
+  </Droplist>
+
+</Datatable>

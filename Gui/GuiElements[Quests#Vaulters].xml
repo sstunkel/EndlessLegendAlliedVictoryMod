@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://Vaultersw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://Vaultersw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter1">
+    <Title>%MainQuestVaulters-Chapter1Title</Title>
+    <Description>%MainQuestVaulters-Chapter1Description</Description>
+    <Objective>%MainQuestVaulters-Chapter1Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter1-Step1">%MainQuestVaulters-Chapter1-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter2">
+    <Title>%MainQuestVaulters-Chapter2Title</Title>
+    <Description>%MainQuestVaulters-Chapter2Description</Description>
+    <Objective>%MainQuestVaulters-Chapter2Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter2-Step1">%MainQuestVaulters-Chapter2-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter2-Step1">%MainQuestVaulters-Chapter2-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2Alt -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter2Alt">
+    <Title>%MainQuestVaulters-Chapter2AltTitle</Title>
+    <Description>%MainQuestVaulters-Chapter2AltDescription</Description>
+    <Objective>%MainQuestVaulters-Chapter2AltObjective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter2AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter2Alt-Step1">%MainQuestVaulters-Chapter2Alt-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter2Alt-Step1">%MainQuestVaulters-Chapter2Alt-Step2</Step>
+      <Step Name="MainQuestVaulters-Chapter2Alt-Step1">%MainQuestVaulters-Chapter2Alt-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter3">
+    <Title>%MainQuestVaulters-Chapter3Title</Title>
+    <Description>%MainQuestVaulters-Chapter3Description</Description>
+    <Objective>%MainQuestVaulters-Chapter3Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter3-Step1">%MainQuestVaulters-Chapter3-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter3-Step2">%MainQuestVaulters-Chapter3-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter4">
+    <Title>%MainQuestVaulters-Chapter4Title</Title>
+    <Description>%MainQuestVaulters-Chapter4Description</Description>
+    <Objective>%MainQuestVaulters-Chapter4Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter4-Step1">%MainQuestVaulters-Chapter4-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter4-Step2">%MainQuestVaulters-Chapter4-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter5">
+    <Title>%MainQuestVaulters-Chapter5Title</Title>
+    <Description>%MainQuestVaulters-Chapter5Description</Description>
+    <Objective>%MainQuestVaulters-Chapter5Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter5-Step1">%MainQuestVaulters-Chapter5-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter5-Step2">%MainQuestVaulters-Chapter5-Step2</Step>
+      <Step Name="MainQuestVaulters-Chapter5-Step3">%MainQuestVaulters-Chapter5-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter6">
+    <Title>%MainQuestVaulters-Chapter6Title</Title>
+    <Description>%MainQuestVaulters-Chapter6Description</Description>
+    <Objective>%MainQuestVaulters-Chapter6Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter6-Step1">%MainQuestVaulters-Chapter6-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter6-Step2">%MainQuestVaulters-Chapter6-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6Alt -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter6Alt">
+    <Title>%MainQuestVaulters-Chapter6AltTitle</Title>
+    <Description>%MainQuestVaulters-Chapter6AltDescription</Description>
+    <Objective>%MainQuestVaulters-Chapter6AltObjective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter6AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter6Alt-Step1">%MainQuestVaulters-Chapter6Alt-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter6Alt-Step2">%MainQuestVaulters-Chapter6Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter7">
+    <Title>%MainQuestVaulters-Chapter7Title</Title>
+    <Description>%MainQuestVaulters-Chapter7Description</Description>
+    <Objective>%MainQuestVaulters-Chapter7Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter7-Step1">%MainQuestVaulters-Chapter7-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7Alt -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter7Alt">
+    <Title>%MainQuestVaulters-Chapter7AltTitle</Title>
+    <Description>%MainQuestVaulters-Chapter7AltDescription</Description>
+    <Objective>%MainQuestVaulters-Chapter7AltObjective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter7AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter7Alt-Step1">%MainQuestVaulters-Chapter7Alt-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestVaulters-Chapter8">
+    <Title>%MainQuestVaulters-Chapter8Title</Title>
+    <Description>%MainQuestVaulters-Chapter8Description</Description>
+    <Objective>%MainQuestVaulters-Chapter8Objective</Objective>
+    <Outcome>%MainQuestVaulters-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestVaulters8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestVaulters-Chapter8-Step1">%MainQuestVaulters-Chapter8-Step1</Step>
+      <Step Name="MainQuestVaulters-Chapter8-Step2">%MainQuestVaulters-Chapter8-Step2</Step>
+      <Step Name="MainQuestVaulters-Chapter8-Step1">%MainQuestVaulters-Chapter8-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

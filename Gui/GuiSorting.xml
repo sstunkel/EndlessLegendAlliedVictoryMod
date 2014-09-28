@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiSorting Name="SubCategory">
+    <SortValue Name="SubCategoryVictory">0</SortValue>
+    <SortValue Name="SubCategoryCapitol">1</SortValue>
+    <SortValue Name="SubCategoryCityHall">2</SortValue>
+    <SortValue Name="SubCategoryFIDS">10</SortValue>
+    <SortValue Name="SubCategoryFood">11</SortValue>
+    <SortValue Name="SubCategoryIndustry">12</SortValue>
+    <SortValue Name="SubCategoryDust">13</SortValue>
+    <SortValue Name="SubCategoryScience">14</SortValue>
+    <SortValue Name="SubCategoryEmpirePoint">15</SortValue>
+    <SortValue Name="SubCategoryApproval">16</SortValue>
+    <SortValue Name="SubCategoryAffinityResource">17</SortValue>
+    <SortValue Name="SubCategoryTradeRoutes">20</SortValue>
+    <SortValue Name="SubCategoryRoads">21</SortValue>
+    <SortValue Name="SubCategoryMilitary">30</SortValue>
+    <SortValue Name="SubCategoryDistrict">40</SortValue>
+    <SortValue Name="SubCategoryExploit">41</SortValue>
+    <SortValue Name="SubCategoryVision">42</SortValue>
+    <SortValue Name="SubCategoryQuestPOI">43</SortValue>
+    <SortValue Name="SubCategoryVillage">44</SortValue>
+    <SortValue Name="SubCategoryRazing">100</SortValue>
+  </GuiSorting>
+</Datatable>

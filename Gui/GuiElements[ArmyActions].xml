@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="ArmyActionAttack">
+    <Title>%ArmyActionAttackTitle</Title>
+    <Description>%ArmyActionAttackDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionAttackSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionAttackLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionAutoExplore">
+    <Title>%ArmyActionAutoExploreTitle</Title>
+    <Description>%ArmyActionAutoExploreDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionAutoExploreSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionAutoExploreLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionBribe">
+    <Title>%ArmyActionBribeTitle</Title>
+    <Description>%ArmyActionBribeNoCostDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionBribeSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionBribeLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionColonization">
+    <Title>%ArmyActionColonizationTitle</Title>
+    <Description>%ArmyActionColonizationDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionColonizationSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionColonizationLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionConvert">
+    <Title>%ArmyActionConvertTitle</Title>
+    <Description>%ArmyActionConvertDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionConvertSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionConvertLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionResettle">
+    <Title>%ArmyActionResettleTitle</Title>
+    <Description>%ArmyActionResettleDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionResettleSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionResettleLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionRaze">
+    <Title>%ArmyActionRazeTitle</Title>
+    <Description>%ArmyActionRazeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionRazeSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionRazeLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionGuard">
+    <Title>%ArmyActionGuardTitle</Title>
+    <Description>%ArmyActionGuardDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionGuardSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionGuardLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionParley">
+    <Title>%ArmyActionParleyTitle</Title>
+    <Description>%ArmyActionParleyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionParleySmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionParleyLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionPrivateers">
+    <Title>%ArmyActionPrivateersTitle</Title>
+    <Description>%ArmyActionPrivateersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionPrivateersSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionPrivateersLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionSearch">
+    <Title>%ArmyActionSearchTitle</Title>
+    <Description>%ArmyActionSearchDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionSearchSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionSearchLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionSiege">
+    <Title>%ArmyActionSiegeTitle</Title>
+    <Description>%ArmyActionSiegeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionSiegeSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionSiegeLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionTeleport">
+    <Title>%ArmyActionTeleportTitle</Title>
+    <Description>%ArmyActionTeleportDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionTeleportSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionTeleportLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionTransferUnits">
+    <Title>%ArmyActionTransferUnitsTitle</Title>
+    <Description>%ArmyActionTransferUnitsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionTransferSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionTransferLarge" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="ArmyActionTransferUnitsToGarrison">
+    <Title>%ArmyActionTransferUnitsToGarrisonTitle</Title>
+    <Description>%ArmyActionTransferUnitsToGarrisonDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ArmyActionGarrisonSmall" />
+      <Icon Size="Large" Path="GUI/DynamicBitmaps/ArmyActions/ArmyActionGarrisonLarge" />
+    </Icons>
+  </GuiElement>
+</Datatable>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <ExtendedGuiElement Name="UnitHealthFine">
+    <Title>%UnitHealthFineTitle</Title>
+    <Description>%UnitHealthFineDescription</Description>
+    <Color Red="93" Green="185" Blue="82" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="UnitHealthWounded">
+    <Title>%UnitHealthWoundedTitle</Title>
+    <Description>%UnitHealthWoundedDescription</Description>
+    <Color Red="194" Green="186" Blue="107" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="UnitHealthCritical">
+    <Title>%UnitHealthCriticalTitle</Title>
+    <Description>%UnitHealthCriticalDescription</Description>
+    <Color Red="202" Green="125" Blue="96" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="HeroHealthFine">
+    <Title>%HeroHealthFineTitle</Title>
+    <Description>%HeroHealthFineDescription</Description>
+    <Color Red="93" Green="185" Blue="82" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroHealthWounded">
+    <Title>%HeroHealthWoundedTitle</Title>
+    <Description>%HeroHealthWoundedDescription</Description>
+    <Color Red="194" Green="186" Blue="107" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HeroHealthCritical">
+    <Title>%HeroHealthCriticalTitle</Title>
+    <Description>%HeroHealthCriticalDescription</Description>
+    <Color Red="202" Green="125" Blue="96" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <GuiElement Name="HeroAssignmentCity">
+    <Title>%HeroAssignmentCityTitle</Title>
+    <Description>%HeroAssignmentCityDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/HeroStatus/HeroAssignmentCitySmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="HeroAssignmentArmy">
+    <Title>%HeroAssignmentArmyTitle</Title>
+    <Description>%HeroAssignmentArmyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/HeroStatus/HeroAssignmentArmySmall" />
+    </Icons>
+  </GuiElement>
+  <GuiElement Name="HeroAssignmentNone">
+    <Title>%HeroAssignmentNoneTitle</Title>
+    <Description>%HeroAssignmentNoneDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/HeroStatus/HeroAssignmentNoneSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <ExtendedGuiElement Name="AttributeNormal">
+    <Title>%AttributeNormalTitle</Title>
+    <Description>%AttributeNormalDescription</Description>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="AttributeBonus">
+    <Title>%AttributeBonusTitle</Title>
+    <Description>%AttributeBonusDescription</Description>
+    <Color Red="164" Green="224" Blue="33" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="AttributeMalus">
+    <Title>%AttributeMalusTitle</Title>
+    <Description>%AttributeMalusDescription</Description>
+    <Color Red="255" Green="73" Blue="49" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="HitInfo0">
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/BattleHit/HitInfo0Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/BattleHit/HitInfo0Large" />
+	</Icons>
+    <Color Red="173" Green="94" Blue="92" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HitInfo1">
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/BattleHit/HitInfo1Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/BattleHit/HitInfo1Large" />
+	</Icons>
+    <Color Red="237" Green="78" Blue="72" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HitInfo2">
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/BattleHit/HitInfo2Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/BattleHit/HitInfo2Large" />
+	</Icons>
+    <Color Red="237" Green="54" Blue="47" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HitInfo3">
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/BattleHit/HitInfo3Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/BattleHit/HitInfo3Large" />
+	</Icons>
+    <Color Red="237" Green="18" Blue="10" Alpha="255" />
+  </ExtendedGuiElement>
+  <ExtendedGuiElement Name="HealInfo0">
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/BattleHit/HealInfo0Small" />
+      <Icon Size="Large" Path="Gui/DynamicBitmaps/BattleHit/HealInfo0Large" />
+	</Icons>
+    <Color Red="83" Green="177" Blue="190" Alpha="255" />
+  </ExtendedGuiElement>
+  
+  </Datatable>

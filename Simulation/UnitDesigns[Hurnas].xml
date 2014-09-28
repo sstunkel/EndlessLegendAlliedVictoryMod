@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################################################################################################################## -->
+  <!-- #########################################   PREMADE UNIT DESIGN WHICH CAN BE CALL BY OTHER XMLS  ################################################# -->
+  <!-- ########    - Those units can be useful for the Quest, and  Minor Faction. It still can be used to generate units from a city improvement ######## -->
+  <!-- ################################################################################################################################################## -->
+
+  <!-- ######################################################### -->
+  <!-- ##################### HURNAS ORC UNITS ################## -->
+  <!-- ######################################################### -->
+
+  <!-- Default Unit Design proposed to Player when unlocking the Body -->
+  <UnitDesign Name="UnitDesignHurnasOrc#1"                         Model="1110100">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction tribes to create village armies and roaming armies-->
+  <UnitDesign Name="UnitDesignHurnasOrc#MinorEmpireEra1"           Model="1110111">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1"   />
+      <Slot Name="Head"                            ItemName=""        />
+      <Slot Name="Torso"                           ItemName=""       />
+      <Slot Name="Legs"                            ItemName=""        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MinorEmpireEra2"           Model="1110112">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier2#1"   />
+      <Slot Name="Head"                            ItemName=""        />
+      <Slot Name="Torso"                           ItemName=""       />
+      <Slot Name="Legs"                            ItemName=""        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MinorEmpireEra3"           Model="1110113">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier3#1"   />
+      <Slot Name="Head"                            ItemName=""        />
+      <Slot Name="Torso"                           ItemName=""       />
+      <Slot Name="Legs"                            ItemName=""        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MinorEmpireEra4"           Model="1110114">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas</PathPrerequisite>
+    <Tags>Era4</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier1#1"   />
+      <Slot Name="Head"                            ItemName=""        />
+      <Slot Name="Torso"                           ItemName=""       />
+      <Slot Name="Legs"                            ItemName=""        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MinorEmpireEra5"           Model="1110115">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier2#1"   />
+      <Slot Name="Head"                            ItemName=""        />
+      <Slot Name="Torso"                           ItemName=""       />
+      <Slot Name="Legs"                            ItemName=""        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MinorEmpireEra6"           Model="1110116">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier3#1"   />
+      <Slot Name="Head"                            ItemName=""        />
+      <Slot Name="Torso"                           ItemName=""       />
+      <Slot Name="Legs"                            ItemName=""        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction neutral tribes to inject units through he Market Place -->
+  <UnitDesign Name="UnitDesignHurnasOrc#MercenaryEra1"             Model="1110121">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas,Mercenary</PathPrerequisite>
+    <Tags>Era1</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MercenaryEra2"             Model="1110122">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas,Mercenary</PathPrerequisite>
+    <Tags>Era2</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MercenaryEra3"             Model="1110123">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas,Mercenary</PathPrerequisite>
+    <Tags>Era3</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+   </UnitEquipmentSet>
+ </UnitDesign>
+ <UnitDesign Name="UnitDesignHurnasOrc#MercenaryEra4"             Model="1110124">
+   <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+   <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas,Mercenary</PathPrerequisite>
+   <Tags>Era4</Tags>
+   <UnitEquipmentSet>
+     <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier1#1" />
+     <Slot Name="OffHand"                         ItemName="ItemShield1DustTier1#1"   />
+     <Slot Name="Head"                            ItemName="ItemHeadDustTier1"        />
+     <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"       />
+     <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"        />
+     <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MercenaryEra5"             Model="1110125">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas,Mercenary</PathPrerequisite>
+    <Tags>Era5</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#MercenaryEra6"             Model="1110126">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas,Mercenary</PathPrerequisite>
+    <Tags>Era6</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!--Used by the Minor Faction converted tribes -->
+  <UnitDesign Name="UnitDesignHurnasOrc#ConvertedEra1"             Model="1110131" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <Tags>ConvertedVillageUnit,Era1,Hurnas,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier1"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier1"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#ConvertedEra2"             Model="1110132" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <Tags>ConvertedVillageUnit,Era2,Hurnas,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier2"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier2"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier2"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#ConvertedEra3"             Model="1110133" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <Tags>ConvertedVillageUnit,Era3,Hurnas,Mercenary</Tags>
+   <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadIronTier3"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier3"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsIronTier3"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+     <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+     <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#ConvertedEra4"             Model="1110134" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <Tags>ConvertedVillageUnit,Era4,Hurnas,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier1#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier1"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier1"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier1"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#ConvertedEra5"             Model="1110135" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <Tags>ConvertedVillageUnit,Era5,Hurnas,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier2#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier2#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier2"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier2"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier2"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#ConvertedEra6"             Model="1110136" Hidden="true">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <Tags>ConvertedVillageUnit,Era6,Hurnas,Mercenary</Tags>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1DustTier3#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1DustTier3#1"   />
+      <Slot Name="Head"                            ItemName="ItemHeadDustTier3"        />
+      <Slot Name="Torso"                           ItemName="ItemTorsoDustTier3"       />
+      <Slot Name="Legs"                            ItemName="ItemLegsDustTier3"        />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+
+  <!-- Deprecated -->
+  <UnitDesign Name="UnitDesignHurnasOrc#MinorEmpire"               Model="1110101">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Minor,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas</PathPrerequisite>
+    <UnitEquipmentSet>
+      <Slot Name="MainHand"                        ItemName="ItemCrossbow1IronTier1#1" />
+      <Slot Name="OffHand"                         ItemName="ItemShield1IronTier1#1"   />
+      <Slot Name="Head"                            ItemName="" />
+      <Slot Name="Torso"                           ItemName="ItemTorsoIronTier1"       />
+      <Slot Name="Legs"                            ItemName="" />
+      <Slot Name="Accessory0" SlotType="Accessory" ItemName="" />
+      <Slot Name="Accessory1" SlotType="Accessory" ItemName=""                     />
+      <Slot Name="Accessory2" SlotType="Accessory" ItemName=""                     />
+    </UnitEquipmentSet>
+  </UnitDesign>
+  <UnitDesign Name="UnitDesignHurnasOrc#Mercenary"                 Model="1110102">
+    <UnitBodyDefinitionReference Name="UnitBodyHurnasOrc" />
+    <PathPrerequisite Flags="Prerequisite,Discard,Validity">.../ClassEmpire,EmpireTypeMinor,AffinityHurnas,Mercenary</PathPrerequisite>
+  </UnitDesign>
+
+</Datatable>

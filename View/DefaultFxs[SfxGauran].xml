@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  
+  <!-- ===================================== SFX GAURAN ======================================== -->
+
+
+  <DefaultFxDefinition Name="SFX_Gauran_Footstep">
+    <SoundEventName>Sfx/Faction/Gauran/Gauran_Footstep</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Gauran_Voice_Attack">
+    <SoundEventName>Sfx/Voices/Gauran/Gauran_Voice_Attack</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Gauran_Voice_Death">
+    <SoundEventName>Sfx/Voices/Gauran/Gauran_Voice_Death</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Gauran_Voice_Defense">
+    <SoundEventName>Sfx/Voices/Gauran/Gauran_Voice_Defense</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Gauran_Voice_IdleSnarl">
+    <SoundEventName>Sfx/Voices/Gauran/Gauran_Voice_IdleSnarl</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+  <DefaultFxDefinition Name="SFX_Gauran_Voice_IdleSnort">
+    <SoundEventName>Sfx/Voices/Gauran/Gauran_Voice_IdleSnort</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+
+  <DefaultFxDefinition Name="SFX_Gauran_BodyFall">
+    <SoundEventName>Sfx/Faction/Gauran/Gauran_BodyFall</SoundEventName>
+    <StopSoundImmediate>false</StopSoundImmediate>
+    <IsSoundPersistent>false</IsSoundPersistent>
+  </DefaultFxDefinition>
+
+</Datatable>

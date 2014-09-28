@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--  AVAILABLE VARIABLES: 
+    $IsAttacking                          : 1 if AI is attacking, 0 if AI is being attacked
+
+    $Ally_UnitCount                       : number of ally unit (without heroes)
+    $Ally_HeroCount                       : number of ally heroes
+    $Ally_Power                           : sum of all ally's units powers and heroes powers
+    $Opponent_UnitCount                   : number of opponent unit (without heroes)
+    $Opponent_HeroCount                   : number of opponent heroes
+    $Opponent_Power                       : sum of all opponent units powers and heroes powers
+
+    $Ally_[UnitPatternCategory]_Count     : number of ally units whose best unitpattern is [UnitPatternName]
+    $Ally_[UnitPatternCategory]_Power     : sum of all ally units affinities to [UnitPatternName]
+    $Opponent_[UnitPatternCategory]_Count : number of opponent units whose best unitpattern is [UnitPatternName]
+    $Opponent_[UnitPatternCategory]_Power : sum of all opponent units affinities to [UnitPatternName]
+
+    -->
+  <AIParameterDatatableElement Name="EncounterStrategyEvaluation">
+    <AIParameter Name="AllyIsAttacking" Value="$(IsAttacking)"/>
+
+    <AIParameter Name="AllyHasASettler" Value="$(Ally_Settler_Count) min 1"/>
+
+    <AIParameter Name="AllyHasProtectorAdvantage" Value="($(Ally_Protector_Power) - $(Opponent_DefenseBreaker_Power)) / (($(Opponent_DefenseBreaker_Power) max $(Ally_Protector_Power)) max 1)"/>
+
+    <AIParameter Name="AllyHasKillerAdvantage" Value="($(Ally_Killer_Power) - $(Opponent_Protector_Power)) / (($(Opponent_Protector_Power) max $(Ally_Killer_Power)) max 1)"/>
+
+    <AIParameter Name="AllyHasDefenseBreakerAdvantage" Value="($(Ally_DefenseBreaker_Power) - $(Opponent_Killer_Power)) / (($(Opponent_Killer_Power) max $(Ally_DefenseBreaker_Power)) max 1)"/>
+
+    <AIParameter Name="AllyHasArtilleryAdvantage" Value="($(Ally_Artillery_Power) - $(Opponent_Artillery_Power)) / (($(Opponent_Artillery_Power) max $(Ally_Artillery_Power)) max 1)"/>
+
+    <AIParameter Name="AllyHasGlobalAdvantage" Value="($(Ally_Power) - $(Opponent_Power)) / (($(Ally_Power) max $(Opponent_Power)) max 1)"/>
+
+  </AIParameterDatatableElement>
+
+</Datatable>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Strategic1">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Strategic1</Property>
+    <Property Name="ResourceType">Strategic</Property>
+    <Property Name="Category">ResourceDeposit_Strategic</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusStrategic</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition1</Property>
+    <Property Name="StrategicTier">Tier1</Property>
+    <Property Name="NormalQuantity">12</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionStrategic1</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Strategic2">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Strategic2</Property>
+    <Property Name="ResourceType">Strategic</Property>
+    <Property Name="Category">ResourceDeposit_Strategic</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusStrategic</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition1</Property>
+    <Property Name="StrategicTier">Tier1</Property>
+    <Property Name="NormalQuantity">12</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionStrategic2</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Strategic3">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Strategic3</Property>
+    <Property Name="ResourceType">Strategic</Property>
+    <Property Name="Category">ResourceDeposit_Strategic</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusStrategic</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition3</Property>
+    <Property Name="StrategicTier">Tier2</Property>
+    <Property Name="NormalQuantity">8</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionStrategic3</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Strategic4">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Strategic4</Property>
+    <Property Name="ResourceType">Strategic</Property>
+    <Property Name="Category">ResourceDeposit_Strategic</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusStrategic</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition3</Property>
+    <Property Name="StrategicTier">Tier2</Property>
+    <Property Name="NormalQuantity">8</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionStrategic4</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Strategic5">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Strategic5</Property>
+  <Property Name="ResourceType">Strategic</Property>
+    <Property Name="Category">ResourceDeposit_Strategic</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusStrategic</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition4</Property>
+    <Property Name="StrategicTier">Tier3</Property>
+    <Property Name="NormalQuantity">4</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionStrategic5</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Strategic6">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Strategic6</Property>
+    <Property Name="ResourceType">Strategic</Property>
+    <Property Name="Category">ResourceDeposit_Strategic</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusStrategic</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition4</Property>
+    <Property Name="StrategicTier">Tier3</Property>
+    <Property Name="NormalQuantity">4</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionStrategic6</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury1">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury1</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition1</Property>
+    <Property Name="LuxuryTier">Tier1</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury1</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury2">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury2</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition1</Property>
+    <Property Name="LuxuryTier">Tier1</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury2</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury3">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury3</Property>
+  <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition1</Property>
+    <Property Name="LuxuryTier">Tier1</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury3</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury4">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury4</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition1</Property>
+    <Property Name="LuxuryTier">Tier1</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury4</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury5">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury5</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition1</Property>
+    <Property Name="LuxuryTier">Tier1</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury5</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury6">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury6</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition3</Property>
+    <Property Name="LuxuryTier">Tier2</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury6</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury7">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury7</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition3</Property>
+    <Property Name="LuxuryTier">Tier2</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury7</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury8">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury8</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition3</Property>
+    <Property Name="LuxuryTier">Tier2</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury8</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury9">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury9</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition3</Property>
+    <Property Name="LuxuryTier">Tier2</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury9</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury10">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury10</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition3</Property>
+    <Property Name="LuxuryTier">Tier2</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury10</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury11">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury11</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition4</Property>
+    <Property Name="LuxuryTier">Tier3</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury11</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury12">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury12</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition4</Property>
+    <Property Name="LuxuryTier">Tier3</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury12</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury13">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury13</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition4</Property>
+    <Property Name="LuxuryTier">Tier3</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury13</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury14">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury14</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition4</Property>
+    <Property Name="LuxuryTier">Tier3</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury14</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="ResourceDeposit_Luxury15">
+    <Property Name="Type">ResourceDeposit</Property>
+    <Property Name="ResourceName">Luxury15</Property>
+    <Property Name="ResourceType">Luxury</Property>
+    <Property Name="Category">ResourceDeposit_Luxury</Property>
+    <Property Name="DistrictBonus">PointOfInterestBonusLuxury</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition4</Property>
+    <Property Name="LuxuryTier">Tier3</Property>
+    <Property Name="LeachByConversionDescriptor">LeachByConversionLuxury15</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="WatchTower">
+    <Property Name="Type">WatchTower</Property>
+    <Property Name="Category">WatchTower</Property>
+    <Property Name="VisibilityTechnology">TechnologyEraDefinition2</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="QuestLocation_Temple">
+    <Property Name="Type">QuestLocation</Property>
+    <Property Name="QuestLocationType">Temple</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <!--<Property Name="PreventsDistrictTypeExploitationConstruction">True</Property>-->
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="QuestLocation_Ruin">
+    <Property Name="Type">QuestLocation</Property>
+    <Property Name="QuestLocationType">Ruin</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <!--<Property Name="PreventsDistrictTypeExploitationConstruction">True</Property>-->
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Urces">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Urces</Property>
+    <Property Name="AffinityMapping">Urces</Property>
+    <Property Name="Improvement">Village_Urces</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>    
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="Village_Erycis">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Erycis</Property>
+    <Property Name="AffinityMapping">Erycis</Property>
+    <Property Name="Improvement">Village_Erycis</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="Village_Ceratan">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Ceratan</Property>
+    <Property Name="AffinityMapping">Ceratan</Property>
+    <Property Name="Improvement">Village_Ceratan</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="Village_Kazanji">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Kazanji</Property>
+    <Property Name="AffinityMapping">Kazanji</Property>
+    <Property Name="Improvement">Village_Kazanji</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+  
+  <PointOfInterestTemplate Name="Village_Bos">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Bos</Property>
+    <Property Name="AffinityMapping">Bos</Property>
+    <Property Name="Improvement">Village_Bos</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Silics">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Silics</Property>
+    <Property Name="AffinityMapping">Silics</Property>
+    <Property Name="Improvement">Village_Silics</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Delvers">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Delvers</Property>
+    <Property Name="AffinityMapping">Delvers</Property>
+    <Property Name="Improvement">Village_Delvers</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_SistersOfMercy">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">SistersOfMercy</Property>
+    <Property Name="AffinityMapping">SistersOfMercy</Property>
+    <Property Name="Improvement">Village_SistersOfMercy</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Haunts">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Haunts</Property>
+    <Property Name="AffinityMapping">Haunts</Property>
+    <Property Name="Improvement">Village_Haunts</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Jotus">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Jotus</Property>
+    <Property Name="AffinityMapping">Jotus</Property>
+    <Property Name="Improvement">Village_Jotus</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Hurnas">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Hurnas</Property>
+    <Property Name="AffinityMapping">Hurnas</Property>
+    <Property Name="Improvement">Village_Hurnas</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Gauran">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Gauran</Property>
+    <Property Name="AffinityMapping">Gauran</Property>
+    <Property Name="Improvement">Village_Gauran</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <PointOfInterestTemplate Name="Village_Birdhive">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Birdhive</Property>
+    <Property Name="AffinityMapping">Birdhive</Property>
+    <Property Name="Improvement">Village_Birdhive</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+
+  <!-- DownloadableContent.FounderPack -->
+  <PointOfInterestTemplate Name="Village_Geldirus">
+    <Property Name="Type">Village</Property>
+    <Property Name="Affinity">Geldirus</Property>
+    <Property Name="AffinityMapping">Geldirus</Property>
+    <Property Name="Improvement">Village_Geldirus</Property>
+    <Property Name="PreventsDistrictTypeCenterConstruction">True</Property>
+    <Property Name="PreventsDistrictTypeExtensionConstruction">True</Property>
+  </PointOfInterestTemplate>
+  
+</Datatable>

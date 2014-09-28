@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<AchievementStatisticDefinition Name="ARDENT_MAGES_PILLARS_COUNT" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="CULTISTS_CONVERTED_VILLAGES" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="NECROPHAGES_CADAVER_BOOSTER_USED_PER_GAME" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="VAULTERS_UNIT_COUNT_TELEPORTED_TO_BESIEGED_CITY" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="WILD_WALKERS_UNDAMAGED_UNITS_AFTER_BATTLE" StatisticType="Int" />
+
+	<AchievementStatisticDefinition Name="TURNS_PLAYED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="QUESTS_COMPLETED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="VILLAGES_PACIFIED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONBROKENLORDS" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONRAGEWIZARDS" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONMADFAIRIES" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONNECROPHAGES" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONROVINGCLANS" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONVAULTERS" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONDRAKKENS" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_FACTIONCULTISTS" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="FINAL_QUEST_COMPLETED_COUNT" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="HERO_COUNT" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="CITIES_COUNT_TURN_15" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="MAX_NET_CITY_DUST" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="MAX_NET_CITY_SCIENCE" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="MAX_NET_CITY_INDUSTRY" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="MAX_NET_CITY_FOOD" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="MAX_NET_CITY_INFLUENCE" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="MAX_HERO_LEVEL" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="LUXURY_BOOSTERS_ACTIVE" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="UNITS_KILLED" StatisticType="Int" /> 
+	<AchievementStatisticDefinition Name="MAX_CITY_LEVELED_BOROUGHS_COUNT" StatisticType="Int" /> 
+	<AchievementStatisticDefinition Name="TILES_EXPLORED" StatisticType="Int" /> 
+	<AchievementStatisticDefinition Name="STRATEGIC_EXTRACTOR_COUNT" StatisticType="Int" /> 
+	<AchievementStatisticDefinition Name="TRADE_ROUTES" StatisticType="Int" /> 
+	
+	
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY1_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY2_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY3_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY4_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY5_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY6_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY7_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY8_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY9_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY10_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY11_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY12_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY13_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY14_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="BOOSTERLUXURY15_USED" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="LUXURY_BOOSTER_USED_COUNT" StatisticType="Int" />
+	
+	<AchievementStatisticDefinition Name="MINOR_FACTIONS_ASSIMILATED_PER_GAME" StatisticType="Int" />
+	<AchievementStatisticDefinition Name="IMPROVEMENTS_BUILT_PER_GAME" StatisticType="Int" />
+	
+	<!-- Floats -->
+	<AchievementStatisticDefinition Name="DUST_GAINED" StatisticType="Float" /> 
+	<AchievementStatisticDefinition Name="BROKEN_LORDS_MAX_DUST_DISTRICT" StatisticType="Float" /> 
+	<AchievementStatisticDefinition Name="ROVING_CLANS_MARKETPLACE_TAXES" StatisticType="Float" />
+
+</Datatable>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <GuiElement Name="ChillyInlandWaters">
+    <Title>%TerrainTypeChillyInlandWatersTitle</Title>
+    <Description>%TerrainTypeChillyInlandWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ChillyWaters">
+    <Title>%TerrainTypeChillyWatersTitle</Title>
+    <Description>%TerrainTypeChillyWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="CoastalWaters">
+    <Title>%TerrainTypeCoastalWatersTitle</Title>
+    <Description>%TerrainTypeCoastalWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ColdDirtField">
+    <Title>%TerrainTypeColdDirtFieldTitle</Title>
+    <Description>%TerrainTypeColdDirtFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ColdForest">
+    <Title>%TerrainTypeColdForestTitle</Title>
+    <Description>%TerrainTypeColdForestDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ColdGrassland">
+    <Title>%TerrainTypeColdGrasslandTitle</Title>
+    <Description>%TerrainTypeColdGrasslandDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="CoralReef">
+    <Title>%TerrainTypeCoralReefTitle</Title>
+    <Description>%TerrainTypeCoralReefDescription</Description>
+  </GuiElement>
+  
+  <GuiElement Name="TropicalCoralReef">
+    <Title>%TerrainTypeCoralReefTitle</Title>
+    <Description>%TerrainTypeCoralReefDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="CrystalField">
+    <Title>%TerrainTypeCrystalFieldTitle</Title>
+    <Description>%TerrainTypeCrystalFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="CrystalForest">
+    <Title>%TerrainTypeCrystalForestTitle</Title>
+    <Description>%TerrainTypeCrystalForestDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="CrystalIce">
+    <Title>%TerrainTypeCrystalIceTitle</Title>
+    <Description>%TerrainTypeCrystalIceDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DesertInlandWaters">
+    <Title>%TerrainTypeDesertInlandWatersTitle</Title>
+    <Description>%TerrainTypeDesertInlandWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DesertWaters">
+    <Title>%TerrainTypeDesertWatersTitle</Title>
+    <Description>%TerrainTypeDesertWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DirtField">
+    <Title>%TerrainTypeDirtFieldTitle</Title>
+    <Description>%TerrainTypeDirtFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DriftIce">
+    <Title>%TerrainTypeDriftIceTitle</Title>
+    <Description>%TerrainTypeDriftIceDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraDriftIce">
+    <Title>%TerrainTypeDriftIceTitle</Title>
+    <Description>%TerrainTypeDriftIceDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DrySoil">
+    <Title>%TerrainTypeDrySoilTitle</Title>
+    <Description>%TerrainTypeDrySoilDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="EnchantedForest">
+    <Title>%TerrainTypeEnchantedForestTitle</Title>
+    <Description>%TerrainTypeEnchantedForestDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="FrozenGrass">
+    <Title>%TerrainTypeFrozenGrassTitle</Title>
+    <Description>%TerrainTypeFrozenGrassDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="FrozenSpikes">
+    <Title>%TerrainTypeFrozenSpikesTitle</Title>
+    <Description>%TerrainTypeFrozenSpikesDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="FrozenWaters">
+    <Title>%TerrainTypeFrozenWatersTitle</Title>
+    <Description>%TerrainTypeFrozenWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="FrozenInlandWaters">
+    <Title>%TerrainTypeFrozenInlandWatersTitle</Title>
+    <Description>%TerrainTypeFrozenInlandWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Grassland">
+    <Title>%TerrainTypeGrasslandTitle</Title>
+    <Description>%TerrainTypeGrasslandDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HighMountainForest">
+    <Title>%TerrainTypeHighMountainForestTitle</Title>
+    <Description>%TerrainTypeHighMountainForestDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HighSnowyField">
+    <Title>%TerrainTypeHighSnowyFieldTitle</Title>
+    <Description>%TerrainTypeHighSnowyFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="HotPrairie">
+    <Title>%TerrainTypeHotPrairieTitle</Title>
+    <Description>%TerrainTypeHotPrairieDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="InlandWater">
+    <Title>%TerrainTypeInlandWaterTitle</Title>
+    <Description>%TerrainTypeInlandWaterDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Ocean">
+    <Title>%TerrainTypeOceanTitle</Title>
+    <Description>%TerrainTypeOceanDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="DesertOcean">
+    <Title>%TerrainTypeOceanTitle</Title>
+    <Description>%TerrainTypeOceanDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TropicalOcean">
+    <Title>%TerrainTypeOceanTitle</Title>
+    <Description>%TerrainTypeOceanDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ChillyOcean">
+    <Title>%TerrainTypeOceanTitle</Title>
+    <Description>%TerrainTypeOceanDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraOcean">
+    <Title>%TerrainTypeOceanTitle</Title>
+    <Description>%TerrainTypeOceanDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="ArcticOcean">
+    <Title>%TerrainTypeOceanTitle</Title>
+    <Description>%TerrainTypeOceanDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="PalmTrees">
+    <Title>%TerrainTypePalmTreesTitle</Title>
+    <Description>%TerrainTypePalmTreesDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Prairie">
+    <Title>%TerrainTypePrairieTitle</Title>
+    <Description>%TerrainTypePrairieDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="RedRock">
+    <Title>%TerrainTypeRedRockTitle</Title>
+    <Description>%TerrainTypeRedRockDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="RedSoil">
+    <Title>%TerrainTypeRedSoilTitle</Title>
+    <Description>%TerrainTypeRedSoilDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Ridge">
+    <Title>%TerrainTypeRidgeTitle</Title>
+    <Description>%TerrainTypeRidgeDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="RockyField">
+    <Title>%TerrainTypeRockyFieldTitle</Title>
+    <Description>%TerrainTypeRockyFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SandDunes">
+    <Title>%TerrainTypeSandDunesTitle</Title>
+    <Description>%TerrainTypeSandDunesDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Sandstone">
+    <Title>%TerrainTypeSandstoneTitle</Title>
+    <Description>%TerrainTypeSandstoneDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SandstoneSwirls">
+    <Title>%TerrainTypeSandstoneSwirlsTitle</Title>
+    <Description>%TerrainTypeSandstoneSwirlsDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Savanna">
+    <Title>%TerrainTypeSavannaTitle</Title>
+    <Description>%TerrainTypeSavannaDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Shrubland">
+    <Title>%TerrainTypeShrublandTitle</Title>
+    <Description>%TerrainTypeShrublandDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Snow">
+    <Title>%TerrainTypeSnowTitle</Title>
+    <Description>%TerrainTypeSnowDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SnowyDirtField">
+    <Title>%TerrainTypeSnowyDirtFieldTitle</Title>
+    <Description>%TerrainTypeSnowyDirtFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SnowyField">
+    <Title>%TerrainTypeSnowyFieldTitle</Title>
+    <Description>%TerrainTypeSnowyFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SnowyRockyField">
+    <Title>%TerrainTypeSnowyRockyFieldTitle</Title>
+    <Description>%TerrainTypeSnowyRockyFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Taiga">
+    <Title>%TerrainTypeTaigaTitle</Title>
+    <Description>%TerrainTypeTaigaDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TemperateForest">
+    <Title>%TerrainTypeTemperateForestTitle</Title>
+    <Description>%TerrainTypeTemperateForestDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TropicalDirtField">
+    <Title>%TerrainTypeTropicalDirtFieldTitle</Title>
+    <Description>%TerrainTypeTropicalDirtFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TropicalInlandWaters">
+    <Title>%TerrainTypeTropicalInlandWatersTitle</Title>
+    <Description>%TerrainTypeTropicalInlandWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TropicalMountainForest">
+    <Title>%TerrainTypeTropicalMountainForestTitle</Title>
+    <Description>%TerrainTypeTropicalMountainForestDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TropicalMountainRock">
+    <Title>%TerrainTypeTropicalMountainRockTitle</Title>
+    <Description>%TerrainTypeTropicalMountainRockDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TropicalWaters">
+    <Title>%TerrainTypeTropicalWatersTitle</Title>
+    <Description>%TerrainTypeTropicalWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TropicalWetland">
+    <Title>%TerrainTypeTropicalWetlandTitle</Title>
+    <Description>%TerrainTypeTropicalWetlandDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraDirtField">
+    <Title>%TerrainTypeTundraDirtFieldTitle</Title>
+    <Description>%TerrainTypeTundraDirtFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraGrass">
+    <Title>%TerrainTypeTundraGrassTitle</Title>
+    <Description>%TerrainTypeTundraGrassDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraHighMountainForest">
+    <Title>%TerrainTypeTundraHighMountainForestTitle</Title>
+    <Description>%TerrainTypeTundraHighMountainForestDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraInlandWaters">
+    <Title>%TerrainTypeTundraInlandWatersTitle</Title>
+    <Description>%TerrainTypeTundraInlandWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraRocks">
+    <Title>%TerrainTypeTundraRocksTitle</Title>
+    <Description>%TerrainTypeTundraRocksDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraRockyField">
+    <Title>%TerrainTypeTundraRockyFieldTitle</Title>
+    <Description>%TerrainTypeTundraRockyFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraSnowyField">
+    <Title>%TerrainTypeTundraSnowyFieldTitle</Title>
+    <Description>%TerrainTypeTundraSnowyFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraSnowyRockyField">
+    <Title>%TerrainTypeTundraSnowyRockyFieldTitle</Title>
+    <Description>%TerrainTypeTundraSnowyRockyFieldDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="TundraWaters">
+    <Title>%TerrainTypeTundraWatersTitle</Title>
+    <Description>%TerrainTypeTundraWatersDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Wetland">
+    <Title>%TerrainTypeWetlandTitle</Title>
+    <Description>%TerrainTypeWetlandDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="Wasteland">
+    <Title>%TerrainTypeWastelandTitle</Title>
+    <Description>%TerrainTypeWastelandDescription</Description>
+  </GuiElement>
+</Datatable>

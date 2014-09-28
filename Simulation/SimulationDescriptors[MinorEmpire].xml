@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <SimulationDescriptor Name="MinorEmpireVillage" Type="MinorEmpire">
+    <SimulationModifierDescriptors>
+      <!-- Quantity of production per turn per Minor Faction village -->
+      <SimulationModifierDescriptor  TargetProperty="UnitProduction" Operation="Addition" Value="2"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+</Datatable>

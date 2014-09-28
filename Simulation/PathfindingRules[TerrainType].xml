@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Wastelands -->
+  <PathfindingRule Name="RockyWasteland"  DefaultCost="Infinity">
+  </PathfindingRule>
+  <PathfindingRule Name="OceanWastes"     DefaultCost="Infinity">
+  </PathfindingRule>
+  
+  <!-- Ocean tiles -->
+  <!--DefaultCost is applied for Air, Ground and Sea, if Movement Capacity doesn't set at least one of them-->
+  <PathfindingRule Name="ArcticOcean"   DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TundraOcean"   DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="ChillyOcean"   DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="Ocean"         DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TropicalOcean" DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="DesertOcean"   DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="FrozenWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TundraWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="ChillyWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="CoastalWaters"   DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TropicalWaters"  DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="DesertWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="FrozenInlandWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TundraInlandWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="ChillyInlandWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="InlandWater"           DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TropicalInlandWaters"  DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="DesertInlandWaters"    DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  
+  
+
+  <PathfindingRule Name="DriftIce"        DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TundraDriftIce"  DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  
+  
+
+  <PathfindingRule Name="CoralReef"         DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="TropicalCoralReef" DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+  <PathfindingRule Name="DesertCoralReef"   DefaultCost="Infinity">
+    <!--<RuleOverride MovementCapacity="Air"    Cost="1" />-->
+    <RuleOverride MovementCapacity="Water"  Cost="1" />
+  </PathfindingRule>
+
+
+
+
+
+  <!-- FREEEZING TEMPERATURE TILES -->
+  <PathfindingRule Name="CrystalIce"          DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="Snow"                DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="FrozenGrass"         DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="FrozenSpikes"        DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="CrystalForest"       DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="CrystalField"       DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+
+
+
+  
+
+  <!-- COLD TEMPERATURE TILES -->
+  <PathfindingRule Name="Taiga"               DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TundraRocks"         DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TundraGrass"         DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TundraDirtField"     DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TundraRockyField"    DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TundraHighMountainForest"  DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TundraSnowyRockyField"     DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TundraSnowyField"    DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+  
+  
+  
+  
+
+  <!-- CHILLY TEMPERATURE TILES -->
+  <PathfindingRule Name="SnowyField"          DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="ColdDirtField"       DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="ColdGrassland"       DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="RockyField"          DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="ColdForest"          DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="HighSnowyField"      DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="HighMountainForest"     DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="SnowyDirtField"      DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="SnowyRockyField"     DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+
+
+
+
+  <!-- SPECIAL TILES -->
+  <PathfindingRule Name="DirtField"           DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+  
+  
+  
+  
+  
+  <!-- MILD TEMPERATURE TILES -->
+  <PathfindingRule Name="EnchantedForest"     DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TemperateForest"     DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="Wetland"             DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="Grassland"           DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="Prairie"             DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+
+
+
+
+  <!-- WARM TEMPERATURE TILES -->
+  <PathfindingRule Name="HotPrairie"          DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="RedSoil"             DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="RedRock"             DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TropicalWetland"     DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="PalmTrees"           DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TropicalDirtField"   DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TropicalMountainRock" DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="TropicalMountainForest" DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+
+
+
+
+  <!-- HOT TEMPERATURE TILES -->
+  <PathfindingRule Name="Shrubland"           DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="Savanna"             DefaultCost="2">
+    <RuleOverride MovementCapacity="Ground" Cost="2" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="DrySoil"             DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="Sandstone"           DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="SandDunes"           DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="SandstoneSwirls"     DefaultCost="1">
+    <RuleOverride MovementCapacity="Ground" Cost="1" />
+    <RuleOverride MovementCapacity="Air"    Cost="1" />
+    <RuleOverride MovementCapacity="Water"  Cost="Infinity" />
+  </PathfindingRule>
+
+  
+  
+  
+  
+  <!--<PathfindingRule Name="BurntForest"         DefaultCost="1">
+    <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="SolidifiedLavaField" DefaultCost="1">
+        <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="BareRock"            DefaultCost="1">
+        <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="EmeraldForest"       DefaultCost="2">
+    <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="EnchantedDesert"     DefaultCost="1">
+      <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="LimestonePikes"      DefaultCost="1">
+      <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="Rift"                DefaultCost="2">
+    <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>
+
+  <PathfindingRule Name="LavaPipes"           DefaultCost="2">
+    <RuleOverride MovementCapacity="Air" Cost="1" />
+  </PathfindingRule>-->
+  
+  
+
+  
+</Datatable>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://Drakkensw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://Drakkensw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter1">
+    <Title>%MainQuestDrakkens-Chapter1Title</Title>
+    <Description>%MainQuestDrakkens-Chapter1Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter1Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter1-Step1">%MainQuestDrakkens-Chapter1-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter1-Step2">%MainQuestDrakkens-Chapter1-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter2">
+    <Title>%MainQuestDrakkens-Chapter2Title</Title>
+    <Description>%MainQuestDrakkens-Chapter2Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter2Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter2-Step1">%MainQuestDrakkens-Chapter2-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter2-Step2">%MainQuestDrakkens-Chapter2-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter3">
+    <Title>%MainQuestDrakkens-Chapter3Title</Title>
+    <Description>%MainQuestDrakkens-Chapter3Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter3Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter3-Step1">%MainQuestDrakkens-Chapter3-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter3-Step2">%MainQuestDrakkens-Chapter3-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter4">
+    <Title>%MainQuestDrakkens-Chapter4Title</Title>
+    <Description>%MainQuestDrakkens-Chapter4Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter4Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter4-Step1">%MainQuestDrakkens-Chapter4-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4Alt -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter4Alt">
+    <Title>%MainQuestDrakkens-Chapter4AltTitle</Title>
+    <Description>%MainQuestDrakkens-Chapter4AltDescription</Description>
+    <Objective>%MainQuestDrakkens-Chapter4AltObjective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter4AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter4Alt-Step1">%MainQuestDrakkens-Chapter4Alt-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter5">
+    <Title>%MainQuestDrakkens-Chapter5Title</Title>
+    <Description>%MainQuestDrakkens-Chapter5Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter5Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter5-Step1">%MainQuestDrakkens-Chapter5-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter5-Step2">%MainQuestDrakkens-Chapter5-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 5Alt -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter5Alt">
+    <Title>%MainQuestDrakkens-Chapter5AltTitle</Title>
+    <Description>%MainQuestDrakkens-Chapter5AltDescription</Description>
+    <Objective>%MainQuestDrakkens-Chapter5AltObjective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter5AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter5Alt-Step1">%MainQuestDrakkens-Chapter5Alt-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter5Alt-Step2">%MainQuestDrakkens-Chapter5Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter6">
+    <Title>%MainQuestDrakkens-Chapter6Title</Title>
+    <Description>%MainQuestDrakkens-Chapter6Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter6Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter6-Step1">%MainQuestDrakkens-Chapter6-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter6-Step1">%MainQuestDrakkens-Chapter6-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter7">
+    <Title>%MainQuestDrakkens-Chapter7Title</Title>
+    <Description>%MainQuestDrakkens-Chapter7Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter7Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter7-Step1">%MainQuestDrakkens-Chapter7-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter7-Step2">%MainQuestDrakkens-Chapter7-Step2</Step>
+      <Step Name="MainQuestDrakkens-Chapter7-Step2">%MainQuestDrakkens-Chapter7-Step3</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestDrakkens-Chapter8">
+    <Title>%MainQuestDrakkens-Chapter8Title</Title>
+    <Description>%MainQuestDrakkens-Chapter8Description</Description>
+    <Objective>%MainQuestDrakkens-Chapter8Objective</Objective>
+    <Outcome>%MainQuestDrakkens-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestDrakkens8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestDrakkens-Chapter8-Step1">%MainQuestDrakkens-Chapter8-Step1</Step>
+      <Step Name="MainQuestDrakkens-Chapter8-Step2">%MainQuestDrakkens-Chapter8-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

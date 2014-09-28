@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AnimationCurve Name="QuestUnitLevelEvolution">
+    <Curve>
+      <keys>
+        <Keyframe>
+          <time>0</time>
+          <value>0</value>
+          <inTangent>-0.000503049232</inTangent>
+          <outTangent>-0.000503049232</outTangent>
+          <tangentMode>0</tangentMode>
+        </Keyframe>
+        <Keyframe>
+          <time>300</time>
+          <value>7</value>
+          <inTangent>0.0352991223</inTangent>
+          <outTangent>0.0352991223</outTangent>
+          <tangentMode>0</tangentMode>
+        </Keyframe>
+      </keys>
+      <preWrapMode>ClampForever</preWrapMode>
+      <postWrapMode>ClampForever</postWrapMode>
+    </Curve>
+  </AnimationCurve>
+</Datatable>

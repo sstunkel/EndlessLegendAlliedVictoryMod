@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="MinorFactionDifficultyEasy" Type="MinorFactionDifficultyBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetUnitProduction"       Operation="Multiplication"  Value="0.85"   Priority="1" Path="EmpireTypeMinor/ClassMinorEmpireGarrison"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MinorFactionDifficultyNormal" Type="MinorFactionDifficultyBonus">
+    <SimulationModifierDescriptors>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="MinorFactionDifficultyHard" Type="MinorFactionDifficultyBonus">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="NetUnitProduction"       Operation="Multiplication"  Value="1.25"   Priority="1" Path="EmpireTypeMinor/ClassMinorEmpireGarrison"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+</Datatable>

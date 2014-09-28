@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="ItemDefinitions.xsl"?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################ -->
+  <!-- #######     WEAPON       ####### -->
+  <!-- ################################ -->
+
+  <!-- ########## 1H_Sword ########### -->
+
+  <!--Side Quest Item: Strategic4-->
+  <ItemDefinition Name="ItemSword1Strategic4Tier4SideQuest1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassSword1" />
+    <Slot Name="MainHand"/>
+    <Tags>NeverObsolete</Tags>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemSword1Strategic4Tier4SideQuest1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitRankHero,ItemSlotSword1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesItemSword1Strategic4Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <!--<SimulationDescriptorReference Name="OnlyOneEquippedHero" />
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../EmpireTypeMajor/Garrison/ClassUnit/ItemAttributesItemSword1Strategic4Tier4SideQuest1</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassUnit/ItemAttributesItemSword1Strategic4Tier4SideQuest1</PathPrerequisite>-->
+    <Cost ResourceName="Strategic4" Instant="true">10</Cost>
+  </ItemDefinition>
+  
+  <!--Side Quest Item: Strategic6-->
+  <ItemDefinition Name="ItemSword1Strategic6Tier4SideQuest1" AudioID="SwordDefault" SubCategory="SubCategorySword1">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassSword1" />
+    <Slot Name="MainHand"/>
+    <Tags>NeverObsolete</Tags>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemSword1Strategic6Tier4SideQuest1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitRankHero,ItemSlotSword1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesItemSword1Strategic6Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic6" Instant="true">10</Cost>
+  </ItemDefinition>
+		
+  <!-- ########## 2H_Sword ########### -->
+
+  <!--Side Quest Item: Strategic2-->
+  <ItemDefinition Name="ItemSword2Strategic2Tier4SideQuest1" AudioID="SwordDefault" SubCategory="SubCategorySword2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassSword2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemSword2Strategic2Tier4SideQuest1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotSword2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesItemSword2Strategic2Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic2" Instant="true">13</Cost>
+  </ItemDefinition>
+  
+  <!-- ########## 2H_Axe ########### -->
+  
+  <!--Side Quest Item: Strategic5-->
+  <ItemDefinition Name="ItemAxe2Strategic5Tier4SideQuest1" AudioID="AxeDefault" SubCategory="SubCategoryAxe2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassAxe2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemAxe2Strategic5Tier4SideQuest1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotAxe2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesItemAxe2Strategic5Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic5" Instant="true">10</Cost>
+  </ItemDefinition>
+  
+  
+  <!-- ########## 2H_Spear ########### -->
+
+
+  <!-- ########### 2H_Bow ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 3 -->
+  <ItemDefinition Name="ItemBow2Strategic3Tier4SideQuest1" AudioID="Default" SubCategory="SubCategoryBow2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassBow2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotBow2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemBow2Strategic3Tier4SideQuest1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesItemBow2Strategic3Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
+
+  </ItemDefinition>
+
+  <!--Side Quest Droplist Reward: Strategic 4-->
+  <ItemDefinition Name="ItemBow2Strategic4Tier4SideQuest1" AudioID="Default" SubCategory="SubCategoryBow2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassBow2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotBow2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemBow2Strategic4Tier4SideQuest1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesItemBow2Strategic4Tier4SideQuest1" />
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic4" Instant="true">10</Cost>
+  </ItemDefinition>
+  
+  <!-- MAD FAIRIES Quest Reward-->
+  <ItemDefinition Name="ItemBow2MadFairiesMainQuest" AudioID="BowDefault" SubCategory="SubCategoryBow2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassBow2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesBow2MadFairiesMainQuest" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotBow2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMadFairies7</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic5" Instant="true">15</Cost>
+  </ItemDefinition>
+
+  
+  
+  <!-- ########### Shield ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <ItemDefinition Name="ItemShield1Strategic1Tier4SideQuest1" SubCategory="SubCategoryShield1">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassShield1" />
+    <Slot Name="OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotShield1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemShield1Strategic1Tier4SideQuest1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesItemShield1Strategic1Tier4SideQuest1" />
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+  </ItemDefinition>
+
+  <!--Side Quest Droplist Reward: Strategic 3-->
+  <ItemDefinition Name="ItemShield1Strategic3Tier4SideQuest1" SubCategory="SubCategoryShield1">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassShield1" />
+    <Slot Name="OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotShield1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemShield1Strategic3Tier4SideQuest1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesItemShield1Strategic3Tier4SideQuest1" />
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
+  </ItemDefinition>
+  
+  
+  <!-- ########### Scepter2 ########### -->
+
+  <!-- RAGE WIZARDS Quest Reward-->
+  <ItemDefinition Name="ItemScepter2RageWizardsMainQuest1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassScepter2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesScepter2RageWizardsMainQuest" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotScepter2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyRageWizards1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic6" Instant="true">20</Cost>
+  </ItemDefinition>
+
+  <!--Side Quest Item: Strategic3-->
+  <ItemDefinition Name="ItemScepter2Strategic3Tier4SideQuest1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassScepter2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemScepter2Strategic3Tier4SideQuest1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotScepter2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3" />
+    <SimulationDescriptorReference Name="ItemAttributesItemScepter2Strategic3Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
+  </ItemDefinition>
+
+  <!--Side Quest Item: Strategic4-->
+  <ItemDefinition Name="ItemScepter2Strategic4Tier4SideQuest1" AudioID="Default" SubCategory="SubCategoryScepter2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassScepter2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemScepter2Strategic4Tier4SideQuest1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotScepter2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4" />
+    <SimulationDescriptorReference Name="ItemAttributesItemScepter2Strategic4Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic4" Instant="true">10</Cost>
+  </ItemDefinition>
+
+
+  <!-- ########### Staff 2 ########### -->
+  
+  <!--Side Quest Item: Strategic1-->
+  <ItemDefinition Name="ItemStaff2Strategic1Tier4SideQuest1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassStaff2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemStaff2Strategic1Tier4SideQuest1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotStaff2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesItemStaff2Strategic1Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic1" Instant="true">12</Cost>
+  </ItemDefinition>
+
+  <!--Side Quest Item: Strategic6-->
+  <ItemDefinition Name="ItemStaff2Strategic6Tier4SideQuest1" AudioID="StaffDefault" SubCategory="SubCategoryStaff2">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassStaff2" />
+    <Slot Name="MainHand;OffHand"/>
+    <Tags>NeverObsolete</Tags>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotStaff2</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemStaff2Strategic6Tier4SideQuest1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesItemStaff2Strategic6Tier4SideQuest1"/>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic6" Instant="true">10</Cost>
+  </ItemDefinition>
+  
+  
+  <!-- ########### 1H_Crossbow ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <ItemDefinition Name="ItemCrossbow1Strategic1Tier4SideQuest1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassCrossbow1" />
+    <Slot Name="MainHand"/>
+    <Tags>NeverObsolete</Tags>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotCrossbow1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemCrossbow1Strategic1Tier4SideQuest1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesItemCrossbow1Strategic1Tier4SideQuest1" />
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic1" Instant="true">12</Cost>
+  </ItemDefinition>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <ItemDefinition Name="ItemCrossbow1Strategic2Tier4SideQuest1" AudioID="CrossBowDefault" SubCategory="SubCategoryCrossbow1">
+    <SimulationDescriptorReference Name="ItemCategoryWeapon" />
+    <SimulationDescriptorReference Name="ItemClassCrossbow1" />
+    <Slot Name="MainHand"/>
+    <Tags>NeverObsolete</Tags>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitHero,ItemSlotCrossbow1</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemCrossbow1Strategic2Tier4SideQuest1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesItemCrossbow1Strategic2Tier4SideQuest1" />
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="Strategic2" Instant="true">12</Cost>
+  </ItemDefinition>
+
+
+  
+  <!-- ################################ -->
+  <!-- #######     ARMOR       ####### -->
+  <!-- ################################ -->
+
+
+  <!-- ########### Head ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <ItemDefinition Name="ItemHeadStrategic1Tier2SideQuest1" SubCategory="SubCategoryHead">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHeadBase"/>
+    <SimulationDescriptorReference Name="ItemTier2" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesItemHeadStrategic1Tier2SideQuest1" />
+    <Cost ResourceName="Strategic1" Instant="true">3</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemHeadStrategic1Tier2SideQuest1</TechnologyPrerequisite>
+  </ItemDefinition>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <ItemDefinition Name="ItemHeadStrategic2Tier2SideQuest1" SubCategory="SubCategoryHead">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemHeadBase"/>
+    <SimulationDescriptorReference Name="ItemTier2" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesItemHeadStrategic2Tier2SideQuest1" />
+    <Cost ResourceName="Strategic2" Instant="true">3</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemHeadStrategic2Tier2SideQuest1</TechnologyPrerequisite>
+  </ItemDefinition>
+  
+  <!-- ########### Torso ########### -->
+  
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <ItemDefinition Name="ItemTorsoStrategic1Tier2SideQuest1" SubCategory="SubCategoryTorso">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemTorsoBase"/>
+    <SimulationDescriptorReference Name="ItemTier2" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesItemTorsoStrategic1Tier2SideQuest1" />
+    <Cost ResourceName="Strategic1" Instant="true">5</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemTorsoStrategic1Tier2SideQuest1</TechnologyPrerequisite>
+  </ItemDefinition>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <ItemDefinition Name="ItemTorsoStrategic2Tier2SideQuest1" SubCategory="SubCategoryTorso">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemTorsoBase"/>
+    <SimulationDescriptorReference Name="ItemTier2" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesItemTorsoStrategic2Tier2SideQuest1" />
+    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemTorsoStrategic2Tier2SideQuest1</TechnologyPrerequisite>
+  </ItemDefinition>
+
+  
+  <!-- ########### Legs ########### -->
+
+  <!--Side Quest Droplist Reward: Strategic 1-->
+  <ItemDefinition Name="ItemLegsStrategic1Tier2SideQuest1" SubCategory="SubCategoryLegs">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemLegsBase"/>
+    <SimulationDescriptorReference Name="ItemTier2" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesItemLegsStrategic1Tier2SideQuest1" />
+    <Cost ResourceName="Strategic1" Instant="true">3</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemLegsStrategic1Tier2SideQuest1</TechnologyPrerequisite>
+  </ItemDefinition>
+
+  <!--Side Quest Droplist Reward: Strategic 2-->
+  <ItemDefinition Name="ItemLegsStrategic2Tier2SideQuest1" SubCategory="SubCategoryLegs">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemLegsBase"/>
+    <SimulationDescriptorReference Name="ItemTier2" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2" />
+    <SimulationDescriptorReference Name="ItemAttributesItemLegsStrategic2Tier2SideQuest1" />
+    <Cost ResourceName="Strategic2" Instant="true">3</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitHero</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyItemLegsStrategic2Tier2SideQuest1</TechnologyPrerequisite>
+  </ItemDefinition>
+  
+  
+  <!-- ################################ -->
+  <!-- #######  ACCESSORIES     ####### -->
+  <!-- ################################ -->
+
+  
+  <!-- ########### Tome ########### -->
+
+  <!--BROKEN LORDS Quest Reward: Dust-->
+  <ItemDefinition Name="ItemTomeBrokenLordsMainQuest1" SubCategory="SubCategoryTome">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeBrokenLordsMainQuest1" />
+    <SimulationDescriptorReference Name="BrokenLordsHeroesOnly" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitTypeBrokenLordsHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitTypeBrokenLordsHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeBrokenLordsMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyBrokenLords9</TechnologyPrerequisite>
+    <Cost ResourceName="EmpireMoney" Instant="true">50</Cost>
+  </ItemDefinition>
+
+  <!--BROKEN LORDS Quest Reward: Dust-->
+  <ItemDefinition Name="ItemTomeBrokenLordsMainQuest2" SubCategory="SubCategoryTome">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeBrokenLordsMainQuest2" />
+    <SimulationDescriptorReference Name="BrokenLordsHeroesOnly" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitTypeBrokenLordsHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitTypeBrokenLordsHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesTomeBrokenLordsMainQuest2</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyBrokenLords10</TechnologyPrerequisite>
+    <Cost ResourceName="EmpireMoney" Instant="true">100</Cost>
+  </ItemDefinition>
+
+  <!--NECROPHAGES Quest Reward: Incubator-->
+  <ItemDefinition Name="ItemTomeNecrophagesMainQuest1" SubCategory="SubCategoryTome">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeNecrophagesMainQuest1" />
+    <SimulationDescriptorReference Name="NecrophagesHeroesOnly" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitTypeNecrophagesHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitTypeNecrophagesHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit,UnitHero/ItemAttributesTomeNecrophagesMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyNecrophages13</TechnologyPrerequisite>
+    <Cost ResourceName="EmpireMoney" Instant="true">80</Cost>
+  </ItemDefinition>
+
+  <!--ROVING CLANS Quest Reward: Book-->
+  <ItemDefinition Name="ItemTomeRovingClansMainQuest1" SubCategory="SubCategoryTome">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemAttributesTomeRovingClansMainQuest1"/>
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../UnitHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitRankHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../UnitHero/ItemAttributesTomeRovingClansMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyRovingClans1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="HeroesOnly" />
+    <Cost ResourceName="EmpireMoney" Instant="true">55</Cost>
+  </ItemDefinition>
+  
+  
+  
+  <!-- ########### Insignia ########### -->
+  
+  <!--BROKEN LORDS Quest Reward: Dust-->
+  <ItemDefinition Name="ItemInsigniaBrokenLordsMainQuest1" SubCategory="SubCategoryInsignia">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaBrokenLordsMainQuest1" />
+    <SimulationDescriptorReference Name="BrokenLordsHeroesOnly" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitTypeBrokenLordsHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitTypeBrokenLordsHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaBrokenLordsMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyBrokenLords11</TechnologyPrerequisite>
+    <Cost ResourceName="EmpireMoney" Instant="true">200</Cost>
+  </ItemDefinition>
+
+  <!--VAULTERS Quest Reward: Strategic 1-->
+  <ItemDefinition Name="ItemInsigniaVaultersMainQuest1" SubCategory="SubCategoryInsignia">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaVaultersMainQuest1" />
+    <SimulationDescriptorReference Name="VaultersHeroesOnly" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitTypeVaultersHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitTypeVaultersHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaVaultersMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyVaulters8</TechnologyPrerequisite>
+    <Cost ResourceName="Strategic1" Instant="true">30</Cost>
+  </ItemDefinition>
+
+  <!--MEZARI Quest Reward: Strategic 1-->
+  <ItemDefinition Name="ItemInsigniaMezariMainQuest1" SubCategory="SubCategoryInsignia">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaVaultersMainQuest1" />
+    <SimulationDescriptorReference Name="MezariHeroesOnly" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitTypeMezariHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitTypeMezariHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaVaultersMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyVaulters8</TechnologyPrerequisite>
+    <Cost ResourceName="Strategic1" Instant="true">30</Cost>
+  </ItemDefinition>
+  
+  <!--DRAKKENS Quest Reward: Pendant-->
+  <ItemDefinition Name="ItemInsigniaDrakkensMainQuest1" SubCategory="SubCategoryInsignia">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialDust" />
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaDrakkensMainQuest1" />
+    <SimulationDescriptorReference Name="DrakkensHeroesOnly" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,UnitTypeDrakkensHero,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,UnitTypeDrakkensHero</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaDrakkensMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyDrakkens3</TechnologyPrerequisite>
+    <Cost ResourceName="EmpireMoney" Instant="true">130</Cost>
+    <UnitAbilityReference Name="UnitAbilityInspiringLeader" Level="2"/>
+    <UnitAbilityReference Name="UnitAbilityGeneralVisionRange" Level="2"/>
+  </ItemDefinition>
+
+  <!--Cultist unique item Insignia: Strategic 1 & 2-->
+  <ItemDefinition Name="ItemInsigniaCultistsMainQuest1" SubCategory="SubCategoryInsignia">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBase"/>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic1"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic2"/>
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaCultistsMainQuest1" />
+    <SimulationDescriptorReference Name="CultistsFactionOnly" />
+    <Cost ResourceName="Strategic1" Instant="true">3</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">3</Cost>
+    <Cost ResourceName="Production">40</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,AffinityCultists</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaCultistsMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyCultists1</TechnologyPrerequisite>
+    <UnitAbilityReference Name="UnitAbilityRegeneration" Level="1"/>
+  </ItemDefinition>
+
+  <!--Cultist unique item Insignia: Strategic 3 & 4-->
+  <ItemDefinition Name="ItemInsigniaCultistsMainQuest2" SubCategory="SubCategoryInsignia">
+    <Tags>NeverObsolete</Tags>
+    <ConstructibleElementReferenceToInheritFrom Name="ItemAccessoryBase"/>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic3"/>
+    <SimulationDescriptorReference Name="ItemMaterialStrategic4"/>
+    <SimulationDescriptorReference Name="ItemAttributesInsigniaCultistsMainQuest2" />
+    <SimulationDescriptorReference Name="CultistsFactionOnly" />
+    <Cost ResourceName="Strategic3" Instant="true">6</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">6</Cost>
+    <Cost ResourceName="Production">100</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassUnit,AffinityCultists</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesInsigniaCultistsMainQuest2</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyCultists2</TechnologyPrerequisite>
+    <UnitAbilityReference Name="UnitAbilityDarkProof"/>
+  </ItemDefinition>
+
+  <!-- ########### Ring ########### -->
+  
+  <!--BROKEN LORDS Quest Reward: Strategic 5-->
+  <ItemDefinition Name="ItemRingBrokenLordsMainQuest1" SubCategory="SubCategoryRing">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic5" />
+    <SimulationDescriptorReference Name="ItemAttributesRingBrokenLordsMainQuest1" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingBrokenLordsMainQuest1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyBrokenLords12</TechnologyPrerequisite>
+    <Cost ResourceName="Strategic5" Instant="true">10</Cost>
+  </ItemDefinition>
+
+  <!--BROKEN LORDS Quest Reward:Strategic 6-->
+  <ItemDefinition Name="ItemRingBrokenLordsMainQuest2" SubCategory="SubCategoryRing">
+    <SimulationDescriptorReference Name="ItemCategoryAccessory" />
+    <SimulationDescriptorReference Name="ItemClassAccessory" />
+    <Slot Name="Accessory"/>
+    <Tags>NeverObsolete</Tags>
+    <SimulationDescriptorReference Name="ItemTier4" />
+    <SimulationDescriptorReference Name="ItemMaterialStrategic6" />
+    <SimulationDescriptorReference Name="ItemAttributesRingBrokenLordsMainQuest2" />
+    <PathPrerequisite Flags="Prerequisite" Inverted="false">../ClassUnit,ItemSlotAccessory</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassUnit/ItemAttributesRingBrokenLordsMainQuest2</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyBrokenLords13</TechnologyPrerequisite>
+    <Cost ResourceName="Strategic6" Instant="true">10</Cost>
+  </ItemDefinition>
+
+</Datatable>

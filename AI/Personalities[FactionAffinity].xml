@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <AIPersonalityDefinition Name="PersonalityAffinityBrokenLords">
+    <Multipliers>
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+
+  <AIPersonalityDefinition Name="PersonalityAffinityRageWizards">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+      </AI>
+
+      <!-- AIStrategicPlanDefinition Database -->
+      <AIStrategicPlanDefinition>
+      </AIStrategicPlanDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+
+  <AIPersonalityDefinition Name="PersonalityAffinityMadFairies">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+      </AI>
+
+      <!-- AIStrategicPlanDefinition Database -->
+      <AIStrategicPlanDefinition>
+      </AIStrategicPlanDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+
+  <AIPersonalityDefinition Name="PersonalityAffinityNecrophages">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+      </AI>
+
+      <!-- Attitude modifiers -->
+      <DiplomaticRelationScoreModifier>
+      </DiplomaticRelationScoreModifier>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+
+  <AIPersonalityDefinition Name="PersonalityAffinityVaulters">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+      </AI>
+
+      <!-- AIStrategicPlanDefinition Database -->
+      <AIStrategicPlanDefinition>
+      </AIStrategicPlanDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+
+  <AIPersonalityDefinition Name="PersonalityAffinityRovingClans">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+      </AI>
+
+      <DiplomaticRelationScoreModifier>
+      </DiplomaticRelationScoreModifier>
+
+      <!-- AIStrategicPlanDefinition Database -->
+      <AIStrategicPlanDefinition>
+      </AIStrategicPlanDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+
+  <AIPersonalityDefinition Name="PersonalityAffinityDrakkens">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+      </AI>
+
+      <!-- AIStrategicPlanDefinition Database -->
+      <AIStrategicPlanDefinition>
+      </AIStrategicPlanDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+
+  <AIPersonalityDefinition Name="PersonalityAffinityCultists">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+      </AI>
+
+      <!-- AIStrategicPlanDefinition Database -->
+      <AIStrategicPlanDefinition>
+      </AIStrategicPlanDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMinorFactionAffinityTutorial">
+    <Multipliers>
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <ArmySpawnAllowed>false</ArmySpawnAllowed>
+        <ArmyAttackAllowed>false</ArmyAttackAllowed>
+        <CitySiegeAllowed>false</CitySiegeAllowed>
+        <CityAttackAllowed>false</CityAttackAllowed>
+      </DeploymentStepDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMinorFactionStrong">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MinorEmpire>
+          <EraLevelFactor>1</EraLevelFactor>
+          <TurnLevelFactor>1</TurnLevelFactor>
+        </MinorEmpire>
+      </AI>
+
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <StartTurn>1</StartTurn>
+        <CitySiegeDuration>1</CitySiegeDuration>
+      </DeploymentStepDefinition>
+
+      <!-- AIMinorEmpireDefConDefinition Database -->
+      <AIMinorEmpireDefConDefinition>
+        <ArmyProductionCooldown>2</ArmyProductionCooldown>
+        <GarrisonGrowthCooldown>2</GarrisonGrowthCooldown>
+      </AIMinorEmpireDefConDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMinorFactionWeak">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MinorEmpire>
+          <EraLevelFactor>1</EraLevelFactor>
+          <TurnLevelFactor>1</TurnLevelFactor>
+        </MinorEmpire>
+      </AI>
+
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <StartTurn>1</StartTurn>
+        <CitySiegeDuration>1</CitySiegeDuration>
+      </DeploymentStepDefinition>
+
+      <!-- AIMinorEmpireDefConDefinition Database -->
+      <AIMinorEmpireDefConDefinition>
+        <ArmyProductionCooldown>0.75</ArmyProductionCooldown>
+        <GarrisonGrowthCooldown>0.75</GarrisonGrowthCooldown>
+      </AIMinorEmpireDefConDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMinorFactionWNormal">
+    <Multipliers>
+      <!-- AI Registry -->
+      <AI>
+        <MinorEmpire>
+          <EraLevelFactor>1</EraLevelFactor>
+          <TurnLevelFactor>1</TurnLevelFactor>
+        </MinorEmpire>
+      </AI>
+
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <StartTurn>1</StartTurn>
+        <CitySiegeDuration>1</CitySiegeDuration>
+      </DeploymentStepDefinition>
+
+      <!-- AIMinorEmpireDefConDefinition Database -->
+      <AIMinorEmpireDefConDefinition>
+        <ArmyProductionCooldown>1</ArmyProductionCooldown>
+        <GarrisonGrowthCooldown>1</GarrisonGrowthCooldown>
+      </AIMinorEmpireDefConDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+  
+</Datatable>

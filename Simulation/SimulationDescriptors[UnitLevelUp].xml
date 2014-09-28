@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <SimulationDescriptor Name="UnitLevelUpStandardDescriptor" Type="UnitLevelUp">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Level" Value="0" IsSealed="true"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <!-- (Enemy unit value) + 0.2 * (Enemy unit value) * (Unit Level)
+              Where Unit value = unit design industry cost * 0.1 
+              c.f. Converter From Production to UnitValue
+           -->
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Addition" Value="$(UnitValue)"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Multiplication" Value="0.2"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Multiplication" Value="$(LevelDisplayed)"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Addition" Value="$(UnitValue)" Priority="1"/>
+      <!-- end -->
+      
+      <SimulationModifierDescriptor       TargetProperty="ExperienceGainPerTurn"  Operation="Addition"  Value="1"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeAttack"        Operation="Percent"  Left="0.2"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeDefense"       Operation="Percent"  Left="0.2"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeInitiative"    Operation="Percent"  Left="0.2"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeDamage"        Operation="Percent"  Left="0.2"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseMaximumHealth"          Operation="Percent"  Left="0.2"  BinaryOperation="Multiplication" Right="$(Level)" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+  <SimulationDescriptor Name="UnitLevelUpHeroDescriptor" Type="UnitLevelUp">
+    <SimulationPropertyDescriptors>
+      <SimulationPropertyDescriptor Name="Level" Value="0" IsSealed="true"/>
+    </SimulationPropertyDescriptors>
+    <SimulationModifierDescriptors>
+      <!-- (Enemy Hero value) + 0.25 * (Enemy hero value) * (Hero Level)
+             Where Hero value = 20-->
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Addition" Value="20"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Multiplication" Value="0.25"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Multiplication" Value="$(LevelDisplayed)"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceReward" Operation="Addition" Value="20" Priority="1"/>
+      <!-- end -->
+      
+      <SimulationModifierDescriptor       TargetProperty="MaximumSkillPoints"     Operation="Addition"  Value="$(Level)"/>
+      <SimulationModifierDescriptor       TargetProperty="ExperienceGainPerTurn"  Operation="Addition"  Value="2"/>
+
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeAttack"        Operation="Percent"  Left="0.1"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeDefense"       Operation="Percent"  Left="0.1"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeInitiative"    Operation="Percent"  Left="0.1"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseAttributeDamage"        Operation="Percent"  Left="0.1"  BinaryOperation="Multiplication" Right="$(Level)" />
+      <BinarySimulationModifierDescriptor TargetProperty="BaseMaximumHealth"          Operation="Percent"  Left="0.1"  BinaryOperation="Multiplication" Right="$(Level)" />
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  
+</Datatable>

@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- ################################################### -->
+  <!-- ###############        FIDS        ################ -->
+  <!-- ################################################### -->
+  
+  <GuiElement Name="SubCategoryFood">
+    <Title>%SubCategoryFoodTitle</Title>
+    <Description>%SubCategoryFoodDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="fidsFoodHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryIndustry">
+    <Title>%SubCategoryIndustryTitle</Title>
+    <Description>%SubCategoryIndustryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="fidsIndustryHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryScience">
+    <Title>%SubCategoryScienceTitle</Title>
+    <Description>%SubCategoryScienceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="fidsScienceHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryDust">
+    <Title>%SubCategoryDustTitle</Title>
+    <Description>%SubCategoryDustDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="fidsDustHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryEmpirePoint">
+    <Title>%SubCategoryEmpirePointTitle</Title>
+    <Description>%SubCategoryEmpirePointDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="fidsEmpireHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryApproval">
+    <Title>%SubCategoryApprovalTitle</Title>
+    <Description>%SubCategoryApprovalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="approvalHD" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################################### -->
+  <!-- ###############        ITEMS       ################ -->
+  <!-- ################################################### -->
+
+  <GuiElement Name="SubCategoryTier2">
+    <Title>%SubCategoryTier2Title</Title>
+    <Description>%SubCategoryTier2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryTier3">
+    <Title>%SubCategoryTier3Title</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Weapons -->
+  <GuiElement Name="SubCategoryWeapon">
+    <Title>%SubCategoryWeaponTitle</Title>
+    <Description>%SubCategoryWeaponDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryWeaponSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategorySword1">
+    <Title>%SubCategorySword1Title</Title>
+    <Description>%SubCategorySword1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategorySword2">
+    <Title>%SubCategorySword2Title</Title>
+    <Description>%SubCategorySword2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryShield1">
+    <Title>%SubCategoryShield1Title</Title>
+    <Description>%SubCategoryShield1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategorySpear1">
+    <Title>%SubCategorySpear1Title</Title>
+    <Description>%SubCategorySpear1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategorySpear2">
+    <Title>%SubCategorySpear2Title</Title>
+    <Description>%SubCategorySpear2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryStaff1">
+    <Title>%SubCategoryStaff1Title</Title>
+    <Description>%SubCategoryStaff1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryStaff2">
+    <Title>%SubCategoryStaff2Title</Title>
+    <Description>%SubCategoryStaff2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryScepter1">
+    <Title>%SubCategoryScepter1Title</Title>
+    <Description>%SubCategoryScepter1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryScepter2">
+    <Title>%SubCategoryScepter2Title</Title>
+    <Description>%SubCategoryScepter2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryWand1">
+    <Title>%SubCategoryWand1Title</Title>
+    <Description>%SubCategoryWand1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryWand2">
+    <Title>%SubCategoryWand2Title</Title>
+    <Description>%SubCategoryWand2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryAxe1">
+    <Title>%SubCategoryAxe1Title</Title>
+    <Description>%SubCategoryAxe1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryAxe2">
+    <Title>%SubCategoryAxe2Title</Title>
+    <Description>%SubCategoryAxe2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryClaw1">
+    <Title>%SubCategoryClaw1Title</Title>
+    <Description>%SubCategoryClaw1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryClaw2">
+    <Title>%SubCategoryClaw2Title</Title>
+    <Description>%SubCategoryClaw2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHammer1">
+    <Title>%SubCategoryHammer1Title</Title>
+    <Description>%SubCategoryHammer1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHammer2">
+    <Title>%SubCategoryHammer2Title</Title>
+    <Description>%SubCategoryHammer2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryBow1">
+    <Title>%SubCategoryBow1Title</Title>
+    <Description>%SubCategoryBow1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryBow2">
+    <Title>%SubCategoryBow2Title</Title>
+    <Description>%SubCategoryBow2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryCrossbow1">
+    <Title>%SubCategoryCrossbow1Title</Title>
+    <Description>%SubCategoryCrossbow1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Armors -->
+  <GuiElement Name="SubCategoryArmor">
+    <Title>%SubCategoryArmorTitle</Title>
+    <Description>%SubCategoryArmorDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryArmorSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHead">
+    <Title>%SubCategoryHeadTitle</Title>
+    <Description>%SubCategoryHeadDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryArmorSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryTorso">
+    <Title>%SubCategoryTorsoTitle</Title>
+    <Description>%SubCategoryTorsoDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryArmorSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryLegs">
+    <Title>%SubCategoryLegsTitle</Title>
+    <Description>%SubCategoryLegsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryArmorSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- Accessories -->
+  <GuiElement Name="SubCategoryAccessory">
+    <Title>%SubCategoryAccessoryTitle</Title>
+    <Description>%SubCategoryAccessoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryAccessorySmall" />
+    </Icons>
+  </GuiElement>  
+
+  <GuiElement Name="SubCategoryTome">
+    <Title>%SubCategoryTomeTitle</Title>
+    <Description>%SubCategoryTomeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryAccessorySmall" />
+    </Icons>
+  </GuiElement>  
+
+  <GuiElement Name="SubCategoryInsignia">
+    <Title>%SubCategoryInsigniaTitle</Title>
+    <Description>%SubCategoryInsigniaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryAccessorySmall" />
+    </Icons>
+  </GuiElement>  
+
+  <GuiElement Name="SubCategoryRing">
+    <Title>%SubCategoryRingTitle</Title>
+    <Description>%SubCategoryRingDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryAccessorySmall" />
+    </Icons>
+  </GuiElement>  
+
+  <GuiElement Name="SubCategoryTalisman">
+    <Title>%SubCategoryTalismanTitle</Title>
+    <Description>%SubCategoryTalismanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryAccessorySmall" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################################### -->
+  <!-- ###############        WORLD       ################ -->
+  <!-- ################################################### -->
+  
+  <GuiElement Name="SubCategoryDistrict">
+    <Title>%SubCategoryDistrictTitle</Title>
+    <Description>%SubCategoryDistrictDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/constructibleDistrictHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryExploit">
+    <Title>%SubCategoryExploitTitle</Title>
+    <Description>%SubCategoryExploitDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/constructibleExploitationHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryVision">
+    <Title>%SubCategoryVisionTitle</Title>
+    <Description>%SubCategoryVisionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/constructibleVisionHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryVillage">
+    <Title>%SubCategoryVillageTitle</Title>
+    <Description>%SubCategoryVillageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/constructibleVillageHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryQuestPOI">
+    <Title>%SubCategoryVillageTitle</Title>
+    <Description>%SubCategoryVillageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryQuestPOIHD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="SubCategorySummer">
+    <Title>%SubCategorySummerTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Seasons/SeasonSummerSmall" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="SubCategoryWinter">
+    <Title>%SubCategoryWinterTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Seasons/SeasonWinterSmall" />
+    </Icons>
+  </GuiElement>
+
+
+
+  <!-- ################################################### -->
+  <!-- ###############       MILITARY     ################ -->
+  <!-- ################################################### -->
+
+  <GuiElement Name="SubCategoryMilitary">
+    <Title>%SubCategoryMilitaryTitle</Title>
+    <Description>%SubCategoryMilitaryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="armyHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryUnit">
+    <Title>%SubCategoryUnitTitle</Title>
+    <Description>%SubCategoryUnitDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryUnitSmall" />
+    </Icons>
+  </GuiElement>  
+
+  <GuiElement Name="SubCategoryInfantry">
+    <Title>%SubCategoryInfantryTitle</Title>
+    <Description>%SubCategoryInfantryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classInfantryHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryCavalry">
+    <Title>%SubCategoryCavalryTitle</Title>
+    <Description>%SubCategoryCavalryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classCavalryHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryRanged">
+    <Title>%SubCategoryRangedTitle</Title>
+    <Description>%SubCategoryRangedDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classRangedHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategorySupport">
+    <Title>%SubCategorySupportTitle</Title>
+    <Description>%SubCategorySupportDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classSupportHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryFlying">
+    <Title>%SubCategoryFlyingTitle</Title>
+    <Description>%SubCategoryFlyingDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classFlyingHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryDamage">
+    <Title>%SubCategoryDamageTitle</Title>
+    <Description>%SubCategoryDamageDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/BattleActionCategories/ActionCategoryDamageHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHeal">
+    <Title>%SubCategoryHealTitle</Title>
+    <Description>%SubCategoryHealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/BattleActionCategories/ActionCategoryHealHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryBuff">
+    <Title>%SubCategoryBuffTitle</Title>
+    <Description>%SubCategoryBuffDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/BattleActionCategories/ActionCategoryBuffHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryDebuff">
+    <Title>%SubCategoryDebuffTitle</Title>
+    <Description>%SubCategoryDebuffDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/BattleActionCategories/ActionCategoryDebuffHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryCrowdControl">
+    <Title>%SubCategoryCrowdControlTitle</Title>
+    <Description>%SubCategoryCrowdControlDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/BattleActionCategories/ActionCategoryCrowdControlHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryDamageOverTime">
+    <Title>%SubCategoryDamageOverTimeTitle</Title>
+    <Description>%SubCategoryDamageOverTimeDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/BattleActionCategories/ActionCategoryDamageOverTimeHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryArmyActionSearch">
+    <Title>%SubCategoryArmyActionSearchTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategorySearchHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryArmyActionBribe">
+    <Title>%SubCategoryArmyActionBribeTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryBribeHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryArmyActionParley">
+    <Title>%SubCategoryArmyActionParleyTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryParleyHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryArmyActionParleyAndBribe">
+    <Title>%SubCategoryArmyActionParleyAndBribeTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryParleyHD" />
+    </Icons>
+  </GuiElement>  
+
+  <GuiElement Name="SubCategoryArmyActionPrivateers">
+    <Title>%SubCategoryArmyActionPrivateersTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryPrivateerSmall" />
+    </Icons>
+  </GuiElement>  
+
+
+  <!-- ################################################### -->
+  <!-- ###############       FACTION      ################ -->
+  <!-- ################################################### -->
+  
+  <ExtendedGuiElement Name="MajorFactionAffinity">
+    <Title>%SubCategoryAffinityTraitTitle</Title>
+    <SymbolString>\7768\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="AffinityTrait">
+    <Title>%SubCategoryAffinityTraitTitle</Title>
+    <SymbolString>\7768\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="StandardTrait">
+    <Title>%SubCategoryStandardTraitTitle</Title>
+    <SymbolString>\7765\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+  
+  <ExtendedGuiElement Name="CustomTrait">
+    <Title>%SubCategoryCustomTraitTitle</Title>
+    <SymbolString>\7788\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyTrait">
+    <Title>%SubCategoryTechnologyTraitTitle</Title>
+    <SymbolString>\7763\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="StartingTechnologyTrait">
+    <Title>%SubCategoryStartingTechnologyTraitTitle</Title>
+    <SymbolString>\7787\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="FactionTechnologyTrait">
+    <Title>%SubCategoryFactionTechnologyTraitTitle</Title>
+    <SymbolString>\7763\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="UnitTrait">
+    <Title>%SubCategoryUnitTraitTitle</Title>
+    <SymbolString>\7766\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="MainQuestTrait">
+    <Title>%SubCategoryMainQuestTraitTitle</Title>
+    <SymbolString>\7767\</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <GuiElement Name="SubCategoryMinorFactions">
+    <Title>%SubCategoryMinorFactionsTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryMinorFactionSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryArcana">
+    <Title>%SubCategoryArcanaTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="Gui/AtlasedBitmaps/Categories/CategoryArcanaHD" />
+    </Icons>
+  </GuiElement>
+
+
+  <!-- ################################################### -->
+  <!-- ###############       HEROES       ################ -->
+  <!-- ################################################### -->
+
+  <GuiElement Name="SubCategoryHero">
+    <Title>%SubCategoryHeroTitle</Title>
+    <Description>%SubCategoryHeroDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classHeroHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHeroSkillGovernor">
+    <Title>%SubCategoryHeroSkillGovernorTitle</Title>
+    <Description>%SubCategoryHeroSkillGovernorDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classHeroHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHeroSkillLeaderBattle">
+    <Title>%SubCategoryHeroSkillLeaderBattleTitle</Title>
+    <Description>%SubCategoryHeroSkillLeaderBattleDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classHeroHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHeroSkillLeaderMap">
+    <Title>%SubCategoryHeroSkillLeaderMapTitle</Title>
+    <Description>%SubCategoryHeroSkillLeaderMapDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classHeroHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryHeroSkillAllAssignment">
+    <Title>%SubCategoryHeroSkillAllAssignmentTitle</Title>
+    <Description>%SubCategoryHeroSkillAllAssignmentDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Gui/DynamicBitmaps/GameVariables/classHeroHD" />
+    </Icons>
+  </GuiElement>
+  
+
+
+  <!-- ################################################### -->
+  <!-- ###############        MISC.       ################ -->
+  <!-- ################################################### -->
+
+  <GuiElement Name="SubCategoryRoads">
+    <Title>%SubCategoryRoadsTitle</Title>
+    <Description>%SubCategoryRoadsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="roadsHD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="SubCategoryTradeRoutes">
+    <Title>%SubCategoryTradeRoutesTitle</Title>
+    <Description>%SubCategoryTradeRoutesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="roadsHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategorySpeed">
+    <Title>%SubCategorySpeedTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="speedHD" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="SubCategoryVictory">
+    <Title>%SubCategoryVictoryTitle</Title>
+    <Description>%SubCategoryVictoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="CategoryVictoryHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryBooster">
+    <Title>%SubCategoryBoosterTitle</Title>
+    <Description>%SubCategoryBoosterDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="#TempHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryDiplomaticTerm">
+    <Title>%SubCategoryDiplomaticTermTitle</Title>
+    <Description>%SubCategoryDiplomaticTermDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="diplomaticTermHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryBuyout">
+    <Title>%SubCategoryBuyoutTitle</Title>
+    <Description>%SubCategoryBuyoutDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="fidsDustHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryUpkeep">
+    <Title>%SubCategoryUpkeepTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="fidsDustHD" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryResources">
+    <Title>%SubCategoryResourcesTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="CategoryLuxurySmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="SubCategoryAffinityResource">
+    <Title>%SubCategoryAffinityResourceTitle</Title>
+    <Icons>
+      <Icon Size="Small" Path="AffinityStrategicHD" />
+    </Icons>
+  </GuiElement>
+
+  </Datatable>

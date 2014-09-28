@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="EncounterStateDeployment">
+    <Title>%EncounterStateDeploymentTitle</Title>
+    <Description>%EncounterStateDeploymentDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="EncounterStateBattleIsPending">
+    <Title>%EncounterStateBattleIsPendingTitle</Title>
+    <Description>%EncounterStateBattleIsPendingDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="EncounterStateBattleIsInProgress">
+    <Title>%EncounterStateBattleIsInProgressTitle</Title>
+    <Description>%EncounterStateBattleIsInProgressDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="EncounterStateBattleIsReporting">
+    <Title>%EncounterStateBattleIsReportingTitle</Title>
+    <Description>%EncounterStateBattleIsReportingDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="EncounterStateBattleHasEnded">
+    <Title>%EncounterStateBattleHasEndedTitle</Title>
+    <Description>%EncounterStateBattleHasEndedDescription</Description>
+  </GuiElement>
+
+</Datatable>

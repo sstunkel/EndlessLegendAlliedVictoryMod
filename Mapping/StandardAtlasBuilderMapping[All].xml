@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AtlasBuilderMapping Name="Atlas_Icon_Fids_0">
+    <R>64</R>
+    <G>64</G>
+    <B>64</B>
+    <A>0</A>
+    <Output>Assets/Textures/Interface/Atlas_Icon_Fids_0.png</Output>
+    <OutputWidth>256</OutputWidth>
+    <OutputHeight>256</OutputHeight>
+    <DefaultElementWidth>128</DefaultElementWidth>
+    <DefaultElementHeight>128</DefaultElementHeight>
+    <DefaultMaterialName>Assets/Meshes/Interface/Materials/CopyAtlasAllColorSilhouette.mat</DefaultMaterialName>
+    <SourceFilter>Assets/Textures/Interface</SourceFilter>
+    
+    <Elements Name="Dust">
+      <Left>0</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Fids_Dust_2048.tga</Source>
+    </Elements>
+    <Elements Name="Food">
+      <Left>128</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Fids_Food_2048.tga</Source>
+    </Elements>
+
+    <Elements Name="Industry">
+      <Left>0</Left>
+      <Top>128</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Fids_Industry_2048.tga</Source>
+    </Elements>
+
+    <Elements Name="Science">
+      <Left>128</Left>
+      <Top>128</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Fids_Science_2048.tga</Source>
+    </Elements>
+  </AtlasBuilderMapping>
+  
+  <AtlasBuilderMapping Name="Atlas_Icon_Fids_1">
+    <R>64</R>
+    <G>64</G>
+    <B>64</B>
+    <A>0</A>
+    <Output>Assets/Textures/Interface/Atlas_Icon_Fids_1.png</Output>
+    <OutputWidth>128</OutputWidth>
+    <OutputHeight>128</OutputHeight>
+    <DefaultElementWidth>128</DefaultElementWidth>
+    <DefaultElementHeight>128</DefaultElementHeight>
+    <DefaultMaterialName>Assets/Meshes/Interface/Materials/CopyAtlasAllColorSilhouette.mat</DefaultMaterialName>
+    <SourceFilter>Assets/Textures/Interface</SourceFilter>
+    
+    <Elements Name="Empire">
+      <Left>0</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Fids_Empire_2048.tga</Source>
+    </Elements>
+  </AtlasBuilderMapping>
+
+  <AtlasBuilderMapping Name="Atlas_Icon_Fids_2">
+    <R>64</R>
+    <G>64</G>
+    <B>64</B>
+    <A>0</A>
+    <Output>Assets/Textures/Interface/Atlas_Icon_Fids_2.png</Output>
+    <OutputWidth>128</OutputWidth>
+    <OutputHeight>128</OutputHeight>
+    <DefaultElementWidth>128</DefaultElementWidth>
+    <DefaultElementHeight>128</DefaultElementHeight>
+    <DefaultMaterialName>Assets/Meshes/Interface/Materials/CopyAtlasAllColorSilhouette.mat</DefaultMaterialName>
+    <SourceFilter>Assets/Textures/Interface</SourceFilter>
+
+    <Elements Name="Approval">
+      <Left>0</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Fids_Approval_2048.tga</Source>
+    </Elements>
+  </AtlasBuilderMapping>
+
+  <AtlasBuilderMapping Name="Atlas_Fids_Number">
+    <R>64</R>
+    <G>64</G>
+    <B>64</B>
+    <A>0</A>
+    <Output>Assets/Textures/Interface/Atlas_Fids_Number.png</Output>
+    <OutputWidth>512</OutputWidth>
+    <OutputHeight>512</OutputHeight>
+    <DefaultElementWidth>128</DefaultElementWidth>
+    <DefaultElementHeight>128</DefaultElementHeight>
+    <DefaultMaterialName>Assets/Meshes/Interface/Materials/CopyAtlasAllColorSilhouette.mat</DefaultMaterialName>
+    <SourceFilter>Assets/Textures/Interface</SourceFilter>
+
+    <Elements Name="0">
+      <Left>0</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_0.tga</Source>
+    </Elements>
+    
+    <Elements Name="1">
+      <Left>128</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_1.tga</Source>
+    </Elements>
+
+    <Elements Name="2">
+      <Left>256</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_2.tga</Source>
+    </Elements>
+
+    <Elements Name="3">
+      <Left>384</Left>
+      <Top>0</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_3.tga</Source>
+    </Elements>
+
+    <Elements Name="4">
+      <Left>0</Left>
+      <Top>128</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_4.tga</Source>
+    </Elements>
+    <Elements Name="5">
+      <Left>128</Left>
+      <Top>128</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_5.tga</Source>
+    </Elements>
+
+    <Elements Name="6">
+      <Left>256</Left>
+      <Top>128</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_6.tga</Source>
+    </Elements>
+
+    <Elements Name="7">
+      <Left>384</Left>
+      <Top>128</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_7.tga</Source>
+    </Elements>
+
+    <Elements Name="8">
+      <Left>0</Left>
+      <Top>256</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_8.tga</Source>
+    </Elements>
+
+    <Elements Name="9">
+      <Left>128</Left>
+      <Top>256</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_9.tga</Source>
+    </Elements>
+
+    <Elements Name="dot">
+      <Left>256</Left>
+      <Top>256</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_dot.tga</Source>
+    </Elements>
+
+    <Elements Name="dot">
+      <Left>384</Left>
+      <Top>256</Top>
+      <Source>Assets/Textures/Interface/OBJ_GUI_Numbers_Minus.tga</Source>
+    </Elements>
+    
+  </AtlasBuilderMapping>
+  
+</Datatable>

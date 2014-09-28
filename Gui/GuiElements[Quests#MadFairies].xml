@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://MadFairiesw.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://MadFairiesw.w3.org/2001/XMLSchema">
+  
+  <!-- Quest Chapter 1 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter1">
+    <Title>%MainQuestMadFairies-Chapter1Title</Title>
+    <Description>%MainQuestMadFairies-Chapter1Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter1Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter1Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies1" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter1-Step1">%MainQuestMadFairies-Chapter1-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter2">
+    <Title>%MainQuestMadFairies-Chapter2Title</Title>
+    <Description>%MainQuestMadFairies-Chapter2Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter2Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter2Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies2" Size="Small" />
+    </Icons>
+    <Steps>
+      <!--<Step Name="MF0101" Tooltip="%MF0101T">%MF0101D</Step> c'est pas mieux avec des noms plus court? -->
+      <Step Name="MainQuestMadFairies-Chapter2-Step1">%MainQuestMadFairies-Chapter2-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 2Alt -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter2Alt">
+    <Title>%MainQuestMadFairies-Chapter2AltTitle</Title>
+    <Description>%MainQuestMadFairies-Chapter2AltDescription</Description>
+    <Objective>%MainQuestMadFairies-Chapter2AltObjective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter2AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies2" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter2Alt-Step1">%MainQuestMadFairies-Chapter2Alt-Step1</Step>
+      <Step Name="MainQuestMadFairies-Chapter2Alt-Step2">%MainQuestMadFairies-Chapter2Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter3">
+    <Title>%MainQuestMadFairies-Chapter3Title</Title>
+    <Description>%MainQuestMadFairies-Chapter3Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter3Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter3Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter3-Step1">%MainQuestMadFairies-Chapter3-Step1</Step>
+      <Step Name="MainQuestMadFairies-Chapter3-Step2">%MainQuestMadFairies-Chapter3-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 3Alt -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter3Alt">
+    <Title>%MainQuestMadFairies-Chapter3AltTitle</Title>
+    <Description>%MainQuestMadFairies-Chapter3AltDescription</Description>
+    <Objective>%MainQuestMadFairies-Chapter3AltObjective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter3AltOutcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies3" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter3Alt-Step1">%MainQuestMadFairies-Chapter3Alt-Step1</Step>
+      <Step Name="MainQuestMadFairies-Chapter3Alt-Step2">%MainQuestMadFairies-Chapter3Alt-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 4 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter4">
+    <Title>%MainQuestMadFairies-Chapter4Title</Title>
+    <Description>%MainQuestMadFairies-Chapter4Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter4Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter4Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies4" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter4-Step1">%MainQuestMadFairies-Chapter4-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+  <!-- Quest Chapter 5 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter5">
+    <Title>%MainQuestMadFairies-Chapter5Title</Title>
+    <Description>%MainQuestMadFairies-Chapter5Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter5Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter5Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies5" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter5-Step1">%MainQuestMadFairies-Chapter5-Step1</Step>
+      <Step Name="MainQuestMadFairies-Chapter5-Step2">%MainQuestMadFairies-Chapter5-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 6 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter6">
+    <Title>%MainQuestMadFairies-Chapter6Title</Title>
+    <Description>%MainQuestMadFairies-Chapter6Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter6Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter6Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies6" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter6-Step1">%MainQuestMadFairies-Chapter6-Step1</Step>
+      <Step Name="MainQuestMadFairies-Chapter6-Step2">%MainQuestMadFairies-Chapter6-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 7 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter7">
+    <Title>%MainQuestMadFairies-Chapter7Title</Title>
+    <Description>%MainQuestMadFairies-Chapter7Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter7Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter7Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies7" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter7-Step1">%MainQuestMadFairies-Chapter7-Step1</Step>
+      <Step Name="MainQuestMadFairies-Chapter7-Step2">%MainQuestMadFairies-Chapter7-Step2</Step>
+    </Steps>
+  </QuestGuiElement>
+
+  <!-- Quest Chapter 8 -->
+  <QuestGuiElement Name="MainQuestMadFairies-Chapter8">
+    <Title>%MainQuestMadFairies-Chapter8Title</Title>
+    <Description>%MainQuestMadFairies-Chapter8Description</Description>
+    <Objective>%MainQuestMadFairies-Chapter8Objective</Objective>
+    <Outcome>%MainQuestMadFairies-Chapter8Outcome</Outcome>
+    <Icons>
+      <Icon Path="Gui/DynamicBitmaps/Quests/QuestMadFairies8" Size="Small" />
+    </Icons>
+    <Steps>
+      <Step Name="MainQuestMadFairies-Chapter8-Step1">%MainQuestMadFairies-Chapter8-Step1</Step>
+    </Steps>
+  </QuestGuiElement>
+  
+</Datatable>

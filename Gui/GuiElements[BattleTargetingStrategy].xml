@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GuiElement Name="BattleTargetingStrategyOffense">
+    <Title>%BattleTargetingStrategyOffenseTitle</Title>
+    <Description>%BattleTargetingStrategyOffenseDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/BattleStrategies/BattleStrategyOffenseSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleTargetingStrategyDefense">
+    <Title>%BattleTargetingStrategyDefenseTitle</Title>
+    <Description>%BattleTargetingStrategyDefenseDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/BattleStrategies/BattleStrategyDefenseSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="BattleTargetingStrategyHoldPosition">
+    <Title>%BattleTargetingStrategyHoldPositionTitle</Title>
+    <Description>%BattleTargetingStrategyHoldPositionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/BattleStrategies/BattleStrategyHaltSmall" />
+    </Icons>
+  </GuiElement>
+</Datatable>
