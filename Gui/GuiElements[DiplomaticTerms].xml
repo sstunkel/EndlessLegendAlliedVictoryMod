@@ -190,7 +190,7 @@
     </Icons>
   </GuiElement>
   <!--Allied Victory-->
-  <GuiElement Name="AllianceAlliedVictory">
+  <GuiElement Name="AlliedVictory">
     <Title>Allied Victory</Title>
     <Description>Win the game with your allied partner.</Description>
     <Icons>
