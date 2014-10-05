@@ -2,8 +2,7 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
   <!-- ############### Positive treaty ############### -->
-  <DiplomaticTermDefinition Name="AlliedVictory" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">
-  </DiplomaticTermDefinition>
+
   <!-- MapExchange -->
   
   <DiplomaticTermDefinition Name="PeaceMapExchange" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">
@@ -67,7 +66,9 @@
   </DiplomaticTermDefinition>
 
   <!--Allied Victory-->
-
+  <DiplomaticTermDefinition Name="AlliedVictory" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">
+    <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="AlliedVictory" />
+  </DiplomaticTermDefinition>
 
   <!-- ResearchAgreement -->
   

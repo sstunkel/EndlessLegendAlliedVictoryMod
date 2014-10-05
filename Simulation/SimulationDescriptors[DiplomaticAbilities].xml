@@ -58,8 +58,9 @@
 
   <!--Allied Victory-->
   <SimulationDescriptor Name="AlliedVictoryBonus" Type="WorldEffect">
+    <Title>Allied Victory</Title>
     <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="NetEmpirePoint" Operation="Addition"  Value="999"    Path="../ClassEmpire" />
+      <SimulationModifierDescriptor TargetProperty="NetEmpirePeacePoint" Operation="Addition"  Value="99999"    Path="../ClassEmpire" />
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
