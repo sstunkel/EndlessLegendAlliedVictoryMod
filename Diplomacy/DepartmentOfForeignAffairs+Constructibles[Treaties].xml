@@ -68,14 +68,6 @@
   <!--Allied Victory-->
   <DiplomaticTermDefinition Name="AlliedVictory" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ProviderToReceiver" Inverted="true" Flags="Prerequisite,Discard">War</DiplomaticAbilityPrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ProviderToReceiver" Inverted="true" Flags="Prerequisite,Discard">Truce</DiplomaticAbilityPrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ProviderToReceiver" Inverted="true" Flags="Prerequisite,Discard">ColdWar</DiplomaticAbilityPrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ProviderToReceiver" Inverted="true" Flags="Prerequisite,Discard">Peace</DiplomaticAbilityPrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ReceivertoProvider" Inverted="true" Flags="Prerequisite,Discard">War</DiplomaticAbilityPrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ReceivertoProvider" Inverted="true" Flags="Prerequisite,Discard">Truce</DiplomaticAbilityPrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ReceivertoProvider" Inverted="true" Flags="Prerequisite,Discard">ColdWar</DiplomaticAbilityPrerequisite>
-    <DiplomaticAbilityPrerequisite TargetRelation="ReceivertoProvider" Inverted="true" Flags="Prerequisite,Discard">Peace</DiplomaticAbilityPrerequisite>
     <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="AlliedVictory" />
   </DiplomaticTermDefinition>
 
