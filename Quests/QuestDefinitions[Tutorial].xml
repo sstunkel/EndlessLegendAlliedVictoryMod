@@ -697,8 +697,6 @@
         </Controller_Sequence>
       </Controller_Parallel>
       
-      <!--Action start highlight Army action panel-->
-      <Action_Tutorial_ShowHighlightPanel PanelTypeName="ArmyControlPanel" RectangularHighlight="true"/>
       <!-- Showing text box #49 -->
       <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title49" Content="%MainQuestTutorial-Content49" Action="%MainQuestTutorial-Action49" Blocker="false" Placement="SAME" WaitForPanelTypeName="GameWorldScreen"/>
       <!--Action focus on side Quest ruins-->
@@ -711,8 +709,6 @@
           </Prerequisites>
         </ConditionCheck_Prerequisite>
       </Decorator_Inspect>
-      <!--Action stop highlight Army action panel-->
-      <Action_Tutorial_HideHighlightPanel />
       <!-- Showing text box #131 -->
       <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title131" Content="%MainQuestTutorial-Content131" Blocker="true" Placement="SAME" />
       <Decorator_Tutorial_InstructionNextClicked />
@@ -837,15 +833,11 @@
       <Decorator_Tutorial_InstructionNextClicked />
       <!-- Showing text box #55 -->
       <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title55" Content="%MainQuestTutorial-Content55" Action="%MainQuestTutorial-Action109" Blocker="false" Placement="LEFT"/>
-      <!--Action start highlight Army action panel-->
-      <Action_Tutorial_ShowHighlightPanel PanelTypeName="ArmyControlPanel" RectangularHighlight="true"/>
       <Action_UpdateStep StepName="MainQuestTutorial-Chapter4-Step1" State="Completed"/>
 
       <Action_UpdateStep StepName="MainQuestTutorial-Chapter4-Step2" State="InProgress"/>
       <!--Talking with a village-->
       <Decorator_Talk Initiator="Empire"/>
-      <!--Action stop highlight Army action panel-->
-      <Action_Tutorial_HideHighlightPanel/>
       <!--Action focus on side Quest ruins-->
       <Action_Tutorial_FocusCamera TargetWorldPositionVarName="$PointOfInterestToInspectLocation2" />
       <!--Action unlock Quest screen button-->
@@ -1021,25 +1013,22 @@
       <!--Action start highlight Initiative banner -->
       <Action_Tutorial_ShowHighlightPanel PanelName="0TutorialDummyInitiativeBar" RectangularHighlight="true"/>
       <!--Showing text box #78-->
-      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title78" Content="%MainQuestTutorial-Content78" Blocker="true" Placement="SAME" WheelBlocker="true"/>
-      <Decorator_Tutorial_InstructionNextClicked />
-      <!--Action stop highlight Initiative banner-->
-      <Action_Tutorial_HideHighlightPanel />
-      <!--Showing text box #79-->
-      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title79" Content="%MainQuestTutorial-Content79" Blocker="true" Placement="SAME" WheelBlocker="true"/>
-      <Decorator_Tutorial_InstructionNextClicked />
-      <!--Showing text box #80-->
-      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title80" Content="%MainQuestTutorial-Content80" Action="%MainQuestTutorial-Action80" Blocker="false" Placement="SAME"/>
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title78" Content="%MainQuestTutorial-Content78" Action="%MainQuestTutorial-Action80" Blocker="false" Placement="CENTER"/>
       <!--Check that battle unit GUI is displayed-->
       <Decorator_Tutorial_PanelShowed PanelTypeName="BattleUnitCard">
         <ConditionCheck_IsGuiElementVisible PanelName="6Strategy" />
       </Decorator_Tutorial_PanelShowed>
+      <!--Action stop highlight Initiative banner-->
+      <Action_Tutorial_HideHighlightPanel />
       <!--Action start highlight Battle Strategies-->
       <Action_Tutorial_ShowHighlightPanel PanelName="6Strategy" RectangularHighlight="true"/>
       <!--Showing text box #81-->
-      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title81" Content="%MainQuestTutorial-Content81" Action="%MainQuestTutorial-Action81" Blocker="false" Placement="TOP"/>
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title81" Content="%MainQuestTutorial-Content81" Blocker="true" Placement="CENTER"/>
+      <Decorator_Tutorial_InstructionNextClicked />
       <!--Unlock launch-->
       <Action_Tutorial_SetValue Key="EnableTargetingButton" Value="true" RefreshPanelType="BattleTargetingPanel" />
+      <!--Showing text box #79-->
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title79" Content="%MainQuestTutorial-Content79" Action="%MainQuestTutorial-Action81" Blocker="false" Placement="SAME"/>
       <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step4" State="Completed"/>
 
       <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step5" State="InProgress"/>
@@ -1047,7 +1036,7 @@
       <Decorator_Tutorial_PanelShowed PanelTypeName="BattleResolutionPanel"/>
       <Action_Tutorial_HideHighlightPanel />
       <!--Showing text box #84-->
-      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title84" Content="%MainQuestTutorial-Content84" Action="%MainQuestTutorial-Action84" Blocker="false" Placement="TOP" />
+      <Action_Tutorial_ShowInstructionPanel Title="%MainQuestTutorial-Title84" Content="%MainQuestTutorial-Content84" Action="%MainQuestTutorial-Action84" Blocker="false" Placement="SAME" />
       <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step5" State="Completed"/>
 
       <Action_UpdateStep StepName="MainQuestTutorial-Chapter5-Step6" State="InProgress"/>

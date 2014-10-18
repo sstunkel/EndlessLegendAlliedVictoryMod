@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-
-  <!--MONEY-->
-
-  <SimulationAgent Name="MoneyReferenceRatio" AssemblyQualifiedName="MoneyReferenceRatioAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">
-
-    <ValueMin>0</ValueMin>
-    <ValueMax>1</ValueMax>
-
-    <Parameter Name="MoneyStockToMaintainUpkeepTurnCount">10</Parameter>  <!-- We want a bank account at least greater than X turns upkeep. -->
-    <Parameter Name="MoneyIncomeGrowthPercent">0.10</Parameter>           <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
-    
-    <CurveReference Name="MoneyReference_Default" />
-
-    <InfluencesReceived>
-      
-      <SimulationInfluence Path="ResourceEvaluationAmas/CityAgentGroup" OriginAgentReference="NetCityMoney" Value="100">
-        <OriginPrerequisites>
-          <PathPrerequisite Inverted="true">ClassCity,EnableAIOnPlayerCity</PathPrerequisite>
-        </OriginPrerequisites>
-      </SimulationInfluence>
-      
-    </InfluencesReceived>
-  </SimulationAgent>
-    
-    <!--RESEARCH-->
+  <!--RESEARCH-->
 
   <SimulationAgent Name="TechnologyReferenceTurnCount" AssemblyQualifiedName="TechnologyReferenceTurnCountAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">
-    
+
     <ValueMin>-1</ValueMin>
     <ValueMax>1</ValueMax>
 
@@ -44,10 +20,65 @@
           <PathPrerequisite Inverted="true">ClassCity,EnableAIOnPlayerCity</PathPrerequisite>
         </OriginPrerequisites>
       </SimulationInfluence>
-      
+
     </InfluencesReceived>
   </SimulationAgent>
 
+
+  <!--MONEY-->
+
+  <SimulationNormalizedComputedAgent Name="NetEmpireMoney" AssemblyQualifiedName="NetEmpireMoneyAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <CurveReference Name="Flat0" />
+
+    <InfluencesReceived>
+
+      <SimulationInfluence Path="ResourceEvaluationAmas/CityAgentGroup" OriginAgentReference="NetCityMoney" Value="100">
+        <OriginPrerequisites>
+          <PathPrerequisite Inverted="true">ClassCity,EnableAIOnPlayerCity</PathPrerequisite>
+        </OriginPrerequisites>
+      </SimulationInfluence>
+
+    </InfluencesReceived>
+  </SimulationNormalizedComputedAgent>
+
+
+  <SimulationAgent Name="MoneyReferenceRatio" AssemblyQualifiedName="MoneyReferenceRatioAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <Parameter Name="MoneyStockToMaintainUpkeepTurnCount">10</Parameter>  <!-- We want a bank account at least greater than X turns upkeep. -->
+    <Parameter Name="MoneyIncomeGrowthPercent">0.10</Parameter>           <!-- We want an income greater than X% of the bank account (positive snowball effect). -->
+
+    <CurveReference Name="MoneyReference_Default" />
+
+    <InfluencesReceived>
+
+      <ConstantInfluence Path="ResourceEvaluationAmas" OriginAgentReference="NetEmpireMoney" Value="100" />
+
+    </InfluencesReceived>
+  </SimulationAgent>
+
+
+  <SimulationAgent Name="EconomyAccountNeedMoneyRatio" AssemblyQualifiedName="EconomyAccountNeedMoneyRatioAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">
+
+    <ValueMin>0</ValueMin>
+    <ValueMax>1</ValueMax>
+
+    <Parameter Name="NumberOfTurnToReachObjective">10</Parameter>
+
+    <CurveReference Name="AccountNeedMoneyRatio_Default" />
+
+    <InfluencesReceived>
+      <ConstantInfluence Path="ResourceEvaluationAmas" OriginAgentReference="NetEmpireMoney" Value="-40" />
+    </InfluencesReceived>
+  </SimulationAgent>
+  
+  
   <!--PRESTIGE-->
 
   <SimulationNormalizedComputedAgent Name="NetEmpirePrestige" AssemblyQualifiedName="NetEmpirePrestigeAgent, Assembly-CSharp" DisableAdjustValueTracker="true" IsSimulationObjectNotRequired="true">

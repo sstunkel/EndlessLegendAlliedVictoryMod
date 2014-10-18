@@ -363,7 +363,7 @@
   <!-- Faction Trait: Agriculturally Challenged -->
   <!-- -1 Food on Food tile -->
   <FactionTrait Name="FactionTraitNecrophages1"             SubCategory="StandardTrait"          Family="Economy"    Custom="true" Cost="-10">
-    <Prerequisites>!AffinityBrokenLords</Prerequisites>
+    <Prerequisites>!AffinityBrokenLords,!FactionTraitEconomy7Positive</Prerequisites>
     <SimulationDescriptorReference Name="FactionTraitNecrophages1"/>
   </FactionTrait>
   

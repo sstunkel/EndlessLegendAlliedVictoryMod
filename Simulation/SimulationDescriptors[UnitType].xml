@@ -367,6 +367,8 @@
       <SimulationModifierDescriptor       TargetProperty="BaseAttributeInitiative"    Operation="Addition"  Value="0"/>
       <SimulationModifierDescriptor       TargetProperty="BaseAttributeDamage"        Operation="Addition"  Value="12"/>
       <SimulationModifierDescriptor       TargetProperty="BaseMaximumHealth"          Operation="Addition"  Value="70"/>
+      
+      <SimulationModifierDescriptor       TargetProperty="EmpireScaleFactor"          Operation="Addition"  Value="1"     Path="../EmpireTypeMajor"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 

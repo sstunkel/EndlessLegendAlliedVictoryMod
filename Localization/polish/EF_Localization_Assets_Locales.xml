@@ -429,8 +429,8 @@
   <LocalizationPair Name="%WatchTowerRuinsTitle">Fundamenty </LocalizationPair>
   <LocalizationPair Name="%WatchTowerRuinsDescription">Wygląda na to, że jakiś starożytny architekt umieścił tu fundamenty, które zniosły próbę czasu. Biorąc pod uwagę ich lokalizację i jakość wykonania, to idealne miejsce na nową Strażnicę. </LocalizationPair>
   <LocalizationPair Name="%FactionBrokenLordsTitle">Spaczeni Lordowie</LocalizationPair>
-  <LocalizationPair Name="%FactionBrokenLordsDescription">Frakcja rycerzy i konstruktorów miast, istnieją wyłącznie pod postacią duchów spowitych pancerzami swoich zbroi. To szlachetni wojownicy odziani w lśniące zbroje prawości i wzniosłych ideałów, mimo że stali się już niematerialni i utracili wiele ze swojego człowieczeństwa.</LocalizationPair>
-  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Główny rodzaj zwycięstwa: Podbój</LocalizationPair>
+  <LocalizationPair Name="%FactionBrokenLordsDescription">Frakcja rycerzy, istnieją wyłącznie pod postacią duchów spowitych pancerzami swoich zbroi. To szlachetni wojownicy odziani w lśniące zbroje prawości i wzniosłych ideałów, mimo że stali się już niematerialni i utracili wiele ze swojego człowieczeństwa.</LocalizationPair>
+  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Główny rodzaj zwycięstwa: Ekspansyjne</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyCaption">(Awangarda)</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle1">Żagiew</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle2">Prawda</LocalizationPair>
@@ -867,8 +867,8 @@
   <LocalizationPair Name="%FactionTraitEconomy11NegativeDescription">Zmniejsza efekty nauki z terenu</LocalizationPair>
   <LocalizationPair Name="%FactionTraitEconomy12Title">Miłośnik krajobrazów</LocalizationPair>
   <LocalizationPair Name="%FactionTraitEconomy12Description">Daje dodatkowyl #FFD768#\7703\#REVERT#, #59DEFF#\7702\#REVERT# and #F0A1FF#\7706\#REVERT# do anomaliów terenu.</LocalizationPair>
-  <LocalizationPair Name="%FactionTraitFounderPack1Title">Zima nadchodzi</LocalizationPair>
-  <LocalizationPair Name="%FactionTraitFounderPack1Description">The faction has discovered Dust-based stimulants that radically speed metabolism and burn the body's caloric energy. They would cause death by hyperthermia in summer; for this reason they are only usable during the Dark Season.</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitFounderPack1Title">Pieśń Lodu, tylko Lodu</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitFounderPack1Description">Frakcja odkryła stymulanty oparte na Pyle, które drastycznie przyspieszają metabolizm i spalają kalorie. Mogą spowodować śmierć w wyniku hipertermii w lecie; dlatego też, używa się ich jedynie podczas Mrocznej Pory. </LocalizationPair>
   <LocalizationPair Name="%HeroSkillGovernor01Title">Nekrotyczna agrokultura</LocalizationPair>
   <LocalizationPair Name="%HeroSkillGovernor01Description">Dzięki zrozumieniu metod transformacji rozkładających się ciał w skuteczny nawóz Bohater może poprawiać rezultaty produkcji Żywności.</LocalizationPair>
   <LocalizationPair Name="%HeroSkillGovernor01Level1Title">Umiejętność bohatera</LocalizationPair>
@@ -1979,7 +1979,7 @@ POZIOM 3
   <LocalizationPair Name="%UnitAbilityGeneralVisionRange3Title">Premia do Pola Widzenia Armii 3</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityGeneralVisionRange3Description">#FFB43F#EFFECTS#REVERT#
    +3 DO POLA WIDZENIA \7775\ ARMII</LocalizationPair>
-  <LocalizationPair Name="%UnitAbilityGeneralResistanceTitle">Army Resistance Boost</LocalizationPair>
+  <LocalizationPair Name="%UnitAbilityGeneralResistanceTitle">Premia do Oporu Armii</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityGeneralResistanceDescription">#FFB43F#EFFECTS#REVERT#
 POZIOM 1
    +3 DO OBRONY \7773\ ARMII
@@ -1990,15 +1990,15 @@ POZIOM 2
 POZIOM 3
    +9 DO OBRONY \7773\ ARMII
    +9 DO INICJATYWY \7774\ ARMII</LocalizationPair>
-  <LocalizationPair Name="%UnitAbilityGeneralResistance1Title">Army Resistance Boost 1</LocalizationPair>
+  <LocalizationPair Name="%UnitAbilityGeneralResistance1Title">Premia do Oporu Armii 1</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityGeneralResistance1Description">#FFB43F#EFFECTS#REVERT#
    +3 DO OBRONY \7773\ ARMII
    +3 DO INICJATYWY \7774\ ARMII</LocalizationPair>
-  <LocalizationPair Name="%UnitAbilityGeneralResistance2Title">Army Resistance Boost 2</LocalizationPair>
+  <LocalizationPair Name="%UnitAbilityGeneralResistance2Title">Premia do Oporu Armii 2</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityGeneralResistance2Description">#FFB43F#EFFECTS#REVERT#
    +6 DO OBRONY \7773\ ARMII
    +6 DO INICJATYWY \7774\ ARMII</LocalizationPair>
-  <LocalizationPair Name="%UnitAbilityGeneralResistance3Title">Army Resistance Boost 3</LocalizationPair>
+  <LocalizationPair Name="%UnitAbilityGeneralResistance3Title">Premia do Oporu Armii 3</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityGeneralResistance3Description">#FFB43F#EFFECTS#REVERT#
    +9 DO OBRONY \7773\ ARMII
    +9 DO INICJATYWY \7774\ ARMII</LocalizationPair>
@@ -3842,8 +3842,8 @@ POZIOM 3
   <LocalizationPair Name="%TechnologyDefinitionRovingClans2Description">Specjalistyczna wiedza architektoniczna i budowlana nabyta od Dzikołazów pobudza Naukę, a wieże same w sobie zwiększają pole widzenia.</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionRovingClans3Title">Namioty kupców</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionRovingClans3Description">Rozległa wiedza Wędrownych Klanów w zakresie towarów, handlarzy i rynków wsparta jest ich specjalnymi namiotami, w których obserwuje się i rejestruje każdy, najmniejszy nawet  szept czy gest.</LocalizationPair>
-  <LocalizationPair Name="%TechnologyDefinitionRovingClans4Title">Zawieszenie łańcuchowe</LocalizationPair>
-  <LocalizationPair Name="%TechnologyDefinitionRovingClans4Description">Dzięki systemowi zawieszenia, który umożliwia wozom "unosić się" nad osiami, karawany kupieckie są w stanie transportować większy asortyment towarów przez zróżnicowane obszary geograficzne, zwiększając możliwości Szlaków Handlowych.</LocalizationPair>
+  <LocalizationPair Name="%TechnologyDefinitionRovingClans4Title">Studnia Pyłu</LocalizationPair>
+  <LocalizationPair Name="%TechnologyDefinitionRovingClans4Description">Częściowo magiczny i częściowy handlowy, ten częściowo zanurzony skarb zbiera Pył z każdego dostępnego źródła. Ruiny, stare mechanizmy, rynki, karawany, a nawet powietrze mają swój wkład w ten magazyn bogactwa i magii.  </LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionRovingClans5Title">Mowa pieniądza</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionRovingClans5Description">Przepełnieni potęgą Pyłu negocjatorzy Wędrownych Klanów mogą teraz przekonywać nawet zaprzysiężonych wrogów o sensie prowadzenia rozmów handlowych.</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionVaulters2Title">Generator głębinowy</LocalizationPair>
@@ -5714,7 +5714,7 @@ Markiz Suluzzo jest najgorszy. Co prawda wszyscy szlachcice i fanatycy poszukuj�
 Ale ja nie mogę się na to zgodzić. To proste i łatwe, ale na pewno nie jest sprawiedliwe. Niestety mam związane ręce i muszę pozwolić uczonym i alchemikom kontynuować ich badania, poszukując rozwiązania, które zaspokoi ich chciwych patronów. Będziemy posuwać się naprzód z badaniami, ale z innych powodów. Chcę abyśmy oparli się pokusie, nawet jeśli jest to ryzykowne. Nie bez powodu pierwszym słowem na królewskiej pieczęci jest "honor".</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Objective">Tajemnice przeszłości planety najpewniej pomogą podyktować jej przyszłość. Zwiększ swoją wiedzę naukową, żeby je rozszyfrować.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1">Odkryj 8 technologii I Ery Badań</LocalizationPair>
-  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Do spełnienia tego wymogu nie można wykorzystać startowych technologii Spaczonych Lordów.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Technologie uzyskane poprzez zadania nie liczą się do wejścia w nową erę technologii i nie mają wpływu na koszty badań.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2">Odkryj 12 technologii I Ery Badań</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2Tooltip">Technologie uzyskane poprzez zadania nie liczą się do wejścia w nową erę technologii i nie mają wpływu na koszty badań.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Outcome">To bardzo ciekawe. Nie tylko poczyniliśmy postępy w magii i alchemii, ale też odkryliśmy coś starożytnego i potężnego - prosty diadem wibrujący od przytłumionej mocy.</LocalizationPair>
@@ -6495,7 +6495,7 @@ Jak się znalazłem w tym miejscu? Przywódca prostego plemienia, chcący tylko 
 Wciąż trwamy, nie jesteśmy ofiarami, a pozostali wkrótce odkryją, że siła wielu jest potężniejsza, niż siła nielicznych.</LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter7Objective">To prawie początek Końca. Musi zostać stworzona wielka konstrukcja wojenna, musimy zapewnić naszym wojskom ostateczne szkolenie. Po tym pokryjesz Aurigę niczym powódź, zmyjesz bród niewiernych.</LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter7-Step1">Zbuduj ulepszenie miasta"Świątynię Szeptów".</LocalizationPair>
-  <LocalizationPair Name="%MainQuestCultists-Chapter7-Step1Tooltip" />
+  <LocalizationPair Name="%MainQuestCultists-Chapter7-Step1Tooltip">Wybuduj nowe ulepszenie miasta</LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter7-Step2">Upewnij się, że posiadasz 2 kaznodziejów przynajmniej 6. poziomu i Bohatera Kultuystów  poziomu 9. </LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter7-Step2Tooltip">Ten cel może zostać potwierdzony tylko na przełomie ukończenia.</LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter7Outcome">Muszę skłonić swoją głowę, o której nie mogę już mówić jako "ja". Moi ludzie naprawdę się nawrócili, a nasza wola jest taka sama, jak wola Kultu. Jesteśmy częścią wielkiego nawrócenia i wielkiego ruchu. Mądrość, siła i rozprzestrzenianie się powinny należeć do nas. </LocalizationPair>
@@ -6507,7 +6507,7 @@ Zarysowuje się koniec naszego celu. Koniec, do którego dążyliśmy jest blisk
 Może rzeczywiście są naszymi bogami. </LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter8Objective">Ostatecznym przygotowaniem jest budowa miasta, aż osiągnie nieporównywalną wielkość. Gdy zostanie to uczynione, nadejdzie czas, by wypełnić przeznaczenie.</LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter8-Step1">Osiągnij poziom 3 ze swoim Centrum Miasta.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestCultists-Chapter8-Step1Tooltip" />
+  <LocalizationPair Name="%MainQuestCultists-Chapter8-Step1Tooltip">Wymaga 4 pól miasta poziomu 2 wokół centrum miasta.</LocalizationPair>
   <LocalizationPair Name="%MainQuestCultists-Chapter8Outcome">Wkrótce cała Auriga zostanie wykorzystana dla naszego celu. Nie widzę żadnej siły, żadnych bogów, którzy mogą stanąć nam na drodze. Pewnego dnia wszystkie narody tego świata złożą pokłon Królowej, tak jak czynię to ja.
 
 I, tak jak ja, będą wdzięczni za dostąpienie tego zaszczytu.</LocalizationPair>
@@ -6520,42 +6520,42 @@ I, tak jak ja, będą wdzięczni za dostąpienie tego zaszczytu.</LocalizationPa
   <LocalizationPair Name="%ArmyActionTutorialLockedDescription">Na tym etapie samouczka ta akcja jest zablokowana.</LocalizationPair>
   <LocalizationPair Name="%TutorialArmyPrerequisiteNotVerified">Ruiny musisz przeszukać całą armią (2 jednostki).</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title1">Witaj w Auridze!</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content1">Aby przetrwać w tym niebezpiecznym świecie, trzeba będzie zbudować potężne imperium i zmierzyć się z potężnymi wrogami. Twoja opowieść zaczyna się tutaj, z twoją pierwszą armią; szuka dobrej lokalizacji na osiedlenie twojego pierwszego miasta.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content1">Aby przetrwać w tym niebezpiecznym świecie, trzeba będzie zbudować potężne imperium i zmierzyć się z potężnymi wrogami. Twoja opowieść zaczyna się tutaj, z twoją pierwszą armią, która szuka dobrej lokalizacji na osiedlenie pierwszego miasta.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Action1">Wybierz swoją armię klikając #FFFFFF#\9995\#REVERT# na niej.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title2">Zasoby Terenowe</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content2">Zasoby Terenowe to: Żywność #CFE14F#\7700\#REVERT#, Przemysł #FF926D#\7701\#REVERT#, Nauka #59DEFF#\7702\#REVERT# i Pył #FFD768#\7703\#REVERT#.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Action2">Aby ułatwić wybór, można włączać i wyłączać wyświetlanie zasobów terenowych. Kliknij # FFFFFF # \ 9995 \ # REVERT # na przycisk znajdujący się w prawym dolnym rogu panelu końca tury.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Action2">Aby ułatwić wybór, można włączać i wyłączać wyświetlanie zasobów terenowych. Kliknij #FFFFFF#\9995\#REVERT# na przycisk znajdujący się w prawym dolnym rogu panelu końca tury.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title3">Armie</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content3">W lewym dolnym rogu znajduje się twój panel armii. Wszystkie armie są przedstawione na mapie za pomocą najsilniejszej jednostki wśród tych wchodzących w skład armii.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content3">W lewym dolnej części ekranu znajduje się twój panel armii. Wszystkie armie są przedstawione na mapie za pomocą najsilniejszej jednostki spośród tych wchodzących w skład armii.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title4">Mgła Wojny i Nieodkryte Ziemie</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content4">Twoja armia widzi na odległość 3 pól. Można również powiększać i pomniejszać # FFFFFF # \ 9996 \ # REVERT # dla lepszej orientacji. Cieniowane pola stanowią obszary, które zostały zbadane, ale które nie znajdują się w polu widzenia. Poza tym, szara "Mgła Wojny" skrywa tajemnice - obszary, których nigdy wcześniej nie widziałeś.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content4">Twoja armia widzi na odległość 3 pól. Można również powiększać i pomniejszać #FFFFFF#\9996\#REVERT# dla lepszej orientacji. Cieniowane pola stanowią obszary, które zostały zbadane, ale które nie znajdują się w polu widzenia. Poza tym, szara "Mgła Wojny" skrywa tajemnice - obszary, których nigdy wcześniej nie widziałeś.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title5">Własność Regionu</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content5">Każdy region ma stałe granice i może zawierać tylko jedno miasto w swoim obszarze, które może eksploatować regionalne zasoby terenu. </LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title6">Jednostki Osadników</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content6">Twoja armia  składa się obecnie z tylko jednej jednostki, Osadnika, reprezentowanego przez kilka pionków na sześcioboku. Osadnik daje armii możliwość znalezienia miasta w regionie neutralnym (region, który nie zawiera jeszcze miasta).</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Title7">Punkty Zdrowia Armii</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content6">Twoja armia  składa się obecnie z tylko jednej jednostki, Osadnika, reprezentowanego przez kilka postaci na sześcioboku. Osadnik daje armii możliwość założenia miasta w regionie neutralnym (region, który nie zawiera jeszcze miasta).</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Title7">Punkty Życia Armii</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content7">Armie posiadają kilka atrybutów:
-Punkty Zdrowia \7770\ przedstawiają sumę Punktów Zdrowia każdej jednostki w twojej armii.  </LocalizationPair>
+Punkty Życia \7770\ przedstawiają sumę Punktów Życia wszystkich jednostek w twojej armii.  </LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title8">Punkty Ruchu Armii</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content8">Punkty Ruchu \7757\ określają jak daleko twoja armia może poruszać się w danej turze (w zależności od kar ruchu w terenie). Punkty ruchu dla wojska, składającego się z kilku jednostek, są określone przez jednostki z najniższym wynikiem.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Title9">Zakres Widoczności Armii</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content9">Zakres Widoczności \7775\ określa jak daleko sięga wzrok twojej armii na mapie. Zakres Widoczności dla armii określa jednostka z najwyższym wynikiem. </LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Title9">Pole Widzenia Armii</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content9">Pole Widzenia \7775\ określa jak daleko sięga wzrok twojej armii na mapie. Pole Widzenia dla armii określa jednostka z najwyższym wynikiem. </LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title10">Koszty Terenu</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content10">Koszt przejścia większości pól terenu to 1 Punkt Ruchu \7757\ . Jednak niektóre pola, jak np. Las, mogą kosztować więcej.  </LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title11">Kolonizacja Regionu</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content11">Dla większości głównych frakcji, najlepszym sposobem wyboru położenia dla miasta jest uważne obserwowanie zasobów dostępnych na przyległych polach. </LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Action11">Aby znaleźć miasto i skolonizować region, wybierz swoją armię, kliknij # FFFFFF # \ 9995 \ # REVERT # na przycisk "Kolonizacja", a następnie kliknij ponownie na pole, do którego twoja armia może dotrzeć w ciągu tury.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Action11">Aby założyć miasto i skolonizować region, wybierz swoją armię, kliknij #FFFFFF#\9995\#REVERT# na przycisk "Kolonizacja", a następnie kliknij ponownie na pole, do którego twoja armia może dotrzeć w ciągu tury.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title12">Eksploatacja Terenu</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content12">Gratulacje, rządzisz teraz w całym regionie! To interfejs twojego Miasta. Twoje Centrum Miasta i otaczające go 6 pól (Obszar Eksploatacji) będą gromadzić zasoby terenu w każdej turze. </LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title13">Bonusy Pól Miasta</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content13">Centrum miasta, jako pole dzielnicy miasta, automatycznie zmienia swój pierwotny dochód terenu. W tym przypadku zapewnia to więcej Pyłu # FFD768 # \ 7703 \ # REVERT # i Nauki # 59DEFF # \ 7702 \ # REVERT #, ale także nieco mniej Żywności CFE14F # \ 7700 \ # REVERT #. Modyfikatory te zależą od frakcji którą grasz.
-Pola miasta zapewniają również unikalny zasób nazywany Wpływem  # 8A7DFF # \ 7704 \ # REVERT #. </LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content13">Centrum miasta, jako pole dzielnicy miasta, automatycznie zmienia swój pierwotny dochód terenu. W tym przypadku zapewnia to więcej Pyłu #FFD768#\7703\#REVERT# i Nauki #59DEFF#\7702\#REVERT#, ale także nieco mniej Żywności #CFE14F#\7700\#REVERT#. Modyfikatory te zależą od frakcji którą grasz.
+Pola miasta zapewniają również unikalny zasób nazywany Wpływem #8A7DFF#\7704\#REVERT#. </LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title14">Panel Pracownika</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content14">Panel Pracownika zawiera szczegóły dochodów z zasobów całego miasta (ŻPPNW) dla następnej tury.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title137">Panel Pracownika</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content137">Produkcja na pracownika \7705\, zasoby z pól oraz potencjalne modyfikatory (pozytywne lub negatywne) mają wpływ na Całkowitą Produkcję, jakiej możesz spodziewać się dla swojego miasta w nowej turze. Możesz przesunąć kursor na te elementy oraz przejrzeć wskazówki narzędzi, aby uzyskać więcej szczegółów.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title15">Zarządzanie Pracownikiem</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content15">Możesz przesunąćpracownika \7705\ z jednej kolumny do drugiej, aby określić, którą produkcję ŻPPNW chcesz zwiększyć w następnej turze.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content15">Możesz przesunąć pracownika \7705\ z jednej kolumny do drugiej, aby określić, którą produkcję ŻPPNW chcesz zwiększyć w następnej turze.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Action15">Przeciągnij i upuść #FFFFFF#\9995\#REVERT# swojego pracownika \7705\, aby zobaczyć wpływ na produkcję zasobów.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title16">Produkcja Żywności</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content16">Produkcja Żywności  #CFE14F#\7700\#REVERT# nie może być przechowywana; nadmierna Żywność jest automatycznie zużywana w każdej turze do produkcji dodatkowych miejskich pracowników\7705\.</LocalizationPair>
@@ -6660,7 +6660,7 @@ Ulepszenia Miasta \7782\ to konstrukcje dzięki którym twoje miasto zyskuje ró
   <LocalizationPair Name="%MainQuestTutorial-Title57">Wskaźnik Zadania</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content57">Wskaźnik zadania wskazuje na specyficzne ruiny, do których musisz dotrzeć i które możesz przeszukać podczas tego zadania. Ich położenie będzie widoczne nawet poprzez Mgłę Wojny. Zauważ, że w przypadku innych zadań, wskaźniki mogą być widoczne tylko w zasięgu wzroku twojej armii.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title58">Dziennik Zadań</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content58">Ekran Zadań zawiera dziennik wszystkich twoich zadań.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content58">Właśnie otrzymałeś zadanie Pacyfikacji od Sióstr Miłosierdzia, zamieszkujących ten region. Zostało ono dodane do Ekranu Zadań, który zawiera dziennik wszystkich twoich zadań.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Action58">Możesz otworzyć Ekran Zadań poprzez panel powiadomień lub klikając lewym przyciskiem myszy #FFFFFF#\9995\#REVERT# na przycisk w głównym banerze.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title59">[DEPRECATED] Attacking an Army</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content59">[DEPRECATED] Right-Click #FFFFFF#\9997\#REVERT# on the quest army and select "Attack" to launch the battle, or use the Army Action button "Attack".</LocalizationPair>
@@ -6703,8 +6703,8 @@ Ruchy \7757\ określają ilość pól, o które jednostka może się przemieści
   <LocalizationPair Name="%MainQuestTutorial-Content74">Pozycja Względna: gdy jednostka znajduje się blisko jednostki sprzymierzonej, Morale wzrasta;zwiększając atrybuty ich Ataku \7772\ i Obrony \7773\.
 Wysokość: jednostki również zwiększają swój atak  \7772\ , gdy atakują z wyższej pozycji. 
 Teren: Pola lasu zwiększają Obronę Jednostki  \7773\, a pola Miasta zwiększają Morale.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Title75">Capacities</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content75">Capacities are special abilities automatically used by units when attacking first. You can mouse over them to get more details from the tooltips.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Title75">Zdolności</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content75">Zdolności to specjalne możliwości automatycznie używane przez jednostki podczas ataku i obrony. Na przykład zdolność zasięgu to maksymalny dystans, z którego może atakować jednostka. Aby uzyskać więcej informacji na temat danej zdolności, wystarczy najechać na nią kursorem myszki.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title76">Zatwierdzenie Rozmieszczenia </LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content76">Faza Rozmieszczenia pozwala na dowolną zmianę pozycji jednostek.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Action76">Wybierz jednostkę i kliknij prawym przyciskiem myszy #FFFFFF#\9997\#REVERT# na polu w kolorze twojego imperium, aby wskazać jej nową pozycję. Następnie, naciśnij Gotowe, gdy rozmieszczenie twoich wojsk cię zadowala.</LocalizationPair>
@@ -6856,7 +6856,7 @@ Teren: Pola lasu zwiększają Obronę Jednostki  \7773\, a pola Miasta zwiększa
   <LocalizationPair Name="%MainQuestTutorial-ContentTutorialEnded">Gratulacje! Poznałeś już podstawy i jesteś teraz gotów do rozpoczęcia odkrywania Endless Legend - oraz Aurigi. Do odkrycia pozostało przed tobą jeszcze wiele innych zawiłości oraz aspektów.
 Przygotuj się do walki z innymi imperiami, które zamieszkują świat Aurigi. Powodzenia!</LocalizationPair>
   <LocalizationPair Name="%TutorialGameEndedVictoryTitle">Gratulacje!</LocalizationPair>
-  <LocalizationPair Name="%TutorialGameEndedWinnerFormat">{0} has completed the tutorial.</LocalizationPair>
+  <LocalizationPair Name="%TutorialGameEndedWinnerFormat">{0} ukończył samouczek.</LocalizationPair>
   <LocalizationPair Name="%SubtitlesIntroduction01">Mam wiele form.</LocalizationPair>
   <LocalizationPair Name="%SubtitlesIntroduction02">Miałam wiele form.</LocalizationPair>
   <LocalizationPair Name="%SubtitlesIntroduction03">Ciepło i zieleń,</LocalizationPair>
@@ -6946,18 +6946,18 @@ Przygotuj się do walki z innymi imperiami, które zamieszkują świat Aurigi. P
   <LocalizationPair Name="%SubtitlesDrakkens10">lecz wciąż umiemy odczytać zły omen.</LocalizationPair>
   <LocalizationPair Name="%SubtitlesDrakkens11">Nadciąga kolejny kataklizm i to my, Drakkeni, jesteśmy tymi,</LocalizationPair>
   <LocalizationPair Name="%SubtitlesDrakkens12">którzy muszą ocalić Aurigę.</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists01">The Endless broke us when they broke themselves.</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists02">Now we are few,</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists03">and many that remain are often of little use.</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists04">Yet our purpose still drives us</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists05">even death cannot be allowed to stop us.</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists06">We must find new converts, new servants,</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists07">who will help us fulfill the great oaths we took so long ago.</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists08">They will not only be our hands and our eyes,</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists09">they will be the sword and the shield </LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists10">of our armies that will bring the Eternal End.</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists11">First upon Auriga,</LocalizationPair>
-  <LocalizationPair Name="%SubtitlesCultists12">and then across the universe.</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists01">Bezkresni rozbili nas, gdy rozbili siebie.</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists02">Teraz, pozostało nas już tylko kilku,</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists03">a ci, którzy pozostali, nie na wiele się zdają.</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists04">Mimo tego, nadal przewodzi nam nasz cel</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists05">nawet śmierci nie damy się powstrzymać.</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists06">Musimy znaleźć nowych wyznawców, nowych służących,</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists07">którzy pomogą nam dotrzymać przysiąg, które złożyliśmy tak dawno temu.</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists08">Będą nie tylko naszymi rękami i oczyma,</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists09">będą mieczem i tarczą</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists10">naszych armii, które sprowadzą Wieczny Koniec.</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists11">Najpierw na Aurigę,</LocalizationPair>
+  <LocalizationPair Name="%SubtitlesCultists12">a potem na cały wszechświat.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionGreetings">Witaj. Zobaczmy czy nasze imperia mogą żyć ze sobą w zgodzie.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionGreetingsAffinityBrokenLords">Niech będzie chwała waszej miłości! Miejmy nadzieję, że pozostaniemy honorowymi znajomymi.</LocalizationPair>
   <LocalizationPair Name="%DiplomaticInteractionGreetingsAffinityRageWizards">Miłego dnia, wspólniku w cierpieniu. Oby agonia uczyniła nas wszystkich silniejszymi.</LocalizationPair>

@@ -4,38 +4,45 @@
     <Curve>
       <keys>
         <Keyframe>
-          <time>-2.3121388</time>
-          <value>0.3431098</value>
+          <time>0.3090644</time>
+          <value>0.27900663</value>
           <inTangent>8.83898756E-05</inTangent>
           <outTangent>8.83898756E-05</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
         <Keyframe>
-          <time>47.63006</time>
-          <value>0.420173556</value>
+          <time>51.11491</time>
+          <value>0.2905944</value>
           <inTangent>1.986758E-05</inTangent>
           <outTangent>1.986758E-05</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
         <Keyframe>
-          <time>100</time>
-          <value>0.5</value>
+          <time>100.291245</time>
+          <value>0.303954542</value>
           <inTangent>-1.88418126E-05</inTangent>
           <outTangent>-1.88418126E-05</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
         <Keyframe>
-          <time>200</time>
-          <value>0.75</value>
-          <inTangent>0.00238418579</inTangent>
-          <outTangent>0.00238418579</outTangent>
+          <time>123.023872</time>
+          <value>0.304601729</value>
+          <inTangent>0</inTangent>
+          <outTangent>0</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
         <Keyframe>
-          <time>300</time>
-          <value>1</value>
-          <inTangent>0.008137206</inTangent>
-          <outTangent>0.008137206</outTangent>
+          <time>199.134689</time>
+          <value>0.311814785</value>
+          <inTangent>0.0003137699</inTangent>
+          <outTangent>0.0003137699</outTangent>
+          <tangentMode>0</tangentMode>
+        </Keyframe>
+        <Keyframe>
+          <time>299.998383</time>
+          <value>0.325199664</value>
+          <inTangent>0.000405025872</inTangent>
+          <outTangent>0.000405025872</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
       </keys>
@@ -48,30 +55,30 @@
       <keys>
         <Keyframe>
           <time>0</time>
-          <value>0.414032429</value>
+          <value>0.124353647</value>
           <inTangent>0.000635450939</inTangent>
           <outTangent>0.000635450939</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
         <Keyframe>
-          <time>50.5780334</time>
-          <value>0.4788654</value>
-          <inTangent>0.000635450939</inTangent>
-          <outTangent>0.000635450939</outTangent>
+          <time>50.607933</time>
+          <value>0.1354211</value>
+          <inTangent>0.0002606442</inTangent>
+          <outTangent>0.0002606442</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
         <Keyframe>
-          <time>149.13295</time>
-          <value>0.542847753</value>
-          <inTangent>0.002553061</inTangent>
-          <outTangent>0.002553061</outTangent>
+          <time>173.481323</time>
+          <value>0.151643455</value>
+          <inTangent>7.16763461E-05</inTangent>
+          <outTangent>7.16763461E-05</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
         <Keyframe>
-          <time>300</time>
-          <value>0.799999952</value>
-          <inTangent>0.008315146</inTangent>
-          <outTangent>0.008315146</outTangent>
+          <time>300.834229</time>
+          <value>0.164324939</value>
+          <inTangent>0.000199436981</inTangent>
+          <outTangent>0.000199436981</outTangent>
           <tangentMode>0</tangentMode>
         </Keyframe>
       </keys>

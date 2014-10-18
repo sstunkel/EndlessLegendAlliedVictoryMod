@@ -3,11 +3,12 @@
 
   <!--
   The default value of the attribute 'IsTileUnstopable' is False.
+  The default value of the attribute 'OverrideTerrainCost' is False.
   The default value of the attribute DefaultCost (Cost for overrides) is 0.
   You can override each rules for each movement capacities.
   
   Exemple:
-  <PathfindingRule Name="Mountains" DefaultCost="3" IsTileUnstopable="true">
+  <PathfindingRule Name="Mountains" DefaultCost="3" IsTileUnstopable="true" OverrideTerrainCost="true">
     <RuleOverride MovementCapacity="Air" Cost="1" IsTileUnstopable="false" />
   </PathfindingRule>
   -->
@@ -26,10 +27,10 @@
   </PathfindingRule>
 
   <!-- Additive rule for POI tiles. -->
-  <PathfindingRule Name="PointOfInterest_Village" IsTileUnstopable="true">
+  <PathfindingRule Name="PointOfInterest_Village" DefaultCost="1" IsTileUnstopable="true" OverrideTerrainCost="true">
   </PathfindingRule>
 
-  <PathfindingRule Name="PointOfInterest_QuestLocation" IsTileUnstopable="true">
+  <PathfindingRule Name="PointOfInterest_QuestLocation" DefaultCost="1" IsTileUnstopable="true" OverrideTerrainCost="true">
   </PathfindingRule>
 
   <PathfindingRule Name="PointOfInterest_WatchTower" IsTileUnstopable="false">
@@ -49,12 +50,12 @@
     <RuleOverride MovementCapacity="Air" Cost="0" IsTileUnstopable="true"/>
   </PathfindingRule>
 
-  <!-- Rule on the empire district tiles (this rule is not additive, it's override others). -->
-  <PathfindingRule Name="DistrictTile" DefaultCost="0.5">
+  <!-- Rule on the empire district tiles. -->
+  <PathfindingRule Name="DistrictTile" DefaultCost="0.5" OverrideTerrainCost="true">
   </PathfindingRule>
 
-  <!-- Rule on the empire road tiles (this rule is not additive, it's override others). -->
-  <PathfindingRule Name="RoadTile" DefaultCost="0.5">
+  <!-- Rule on the empire road tiles. -->
+  <PathfindingRule Name="RoadTile" DefaultCost="0.5" OverrideTerrainCost="true">
   </PathfindingRule>
 
   <PathfindingRule Name="HighwayTile" DefaultCost="0.25">

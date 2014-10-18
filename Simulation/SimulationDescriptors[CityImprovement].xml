@@ -5,7 +5,7 @@
 
 
 
-  <!-- Era 1 - Public Granary -->
+  <!-- Era 1 - Seed Storage -->
   <SimulationDescriptor Name="CityImprovementFood0" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityFood"               Operation="Addition"    Value="10"    Path="./#Summer,ClassCity"/>
@@ -14,7 +14,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Era 2 - Double unlock : Seed Storage -->
+  <!-- Era 2 - Double unlock : Aquacultural Science (Fish Farm & Irrigation Networks) -->
   <SimulationDescriptor Name="CityImprovementFood1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/#Summer,TerrainTagRiver"/>
@@ -28,7 +28,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Era 2 - Plow Factory -->
+  <!-- Era 2 - Public Granary -->
   <SimulationDescriptor Name="CityImprovementFood2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityFood"               Operation="Addition"    Value="15"    Path="./ClassCity"/>
@@ -37,6 +37,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 3 - Plow Factory -->
   <SimulationDescriptor Name="CityImprovementFood8" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/DistrictTypeExploitation"/>
@@ -44,6 +45,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 4 - Double unlock : Isolation Sciences (Refrigeration Plant & Subterranean Gardens) -->
   <SimulationDescriptor Name="CityImprovementFood3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"  Operation="Addition"    Value="3"     Path="./ClassCity"/>
@@ -53,12 +55,13 @@
   </SimulationDescriptor>
   <SimulationDescriptor Name="CityImprovementFood9" Type="CityImprovement">
     <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="DistrictFood"                           Operation="Addition"  Value="15"     Path="./ClassCity/#Winter,DistrictTypeExtension"/>
+      <SimulationModifierDescriptor TargetProperty="DistrictFood"                           Operation="Addition"  Value="10"    Path="./ClassCity/#Winter,DistrictTypeExtension"/>
       <SimulationModifierDescriptor TargetProperty="CityDefensePointLossToHealthLossRatio"  Operation="Percent"   Value="-0.40" Path="./ClassCity"/>
       <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                        Operation="Addition"  Value="7"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 4 - Double unlock : Nutrition Chemistry (Fertilizer Plant & Hothouses) -->
   <SimulationDescriptor Name="CityImprovementFood4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictFood"           Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagFood"/>
@@ -92,6 +95,7 @@
   
   
   <!-- INDUSTRY -->
+  <!-- Era 1 - Mill Foundry -->
   <SimulationDescriptor Name="CityImprovementIndustry0" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityIndustry"               Operation="Addition"    Value="6"     Path="./ClassCity"/>
@@ -100,7 +104,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Double unlock -->
+  <!-- Era 2 - Double unlock : Management Sciences (Lumber Mill & Apprenticeship Registry) -->
   <SimulationDescriptor Name="CityImprovementIndustry1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="1"     Path="./ClassCity/TerrainTagForest"/>
@@ -114,6 +118,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 2 - Canal System -->
   <SimulationDescriptor Name="CityImprovementIndustry2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="1"     Path="./ClassCity/#Summer,TerrainTagIndustry"/>
@@ -121,6 +126,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 4 - Production Line -->
   <SimulationDescriptor Name="CityImprovementIndustry3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="BaseIndustryPerPopulation"  Operation="Addition"    Value="3"     Path="./ClassCity"/>
@@ -128,6 +134,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 4 - Double unlock : Borer's Guild (Automated Production & Mining Rights) -->
   <SimulationDescriptor Name="CityImprovementIndustry4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagIndustry"/>
@@ -149,7 +156,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>-->
 
-  <!-- Double unlock : Mining Rights -->
+  <!-- Era 5 - Advanced quarry -->
   <SimulationDescriptor Name="CityImprovementIndustry6" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictIndustry"           Operation="Addition"    Value="50"     Path="./ClassCity/PointOfInterestBonusStrategic"/>
@@ -161,6 +168,7 @@
   
   
   <!-- DUST -->
+  <!-- Era 1 - Empire Mint -->
   <SimulationDescriptor Name="CityImprovementDust0" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityDust"               Operation="Addition"    Value="5"     Path="./ClassCity"/>
@@ -168,7 +176,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Double unlock -->
+  <!-- Era 1 - Double unlock : Aquapulvistics (Dust Dredger & Dust Filtration) -->
   <SimulationDescriptor Name="CityImprovementDust1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictDust"           Operation="Addition"    Value="2"     Path="./ClassCity/#Summer,TerrainTagRiver"/>
@@ -180,6 +188,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 3 - Dust Refinery -->
   <SimulationDescriptor Name="CityImprovementDust2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityDust"                    Operation="Addition"    Value="20"     Path="./ClassCity"/>
@@ -187,12 +196,14 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 3 - Dust Depository -->
   <SimulationDescriptor Name="CityImprovementDust3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="BaseDustPerPopulation"  Operation="Addition"    Value="4"     Path="./ClassCity"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Double unlock : Improved Dust Alchemies (Dust Revitalizer & Advanced Extraction) -->
   <SimulationDescriptor Name="CityImprovementDust4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictDust"           Operation="Addition"    Value="5"     Path="./ClassCity/TerrainTagDust"/>
@@ -205,6 +216,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Town Criers -->
   <SimulationDescriptor Name="CityImprovementDust5" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityDust"                    Operation="Addition"    Value="50"    Path="./ClassCity"/>
@@ -224,6 +236,7 @@
   
   
   <!-- SCIENCE -->
+  <!-- Era 1 - Public Library -->
   <SimulationDescriptor Name="CityImprovementScience0" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Addition"    Value="10"    Path="./ClassCity"/>
@@ -232,7 +245,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Era 1 : Geomic Labs -->
+  <!-- Era 1 - Geomic Labs -->
   <SimulationDescriptor Name="CityImprovementScience8" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="2"     Path="./ClassCity/TerrainTagScience"/>
@@ -240,7 +253,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Alchemy Workshop -->
+  <!-- Era 2 - Alchemy Workshop -->
   <SimulationDescriptor Name="CityImprovementScience3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Addition"    Value="15"    Path="./ClassCity"/>
@@ -249,7 +262,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Double unlock : Advanced Alchemy Lab -->
+  <!-- Era 3 - Double unlock : Statistical Methods (Advanced Alchemy Lab & Cryometric Monitors) -->
   <SimulationDescriptor Name="CityImprovementScience2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="3"     Path="./ClassCity/DistrictTypeCenter"/>
@@ -266,7 +279,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Double unlock : Large-scale Aquatic Center -->
+  <!-- Era 3 - Double unlock : Fluid Biomechanics (Large-scale Aquatic Center & Hydromatic Laboratory) -->
   <SimulationDescriptor Name="CityImprovementScience1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="3"     Path="./ClassCity/TerrainTagWater"/>
@@ -281,6 +294,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 4 - Imperial Funding -->
   <SimulationDescriptor Name="CityImprovementScience4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="5"     Path="./ClassCity/TerrainTagScience"/>
@@ -288,7 +302,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!-- Double unlock : Living Lab Tools & The Crystal Labyrinth -->
+  <!-- Era 5 - Double unlock : Scientific Specialization (Living Lab Tools & Climatology Guild) -->
   <SimulationDescriptor Name="CityImprovementScience5" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityScience"              Operation="Percent"     Value="1"  Path="./ClassCity"/>
@@ -306,6 +320,7 @@
   
   
   <!-- Prestige -->
+  <!-- Era 2 - Glory of Empire -->
   <SimulationDescriptor Name="CityImprovementEmpirePoint1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityCityPoint"              Operation="Addition"  Value="5"     Path="./ClassCity"/>
@@ -314,6 +329,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 3 - National Museum -->
   <SimulationDescriptor Name="CityImprovementEmpirePoint2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictCityPoint"          Operation="Addition"  Value="2"     Path="./ClassCity/DistrictTypeCenter"/>
@@ -323,6 +339,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Aura of Empire -->
   <SimulationDescriptor Name="CityImprovementEmpirePoint3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictCityPoint"          Operation="Addition"  Value="15"     Path="./ClassCity/DistrictLevel1"/>
@@ -331,6 +348,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Arena of Champions -->
   <SimulationDescriptor Name="CityImprovementEmpirePoint4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityCityPoint"              Operation="Percent"   Value="1"  Path="./ClassCity"/>
@@ -341,6 +359,7 @@
 
 
   <!-- Approval -->
+  <!-- Era 1 - Sewer System -->
   <SimulationDescriptor Name="CityImprovementApproval1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="20"    Path="./ClassCity"/>
@@ -348,7 +367,8 @@
       <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                Operation="Addition" Value="1"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
-  
+
+  <!-- Era 2 - Central Market -->
   <SimulationDescriptor Name="CityImprovementApproval2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="25"    Path="./ClassCity"/>
@@ -358,6 +378,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Arts Council -->
   <SimulationDescriptor Name="CityImprovementApproval3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="30"    Path="./ClassCity"/>
@@ -367,6 +388,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Imperial News Network -->
   <SimulationDescriptor Name="CityImprovementApproval4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="20"    Path="./ClassCity"/>
@@ -389,6 +411,7 @@
 
 
   <!-- Trade routes -->
+  <!-- Era 3 - Double unlock : Highway Outposts (Caravanserai & Lookout Towers) -->
   <SimulationDescriptor Name="CityImprovementTradeRoutes1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="MaximumNumberOfTradeRoutes"   Operation="Addition"  Value="1"     Path="./ClassCity"/>
@@ -404,7 +427,8 @@
       <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition"  Value="4"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>-->
-  
+
+  <!-- Era 5 - Double unlock : Enlightened Trade (Scientific Envoy & Remotuscope Factory) -->
   <SimulationDescriptor Name="CityImprovementTradeRoutes3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="MaximumNumberOfTradeRoutes"   Operation="Addition"  Value="1"     Path="./ClassCity"/>
@@ -424,6 +448,7 @@
 
 
   <!-- Roads -->
+  <!-- Era 2 - Double unlock : Imperial Highways (Right of Way & Watchtower) -->
   <SimulationDescriptor Name="CityImprovementRoads" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"    Operation="Addition"  Value="3"/>
@@ -433,6 +458,7 @@
 
 
   <!-- Military Recruitment Bonus -->
+  <!-- Era 2 - Conscription Center -->
   <SimulationDescriptor Name="CityImprovementMilitaryRecruitmentBonus1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="40" Path="./ClassCity/ClassUnit"/>
@@ -440,6 +466,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 4 - Army Manual -->
   <SimulationDescriptor Name="CityImprovementMilitaryRecruitmentBonus3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="100" Path="./ClassCity/ClassUnit"/>
@@ -447,6 +474,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- DEPRECATED -->
   <SimulationDescriptor Name="CityImprovementMilitaryRecruitmentBonus5" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="100" Path="./ClassCity/ClassUnit"/>
@@ -464,7 +492,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>-->
 
-  <!-- Era 6 : -->
+  <!-- DEPRECATED -->
   <SimulationDescriptor Name="CityImprovementUnitCostReduction3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="UnitProductionCostReduction"  Operation="Addition" Value="0.30"   Path="./ClassCity"/>
@@ -476,7 +504,7 @@
 
 
   <!-- Defense points -->
-  <!-- Double unlock : Stronghold Architecture & Infantry Cantina -->
+  <!-- Era 1 - Double unlock : Military Science (Stronghold Architecture & Infantry Cantina) -->
   <SimulationDescriptor Name="CityImprovementDefense1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"  Value="60"    Path="./ClassCity"/>
@@ -489,6 +517,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 3 - Triple Unlock : Borough Government (Imperial Kennels) -->
   <SimulationDescriptor Name="CityImprovementDefense2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"  Value="200"    Path="./ClassCity"/>
@@ -497,6 +526,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Military Reserves -->
   <SimulationDescriptor Name="CityImprovementDefense3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Addition"  Value="400"    Path="./ClassCity"/>
@@ -505,7 +535,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  
+  <!-- DEPRECATED -->
   <SimulationDescriptor Name="CityImprovementDefense4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"  Operation="Percent"   Value="0.50"  Path="./ClassCity"/>
@@ -519,7 +549,15 @@
 
 
 
-  <!-- Unit HP Regeneration -->
+  <!-- Unit HP regen & City defense recovery -->
+  <!-- Era 3 - Triple Unlock : Borough Government (Materials Hoard & Medical Center) -->
+  <SimulationDescriptor Name="CityImprovementDefenseRecovery1" Type="CityImprovement">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="CityDefensePointRecoveryPerTurn"  Operation="Addition" Value="10" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"          Operation="Addition" Value="100" Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition" Value="1"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="CityImprovementUnitRegeneration1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"   Operation="Addition" Value="0.10" Path="./ClassCity"/>
@@ -528,23 +566,13 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Era 5 - Inoculation Station -->
   <SimulationDescriptor Name="CityImprovementUnitRegeneration2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="OwnedUnitRegenModifier"       Operation="Addition" Value="0.15" Path="./ClassCity"/>
       <SimulationModifierDescriptor TargetProperty="AlliedUnitRegenModifier"      Operation="Addition" Value="0.10" Path="./ClassCity"/>
-      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="150"  Path="./ClassCity/ClassUnit"/> 
+      <SimulationModifierDescriptor TargetProperty="ExperienceRewardAtCreation"   Operation="Addition" Value="120"  Path="./ClassCity/ClassUnit"/> 
       <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"              Operation="Addition" Value="5"/>
-    </SimulationModifierDescriptors>
-  </SimulationDescriptor>
-
-
-
-  <!-- Defense recovery -->
-  <SimulationDescriptor Name="CityImprovementDefenseRecovery1" Type="CityImprovement">
-    <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="CityDefensePointRecoveryPerTurn"  Operation="Addition" Value="10" Path="./ClassCity"/>
-      <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"          Operation="Addition" Value="100" Path="./ClassCity"/>
-      <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"                  Operation="Addition" Value="1"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
@@ -556,8 +584,11 @@
   </SimulationDescriptor>-->
 
 
+  
+  
 
   <!-- all FIDS (building given at start) -->
+  <!-- Era 1 - Founder's memorial -->
   <SimulationDescriptor Name="CityImprovementFIDS1" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityFood"      Operation="Addition"  Value="2"  Path="./ClassCity"/>
@@ -692,6 +723,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Deep Generator -->
   <SimulationDescriptor Name="CityImprovementVaulters2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityFood"         Operation="Percent"     Value="0.10"  Path="./ClassCity"/>
@@ -701,6 +733,7 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
+  <!-- Strength of the Vault -->
   <SimulationDescriptor Name="CityImprovementVaulters3" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="MaximumCityDefensePoint"          Operation="Addition" Value="80" Path="./ClassCity"/>
@@ -714,7 +747,8 @@
     <!-- Tooltip Override -->
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
-    
+
+  <!-- Endless Recycling -->
   <SimulationDescriptor Name="CityImprovementVaulters4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictScience"    Operation="Addition"    Value="4"     Path="./ClassCity/DistrictLevel1"/>
@@ -737,7 +771,7 @@
   <!-- Necrophages -->
   <SimulationDescriptor Name="CityImprovementNecrophages7" Type="Technology">
     <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"  Operation="Addition"    Value="4"     Path="./ClassCity"/>
+      <SimulationModifierDescriptor TargetProperty="BaseFoodPerPopulation"  Operation="Addition"    Value="5"     Path="./ClassCity"/>
       <SimulationModifierDescriptor TargetProperty="CityMoneyUpkeep"        Operation="Addition"    Value="5"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
@@ -750,6 +784,7 @@
   </SimulationDescriptor>
 
   <!-- Rage Wizards -->
+  <!-- Verda's Temple -->
   <SimulationDescriptor Name="CityImprovementRageWizards2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DistrictScience"          Operation="Addition"    Value="2"     Path="./ClassCity/TerrainTagScience"/>
@@ -768,10 +803,10 @@
   </SimulationDescriptor>
 
   <!-- Roving Clans -->
+  <!-- Ground Exploration -->
   <SimulationDescriptor Name="CityImprovementRovingClans2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="VisionRange"                Operation="Addition" Value="2" Path="./ClassCity/ClassDistrict"/>
-      <SimulationModifierDescriptor TargetProperty="VisionRange"                Operation="Addition" Value="1" Path="./ClassCity/DistrictTypeCenter"/>
       <SimulationModifierDescriptor TargetProperty="CityScience"                Operation="Addition" Value="5" Path="./ClassCity"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
@@ -783,6 +818,7 @@
   </SimulationDescriptor>
 
   <!-- Drakkens -->
+  <!-- Hatchery -->
   <SimulationDescriptor Name="CityImprovementDrakkens2" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityFood"                     Operation="Addition"    Value="10"     Path="./ClassCity"/>
@@ -791,7 +827,6 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <!--Drakkens-->
   <SimulationDescriptor Name="CityImprovementDrakkens4" Type="CityImprovement">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="CityApproval"                   Operation="Addition" Value="20"    Path="./ClassCity"/>

@@ -23,6 +23,7 @@
       <SimulationModifierDescriptor TargetProperty="InjuredValueToEmpireMoneyConversion"  Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/UnitHero" />
       <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/UnitHero" />
       <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="0.75"  Path="../ClassEmpire/Garrison/ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="PrestigeTrendBonusTrend"              Operation="Multiplication"  Value="2"     Path="../ClassEmpire" />
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
@@ -49,6 +50,7 @@
       <SimulationModifierDescriptor TargetProperty="InjuredValueToEmpireMoneyConversion"  Operation="Multiplication"  Value="1.25"  Path="../ClassEmpire/UnitHero" />
       <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.25"  Path="../ClassEmpire/UnitHero" />
       <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.25"  Path="../ClassEmpire/Garrison/ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="PrestigeTrendBonusTrend"              Operation="Multiplication"  Value="0.667" Path="../ClassEmpire" />
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
@@ -70,6 +72,7 @@
       <SimulationModifierDescriptor TargetProperty="InjuredValueToEmpireMoneyConversion"  Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire/UnitHero" />
       <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire/UnitHero" />
       <SimulationModifierDescriptor TargetProperty="NextLevelExperience"                  Operation="Multiplication"  Value="1.5"   Path="../ClassEmpire/Garrison/ClassUnit" />
+      <SimulationModifierDescriptor TargetProperty="PrestigeTrendBonusTrend"              Operation="Multiplication"  Value="0.5"   Path="../ClassEmpire" />
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 

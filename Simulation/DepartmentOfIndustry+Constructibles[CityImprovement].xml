@@ -39,6 +39,7 @@
   <CityImprovementDefinition Name="CityImprovementFood2"                         SubCategory="SubCategoryFood">
     <SimulationDescriptorReference Name="CityImprovementFood2" />
     <Cost ResourceName="Production">250</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementFood2</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyFood2</TechnologyPrerequisite>
@@ -48,6 +49,8 @@
   <CityImprovementDefinition Name="CityImprovementFood8"                         SubCategory="SubCategoryFood">
     <SimulationDescriptorReference Name="CityImprovementFood8" />
     <Cost ResourceName="Production">600</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementFood8</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyFood8</TechnologyPrerequisite>
@@ -57,7 +60,7 @@
   <CityImprovementDefinition Name="CityImprovementFood3"                         SubCategory="SubCategoryFood">
     <SimulationDescriptorReference Name="CityImprovementFood3" />
     <Cost ResourceName="Production">1200</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">15</Cost>
     <Cost ResourceName="Strategic4" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementFood3</PathPrerequisite>
@@ -67,7 +70,7 @@
     <SimulationDescriptorReference Name="CityImprovementFood9" />
     <Cost ResourceName="Production">1200</Cost>
     <Cost ResourceName="Strategic2" Instant="true">5</Cost>
-    <Cost ResourceName="Strategic4" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">15</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementFood9</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyFood3</TechnologyPrerequisite>
@@ -77,7 +80,7 @@
   <CityImprovementDefinition Name="CityImprovementFood4"                         SubCategory="SubCategoryFood">
     <SimulationDescriptorReference Name="CityImprovementFood4" />
     <Cost ResourceName="Production">1200</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">15</Cost>
     <Cost ResourceName="Strategic4" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementFood4</PathPrerequisite>
@@ -86,7 +89,7 @@
   <CityImprovementDefinition Name="CityImprovementFood10"                        SubCategory="SubCategoryFood">
     <SimulationDescriptorReference Name="CityImprovementFood10" />
     <Cost ResourceName="Production">1200</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">15</Cost>
     <Cost ResourceName="Strategic4" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">.../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementFood10</PathPrerequisite>
@@ -156,25 +159,25 @@
   <CityImprovementDefinition Name="CityImprovementIndustry3"                     SubCategory="SubCategoryIndustry">
     <SimulationDescriptorReference Name="CityImprovementIndustry3" />
     <Cost ResourceName="Production">1200</Cost>
-    <Cost ResourceName="Strategic1" Instant="true">5</Cost>
-    <Cost ResourceName="Strategic3" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementIndustry3</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyIndustry3</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era 4 - Automated Production -->
+  <!-- Era 4 - Double unlock : Borer's Guild (Automated Production & Mining Rights) -->
   <CityImprovementDefinition Name="CityImprovementIndustry4"                     SubCategory="SubCategoryIndustry">
     <SimulationDescriptorReference Name="CityImprovementIndustry4" />
     <Cost ResourceName="Production">1200</Cost>
     <Cost ResourceName="Strategic1" Instant="true">5</Cost>
-    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">15</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementIndustry4</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyIndustry4</TechnologyPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementIndustry8"                     SubCategory="SubCategoryIndustry">
     <SimulationDescriptorReference Name="CityImprovementIndustry8" />
     <Cost ResourceName="Production">1200</Cost>
-    <Cost ResourceName="Strategic1" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
     <Cost ResourceName="Strategic3" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementIndustry8</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyIndustry4</TechnologyPrerequisite>
@@ -189,7 +192,7 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyIndustry5</TechnologyPrerequisite>
   </CityImprovementDefinition>-->
 
-  <!-- Era 5 - Double unlock : Borer's Guild (Advanced quarry & Mining Rights) -->
+  <!-- Era 5 - Advanced quarry -->
   <CityImprovementDefinition Name="CityImprovementIndustry6"                     SubCategory="SubCategoryIndustry">
     <SimulationDescriptorReference Name="CityImprovementIndustry6" />
     <SimulationDescriptorReference Name="OnlyOnePerEmpire" />
@@ -233,40 +236,43 @@
   <CityImprovementDefinition Name="CityImprovementDust2"                         SubCategory="SubCategoryDust">
     <SimulationDescriptorReference Name="CityImprovementDust2" />
     <Cost ResourceName="Production">600</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDust2</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDust2</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era 3 - AAAAA -->
+  <!-- Era 3 - Dust Depository -->
   <CityImprovementDefinition Name="CityImprovementDust3"                         SubCategory="SubCategoryDust">
     <SimulationDescriptorReference Name="CityImprovementDust3" />
     <Cost ResourceName="Production">600</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDust3</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDust3</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - Double unlock : Dust Revitalizer -->
+  <!-- Era 5 - Double unlock : Improved Dust Alchemies (Dust Revitalizer & Advanced Extraction) -->
   <CityImprovementDefinition Name="CityImprovementDust4"                         SubCategory="SubCategoryDust">
     <SimulationDescriptorReference Name="CityImprovementDust4" />
     <Cost ResourceName="Production">2000</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">20</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">30</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDust4</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDust4</TechnologyPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementDust8"                         SubCategory="SubCategoryDust">
     <SimulationDescriptorReference Name="CityImprovementDust8" />
     <Cost ResourceName="Production">2000</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">20</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">40</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDust8</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDust4</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 5 - Town Criers -->
   <CityImprovementDefinition Name="CityImprovementDust5"                         SubCategory="SubCategoryDust">
     <SimulationDescriptorReference Name="CityImprovementDust5" />
     <Cost ResourceName="Production">2000</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">20</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">25</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDust5</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDust5</TechnologyPrerequisite>
   </CityImprovementDefinition>
@@ -288,7 +294,7 @@
   <!-- ################################ -->
   <!-- ######      SCIENCE       ###### -->
   <!-- ################################ -->
-  <!-- Era 1 : Imperial University -->
+  <!-- Era 1 - Public Library -->
   <CityImprovementDefinition Name="CityImprovementScience0"                      SubCategory="SubCategoryScience">
     <SimulationDescriptorReference Name="CityImprovementScience0" />
     <Cost ResourceName="Production">75</Cost>
@@ -296,7 +302,7 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience0</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era 1 : Geomic Labs -->
+  <!-- Era 1 - Geomic Labs -->
   <CityImprovementDefinition Name="CityImprovementScience8"                      SubCategory="SubCategoryScience">
     <SimulationDescriptorReference Name="CityImprovementScience8" />
     <Cost ResourceName="Production">75</Cost>
@@ -304,36 +310,7 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience8</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era 3 : Double unlock : Large-scale Aquatic Center -->
-  <CityImprovementDefinition Name="CityImprovementScience1"                      SubCategory="SubCategoryScience">
-    <SimulationDescriptorReference Name="CityImprovementScience1" />
-    <Cost ResourceName="Production">600</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementScience1</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience1</TechnologyPrerequisite>
-  </CityImprovementDefinition>
-  <CityImprovementDefinition Name="CityImprovementScience7"                      SubCategory="SubCategoryScience">
-    <SimulationDescriptorReference Name="CityImprovementScience7" />
-    <Cost ResourceName="Production">400</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementScience7</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience1</TechnologyPrerequisite>
-  </CityImprovementDefinition>
-
-  <!-- Era 3 : Double unlock : Advanced Alchemy Lab -->
-  <CityImprovementDefinition Name="CityImprovementScience2"                      SubCategory="SubCategoryScience">
-    <SimulationDescriptorReference Name="CityImprovementScience2" />
-    <Cost ResourceName="Production">600</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementScience2</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience2</TechnologyPrerequisite>
-  </CityImprovementDefinition>
-  <CityImprovementDefinition Name="CityImprovementScience9"                      SubCategory="SubCategoryScience">
-    <SimulationDescriptorReference Name="CityImprovementScience9" />
-    <SimulationDescriptorReference Name="OnlyOnePerEmpire" />
-    <Cost ResourceName="Production">1200</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementScience9</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience2</TechnologyPrerequisite>
-  </CityImprovementDefinition>
-
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 2 - Alchemy Workshop -->
   <CityImprovementDefinition Name="CityImprovementScience3"                      SubCategory="SubCategoryScience">
     <SimulationDescriptorReference Name="CityImprovementScience3" />
     <Cost ResourceName="Production">250</Cost>
@@ -342,29 +319,65 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience3</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era IV - AAAAA -->
+  <!-- Era 3 - Double unlock : Statistical Methods (Advanced Alchemy Lab & Cryometric Monitors) -->
+  <CityImprovementDefinition Name="CityImprovementScience2"                      SubCategory="SubCategoryScience">
+    <SimulationDescriptorReference Name="CityImprovementScience2" />
+    <Cost ResourceName="Production">600</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementScience2</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience2</TechnologyPrerequisite>
+  </CityImprovementDefinition>
+  <CityImprovementDefinition Name="CityImprovementScience9"                      SubCategory="SubCategoryScience">
+    <SimulationDescriptorReference Name="CityImprovementScience9" />
+    <SimulationDescriptorReference Name="OnlyOnePerEmpire" />
+    <Cost ResourceName="Production">1200</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">15</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementScience9</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience2</TechnologyPrerequisite>
+  </CityImprovementDefinition>
+
+  <!-- Era 3 - Double unlock : Fluid Biomechanics (Large-scale Aquatic Center & Hydromatic Laboratory) -->
+  <CityImprovementDefinition Name="CityImprovementScience1"                      SubCategory="SubCategoryScience">
+    <SimulationDescriptorReference Name="CityImprovementScience1" />
+    <Cost ResourceName="Production">600</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementScience1</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience1</TechnologyPrerequisite>
+  </CityImprovementDefinition>
+  <CityImprovementDefinition Name="CityImprovementScience7"                      SubCategory="SubCategoryScience">
+    <SimulationDescriptorReference Name="CityImprovementScience7" />
+    <Cost ResourceName="Production">400</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementScience7</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience1</TechnologyPrerequisite>
+  </CityImprovementDefinition>
+
+  <!-- Era 4 - Imperial Funding -->
   <CityImprovementDefinition Name="CityImprovementScience4"                      SubCategory="SubCategoryScience">
     <SimulationDescriptorReference Name="CityImprovementScience4" />
     <Cost ResourceName="Production">1200</Cost>
-    <Cost ResourceName="Strategic1" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">25</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementScience4</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience4</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - Double unlock : Living Lab Tools -->
+  <!-- Era 5 - Double unlock : Scientific Specialization (Living Lab Tools & Climatology Guild) -->
   <CityImprovementDefinition Name="CityImprovementScience5"                      SubCategory="SubCategoryScience">
     <SimulationDescriptorReference Name="CityImprovementScience5" />
     <SimulationDescriptorReference Name="OnlyOnePerEmpire" />
     <Cost ResourceName="Production">3000</Cost>
-    <Cost ResourceName="Strategic1" Instant="true">20</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire/ClassCity/CityImprovementScience5</PathPrerequisite>    
+    <Cost ResourceName="Strategic1" Instant="true">25</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">10</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementScience5</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience5</TechnologyPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementScience6"                      SubCategory="SubCategoryScience">
     <SimulationDescriptorReference Name="CityImprovementScience6" />
     <SimulationDescriptorReference Name="OnlyOnePerEmpire" />
     <Cost ResourceName="Production">3000</Cost>
-    <Cost ResourceName="Strategic1" Instant="true">20</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">30</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementScience6</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyScience5</TechnologyPrerequisite>
   </CityImprovementDefinition>
@@ -374,7 +387,7 @@
   <!-- ################################ -->
   <!-- #####    Empire points     ##### -->
   <!-- ################################ -->
-  <!-- Era 3 - Aura of Empire -->
+  <!-- Era 2 - Glory of Empire -->
   <CityImprovementDefinition Name="CityImprovementEmpirePoint1"                  SubCategory="SubCategoryEmpirePoint">
     <SimulationDescriptorReference Name="CityImprovementEmpirePoint1" />
     <Cost ResourceName="Production">250</Cost>
@@ -382,36 +395,34 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyEmpirePoint1</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era 3 - Glory of Empire -->
+  <!-- Era 3 - National Museum -->
   <CityImprovementDefinition Name="CityImprovementEmpirePoint2"                  SubCategory="SubCategoryEmpirePoint">
     <SimulationDescriptorReference Name="CityImprovementEmpirePoint2" />
     <Cost ResourceName="Production">600</Cost>
-    <Cost ResourceName="Strategic3" Instant="true">2</Cost>
-    <Cost ResourceName="Strategic4" Instant="true">2</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementEmpirePoint2</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyEmpirePoint2</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 5 - Aura of Empire -->
   <CityImprovementDefinition Name="CityImprovementEmpirePoint3"                  SubCategory="SubCategoryEmpirePoint">
     <SimulationDescriptorReference Name="CityImprovementEmpirePoint3" />
     <Cost ResourceName="Production">2000</Cost>
-    <Cost ResourceName="Strategic3" Instant="true">2</Cost>
-    <Cost ResourceName="Strategic4" Instant="true">2</Cost>
-    <Cost ResourceName="Strategic6" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementEmpirePoint3</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyEmpirePoint3</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 5 - Arena of Champions -->
   <CityImprovementDefinition Name="CityImprovementEmpirePoint4"                  SubCategory="SubCategoryEmpirePoint">
     <SimulationDescriptorReference Name="CityImprovementEmpirePoint4" />
     <SimulationDescriptorReference Name="OnlyOnePerEmpire" />
     <Cost ResourceName="Production">3000</Cost>
-    <Cost ResourceName="Strategic3" Instant="true">2</Cost>
-    <Cost ResourceName="Strategic4" Instant="true">2</Cost>
-    <Cost ResourceName="Strategic6" Instant="true">10</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire/ClassCity/CityImprovementEmpirePoint4</PathPrerequisite>
+    <Cost ResourceName="Strategic3" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">10</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementEmpirePoint4</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyEmpirePoint4</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
@@ -430,26 +441,30 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyApproval1</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era 2 - AAAAA -->
+  <!-- Era 2 - Central Market -->
   <CityImprovementDefinition Name="CityImprovementApproval2"                     SubCategory="SubCategoryApproval">
     <SimulationDescriptorReference Name="CityImprovementApproval2" />
     <Cost ResourceName="Production">250</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">2</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementApproval2</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyApproval2</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 5 - Arts Council -->
   <CityImprovementDefinition Name="CityImprovementApproval3"                     SubCategory="SubCategoryApproval">
     <SimulationDescriptorReference Name="CityImprovementApproval3" />
     <Cost ResourceName="Production">2000</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic5" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementApproval3</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyApproval3</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 5 - Imperial News Network -->
   <CityImprovementDefinition Name="CityImprovementApproval4"                     SubCategory="SubCategoryApproval">
     <SimulationDescriptorReference Name="CityImprovementApproval4" />
     <Cost ResourceName="Production">2000</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
     <Cost ResourceName="Strategic5" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementApproval4</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyApproval4</TechnologyPrerequisite>
@@ -467,7 +482,7 @@
   <!-- ############################## -->
   <!-- ######   Trade routes   ###### -->
   <!-- ############################## -->
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 3 - Double unlock : Highway Outposts (Caravanserai & Lookout Towers) -->
   <CityImprovementDefinition Name="CityImprovementTradeRoutes1"                  SubCategory="SubCategoryTradeRoutes">
     <SimulationDescriptorReference Name="CityImprovementTradeRoutes1" />
     <Cost ResourceName="Production">600</Cost>
@@ -484,11 +499,11 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyTradeRouteBonus2</TechnologyPrerequisite>
   </CityImprovementDefinition>-->
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 5 - Double unlock : Enlightened Trade (Scientific Envoy & Remotuscope Factory) -->
   <CityImprovementDefinition Name="CityImprovementTradeRoutes3"                  SubCategory="SubCategoryTradeRoutes">
     <SimulationDescriptorReference Name="CityImprovementTradeRoutes3" />
     <Cost ResourceName="Production">2000</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">20</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">20</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementTradeRoutes3</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyTradeRouteBonus3</TechnologyPrerequisite>
   </CityImprovementDefinition>
@@ -523,7 +538,7 @@
   <!-- ###################################### -->
   <!-- ####  Military Recruitment Bonus  #### -->
   <!-- ###################################### -->
-  <!-- Era 2 - AAAAA -->
+  <!-- Era 2 - Conscription Center -->
   <CityImprovementDefinition Name="CityImprovementMilitaryRecruitmentBonus1"     SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementMilitaryRecruitmentBonus1" />
     <Cost ResourceName="Production">250</Cost>
@@ -531,20 +546,20 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyMilitaryRecruitmentBonus1</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 4 - Army Manual -->
   <CityImprovementDefinition Name="CityImprovementMilitaryRecruitmentBonus3"     SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementMilitaryRecruitmentBonus3" />
     <Cost ResourceName="Production">1200</Cost>
-    <Cost ResourceName="Strategic5" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementMilitaryRecruitmentBonus3</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyMilitaryRecruitmentBonus3</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- DEPRECATED -->
   <CityImprovementDefinition Name="CityImprovementMilitaryRecruitmentBonus5"     SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementMilitaryRecruitmentBonus5" />
     <Cost ResourceName="Production">2000</Cost>
-    <Cost ResourceName="Strategic5" Instant="true">10</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">10</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementMilitaryRecruitmentBonus5</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyMilitaryRecruitmentBonus5</TechnologyPrerequisite>
   </CityImprovementDefinition>
@@ -555,7 +570,7 @@
   <!-- ##################################### -->
   <!-- ######   Unit cost reduction   ###### -->
   <!-- ##################################### -->
-  <!-- Era AAAAA - AAAAA -->
+  <!-- DEPRECATED -->
   <CityImprovementDefinition Name="CityImprovementUnitCostReduction3"            SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementUnitCostReduction3" />
     <Cost ResourceName="Production">3600</Cost>
@@ -572,7 +587,7 @@
   <!-- ################################ -->
   <!-- ######   Defense points   ###### -->
   <!-- ################################ -->
-  <!-- Double unlock : Stronghold Architecture & Infantry Cantina -->
+  <!-- Era 1 - Double unlock : Military Science (Stronghold Architecture & Infantry Cantina) -->
   <CityImprovementDefinition Name="CityImprovementDefense1"                      SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementDefense1" />
     <Cost ResourceName="Production">75</Cost>
@@ -586,9 +601,16 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDefense1</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  
+  <!-- Era 3 - Triple Unlock : Borough Government (Imperial Kennels) -->
+  <CityImprovementDefinition Name="CityImprovementDefense2"                      SubCategory="SubCategoryMilitary">
+    <SimulationDescriptorReference Name="CityImprovementDefense2" />
+    <Cost ResourceName="Production">600</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">5</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDefense2</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDefenseRecovery1</TechnologyPrerequisite>
+  </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- Era 5 - Military Reserves -->
   <CityImprovementDefinition Name="CityImprovementDefense3"                      SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementDefense3" />
     <Cost ResourceName="Production">2000</Cost>
@@ -598,7 +620,7 @@
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDefense3</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
-  <!-- Era AAAAA - AAAAA -->
+  <!-- DEPRECATED -->
   <CityImprovementDefinition Name="CityImprovementDefense4"                      SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementDefense4" />
     <Cost ResourceName="Production">3600</Cost>
@@ -612,29 +634,10 @@
 
 
 
-  <!-- ############################### -->
-  <!-- ######   Unit HP regen   ###### -->
-  <!-- ############################### -->
-  
-
-  <!-- Era AAAAA - AAAAA -->
-  <CityImprovementDefinition Name="CityImprovementUnitRegeneration2"             SubCategory="SubCategoryMilitary">
-    <SimulationDescriptorReference Name="CityImprovementUnitRegeneration2" />
-    <Cost ResourceName="Production">2000</Cost>
-    <Cost ResourceName="Strategic4" Instant="true">15</Cost>
-    <Cost ResourceName="Strategic6" Instant="true">5</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementUnitRegeneration2</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLifeRegeneration2</TechnologyPrerequisite>
-  </CityImprovementDefinition>
-
-
-
-
-
-  <!-- ####################################### -->
-  <!-- ######   City defense recovery   ###### -->
-  <!-- ####################################### -->
-  <!-- Era 3 - AAAAA -->
+  <!-- ####################################################### -->
+  <!-- ######   Unit HP regen & City defense recovery   ###### -->
+  <!-- ####################################################### -->
+  <!-- Era 3 - Triple Unlock : Borough Government (Materials Hoard & Medical Center) -->
   <CityImprovementDefinition Name="CityImprovementDefenseRecovery1"              SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementDefenseRecovery1" />
     <Cost ResourceName="Production">600</Cost>
@@ -642,21 +645,22 @@
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDefenseRecovery1</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDefenseRecovery1</TechnologyPrerequisite>
   </CityImprovementDefinition>
-  <!-- Era 3 - AAAAA -->
   <CityImprovementDefinition Name="CityImprovementUnitRegeneration1"             SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementUnitRegeneration1" />
     <Cost ResourceName="Production">600</Cost>
-    <Cost ResourceName="Strategic4" Instant="true">2</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">5</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementUnitRegeneration1</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDefenseRecovery1</TechnologyPrerequisite>
   </CityImprovementDefinition>
-  <!-- Era AAAAA - AAAAA -->
-  <CityImprovementDefinition Name="CityImprovementDefense2"                      SubCategory="SubCategoryMilitary">
-    <SimulationDescriptorReference Name="CityImprovementDefense2" />
-    <Cost ResourceName="Production">600</Cost>
-    <Cost ResourceName="Strategic1" Instant="true">5</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementDefense2</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyDefenseRecovery1</TechnologyPrerequisite>
+  
+  <!-- Era 5 - Inoculation Station -->
+  <CityImprovementDefinition Name="CityImprovementUnitRegeneration2"             SubCategory="SubCategoryMilitary">
+    <SimulationDescriptorReference Name="CityImprovementUnitRegeneration2" />
+    <Cost ResourceName="Production">2000</Cost>
+    <Cost ResourceName="Strategic4" Instant="true">15</Cost>
+    <Cost ResourceName="Strategic6" Instant="true">5</Cost>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementUnitRegeneration2</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyLifeRegeneration2</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
   <!--<CityImprovementDefinition Name="CityImprovementDefenseRecovery2" SubCategory="SubCategoryMilitary">
@@ -680,8 +684,9 @@
     <SimulationDescriptorReference    Name="OnlyOnePerEmpire" />
     <Cost ResourceName="Production">60</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/Uniques,CityImprovementFIDS1</PathPrerequisite>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire,AffinityTutorial</PathPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
     <UniqueTags>CityImprovementFIDS1</UniqueTags>  
 </CityImprovementDefinition>
 
@@ -690,8 +695,9 @@
     <SimulationDescriptorReference    Name="OnlyOnePerEmpire" />
     <Cost ResourceName="Production">60</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/Uniques,CityImprovementFIDS1</PathPrerequisite>
-    <PathPrerequisite                 Flags="Prerequisite,Discard,AIEconomicRatio">../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
+    <PathPrerequisite                 Flags="Prerequisite,Discard">../ClassEmpire,AffinityBrokenLords</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementFIDS1BrokenLords</PathPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
     <UniqueTags>CityImprovementFIDS1</UniqueTags>
   </CityImprovementDefinition>
 
@@ -771,6 +777,7 @@
     <Cost ResourceName="Production">5000</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementMadFairies5</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyMadFairies5</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
 
   <!-- Broken Lords wonder building (quest end) -->
@@ -780,6 +787,7 @@
     <Cost ResourceName="Production">1500</Cost>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementBrokenLords7</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyBrokenLords7</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
 
 
@@ -810,7 +818,7 @@
     <Cost ResourceName="Production">36000</Cost>
     <Cost ResourceName="Strategic5" Instant="true">40</Cost>
     <Cost ResourceName="Strategic6" Instant="true">40</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementEndlessTemple</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementEndlessTemple</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyEndlessTemple</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
@@ -882,9 +890,11 @@
   <!-- Necrophages -->
   <!-- +4 Food per pop on City -->
   <CityImprovementDefinition Name="CityImprovementNecrophages7"                  SubCategory="SubCategoryFood">
+    <SimulationDescriptorReference    Name="OnlyOnePerEmpire" />
     <Cost ResourceName="Production">400</Cost>
     <SimulationDescriptorReference Name="CityImprovementNecrophages7" />
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementNecrophages7</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementNecrophages7</PathPrerequisite>
     <PathPrerequisite Flags="Prerequisite">../ClassCity/UnitProfileNecrophagesHero7</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyNecrophages7</TechnologyPrerequisite>
   </CityImprovementDefinition>
@@ -892,10 +902,9 @@
   <!-- +XP at Unit Creation -->
   <CityImprovementDefinition Name="CityImprovementNecrophages9"                  SubCategory="SubCategoryMilitary">
     <SimulationDescriptorReference Name="CityImprovementNecrophages9" />
-    <SimulationDescriptorReference    Name="OnlyOnePerEmpire" />
     <Cost ResourceName="Production">1200</Cost>
     <Cost ResourceName="Strategic6" Instant="true">10</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementNecrophages9</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassCity/CityImprovementNecrophages9</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyNecrophages9</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
@@ -916,7 +925,7 @@
     <Cost ResourceName="Production">1000</Cost>
     <Cost ResourceName="Strategic4" Instant="true">30</Cost>
     <Cost ResourceName="Strategic6" Instant="true">30</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementRageWizards4Strategic46</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementRageWizards4</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards4Strategic46</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
@@ -927,7 +936,7 @@
     <Cost ResourceName="Production">1000</Cost>
     <Cost ResourceName="Strategic3" Instant="true">30</Cost>
     <Cost ResourceName="Strategic5" Instant="true">30</Cost>
-    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementRageWizards4Strategic35</PathPrerequisite>
+    <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">.../ClassEmpire/ClassCity/CityImprovementRageWizards4</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards4Strategic35</TechnologyPrerequisite>
   </CityImprovementDefinition>
 
@@ -1011,6 +1020,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards7FakePillar" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">((($Property(PillarsCount) + 1) ^ 2) * 15 + ($Property(Pillar1Level) ^ 2) * 5 + ($Property(PillarsCount) + 1) * $Property(Pillar1Level) * 20) * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards7</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementRageWizards7FakeSpell"         SubCategory="SubCategoryArcana">
     <AIInfo>
@@ -1020,6 +1030,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards7FakeSpell" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">$Property(Spell1Level) * 30</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards7</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
 
   <!-- Arcana of Agility -->
@@ -1031,6 +1042,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards8FakePillar" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">((($Property(PillarsCount) + 1) ^ 2) * 15 + ($Property(Pillar1Level) ^ 2) * 5 + ($Property(PillarsCount) + 1) * $Property(Pillar1Level) * 20) * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards8</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementRageWizards8FakeSpell"         SubCategory="SubCategoryArcana">
     <AIInfo>
@@ -1040,6 +1052,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards8FakeSpell" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">$Property(Spell1Level) * 30</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards8</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
 
   <!-- Arcana of Authority -->
@@ -1051,6 +1064,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards9FakePillar" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">((($Property(PillarsCount) + 1) ^ 2) * 15 + ($Property(Pillar1Level) ^ 2) * 5 + ($Property(PillarsCount) + 1) * $Property(Pillar1Level) * 20) * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards9</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementRageWizards9FakeSpell"         SubCategory="SubCategoryArcana">
     <AIInfo>
@@ -1060,6 +1074,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards9FakeSpell" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">$Property(Spell1Level) * 30</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards9</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
 
   <!-- Arcana of Materializing -->
@@ -1071,6 +1086,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards10FakePillar" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">((($Property(PillarsCount) + 1) ^ 2) * 15 + ($Property(Pillar1Level) ^ 2) * 5 + ($Property(PillarsCount) + 1) * $Property(Pillar1Level) * 20) * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards10</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementRageWizards10FakeSpell"        SubCategory="SubCategoryArcana">
     <AIInfo>
@@ -1080,6 +1096,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards10FakeSpell" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">$Property(Spell1Level) * 30</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards10</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
 
   <!-- Arcana of Renewal -->
@@ -1091,6 +1108,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards11FakePillar" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">((($Property(PillarsCount) + 1) ^ 2) * 15 + ($Property(Pillar1Level) ^ 2) * 5 + ($Property(PillarsCount) + 1) * $Property(Pillar1Level) * 20) * $Property(../ClassEmpire:GameSpeedMultiplier)</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards11</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
   <CityImprovementDefinition Name="CityImprovementRageWizards11FakeSpell"        SubCategory="SubCategoryArcana">
     <AIInfo>
@@ -1100,6 +1118,7 @@
     <SimulationDescriptorReference Name="CityImprovementRageWizards11FakeSpell" />
     <CustomCost ResourceName="EmpireMoney" Instant="true">$Property(Spell1Level) * 30</CustomCost>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology,AIEconomicRatio">TechnologyRageWizards11</TechnologyPrerequisite>
+    <PathPrerequisite Flags="AIEconomicRatio">1 == 0</PathPrerequisite>
   </CityImprovementDefinition>
 
 

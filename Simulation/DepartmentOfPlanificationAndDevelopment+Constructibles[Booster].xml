@@ -50,77 +50,77 @@
   <!-- LUXURY RESOURCES -->
   <BoosterDefinition Name="BoosterLuxury1" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury1" />
-    <CustomCost ResourceName="Luxury1" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury1" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor) * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury2" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury2" />
-    <CustomCost ResourceName="Luxury2" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury2" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury3" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury3" />
-    <CustomCost ResourceName="Luxury3" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury3" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
   
   <BoosterDefinition Name="BoosterLuxury4" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury4" />
-    <CustomCost ResourceName="Luxury4" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury4" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury5" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury5" />
-    <CustomCost ResourceName="Luxury5" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury5" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
   
   <BoosterDefinition Name="BoosterLuxury6" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury6" />
-    <CustomCost ResourceName="Luxury6" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury6" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
   
   <BoosterDefinition Name="BoosterLuxury7" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury7" />
-    <CustomCost ResourceName="Luxury7" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury7" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury8" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury8" />
-    <CustomCost ResourceName="Luxury8" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury8" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
   
   <BoosterDefinition Name="BoosterLuxury9" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury9" />
-    <CustomCost ResourceName="Luxury9" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury9" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury10" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury10" />
-    <CustomCost ResourceName="Luxury10" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury10" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
   
   <BoosterDefinition Name="BoosterLuxury11" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury11" />
-    <CustomCost ResourceName="Luxury11" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury11" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury12" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury12" />
-    <CustomCost ResourceName="Luxury12" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury12" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury13" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury13" />
-    <CustomCost ResourceName="Luxury13" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury13" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
   
   <BoosterDefinition Name="BoosterLuxury14" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury14" />
-    <CustomCost ResourceName="Luxury14" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury14" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <BoosterDefinition Name="BoosterLuxury15" Duration="10">
     <SimulationDescriptorReference Name="EmpireBoosterLuxury15" />
-    <CustomCost ResourceName="Luxury15" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Luxury15" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor)  * 5)</CustomCost>
   </BoosterDefinition>
 
   <!-- STRATEGIC RESOURCES -->
@@ -131,7 +131,7 @@
       <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
     </ParentSimulationDescriptorReference>
     <SimulationDescriptorReference Name="EmpireBoosterStrategic1" />
-    <CustomCost ResourceName="Strategic1" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor) * 5)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
   </BoosterDefinition>
 
@@ -142,7 +142,7 @@
       <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
     </ParentSimulationDescriptorReference>
     <SimulationDescriptorReference Name="EmpireBoosterStrategic2" />
-    <CustomCost ResourceName="Strategic2" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor) * 5)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
   </BoosterDefinition>
 
@@ -153,7 +153,7 @@
       <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
     </ParentSimulationDescriptorReference>
     <SimulationDescriptorReference Name="EmpireBoosterStrategic3" />
-    <CustomCost ResourceName="Strategic3" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Strategic3" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor) * 5)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
   </BoosterDefinition>
 
@@ -164,7 +164,7 @@
       <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
     </ParentSimulationDescriptorReference>
     <SimulationDescriptorReference Name="EmpireBoosterStrategic4" />
-    <CustomCost ResourceName="Strategic4" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Strategic4" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor) * 5)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
   </BoosterDefinition>
 
@@ -175,7 +175,7 @@
       <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
     </ParentSimulationDescriptorReference>
     <SimulationDescriptorReference Name="EmpireBoosterStrategic5" />
-    <CustomCost ResourceName="Strategic5" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Strategic5" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor) * 5)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
   </BoosterDefinition>
 
@@ -186,7 +186,7 @@
       <SimulationDescriptorReference Name="BoosterAffinityStrategicResource" />
     </ParentSimulationDescriptorReference>
     <SimulationDescriptorReference Name="EmpireBoosterStrategic6" />
-    <CustomCost ResourceName="Strategic6" Instant="true">5 + ($Count(ClassEmpire/ClassCity) * 5)</CustomCost>
+    <CustomCost ResourceName="Strategic6" Instant="true">5 + ($Property(EmpireTypeMajor:EmpireScaleFactor) * 5)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,Discard">.../ClassEmpire,FactionTraitVaultersMezari</PathPrerequisite>
   </BoosterDefinition>
 

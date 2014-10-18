@@ -76,7 +76,19 @@
 
   <AICommanderMissionDefinition Name="RegroupArmies" Type="AICommanderMission_RegroupArmyAt, Assembly-CSharp" Category="Regroup,Armies"/>    
   
-  <AICommanderMissionDefinition Name="ConvertVillage" Type="AICommanderMission_ConvertVillage, Assembly-CSharp" Category="Convert,Village">
+  <AICommanderMissionDefinition Name="ConvertVillage" Type="AICommanderMission_ConvertVillage, Assembly-CSharp" Category="Convert,Village,Pacification">
+    <AIArmyPattern>
+      <AIUnitDescription AIUnitPatternCategory="Killer" Tags="!UnitFactionTypeMinorFaction,!Mercenary" Priority="1" MinimalQuantity="1" Ratio="0.0"/>
+    </AIArmyPattern>
+  </AICommanderMissionDefinition>
+
+  <AICommanderMissionDefinition Name="ConvertAndBribeVillage" Type="AICommanderMission_ConvertVillage, Assembly-CSharp" Category="Convert,Village,Pacification,Bribe">
+    <AIArmyPattern>
+      <AIUnitDescription AIUnitPatternCategory="Killer" Tags="!UnitFactionTypeMinorFaction,!Mercenary" Priority="1" MinimalQuantity="1" Ratio="0.0"/>
+    </AIArmyPattern>
+  </AICommanderMissionDefinition>
+
+  <AICommanderMissionDefinition Name="ConvertAndPacifyVillage" Type="AICommanderMission_Village, Assembly-CSharp" Category="Convert,Village,Pacification,Hardway">
     <AIArmyPattern>
       <AIUnitDescription AIUnitPatternCategory="Killer" Tags="!UnitFactionTypeMinorFaction,!Mercenary" Priority="1" MinimalQuantity="1" Ratio="0.0"/>
     </AIArmyPattern>

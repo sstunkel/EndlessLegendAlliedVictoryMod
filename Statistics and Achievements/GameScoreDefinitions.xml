@@ -14,7 +14,7 @@
   </GameScoreDefinition>
 
   <GameScoreDefinition Name="MilitaryScore" Tags="Global,Ranked">
-    <WeighedGameStatisticReference Name="MilitaryPower" Weight="0.001"/>
+    <WeighedGameStatisticReference Name="MilitaryPower" Weight="1"/>
   </GameScoreDefinition>
 
   <!-- Total number of City tiles -->

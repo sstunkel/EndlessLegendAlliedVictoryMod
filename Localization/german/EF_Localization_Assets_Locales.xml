@@ -429,8 +429,8 @@
   <LocalizationPair Name="%WatchTowerRuinsTitle">Fundament </LocalizationPair>
   <LocalizationPair Name="%WatchTowerRuinsDescription">Ein Architekt aus vergangenen Zeiten hat hier ein Fundament gelegt, das die Zeit überdauert hat. In Anbetracht seiner Position und der hohen Qualität der Arbeit eignet es sich gut für den Bau eines Wachturms. </LocalizationPair>
   <LocalizationPair Name="%FactionBrokenLordsTitle">Zerbrochene Lords</LocalizationPair>
-  <LocalizationPair Name="%FactionBrokenLordsDescription">Diese Fraktion aus Stadtgründern und Rittern existiert nur noch in geisterhafter Form. Obwohl diese edlen Krieger körperlos sind und daher stark an Menschlichkeit eingebüsst haben, halten sie nach wie vor an ihrer Ritterlichkeit und den damit verbundenen Idealen fest.</LocalizationPair>
-  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Hauptsächlicher Siegtyp: Eroberung</LocalizationPair>
+  <LocalizationPair Name="%FactionBrokenLordsDescription">Diese Fraktion aus Rittern existiert nur noch in geisterhafter Form. Obwohl diese edlen Krieger körperlos sind und daher stark an Menschlichkeit eingebüsst haben, halten sie nach wie vor an ihrer Ritterlichkeit und den damit verbundenen Idealen fest.</LocalizationPair>
+  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Hauptsächlicher Siegtyp: Expansion</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyCaption">Vorhut</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle1">Heim</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle2">Wahrheit</LocalizationPair>
@@ -5709,7 +5709,7 @@ Von uns allen ist Marquis Suluzzo vielleicht der Schlimmste. Obwohl alle Edlen u
 Aber ich kann das nicht akzeptieren. Es mag zweckdienlich sein, aber das macht es noch lange nicht rechtens. Leider habe ich keine Wahl und muss mich auf die Untersuchungen der Weisen und der Alchemisten verlassen, die eine Antwort suchen, die ihre gierigen Gönner zufriedenstellt. Wir werden die Forschung weiter vorantreiben, um unser Wissen zu vergrössern, auch wenn ich es aus anderen Gründen tue. Denn ich will, dass unser Volk der Versuchung widersteht, auch wenn das ein Risiko darstellt. Das erste Wort auf dem königlichen Siegel ist nicht ohne Grund "Ehre".</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Objective">In den Mysterien der Vergangenheit des Planeten liegt wahrscheinlich der Schlüssel zu deiner Zukunft begraben. Erweitere dein Wissen und hilf dabei, die Nebel der Vergangenheit zu lüften.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1">Erforsche 8 Technologien der Forschungsära I.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Die Anfangstechnologien der Zerbrochenen Lords werden in die Zahl der zu erforschenden nicht mit eingerechnet.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Durch Aufträge erlangte Technologien zählen nicht für das Erreichen einer neuen Technologieära und haben keinen Einfluss auf die Forschungskosten.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2">Erforsche 12 Technologien der Forschungsära I.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2Tooltip">Durch Aufträge erlangte Technologien zählen nicht für das Erreichen einer neuen Technologieära und haben keinen Einfluss auf die Forschungskosten.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Outcome">Das ist ausgesprochen interessant. Wir haben nicht nur neue Fortschritte in Alchemie und Magie gemacht, sondern auch etwas Altes und Mächtiges entdeckt - ein einfacher Reif, der mit unterdrückter Macht vibriert.</LocalizationPair>
@@ -5890,8 +5890,8 @@ Eine solche Rückkehr wird natürlich nicht leicht. Die Städte der Vaulters hab
   <LocalizationPair Name="%MainQuestVaulters-Chapter6Objective">Rebellen behaupten, dass Zolya die Vaulters in ihr Verderben führt. Sie haben eine Stadt übernommen und verhindern den Nachschub wichtiger Ressourcen. Sie müssen ausgeschaltet werden.</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step1">Schalte bei einem Helden der Vaulters Stufe $SkillLevelToCheckNumber der Fertigkeit $VaultersSkillName frei. </LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step1Tooltip">Steigere die Stufe eines Helden der Vaulters, bis er die entsprechende Fertigkeitenstufe erreicht hat.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2">Nutze die bevorzugte Ressource $Timer Züge lang nicht. Weise einen Helden der Vaulters mit der Fertigkeit "$VaultersSkillName" einer deiner Städte zu.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2Tooltip">Vermeide einige Züge lang die Nutzung der bevorzugten Ressource.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2">Nutze die heilige Ressource $Timer Züge lang nicht. Weise einen Helden der Vaulters mit der Fertigkeit "$VaultersSkillName" einer deiner Städte zu.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2Tooltip">Vermeide einige Züge lang die Nutzung der heiligen Ressource.</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6Outcome">Es besteht noch Hoffnung. Vernunft kehrt in die Städte zurück und Zolya kann ihren Willen durchsetzen. Ich wage, meinen Blick wieder gen Himmel zu richten ...</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6AltTitle">6. Glaubenskrise</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6AltDescription">Ich habe Zolya von meiner Schande berichtet. Meine mechanischen Gelenke schlotterten bei meinem Geständnis. Lange Momente schwieg sie. Dann sagte sie mir, dass es zwar eine schmerzliche Wahrheit sei, sie jedoch diese Wahrheit dem Nichtwissen vorziehe. Sie hätte begonnen, sich von mir zu distanzieren, aber dank meinem Geständnis könne sie beginnen, mir wieder zu vertrauen. "Wird es noch einmal passieren?", flüsterte sie. Ich sagte ihr ehrlich, dass ich es nicht wisse, es aber für unwahrscheinlich halte. "Wenn du meinem Volk auch nur ein Haar krümmst, werde ich dich in tausend Teile zerbrechen lassen." Das waren ihre letzte Worte zu diesem Thema und ich denke, dass sie mein Geständnis für sich behalten wird. Ich darf sie nicht enttäuschen. Ich will zu den Sternen zurückkehren.
@@ -6692,8 +6692,7 @@ Angriff \7772\ ist die Fähigkeit, Schaden zu verursachen
 Verteidigung \7773\ reduziert die Wahrscheinlichkeit, getroffen zu werden
 Initiative \7774\ hilft der Einheit, im Kampf als erstes zuzuschlagen
 Schaden \7776\ bestimmt die Wahrscheinlichkeit, eine feindliche Einheit zu treffen
-Geschwindigkeit \7775\ legt fest, wie viele Kacheln diese Einheit pro Kampfrunde überqueren kann
-Reichweite bestimmt die maximale Entfernung, auf die eine Einheit ihr Ziel treffen kann</LocalizationPair>
+Geschwindigkeit \7775\ legt fest, wie viele Kacheln diese Einheit pro Kampfrunde überqueren kann</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title73">Kontextboni</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content73">Attribute können auch durch andere Faktoren beeinflusst werden: relative Position, Höhenunterschied und Gelände.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title74">Kontextboni</LocalizationPair>

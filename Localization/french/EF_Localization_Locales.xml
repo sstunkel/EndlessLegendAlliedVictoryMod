@@ -469,6 +469,37 @@ Le système Steam Cloud fournit un espace de stockage de fichers à distance, fa
   <LocalizationPair Name="%GameOptionGameSpeedSlowDescription">Pour une partie calme et réfléchie</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessTitle">Endless</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessDescription">Version intersidérale de l'escargot anémique</LocalizationPair>
+  <LocalizationPair Name="%ModDefaultTitle">Le jeu par défaut est actif</LocalizationPair>
+  <LocalizationPair Name="%ModActiveFormat">Mod actif : {0}</LocalizationPair>
+  <LocalizationPair Name="%DefaultModTitle">Jeu par défaut</LocalizationPair>
+  <LocalizationPair Name="%DefaultModDescription">Restaure le jeu par défaut</LocalizationPair>
+  <LocalizationPair Name="%ConfirmDefaultGame">Cette action va restaurer le jeu par défaut</LocalizationPair>
+  <LocalizationPair Name="%ActivateModTitle">Activer Mod</LocalizationPair>
+  <LocalizationPair Name="%ActivateModDescription">Configure le jeu pour utiliser le mod sélectionné</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsTitle">Mods disponibles</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsDescription">Liste des mods disponibles pour Endless Legend, situés dans le répertoire EndlessLegend/Modding/</LocalizationPair>
+  <LocalizationPair Name="%NoAvailableModsTitle">Aucun mod n'est disponible</LocalizationPair>
+  <LocalizationPair Name="%LoadingRuntimeModule">Chargement du mod</LocalizationPair>
+  <LocalizationPair Name="%ModNameTitle">Mod</LocalizationPair>
+  <LocalizationPair Name="%ModNameDescription">Nom du mod.</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorTitle">Auteur</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorDescription">Auteur(s) du mod.</LocalizationPair>
+  <LocalizationPair Name="%ModTypeTitle">Type</LocalizationPair>
+  <LocalizationPair Name="%ModTypeDescription">Type of the mod.</LocalizationPair>
+  <LocalizationPair Name="%ModTypeStandaloneTitle">Standalone</LocalizationPair>
+  <LocalizationPair Name="%ModTypeConversionTitle">Conversion</LocalizationPair>
+  <LocalizationPair Name="%ModTypeExtensionTitle">Extension</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteTitle">Site web</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteDescription">Site web du mod.</LocalizationPair>
+  <LocalizationPair Name="%ModVersionTitle">Version</LocalizationPair>
+  <LocalizationPair Name="%ModVersionDescription">Numéro de version du mod.</LocalizationPair>
+  <LocalizationPair Name="%ModDescriptionTitle">Description</LocalizationPair>
+  <LocalizationPair Name="%ModReleaseNotesTitle">Release notes</LocalizationPair>
+  <LocalizationPair Name="%ConfirmEnterMods">Vous vous apprêtez à entrer dans l'écran de Mods de Endless Space. Les Mods sont des modifications du jeu créées par des utilisateurs, qui étendent ou remplacent le contenu initialement créé par AMPLITUDE Studios.
+ 
+AMPLITUDE Studios n'est en aucun cas responsable de ces Mods, et n'en vérifie ni le contenu, ni la pertinence et encore moins la légalité. En conséquence, AMPLITUDE Studios ne garantit ni le contenu ni les fonctionnalités de ces Mods.
+ 
+En cliquant sur le bouton "OK" ci-dessous, vous déclarez avoir conscience que vous utilisez ces mods à vos risques et périls, et que vous ne pourrez pas engager la responsabilité d'AMPLITUDE Studios des éventuels pertes de données ou dommages causés à votre ordinateur.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTitle">Taille de la région</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeDescription">Régler la taille de la région.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTinyTitle">Minuscule</LocalizationPair>
@@ -875,6 +906,13 @@ Le système Steam Cloud fournit un espace de stockage de fichers à distance, fa
   <LocalizationPair Name="%CreateInstancingMesh">Création de l'instanciation des meshes</LocalizationPair>
   <LocalizationPair Name="%ClearingUnusedMemory">Nettoyage de la mémoire inutilisée</LocalizationPair>
   <LocalizationPair Name="%AllTerrainDataLoaded">Chargement de toutes les informations de terrain</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadingOutgameView">Chargement du menu principal</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadGame">Chargement du jeu</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateAuthenticating">Authentification…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateConnectingToServer">Connexion au serveur…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForPlayersEndTurn">En attente de la fin de tour des joueurs</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForGameData">En attente des données de jeu</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForServer">En attente du serveur</LocalizationPair>
   <LocalizationPair Name="%RiverTitle">Rivière</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersTitle">Eaux intérieures</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersDescription">[Not used] Description of Chilly Inland Waters</LocalizationPair>
@@ -1011,6 +1049,7 @@ Le système Steam Cloud fournit un espace de stockage de fichers à distance, fa
   <LocalizationPair Name="%QuitDescription">Quitter la partie en cours.</LocalizationPair>
   <LocalizationPair Name="%ResumeTitle">Reprendre</LocalizationPair>
   <LocalizationPair Name="%ResumeDescription">Reprendre la partie en cours.</LocalizationPair>
+  <LocalizationPair Name="%WorldSeedFormat">World Seed: $Value</LocalizationPair>
   <LocalizationPair Name="%OptionsTitle">Options</LocalizationPair>
   <LocalizationPair Name="%OptionsDescription">Choisir les options pour optimiser votre expérience de jeu : vidéo, audio, etc.</LocalizationPair>
   <LocalizationPair Name="%OptionToggleAudioTitle">Audio</LocalizationPair>
@@ -1145,6 +1184,10 @@ Si elle est changée pendant la partie, la modification sera effectuée après u
   <LocalizationPair Name="%OptionAutoPopupNotificationBailiffWarningDescription">Afficher une notification lorsque votre empire risque de faire faillite très prochainement.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedTitle">Notification auto - fin des boosters de ressources</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedDescription">Afficher une notification lorsqu'un booster de ressource est terminé.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedTitle">Notification auto - booster de resource inutilisés</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedDescription">Afficher une notification lorsque vous n'utilisez pas des boosters de resources qui pourraient être activés.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleTitle">Notification auto - aucune construction</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleDescription">Afficher une notification lorsqu'une ville ne produit rien.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedTitle">Notification auto - capture de ville</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedDescription">Afficher une notification lorsqu'une ville est capturée par un empire adverse.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityRazedTitle">Notification auto - destruction de ville</LocalizationPair>
@@ -1181,6 +1224,10 @@ Si elle est changée pendant la partie, la modification sera effectuée après u
   <LocalizationPair Name="%OptionAutoPopupNotificationMinorFactionDiscoveryDescription">Afficher une notification lorsque vous découvrez une nouvelle faction mineure.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraTitle">Notification auto - nouvelle ère</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraDescription">Afficher une notification lorsqu'une nouvelle ère technologique débute.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedTitle">Notification auto - pilier terminé</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedDescription">Afficher une notification lorsque l'effet d'un pilier est terminé.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedTitle">Notification auto - pilier inutilisé</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedDescription">Afficher une notification lorsque vous n'utilisez aucun pilier.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedTitle">Notification auto - évolution de la population</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedDescription">Afficher une notification lorsque la population de vos villes change.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationQuestTitle">Notification auto - quêtes</LocalizationPair>
@@ -1258,7 +1305,7 @@ Si elle est changée pendant la partie, la modification sera effectuée après u
   <LocalizationPair Name="%EmpireChosenAffinityStrategicResourceDescription">C'est votre ressource stratégique actuelle qui vous permettra d'activer des compétences de faction spécifiques. Elle peut être changée à tout moment en activant un autre booster de ressource stratégique après que le premier a expiré.</LocalizationPair>
   <LocalizationPair Name="%EmpireNoStrategicResourceSelectedTitle">Sélectionner...</LocalizationPair>
   <LocalizationPair Name="%EmpireNoStrategicResourceSelectedDescription">Choisissez la ressource stratégique actuelle qui vous permettra d'activer des compétences de faction spécifiques. Elle peut être changée à tout moment en activant un autre booster de ressource stratégique après que le premier a expiré.</LocalizationPair>
-  <LocalizationPair Name="%EmpireConfirmAffinityStrategicChoice">Voulez-vous vraiment choisir $strategicLabel comme votre ressource stratégique fondamentale actuelle ?</LocalizationPair>
+  <LocalizationPair Name="%EmpireConfirmAffinityStrategicChoice">Voulez-vous vraiment choisir $strategicLabel comme votre ressource sacrée actuelle ?</LocalizationPair>
   <LocalizationPair Name="%EmpireCadaversCounterTitle">Compteur de recyclage</LocalizationPair>
   <LocalizationPair Name="%EmpireCadaversCounterDescription">Le compteur de recyclage augmente pour chaque unité tuée au combat. Une fois le compteur à 8, il est remis à zéro et fournit une réserve recyclée.</LocalizationPair>
   <LocalizationPair Name="%EmpireCadaversCounterValueDescription">Vous avez récolté {0} cadavre(s) de vos adversaires tombés au combat. Lorsque vous en aurez {1}, vous recevrez une réserve de Nourriture supplémentaire.</LocalizationPair>
@@ -1981,7 +2028,7 @@ Statut Alliance
   <LocalizationPair Name="%BoosterFoodBonus2Title">Réserves</LocalizationPair>
   <LocalizationPair Name="%BoosterScienceBonus1Title">Réserves</LocalizationPair>
   <LocalizationPair Name="%BoosterScienceBonus2Title">Réserves</LocalizationPair>
-  <LocalizationPair Name="%BoosterAffinityStrategicResourceTitle">Réserves de ressource sacrée</LocalizationPair>
+  <LocalizationPair Name="%BoosterAffinityStrategicResourceTitle">Boosters de ressource sacrée</LocalizationPair>
   <LocalizationPair Name="%WorldEffectTitle">Pilier ardent</LocalizationPair>
   <LocalizationPair Name="%Pillar1LevelTitle">Pilier de savoir</LocalizationPair>
   <LocalizationPair Name="%Pillar2LevelTitle">Pilier de vitesse</LocalizationPair>
@@ -1996,6 +2043,7 @@ Statut Alliance
   <LocalizationPair Name="%Spell5LevelTitle">Incantation de restauration</LocalizationPair>
   <LocalizationPair Name="%SpellsLevelTitle">Niveau d'arcane des sorts</LocalizationPair>
   <LocalizationPair Name="%PrestigeTrendBonusTitle">Diplomatie</LocalizationPair>
+  <LocalizationPair Name="%PrestigeTrendBonusTrendTitle">Gains d'Influence liés à la diplomatie</LocalizationPair>
   <LocalizationPair Name="%MilitiaTitle">Milice</LocalizationPair>
   <LocalizationPair Name="%MercenaryTitle">Mercenaires</LocalizationPair>
   <LocalizationPair Name="%CommercialAgreementBonusTitle">Accord commercial</LocalizationPair>
@@ -2701,6 +2749,7 @@ Les villages convertis :
   <LocalizationPair Name="%ArmyActionPointDescription">Les points d'action disponibles de cette armée.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCostDescription">Le coût requis pour effectuer cette action.</LocalizationPair>
   <LocalizationPair Name="%ArmyNameFormat">Armée $Name</LocalizationPair>
+  <LocalizationPair Name="%ArmyGeneratedNameFormat">$Number $Caption $Title </LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatSingle">{0}/{1} unité</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatPlural">{0}/{1} unités</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsWithoutMaxFormatSingle">{0} unité</LocalizationPair>
@@ -2752,17 +2801,15 @@ Si la cible est un village d'une faction mineure, il sera pacifié, mais n'appor
   <LocalizationPair Name="%ArmyActionBribeTitle">Soudoyer</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeDescription">Soudoyer le village de la faction mineure. Il sera immédiatement pacifié pour un certain prix en Brume.
  
-Cette action rapporte une valeur de base de 1 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 4 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeNoCostDescription">Soudoyer le village de la faction mineure. Il sera immédiatement pacifié, mais pour un certain prix.
  
-Cette action rapporte une valeur de base de 1 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 4 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordBribeDescription">Vous n'avez pas de quoi soudoyer ce village.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionOneVillageOrManyLockedDescription">Vous ne pouvez pas soudoyer ce village pour le moment.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyPacifiedDescription">Ce village est déjà pacifié.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionColonizationTitle">Colonisation</LocalizationPair>
-  <LocalizationPair Name="%ArmyActionColonizationDescription">Créer une ville dans cette région.
- 
-Cette action rapporte une valeur de base de 4 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+  <LocalizationPair Name="%ArmyActionColonizationDescription">Créer une ville dans cette région.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionResettleTitle">Déménager</LocalizationPair>
   <LocalizationPair Name="%ArmyActionResettleDescription">Déplacer votre ville vers un nouvel emplacement.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionRegionAlreadyColonizedDescription">Vous ne pouvez pas créer une ville dans une région déjà colonisée.</LocalizationPair>
@@ -2775,7 +2822,7 @@ Cette action rapporte une valeur de base de 4 XP lorsqu'elle est réalisée avec
   <LocalizationPair Name="%ArmyActionParleyTitle">Parlementer</LocalizationPair>
   <LocalizationPair Name="%ArmyActionParleyDescription">Démarrer les pourparlers avec un village de faction mineure. Si vous remplissez leurs conditions, tous leurs villages dans la région seront pacifiés sans violence.
  
-Cette action rapporte une valeur de base de 2 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 6 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportTitle">Se téléporter</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportDescription">Vous pouvez téléporter votre armée dans une autre ville lorsque vous avez désigné et collecté votre ressource sacrée. </LocalizationPair>
   <LocalizationPair Name="%ArmyActionTransferUnitsTitle">Transférer</LocalizationPair>
@@ -2795,19 +2842,19 @@ Cette action rapporte une valeur de base de 2 XP lorsqu'elle est réalisée avec
   <LocalizationPair Name="%ArmyActionSearchTitle">Recherche</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSearchDescription">Chercher des indices à cet endroit. Vous pouvez trouver un trésor, des ennemis, une quête ou rien du tout.
  
-Cette action rapporte une valeur de base de 6 XP lorsqu'elle est réalisée par un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 10 XP lorsqu'elle est réalisée par un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPOIAlreadySearchedDescription">Vous avez déjà fouillé les lieux alentour.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeTitle">Siège</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeDescription">Le siège réduit la production et les fortifications d'une ville ennemie.
  
-Cette action rapporte une valeur de base de 2 XP par tour \7708\ lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 4 XP par tour \7708\ lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOnDescription">Commencer un siège autour de la ville.
  
  - La zone d'exploitation et les bâtiments régionaux hors des murs de la ville ne sont plus exploités.
  - La Science et la Brume produites par la ville sont divisées par 2.
  - À chaque tour, la ville perd des points de défense équivalents à la puissance de siège de l'assiégeant. Une fois la défense à 0, les unités présentes dans la garnison OU sur une case de la ville perdent des PV à chaque tour, selon la puissance du siège.
  
-Cette action rapporte une valeur de base de 2 XP par tour \7708\ lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 4 XP par tour \7708\ lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOffDescription">Terminer un siège autour de la ville.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeCannotStartDescription">Vous ne pouvez pas commencer un siège maintenant.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeInvalidDiplomaticAbilitiesDescription">Vous n'avez pas le statut diplomatique requis pour assiéger une ville de cet empire.</LocalizationPair>
@@ -2835,13 +2882,13 @@ Les armées Corsaires ne peuvent pas capturer de ville. Après un assaut réussi
   <LocalizationPair Name="%ArmyActionConvertTitle">Conversion</LocalizationPair>
   <LocalizationPair Name="%ArmyActionConvertDescription">Convertir un village pacifié pour un certain coût d'Influence.
  
-Cette action rapporte une valeur de base de 3 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 6 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionNotPacifiedDescription">Vous ne pouvez pas convertir ce village car il n'est pas pacifié.
  
-Cette action rapporte une valeur de base de 3 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 6 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordConvertDescription">Vous n'avez pas assez de points d'Influence pour effectuer cette action.
  
-Cette action rapporte une valeur de base de 3 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
+Cette action rapporte une valeur de base de 6 XP lorsqu'elle est réalisée avec un héros.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPointRequirementFormat">Requiert $Value \7709\ (plus autres coûts si applicable).</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyConvertedDescription">Vous ne pouvez pas convertir un village déjà converti.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAttackInvalidOwnVillageDescription">Vous ne pouvez pas attaquer un village que vous possédez déjà.</LocalizationPair>
@@ -3680,8 +3727,15 @@ Cette ville subit donc les conséquences suivantes :
   <LocalizationPair Name="%NotificationBoosterEndedDescription">L'effet d'un ou plusieurs boosters de ressource a pris fin.</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedLineFormat">{0} : le booster et ses effets ont pris fin</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivate">Réactiver</LocalizationPair>
-  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Impossible de réactiver</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivateBoosterDescription">Cliquez sur ce bouton pour payer les coûts et réactiver les effets de ce booster.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Impossible de réactiver</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedTitle">Booster(s) de resources inutilisé(s)</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedDescription">Cela fait longtemps que vous n'avez pas activé de booster de resource. Cela peut apporter de grands avantages à votre empire.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedLineFormat">{0} : le booster et ses effets peuvent être activés</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedActivate">Activer</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleTitle">Ville sans construction</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleDescription">Une ou plusieurs de vos villes ne construisent rien.</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleLineTitle">Aucune construction sélectionnée</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedTitle">Ville capturée</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedDescription">Votre ville {0} a été capturée par l'empire {1}</LocalizationPair>
   <LocalizationPair Name="%NotificationCityRazedTitle">Ville détruite</LocalizationPair>
@@ -3830,6 +3884,10 @@ Les unités récemment entraînées seront maintenant des Élites (niveau 6) et 
   <LocalizationPair Name="%AvailabilityEmpirePlanLevel4">Stratégie d'empire niveau 4 disponible</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedTitle">Évolution de la population</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedDescription">La population a changé dans une ou plusieurs de vos villes.</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedTitle">Effet de pilier terminé</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedDescription">Un de vos piliers vient de s'achever. Vous pourriez souhaiter le réactiver.</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedTitle">Piliers inutilisés</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedDescription">Cela fait un moment que vous n'avez pas activé de piliers. Vous disposez des resources pour en activer un.</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationIncreased">La population de {0} est passée à {1}</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationDecreased">La population de {0} est passée à {1} à cause de la famine</LocalizationPair>
   <LocalizationPair Name="%NotificationQuestBegunTitle">Nouvelle quête</LocalizationPair>
@@ -4458,7 +4516,7 @@ Tous les joueurs vont être renvoyés vers la salle d'attente. La session sera r
   <LocalizationPair Name="%VictoryConditionQuestDescription">Vous devez terminer la dernière quête pour gagner.</LocalizationPair>
   <LocalizationPair Name="%VictoryProgressQuest">$Ratio</LocalizationPair>
   <LocalizationPair Name="%VictoryConditionMostTechnologiesDiscoveredTitle">Scientifique</LocalizationPair>
-  <LocalizationPair Name="%VictoryConditionMostTechnologiesDiscoveredDescription">Vous devez découvrir $TargetValue technologies de l'Ère $Era pour gagner.</LocalizationPair>
+  <LocalizationPair Name="%VictoryConditionMostTechnologiesDiscoveredDescription">Vous devez découvrir $TargetValue technologies spéciales de l'Ère $Era pour gagner.</LocalizationPair>
   <LocalizationPair Name="%VictoryProgresTechnology">$Ratio</LocalizationPair>
   <LocalizationPair Name="%VictoryConditionSupremacyTitle">Suprématie</LocalizationPair>
   <LocalizationPair Name="%VictoryConditionSupremacyDescription">Vous devez conquérir $TargetValue capitales pour remplir les conditions de cette victoire.</LocalizationPair>
@@ -4600,4 +4658,14 @@ Tous les joueurs vont être renvoyés vers la salle d'attente. La session sera r
   <LocalizationPair Name="%CultistsFaction">Concept de la faction des Cultistes</LocalizationPair>
   <LocalizationPair Name="%CultistsModelConcept">Concept des modèles des Cultistes</LocalizationPair>
   <LocalizationPair Name="%CultistsLogoConcept">Concept du logo des Cultistes</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip1Title">Tip: you can level up a city district by building four other districts around it</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip2Title">Tip: outfiting your units with powerful equipment is instrumental to victory in battle</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip3Title">Tip: the more friendly units surround a unit in battle, the more moral it gets</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip4Title">Tip: Settlers consume all food production so you can assign food workers on something else while you build a settler</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip5Title">Tip: Expanding your city with new districts significantly increases you production, but also generates more unhapiness</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip6Title">Tip: Some units are betters against others, an utter defeat can be turned into a great victory with better unit composition</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip7Title">Tip: A beat-down opponent is more likely to accept a truce and give you techs and resources if you give him back a city he lost. </LocalizationPair>
+  <LocalizationPair Name="%LoadingTip8Title">Tip: Selling units on the marketplace is a great source of dust</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip9Title">Tip: Keep your cities garrisoned with more than just militia if you face a large invading army</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip10Title">Tip: Cultists can rebuild a destroyed village by converting it at twice the normal influence cost</LocalizationPair>
 </Datatable>

@@ -10,14 +10,14 @@
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
   </ArmyAction_AutoExplore>
 
-  <ArmyAction_Bribe Name="ArmyActionBribe" ExperienceReward="1">
+  <ArmyAction_Bribe Name="ArmyActionBribe" ExperienceReward="4">
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMapActionParley</TechnologyPrerequisite>
     <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
     <!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->
   </ArmyAction_Bribe>
 
-  <ArmyAction_Colonization Name="ArmyActionColonization" ExperienceReward="4">
+  <ArmyAction_Colonization Name="ArmyActionColonization" ExperienceReward="0">
     <!--
     <PathPrerequisite Flags="Prerequisite,Discard">ClassArmy/UnitAbilityColonizationDescriptor</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologySettler</TechnologyPrerequisite>
@@ -25,7 +25,7 @@
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>    
   </ArmyAction_Colonization>
 
-  <ArmyAction_Convert Name="ArmyActionConvert" ExperienceReward="3">
+  <ArmyAction_Convert Name="ArmyActionConvert" ExperienceReward="6">
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
     <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
 	<!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->
@@ -35,7 +35,7 @@
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
   </ArmyAction_Guard>
 
-  <ArmyAction_Parley Name="ArmyActionParley" ExperienceReward="2">
+  <ArmyAction_Parley Name="ArmyActionParley" ExperienceReward="6">
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMapActionParley</TechnologyPrerequisite>
     <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
@@ -59,7 +59,7 @@
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
   </ArmyAction_Resettle>
  
-  <ArmyAction_Search Name="ArmyActionSearch" ExperienceReward="6">
+  <ArmyAction_Search Name="ArmyActionSearch" ExperienceReward="10">
     <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassArmy,Privateers</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">ClassArmy/MovementCapacitySail</PathPrerequisite>
     <!--<Cost ResourceName="ActionPoint" Instant="true">1</Cost>-->

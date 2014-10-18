@@ -103,7 +103,7 @@
   <LocalizationPair Name="%CityImprovementFood6Title">Centre d'aquaculture</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood6Description">Outre les poissons, crustacés, mollusques et plantes aquatiques qu'il produit en grandes quantités, ce centre permet aux citoyens de l'empire d'entretenir des parcelles de micro-aquaculture pour leur utilisation personnelle.</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood7Title">Pêcherie</LocalizationPair>
-  <LocalizationPair Name="%CityImprovementFood7Description">Les filets et les cages tendus entre les berges augmentent le rendement en poisson, ce qui accroît la production de Nourriture.</LocalizationPair>
+  <LocalizationPair Name="%CityImprovementFood7Description">Les filets et les cages tendus le long des lacs et des récifs augmentent le rendement en poisson, ce qui accroît la production de Nourriture.</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood8Title">Usine de charrues</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood8Description">Invention révolutionnaire, la charrue en métal augmente la quantité de Nourriture produite.</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood9Title">Jardins souterrains</LocalizationPair>
@@ -429,8 +429,8 @@
   <LocalizationPair Name="%WatchTowerRuinsTitle">Fondation </LocalizationPair>
   <LocalizationPair Name="%WatchTowerRuinsDescription">Un architecte d'antan a érigé ici des fondations qui ont résisté aux outrages du temps. Vu leur emplacement et la qualité de l'ouvrage, c'est un lieu idéal pour placer une tour de guet. </LocalizationPair>
   <LocalizationPair Name="%FactionBrokenLordsTitle">Seigneurs déchus</LocalizationPair>
-  <LocalizationPair Name="%FactionBrokenLordsDescription">Faction de chevaliers et de bâtisseurs, ils sont de purs esprits enserrés dans de grandes et lourdes armures. Ce sont de nobles guerriers qui perpétuent fièrement les traditions de la chevalerie et adhèrent à ses idéaux malgré leur humanité perdue.</LocalizationPair>
-  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Type de victoire principal : conquête</LocalizationPair>
+  <LocalizationPair Name="%FactionBrokenLordsDescription">Faction de chevaliers dépendants de la Brume pour leur survie, ils sont de purs esprits enserrés dans de grandes et lourdes armures. Ce sont de nobles guerriers qui perpétuent fièrement les traditions de la chevalerie et adhèrent à ses idéaux malgré leur immatérialité et leur humanité perdue.</LocalizationPair>
+  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Type de victoire principal : expansion</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyCaption">Avant-garde</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle1">Foyer</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle2">Vérité</LocalizationPair>
@@ -796,7 +796,7 @@
   <LocalizationPair Name="%FactionTraitDrakkensMainQuestTitle">Quête des Drakkens</LocalizationPair>
   <LocalizationPair Name="%FactionTraitDrakkensMainQuestDescription">Chérissant votre rôle de protecteurs d'Auriga, les nombreux changements inquiétants survenant dans votre monde ont forcé les Drakkens à sortir de leur isolement. Alors que vous explorez et découvrez de nouveaux peuples et de nouveaux problèmes, vous êtes mis au défi également de découvrir les racines de votre propre race et son devoir, ancien et honorable.</LocalizationPair>
   <LocalizationPair Name="%FactionTraitCultists7Title">Haut Siège de la Reine</LocalizationPair>
-  <LocalizationPair Name="%FactionTraitCultists7Description">Se développant autour d'une ville unique qui tient lieu de centre religieux, cette faction ne crée aucune nouvelle ville et n’est donc pas en mesure de produire des colons. Cependant, leur centre-ville peut être développé à des niveaux plus importants que n'importe quelle autre faction, lui offrant la possibilité de devenir une métropole impressionnante et puissante à partir de laquelle l'ensemble d'Auriga peut être dirigé.</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitCultists7Description">Se développant autour d'une ville unique qui tient lieu de centre religieux, cette faction ne crée aucune nouvelle ville et n'est donc pas en mesure de produire des colons. Cependant, leur centre-ville peut être développé à des niveaux plus importants que n'importe quelle autre faction, lui offrant la possibilité de devenir une métropole impressionnante et puissante à partir de laquelle l'ensemble d'Auriga peut être dirigé.</LocalizationPair>
   <LocalizationPair Name="%FactionTraitCultists8Title">Le pouvoir de la Foi</LocalizationPair>
   <LocalizationPair Name="%FactionTraitCultists8Description">Prédication charismatique, manipulation émotionnelle et propagande sont utilisées à grande échelle par les Cultistes. Les villages convertis sont vus comme des modèles, et plus le nombre de villages augmente, plus l'Influence du Culte s'étend.</LocalizationPair>
   <LocalizationPair Name="%FactionTraitCultists9Title">Armes de l'ennemi</LocalizationPair>
@@ -5709,7 +5709,7 @@ Le marquis Suluzzo est peut-être le pire de tous. Tous les nobles et les fanati
 Mais je ne puis l'accepter. C'est une solution facile, mais cela ne la rend pas juste pour autant. Tristement, on m'a forcé la main, et je n'ai eu d'autre choix que de laisser les sages et les alchimistes à leurs études, en quête d'une réponse qui plairait à leurs avides mécènes. Nous tiendrons le cap, nos recherches développeront nos connaissances... même si j'étudie pour des raisons qui me sont propres. Je souhaiterais que notre peuple résiste à la tentation, malgré le risque que cela représente. N'oublions pas que le premier mot inscrit sur notre sceau royal est "honneur".</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Objective">Les mystères du passé de la planète sont certainement les clés de votre avenir. Améliorez vos connaissances scientifiques pour les décrypter.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1">Recherchez 8 technologies de l'Ère de recherche I.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Ces technologies doivent venir s'ajouter aux technologies de départ des Seigneurs déchus.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Les technologies obtenues grâce aux quêtes ne comptent pas pour le passage des Ères et les coûts de recherche.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2">Recherchez 12 technologies de l'Ère de recherche I.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2Tooltip">Les technologies obtenues grâce aux quêtes ne comptent pas pour le passage des Ères et les coûts de recherche.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Outcome">C'est très intéressant. Outre les grands progrès accomplis en magie et en alchimie, nous avons découvert un objet antique et puissant ; un simple diadème qui bourdonne de puissance.</LocalizationPair>
@@ -5890,8 +5890,8 @@ Pourtant, les retrouver ne sera pas chose aisée. Déjà, l'existence de l'Argos
   <LocalizationPair Name="%MainQuestVaulters-Chapter6Objective">Des rebelles affirmant que Zolya menace la survie des Exilés ont capturé une ville et coupé l'approvisionnement en ressources vitales. Il faut régler ce problème.</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step1">Sur un héros des Exilés, déverrouillez le niveau $SkillLevelToCheckNumber de la compétence $VaultersSkillName. </LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step1Tooltip">Faites progresser un héros des Exilés jusqu'à ce qu'il obtienne le niveau de compétence requis.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2">Pendant $Timer tours, cessez d'utiliser la ressource fondamentale des Exilés. Assignez un héros des Exilés avec la compétence $VaultersSkillName à l'une de vos villes.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2Tooltip">Évitez d'utiliser la ressource fondamentale pendant quelques tours.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2">Pendant $Timer tours, cessez d'utiliser les boosters de ressource sacrée des Exilés. Assignez un héros des Exilés avec la compétence $VaultersSkillName à l'une de vos villes.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2Tooltip">Évitez d'utiliser les boosters de ressource sacrée pendant quelques tours.</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6Outcome">Tout espoir n'est pas perdu. La raison revient dans les villes ; Zolya reprend son autorité. J'ose une fois de plus me tourner vers les étoiles...</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6AltTitle">6. Crise existentielle</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6AltDescription">J'ai révélé à Zolya la honte qui me dévore. Mes membres mécaniques tremblaient au cours de cette confession. Elle a longtemps gardé le silence. Puis elle m'a avoué qu'elle préférait connaître la vérité, aussi douloureuse soit-elle. Elle m'a appris qu'elle avait commencé à se méfier de moi, mais que cette confession lui permettait de reprendre confiance. " Cela se reproduira-t-il ? " murmura-t-elle. Je lui ai répondu que je ne pouvais pas lui garantir le contraire. " Si tu nuis à un seul de mes sujets, je te ferai démonter en un million de pièces. " Après ces paroles, elle n'a plus rien ajouté à ce sujet, et je crois qu'elle garde ma confession pour elle-même. Je ne dois pas la décevoir. Je me languis de retrouver les étoiles.
@@ -6692,8 +6692,7 @@ L'Attaque \7772\ détermine votre capacité à infliger des dégâts.
 La Défense \7773\ réduit les probabilités d'attaque.
 L'Initiative \7774\ aide votre unité à frapper en premier au combat.
 Les Dégâts \7776\ déterminent l'importance du coup d'une attaque réussie.
-Le déplacement \7757\ détermine le nombre de cases que l'unité peut parcourir par tour.
-La Portée détermine la distance maximum à laquelle une unité peut toucher sa cible.</LocalizationPair>
+Le déplacement \7757\ détermine le nombre de cases que l'unité peut parcourir par tour.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title73">Bonus contextuels</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content73">Les attributs peuvent également être influencés par d'autres facteurs : position relative, altitude et terrain.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title74">Bonus contextuels</LocalizationPair>
@@ -6701,7 +6700,7 @@ La Portée détermine la distance maximum à laquelle une unité peut toucher sa
 Altitude : les unités améliorent leur Attaque \7772\ en attaquant d'une position plus élevée.
 Terrain : les cases de forêt améliorent la Défense \7773\ des unités et les cases de ville leur Moral.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title75">Capacités</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content75">Les capacités sont des aptitudes spéciales utilisées automatiquement par les unités lorsqu'elles attaquent ou sont attaquées. La capacité Distance, par exemple, donne la distance maximale à laquelle une unité peut attaquer. Vous pouvez survoler les capacités pour plus d'informations.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content75">Les capacités sont des aptitudes spéciales utilisées automatiquement par les unités lorsqu'elles attaquent ou sont attaquées. La capacité "À distance", par exemple, donne la distance maximale à laquelle une unité peut attaquer. Vous pouvez survoler les capacités pour plus d'informations.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title76">Validation du déploiement</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content76">La phase de déploiement vous permet de changer la position des unités comme bon vous semble.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Action76">Sélectionnez une unité et faites un clic droit #FFFFFF#\9997\#REVERT# sur une case de la couleur de votre empire pour établir sa nouvelle position. Puis, cliquez sur Prêt dès que vous êtes satisfait du déploiement de vos troupes.</LocalizationPair>

@@ -135,8 +135,16 @@
       <SimulationModifierDescriptor TargetProperty="Interact_OddsLootingNothing" Operation="Subtraction" Value="10" Path="./EmpireTypeMajor/ClassArmy"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
-  <SimulationDescriptor Name="TechnologyWeaponCommonTier1"          Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorCommonTier1"           Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponCommonTier1"          Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorCommonTier1"           Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryCommonTier1"       Type="Technology"/>
   <SimulationDescriptor Name="TechnologyMapActionParley"            Type="Technology"/>
   <SimulationDescriptor Name="TechnologyMapActionBribe"             Type="Technology"/>
@@ -331,8 +339,16 @@
   </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyDiplomacyPeace"                 Type="Technology"/>
 
-  <SimulationDescriptor Name="TechnologyWeaponCommonTier2"          Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorCommonTier2"           Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponCommonTier2"          Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorCommonTier2"           Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryCommonTier2"       Type="Technology"/>
   <SimulationDescriptor Name="TechnologyWeaponCommonTier3"          Type="Technology"/>
   <SimulationDescriptor Name="TechnologyArmorCommonTier3"           Type="Technology"/>
@@ -463,8 +479,16 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
   
-  <SimulationDescriptor Name="TechnologyWeaponUncommonTier1"            Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorUncommonTier1"             Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponUncommonTier1"            Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorUncommonTier1"             Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryUncommonTier1"         Type="Technology"/>
   
   <SimulationDescriptor Name="TechnologyVaulters3"                      Type="Technology"/>
@@ -553,8 +577,16 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyPrivateers"                     Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyWeaponRareTier1"                Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorRareTier1"                 Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponRareTier1"                Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorRareTier1"                 Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryRareTier1"             Type="Technology"/>
 
   <!-- Vaulters Quest Reward: Trait --><!--
@@ -648,11 +680,27 @@
   <SimulationDescriptor Name="TechnologyLifeRegeneration2"              Type="Technology"/>
   <!--<SimulationDescriptor Name="TechnologyOutpost2"                       Type="Technology"/>-->
   <!--<SimulationDescriptor Name="TechnologyOceanTravelSpeedBonus1"         Type="Technology"/>-->
-  <SimulationDescriptor Name="TechnologyWeaponUncommonTier2"            Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorUncommonTier2"             Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponUncommonTier2"            Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorUncommonTier2"             Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryUncommonTier2"         Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyWeaponUncommonTier3"            Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorUncommonTier3"             Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponUncommonTier3"            Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorUncommonTier3"             Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryUncommonTier3"         Type="Technology"/>
   
   <SimulationDescriptor Name="TechnologyAssimilationLimitMax2"          Type="Technology">
@@ -710,11 +758,27 @@
   
   <SimulationDescriptor Name="TechnologyDefense4"                       Type="Technology"/>
   <SimulationDescriptor Name="TechnologyEndlessTemple"                  Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyWeaponRareTier2"                 Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorRareTier2"                 Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponRareTier2"                 Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorRareTier2"                 Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryRareTier2"             Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyWeaponRareTier3"                Type="Technology"/>
-  <SimulationDescriptor Name="TechnologyArmorRareTier3"                 Type="Technology"/>
+  <SimulationDescriptor Name="TechnologyWeaponRareTier3"                Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="TechnologyArmorRareTier3"                 Type="Technology">
+    <SimulationModifierDescriptors>
+      <SimulationModifierDescriptor TargetProperty="UnlockedItemsTechnologyCount" Operation="Addition" Value="1" Path="./EmpireTypeMajor/ClassResearch"/>
+    </SimulationModifierDescriptors>
+  </SimulationDescriptor>
   <SimulationDescriptor Name="TechnologyAccessoryRareTier3"             Type="Technology"/>
 
   <SimulationDescriptor Name="TechnologyEmpire1"                      Type="Technology">

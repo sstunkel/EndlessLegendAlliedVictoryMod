@@ -7,7 +7,7 @@
   <DiplomaticTermBoosterExchangeDefinition Name="TruceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">WarToTruce</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
 
     <BoosterList>
@@ -23,7 +23,7 @@
   <DiplomaticTermBoosterExchangeDefinition Name="PeaceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <BoosterList>
       <BoosterReference Name="BoosterScience" />
@@ -36,7 +36,7 @@
   <DiplomaticTermBoosterExchangeDefinition Name="ColdwarToAllianceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <BoosterList>
       <BoosterReference Name="BoosterScience" />
@@ -49,7 +49,7 @@
   <DiplomaticTermBoosterExchangeDefinition Name="PeaceToAllianceNegotiationBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <BoosterList>
       <BoosterReference Name="BoosterScience" />
@@ -64,7 +64,7 @@
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
     
     <BoosterList>
       <BoosterReference Name="BoosterScience" />
@@ -78,7 +78,7 @@
   <DiplomaticTermBoosterExchangeDefinition Name="AllianceBoosterDeal" PropositionMethod="Negotiation" Category="Booster">
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <BoosterList>
       <BoosterReference Name="BoosterScience" />
@@ -94,7 +94,7 @@
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <BoosterList>
       <BoosterReference Name="BoosterScience" />
@@ -117,7 +117,7 @@
       <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
     </DiplomaticRelationStateEmpirePrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
   </DiplomaticTermCityExchangeDefinition>
   
 
@@ -130,7 +130,7 @@
     <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
       <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
     </DiplomaticRelationStateEmpirePrerequisite>
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">20 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">20 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
     
   </DiplomaticTermCityExchangeDefinition>
 
@@ -143,7 +143,7 @@
     <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
       <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
     </DiplomaticRelationStateEmpirePrerequisite>
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">20 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">20 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   
 </DiplomaticTermCityExchangeDefinition>
@@ -157,7 +157,7 @@
     <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
       <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
     </DiplomaticRelationStateEmpirePrerequisite>
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">12 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">12 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermCityExchangeDefinition>
 
@@ -171,7 +171,7 @@
     <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
       <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
     </DiplomaticRelationStateEmpirePrerequisite>
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">12 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">12 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermCityExchangeDefinition>
 
@@ -184,7 +184,7 @@
     <DiplomaticRelationStateEmpirePrerequisite Flags="Prerequisite,Discard" Responsible="EmpireWhichReceives">
       <PathPrerequisite Inverted="true">EmpireTypeMajor,FactionTraitCultists9</PathPrerequisite>
     </DiplomaticRelationStateEmpirePrerequisite>
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermCityExchangeDefinition>-->
   
@@ -194,7 +194,7 @@
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">WarToTruce</DiplomaticContractContainsTermPrerequisite>
 
     <!--Exchange of goods costs Prestige ★.-->
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <TradableResourceList>
       <TradableResourceReference Name="EmpireMoney" />
@@ -227,7 +227,7 @@
   <DiplomaticTermResourceExchangeDefinition Name="PeaceNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <TradableResourceList>
       <TradableResourceReference Name="EmpireMoney" />
@@ -259,7 +259,7 @@
   <DiplomaticTermResourceExchangeDefinition Name="ColdWarToAllianceNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <TradableResourceList>
       <TradableResourceReference Name="EmpireMoney" />
@@ -292,7 +292,7 @@
   <DiplomaticTermResourceExchangeDefinition Name="PeaceToAllianceNegotiationResourceDeal" PropositionMethod="Negotiation" Category="Resource">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
     <TradableResourceList>
       <TradableResourceReference Name="EmpireMoney" />
@@ -325,7 +325,7 @@
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">4 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
     
     <!--Test costs-->
     <!--<DiplomaticCost Responsible="EmpireWhichProvides" ResourceName="EmpirePoint">(10</DiplomaticCost>
@@ -361,7 +361,7 @@
   <DiplomaticTermResourceExchangeDefinition Name="AllianceResourceDeal" PropositionMethod="Negotiation" Category="Resource">
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">2 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
     
     <TradableResourceList>
       <TradableResourceReference Name="EmpireMoney" />
@@ -396,7 +396,7 @@
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
     
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">6 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
     
     <TradableResourceList>
       <TradableResourceReference Name="EmpireMoney" />
@@ -430,7 +430,7 @@
   <DiplomaticTermTechnologyExchangeDefinition Name="TruceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">WarToTruce</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">3 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">3 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
   
 </DiplomaticTermTechnologyExchangeDefinition>
 
@@ -438,14 +438,14 @@
   <DiplomaticTermTechnologyExchangeDefinition Name="PeaceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermTechnologyExchangeDefinition>
 
   <DiplomaticTermTechnologyExchangeDefinition Name="ColdWarToAllianceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
   
 </DiplomaticTermTechnologyExchangeDefinition>
 
@@ -453,7 +453,7 @@
   <DiplomaticTermTechnologyExchangeDefinition Name="PeaceToAllianceNegotiationTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
     <DiplomaticContractContainsTermPrerequisite Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">9 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">9 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermTechnologyExchangeDefinition>
 
@@ -462,7 +462,7 @@
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">PeaceToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">9 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">9 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermTechnologyExchangeDefinition>
 
@@ -470,7 +470,7 @@
   <DiplomaticTermTechnologyExchangeDefinition Name="AllianceTechnologyDeal" PropositionMethod="Negotiation" Category="Technology">
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">3 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">3 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermTechnologyExchangeDefinition>
 
@@ -481,7 +481,7 @@
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToPeace</DiplomaticContractContainsTermPrerequisite>
     <DiplomaticContractContainsTermPrerequisite Inverted="true" Flags="Prerequisite,Discard">ColdWarToAlliance</DiplomaticContractContainsTermPrerequisite>
 
-    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Count(ClassEmpire/ClassCity) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
+    <DiplomaticCustomCost Responsible="EmpireWhichProposes" ResourceName="EmpirePoint">15 * (($Property(EmpireTypeMajor:EmpireScaleFactor) + $Property(ClassEmpire:CurrentEra)) / 1.5) * $Property(ClassEmpire:GameSpeedMultiplier)</DiplomaticCustomCost>
 
   </DiplomaticTermTechnologyExchangeDefinition>
 

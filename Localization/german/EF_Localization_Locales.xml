@@ -469,6 +469,37 @@ löschen?</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedSlowDescription">Für ein gemächliches Spiel</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessTitle">Unendlich</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessDescription">Nimm dir viel Zeit, um deinen Gegner zu vernichten</LocalizationPair>
+  <LocalizationPair Name="%ModDefaultTitle">The default game is active</LocalizationPair>
+  <LocalizationPair Name="%ModActiveFormat">Active mod: {0}</LocalizationPair>
+  <LocalizationPair Name="%DefaultModTitle">Default Game</LocalizationPair>
+  <LocalizationPair Name="%DefaultModDescription">Reverts Endless Legend to the default game</LocalizationPair>
+  <LocalizationPair Name="%ConfirmDefaultGame">This is will revert the game to using the default mod</LocalizationPair>
+  <LocalizationPair Name="%ActivateModTitle">Activate Mod</LocalizationPair>
+  <LocalizationPair Name="%ActivateModDescription">Configures the game to use the selected mod</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsTitle">Available Mods</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsDescription">Liste verfügbarer Mods für Endless Legend im Ordner EndlessLegend/Modding/ .</LocalizationPair>
+  <LocalizationPair Name="%NoAvailableModsTitle">No mods are available  to activate</LocalizationPair>
+  <LocalizationPair Name="%LoadingRuntimeModule">Loading mod</LocalizationPair>
+  <LocalizationPair Name="%ModNameTitle">Mod</LocalizationPair>
+  <LocalizationPair Name="%ModNameDescription">Name vom Mod</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorTitle">Autor</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorDescription">Autor vom Mod</LocalizationPair>
+  <LocalizationPair Name="%ModTypeTitle">Type</LocalizationPair>
+  <LocalizationPair Name="%ModTypeDescription">Type of the mod.</LocalizationPair>
+  <LocalizationPair Name="%ModTypeStandaloneTitle">Standalone</LocalizationPair>
+  <LocalizationPair Name="%ModTypeConversionTitle">Conversion</LocalizationPair>
+  <LocalizationPair Name="%ModTypeExtensionTitle">Extension</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteTitle">Website</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteDescription">Website vom Mod.</LocalizationPair>
+  <LocalizationPair Name="%ModVersionTitle">Version</LocalizationPair>
+  <LocalizationPair Name="%ModVersionDescription">Version vom Mod.</LocalizationPair>
+  <LocalizationPair Name="%ModDescriptionTitle">Description</LocalizationPair>
+  <LocalizationPair Name="%ModReleaseNotesTitle">Release notes</LocalizationPair>
+  <LocalizationPair Name="%ConfirmEnterMods">Sie gelangen nun zur Übersicht der installierten Mods für Endless Legend. Mods sind von Benutzern erstellte Modifikationen des Spiels, welche die ursprünglichen und von AMPLITUDE Studios erstellten Inhalte verändern oder völlig ersetzen.
+ 
+AMPLITUDE Studios kann in keinem Fall für Modifikationen verantwortlich gemacht werden überprüft die Inhalte, Richtigkeit und besonders die Legalität dieser Modifikationen nicht. Daher gibt AMPLITUDE Studios keine Gewährleistung auf die Inhalte und Funktionen dieser Modifikationen.
+ 
+Durch das Drücken der "OK"-Schaltfläche, bestätigen Sie, dass Sie Modifikationen auf Ihr eigenes Risiko verwenden und dass Sie AMPLITUDE Studios nicht für jeglichen Verlust von Daten oder Schaden an Ihrem Computer verantwortlich machen können.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTitle">Grösse der Region</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeDescription">Legt die Grösse der Region fest.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTinyTitle">Winzig</LocalizationPair>
@@ -875,6 +906,13 @@ löschen?</LocalizationPair>
   <LocalizationPair Name="%CreateInstancingMesh">Create Instancing Mesh</LocalizationPair>
   <LocalizationPair Name="%ClearingUnusedMemory">Clearing Unused Memory</LocalizationPair>
   <LocalizationPair Name="%AllTerrainDataLoaded">All Terrain Data Loaded</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadingOutgameView">Loading the main menu</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadGame">Loading the game</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateAuthenticating">Authenticating…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateConnectingToServer">Connectin to server…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForPlayersEndTurn">Waiting for players to end their turn</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForGameData">Waiting for game data</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForServer">Waiting for serveur</LocalizationPair>
   <LocalizationPair Name="%RiverTitle">Fluss</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersTitle">Binnengewässer</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersDescription">[Not used] Description of Chilly Inland Waters</LocalizationPair>
@@ -1011,6 +1049,7 @@ löschen?</LocalizationPair>
   <LocalizationPair Name="%QuitDescription">Beendet die aktuelle Spielsitzung.</LocalizationPair>
   <LocalizationPair Name="%ResumeTitle">Fortfahren</LocalizationPair>
   <LocalizationPair Name="%ResumeDescription">Du kehrst zur aktuellen Spielsitzung zurück.</LocalizationPair>
+  <LocalizationPair Name="%WorldSeedFormat">World Seed: $Value</LocalizationPair>
   <LocalizationPair Name="%OptionsTitle">Optionen</LocalizationPair>
   <LocalizationPair Name="%OptionsDescription">Wähle verschiedene Optionen zur Anpassung des Spielerlebnisses aus, z. B. Grafik, Audio usw.</LocalizationPair>
   <LocalizationPair Name="%OptionToggleAudioTitle">Audio</LocalizationPair>
@@ -1144,6 +1183,10 @@ Wird diese Änderung im laufenden Spiel vorgenommen, wird sie erst nach dem Spei
   <LocalizationPair Name="%OptionAutoPopupNotificationBailiffWarningDescription">Zeigt eine Pop-up-Mitteilung an, wenn dein Imperium kurz vor dem Bankrott steht.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedTitle">Automatisches Pop-up, Ressourcenschub endet</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedDescription">Zeigt eine Pop-up-Mitteilung an, wenn ein Ressourcenschub endet.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedTitle">Auto pop-up Unused Boosters</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedDescription">Display pop-up notification when resources boosters are not used while it could be activated</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleTitle">Auto pop-up City: Idle construction</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleDescription">Display pop-up notification when a city is not producing anything</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedTitle">Autom. Pop-up, Stadt- Eroberung</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedDescription">Zeigt eine Pop-up-Mitteilung an, wenn eine Stadt von einem feindlichen Imperium eingenommen wird.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityRazedTitle">Autom. Pop-up, Stadt- Plünderung</LocalizationPair>
@@ -1180,6 +1223,10 @@ Wird diese Änderung im laufenden Spiel vorgenommen, wird sie erst nach dem Spei
   <LocalizationPair Name="%OptionAutoPopupNotificationMinorFactionDiscoveryDescription">Zeigt eine Pop-up-Mitteilung an, wenn eine neue Nebenfraktion entdeckt wurde.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraTitle">Automatisches Pop-up, neue Ära</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraDescription">Zeigt eine Pop-up-Mitteilung an, wenn eine neue Technologieära beginnt.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedTitle">Auto pop-up City: Ended Pillar</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedDescription">Display pop-up notification when a pillar effect has ended</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedTitle">Auto pop-up City: Unused Pillar</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedDescription">Display pop-up notification when you are not using pillars</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedTitle">Automatisches Pop-up, Bevölkerungsentwicklung</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedDescription">Zeigt eine Pop-up-Mitteilung an, wenn sich die Bevölkerung in deinen Städten ändert.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationQuestTitle">Automatisches Pop-up, Auftragsbenachrichtigungen</LocalizationPair>
@@ -1996,6 +2043,7 @@ In einer Allianz
   <LocalizationPair Name="%Spell5LevelTitle">Beschwörung der Erholung</LocalizationPair>
   <LocalizationPair Name="%SpellsLevelTitle">Stufe aller Zauber</LocalizationPair>
   <LocalizationPair Name="%PrestigeTrendBonusTitle">Diplomatie</LocalizationPair>
+  <LocalizationPair Name="%PrestigeTrendBonusTrendTitle">Einflusssteigerung (Diplomatie)</LocalizationPair>
   <LocalizationPair Name="%MilitiaTitle">Miliz</LocalizationPair>
   <LocalizationPair Name="%MercenaryTitle">Söldner</LocalizationPair>
   <LocalizationPair Name="%CommercialAgreementBonusTitle">Handelsabkommen</LocalizationPair>
@@ -2701,6 +2749,7 @@ Winter: 10 Züge \7708\ lang +3 Nahrung #CFE14F#\7700\#REVERT# für alle Kacheln
   <LocalizationPair Name="%ArmyActionPointDescription">Die verfügbaren Aktionspunkte dieser Armee.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCostDescription">Die erforderlichen Aktionspunkte, um diese Aktion auszuführen.</LocalizationPair>
   <LocalizationPair Name="%ArmyNameFormat">$Name Armee</LocalizationPair>
+  <LocalizationPair Name="%ArmyGeneratedNameFormat">$Number $Title $Caption</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatSingle">{0}/{1} Einheit</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatPlural">{0}/{1} Einheiten</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsWithoutMaxFormatSingle">{0} Einheit</LocalizationPair>
@@ -2752,10 +2801,10 @@ Handelt es sich bei dem Ziel um das Dorf einer Nebenfraktion, wird es befriedet,
   <LocalizationPair Name="%ArmyActionBribeTitle">Bestechung</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeDescription">Mit einer Bestechung kann das Dorf der Nebenfraktion sofort befriedet werden.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 1 EP.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 4 EP.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeNoCostDescription">Mit einer Bestechung kann das Dorf der Nebenfraktion sofort befriedet werden ... Aber das hat seinen Preis.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 1 EP.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 4 EP.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordBribeDescription">Du kannst es dir nicht leisten, dieses Dorf zu bestechen.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionOneVillageOrManyLockedDescription">Dieses Dorf kannst du derzeit nicht bestechen.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyPacifiedDescription">Dieses Dorf ist bereits befriedet.</LocalizationPair>
@@ -2773,7 +2822,7 @@ Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 1 EP.</
   <LocalizationPair Name="%ArmyActionParleyTitle">Friedensverhandlung</LocalizationPair>
   <LocalizationPair Name="%ArmyActionParleyDescription">Beginnt Verhandlungen mit dem Dorf einer Nebenfraktion. Wenn du ihren Forderungen nachkommst, werden alle ihre Dörfer in der Region kampflos befriedet.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 2 EP.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 6 EP.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportTitle">Teleportieren</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportDescription">Du kannst deine Armee in eine andere Stadt teleportieren, wenn du eine heilige Ressource festgelegt und angesammelt hast. </LocalizationPair>
   <LocalizationPair Name="%ArmyActionTransferUnitsTitle">Transfer</LocalizationPair>
@@ -2793,19 +2842,19 @@ Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 2 EP.</
   <LocalizationPair Name="%ArmyActionSearchTitle">Suchen</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSearchDescription">Sucht an diesem Ort nach Hinweisen. Du kannst Schätze, Gegner, einen Auftrag oder gar nichts entdecken.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 6 EP.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 10 EP.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPOIAlreadySearchedDescription">Du hast bereits alle umliegenden Orte durchsucht.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeTitle">Belagerung</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeDescription">Durch die Belagerung reduzieren sich Produktion und Verteidigung einer feindlichen Stadt.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 2 EP pro Zug \7708\.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 4 EP pro Zug \7708\.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOnDescription">Beginnt die Belagerung einer Stadt.
  
  - Das Bewirtschaftungsgebiet und die regionalen Gebäude ausserhalb der Stadtmauern können nicht länger genutzt werden.
  - Die Wissenschafts- und Dust-Produktion der Stadt ist halbiert.
  - Die Stadt verliert in jedem Zug Verteidigung entsprechend der Belagerungsstärke des Angreifers. Sinkt die Verteidigung auf 0, verlieren Einheiten in der Stadtgarnison ODER auf einer Stadtkachel in jedem Zug Leben entsprechend der Belagerungsstärke.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 2 EP pro Zug \7708\.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 4 EP pro Zug \7708\.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOffDescription">Beendet die Belagerung einer Stadt.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeCannotStartDescription">Du kannst derzeit keine Belagerung beginnen.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeInvalidDiplomaticAbilitiesDescription">Du hast nicht den erforderlichen diplomatischen Status, um eine Stadt dieses Imperiums zu belagern.</LocalizationPair>
@@ -2833,13 +2882,13 @@ Eine Armee aus Freibeutern kann keine Stadt einnehmen. Nach einem erfolgreichen 
   <LocalizationPair Name="%ArmyActionConvertTitle">Bekehren</LocalizationPair>
   <LocalizationPair Name="%ArmyActionConvertDescription">Bekehrt ein befriedetes Dorf.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 3 EP.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 6 EP.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionNotPacifiedDescription">Du kannst dieses Dorf nicht bekehren, da es nicht befriedet ist.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 3 EP.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 6 EP.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordConvertDescription">Du hast nicht genug Einflusspunkte für diese Aktion.
  
-Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 3 EP.</LocalizationPair>
+Wird die Suche von einem Helden durchgeführt, gibt es für diese Aktion 6 EP.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPointRequirementFormat">Erfordert $Value \7709\ (und ggf. weitere anfallende Kosten).</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyConvertedDescription">Du kannst kein Dorf bekehren, das du bereits bekehrt hast.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAttackInvalidOwnVillageDescription">Du kannst kein Dorf angreifen, das bereits dir gehört.</LocalizationPair>
@@ -3679,8 +3728,15 @@ Diese Stadt muss nun die folgenden Konsequenzen tragen:
   <LocalizationPair Name="%NotificationBoosterEndedDescription">Der Effekt einer oder mehrerer Ressourcenschüben ist abgelaufen.</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedLineFormat">{0}: Der Schub und seine Effekte sind beendet.</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivate">Reaktivieren</LocalizationPair>
-  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Reaktivieren nicht möglich</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivateBoosterDescription">Klicke diese Schaltfläche, um die anfallenden Kosten zu zahlen und die Effekte des Schubs zu erneuern.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Reaktivieren nicht möglich</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedTitle">Unused Resource Booster(s)</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedDescription">It has been quite some time since you last activated a resource booster. It can grant great advantages to your empire.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedLineFormat">{0} : the booster and its effects can be activated</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedActivate">Aktivieren</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleTitle">Idle City Construction</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleDescription">One or more of your cities do not produce anything</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleLineTitle">No construction selected</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedTitle">Stadt eingenommen</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedDescription">Das Imperium von {1} hat deine Stadt {0} eingenommen.</LocalizationPair>
   <LocalizationPair Name="%NotificationCityRazedTitle">Stadt geplündert</LocalizationPair>
@@ -3829,6 +3885,10 @@ Neu ausgebildete Einheiten sind nun Eliten (Stufe 6) und kosten mehr</Localizati
   <LocalizationPair Name="%AvailabilityEmpirePlanLevel4">Imperiumsplan Stufe 4 verfügbar</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedTitle">Bevölkerungsentwicklung</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedDescription">Die Bevölkerung in ein oder mehreren Städten hat sich geändert.</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedTitle">Pillar effect ended</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedDescription">One of your pillars had run its duration. You may want to reactivate it</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedTitle">Pillars unused</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedDescription">It has been quite some time since you last activated a pillar. You have the resources to activate one.</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationIncreased">Die Bevölkerung von {0} ist auf {1} gewachsen.</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationDecreased">Die Bevölkerung von {0} ist durch eine Hungersnot auf {1} gefallen.</LocalizationPair>
   <LocalizationPair Name="%NotificationQuestBegunTitle">Neuer Auftrag hinzugefügt</LocalizationPair>
@@ -4599,4 +4659,14 @@ Alle Spieler werden in die Lobby zurückgeschickt. Die Sitzung wird zum letzten 
   <LocalizationPair Name="%CultistsFaction">Konzept für die Fraktion "Kultisten"</LocalizationPair>
   <LocalizationPair Name="%CultistsModelConcept">Konzept für die Kultisten-Modelle</LocalizationPair>
   <LocalizationPair Name="%CultistsLogoConcept">Konzept für das Kultisten-Logo</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip1Title">Tip: you can level up a city district by building four other districts around it</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip2Title">Tip: outfiting your units with powerful equipment is instrumental to victory in battle</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip3Title">Tip: the more friendly units surround a unit in battle, the more moral it gets</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip4Title">Tip: Settlers consume all food production so you can assign food workers on something else while you build a settler</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip5Title">Tip: Expanding your city with new districts significantly increases you production, but also generates more unhapiness</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip6Title">Tip: Some units are betters against others, an utter defeat can be turned into a great victory with better unit composition</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip7Title">Tip: A beat-down opponent is more likely to accept a truce and give you techs and resources if you give him back a city he lost. </LocalizationPair>
+  <LocalizationPair Name="%LoadingTip8Title">Tip: Selling units on the marketplace is a great source of dust</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip9Title">Tip: Keep your cities garrisoned with more than just militia if you face a large invading army</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip10Title">Tip: Cultists can rebuild a destroyed village by converting it at twice the normal influence cost</LocalizationPair>
 </Datatable>

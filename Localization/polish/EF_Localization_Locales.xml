@@ -469,6 +469,37 @@ Steam Cloud pozwala na proste i transparentne przechowywanie plików zapisu gry.
   <LocalizationPair Name="%GameOptionGameSpeedSlowDescription">Dla wolnej rozgrywki.</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessTitle">Nieskończona</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessDescription">Nie musisz się spieszyć ze zniszczeniem wroga.</LocalizationPair>
+  <LocalizationPair Name="%ModDefaultTitle">The default game is active</LocalizationPair>
+  <LocalizationPair Name="%ModActiveFormat">Active mod: {0}</LocalizationPair>
+  <LocalizationPair Name="%DefaultModTitle">Default Game</LocalizationPair>
+  <LocalizationPair Name="%DefaultModDescription">Reverts Endless Legend to the default game</LocalizationPair>
+  <LocalizationPair Name="%ConfirmDefaultGame">This is will revert the game to using the default mod</LocalizationPair>
+  <LocalizationPair Name="%ActivateModTitle">Activate Mod</LocalizationPair>
+  <LocalizationPair Name="%ActivateModDescription">Configures the game to use the selected mod</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsTitle">Available Mods</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsDescription">Lista dostępnych modów gry Endless Legend, zlokalizowanych w folderze EndlessLegend/Modding/</LocalizationPair>
+  <LocalizationPair Name="%NoAvailableModsTitle">No mods are available  to activate</LocalizationPair>
+  <LocalizationPair Name="%LoadingRuntimeModule">Loading mod</LocalizationPair>
+  <LocalizationPair Name="%ModNameTitle">Mod</LocalizationPair>
+  <LocalizationPair Name="%ModNameDescription">Nazwa modu</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorTitle">Autor</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorDescription">Autor(zy) modów.</LocalizationPair>
+  <LocalizationPair Name="%ModTypeTitle">Type</LocalizationPair>
+  <LocalizationPair Name="%ModTypeDescription">Type of the mod.</LocalizationPair>
+  <LocalizationPair Name="%ModTypeStandaloneTitle">Standalone</LocalizationPair>
+  <LocalizationPair Name="%ModTypeConversionTitle">Conversion</LocalizationPair>
+  <LocalizationPair Name="%ModTypeExtensionTitle">Extension</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteTitle">Strona internetowa</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteDescription">Strona internetowa modu.</LocalizationPair>
+  <LocalizationPair Name="%ModVersionTitle">Wersja</LocalizationPair>
+  <LocalizationPair Name="%ModVersionDescription">Wersja modu.</LocalizationPair>
+  <LocalizationPair Name="%ModDescriptionTitle">Description</LocalizationPair>
+  <LocalizationPair Name="%ModReleaseNotesTitle">Release notes</LocalizationPair>
+  <LocalizationPair Name="%ConfirmEnterMods">Za chwilę wejdziesz do panelu Modyfikacji Endless Legend. Modyfikacje to zmiany tworzone przez użytkowników gry, które rozszerzają lub zastępują treści stworzone przez AMPLITUDE Studios.
+ 
+AMPLITUDE Studios nie jest w żadnym wypadku odpowiedzialne za modyfikacje ani nie weryfikuje treści, prawidłowości ani tym bardziej legalności takich modyfikacji. W związku z tym AMPLITUDE Studios nie może zagwarantować użytkownikom odpowiedniej jakości ani formy tychże zmian. 
+ 
+Klikając przycisk "Ok" oświadczasz, że jesteś świadomy korzystania z modyfikacji na własne ryzyko, i że nie będziesz mógł pociągnąć AMPLITUDE Studios do odpowiedzialności za jakąkolwiek utratę danych albo uszkodzenia wyrządzone twojemu komputerowi z ich powodu.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTitle">Rozmiar regionu</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeDescription">Ustaw rozmiar regionu.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTinyTitle">B. mały</LocalizationPair>
@@ -618,13 +649,13 @@ Steam Cloud pozwala na proste i transparentne przechowywanie plików zapisu gry.
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents8Title">8</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents8Description">8 kontynentów.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents1to3Title">1-3</LocalizationPair>
-  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents1to3Description">The number of continents will be chosen from a range of 1 to 3.</LocalizationPair>
+  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents1to3Description">Liczba kontynentów zostanie wybrana z przedziału od 1 do 3.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents2to4Title">2-4</LocalizationPair>
-  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents2to4Description">The number of continents will be chosen from a range of 2 to 4.</LocalizationPair>
+  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents2to4Description">Liczba kontynentów zostanie wybrana z przedziału od 2 do 4.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents4to6Title">4-6</LocalizationPair>
-  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents4to6Description">The number of continents will be chosen from a range of 4 to 6.</LocalizationPair>
+  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents4to6Description">Liczba kontynentów zostanie wybrana z przedziału od 4 do 6.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents5to8Title">5-8</LocalizationPair>
-  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents5to8Description">The number of continents will be chosen from a range of 5 to 8.</LocalizationPair>
+  <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinents5to8Description">Liczba kontynentów zostanie wybrana z przedziału od 5 do 8.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinentsRandomTitle">Losowa</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionNumberOfContinentsRandomDescription">Liczba kontynentów będzie określona losowo</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionIslandsOddsTitle">Obecność wysp</LocalizationPair>
@@ -875,6 +906,13 @@ Steam Cloud pozwala na proste i transparentne przechowywanie plików zapisu gry.
   <LocalizationPair Name="%CreateInstancingMesh">Stwórz przykładową siatkę</LocalizationPair>
   <LocalizationPair Name="%ClearingUnusedMemory">Czyszczenie nieużywanej pamięci</LocalizationPair>
   <LocalizationPair Name="%AllTerrainDataLoaded">Wczytano wszystkie dane terenu</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadingOutgameView">Loading the main menu</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadGame">Loading the game</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateAuthenticating">Authenticating…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateConnectingToServer">Connectin to server…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForPlayersEndTurn">Waiting for players to end their turn</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForGameData">Waiting for game data</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForServer">Waiting for serveur</LocalizationPair>
   <LocalizationPair Name="%RiverTitle">Rzeka</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersTitle">Wody śródlądowe</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersDescription">[Nieużywane] Opis mroźnych wód śródlądowych</LocalizationPair>
@@ -1011,6 +1049,7 @@ Steam Cloud pozwala na proste i transparentne przechowywanie plików zapisu gry.
   <LocalizationPair Name="%QuitDescription">Opuść bieżącą sesję gry.</LocalizationPair>
   <LocalizationPair Name="%ResumeTitle">Wznów</LocalizationPair>
   <LocalizationPair Name="%ResumeDescription">Powrót do bieżącej sesji gry.</LocalizationPair>
+  <LocalizationPair Name="%WorldSeedFormat">World Seed: $Value</LocalizationPair>
   <LocalizationPair Name="%OptionsTitle">Opcje</LocalizationPair>
   <LocalizationPair Name="%OptionsDescription">Ustaw różne opcje rozgrywki: grafika, dźwięk, itp.</LocalizationPair>
   <LocalizationPair Name="%OptionToggleAudioTitle">Dźwięk</LocalizationPair>
@@ -1146,6 +1185,10 @@ Jeśli zmiany zostaną dokonane podczas rozgrywki, będą widoczne po zapisaniu/
   <LocalizationPair Name="%OptionAutoPopupNotificationBailiffWarningDescription">Wyświetlanie powiadomienia, gdy twojemu imperium grozi bankructwo.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedTitle">Autom. powiad. o zakończeniu działania ulepszacza zasobu</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedDescription">Wyświetlanie powiadomienia, gdy ulepszacz zasobu przestaje działać.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedTitle">Auto pop-up Unused Boosters</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedDescription">Display pop-up notification when resources boosters are not used while it could be activated</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleTitle">Auto pop-up City: Idle construction</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleDescription">Display pop-up notification when a city is not producing anything</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedTitle">Aut. wyśw. okna Miasta: Zdobycie</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedDescription">Wyświetlanie powiadomienia, gdy miasto jest zdobyte przez wrogie imperium.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityRazedTitle">Aut. wyśw. okna Miasta: Zrównanie z ziemią</LocalizationPair>
@@ -1182,6 +1225,10 @@ Jeśli zmiany zostaną dokonane podczas rozgrywki, będą widoczne po zapisaniu/
   <LocalizationPair Name="%OptionAutoPopupNotificationMinorFactionDiscoveryDescription">Wyświetlanie powiadomienia, gdy odkryta  zostaje pomniejsza frakcja.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraTitle">Autom. powiad. o nowej erze</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraDescription">Wyświetlanie powiadomienia o rozpoczęciu nowej ery technologicznej.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedTitle">Auto pop-up City: Ended Pillar</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedDescription">Display pop-up notification when a pillar effect has ended</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedTitle">Auto pop-up City: Unused Pillar</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedDescription">Display pop-up notification when you are not using pillars</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedTitle">Autom. powiad. o ewolucji populacji</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedDescription">Wyświetlanie powiadomienia o zmianie populacji miasta.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationQuestTitle">Autom. powiad. o zadaniu</LocalizationPair>
@@ -2006,6 +2053,7 @@ Stan Sojuszu
   <LocalizationPair Name="%Spell5LevelTitle">Zaklęcie odnowienia</LocalizationPair>
   <LocalizationPair Name="%SpellsLevelTitle">Poziom wszystkich zaklęć</LocalizationPair>
   <LocalizationPair Name="%PrestigeTrendBonusTitle">Dyplomacja</LocalizationPair>
+  <LocalizationPair Name="%PrestigeTrendBonusTrendTitle">Premie do Wpływu (Dyplomacja)</LocalizationPair>
   <LocalizationPair Name="%MilitiaTitle">Milicja</LocalizationPair>
   <LocalizationPair Name="%MercenaryTitle">Najemnicy</LocalizationPair>
   <LocalizationPair Name="%CommercialAgreementBonusTitle">Porozumienie handlowe</LocalizationPair>
@@ -2700,7 +2748,7 @@ Skonwertowane wioski:
   <LocalizationPair Name="%FactionTraitEconomy2NegativeLevel2TooltipEffect">-35 #FFD768#\7703\#REVERT# na początek</LocalizationPair>
   <LocalizationPair Name="%FactionTraitEconomy5TooltipEffect">+15 #3C98FF#\7711\#REVERT# na początek</LocalizationPair>
   <LocalizationPair Name="%FactionTraitEconomy6TooltipEffect">+15 #EAD085#\7712\#REVERT# na początek</LocalizationPair>
-  <LocalizationPair Name="%ScientificVictoryCountTooltipEffect">Counted for the Scientific Victory</LocalizationPair>
+  <LocalizationPair Name="%ScientificVictoryCountTooltipEffect">Uznanie z powodu Zwycięstwa Naukowego</LocalizationPair>
   <LocalizationPair Name="%ArmyCommanderTitle">Bohater</LocalizationPair>
   <LocalizationPair Name="%ArmyCommanderDescription">Bohater dowodzący tą armią.</LocalizationPair>
   <LocalizationPair Name="%ArmyFullDescription">Armia osiągnęła limit rozmiaru.</LocalizationPair>
@@ -2712,6 +2760,7 @@ Skonwertowane wioski:
   <LocalizationPair Name="%ArmyActionPointDescription">Dostępne punkty akcji dla tej armii</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCostDescription">Wymagany koszt akcji liczony w punktach akcji</LocalizationPair>
   <LocalizationPair Name="%ArmyNameFormat">Armia $Name</LocalizationPair>
+  <LocalizationPair Name="%ArmyGeneratedNameFormat">$Number $Title $Caption</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatSingle">{0}/{1} Jednostka</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatPlural">{0}/{1} Jednostki</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsWithoutMaxFormatSingle">{0} Jednostka</LocalizationPair>
@@ -2763,10 +2812,10 @@ Jeśli celem jest wioska pomniejszej frakcji, zostanie ona spacyfikowana, lecz n
   <LocalizationPair Name="%ArmyActionBribeTitle">Przekup</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeDescription">Przekup wioskę pomniejszej frakcji. Zostanie w niej przywrócony spokój, lecz kosztem Pyłu.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 1 PD.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 4 PD.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeNoCostDescription">Przekup wioskę pomniejszej frakcji. Zostanie w niej przywrócony spokój, lecz za opłatą.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 1 PD.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 4 PD.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordBribeDescription">Nie stać cię na użycie przekupstwa w tej wiosce.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionOneVillageOrManyLockedDescription">W tej chwili nie możesz użyć przekupstwa w tej wiosce.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyPacifiedDescription">Wioska już została spacyfikowana.</LocalizationPair>
@@ -2784,7 +2833,7 @@ Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 1 PD.</Lo
   <LocalizationPair Name="%ArmyActionParleyTitle">Pertraktuj</LocalizationPair>
   <LocalizationPair Name="%ArmyActionParleyDescription">Rozpocznij negocjacje z wioską pomniejszej frakcji. Jeśli spełnisz ich żądania, w sposób pokojowy przejmiesz wszystkie ich wioski w regionie.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 2 PD.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 6 PD.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportTitle">Teleportuj</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportDescription">Możesz teleportować swoją armię do innego miasta, w przypadku, gdy wyznaczyłeś i zebrałeś Święty Zasób.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTransferUnitsTitle">Przenieś</LocalizationPair>
@@ -2804,19 +2853,19 @@ Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 2 PD.</Lo
   <LocalizationPair Name="%ArmyActionSearchTitle">Szukaj</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSearchDescription">Szukaj w tym miejscu wskazówek. Mogą one ujawnić skarb, wrogów, zadanie lub niczego nie ujawnić.
 
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 6 PD.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 10 PD.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPOIAlreadySearchedDescription">Przeszukałeś już wszystkie pobliskie miejsca.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeTitle">Oblegaj</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeDescription">Oblężenie zmniejsza obronę i populację wrogiego miasta.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 2 PD na turę \7708\.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 4 PD na turę \7708\.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOnDescription">Rozpocznij Oblężenie miasta, z następującymi konsekwencjami dla oblężonego miasta:
  
  - Obszar wydobywczy i budynki regionalne znajdujące się za murami miasta nie będą mogły być w dalszym ciągu wykorzystywane.
  - Produkcja Nauki i Pyłu w mieście będzie podzielona przez 2.
  - Z każdą turą miasto będzie tracić punkty obrony w liczbie równej sile agresora. Kiedy obrona osiągnie wartość 0, jednostki w garnizonie miejskim lub znajdujące się na polu miasta będą traciły zdrowie, proporcjonalnie do siły oblężenia.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 2 PD na turę \7708\.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 4 PD na turę \7708\.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOffDescription">Zakończ oblężenie miasta</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeCannotStartDescription">Nie możesz teraz rozpocząć oblężenia.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeInvalidDiplomaticAbilitiesDescription">Nie posiadasz wymaganego statusu dyplomatycznego, by rozpocząć oblężenie miasta tego imperium.</LocalizationPair>
@@ -2844,13 +2893,13 @@ Armie korsarzy nie mogą zdobywać miast. Po udanym ataku, miasto jest równane 
   <LocalizationPair Name="%ArmyActionConvertTitle">Konwersja</LocalizationPair>
   <LocalizationPair Name="%ArmyActionConvertDescription">Skonwertuj spacyfikowaną wioskę.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 3 PD.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 6 PD.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionNotPacifiedDescription">Nie możesz skonwertować tej wioski, ponieważ nie została jeszcze spacyfikowana.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 3 PD.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 6 PD.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordConvertDescription">Nie masz wystarczającej ilości punktów, aby wykonać tę akcję.
  
-Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 3 PD.</LocalizationPair>
+Jeśli akcja jest wykonana przez bohatera, dostarcza bazowej wartości 6 PD.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPointRequirementFormat">Wymaga \7709\ ($Value) (i ewentualne koszty dodatkowe).</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyConvertedDescription">Nie można skonwertować wioski, która już jest skonwertowana.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAttackInvalidOwnVillageDescription">Nie można atakować wioski, którą już się posiada.</LocalizationPair>
@@ -3689,8 +3738,15 @@ Miasto poniesie następujące konsekwencje:
   <LocalizationPair Name="%NotificationBoosterEndedDescription">Efekt jednego lub więcej ulepszaczy zasobów się zakończył.</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedLineFormat">{0} : ulepszacz i jego efekty nie są już aktywne</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivate">Odnów</LocalizationPair>
-  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Nie można odnowić</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivateBoosterDescription">Kliknij ten przycisk, aby zapłacić i odświeżyć efekt wzmocnienia.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Nie można odnowić</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedTitle">Unused Resource Booster(s)</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedDescription">It has been quite some time since you last activated a resource booster. It can grant great advantages to your empire.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedLineFormat">{0} : the booster and its effects can be activated</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedActivate">Activate</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleTitle">Idle City Construction</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleDescription">One or more of your cities do not produce anything</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleLineTitle">No construction selected</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedTitle">Miasto zdobyte</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedDescription">Twoje miasto {0} zostało zdobyte przez imperium {1}</LocalizationPair>
   <LocalizationPair Name="%NotificationCityRazedTitle">Miasto zrównane z ziemią</LocalizationPair>
@@ -3788,7 +3844,7 @@ Miasto poniesie następujące konsekwencje:
   <LocalizationPair Name="%NotificationInteractionSucceededDescription">Wysiłki przy przeszukiwaniu lokacji opłaciły się.</LocalizationPair>
   <LocalizationPair Name="%NotificationMajorFactionDiscoveryTitle">Napotkano większe imperium</LocalizationPair>
   <LocalizationPair Name="%NotificationMajorFactionDiscoveryDescription">Napotykasz imperium {0}.</LocalizationPair>
-  <LocalizationPair Name="%NotificationMajorFactionDiscoveryNoLocationDescription">This empire knows where you are because your position has been revealed to them, but not the other way around.</LocalizationPair>
+  <LocalizationPair Name="%NotificationMajorFactionDiscoveryNoLocationDescription">To imperium wie, gdzie jesteś, ponieważ twoja pozycja została im wyjawiona, ale ty nie masz pojęcia o ich pozycji.</LocalizationPair>
   <LocalizationPair Name="%NotificationMinorFactionAssimilableTitle">Gotowość do asymilacji</LocalizationPair>
   <LocalizationPair Name="%NotificationMinorFactionAssimilableFormat">Pomniejsza frakcja "{0}" jest gotowa do bycia zasymilowaną do twojego imperium</LocalizationPair>
   <LocalizationPair Name="%NotificationMinorFactionDiscoveryTitle">Nowa pomniejsza frakcja: {0}</LocalizationPair>
@@ -3839,6 +3895,10 @@ Nowo wyszkolone jednostki będą teraz elitarne (poziom 6) i będą kosztować w
   <LocalizationPair Name="%AvailabilityEmpirePlanLevel4">Dostępny plan imperium 4 poziomu</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedTitle">Ewolucja populacji</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedDescription">Zmieniła się populacja jednego lub więcej twoich miast.</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedTitle">Pillar effect ended</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedDescription">One of your pillars had run its duration. You may want to reactivate it</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedTitle">Pillars unused</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedDescription">It has been quite some time since you last activated a pillar. You have the resources to activate one.</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationIncreased">Populacja {0} wzrosła do {1}</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationDecreased">Populacja {0} spadła do {1} w związku z głodem</LocalizationPair>
   <LocalizationPair Name="%NotificationQuestBegunTitle">Dodano nowe zadanie</LocalizationPair>
@@ -3895,7 +3955,7 @@ Nowo wyszkolone jednostki będą teraz elitarne (poziom 6) i będą kosztować w
   <LocalizationPair Name="%NotificationVictoryConditionAlertSupremacy#0Title">{0} są blisko zwycięstwa przez dominację</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertSupremacy#0Description">{0} posiadają już $Value z $TargetValue stolic wymaganych do zwycięstwa przez dominację.</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertWonder#0Title">{0} jest blisko zwycięstwa przez upiększenie</LocalizationPair>
-  <LocalizationPair Name="%NotificationVictoryConditionAlertWonder#0Description">{0} wybudował 50% of Świątyni Jądra Ziemi.</LocalizationPair>
+  <LocalizationPair Name="%NotificationVictoryConditionAlertWonder#0Description">{0} rozpoczął budowę Świątyni Jądra Ziemi.</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertLastEmpireStanding#0Title">{0} jest blisko zwycięstwa przez wyniszczenie</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertLastEmpireStanding#0Description">{0} już posiada 50% skolonizowanych regionów.</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertExodus#0Title">[Not used]</LocalizationPair>
@@ -3913,7 +3973,7 @@ Nowo wyszkolone jednostki będą teraz elitarne (poziom 6) i będą kosztować w
   <LocalizationPair Name="%NotificationVictoryConditionAlertSupremacy#0TitleYou">{0} są blisko zwycięstwa przez dominację</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertSupremacy#0DescriptionYou">{0} posiadają już $Value z $TargetValue stolic wymaganych do zwycięstwa przez dominację.</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertWonder#0TitleYou">{0} jest blisko zwycięstwa przez upiększenie</LocalizationPair>
-  <LocalizationPair Name="%NotificationVictoryConditionAlertWonder#0DescriptionYou">{0} wybudował 50% of Świątyni Jądra Ziemi.</LocalizationPair>
+  <LocalizationPair Name="%NotificationVictoryConditionAlertWonder#0DescriptionYou">{0} rozpoczął budowę Świątyni Jądra Ziemi.</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertLastEmpireStanding#0TitleYou">{0} jest blisko zwycięstwa przez wyniszczenie</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertLastEmpireStanding#0DescriptionYou">{0} już posiada 50% skolonizowanych regionów.</LocalizationPair>
   <LocalizationPair Name="%NotificationVictoryConditionAlertExodus#0TitleYou">{0} wkrótce osiągną zwycięstwo migracyjne</LocalizationPair>
@@ -4425,12 +4485,12 @@ Wszyscy gracze powrócą do lobby. Sesja zostanie ponownie rozpoczęta od tury, 
   <LocalizationPair Name="%LoadingUserStatus_GameClientState_Turn_DealWithGameEndingConditions">#00C0FF#W grze#REVERT#</LocalizationPair>
   <LocalizationPair Name="%LoadingUserStatus_GameClientState_DealtWithGameEndingConditions">#00C0FF#W grze#REVERT#</LocalizationPair>
   <LocalizationPair Name="%GeneratingDesyncReport">Tworzenie raportu o desynchronizacji w toku...</LocalizationPair>
-  <LocalizationPair Name="%DisconnectedFromServerHostLeft">Disconnected from server because the host has left the game ($reason,$error). Click OK to return to lobby.</LocalizationPair>
-  <LocalizationPair Name="%DisconnectedFromServerAuthFailure">Disconnected from server because the authentication has failed ($reason,$error). Click OK to return to lobby.</LocalizationPair>
-  <LocalizationPair Name="%DisconnectedFromServerSteamFailure">Disconnected from server because of the Steam failure ($reason,$error). Click OK to return to lobby.</LocalizationPair>
-  <LocalizationPair Name="%DisconnectedFromServerSteamServerFailure">Disconnected from server because of a Steam server failure ($reason,$error). Click OK to return to lobby.</LocalizationPair>
-  <LocalizationPair Name="%DisconnectedFromServerTimedOut">Disconnected from server because of a timed out session ($reason,$error). Click OK to return to lobby.</LocalizationPair>
-  <LocalizationPair Name="%DisconnectedFromServerP2PFailure">Disconnected from server because of a P2P failure ($reason,$error). Click OK to return to lobby.</LocalizationPair>
+  <LocalizationPair Name="%DisconnectedFromServerHostLeft">Rozłączono z serwerem, ponieważ gospodarz opuścił grę ($reason,$error). Kliknij OK, aby powrócić do lobby.</LocalizationPair>
+  <LocalizationPair Name="%DisconnectedFromServerAuthFailure">Rozłączono z serwerem, ponieważ nie powiodła się autoryzacja ($reason,$error). Kliknij OK, aby powrócić do lobby.</LocalizationPair>
+  <LocalizationPair Name="%DisconnectedFromServerSteamFailure">Rozłączono z serwerem ze względu na błąd Steam ($reason,$error). Kliknij OK, aby powrócić do lobby.</LocalizationPair>
+  <LocalizationPair Name="%DisconnectedFromServerSteamServerFailure">Rozłączono z serwerem ze względu na błąd serwera Steam ($reason,$error). Kliknij OK, aby powrócić do lobby.</LocalizationPair>
+  <LocalizationPair Name="%DisconnectedFromServerTimedOut">Rozłączono z serwerem ze względu limitu czasu sesji ($reason,$error). Kliknij OK, aby powrócić do lobby.</LocalizationPair>
+  <LocalizationPair Name="%DisconnectedFromServerP2PFailure">Rozłączono z serwerem ze względu na błąd P2P ($reason,$error). Kliknij OK, aby powrócić do lobby.</LocalizationPair>
   <LocalizationPair Name="%DisconnectedFromServerDefault">Disconnected from server ($reason,$error). Click OK to return to lobby.</LocalizationPair>
   <LocalizationPair Name="%DisconnectedFromServerClientLeft">Disconnected from server ($reason,$error). Click OK to return to lobby.</LocalizationPair>
   <LocalizationPair Name="%DisconnectedFromServerDesync">Disconnected from server ($reason,$error). Click OK to return to lobby.</LocalizationPair>
@@ -4606,4 +4666,14 @@ Wszyscy gracze powrócą do lobby. Sesja zostanie ponownie rozpoczęta od tury, 
   <LocalizationPair Name="%CultistsFaction">Pomysł frakcji Kultystów</LocalizationPair>
   <LocalizationPair Name="%CultistsModelConcept">Pomysł modeli Kultystów</LocalizationPair>
   <LocalizationPair Name="%CultistsLogoConcept">Pomysł logo Kultystów</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip1Title">Tip: you can level up a city district by building four other districts around it</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip2Title">Tip: outfiting your units with powerful equipment is instrumental to victory in battle</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip3Title">Tip: the more friendly units surround a unit in battle, the more moral it gets</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip4Title">Tip: Settlers consume all food production so you can assign food workers on something else while you build a settler</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip5Title">Tip: Expanding your city with new districts significantly increases you production, but also generates more unhapiness</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip6Title">Tip: Some units are betters against others, an utter defeat can be turned into a great victory with better unit composition</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip7Title">Tip: A beat-down opponent is more likely to accept a truce and give you techs and resources if you give him back a city he lost. </LocalizationPair>
+  <LocalizationPair Name="%LoadingTip8Title">Tip: Selling units on the marketplace is a great source of dust</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip9Title">Tip: Keep your cities garrisoned with more than just militia if you face a large invading army</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip10Title">Tip: Cultists can rebuild a destroyed village by converting it at twice the normal influence cost</LocalizationPair>
 </Datatable>

@@ -223,8 +223,9 @@
       <Icon Path="Gui/DynamicBitmaps/Quests/QuestAssault" Size="Small" />
     </Icons>
     <Steps>
-      <Step Name="SideQuestPOI#0016-Step1">%SideQuestPOI#0018-Step1</Step>
+      <Step Name="SideQuestPOI#0018-Step1">%SideQuestPOI#0018-Step1</Step>
     </Steps>
   </QuestGuiElement>
+
 
 </Datatable>

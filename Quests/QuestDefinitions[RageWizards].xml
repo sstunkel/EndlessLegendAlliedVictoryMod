@@ -927,7 +927,7 @@
       <Controller_Parallel CompletionPolicy="Any">
         
         <Controller_Loop LoopCount="3">
-          <Decorator_KillArmy CountAllDeadEnemyArmiesForStepProgression="true" LinkedStepProgression="MainQuestRageWizards-Chapter7-Step1" TargetOption="Any" Initiator="Empire">
+          <Decorator_KillArmy CountAllDeadEnemyArmiesForStepProgression="true" LinkedStepProgression="MainQuestRageWizards-Chapter7-Step1" TargetOption="Any" Initiator="AllEmpires">
             <EnemyArmyGUIDVarName>$ArmyID1</EnemyArmyGUIDVarName>
             <EnemyArmyGUIDVarName>$ArmyID3</EnemyArmyGUIDVarName>
             <EnemyArmyGUIDVarName>$ArmyID4</EnemyArmyGUIDVarName>

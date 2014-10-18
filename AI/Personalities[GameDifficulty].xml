@@ -994,4 +994,62 @@
     </Multipliers>
   </AIPersonalityDefinition>
 
+
+
+
+
+
+  <!-- ############################### -->
+  <!-- ### MINOR FACTION MODIFIERS ### -->
+  <!-- ############################### -->
+  <AIPersonalityDefinition Name="PersonalityMinorFactionGameDifficultyNewbie">
+    <Multipliers>
+
+      <!-- AI Registry -->
+      <AI>
+        <MinorEmpire>
+          <EraLevelFactor>0.5</EraLevelFactor>
+          <TurnLevelFactor>0.25</TurnLevelFactor>
+        </MinorEmpire>
+      </AI>
+
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <StartTurn>2</StartTurn>
+        <CitySiegeDuration>0.5</CitySiegeDuration>
+      </DeploymentStepDefinition>
+
+      <!-- AIMinorEmpireDefConDefinition Database -->
+      <AIMinorEmpireDefConDefinition>
+        <ArmyProductionCooldown>1.5</ArmyProductionCooldown>
+        <GarrisonGrowthCooldown>1.5</GarrisonGrowthCooldown>
+      </AIMinorEmpireDefConDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
+  <AIPersonalityDefinition Name="PersonalityMinorFactionGameDifficultyEasy">
+    <Multipliers>
+
+      <!-- AI Registry -->
+      <AI>
+        <MinorEmpire>
+          <TurnLevelFactor>0.5</TurnLevelFactor>
+        </MinorEmpire>
+      </AI>
+
+      <!-- DeploymentStepDefinition Database -->
+      <DeploymentStepDefinition>
+        <StartTurn>1.5</StartTurn>
+      </DeploymentStepDefinition>
+
+      <!-- AIMinorEmpireDefConDefinition Database -->
+      <AIMinorEmpireDefConDefinition>
+        <ArmyProductionCooldown>1.25</ArmyProductionCooldown>
+        <GarrisonGrowthCooldown>1.25</GarrisonGrowthCooldown>
+      </AIMinorEmpireDefConDefinition>
+
+    </Multipliers>
+  </AIPersonalityDefinition>
+
 </Datatable>

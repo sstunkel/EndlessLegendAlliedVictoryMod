@@ -192,11 +192,18 @@
       <SimulationPropertyDescriptor Name="PacifiedVillages_Birdhive"        BaseValue="0" MaxValue="6"/>
       <SimulationPropertyDescriptor Name="PacifiedVillages_Geldirus"        BaseValue="0" MaxValue="6"/>
 
+      <!-- Misc -->
       <SimulationPropertyDescriptor Name="CurrentEra"           BaseValue="1"/>
 
       <SimulationPropertyDescriptor Name="BoosterDurationMultiplier"           BaseValue="1"/>
 
       <SimulationPropertyDescriptor Name="BonusMovementOnEnemySpotted"/>
+
+      <SimulationPropertyDescriptor Name="PrestigeTrendBonusMaximumValue" BaseValue="10"/>
+      <SimulationPropertyDescriptor Name="PrestigeTrendBonusTrend"        BaseValue="0.25"/>
+      <SimulationPropertyDescriptor Name="PrestigeTrendBonus"             BaseValue="0" IsSealed="true"/>
+
+      <SimulationPropertyDescriptor Name="EmpireScaleFactor"              BaseValue="0"/>
 
     </SimulationPropertyDescriptors>
     <SimulationModifierDescriptors>
@@ -219,6 +226,7 @@
       <BinarySimulationModifierDescriptor TargetProperty="NetEmpireResearch"  Operation="Force"     Left="$(EmpireResearch)"      BinaryOperation="Subtraction" Right="$(EmpireResearchUpkeep)" Priority="-1"/>
       <BinarySimulationModifierDescriptor TargetProperty="NetEmpireApproval"  Operation="Force"     Left="$(EmpireApproval)"      BinaryOperation="Subtraction" Right="$(EmpireApprovalUpkeep)" Priority="-1"/>
       <SimulationModifierDescriptor       TargetProperty="NetEmpirePoint"     Operation="Force"     Value="$(EmpirePoint)"        Priority="-1"/>
+      <SimulationModifierDescriptor       TargetProperty="NetEmpirePoint"     Operation="Addition"  Value="$(PrestigeTrendBonus)" />
 
       <SimulationModifierDescriptor       TargetProperty="ClampedRelationScoreSum"  Operation="Addition"  Value="$(AffinityRelationScoreSum) max 0"/>
       <BinarySimulationModifierDescriptor TargetProperty="NetEmpirePeacePoint"      Operation="Addition"  Left="$(ClampedRelationScoreSum)"  BinaryOperation="Multiplication" Right="$(RelationScoreSumFactor)"/>

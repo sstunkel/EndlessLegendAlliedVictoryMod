@@ -43,8 +43,8 @@
       <AIModifier Name="AIRegionEsperanceDistrictIndustry"                Value="0.8"/>
       <AIModifier Name="AIRegionEsperanceDistrictDust"                    Value="0.3"/>
       <AIModifier Name="AIRegionEsperanceDistrictScience"                 Value="0.5"/>
-      <AIModifier Name="AICityGrowth"                                     Value="1.3"/>
-      <AIModifier Name="AICityProduction"                                 Value="0.8"/>
+      <AIModifier Name="AICityGrowth"                                     Value="1"/>
+      <AIModifier Name="AICityProduction"                                 Value="1"/>
       <AIModifier Name="AICityMoney"                                      Value="0.3"/>
       <AIModifier Name="AICityResearch"                                   Value="0.5"/>
       <AIModifier Name="AICityEmpirePoint"                                Value="0.1"/>
