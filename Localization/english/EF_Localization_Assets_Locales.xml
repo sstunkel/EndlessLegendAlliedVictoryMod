@@ -103,7 +103,7 @@
   <LocalizationPair Name="%CityImprovementFood6Title">Aquaculture Center</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood6Description">As well as providing a smorgasbord of fish, crustaceans, mollusks, and aquatic plants in its own right, this center enables members of the populace to seed micro-aquaculture kits that can be used by families.</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood7Title">Fish Farm</LocalizationPair>
-  <LocalizationPair Name="%CityImprovementFood7Description">Nets and cages tended along riverbanks increase fish yields, raising Food production.</LocalizationPair>
+  <LocalizationPair Name="%CityImprovementFood7Description">Nets and cages by the shores of lakes and along reefs increase fish yields, raising Food production.</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood8Title">Plow Factory</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood8Description">A revolutionary improvement, curved iron plows, increases the amount of Food produced.</LocalizationPair>
   <LocalizationPair Name="%CityImprovementFood9Title">Subterranean Gardens</LocalizationPair>
@@ -365,9 +365,9 @@
   <LocalizationPair Name="%Village_GauranTitle">Gauran</LocalizationPair>
   <LocalizationPair Name="%Village_GauranDescription">Simple creatures with simple needs, the villages of the Gauran are often basic things built of sod and deadwood. Uninterested in frills and decoration, the Gauran ask only that warmth and food be present.</LocalizationPair>
   <LocalizationPair Name="%Village_BirdhiveTitle">Nidya</LocalizationPair>
-  <LocalizationPair Name="%Village_BirdhiveDescription">Though bird-like in their appearance, the Nidya are closer to humanoid than one might think. The young are birthed, not hatched, and like other advanced peoples their habitats are carefully chosen for defense, foraging, and observation.</LocalizationPair>
+  <LocalizationPair Name="%Village_BirdhiveDescription">Due to their wingspan and hunting traditions, the Nidya are not particularly attracted to living in trees. Building their tunnels and nests instead for easy access and escape, the Nidya keep a careful eye on their surroundings.</LocalizationPair>
   <LocalizationPair Name="%Village_GeldirusTitle">Geldirus</LocalizationPair>
-  <LocalizationPair Name="%Village_GeldirusDescription">The origins of this species are found in a pack of wolves that were driven into inhospitably high tundra after losing a series of fights with the Drakken. Infected by Dust in an ancient ruin of the Endless, their new form has rendered them indifferent to the coldest environments and seasons.</LocalizationPair>
+  <LocalizationPair Name="%Village_GeldirusDescription">Geldirus villages are simple things, befitting a simple people. Often carved from slabs of snow or fitted rocks plugged with mud, their towns are more for storage and social connections than warmth and defense.</LocalizationPair>
   <LocalizationPair Name="%CityConstructibleActionRazeTitle">Salting the Earth</LocalizationPair>
   <LocalizationPair Name="%CityConstructibleActionRazeDescription">Whether the result of an impetuous colonization decision or an impending attack, sometimes everything in a city must be destroyed and the population removed.</LocalizationPair>
   <LocalizationPair Name="%CityConstructibleActionMigrateTitle">Setseke Ho!</LocalizationPair>
@@ -429,8 +429,8 @@
   <LocalizationPair Name="%WatchTowerRuinsTitle">Foundation </LocalizationPair>
   <LocalizationPair Name="%WatchTowerRuinsDescription">Some ancient architect laid a foundation here that has stood the test of time. Given its location and the quality of the work, it is an ideal place to build a Watchtower. </LocalizationPair>
   <LocalizationPair Name="%FactionBrokenLordsTitle">Broken Lords</LocalizationPair>
-  <LocalizationPair Name="%FactionBrokenLordsDescription">A faction of knights and town-builders, they exist only as spirits wrapped in great suits of armor. They are noble warriors who wear the polished armor of chivalry and adhering to its ideals, even though they are immaterial and have lost much of their humanity.</LocalizationPair>
-  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Main Victory Type: Conquest</LocalizationPair>
+  <LocalizationPair Name="%FactionBrokenLordsDescription">A faction of knights dependent on Dust for survival, they exist only as spirits wrapped in great suits of armor. They are noble warriors who wear the polished armor of chivalry and adhering to its ideals, even though they are immaterial and have lost much of their humanity.</LocalizationPair>
+  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Main Victory Type: Expansion</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyCaption">Vanguard</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle1">Hearth</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle2">Truth</LocalizationPair>
@@ -662,7 +662,7 @@
   <LocalizationPair Name="%FactionDelversTitle">Delvers</LocalizationPair>
   <LocalizationPair Name="%FactionDelversDescription">The Delvers have their origins in humanoids that were trapped deep underground after an earlier cataclysm. They fought their way back up to the light, an effort of decades that made them skilled miners, tunnelers, and explorers.</LocalizationPair>
   <LocalizationPair Name="%FactionSistersOfMercyTitle">Sisters of Mercy</LocalizationPair>
-  <LocalizationPair Name="%FactionSistersOfMercyDescription">Centers of worship and study, the towns of the Sisters of Mercy appear civilized and well-run. They are certainly well-run, though they become quite uncivilized if attacked...</LocalizationPair>
+  <LocalizationPair Name="%FactionSistersOfMercyDescription">The Sisters of Mercy are a small but respected nation, living simply though well in their solidly constructed towns. A recent offshoot of other humanoid peoples, they are content to dedicate their efforts to giving mercy where - and how - they deem it is most needed.</LocalizationPair>
   <LocalizationPair Name="%FactionHauntsTitle">Haunts</LocalizationPair>
   <LocalizationPair Name="%FactionHauntsDescription">An echo or 'ghost' effect of the ancient wars, these beings appear to be animated remnants of ancient intelligences. Their desire and purpose is unknown.</LocalizationPair>
   <LocalizationPair Name="%FactionJotusTitle">Jotus</LocalizationPair>
@@ -2568,7 +2568,7 @@ LEVEL 4
    20% CHANCE TO STUN THE TARGET FOR 2 ROUNDS WHEN ATTACKING</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityStun3Title">Stun 3</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityStun3Description">#FFB43F#EFFECTS#REVERT#
-   30% CHANCE TO STUN THE TARGET FOR 2 ROUNDSD WHEN ATTACKING</LocalizationPair>
+   30% CHANCE TO STUN THE TARGET FOR 2 ROUNDS WHEN ATTACKING</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityStun4Title">Stun 4</LocalizationPair>
   <LocalizationPair Name="%UnitAbilityStun4Description">#FFB43F#EFFECTS#REVERT#
    40% CHANCE TO STUN THE TARGET FOR 2 ROUNDS WHEN ATTACKING</LocalizationPair>
@@ -3716,7 +3716,7 @@ LEVEL 3
   <LocalizationPair Name="%TechnologyDefinitionAssimilationLimitMax1DrakkensTitle">Protectors of Auriga</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionAssimilationLimitMax1DrakkensDescription">By their impressive size and kindly but authoritative words, these polished Drakken emissaries can assimilate even the most fearful and distrusting villages.</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionAssimilationLimitMax2DrakkensTitle">Tribal Council</LocalizationPair>
-  <LocalizationPair Name="%TechnologyDefinitionAssimilationLimitMax2DrakkensDescription">Emissaries of Minor Factions create a small council to learn each other’s ways and study Drakken ways. Improved integration and understanding are the result.</LocalizationPair>
+  <LocalizationPair Name="%TechnologyDefinitionAssimilationLimitMax2DrakkensDescription">Emissaries of Minor Factions create a small council to learn each other's ways and study Drakken ways. Improved integration and understanding are the result.</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionAccessorySlotBonus1Title">Tailor's Guild</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionAccessorySlotBonus1Description">The finest silksmiths in the land drive empire fashion into new territory. Heroes co-opt some of the more practical-minded garments to enable themselves to carry more.</LocalizationPair>
   <LocalizationPair Name="%TechnologyDefinitionArmorSlotBonus1Title">Dust Lattices</LocalizationPair>
@@ -5717,7 +5717,7 @@ Marquis Suluzzo is perhaps the worst. Though all the nobles and fanatics seek an
 But I cannot accept this. It is expedient, but that does not make it just or right. Sadly, my hand has been forced and I have little choice but to let the sages and alchemists study, seeking an answer that is pleasing to their greedy patrons. We will forge ahead with research and improve our knowledge -- though I do it for other reasons. For my part I would see our people resist temptation, even if it presents a risk. There is a reason that the first word of the royal seal is "honor".</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Objective">Mysteries of the planet's past likely give keys to your future. Improve your scientific knowledge to help decrypt them.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1">Research 8 Technologies of the Research Era I</LocalizationPair>
-  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">These technologies must be in addition to the starting Broken Lords Technologies</LocalizationPair>
+  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Technologies obtained through quests don't count to enter a new Era of technology and don't impact Research costs.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2">Research 12 Technologies from the Research Era I</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2Tooltip">Technologies obtained through quests don't count to enter a new Era of technology and don't impact Research costs.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Outcome">This is most interesting. As well as discovering great new advances in magic and alchemy, we have also discovered something ancient and powerful; a simple circlet that hums with suppressed power.</LocalizationPair>
@@ -5897,8 +5897,8 @@ Not that reaching them will be easy. Already word of the "Argosy"'s existence ha
   <LocalizationPair Name="%MainQuestVaulters-Chapter6Objective">Rebels claiming that Zolya leads the Vaulters to annihilation have taken a city, crippling the supply of vital resources. They must be dealt with.</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step1">On a Vaulter Hero, unlock the Level $SkillLevelToCheckNumber of the skill $VaultersSkillName</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step1Tooltip">Level up a Vaulter Hero until they obtain the appropriate skill level</LocalizationPair>
-  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2">During $Timer turns, stop using the Vaulters Affinity Resource. Assign a Vaulter Hero with the skill $VaultersSkillName to one of your cities.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2Tooltip">Avoid use of the Affinity Resource for a number of turns</LocalizationPair>
+  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2">During $Timer turns, stop using the Vaulters Holy Resource Boosters. Assign a Vaulter Hero with the skill $VaultersSkillName to one of your cities.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestVaulters-Chapter6-Step2Tooltip">Avoid use of the Holy Resource Boosters for a number of turns</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6Outcome">There may be hope. Reason returns to the cities; Zolya re-asserts her will. I dare, once again, to regard the stars...</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6AltTitle">6. Crisis of Faith</LocalizationPair>
   <LocalizationPair Name="%MainQuestVaulters-Chapter6AltDescription">I have told Zolya my dark shame. My mechanical limbs shook as I confessed. For a long while she stayed silent. She told me that this was a hard truth for her to hear, but better that she knew than didn't. She said she'd begun to draw away from me, but with this confession she could begin to have faith in me again. "Will it happen again?" she whispered. I told her I couldn't be certain it would not, but that I thought it unlikely. "You harm a single one of my people, and I will have you broken into a million pieces." After these words she has said nothing more on the subject, and I believe that she keeps my confession to herself. I mustn't let her down. I long to be back among the stars.
@@ -6060,7 +6060,7 @@ We are the Necrophage.</LocalizationPair>
   <LocalizationPair Name="%MainQuestNecrophages-Chapter8Outcome">If the winter devours us our descendents will rise -- of that I am sure. And at times I dream that one day another will surpass me, and take us to the stars...</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter1Title">1. Embers</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter1Description">Slain! My brother, Verda Abaz, High Sunseeker of the mighty Al-Rubit Clan, is slain, struck down by unseen hands. And the cushion plumpers? The soft-bellied priests and commanders who buzz around the Saoshyant like flies around dung--they whisper in his ear that my hand played a part in his death. Thus, I, Zor Abaz had no choice but to flee. What dark magics my brother entwined himself with I do not know, but what I know is that his loyalty to our people, his loyalty to our gods, was beyond reproach. That whatever path he'd set himself upon was one for the glory and protection of our people. I swear, as the stars are my witness, I will find the perpetrator and inflict on them the ultimate penance. And more than this, I will discover my brother's quest: His work will not die! We will stand united, the fiery branches lashing our bare backs, and revel in the ecstasy. Who will join me!</LocalizationPair>
-  <LocalizationPair Name="%MainQuestRageWizards-Chapter1Objective">Try to bring together your followers and the faithful after the events of your brother’s death.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestRageWizards-Chapter1Objective">Try to bring together your followers and the faithful after the events of your brother's death.</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter1-Step1">Parley with at least 2 villages $Progression to gather more information about your brother's death</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter1-Step1Tooltip">Use the Research screen to unlock Language Square, a technology enabling you to Parley with Minor Faction tribes</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter1-Step2">There are rumors of rogue troops nearby. Go search the ruins marked by the rays of Dust.</LocalizationPair>
@@ -6083,13 +6083,13 @@ I have talked with one--a man named Fisilt--who claims knowledge of my brother's
   <LocalizationPair Name="%MainQuestRageWizards-Chapter3Title">3. Prudence before Passion</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter3Description">We possess the finest interrogators in all Auriga. Our Inquistors know the landscape of pain the way a red spider knows the dunes; they know how to burrow through weak flesh in search of the truth. That my Inquisitors learnt little from the prisoners tells me that there was little to know. Search the ruins, they were told. Safeguard any trinkets you find, and smite any who follow in your path. Who gave them such instructions, and for what ends, remains shrouded in darkness.
  
-Pure rage, pure violence isn't always enough. Sometimes the mind can see further than the eye, and now I wonder what other traps my brother’s enemies - my enemies - have laid. There are many other villages in nearby regions, thus many other potential risks and traitors. We must find them, speak with them, and ensure that no other traps have been laid that may catch us unawares.</LocalizationPair>
+Pure rage, pure violence isn't always enough. Sometimes the mind can see further than the eye, and now I wonder what other traps my brother's enemies - my enemies - have laid. There are many other villages in nearby regions, thus many other potential risks and traitors. We must find them, speak with them, and ensure that no other traps have been laid that may catch us unawares.</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter3Objective">Ensure that Minor Factions are no longer a threat to your Empire</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter3-Step1">Pacify at least 5 villages within your Empire</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter3-Step1Tooltip">Villages can be pacified by force, with a Bribe, or by aiding them in a quest</LocalizationPair>
-  <LocalizationPair Name="%MainQuestRageWizards-Chapter3Outcome">I find no other assassins, traps, or hidden enemies; the security of my empire can be left to others. Now I can study my brother’s scepter, his alchemies, and the security of our future.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestRageWizards-Chapter3Outcome">I find no other assassins, traps, or hidden enemies; the security of my empire can be left to others. Now I can study my brother's scepter, his alchemies, and the security of our future.</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter4Title">4. A Trail Gone Cold</LocalizationPair>
-  <LocalizationPair Name="%MainQuestRageWizards-Chapter4Description">Every morning after administering my seven repents, I walk from the castellum to the chamber where my brother’s scepter hangs, and take it in my hands. The instrument hums with a strange power, as if it is restless, as if it still seeks something. I imagine Verda holding it, spinning it, mastering it. Somehow it holds the key to his demise, holds the key to his work. We will found a new city, populate it with our brightest minds, and raise it as a center of mortification and study as is needed to understand my brother's enquiries. The scepter has an affinity with the Dust that permeates this world, like a diviner's rod channeling ancient forces. I am certain that Dust is key to what my brother sought to achieve, but by what methods remain a mystery . . .
+  <LocalizationPair Name="%MainQuestRageWizards-Chapter4Description">Every morning after administering my seven repents, I walk from the castellum to the chamber where my brother's scepter hangs, and take it in my hands. The instrument hums with a strange power, as if it is restless, as if it still seeks something. I imagine Verda holding it, spinning it, mastering it. Somehow it holds the key to his demise, holds the key to his work. We will found a new city, populate it with our brightest minds, and raise it as a center of mortification and study as is needed to understand my brother's enquiries. The scepter has an affinity with the Dust that permeates this world, like a diviner's rod channeling ancient forces. I am certain that Dust is key to what my brother sought to achieve, but by what methods remain a mystery . . .
  
 A great temple of science must be constructed, and the nature of Dust, and its link with pain, must be explored. Word comes from outside our borders that other races are afoot, jostling for land and power. We must be leery of these races, protect ourselves from their advances in any manner we see fit, but we must not delay in our scientific explorations. The winters grow fiercer, grow longer, and I fear that one year there will come a final judgment. And I believe the means of our salvation will not be found in thicker furs or higher walls or sharper blades, but in something much deeper, something my brother glimpsed in his agonized dreams.</LocalizationPair>
   <LocalizationPair Name="%MainQuestRageWizards-Chapter4Objective">Found a city dedicated to scientific research in order to better understand your brother's scepter and magic. Gods willing, these studies will shed light on his mysterious death too.</LocalizationPair>
@@ -6740,8 +6740,7 @@ Attack \7772\ determines your ability to inflict damage
 Defense  \7773\ reduces attack odds
 Initiative \7774\ helps your unit strike first in battle
 Damage \7776\ determines the hit score of a successful attack
-Speed \7757\ determines the number of tiles the unit can move per round
-Range determines the maximum distance at which a unit can hit its target</LocalizationPair>
+Speed \7757\ determines the number of tiles the unit can move per round</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title73">Contextual Bonuses</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content73">Attributes can also be impacted by other factors: Relative Position, Altitude and Terrain</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title74">Contextual Bonuses</LocalizationPair>
@@ -6749,16 +6748,16 @@ Range determines the maximum distance at which a unit can hit its target</Locali
 Elevation: Units also increase their Attack \7772\ when attacking from a higher position.
 Terrain: Forest tiles increase Unit Defense \7773\ and City tiles increase Morale.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title75">Capacities</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content75">Capacities are special abilities automatically used by units when attacking or being attacked. The range capacity, for example, gives the maximum distance from where a unit can attack. You can mouse over the capacities to get more details from the tooltips.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content75">Capacities are special abilities automatically used by units when attacking or being attacked. The "Ranged" capacity, for example, gives the maximum distance from where a unit can attack. You can mouse over the capacities to get more details from the tooltips.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title76">Deployment Validation</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content76">The Deployment Phase enables you to change the position of units at will.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Action76">Select a unit and right-click #FFFFFF#\9997\#REVERT# on a tile of your empire color to set its new position. Then Press Ready once you're happy with your troops' deployment.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title77">[DEPRECATED] Press Ready</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content77">[DEPRECATED] When you have placed all your units where you wanted, you can press "Ready" in the bottom left corner of the screen</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title78">Initiative Bar</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content78">Each unit can move and attack each round. The Initiative Bar shows the order in which units will move or attack, depending on their Initiative \7774\ attribute. Note that if a unit is attacked it will automatically counter attack, potentially using its action for that round prematurely.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Title79">Targeting Phase</LocalizationPair>
-  <LocalizationPair Name="%MainQuestTutorial-Content79">During the Targeting Phase, you can select a destination or a target unit for each of your units for the next round. If you don't, your units will choose their target according to their Unit strategy or the overall strategy setting.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content78">Each unit will move and attack each round. The Initiative Bar shows the order in which units will play during the Resolution Phase, depending on their Initiative \7774\ attribute. Note that if a unit is attacked it will automatically counter attack, using its action prematurely for that round.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Title79">Manual Targeting</LocalizationPair>
+  <LocalizationPair Name="%MainQuestTutorial-Content79">In addition, you can also manually select a destination or a target unit. Your unit will then try to focus on it during the Resolution Phase. Note that you can even select a position (right-click #FFFFFF#\9997\#REVERT#) and then select a target unit (Ctrl + right-click #FFFFFF#\9997\#REVERT#) in order to have more control.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title80">Targeting Phase</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content80" />
   <LocalizationPair Name="%MainQuestTutorial-Action80">Select one of your units.</LocalizationPair>

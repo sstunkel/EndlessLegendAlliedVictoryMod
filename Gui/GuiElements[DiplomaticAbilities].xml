@@ -53,7 +53,7 @@
     <Title>%DiplomaticAbilityPrestigeGainsTitle</Title>
     <Description>%DiplomaticAbilityPrestigeGainsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityPrestigeGainsSmall" />
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityInfluenceGainsSmall" />
     </Icons>
   </GuiElement>
   
@@ -61,7 +61,7 @@
     <Title>%DiplomaticAbilityPrestigeForKillsTitle</Title>
     <Description>%DiplomaticAbilityPrestigeForKillsDescription</Description>
     <Icons>
-      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityPrestigeForKillsSmall" />
+      <Icon Size="Small" Path="GUI/DynamicBitmaps/DiplomaticAbilities/DiplomaticAbilityInfluenceForKillsSmall" />
     </Icons>
   </GuiElement>
   

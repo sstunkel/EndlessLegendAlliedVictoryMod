@@ -229,7 +229,7 @@
 
   <!-- Food Efficient -->
   <FactionTrait Name="FactionTraitEconomy7Positive"     SubCategory="CustomTrait" Family="Economy" Custom="true" Cost="25">
-    <Prerequisites>!AffinityBrokenLords</Prerequisites>
+    <Prerequisites>!AffinityBrokenLords,!FactionTraitNecrophages1</Prerequisites>
     <SimulationDescriptorReference Name="FactionTraitEconomy7Positive"/>
   </FactionTrait>
 

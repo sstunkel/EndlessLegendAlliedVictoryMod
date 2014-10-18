@@ -121,6 +121,19 @@
     </Sounds>
   </ExtendedGuiElement>
 
+  <ExtendedGuiElement Name="EventCityIdle">
+    <Title>%NotificationCityIdleTitle</Title>
+    <Description>%NotificationCityIdleDescription</Description>
+    <Icons>
+      <Icon Path="NotificationCityIdleIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/MissingResearch" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
   <ExtendedGuiElement Name="EventCityStarvation">
     <Title>%NotificationCityStarvationTitle</Title>
     <Description>%NotificationCityStarvationDescription</Description>
@@ -482,7 +495,33 @@
       <!--<Sound EventName="Gui/Jingles/EraJingle" Type="OnFirstShow" />-->
     </Sounds>
   </ExtendedGuiElement>
-  
+
+  <ExtendedGuiElement Name="EventPillarEnded">
+    <Title>%NotificationPillarEndedTitle</Title>
+    <Description>%NotificationPillarEndedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationPillarUnusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventPillarUnused">
+    <Title>%NotificationPillarUnusedTitle</Title>
+    <Description>%NotificationPillarUnusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationPillarUnusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
   <ExtendedGuiElement Name="EventPopulationModified">
     <Title>%NotificationPopulationModifiedTitle</Title>
     <Description>%NotificationPopulationModifiedDescription</Description>
@@ -549,6 +588,19 @@
       <Sound EventName="Gui/Jingles/QuestFailed" Type="OnFirstShow" />
       <Sound EventName="Gui/Jingles/QuestGeneral" Type="OnLoadEvent" />
       <!--Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" /-->
+      <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
+    </Sounds>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="EventResourceLuxuryUnused">
+    <Title>%NotificationResourceLuxuryUnusedTitle</Title>
+    <Description>%NotificationResourceLuxuryUnusedDescription</Description>
+    <Icons>
+      <Icon Path="NotificationResourceLuxuryUnusedIcon" Size="Small" />
+    </Icons>
+    <Sounds>
+      <Sound EventName="Gui/Jingles/GeneralEvent" Type="OnLoadEvent" />
+      <Sound EventName="Gui/Jingles/OnShowGeneral" Type="OnShow" />
       <Sound EventName="Gui/Jingles/OnHideGeneral" Type="OnHide" />
     </Sounds>
   </ExtendedGuiElement>

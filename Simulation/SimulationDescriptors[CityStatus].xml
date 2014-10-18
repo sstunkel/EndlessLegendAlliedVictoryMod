@@ -45,7 +45,7 @@
       <SimulationModifierDescriptor TargetProperty="CityApproval" Operation="Subtraction" Value="10" Path="ClassCity"/>
 
       <SimulationModifierDescriptor TargetProperty="PopulationBonus" Operation="Multiplication" Value="0" Path="ClassCity/PointOfInterestTypeVillage"/>
-      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn" Operation="Addition" Value="2" Path="ClassCity/ClassUnit,UnitHero"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn" Operation="Addition" Value="4" Path="ClassCity/ClassUnit,UnitHero"/>
 
     </SimulationModifierDescriptors>
   </SimulationDescriptor>

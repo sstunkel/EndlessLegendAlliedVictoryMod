@@ -3447,7 +3447,7 @@
         <Mapping Name="Item.Generic" />
         <Slot Name="MainHand" />
       </Attachment>
-      <Attachment Scale="0.5">
+      <Attachment Scale="0.7">
         <Mapping Name="Item.Generic" />
         <Slot Name="OffHand" />
       </Attachment>

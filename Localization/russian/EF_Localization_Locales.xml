@@ -469,6 +469,37 @@ $Date</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedSlowDescription">Медленный темп игры</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessTitle">Безграничный</LocalizationPair>
   <LocalizationPair Name="%GameOptionGameSpeedEndlessDescription">Не торопитесь сокрушать вашего противника.</LocalizationPair>
+  <LocalizationPair Name="%ModDefaultTitle">The default game is active</LocalizationPair>
+  <LocalizationPair Name="%ModActiveFormat">Active mod: {0}</LocalizationPair>
+  <LocalizationPair Name="%DefaultModTitle">Default Game</LocalizationPair>
+  <LocalizationPair Name="%DefaultModDescription">Reverts Endless Legend to the default game</LocalizationPair>
+  <LocalizationPair Name="%ConfirmDefaultGame">This is will revert the game to using the default mod</LocalizationPair>
+  <LocalizationPair Name="%ActivateModTitle">Activate Mod</LocalizationPair>
+  <LocalizationPair Name="%ActivateModDescription">Configures the game to use the selected mod</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsTitle">Available Mods</LocalizationPair>
+  <LocalizationPair Name="%AvailableModsDescription">Список доступных МОДов для Endless Legend, расположены в папке EndlessLegend/Modding/ .</LocalizationPair>
+  <LocalizationPair Name="%NoAvailableModsTitle">No mods are available  to activate</LocalizationPair>
+  <LocalizationPair Name="%LoadingRuntimeModule">Loading mod</LocalizationPair>
+  <LocalizationPair Name="%ModNameTitle">МОД</LocalizationPair>
+  <LocalizationPair Name="%ModNameDescription">Название МОДа.</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorTitle">Автор</LocalizationPair>
+  <LocalizationPair Name="%ModAuthorDescription">Автор(ы) МОДа.</LocalizationPair>
+  <LocalizationPair Name="%ModTypeTitle">Type</LocalizationPair>
+  <LocalizationPair Name="%ModTypeDescription">Type of the mod.</LocalizationPair>
+  <LocalizationPair Name="%ModTypeStandaloneTitle">Standalone</LocalizationPair>
+  <LocalizationPair Name="%ModTypeConversionTitle">Conversion</LocalizationPair>
+  <LocalizationPair Name="%ModTypeExtensionTitle">Extension</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteTitle">Веб-сайт</LocalizationPair>
+  <LocalizationPair Name="%ModWebsiteDescription">Веб-сайт МОДа.</LocalizationPair>
+  <LocalizationPair Name="%ModVersionTitle">Версия</LocalizationPair>
+  <LocalizationPair Name="%ModVersionDescription">Версия МОДа.</LocalizationPair>
+  <LocalizationPair Name="%ModDescriptionTitle">Description</LocalizationPair>
+  <LocalizationPair Name="%ModReleaseNotesTitle">Release notes</LocalizationPair>
+  <LocalizationPair Name="%ConfirmEnterMods">Вы собираетесь перейти на экран модификаций Endless Legend. Модификации, созданные пользователи, расширяют и дополняют оригинальный игровой контент, созданный AMPLITUDE Studios.
+ 
+AMPLITUDE Studios ни при каких условиях не будет нести ответственности за содержимое и поведение модификаций, и не будет осуществлять проверку контента, работоспособности и даже легальности модификаций. Тем самым, AMPLITUDE Studios никак не гарантирует содержимое, возможности и работоспособность этих модификаций. 
+ 
+Нажав кнопку "ОК", вы подтверждаете, что используете эти модификации на свой страх и риск, и заявляете, что не будете предъявлять к AMPLITUDE Studios никаких претензий в случае утери данных или иного ущерба, причиненного вашему компьютеру. </LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTitle">Размер региона</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeDescription">Выбрать размер региона.</LocalizationPair>
   <LocalizationPair Name="%WorldGeneratorOptionRegionSizeTinyTitle">Карлик</LocalizationPair>
@@ -875,6 +906,13 @@ $Date</LocalizationPair>
   <LocalizationPair Name="%CreateInstancingMesh">Create Instancing Mesh</LocalizationPair>
   <LocalizationPair Name="%ClearingUnusedMemory">Clearing Unused Memory</LocalizationPair>
   <LocalizationPair Name="%AllTerrainDataLoaded">All Terrain Data Loaded</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadingOutgameView">Loading the main menu</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateLoadGame">Loading the game</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateAuthenticating">Authenticating…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateConnectingToServer">Connectin to server…</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForPlayersEndTurn">Waiting for players to end their turn</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForGameData">Waiting for game data</LocalizationPair>
+  <LocalizationPair Name="%GameClientStateWaitingForServer">Waiting for serveur</LocalizationPair>
   <LocalizationPair Name="%RiverTitle">Река</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersTitle">Внутренние воды</LocalizationPair>
   <LocalizationPair Name="%TerrainTypeChillyInlandWatersDescription">[Not used] Description of Chilly Inland Waters</LocalizationPair>
@@ -1011,6 +1049,7 @@ $Date</LocalizationPair>
   <LocalizationPair Name="%QuitDescription">Завершить текущую игровую сессию.</LocalizationPair>
   <LocalizationPair Name="%ResumeTitle">Продолжить</LocalizationPair>
   <LocalizationPair Name="%ResumeDescription">Продолжить текущую игровую сессию.</LocalizationPair>
+  <LocalizationPair Name="%WorldSeedFormat">World Seed: $Value</LocalizationPair>
   <LocalizationPair Name="%OptionsTitle">Параметры</LocalizationPair>
   <LocalizationPair Name="%OptionsDescription">Выберите удобные для вас параметры игры: видео, аудио и т. д.</LocalizationPair>
   <LocalizationPair Name="%OptionToggleAudioTitle">Аудио</LocalizationPair>
@@ -1146,6 +1185,10 @@ $Date</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBailiffWarningDescription">Показывать уведомление, когда ваша империя оказывается под угрозой банкротства.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedTitle">Всплывающее окно "Заканчивается бонус ресурса"</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationBoosterEndedDescription">Показывать уведомление, когда заканчивается действие бонуса ресурсов.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedTitle">Auto pop-up Unused Boosters</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationBoosterUnusedDescription">Display pop-up notification when resources boosters are not used while it could be activated</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleTitle">Auto pop-up City: Idle construction</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationCityIdleDescription">Display pop-up notification when a city is not producing anything</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedTitle">Автооповещение о захвате города</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityCapturedDescription">Отображать оповещение, когда империя противника захватывает город.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationCityRazedTitle">Автооповещение о разрушении города</LocalizationPair>
@@ -1182,6 +1225,10 @@ $Date</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationMinorFactionDiscoveryDescription">Показывать уведомление при обнаружении новой Малой фракции.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraTitle">Всплывающее окно "Новая эра"</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationNewEraDescription">Показывать уведомление, когда начинается новая эра в развитии технологий.</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedTitle">Auto pop-up City: Ended Pillar</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarEndedDescription">Display pop-up notification when a pillar effect has ended</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedTitle">Auto pop-up City: Unused Pillar</LocalizationPair>
+  <LocalizationPair Name="%OptionAutoPopupNotificationPillarUnusedDescription">Display pop-up notification when you are not using pillars</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedTitle">Всплывающее окно "Рост численности населения"</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationPopulationModifiedDescription">Показывать уведомление, когда в одном из ваших городов изменяется численность населения.</LocalizationPair>
   <LocalizationPair Name="%OptionAutoPopupNotificationQuestTitle">Всплывающее окно "Квест"</LocalizationPair>
@@ -2000,6 +2047,7 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%Spell5LevelTitle">Заклинание Исцеления</LocalizationPair>
   <LocalizationPair Name="%SpellsLevelTitle">Уровень всех заклинаний</LocalizationPair>
   <LocalizationPair Name="%PrestigeTrendBonusTitle">Дипломатия</LocalizationPair>
+  <LocalizationPair Name="%PrestigeTrendBonusTrendTitle">Рост Престижа (Дипломатия)</LocalizationPair>
   <LocalizationPair Name="%MilitiaTitle">Ополчение</LocalizationPair>
   <LocalizationPair Name="%MercenaryTitle">Наемники</LocalizationPair>
   <LocalizationPair Name="%CommercialAgreementBonusTitle">Торговое соглашение</LocalizationPair>
@@ -2705,6 +2753,7 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPointDescription">Доступные этой армии очки действия</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCostDescription">Необходимое для данного действия число очков.</LocalizationPair>
   <LocalizationPair Name="%ArmyNameFormat">Армия $Name</LocalizationPair>
+  <LocalizationPair Name="%ArmyGeneratedNameFormat">$Number $Title $Caption</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatSingle">{0}/{1} Юнитов</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsFormatPlural">{0}/{1} Юнитов</LocalizationPair>
   <LocalizationPair Name="%ArmyUnitsWithoutMaxFormatSingle">{0} Юнитов</LocalizationPair>
@@ -2756,10 +2805,10 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeTitle">Подкуп</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeDescription">Подкупить деревню Малой фракции. Она будет моментально усмирена.
  
-Когда поиск выполняется Героем, вы получаете базовые 1 очков опыта.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 4 очков опыта.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionBribeNoCostDescription">Подкупить деревню Малой фракции. Она будет моментально усмирена, но за это придется заплатить.
  
-Когда поиск выполняется Героем, вы получаете базовые 1 очков опыта.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 4 очков опыта.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordBribeDescription">У вас не хватает средств, чтобы Подкупить эту деревню,.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionOneVillageOrManyLockedDescription">В настоящее время вы не можете использовать Подкуп для этой деревни.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyPacifiedDescription">Эта деревня уже усмирена.</LocalizationPair>
@@ -2777,7 +2826,7 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%ArmyActionParleyTitle">Переговоры</LocalizationPair>
   <LocalizationPair Name="%ArmyActionParleyDescription">Начать переговоры с деревней Малой фракции. Если вы выполните ее требования, все деревни этой фракции в регионе будут усмирены.
  
-Когда поиск выполняется Героем, вы получаете базовые 2 очков опыта.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 6 очков опыта.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportTitle">Телепортация</LocalizationPair>
   <LocalizationPair Name="%ArmyActionTeleportDescription">Вы можете телепортировать армию в другой город, если у вас назначен и собран Священный ресурс. </LocalizationPair>
   <LocalizationPair Name="%ArmyActionTransferUnitsTitle">Перевести</LocalizationPair>
@@ -2797,19 +2846,19 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSearchTitle">Поиск</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSearchDescription">Произведите поиск в этой локации. Вы можете обнаружить сокровища, врагов, квест или ничего не найти.
  
-Когда поиск выполняется Героем, вы получаете базовые 6 очков опыта.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 10 очков опыта.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPOIAlreadySearchedDescription">Вы уже провели поиск во всех окрестных локациях.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeTitle">Осада</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeDescription">Действие "Осада" снижает оборону и число населения во вражеском городе.
  
-Когда поиск выполняется Героем, вы получаете базовые 2 очков опыта за ход \7708\.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 4 очков опыта за ход \7708\.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOnDescription">Начать осаду города.
  
  - Зона разработки и региональные здания за пределами городских стен больше не продуктивны.
 - Объем производства Прогресса и Праха сокращается в 2 раза.
 - Каждый ход город теряет количество очков обороны, равное силе осаждающей стороны. Когда уровень обороны доходит до 0, юниты, находящиеся в гарнизоне или на ячейках города, начинают терять очки здоровья в зависимости от силы осаждающих.
  
-Когда поиск выполняется Героем, вы получаете базовые 2 очков опыта за ход \7708\.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 4 очков опыта за ход \7708\.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeOffDescription">Прекратить осаду города</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeCannotStartDescription">В данный момент вы не можете начать осаду.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionSiegeInvalidDiplomaticAbilitiesDescription">У вас нет необходимого дипломатического статуса, чтобы начать осаду города этой империи.</LocalizationPair>
@@ -2837,13 +2886,13 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%ArmyActionConvertTitle">Обращение</LocalizationPair>
   <LocalizationPair Name="%ArmyActionConvertDescription">Обратить усмиренную деревню.
  
-Когда поиск выполняется Героем, вы получаете базовые 3 очков опыта.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 6 очков опыта.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionNotPacifiedDescription">Обратить эту деревню нельзя, так как она не усмирена.
  
-Когда поиск выполняется Героем, вы получаете базовые 3 очков опыта.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 6 очков опыта.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionCannotAffordConvertDescription">У вас недостаточно очков Престижа, чтобы сделать это.
  
-Когда поиск выполняется Героем, вы получаете базовые 3 очков опыта.</LocalizationPair>
+Когда поиск выполняется Героем, вы получаете базовые 6 очков опыта.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionPointRequirementFormat">Требуется $Value \7709\ (а также, возможно, и другие затраты).</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAlreadyConvertedDescription">Невозможно обратить уже обращенную деревню.</LocalizationPair>
   <LocalizationPair Name="%ArmyActionAttackInvalidOwnVillageDescription">Нельзя атаковать собственную деревню.</LocalizationPair>
@@ -3682,8 +3731,15 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedDescription">Закончилось действие одного или нескольких бонусов ресурса.</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedLineFormat">{0} : действие бонуса завершилось</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivate">Активировать повторно.</LocalizationPair>
-  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Нельзя активировать повторно.</LocalizationPair>
   <LocalizationPair Name="%NotificationBoosterEndedReactivateBoosterDescription">Нажмите на эту кнопку, чтобы заплатить стоимость Бонуса и обновить его эффект.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterEndedCannotReactivate">Нельзя активировать повторно.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedTitle">Unused Resource Booster(s)</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedDescription">It has been quite some time since you last activated a resource booster. It can grant great advantages to your empire.</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedLineFormat">{0} : the booster and its effects can be activated</LocalizationPair>
+  <LocalizationPair Name="%NotificationBoosterUnusedActivate">Activate</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleTitle">Idle City Construction</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleDescription">One or more of your cities do not produce anything</LocalizationPair>
+  <LocalizationPair Name="%NotificationCityIdleLineTitle">No construction selected</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedTitle">Город захвачен</LocalizationPair>
   <LocalizationPair Name="%NotificationCityCapturedDescription">Ваш город {0} был захвачен империей {1}.</LocalizationPair>
   <LocalizationPair Name="%NotificationCityRazedTitle">Город разрушен</LocalizationPair>
@@ -3832,6 +3888,10 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%AvailabilityEmpirePlanLevel4">Доступен План империи 4 уровня</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedTitle">Изменение численности населения</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationModifiedDescription">В одном или нескольких городах изменилась численность населения.</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedTitle">Pillar effect ended</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarEndedDescription">One of your pillars had run its duration. You may want to reactivate it</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedTitle">Pillars unused</LocalizationPair>
+  <LocalizationPair Name="%NotificationPillarUnusedDescription">It has been quite some time since you last activated a pillar. You have the resources to activate one.</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationIncreased">Численность населения города {0} достигла {1}</LocalizationPair>
   <LocalizationPair Name="%NotificationPopulationDecreased">Численность населения города {0} упала до {1} из-за голода</LocalizationPair>
   <LocalizationPair Name="%NotificationQuestBegunTitle">Добавлен новый квест.</LocalizationPair>
@@ -4602,4 +4662,14 @@ $HeroesCount</LocalizationPair>
   <LocalizationPair Name="%CultistsFaction">Идея фракции Культистов</LocalizationPair>
   <LocalizationPair Name="%CultistsModelConcept">Наброски моделей фракции Культистов</LocalizationPair>
   <LocalizationPair Name="%CultistsLogoConcept">Наброски символа фракции Культистов</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip1Title">Tip: you can level up a city district by building four other districts around it</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip2Title">Tip: outfiting your units with powerful equipment is instrumental to victory in battle</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip3Title">Tip: the more friendly units surround a unit in battle, the more moral it gets</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip4Title">Tip: Settlers consume all food production so you can assign food workers on something else while you build a settler</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip5Title">Tip: Expanding your city with new districts significantly increases you production, but also generates more unhapiness</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip6Title">Tip: Some units are betters against others, an utter defeat can be turned into a great victory with better unit composition</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip7Title">Tip: A beat-down opponent is more likely to accept a truce and give you techs and resources if you give him back a city he lost. </LocalizationPair>
+  <LocalizationPair Name="%LoadingTip8Title">Tip: Selling units on the marketplace is a great source of dust</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip9Title">Tip: Keep your cities garrisoned with more than just militia if you face a large invading army</LocalizationPair>
+  <LocalizationPair Name="%LoadingTip10Title">Tip: Cultists can rebuild a destroyed village by converting it at twice the normal influence cost</LocalizationPair>
 </Datatable>

@@ -429,8 +429,8 @@
   <LocalizationPair Name="%WatchTowerRuinsTitle">Фундамент </LocalizationPair>
   <LocalizationPair Name="%WatchTowerRuinsDescription">Какой-то древний строитель заложил здесь фундамент, выдержавший испытание временем. Учитывая его расположение и качество кладки, это идеальное место для строительства Дозорной башни. </LocalizationPair>
   <LocalizationPair Name="%FactionBrokenLordsTitle">Владыки Праха</LocalizationPair>
-  <LocalizationPair Name="%FactionBrokenLordsDescription">Фракция рыцарей и градостроителей, которые существуют лишь в виде духов, заключенных в огромные доспехи. Хоть они и утратили человеческий облик, это по-прежнему благородные воины, придерживающиеся рыцарских идеалов.</LocalizationPair>
-  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Основной тип победы: Завоевание</LocalizationPair>
+  <LocalizationPair Name="%FactionBrokenLordsDescription">Фракция рыцарей, которые существуют лишь в виде духов, заключенных в огромные доспехи. Хоть они и утратили человеческий облик, это по-прежнему благородные воины, придерживающиеся рыцарских идеалов.</LocalizationPair>
+  <LocalizationPair Name="%AffinityBrokenLordsVictoryType">Основной тип победы: Экспансия</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyCaption">Отряд</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle1">Гордый</LocalizationPair>
   <LocalizationPair Name="%FactionAffinityBrokenLordsArmyTitle2">Истинный</LocalizationPair>
@@ -5712,7 +5712,7 @@ LEVEL 3
 Но я не могу этого допустить. Это простой путь, но это не делает его справедливым и верным. К сожалению, сейчас у нас нет выбора, кроме как позволить мудрецам и алхимикам продолжать исследования и искать ответы, которые удовлетворят их жадных хозяев. Мы разовьем науку и приумножим знания - у меня на это свои причины. Я прослежу за тем, чтобы мой народ не поддался искушениям. Не зря на королевской печати выгравировано слово "Честь".</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Objective">Тайны прошлого планеты скрывают ключи к будущему нашей империи. Развивайте науку, чтобы расшифровать их.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1">Исследуйте 8 технологий Технологической Эры I.</LocalizationPair>
-  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Стартовые технологии Владык Праха не учитываются.</LocalizationPair>
+  <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step1Tooltip">Технологии, получаемые во время выполнения квестов, не влияют на стоимость Исследований и не приближают вас к новой Технологической Эре.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2">Исследуйте 12 технологий Технологической Эры I.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2-Step2Tooltip">Технологии, получаемые во время выполнения квестов, не влияют на стоимость Исследований и не приближают вас к новой Технологической Эре.</LocalizationPair>
   <LocalizationPair Name="%MainQuestBrokenLords-Chapter2Outcome">Любопытно. Помимо открытий в магии и алхимии, мы обнаружили нечто древнее и могущественное - простой на первый взгляд обруч, тихо гудящий от заключенной внутри мощи.</LocalizationPair>
@@ -6700,8 +6700,7 @@ ________________________________________
 Защита \7773\ снижает наносимый в битве урон.
 Инициатива \7774\ позволяет юниту раньше ходить в бою.
 Урон \7776\ означает, какой удар получит жертва при успешной атаке.
-Скорость \7757\ определяет число ячеек, которое юнит может пройти за ход.
-Дальность определяет максимальное расстояние атаки.</LocalizationPair>
+Скорость \7757\ определяет число ячеек, которое юнит может пройти за ход.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title73">Позиционные бонусы</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Content73">На характеристики также влияют прочие факторы: Относительная позиция, Возвышение и Тип местности.</LocalizationPair>
   <LocalizationPair Name="%MainQuestTutorial-Title74">Позиционные бонусы</LocalizationPair>

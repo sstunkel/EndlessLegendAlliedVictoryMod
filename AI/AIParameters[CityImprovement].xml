@@ -16,7 +16,7 @@
     <AIParameter Name="AIEmpireExploration"   Value="1"/>
     <AIParameter Name="AIEmpireColonization"  Value="1"/>
     <AIParameter Name="AIEmpireMilitaryDefense"      Value="1"/> <!-- TBD: distinction between offense and defense -->
-	<AIParameter Name="AIEmpireMilitaryOffense"      Value="1"/> <!-- TBD: distinction between offense and defense -->
+  <AIParameter Name="AIEmpireMilitaryOffense"      Value="1"/> <!-- TBD: distinction between offense and defense -->
   </AIParameterDatatableElement>
 
   <!-- ################################ -->

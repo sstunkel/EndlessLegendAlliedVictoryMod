@@ -80,13 +80,13 @@
   </AIParameterDatatableElement>
 
   <AIParameterDatatableElement Name="TechnologyDefinitionWeaponCommonTier1">
-    <AIParameter Name="EmpireMilitaryOffense" Value="5 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="5 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10)) * (0 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"/>
   </AIParameterDatatableElement>
 
   <!-- Common Armor and accessories Tier 1 -->
   <AIParameterDatatableElement Name="TechnologyDefinitionArmorCommonTier1">
-    <AIParameter Name="EmpireMilitaryDefense" Value="5 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
-    <AIParameter Name="EmpireMilitaryOffense" Value="1 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="5 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10)) * (0 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"/>
+    <AIParameter Name="EmpireMilitaryOffense" Value="1 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10)) * (0 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"/>
   </AIParameterDatatableElement>
   
   <!-- Common accessories Tier 1 (obsolete) -->
@@ -289,13 +289,13 @@
 
   <!-- Weapon common T2 -->
   <AIParameterDatatableElement Name="TechnologyDefinitionWeaponCommonTier2">
-    <AIParameter Name="EmpireMilitaryOffense" Value="7 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="7 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10)) * (0 max (2 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
   </AIParameterDatatableElement>
 
   <!-- Armor and Accessory common T2 -->
   <AIParameterDatatableElement Name="TechnologyDefinitionArmorCommonTier2">
-    <AIParameter Name="EmpireMilitaryDefense" Value="7 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
-    <AIParameter Name="EmpireMilitaryOffense" Value="2 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="7 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10)) * (0 max (2 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="2 * ($Property(ClassEmpire:NetStrategic1) + $Property(ClassEmpire:NetStrategic2) + ($Property(ClassEmpire:Strategic1Stock) / 10) + ($Property(ClassEmpire:Strategic2Stock) / 10)) * (0 max (2 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
   </AIParameterDatatableElement>
 
   <!-- Accessory common T2 (obsolete) -->
@@ -518,18 +518,18 @@
 
   <!-- Expansion Disapproval 1-->
   <AIParameterDatatableElement Name="TechnologyDefinitionExpansionDisapprovalReduction1">
-    <AIParameter Name="CityApproval" Value="5 * $Count(ClassEmpire/ClassCity)"  />
+    <AIParameter Name="CityApproval" Value="5 * $Property(EmpireTypeMajor:EmpireScaleFactor)"  />
   </AIParameterDatatableElement>
   
   <!--Weapon uncommon T1-->
   <AIParameterDatatableElement Name="TechnologyDefinitionWeaponUncommonTier1">
-    <AIParameter Name="EmpireMilitaryOffense" Value="9 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="9 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10)) * (3 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
   </AIParameterDatatableElement>
 
   <!--Armor uncommon T1-->
   <AIParameterDatatableElement Name="TechnologyDefinitionArmorUncommonTier1">
-    <AIParameter Name="EmpireMilitaryDefense" Value="9 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
-    <AIParameter Name="EmpireMilitaryOffense" Value="4 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))" />
+    <AIParameter Name="EmpireMilitaryDefense" Value="9 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10)) * (3 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="4 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10)) * (3 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))" />
   </AIParameterDatatableElement>
 
   <!--Accessory uncommon T1 (obsolete) -->
@@ -678,13 +678,13 @@
 
   <!-- Weapon Rare Tiers 1 -->
   <AIParameterDatatableElement Name="TechnologyDefinitionWeaponRareTier1">
-    <AIParameter Name="EmpireMilitaryOffense" Value="11 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="11 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10)) * (4 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
   </AIParameterDatatableElement>
 
   <!-- Armor Rare Tiers 1 -->
   <AIParameterDatatableElement Name="TechnologyDefinitionArmorRareTier1">
-    <AIParameter Name="EmpireMilitaryDefense" Value="11 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))"  />
-    <AIParameter Name="EmpireMilitaryDefense" Value="6 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="11 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10)) * (4 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
+    <AIParameter Name="EmpireMilitaryDefense" Value="6 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10)) * (4 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
   </AIParameterDatatableElement>
 
   <!-- Accessory Rare Tiers 1 (obsolete) -->
@@ -801,13 +801,13 @@
 
   <!-- Weapon Uncommon Tier 2 -->
   <AIParameterDatatableElement Name="TechnologyDefinitionWeaponUncommonTier2">
-    <AIParameter Name="EmpireMilitaryOffense" Value="13 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="13 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10)) * (5 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
   </AIParameterDatatableElement>
 
   <!--Armor Uncommon Tier 2-->
   <AIParameterDatatableElement Name="TechnologyDefinitionArmorUncommonTier2">
-    <AIParameter Name="EmpireMilitaryDefense" Value="13 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))"  />
-    <AIParameter Name="EmpireMilitaryOffense" Value="6 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10))" />
+    <AIParameter Name="EmpireMilitaryDefense" Value="13 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10)) * (5 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))"  />
+    <AIParameter Name="EmpireMilitaryOffense" Value="6 * ($Property(ClassEmpire:NetStrategic3) + $Property(ClassEmpire:NetStrategic4) + ($Property(ClassEmpire:Strategic3Stock) / 10) + ($Property(ClassEmpire:Strategic4Stock) / 10)) * (5 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))" />
   </AIParameterDatatableElement>
 
   <!--Accessory Uncommon Tier 2 (obsolete) -->
@@ -823,7 +823,7 @@
 
   <!-- Expansion Disapproval 2-->
   <AIParameterDatatableElement Name="TechnologyDefinitionExpansionDisapprovalReduction2">
-    <AIParameter Name="CityApproval" Value="5 * $Count(ClassEmpire/ClassCity)"  />
+    <AIParameter Name="CityApproval" Value="5 * $Property(EmpireTypeMajor:EmpireScaleFactor)"  />
   </AIParameterDatatableElement>
 
 
@@ -896,8 +896,8 @@
 
   <!--Rare Tier 2-->
   <AIParameterDatatableElement Name="TechnologyDefinitionEquipmentRareTier2">
-    <AIParameter Name="EmpireMilitaryDefense" Value="15 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))" />
-    <AIParameter Name="EmpireMilitaryOffense" Value="8 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10))" />
+    <AIParameter Name="EmpireMilitaryDefense" Value="15 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10)) * (6 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))" />
+    <AIParameter Name="EmpireMilitaryOffense" Value="8 * ($Property(ClassEmpire:NetStrategic5) + $Property(ClassEmpire:NetStrategic6) + ($Property(ClassEmpire:Strategic5Stock) / 10) + ($Property(ClassEmpire:Strategic6Stock) / 10)) * (6 max (1 - $Property(ClassEmpire/ClassResearch:UnlockedItemsTechnologyCount)))" />
   </AIParameterDatatableElement>
 
 

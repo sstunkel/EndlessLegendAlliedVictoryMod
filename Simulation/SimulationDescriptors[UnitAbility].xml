@@ -1323,19 +1323,19 @@
   <!-- Regeneration -->
   <SimulationDescriptor Name="UnitAbilityRegenerationDescriptor1" Type="UnitAbilityDescriptor">
     <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="RegenerationBonus" Value="5" Operation="Addition" />
+      <SimulationModifierDescriptor TargetProperty="RegenerationBonus" Value="2" Operation="Addition" />
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="UnitAbilityRegenerationDescriptor2" Type="UnitAbilityDescriptor">
     <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="RegenerationBonus" Value="10" Operation="Addition" />
+      <SimulationModifierDescriptor TargetProperty="RegenerationBonus" Value="4" Operation="Addition" />
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="UnitAbilityRegenerationDescriptor3" Type="UnitAbilityDescriptor">
     <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="RegenerationBonus" Value="15" Operation="Addition" />
+      <SimulationModifierDescriptor TargetProperty="RegenerationBonus" Value="6" Operation="Addition" />
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 

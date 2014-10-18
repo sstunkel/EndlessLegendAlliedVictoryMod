@@ -22,7 +22,6 @@
   </DiplomaticAbility>
 
   <DiplomaticAbility Name="PrestigeTrend">
-    <SimulationDescriptorReference Name="PrestigeTrendBonus" />
   </DiplomaticAbility>
 
   <DiplomaticAbility Name="PrestigeForKill">

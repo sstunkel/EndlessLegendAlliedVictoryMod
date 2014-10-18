@@ -16,6 +16,12 @@
       <SimulationDescriptorReference Name="GameDifficultyNewbieAIMajorEmpire"/>
     </Effects>
 
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMinorFactionGameDifficultyNewbie" />
+    </Effects>
+
     <!-- Major Empire-->
     <Effects>
       <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
@@ -37,6 +43,12 @@
     <Effects PlayerTypeFilter="AI">
       <PathPrerequisite>../EmpireTypeMajor</PathPrerequisite>
       <SimulationDescriptorReference Name="GameDifficultyEasyAIMajorEmpire"/>
+    </Effects>
+
+    <!-- Minor -->
+    <Effects>
+      <PathPrerequisite>../EmpireTypeMinor</PathPrerequisite>
+      <PersonalityReference Name="PersonalityMinorFactionGameDifficultyEasy" />
     </Effects>
 
     <!-- Major Empire-->

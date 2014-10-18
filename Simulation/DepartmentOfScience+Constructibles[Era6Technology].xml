@@ -139,7 +139,6 @@
   <!-- Improvement: Unit cost reduction 3 -->
   <TechnologyDefinition  Name="TechnologyDefinitionUnitCostReduction3">
     <SimulationDescriptorReference Name="TechnologyUnitCostReduction3" />
-    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra6" />
     <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era6CostMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra6</PathPrerequisite>
   </TechnologyDefinition>
@@ -148,7 +147,6 @@
   <TechnologyDefinition  Name="TechnologyDefinitionExpansionDisapprovalReduction3">
     <UnlockCategoryOverride Category="Empire" SubCategory="SubCategoryApproval"/>
     <SimulationDescriptorReference Name="TechnologyExpansionDisapprovalReduction3" />
-    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra6" />
     <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era6CostMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra6</PathPrerequisite>
   </TechnologyDefinition>
@@ -176,7 +174,6 @@
   <TechnologyDefinition  Name="TechnologyDefinitionRageWizards15" TechnologyFlags="Affinity">
     <UnlockCategoryOverride Category="Empire" SubCategory="SubCategoryArcana"/>
     <SimulationDescriptorReference Name="TechnologyRageWizards15" />
-    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra6" />
     <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era6CostMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra6</PathPrerequisite>
     <PathPrerequisite Flags="Prerequisite,Discard,DiplomaticTradable">EmpireTypeMajor,AffinityRageWizards</PathPrerequisite>
@@ -195,7 +192,6 @@
     <SimulationDescriptorReference Name="TechnologyWeaponRareTier2" />
     <SimulationDescriptorReference Name="TechnologyUnlockWeaponRareMaterial" />
     <SimulationDescriptorReference Name="TechnologyUnlockWeaponTier2" />
-    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra6" />
     <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era6CostMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra6</PathPrerequisite>
   </TechnologyDefinition>
@@ -208,7 +204,6 @@
     <SimulationDescriptorReference Name="TechnologyAccessoryRareTier2" />
     <SimulationDescriptorReference Name="TechnologyUnlockAccessoryRareMaterial" />
     <SimulationDescriptorReference Name="TechnologyUnlockAccessoryTier2" />
-    <SimulationDescriptorReference Name="TechnologyCountIncreaseEra6" />
     <CustomCost ResourceName="EmpireResearch">$Property(EmpireTypeMajor/ClassResearch:TechnologyCost)* $Property(EmpireTypeMajor/ClassResearch:Era6CostMultiplier)</CustomCost>
     <PathPrerequisite Flags="Prerequisite,TechnologyEra">EmpireTypeMajor/ClassResearch,TechnologyEra6</PathPrerequisite>
   </TechnologyDefinition>

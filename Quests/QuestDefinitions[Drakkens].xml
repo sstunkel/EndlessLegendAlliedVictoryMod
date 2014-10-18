@@ -521,6 +521,7 @@
                 </ConditionCheck_Prerequisite>
               </Decorator_BeginTurn>
             </Controller_Loop>
+            <Action_UpdateStep StepName="MainQuestDrakkens-Chapter6-Step1" State="Completed"/>
           </Controller_Sequence>
         
         </Controller_Parallel>
@@ -538,7 +539,6 @@
 
       </Controller_Parallel>
       
-      <Action_UpdateStep StepName="MainQuestDrakkens-Chapter6-Step1" State="Completed"/>
       
       <!--Step 2-->
       <Action_UpdateStep StepName="MainQuestDrakkens-Chapter6-Step2" State="InProgress"/>
@@ -793,7 +793,7 @@
         <Decorator_BeginTurn Initiator="Empire">
           <ConditionCheck_Prerequisite IsFailureCondition="true">
             <Prerequisites Target="$Empire">
-              <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassEmpire/ClassCity/CityImprovementDrakkens4) eq $Count(ClassEmpire/ClassCity)</InterpreterPrerequisite>
+              <InterpreterPrerequisite Flags="Prerequisite">$Count(ClassEmpire/ClassCity/CityImprovementDrakkens4) eq $Property(EmpireTypeMajor:EmpireScaleFactor)</InterpreterPrerequisite>
             </Prerequisites>
           </ConditionCheck_Prerequisite>
         </Decorator_BeginTurn>

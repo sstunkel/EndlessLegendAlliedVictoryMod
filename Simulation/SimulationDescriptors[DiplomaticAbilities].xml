@@ -44,12 +44,6 @@
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 
-  <SimulationDescriptor Name="PrestigeTrendBonus" Type="Diplomacy">
-    <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="NetEmpirePoint" Operation="Addition"  Value="10"    Path="../ClassEmpire" />
-    </SimulationModifierDescriptors>
-  </SimulationDescriptor>
-
   <SimulationDescriptor Name="PrestigeForKillBonus" Type="Diplomacy">
     <SimulationModifierDescriptors>
       <SimulationModifierDescriptor TargetProperty="DiplomaticAbilityPrestigeRewardOnKill" Operation="Force" Value="1" Path="../ClassEmpire" />

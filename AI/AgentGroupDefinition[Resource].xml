@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-  <Amas Name="ResourceEvaluationAmas">
+  <Amas Name="ResourceEvaluationAmas" IterationCount="20">
 
     <AgentReference Name="TechnologyReferenceTurnCount"/>
+
+    <AgentReference Name="NetEmpireMoney"/>
     <AgentReference Name="MoneyReferenceRatio"/>
+    <AgentReference Name="EconomyAccountNeedMoneyRatio"/>
+    
     <AgentReference Name="NetEmpirePrestige"/>
     <AgentReference Name="EmpirePlanNeedPrestigeRatio"/>
     <AgentReference Name="DiplomacyNeedPrestigeRatio"/>

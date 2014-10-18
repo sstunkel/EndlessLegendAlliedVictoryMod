@@ -6,7 +6,7 @@
   <!-- #######   FIRST STEPS    ####### -->
   <!-- ################################ -->
 
-  <AICityState Name="FirstSteps" IsAmasRequired="true" NetPopulationForSettlerPreRequisit="2" ExtensionProductionFrequency="2" UnitBoost="-0.5" ExtensionGlobalPriority="0.5">
+  <AICityState Name="FirstSteps" IsAmasRequired="true" NetPopulationForSettlerPreRequisit="2" ExtensionProductionFrequency="2" UnitBoost="-0.5" ExtensionGlobalPriority="0.3">
     <AgentModifiers>
       <AgentModifier CurveReference="Flat0">
         <AmasPath AgentReference="FoodPopulation">CityAgentGroup</AmasPath>

@@ -65,6 +65,39 @@
     <TooltipElement Percent="true"/>
   </ExtendedGuiElement>
 
+  <ExtendedGuiElement Name="InOwnedRegionUnitRegenModifier">
+    <Title>%InOwnedRegionUnitRegenModifierTitle</Title>
+    <Description>%InOwnedRegionUnitRegenModifierDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%InOwnedRegionUnitRegenModifierTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="InAlliedRegionUnitRegenModifier">
+    <Title>%InAlliedRegionUnitRegenModifierTitle</Title>
+    <Description>%InAlliedRegionUnitRegenModifierDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%InAlliedRegionUnitRegenModifierTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="InNoneAlliedRegionUnitRegenModifier">
+    <Title>%InNoneAlliedRegionUnitRegenModifierTitle</Title>
+    <Description>%InNoneAlliedRegionUnitRegenModifierDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="GUI/AtlasedBitmaps/UnitAttributes/UnitAttributeHealthSmall" />
+    </Icons>
+    <SymbolString>%InNoneAlliedRegionUnitRegenModifierTitle</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
   <ExtendedGuiElement Name="GlobalUnitRegenImprovement">
     <Title>%GlobalUnitRegenImprovementTitle</Title>
     <Description>%GlobalUnitRegenImprovementDescription</Description>

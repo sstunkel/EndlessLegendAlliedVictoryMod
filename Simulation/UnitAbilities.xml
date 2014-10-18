@@ -539,28 +539,25 @@
     <SimulationDescriptorReference Name="WithUnitAbilityLowDamage"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityDescriptorLowDamage1"/>
-      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityDescriptorLowDamage2"/>
-      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityDescriptorLowDamage3"/>
-      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
   <!-- Unstoppable -->
   <UnitAbility Name="UnitAbilityUnstoppable">
     <SimulationDescriptorReference Name="UnitAbilityUnstoppableDescriptor1"/>
-    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
   </UnitAbility>
 
   <!-- Immune Debuff -->
   <UnitAbility Name="UnitAbilityImmuneDebuff">
     <SimulationDescriptorReference Name="UnitAbilityImmuneDebuffDescriptor1"/>
-    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
   </UnitAbility>
 
 
@@ -678,12 +675,15 @@
   <UnitAbility Name="UnitAbilityCityGuard">
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityCityGuardDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityCityGuardDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityCityGuardDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -692,12 +692,15 @@
     <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityForestResonanceDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -724,6 +727,7 @@
   <UnitAbility Name="UnitAbilitySlowDown">
     <SimulationDescriptorReference Name="UnitCanDebuff"/>
     <BattleActionUnitReference Name="BattleActionUnitAbilitySlowDown"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
   </UnitAbility>
 
   <!-- Bark Skin -->
@@ -732,12 +736,15 @@
     <BattleActionUnitReference Name="BattleActionUnitAbilityBarkSkin"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityBarkSkinDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityBarkSkinDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityBarkSkinDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -748,12 +755,15 @@
     
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityIncreasedFireDescriptor1"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityIncreasedFireDescriptor2"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityIncreasedFireDescriptor3"/>
+      <SimulationDescriptorReference Name="MalusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -792,6 +802,7 @@
   <UnitAbility Name="UnitAbilityCocoon">
     <SimulationDescriptorReference Name="WithUnitAbilityCocoon"/>
     <BattleActionUnitReference Name="BattleActionUnitAbilityCocoon"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower1"/>
   </UnitAbility>
 
   <!-- Circular Attack-->
@@ -804,6 +815,7 @@
   <!-- Intimidation Aura -->
   <UnitAbility Name="UnitAbilityIntimidationAura">
     <BattleActionUnitReference Name="BattleActionUnitAbilityIntimidationAura"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
   </UnitAbility>
 
   <!-- Chain Lightning-->
@@ -999,12 +1011,15 @@
     <BattleActionUnitReference Name="BattleActionUnitAbilityPointblankPower"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityPointblankPowerDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityPointblankPowerDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityPointblankPowerDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -1017,18 +1032,21 @@
   <!-- Stun -->
   <UnitAbility Name="UnitAbilityStun">
     <SimulationDescriptorReference Name="UnitCanDebuff"/>
-    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
     <UnitAbilityLevelDefinition Level="0">
       <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="3">
       <BattleActionUnitReference Name="BattleActionUnitAbilityStunLevel4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower5"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -1036,6 +1054,7 @@
   <UnitAbility Name="UnitAbilityBeam">
     <BattleActionUnitReference Name="BattleActionUnitAbilityBeam"/>
     <SimulationDescriptorReference Name="UnitAbilityOverrideAttackDescriptor"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
   </UnitAbility>
 
   <!-- Sweep Attack -->
@@ -1083,15 +1102,19 @@
     <BattleActionUnitReference Name="BattleActionUnitAbilityKnightSlayer"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="3">
       <SimulationDescriptorReference Name="UnitAbilityKnightSlayerDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -1100,15 +1123,19 @@
     <BattleActionUnitReference Name="BattleActionUnitAbilityRangeSlayer"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="3">
       <SimulationDescriptorReference Name="UnitAbilityRangeSlayerDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -1117,15 +1144,19 @@
     <BattleActionUnitReference Name="BattleActionUnitAbilityMageSlayer"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="3">
       <SimulationDescriptorReference Name="UnitAbilityMageSlayerDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -1134,15 +1165,19 @@
     <BattleActionUnitReference Name="BattleActionUnitAbilityFlyingSlayer"/>
     <UnitAbilityLevelDefinition Level="0">
       <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor1"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="1">
       <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor2"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="2">
       <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor3"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower3"/>
     </UnitAbilityLevelDefinition>
     <UnitAbilityLevelDefinition Level="3">
       <SimulationDescriptorReference Name="UnitAbilityFlyingSlayerDescriptor4"/>
+      <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
     </UnitAbilityLevelDefinition>
   </UnitAbility>
 
@@ -1301,6 +1336,7 @@
   <UnitAbility Name="UnitAbilityRevive">
     <BattleActionUnitReference Name="BattleActionUnitAbilityPhoenixToEgg"/>
     <BattleActionUnitReference Name="BattleActionUnitAbilityEggRegeneration"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower3"/>
   </UnitAbility>
 
   <!-- Parasite -->
@@ -1313,6 +1349,7 @@
   <!-- Free Counter -->
   <UnitAbility Name="UnitAbilityFreeCounter">
     <SimulationDescriptorReference Name="UnitAbilityDescriptorUnitAbilityFreeCounter1"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower4"/>
   </UnitAbility>
   
   <!-- FACTION SPECIFICS -->
@@ -1320,17 +1357,21 @@
   <!-- Forest Rage -->
   <UnitAbility Name="UnitAbilityForestRage">
     <SimulationDescriptorReference Name="UnitAbilityForestRageDescriptor"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
   </UnitAbility>
   
   <!-- Ardent Fire -->
   <UnitAbility Name="UnitAbilityArdentFire">
     <BattleActionUnitReference Name="BattleActionUnitAbilityArdentFire"/>
     <SimulationDescriptorReference Name="UnitAbilityArdentFireDescriptor"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower2"/>
   </UnitAbility>
 
   <!-- Technolover -->
   <UnitAbility Name="UnitAbilityTechnolover">
     <SimulationDescriptorReference Name="UnitAbilityTechnoloverDescriptor"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
   </UnitAbility>
 
   <!-- Fast Learner -->
@@ -1341,6 +1382,8 @@
   <!-- Unleashed Potential -->
   <UnitAbility Name="UnitAbilityUnleashedPotential">
     <BattleActionUnitReference Name="WithUnitAbilityUnleashedPotential"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityOffensiveMilitaryPower1"/>
+    <SimulationDescriptorReference Name="BonusUnitAbilityDefensiveMilitaryPower2"/>
   <BattleActionUnitReference Name="BattleActionUnitAbilityUnleashedPotential"/>
   </UnitAbility>
   

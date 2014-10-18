@@ -3,7 +3,7 @@
   
   <SimulationDescriptor Name="ArmyStatusBesieger" Type="ArmyStatus">
     <SimulationModifierDescriptors>
-      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"  Operation="Addition" Value="2"   Path="ClassArmy/ClassUnit,UnitHero"/>
+      <SimulationModifierDescriptor TargetProperty="ExperienceGainPerTurn"  Operation="Addition" Value="4"   Path="ClassArmy/ClassUnit,UnitHero"/>
     </SimulationModifierDescriptors>
   </SimulationDescriptor>
 

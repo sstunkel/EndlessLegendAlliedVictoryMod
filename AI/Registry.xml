@@ -134,20 +134,20 @@
         </AILayer_Strategy>
 
         <AILayer_Military>
-          <UnitInGarrisonTurnLimit>20</UnitInGarrisonTurnLimit>
-          <UnitInGarrisonTurnLimitForMaxPercent>60</UnitInGarrisonTurnLimitForMaxPercent>
+          <UnitInGarrisonTurnLimit>17</UnitInGarrisonTurnLimit>
+          <UnitInGarrisonTurnLimitForMaxPercent>40</UnitInGarrisonTurnLimitForMaxPercent>
           
-          <UnitInGarrisonPercent>0.5</UnitInGarrisonPercent>
-          <UnitInGarrisonMaxPercent>0.7</UnitInGarrisonMaxPercent>
+          <UnitInGarrisonPercent>0.6</UnitInGarrisonPercent>
+          <UnitInGarrisonMaxPercent>0.8</UnitInGarrisonMaxPercent>
           <MinimumUnitsToKeepInGarrison>2</MinimumUnitsToKeepInGarrison>
           
-          <UnitInGarrisonPriorityMultiplierPerSlot>0.5</UnitInGarrisonPriorityMultiplierPerSlot>          
-          <UnitRatioBoost>0.8</UnitRatioBoost>
+          <UnitInGarrisonPriorityMultiplierPerSlot>0.2</UnitInGarrisonPriorityMultiplierPerSlot>          
+          <UnitRatioBoost>1</UnitRatioBoost>
           
           <VillageDefenseRatioDeboost>0.7</VillageDefenseRatioDeboost>
           
-          <UnitMaxMilitaryPower>2700000</UnitMaxMilitaryPower><!-- Hard value, must be set after each update of data -->
-          <ArmyMaxMilitaryPower>172800</ArmyMaxMilitaryPower><!-- Action points, Spent action points reset each turn -->
+          <UnitMaxMilitaryPower>1000</UnitMaxMilitaryPower><!-- Hard value, must be set after each update of data -->
+          <ArmyMaxMilitaryPower>100000</ArmyMaxMilitaryPower><!-- Action points, Spent action points reset each turn -->
         </AILayer_Military>
 
         <AILayer_Village>
@@ -159,17 +159,17 @@
         <AIContext>
           <MaximalValueForAIParameters>
             <AICityGrowth>20.0</AICityGrowth>
-            <AICityProduction>20.0</AICityProduction>
+            <AICityProduction>15.0</AICityProduction>
             <AICityMoney>20.0</AICityMoney>
             <AICityResearch>20.0</AICityResearch>
-            <AICityEmpirePoint>20.0</AICityEmpirePoint>
+            <AICityEmpirePoint>15.0</AICityEmpirePoint>
             <AICityMoneyUpkeep>20.0</AICityMoneyUpkeep>
             <AICityMilitary>20.0</AICityMilitary>
 
             <AIEmpireExploration>25.0</AIEmpireExploration>
             <AIEmpireColonization>25.0</AIEmpireColonization>
-            <AICityLuxuryResource>10.0</AICityLuxuryResource>
-            <AICityStrategicResource>10.0</AICityStrategicResource>
+            <AICityLuxuryResource>15.0</AICityLuxuryResource>
+            <AICityStrategicResource>15.0</AICityStrategicResource>
             <AIEmpireMilitaryDefense>50.0</AIEmpireMilitaryDefense>
             <AIEmpireMilitaryOffense>50.0</AIEmpireMilitaryOffense>
           </MaximalValueForAIParameters>
@@ -183,7 +183,7 @@
         <AILayer_Production>
           <SettlerEconomicalStress>-0.2</SettlerEconomicalStress>
           <MinimalTurnDuration>5</MinimalTurnDuration>
-          <MaximalTurnDuration>15</MaximalTurnDuration>
+          <MaximalTurnDuration>30</MaximalTurnDuration>
           <MaximalTurnDurationBoost>-1</MaximalTurnDurationBoost>
           <MaximalUnitDistance>10</MaximalUnitDistance>
           <MaximalUnitDistanceBoost>-0.5</MaximalUnitDistanceBoost>
@@ -237,7 +237,7 @@
       </AILayer_Encounter>
 
       <AILayer_Trade>
-        <MagicResourceSellingProportion>0.60</MagicResourceSellingProportion> <!-- [0,1] proportion of produced lux and strat AI will magically sell to market: AI's resources won't be ponctionned, and AI won't earn any money for it ! -->
+        <MagicResourceSellingProportion>0.05</MagicResourceSellingProportion> <!-- [0,1] proportion of produced lux and strat AI will magically sell to market: AI's resources won't be ponctionned, and AI won't earn any money for it ! -->
       </AILayer_Trade>
 
       <AILayer_Account>

@@ -49,115 +49,169 @@
   </GuiElement>-->
 
   <!-- Unlocks Weapons -->
-  <GuiElement Name="TechnologyWeaponCommonTier1">
-    <Title>%TechnologyUnlockWeaponCommonTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponCommonTier2">
-    <Title>%TechnologyUnlockWeaponCommonTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponCommonTier3">
-    <Title>%TechnologyUnlockWeaponCommonTier3TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponUncommonTier1">
-    <Title>%TechnologyUnlockWeaponUncommonTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponUncommonTier2">
-    <Title>%TechnologyUnlockWeaponUncommonTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponUncommonTier3">
-    <Title>%TechnologyUnlockWeaponUncommonTier3TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponRareTier1">
-    <Title>%TechnologyUnlockWeaponRareTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponRareTier2">
-    <Title>%TechnologyUnlockWeaponRareTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyWeaponRareTier3">
-    <Title>%TechnologyUnlockWeaponRareTier3TooltipEffect</Title>
-  </GuiElement>
+  <ExtendedGuiElement Name="TechnologyWeaponCommonTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponCommonTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
 
-  <!-- Unlocks Armors -->  
-  <GuiElement Name="TechnologyArmorCommonTier1">
-    <Title>%TechnologyUnlockArmorCommonTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorCommonTier2">
-    <Title>%TechnologyUnlockArmorCommonTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorCommonTier3">
-    <Title>%TechnologyUnlockArmorCommonTier3TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorUncommonTier1">
-    <Title>%TechnologyUnlockArmorUncommonTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorUncommonTier2">
-    <Title>%TechnologyUnlockArmorUncommonTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorUncommonTier3">
-    <Title>%TechnologyUnlockArmorUncommonTier3TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorRareTier1">
-    <Title>%TechnologyUnlockArmorRareTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorRareTier2">
-    <Title>%TechnologyUnlockArmorRareTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyArmorRareTier3">
-    <Title>%TechnologyUnlockArmorRareTier3TooltipEffect</Title>
-  </GuiElement>
+  <ExtendedGuiElement Name="TechnologyWeaponCommonTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponCommonTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyWeaponCommonTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponCommonTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyWeaponUncommonTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponUncommonTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyWeaponUncommonTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponUncommonTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyWeaponUncommonTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponUncommonTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyWeaponRareTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponRareTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyWeaponRareTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponRareTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyWeaponRareTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockWeaponRareTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <!-- Unlocks Armors -->
+  <ExtendedGuiElement Name="TechnologyArmorCommonTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorCommonTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorCommonTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorCommonTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorCommonTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorCommonTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorUncommonTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorUncommonTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorUncommonTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorUncommonTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorUncommonTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorUncommonTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorRareTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorRareTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorRareTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorRareTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyArmorRareTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockArmorRareTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
 
   <!-- Unlocks Accessories -->
-  <GuiElement Name="TechnologyAccessoryCommonTier1">
-    <Title>%TechnologyUnlockAccessoryCommonTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryCommonTier2">
-    <Title>%TechnologyUnlockAccessoryCommonTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryCommonTier3">
-    <Title>%TechnologyUnlockAccessoryCommonTier3TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryUncommonTier1">
-    <Title>%TechnologyUnlockAccessoryUncommonTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryUncommonTier2">
-    <Title>%TechnologyUnlockAccessoryUncommonTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryUncommonTier3">
-    <Title>%TechnologyUnlockAccessoryUncommonTier3TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryRareTier1">
-    <Title>%TechnologyUnlockAccessoryRareTier1TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryRareTier2">
-    <Title>%TechnologyUnlockAccessoryRareTier2TooltipEffect</Title>
-  </GuiElement>
-  
-  <GuiElement Name="TechnologyAccessoryRareTier3">
-    <Title>%TechnologyUnlockAccessoryRareTier3TooltipEffect</Title>
-  </GuiElement>
+  <ExtendedGuiElement Name="TechnologyAccessoryCommonTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryCommonTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryCommonTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryCommonTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryCommonTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryCommonTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryUncommonTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryUncommonTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryUncommonTier2">
+      <TooltipElement Ignore="true">
+        <EffectOverride>%TechnologyUnlockAccessoryUncommonTier2TooltipEffect</EffectOverride>
+      </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryUncommonTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryUncommonTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryRareTier1">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryRareTier1TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryRareTier2">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryRareTier2TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="TechnologyAccessoryRareTier3">
+    <TooltipElement Ignore="true">
+      <EffectOverride>%TechnologyUnlockAccessoryRareTier3TooltipEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
 
   <!--Unlock all Rare Tier 2 
   <GuiElement Name="TechnologyEquipmentRareTier2">
