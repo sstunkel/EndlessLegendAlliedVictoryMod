@@ -68,6 +68,9 @@
   <!--Allied Victory-->
   <DiplomaticTermDefinition Name="AlliedVictory" PropositionMethod="Negotiation" ApplicationMethod="Symetric" Category="Treaty" Alignment="Good">
     <DiplomaticRelationStatePrerequisite Flags="Prerequisite,Discard">DiplomaticRelationStateAlliance</DiplomaticRelationStatePrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:WarCount) eq 0</InterpreterPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:ColdWarCount) eq 0</InterpreterPrerequisite>
+    <InterpreterPrerequisite Flags="Prerequisite">$Property(ClassEmpire:PeaceCount) eq 0</InterpreterPrerequisite>
     <DiplomaticAbilityChange Operation="Add" DiplomaticAbilityReference="AlliedVictory" />
   </DiplomaticTermDefinition>
 
